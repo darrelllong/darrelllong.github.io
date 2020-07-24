@@ -48,11 +48,6 @@ collections:
 # No man's land.
 #
 
-# Plugins (disgusting).
-plugins:
-  - jekyll-feed
-  - jekyll-include-cache
-
 # Sass (for the UI and whatnot, modifed from the plainwhite gem theme).
 sass:
   sass_dir: _sass
