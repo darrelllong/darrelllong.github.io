@@ -1,9 +1,9 @@
 # Darrell's GitHub Page
 
-## Papers
+## Publications
 
-Papers go in ```_papers```. See any paper inside for a general template. Each
-paper is given its own Markdown post for formatting.
+Publications go in ```_publications```. See any publication inside for a general
+template. Each publication is given its own Markdown post for formatting.
 
 ## Assets
 
