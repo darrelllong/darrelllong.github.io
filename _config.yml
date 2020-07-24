@@ -15,9 +15,7 @@ show_excerpts: true
 darrell:
   name: "Darrell Long"
   date_format: "%b %Y"
-  search: true
-  sitemap: true
-  portrait: "assets/portfolio.png"
+  portrait: "assets/portrait.png"
   html_lang: "en"
   links:
     github:  "darrelllong"
@@ -27,21 +25,23 @@ darrell:
   navigation:
     - title: "About"
       url: "/"
-    - title: "Papers"
-      url: "/papers"
-    - title: "Laboratories"
-      url: "/labs"
-    - title: "CV"
-      url: "/cv"
+    - title: "Curriculum Vitae"
+      url: "/"
+    - title: "Publications"
+      url: "/publications"
+    - title: "Laboratory"
+      url: "https://www.ssrc.ucsc.edu/index.html"
+    - title: "Citations"
+      url: "https://scholar.google.com/citations?user=PqdLgQ0AAAAJ&hl=en&oi=ao"
 
 
 #
 # Custom collections (papers, articles, etc.).
 #
 collections:
-  papers:
+  publications:
     output: true
-    permalink: "/papers/:path"
+    permalink: "/publications/:path"
 
 
 #

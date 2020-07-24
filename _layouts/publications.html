@@ -2,29 +2,25 @@
 layout: frontmatter
 ---
 
-{%- if page.title -%}
-  <h1 class="page-heading">{{ page.title }}</h1>
-{%- endif -%}
-
 {{ content }}
 
-{%- if site.papers.size > 0 -%}
+{%- if site.publications.size > 0 -%}
   <ul class="posts">
-    {% assign papers = site.papers | sort: 'date' | reverse %}
-    {%- for paper in papers -%}
+    {% assign publications = site.publications | sort: 'date' | reverse %}
+    {%- for publication in publications -%}
       <li>
         {%- assign date_format = site.darrell.date_format | default: "%b %-d, %Y" -%}
-        <a class="post-link" href="{{ paper.url | relative_url }}">
-          <h3 class="post-title">{{ paper.title | escape }}</h3>
+        <a class="post-link" href="{{ publication.url | relative_url }}">
+          <h3 class="post-title">{{ publication.title | escape }}</h3>
         </a>
         <div class="post-meta">
           <div class="post-date">
             <i class="icon-calendar"></i>
-            {{ paper.date | date: date_format }}
+            {{ publication.date | date: date_format }}
           </div>
-          {%- if paper.categories.size > 0-%}
+          {%- if publication.categories.size > 0-%}
           <ul class="post-categories">
-            {%- for tag in paper.categories -%}
+            {%- for tag in publication.categories -%}
             <li>{{ tag }}</li>
             {%- endfor -%}
           </ul>
@@ -32,7 +28,7 @@ layout: frontmatter
         </div>
         <div class="post">
           {%- if site.show_excerpts -%}
-            {{ paper.excerpt }}
+            {{ publication.excerpt }}
           {%- endif -%}
         </div>
       </li>
