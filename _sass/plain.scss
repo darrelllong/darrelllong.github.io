@@ -277,3 +277,12 @@ table {
     font-family: Raleway;
   }
 }
+
+.img-zoom-slowmo img {
+  transform-origin: 50% 65%;
+  transition: transform 2s, filter 3s ease-in-out;
+}
+
+.img-zoom-slowmo:active img {
+  transform: scale(3);
+}
