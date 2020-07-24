@@ -1,7 +1,6 @@
 #
 # Base site config.
 #
-
 title: "Darrell D.E. Long"
 author: "Darrell D.E. Long"
 email: "darrell@ucsc.edu"
@@ -18,9 +17,9 @@ darrell:
   portrait: "assets/portrait.png"
   html_lang: "en"
   links:
-    github:  "darrelllong"
-    linkedin: "in/darrell-d-e-long"
-    wikipedia: "Darrell_Long"
+    github: "https://github.com/darrelllong"
+    linkedin: "https://www.linkedin.com/in/darrell-d-e-long/"
+    wikipedia: "https://en.wikipedia.org/wiki/Darrell_Long"
 
   navigation:
     - title: "About"
@@ -33,10 +32,12 @@ darrell:
       url: "https://www.ssrc.ucsc.edu/index.html"
     - title: "Citations"
       url: "https://scholar.google.com/citations?user=PqdLgQ0AAAAJ&hl=en&oi=ao"
+    - title: "Students"
+      url: "https://www.genealogy.math.ndsu.nodak.edu/id.php?id=10794"
 
 
 #
-# Custom collections (papers, articles, etc.).
+# Custom collections (publications, articles, etc.).
 #
 collections:
   publications:
@@ -47,7 +48,5 @@ collections:
 #
 # No man's land.
 #
-
-# Sass (for the UI and whatnot, modifed from the plainwhite gem theme).
 sass:
   sass_dir: _sass
