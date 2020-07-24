@@ -27,7 +27,7 @@ https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers)
 was inducted a [Fellow of the American Association for the Advancement of
 Science](https://en.wikipedia.org/wiki/Fellow_of_the_American_Association_for_the_Advancement_of_Science).
 He is a member of the IEEE Computer Society, the Association for Computing
-Machinery, the American Society for Engineering Education, the Usenix
+Machinery, the American Society for Engineering Education, the USENIX
 Association, Upsilon Pi Epsilon, and Sigma Xi.
 
 He has held visiting faculty positions at [Université Paris–Dauphine (Paris
