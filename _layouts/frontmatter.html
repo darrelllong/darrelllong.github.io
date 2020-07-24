@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{ site.darrell.html_lang }}">
+  <head>
+    {%- include head.html -%}
+  </head>
+  <body>
+    <main class="container">
+      <section class="about">
+        <a href="{{ "/" | relative_url}}">
+          <img src="{{ site.baseurl }}/{{ site.darrell.portrait }}" alt="{{
+            site.darrell.name }}">
+        </a>
+        <h2 id="title">
+          <a href="{{ "/" | relative_url }}">{{ site.darrell.name }}</a>
+        </h2>
+        <p class="tagline"></p>
+        <ul class="social">
+          {%- if site.darrell.links.github -%}
+          <a href="https://github.com/{{ site.darrell.links.github }}" target="_blank">
+            <li>
+              <i class="icon-github-circled"></i>
+            </li>
+          </a>
+          {%- endif -%}
+          {%- if site.darrell.links.linkedin -%}
+          <a href="https://www.linkedin.com/{{ site.darrell.links.linkedin }}"
+            target="_blank">
+            <li>
+              <i class="icon-linkedin-squared"></i>
+            </li>
+          </a>
+          {%- endif -%}
+          {%- if site.darrell.links.wikipedia -%}
+            <a href="https://en.wikipedia.org/wiki/{{
+                      site.darrell.links.wikipedia }}" target="_blank">
+            <li>
+              <i class="icon-wikipedia-w"></i>
+            </li>
+          </a>
+          {%- endif -%}
+        </ul>
+        {%- if site.darrell.navigation -%}
+        <nav class="navigation">
+          <ul>
+            {% for link in site.darrell.navigation %}
+            <li>
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
+        {%- endif -%}
+      </section>
+      <section class="content">
+        {{ content }}
+      </section>
+    </main>
+  </body>
+</html>
