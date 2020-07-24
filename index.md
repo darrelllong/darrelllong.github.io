@@ -24,15 +24,15 @@ In 2006 he was elevated to Fellow of the IEEE, the  [Institute of Electrical and
 Engineers](
 https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers),
 "for contributions to storage systems architecture and performance".  In 2008 he
-was inducted a [Fellow of the American Association for the Advancement of Science](https://en.wikipedia.org/wiki/Fellow_of_the_American_Association_for_the_Advancement_of_Science).
+was inducted a [Fellow of the American Association for the Advancement of
+Science](https://en.wikipedia.org/wiki/Fellow_of_the_American_Association_for_the_Advancement_of_Science).
 He is a member of the IEEE Computer Society, the Association for Computing
 Machinery, the American Society for Engineering Education, the Usenix
 Association, Upsilon Pi Epsilon, and Sigma Xi.
 
-
 He has held visiting faculty positions at [Université Paris–Dauphine (Paris
 IX)](http://www.dauphine.fr/fr/index.html), the [Conservatoire National des Arts
-et Métiers](www.cnam.fr), the [Université Paris–Descartes (Paris
+et Métiers](http://www.cnam.fr), the [Université Paris–Descartes (Paris
 V)](https://u-paris.fr/en/498-2/), [Sorbonne Université (Pierre et Marie Curie,
 Paris VI)](https://www.lip6.fr), the [University of Technology,
 Sydney](https://www.uts.edu.au), the Center for Communications Research, the
