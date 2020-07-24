@@ -18,13 +18,11 @@ Houston](http://www.cs.uh.edu). While in graduate school and before joining the
 University of California, Santa Cruz, he was a lecturer in Mathematics at San
 Diego State University and taught at the University of California, San Diego.
 
-In 2006 he was elevated to Fellow of the Institute of Electrical and Electronics
-Engineers ([IEEE])(
-https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers)
+In 2006 he was elevated to Fellow of the IEEE, the  [Institute of Electrical and Electronics
+Engineers](
+https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers),
 "for contributions to storage systems architecture and performance".  In 2008 he
-was inducted a [Fellow of the American Association for the Advancement of Science](https://en.wikipedia.org/wiki/Fellow_of_the_American_Association_for_the_Advancement_of_Science)
-([AAAS])(
-https://en.wikipedia.org/wiki/American_Association_for_the_Advancement_of_Science).
+was inducted a [Fellow of the American Association for the Advancement of Science](https://en.wikipedia.org/wiki/Fellow_of_the_American_Association_for_the_Advancement_of_Science).
 He is a member of the IEEE Computer Society, the Association for Computing
 Machinery, the American Society for Engineering Education, the Usenix
 Association, Upsilon Pi Epsilon, and Sigma Xi.
