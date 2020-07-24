@@ -1,7 +1,9 @@
 ---
 layout: page
-title: About
+title: Darrell Long | About
 ---
+
+# About
 
 Dr. Darrell D. E. Long is a Distinguished Professor of Engineering at the
 University of California, Santa Cruz. He holds the Kumar Malavalli Endowed Chair
