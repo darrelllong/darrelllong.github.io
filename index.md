@@ -3,8 +3,6 @@ layout: page
 title: Darrell Long | About
 ---
 
-# About
-
 Dr. Darrell D. E. Long is a Distinguished Professor of Engineering at the
 University of California, Santa Cruz. He holds the Kumar Malavalli Endowed Chair
 of Storage Systems Research and is Director of the Storage Systems Research
@@ -34,7 +32,7 @@ He has held visiting faculty positions at [Université Paris–Dauphine (Paris
 IX)](http://www.dauphine.fr/fr/index.html), the [Conservatoire National des Arts
 et Métiers](http://www.cnam.fr), the [Université Paris–Descartes (Paris
 V)](https://u-paris.fr/en/498-2/), [Sorbonne Université (Pierre et Marie Curie,
-Paris VI)](https://www.lip6.fr), the [University of Technology,
+Paris VI)](https://www.sorbonne-universite.fr/en), the [University of Technology,
 Sydney](https://www.uts.edu.au), the Center for Communications Research, the
 [United States Naval Postgraduate School](https://www.nps.edu), and is Professor
 *ad Honorem* de la [Universidad Católica del Uruguay](https://ucu.edu.uy/es). He
