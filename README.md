@@ -9,7 +9,7 @@ template. Each publication is given its own markdown post for formatting.
 
 Assets, or static files, for the page go in ```assets```. This includes images,
 PDFs, etc., each of which should be stored under its own subdirectory (e.g.
-```assets/pdfs```, ```assets/images```)
+```assets/pdfs```, ```assets/images```).
 
 ## Layouts
 
