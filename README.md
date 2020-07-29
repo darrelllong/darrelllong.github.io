@@ -3,12 +3,13 @@
 ## Publications
 
 Publications go in ```_publications```. See any publication inside for a general
-template. Each publication is given its own Markdown post for formatting.
+template. Each publication is given its own markdown post for formatting.
 
 ## Assets
 
 Assets, or static files, for the page go in ```assets```. This includes images,
-PDFs, etc.
+PDFs, etc., each of which should be stored under its own subdirectory (e.g.
+```assets/pdfs```, ```assets/images```)
 
 ## Layouts
 
