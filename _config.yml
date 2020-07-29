@@ -25,7 +25,7 @@ darrell:
     - title: "About"
       url: "/"
     - title: "Curriculum Vitae"
-      url: "/"
+      url: "/cv"
     - title: "Publications"
       url: "/publications"
     - title: "Laboratory"
