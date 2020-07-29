@@ -17,7 +17,7 @@ There are a couple layouts of note, each with its own purpose:
   - ```page.html```: for displaying just the content of a markdown file,
   - ```pdf.html```: for displaying embedded PDFs
   - ```publication.html```: for displaying a publication
-  - ```publications.html```: for formatting the display all publications
+  - ```publications.html```: for formatting the display of all publications
 
 ## Navigation
 
