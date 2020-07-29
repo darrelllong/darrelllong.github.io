@@ -14,7 +14,7 @@ show_excerpts: true
 darrell:
   name: "Darrell Long"
   date_format: "%b %Y"
-  portrait: "assets/portrait.png"
+  portrait: "assets/images/portrait.png"
   html_lang: "en"
   links:
     github: "https://github.com/darrelllong"
