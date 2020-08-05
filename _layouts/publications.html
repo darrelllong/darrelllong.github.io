@@ -6,6 +6,18 @@ layout: frontmatter
 
 {%- if site.publications.size > 0 -%}
   <ul class="posts">
+    <li class="posts-labelgroup" id="posts-labelgroup">
+      <h1 id="posts-label">Search</h1>
+      <div class="search-container">
+        <div class="search-section">
+          <i class="icon-search"></i>
+          <input type="text" name="search" id="searchbar" autocomplete="off" >
+        </div>
+        <div class="search-results" id="search-results" data-placeholder="No
+          Results" style="display: none;"></div>
+      </div>
+    </li>
+
     {% assign publications = site.publications | sort: 'date' | reverse %}
     {%- for publication in publications -%}
       <li>

@@ -6,7 +6,7 @@ window.onload = function () {
         searchInput: document.getElementById('searchbar'),
         resultsContainer: document.getElementById('search-results'),
         json: '{{ "/search.json" | relative_url }}',
-        searchResultTemplate: '<a href="{url}" target="_blank">{title}</a>',
+        searchResultTemplate: '<a href="{url}">{title}</a>',
         noResultsText: ''
     });
 
@@ -40,4 +40,3 @@ window.onload = function () {
         document.body.onclick = null;
     };
 }
-
