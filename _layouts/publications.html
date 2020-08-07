@@ -23,7 +23,7 @@ layout: frontmatter
       <li>
         {%- assign date_format = site.darrell.date_format | default: "%b %-d, %Y" -%}
         <a class="post-link" href="{{ publication.url | relative_url }}">
-          <h3 class="post-title">{{ publication.title | escape }}</h3>
+          <h3 class="post-title">{{ publication.header | escape }}</h3>
         </a>
         <div class="post-meta">
           <div class="post-date">
