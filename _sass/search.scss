@@ -14,7 +14,7 @@ main {
 
   .search-section {
     display: flex;
-    flex-grow: 1;
+    // flex-grow: 1;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
     align-items: center;
@@ -33,7 +33,7 @@ main {
     color: #555;
     background-color: transparent;
     font-size: 15px;
-    flex-grow: 1;
+    // flex-grow: 1;
     height: 39px;
     border: none;
     padding: 10px 0;
@@ -95,7 +95,7 @@ main {
 
   .search-container {
     display: block;
-    flex-grow: 1;
+    // flex-grow: 1;
     position: relative;
   }
 

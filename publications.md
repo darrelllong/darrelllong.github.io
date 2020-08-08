@@ -39,8 +39,7 @@ layout: frontmatter
     <div class="search-container">
       <div class="search-section">
         <i class="icon-search"></i>
-        <input type="text" name="search" id="text">
-        <button id="button" style="display: none;" onclick="filter(document.getElementById('text').value)"></button>
+        <input type="text" name="search" id="text" oninput="filter(document.getElementById('text').value)">
         <script>
           var input = document.getElementById("text");
           input.addEventListener("keyup", function(event) {
