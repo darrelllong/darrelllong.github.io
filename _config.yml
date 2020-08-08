@@ -13,7 +13,7 @@ show_excerpts: true
 #
 darrell:
   name: "Darrell Long"
-  date_format: "%b %Y"
+  date_format: "%B %Y"
   portrait: "assets/images/portrait.png"
   html_lang: "en"
   links:
