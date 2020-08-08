@@ -4,30 +4,23 @@ title: Darrell Long | Publications
 ---
 
 <script type="text/javascript">
-  function filter(text_) {
-    var text = text_.toLowerCase();
+  function filter(input) {
+    var text = input.toLowerCase();
     var id = 1;
     {% assign publications = site.publications | reverse %}
     {% for publication in publications %}
-      var pubContent = {{
-        publication.content |
-        downcase | strip_html | strip_newlines |
-        remove_chars | escape | truncate:200 | jsonify
+      var content = {{
+        publication.content | downcase | strip_html | jsonify
       }};
-      var pubHeader = {{
-        publication.header | escape |
-        downcase | strip_html | strip_newlines |
-        remove_chars | escape | truncate:200 | jsonify
-      }};
-      var pubDate = {{
-        publication.date | date: "%-d %B %Y" | escape |
-        downcase | strip_html | strip_newlines |
-        remove_chars | escape | truncate:200 | jsonify
+      var header = {{
+        publication.header | downcase | strip_html | jsonify
+        }};
+      var date = {{
+        publication.date | date: "%-d %B %Y" | downcase | strip_html | jsonify
       }};
       var div = document.getElementById(id);
       div.style.display = (
-        pubContent.includes(text) || pubHeader.includes(text) ||
-        pubDate.includes(text) || text == ""
+        content.includes(text) || header.includes(text) || date.includes(text) || text == ""
       ) ? 'unset' : 'none';
       id += 1;
     {% endfor %}
@@ -41,15 +34,6 @@ title: Darrell Long | Publications
       <div class="search-section">
         <i class="icon-search"></i>
         <input type="text" name="search" id="text" oninput="filter(document.getElementById('text').value)">
-        <script>
-          var input = document.getElementById("text");
-          input.addEventListener("keyup", function(event) {
-            if (event.keyCode === 13) {
-              event.preventDefault();
-              document.getElementById("button").click();
-            }
-          });
-        </script>
       </div>
     </div>
   </li>
