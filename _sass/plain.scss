@@ -180,12 +180,21 @@ main {
     margin-right: 10px;
   }
 }
+
 .post-date {
+  margin-left: 5px;
   margin-right: 10px;
   margin-bottom: 5px;
   color: #555;
-  min-width: 150px;
+  text-align: right;
 }
+
+.post-authors {
+  margin-bottom: 5px;
+  color: #555;
+  text-align: left;
+}
+
 .post-meta {
   display: flex;
   justify-content: space-between;
@@ -199,6 +208,7 @@ main {
     }
   }
 }
+
 .post-link {
   text-decoration: none;
 }
@@ -208,6 +218,7 @@ main {
   font-size: 28px;
   margin-bottom: 10px;
 }
+
 .posts,
 .post-container {
   list-style-type: none;
@@ -221,9 +232,11 @@ main {
     margin-top: 0;
   }
 }
+
 .post-container {
   padding-left: 30px;
 }
+
 .post {
   font-family: "Merriweather", sans-serif;
   font-weight: 300;
@@ -249,6 +262,7 @@ main {
     font-family: Raleway, sans-serif;
   }
 }
+
 .posts-labelgroup {
   margin: 0 0 0.67em 0;
   display: flex;

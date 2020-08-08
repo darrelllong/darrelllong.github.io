@@ -18,9 +18,13 @@ title: Darrell Long | Publications
       var date = {{
         publication.date | date: "%-d %B %Y" | downcase | strip_html | jsonify
       }};
+      var authors = {{
+        publication.authors | downcase | strip_html | jsonify
+      }};
       var div = document.getElementById(id);
       div.style.display = (
-        content.includes(text) || header.includes(text) || date.includes(text) || text == ""
+        content.includes(text) || header.includes(text) || date.includes(text) ||
+        authors.includes(text) || text == ""
       ) ? 'unset' : 'none';
       id += 1;
     {% endfor %}
@@ -49,6 +53,9 @@ title: Darrell Long | Publications
           <h3 class="post-title">{{ publication.header | escape }}</h3>
         </a>
         <div class="post-meta">
+          <div class="post-authors">
+            {{ publication.authors }}
+          </div>
           <div class="post-date">
             <i class="icon-calendar"></i>
               {{ publication.date | date: date_format }}
