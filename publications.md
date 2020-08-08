@@ -1,5 +1,6 @@
 ---
 layout: frontmatter
+title: Darrell Long | Publications
 ---
 
 <script type="text/javascript">
@@ -25,8 +26,8 @@ layout: frontmatter
       }};
       var div = document.getElementById(id);
       div.style.display = (
-        text == "" || pubContent.includes(text) || pubHeader.includes(text) ||
-        pubDate.includes(text)
+        pubContent.includes(text) || pubHeader.includes(text) ||
+        pubDate.includes(text) || text == ""
       ) ? 'unset' : 'none';
       id += 1;
     {% endfor %}
