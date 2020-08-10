@@ -5,15 +5,21 @@
   </head>
   <body>
     <div id="hamburger">
-      <input type="checkbox" />
+      <input type="checkbox"/>
       <span></span>
       <span></span>
       <span></span>
       <ul id="menu">
         {% for link in site.darrell.navigation %}
-        <li>
-          <a href="{{ link.url }}">{{ link.title }}</a>
-        </li>
+          {% if link.title == "About" or link.title == "Publications" %}
+            <li>
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% else %}
+            <li>
+              <a href="{{ link.url }}" target="_blank">{{ link.title }}</a>
+            </li>
+          {% endif %}
         {% endfor %}
           <li>
             <a href="{{ site.darrell.links.github }}" target="_blank">
@@ -41,9 +47,15 @@
         <nav class="navigation">
           <ul>
             {% for link in site.darrell.navigation %}
-            <li>
-              <a href="{{ link.url }}">{{ link.title }}</a>
-            </li>
+              {% if link.title == "About" or link.title == "Publications" %}
+                <li>
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+              {% else %}
+                <li>
+                  <a href="{{ link.url }}" target="_blank">{{ link.title }}</a>
+                </li>
+              {% endif %}
             {% endfor %}
           </ul>
         </nav>
