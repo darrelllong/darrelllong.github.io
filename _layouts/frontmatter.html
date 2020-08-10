@@ -4,6 +4,19 @@
     {%- include head.html -%}
   </head>
   <body>
+    <div id="hamburger">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        {% for link in site.darrell.navigation %}
+        <li>
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
     <main class="container">
       <section class="about">
         <div class="img-zoom-slowmo">
