@@ -23,13 +23,19 @@
         {% endfor %}
           <li>
             <a href="{{ site.darrell.links.github }}" target="_blank">
-              <i class="icon-github-circled"></i>
+              <i class="icon-github"></i>
             </a>
             <a href="{{ site.darrell.links.linkedin }}" target="_blank">
-              <i class="icon-linkedin-squared"></i>
+              <i class="icon-linkedin"></i>
+            </a>
+            <a href="{{ site.darrell.links.orcid }}" target="_blank">
+              <i class="icon-orcid"></i>
+            </a>
+            <a href="{{ site.darrell.links.gscholar }}" target="_blank">
+              <i class="icon-gscholar"></i>
             </a>
             <a href="{{ site.darrell.links.wikipedia }}" target="_blank">
-              <i class="icon-wikipedia-w"></i>
+              <i class="icon-wikipedia"></i>
             </a>
           </li>
       </ul>
@@ -61,28 +67,28 @@
         </nav>
         {%- endif -%}
         <ul class="social">
-          {%- if site.darrell.links.github -%}
           <a href="{{ site.darrell.links.github }}" target="_blank">
             <li>
-              <i class="icon-github-circled"></i>
+              <i class="icon-github"></i>
             </li>
           </a>
-          {%- endif -%}
-          {%- if site.darrell.links.linkedin -%}
           <a href="{{ site.darrell.links.linkedin }}"
             target="_blank">
             <li>
-              <i class="icon-linkedin-squared"></i>
+              <i class="icon-linkedin"></i>
             </li>
           </a>
-          {%- endif -%}
-          {%- if site.darrell.links.wikipedia -%}
-            <a href="{{ site.darrell.links.wikipedia }}" target="_blank">
+          <a href="{{ site.darrell.links.orcid }}" target="_blank">
+            <i class="icon-orcid"></i>
+          </a>
+          <a href="{{ site.darrell.links.gscholar }}" target="_blank">
+            <i class="icon-gscholar"></i>
+          </a>
+          <a href="{{ site.darrell.links.wikipedia }}" target="_blank">
             <li>
-              <i class="icon-wikipedia-w"></i>
+              <i class="icon-wikipedia"></i>
             </li>
           </a>
-          {%- endif -%}
         </ul>
       </section>
       <section class="content">
