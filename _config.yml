@@ -20,6 +20,8 @@ darrell:
     github: "https://github.com/darrelllong"
     linkedin: "https://www.linkedin.com/in/darrell-d-e-long/"
     wikipedia: "https://en.wikipedia.org/wiki/Darrell_Long"
+    gscholar: "https://scholar.google.com/citations?user=PqdLgQ0AAAAJ&hl=en&oi=ao"
+    orcid: "https://orcid.org/0000-0002-0822-0740"
 
   navigation:
     - title: "About"
@@ -30,8 +32,6 @@ darrell:
       url: "/publications.html"
     - title: "Laboratory"
       url: "https://www.ssrc.ucsc.edu/index.html"
-    - title: "Citations"
-      url: "https://scholar.google.com/citations?user=PqdLgQ0AAAAJ&hl=en&oi=ao"
     - title: "Students"
       url: "https://www.genealogy.math.ndsu.nodak.edu/id.php?id=10794"
 
