@@ -1,6 +1,7 @@
-import tkinter
+from getpass import getpass
 from tkinter import *
 from tkinter.scrolledtext import ScrolledText
+import tkinter
 import psycopg2
 import psycopg2.extras
 import sys
@@ -56,9 +57,10 @@ def add_pub():
 
     try:
         conn = psycopg2.connect(
-            user = "Eugene",
-            host = "127.0.0.1",
-            database = "website"
+            user = "darrell",
+            host = "darrell.soe.ucsc.edu",
+            database = "website",
+            password = getpass()
         )
 
         with conn:
@@ -74,6 +76,7 @@ def add_pub():
             conn.close()
 
     sys.exit(0)
+
 
 window = Tk()
 window.title("Publications Adder")
