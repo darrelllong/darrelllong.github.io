@@ -38,9 +38,6 @@ def create_md(row):
         # Frontmatter postlude.
         file.write("---\n")
 
-        # Book title.
-        file.write(f"\nAppeared in _{row['booktitle']}_.\n")
-
         # Abstract.
         file.write("\n# Abstract\n\n")
         file.write(f"{row['abstract']}\n")
