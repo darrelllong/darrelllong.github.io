@@ -1,3 +1,4 @@
+from getpass import getpass
 import psycopg2
 import psycopg2.extras
 import re
@@ -49,9 +50,10 @@ def create_md(row):
 def main():
     try:
         conn = psycopg2.connect(
-            user = "Eugene",
-            host = "127.0.0.1",
-            database = "website"
+            user = "darrell",
+            host = "darrell.soe.ucsc.edu",
+            database = "website",
+            password = getpass()
         )
 
         with conn:
