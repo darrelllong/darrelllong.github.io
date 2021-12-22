@@ -12,7 +12,7 @@ low-bandwidth multicast techniques for video on demand, among other topics.
 
 He received his B.S. degree in Computer Science from San Diego State University,
 and his M.S. and Ph.D. from the University of California, San Diego. His
-[dissertation](http://www.ssrc.ucsc.edu/~darrell/dissertation.pdf) advisor was
+dissertation advisor was
 [Jehan-François Pâris](http://www2.cs.uh.edu/~paris/), now at the [University of
 Houston](http://www.cs.uh.edu). While in graduate school and before joining the
 University of California, Santa Cruz, he was a lecturer in Mathematics at San
