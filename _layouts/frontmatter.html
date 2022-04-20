@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="{{ site.darrell.html_lang }}">
+  <head>
+    {%- include head.html -%}
+  </head>
+  <body>
+    <div id="hamburger">
+      <input type="checkbox"/>
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        {% for link in site.darrell.navigation %}
+          {% if link.title == "About" or link.title == "Publications" %}
+            <li>
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% else %}
+            <li>
+              <a href="{{ link.url }}" target="_blank">{{ link.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+          <li>
+            <a href="{{ site.darrell.links.github }}" target="_blank">
+              <i class="icon-github"></i>
+            </a>
+            <a href="{{ site.darrell.links.linkedin }}" target="_blank">
+              <i class="icon-linkedin"></i>
+            </a>
+            <a href="{{ site.darrell.links.orcid }}" target="_blank">
+              <i class="icon-orcid"></i>
+            </a>
+            <a href="{{ site.darrell.links.gscholar }}" target="_blank">
+              <i class="icon-gscholar"></i>
+            </a>
+            <a href="{{ site.darrell.links.wikipedia }}" target="_blank">
+              <i class="icon-wikipedia"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+    <main class="container">
+      <section class="about">
+        <div class="img-zoom-slowmo">
+          <img src="{{ site.baseurl }}/{{ site.darrell.portrait }}" alt="{{
+            site.darrell.name }}">
+        </div>
+        <h2 id="title">
+          <a href="{{ "/" | relative_url }}">{{ site.darrell.name }}</a>
+        </h2>
+        {%- if site.darrell.navigation -%}
+        <nav class="navigation">
+          <ul>
+            {% for link in site.darrell.navigation %}
+              {% if link.title == "About" or link.title == "Publications" %}
+                <li>
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+              {% else %}
+                <li>
+                  <a href="{{ link.url }}" target="_blank">{{ link.title }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </nav>
+        {%- endif -%}
+        <ul class="social">
+          <a href="{{ site.darrell.links.github }}" target="_blank">
+            <li>
+              <i class="icon-github"></i>
+            </li>
+          </a>
+          <a href="{{ site.darrell.links.linkedin }}"
+            target="_blank">
+            <li>
+              <i class="icon-linkedin"></i>
+            </li>
+          </a>
+          <a href="{{ site.darrell.links.orcid }}" target="_blank">
+            <i class="icon-orcid"></i>
+          </a>
+          <a href="{{ site.darrell.links.gscholar }}" target="_blank">
+            <i class="icon-gscholar"></i>
+          </a>
+          <a href="{{ site.darrell.links.wikipedia }}" target="_blank">
+            <li>
+              <i class="icon-wikipedia"></i>
+            </li>
+          </a>
+        </ul>
+      </section>
+      <section class="content">
+        {{ content }}
+      </section>
+    </main>
+  </body>
+</html>
