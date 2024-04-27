@@ -4,7 +4,7 @@ title: Darrell Long | About
 ---
 
 Dr. Darrell D. E. Long is a Distinguished Visiting Scholar at Santa Clara University
-and is a Distinguished Professor of Engineering, *emeritus*, at the University of California, Santa Cruz.
+and is Distinguished Professor of Engineering, *emeritus*, at the University of California, Santa Cruz.
 He held the Kumar Malavalli Endowed Chair
 of Storage Systems Research and is Director, *emeritus*, of the Storage Systems Research
 Center and Director, *emeritus*, of the NSF I/UCRC Center for Research in Systems and Storage.
