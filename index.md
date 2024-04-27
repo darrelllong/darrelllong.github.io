@@ -3,10 +3,12 @@ layout: page
 title: Darrell Long | About
 ---
 
-Dr. Darrell D. E. Long is a Distinguished Professor of Engineering at the
-University of California, Santa Cruz. He holds the Kumar Malavalli Endowed Chair
+Dr. Darrell D. E. Long is a Distinguished Visiting Scholar at Santa Clara University
+and is a Distinguished Professor of Engineering, *emeritus*, at the University of California, Santa Cruz.
+He held the Kumar Malavalli Endowed Chair
 of Storage Systems Research and is Director, *emeritus*, of the Storage Systems Research
-Center and Director of the NSF I/UCRC Center for Research in Systems and Storage. He has authored highly cited research papers on web caching, distributed
+Center and Director of the NSF I/UCRC Center for Research in Systems and Storage.
+He has authored highly cited research papers on web caching, distributed
 file systems, power-aware hard disk management in mobile computing, and
 low-bandwidth multicast techniques for video on demand, among other topics.
 
@@ -36,7 +38,7 @@ Paris VI)](https://www.sorbonne-universite.fr/en), the [University of Technology
 Sydney](https://www.uts.edu.au), the Center for Communications Research, the
 [United States Naval Postgraduate School](https://www.nps.edu), and is Professor
 *ad Honorem* de la [Universidad Católica del Uruguay](https://ucu.edu.uy/es). He
-is an Associate Member of the European Organization for Nuclear Research
+was an Associate Member of the European Organization for Nuclear Research
 ([CERN](https://home.cern)).
 
 He has broad research interests in many areas of mathematics and science, and in
