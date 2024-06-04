@@ -1,0 +1,82 @@
+@import "variables";
+$duration: 0.25s;
+$width: 35px;
+$height: $width / 7;
+$bottom-distance: $width / 1.75;
+$middle-distance: $bottom-distance / 2;
+$top-distance: 0px;
+
+.hamburger-btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: $height * 3 $height * 2; // extra padding for better touch support
+  border: 0;
+  margin: 0;
+  background: none;
+  overflow: visible;
+
+  &:hover {
+    .hamburger-container {
+
+      .hamburger-line,
+      .hamburger-line::before,
+      .hamburger-line::after {
+        background-color: $link;
+      }
+    }
+  }
+
+  .hamburger-container {
+    width: $width;
+    height: $height + $bottom-distance;
+    display: block;
+    position: relative;
+
+    .hamburger-line,
+    .hamburger-line::before,
+    .hamburger-line::after {
+      display: block;
+      content: "";
+      width: $width;
+      height: $height;
+      background-color: $dark;
+      border-radius: $width;
+      position: absolute;
+      transition-property: transform;
+      transition-duration: $duration;
+      transition-timing-function: ease;
+    }
+
+    // Top line
+    .hamburger-line {
+      top: $top-distance;
+    }
+
+    // Middle line
+    .hamburger-line::before {
+      top: $middle-distance;
+      transition-property: transform, opacity, width;
+    }
+
+    // Bottom line
+    .hamburger-line::after {
+      top: $bottom-distance;
+    }
+  }
+
+  // Transform lines into an X when btn is active
+  &.is-active {
+    .hamburger-line {
+      transform: translate3d(0, $middle-distance, 0) rotate(-45deg);
+    }
+
+    .hamburger-line::before {
+      transform: translate3d($top-distance, -$middle-distance, 0) rotate(180deg);
+      opacity: 0;
+    }
+
+    .hamburger-line::after {
+      transform: translate3d(0, -$bottom-distance, 0) rotate(90deg);
+    }
+  }
+}
