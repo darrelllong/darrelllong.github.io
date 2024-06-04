@@ -1,15 +1,15 @@
 @import "variables";
 $duration: 0.25s;
 $width: 35px;
-$height: $width / 7;
-$bottom-distance: $width / 1.75;
-$middle-distance: $bottom-distance / 2;
+$height: calc($width / 7);
+$bottom-distance: calc($width / 1.5);
+$middle-distance: calc($bottom-distance / 2);
 $top-distance: 0px;
 
 .hamburger-btn {
   display: inline-block;
   cursor: pointer;
-  padding: $height * 3 $height * 2; // extra padding for better touch support
+  padding: calc($height * 3) calc($height * 2); // extra padding for better touch support
   border: 0;
   margin: 0;
   background: none;
@@ -28,7 +28,7 @@ $top-distance: 0px;
 
   .hamburger-container {
     width: $width;
-    height: $height + $bottom-distance;
+    height: calc($height + $bottom-distance);
     display: block;
     position: relative;
 

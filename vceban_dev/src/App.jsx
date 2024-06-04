@@ -30,20 +30,19 @@ import {
   faLaptopCode,
   faStore,
 } from "@fortawesome/free-solid-svg-icons";
-/* Logo */
-import logo from "/logo.svg";
+/* Context provider */
+import { ContextProvider } from "./ContextProvider";
 /* Components */
-import Hamburger from "./components/Hamburger";
+import Header from "./components/Header";
+import Main from "./components/Main";
 
 export default function App() {
-  const [navMenuState, setNavMenuState] = React.useState(false);
   return (
     <>
-      <h1>Hello world</h1>
-      <p>123</p>
-      <img src={logo} className="App-logo" alt="logo" />
-      <FontAwesomeIcon icon={faUsers} />
-      <Hamburger menuState={navMenuState} setMenuState={setNavMenuState} />
+      <ContextProvider>
+        <Header />
+        <Main />
+      </ContextProvider>
     </>
   );
 }
