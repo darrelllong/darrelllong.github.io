@@ -1,8 +1,11 @@
 import React from "react";
-import logo from "/logo.svg";
+import logo from "../assets/img/DLong.avif";
 import { Context } from "../ContextProvider";
 // Components
 import Hamburger from "./Hamburger";
+import Menu from "./Menu";
+// CSS
+import "../assets/css/header.scss";
 
 export default function Header() {
   const { appState, setAppState } = React.useContext(Context);
@@ -20,29 +23,39 @@ export default function Header() {
     };
   }, []);
 
-  const showMenu = (appState, windowWidth) => {
+  const showHamburger = (appState, windowWidth) => {
     if (["menu", "home"].includes(appState)) {
       return false;
     }
-    if (windowWidth > 768) {
+    if (windowWidth >= 768) {
+      return false;
+    }
+    return true;
+  };
+
+  const showMenu = () => {
+    if (["menu", "home"].includes(appState)) {
+      return false;
+    }
+    if (windowWidth < 768) {
       return false;
     }
     return true;
   };
 
   return (
-    <header className={appState}>
+    <header className={appState} id="page-header">
       <h1>Darrell Long</h1>
       <img
         src={logo}
         className="App-logo"
-        alt="logo"
-        width="135"
-        height="142"
+        alt="Darrell Long"
+        onClick={() => setAppState("menu")}
       />
-      {showMenu(appState, windowWidth) && (
+      {showHamburger(appState, windowWidth) && (
         <Hamburger setAppState={setAppState} />
       )}
+      {showMenu(appState, windowWidth) && <Menu />}
     </header>
   );
 }

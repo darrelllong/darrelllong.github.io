@@ -14,13 +14,8 @@ export default function Main() {
     default: <Menu />,
   };
 
-  const { appState, setAppState } = React.useContext(Context);
+  const { appState } = React.useContext(Context);
   const component = components[appState] || components.default;
 
-  return (
-    <main className={appState}>
-      <h1>{appState}</h1>
-      {component}
-    </main>
-  );
+  return <main className={appState}>{component}</main>;
 }

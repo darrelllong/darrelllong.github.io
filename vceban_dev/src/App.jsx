@@ -3,14 +3,6 @@
 import React from "react";
 /* Font Awesome icons */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-/* Social media and brand icons */
-import {
-  faGithub,
-  faLinkedin,
-  faOrcid,
-  faGoogleScholar,
-  faWikipediaW,
-} from "@fortawesome/free-brands-svg-icons";
 /* Solid icons */
 import {
   faBars,
@@ -35,6 +27,7 @@ import { ContextProvider } from "./ContextProvider";
 /* Components */
 import Header from "./components/Header";
 import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -42,6 +35,7 @@ export default function App() {
       <ContextProvider>
         <Header />
         <Main />
+        <Footer />
       </ContextProvider>
     </>
   );
