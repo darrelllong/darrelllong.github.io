@@ -8,7 +8,7 @@ import {
 import cv from "../assets/cv.pdf";
 
 export default function Menu() {
-  const { appState, setAppState } = React.useContext(Context);
+  const { setAppState } = React.useContext(Context);
 
   const menuItems = [
     { label: "About", page: "about" },
@@ -28,21 +28,23 @@ export default function Menu() {
   ];
 
   return (
-    <ul>
-      {menuItems.map((item, index) => (
-        <li key={index}>
-          {item.link ? (
-            <a href={item.link} target="_blank">
-              {item.label}
-              <FontAwesomeIcon icon={item.icon} />
-            </a>
-          ) : (
-            <a href={`#${item.page}`} onClick={() => setAppState(item.page)}>
-              {item.label}
-            </a>
-          )}
-        </li>
-      ))}
-    </ul>
+    <nav>
+      <ul>
+        {menuItems.map((item, index) => (
+          <li key={index}>
+            {item.link ? (
+              <a href={item.link} target="_blank" rel="noreferrer">
+                {item.label}
+                <FontAwesomeIcon icon={item.icon} />
+              </a>
+            ) : (
+              <a href={`#${item.page}`} onClick={() => setAppState(item.page)}>
+                {item.label}
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 }
