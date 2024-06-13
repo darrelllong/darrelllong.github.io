@@ -43,17 +43,22 @@ export default function Header() {
     return true;
   };
 
+  const setAppStateToMenuAndGoHome = () => {
+    setAppState("menu");
+    window.location.hash = "home";
+  };
+
   return (
     <header className={appState} id="page-header">
-      <h1>Darrell Long</h1>
+      <h1 onClick={() => setAppStateToMenuAndGoHome()}>Darrell Long</h1>
       <img
         src={logo}
         className="App-logo"
         alt="Darrell Long"
-        onClick={() => setAppState("menu")}
+        onClick={() => setAppStateToMenuAndGoHome()}
       />
       {showHamburger(appState, windowWidth) && (
-        <Hamburger setAppState={setAppState} />
+        <Hamburger setAppState={setAppStateToMenuAndGoHome} />
       )}
       {showMenu(appState, windowWidth) && <Menu />}
     </header>

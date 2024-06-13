@@ -5,6 +5,8 @@ import About from "./About";
 import Publications from "./Publications";
 import Consultancy from "./Consultancy";
 import Menu from "./Menu";
+// CSS
+import "../assets/css/home.scss";
 
 export default function Main() {
   const components = {

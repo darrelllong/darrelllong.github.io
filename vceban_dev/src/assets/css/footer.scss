@@ -1,0 +1,31 @@
+footer {
+  margin: 0 auto 55px;
+  max-width: fit-content;
+
+  ul {
+    display: flex;
+
+    li {
+      text-align: center;
+      margin-right: 34px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      a:link,
+      a:visited {
+        color: $dark;
+
+        &:hover,
+        &:active {
+          color: $link;
+        }
+
+        svg {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}
