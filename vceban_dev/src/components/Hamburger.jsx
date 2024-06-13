@@ -7,8 +7,7 @@ export default function Hamburger({ setAppState }) {
     <button
       className={styles["hamburger-btn"]}
       onClick={() => {
-        setAppState("menu");
-        window.location.hash = "home";
+        setAppState();
       }}
     >
       <span className={styles["hamburger-container"]}>

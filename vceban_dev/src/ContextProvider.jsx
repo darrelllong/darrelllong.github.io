@@ -10,6 +10,7 @@ function getValueFromUrl(url) {
 
 export const Context = React.createContext();
 
+// eslint-disable-next-line react/prop-types
 export const ContextProvider = ({ children }) => {
   const state = getValueFromUrl(window.location.hash) || "menu";
   const [appState, setAppState] = React.useState(state);

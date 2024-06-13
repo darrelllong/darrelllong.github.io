@@ -8,7 +8,7 @@ import {
 import cv from "../assets/cv.pdf";
 
 export default function Menu() {
-  const { setAppState } = React.useContext(Context);
+  const { appState, setAppState } = React.useContext(Context);
 
   const menuItems = [
     { label: "About", page: "about" },
@@ -28,7 +28,7 @@ export default function Menu() {
   ];
 
   return (
-    <nav>
+    <nav className={appState === "menu" ? "dottedBorder" : ""}>
       <ul>
         {menuItems.map((item, index) => (
           <li key={index}>
