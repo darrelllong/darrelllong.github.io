@@ -38,7 +38,14 @@ export default function Menu() {
                 <FontAwesomeIcon icon={item.icon} />
               </a>
             ) : (
-              <a href={`#${item.page}`} onClick={() => setAppState(item.page)}>
+              <a
+                href={`/${item.page}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.history.pushState({}, "", item.page);
+                  setAppState(item.page);
+                }}
+              >
                 {item.label}
               </a>
             )}

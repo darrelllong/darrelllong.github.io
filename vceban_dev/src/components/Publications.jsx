@@ -1,28 +1,51 @@
 import React from "react";
-import publications from "./publications.json";
+import publications from "../assets/publications.json";
 import Pagination from "./Pagination";
-import Publication from "./Publication";
+import PublicationCard from "./PublicationCard";
 
 export default function Publications() {
   const [currentPage, setCurrentPage] = React.useState(0);
+  const [searchTerm, setSearchTerm] = React.useState("");
   const publicationsPerPage = 9;
+
+  const filteredPublications = publications.filter((publication) => {
+    const searchString = searchTerm.toLowerCase();
+    return (
+      publication.title.toLowerCase().includes(searchString) ||
+      publication.full_content.toLowerCase().includes(searchString) ||
+      publication.author.some((author) =>
+        author.toLowerCase().includes(searchString),
+      ) ||
+      publication.date.toLowerCase().includes(searchString)
+    );
+  });
 
   return (
     <>
       <h2>Publications</h2>
-      <div className="publications-list">
-        {publications
+      <input
+        type="text"
+        placeholder="Search..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
+      <section className="articles">
+        {filteredPublications
           .slice(
             currentPage * publicationsPerPage,
             (currentPage + 1) * publicationsPerPage,
           )
           .map((publication, index) => (
-            <Publication key={index} publication={publication} />
+            <PublicationCard
+              key={index}
+              publication={publication}
+              setSearchTerm={setSearchTerm}
+            />
           ))}
-      </div>
+      </section>
       <Pagination
         currentPage={currentPage}
-        totalPublications={publications.length}
+        totalPublications={filteredPublications.length}
         publicationsPerPage={publicationsPerPage}
         changePage={setCurrentPage}
       />
