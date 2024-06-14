@@ -1,4 +1,6 @@
-footer {
+@import "variables";
+
+#page-footer {
   margin: 0 auto 55px;
   max-width: fit-content;
 
@@ -8,6 +10,10 @@ footer {
     li {
       text-align: center;
       margin-right: 34px;
+
+      @media screen and (min-width: 1160px) {
+        margin-right: 64px;
+      }
 
       &:last-of-type {
         margin-right: 0;

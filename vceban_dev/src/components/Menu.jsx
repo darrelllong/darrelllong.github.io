@@ -28,7 +28,7 @@ export default function Menu() {
   ];
 
   return (
-    <nav className={appState === "menu" ? "dottedBorder" : ""}>
+    <nav className={["menu", "home"].includes(appState) ? "dottedBorder" : ""}>
       <ul>
         {menuItems.map((item, index) => (
           <li key={index}>

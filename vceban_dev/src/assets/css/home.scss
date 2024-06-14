@@ -5,14 +5,15 @@ main.home {
   nav {
     max-width: 319px;
     margin: 110px auto 70px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 
     ul {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 36px;
+
       li {
-        text-transform: uppercase;
-        font-weight: 300;
-        text-align: center;
-        font-size: 36px;
         margin-bottom: 30px;
 
         &:last-of-type {
@@ -27,6 +28,30 @@ main.home {
             margin-left: 12px;
           }
         }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1160px) {
+    padding: 0 153px;
+
+    nav {
+      margin: 144px auto 84px;
+      padding-bottom: 130px;
+      max-width: 100%;
+
+      &.dottedBorder {
+        &:after {
+          background: repeating-linear-gradient(to right,
+              $dark,
+              $dark 7px,
+              transparent 7px,
+              transparent 14px);
+        }
+      }
+
+      ul {
+        text-align: right;
       }
     }
   }
