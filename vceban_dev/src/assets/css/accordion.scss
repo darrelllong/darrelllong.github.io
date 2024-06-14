@@ -1,0 +1,51 @@
+@import "variables";
+
+.accordion {
+  padding-bottom: 64px;
+  margin: 60px 0;
+
+  header {
+    cursor: pointer;
+    transition: color 0.15s ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    place-items: center;
+    margin-bottom: 24px;
+
+    h3 {
+      font-size: 36px;
+    }
+
+    svg {
+      font-size: 30px;
+      transition: transform 0.2s ease-out;
+      width: 30px;
+    }
+
+    &:hover {
+      color: $link;
+    }
+  }
+
+  main {
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
+
+    p {
+      margin-bottom: 16px;
+    }
+  }
+
+  &.expanded {
+    header {
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+
+    main {
+      max-height: 100vh;
+    }
+  }
+}
