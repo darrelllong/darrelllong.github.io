@@ -9,7 +9,7 @@
     transition: color 0.15s ease-in-out;
     display: grid;
     grid-template-columns: 1fr auto;
-    place-items: center;
+    align-items: center;
     margin-bottom: 24px;
 
     h3 {
@@ -24,6 +24,17 @@
 
     &:hover {
       color: $link;
+    }
+
+    @media screen and (min-width: 968px) {
+      h3 {
+        font-size: 20px;
+      }
+
+      svg {
+        font-size: 24px;
+        width: 24px;
+      }
     }
   }
 

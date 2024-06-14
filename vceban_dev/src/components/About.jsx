@@ -1,6 +1,7 @@
 import React from "react";
 import Accordion from "./Accordion";
 import picture from "../assets/img/DLong.avif";
+import "../assets/css/about.scss";
 
 const accordionData = [
   {
@@ -33,7 +34,7 @@ const accordionData = [
 export default function About() {
   return (
     <>
-      <section className="about dottedBorder">
+      <section className="aboutSection dottedBorder">
         <h2>About</h2>
         <img src={picture} alt="Darrell Long" />
         <p>

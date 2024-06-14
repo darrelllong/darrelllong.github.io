@@ -22,6 +22,30 @@
 
   >main {
     padding: 0 20px;
+
+    &:after {
+      display: none;
+    }
+
+    &.about,
+    &.publications,
+    &.publication,
+    &.consultancy {
+      max-width: 430px;
+      margin: 96px auto 0;
+
+      @media screen and (min-width: 968px) {
+        max-width: 100%;
+        margin: 58px 0;
+        padding-bottom: 50px;
+
+        &:after {
+          display: inherit;
+          max-width: calc(100% - 40px);
+          transform: translateX(20px);
+        }
+      }
+    }
   }
 }
 
@@ -29,6 +53,10 @@ h2,
 h3,
 h4 {
   font-weight: 500;
+}
+
+h2 {
+  font-size: 36px;
 }
 
 body {
