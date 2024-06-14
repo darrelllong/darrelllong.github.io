@@ -3,7 +3,7 @@ import React from "react";
 export default function Consultancy() {
   return (
     <>
-      <h1>Consultancy</h1>
+      <h2>Consultancy</h2>
     </>
   );
 }
