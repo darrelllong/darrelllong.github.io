@@ -1,0 +1,90 @@
+import React from "react";
+export default function Pagination(props) {
+  // eslint-disable-next-line react/prop-types
+  const { totalPublications, publicationsPerPage, currentPage, changePage } =
+    props;
+  const totalPages = Math.ceil(totalPublications / publicationsPerPage);
+  const lastPage = totalPages - 1;
+  const displayPages = 8;
+
+  const renderPageNumbers = () => {
+    const pageNumbers = [];
+
+    const addPageButton = (pageNumber) => {
+      pageNumbers.push(
+        <button
+          key={pageNumber}
+          onClick={() => changePage(pageNumber)}
+          disabled={currentPage === pageNumber}
+        >
+          {pageNumber + 1}
+        </button>,
+      );
+    };
+
+    const addEllipsis = (key, page) => {
+      pageNumbers.push(
+        <button key={key} onClick={() => changePage(page)}>
+          ...
+        </button>,
+      );
+    };
+
+    if (totalPages <= displayPages) {
+      // If total pages are less than or equal to displayPages, show all page buttons
+      for (let i = 0; i < totalPages; i++) {
+        addPageButton(i);
+      }
+    } else {
+      // Always show the first page button
+      addPageButton(0);
+
+      // ellipsis-start point to the page in between of current and first page
+      if (currentPage > 3) {
+        addEllipsis("ellipsis-start", Math.floor((1 + currentPage) / 2));
+      }
+
+      // Calculate startPage and endPage for the range of page buttons to display
+      const startPageRange = Math.min(
+        currentPage - 2,
+        totalPages - displayPages + 2,
+      );
+      const startPage = Math.max(1, startPageRange);
+      const endPage = startPage + displayPages - 3;
+
+      for (let i = startPage; i < endPage; i++) {
+        addPageButton(i); // Add page buttons for the calculated range
+      }
+
+      // ellipsis-end point to the page in between of current and last page
+      if (currentPage < totalPages - 4) {
+        addEllipsis("ellipsis-end", Math.floor((lastPage + currentPage) / 2));
+      }
+
+      // Always show the last page button
+      addPageButton(lastPage);
+    }
+
+    return pageNumbers;
+  };
+
+  return (
+    <nav>
+      <button
+        onClick={() => changePage(currentPage - 1)}
+        disabled={currentPage === 0}
+        className="prev"
+      >
+        Previous
+      </button>
+      {renderPageNumbers()}
+      <button
+        onClick={() => changePage(currentPage + 1)}
+        disabled={currentPage === lastPage}
+        className="next"
+      >
+        Next
+      </button>
+    </nav>
+  );
+}

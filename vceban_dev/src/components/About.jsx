@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from "react";
 import Accordion from "./Accordion";
 import picture from "../assets/img/DLong.avif";
