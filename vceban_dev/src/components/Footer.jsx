@@ -1,4 +1,6 @@
+// React
 import React from "react";
+// Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -7,6 +9,8 @@ import {
   faGoogleScholar,
   faWikipediaW,
 } from "@fortawesome/free-brands-svg-icons";
+// CSS
+import "../assets/css/footer.scss";
 
 const socialMediaLinks = [
   { url: "https://github.com/darrelllong", icon: faGithub },
@@ -21,7 +25,7 @@ const socialMediaLinks = [
 
 export default function Footer() {
   return (
-    <footer>
+    <footer id="page-footer">
       <ul>
         {socialMediaLinks.map((link, index) => (
           <li key={index}>

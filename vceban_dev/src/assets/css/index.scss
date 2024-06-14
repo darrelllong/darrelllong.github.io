@@ -15,8 +15,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
 body {
-  min-height: 100vh;
   min-width: 100vw;
 
   &::before {
@@ -63,6 +68,7 @@ a:active {
 
 .dottedBorder {
   position: relative;
+  overflow: hidden;
 
   &:after {
     content: "";

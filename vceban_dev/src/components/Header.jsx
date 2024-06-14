@@ -1,11 +1,13 @@
+// React
 import React from "react";
-import logo from "../assets/img/DLong.avif";
 import { Context } from "../ContextProvider";
 // Components
 import Hamburger from "./Hamburger";
 import Menu from "./Menu";
 // CSS
 import "../assets/css/header.scss";
+// Assets
+import logo from "../assets/img/DLong.avif";
 
 export default function Header() {
   const { appState, setAppState } = React.useContext(Context);
