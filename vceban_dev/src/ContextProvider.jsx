@@ -20,6 +20,15 @@ export const ContextProvider = ({ children }) => {
   const state = getValueFromUrl(window.location.pathname) || "menu";
   const [appState, setAppState] = React.useState(state);
 
+  const handleWindowHistory = (e, state, path, callback) => {
+    e.preventDefault();
+    setAppState(state);
+    window.history.pushState({}, "", path);
+    if (callback) {
+      callback();
+    }
+  };
+
   useEffect(() => {
     const handlePopState = (e) => {
       e.preventDefault();
@@ -39,6 +48,7 @@ export const ContextProvider = ({ children }) => {
       value={{
         appState,
         setAppState,
+        handleWindowHistory,
       }}
     >
       {children}
