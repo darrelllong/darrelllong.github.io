@@ -12,9 +12,12 @@ import "../assets/css/home.scss";
 import publications from "../assets/publications.json";
 
 export default function Main() {
+  const [searchTerm, setSearchTerm] = React.useState("");
   const components = {
     about: <About />,
-    publications: <Publications />,
+    publications: (
+      <Publications searchTerm={searchTerm} search={setSearchTerm} />
+    ),
     consultancy: <Consultancy />,
     default: <Menu />,
   };
@@ -25,7 +28,9 @@ export default function Main() {
   if (appState.startsWith("publication-")) {
     const id = parseInt(appState.split("-")[1], 10);
     const publication = publications.find((pub) => pub.id === id);
-    component = <Publication publication={publication} />;
+    component = (
+      <Publication publication={publication} search={setSearchTerm} />
+    );
   } else {
     component = components[appState] || components.default;
   }

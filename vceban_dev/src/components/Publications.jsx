@@ -1,11 +1,11 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import publications from "../assets/publications.json";
 import Pagination from "./Pagination";
 import PublicationCard from "./PublicationCard";
 
-export default function Publications() {
+export default function Publications({ searchTerm, setSearchTerm }) {
   const [currentPage, setCurrentPage] = React.useState(0);
-  const [searchTerm, setSearchTerm] = React.useState("");
   const publicationsPerPage = 9;
 
   const filteredPublications = publications.filter((publication) => {

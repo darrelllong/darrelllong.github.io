@@ -10,7 +10,7 @@ import "../assets/css/header.scss";
 import logo from "../assets/img/DLong.avif";
 
 export default function Header() {
-  const { appState, setAppState } = React.useContext(Context);
+  const { appState, handleWindowHistory } = React.useContext(Context);
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
 
   React.useEffect(() => {
@@ -45,17 +45,11 @@ export default function Header() {
     return true;
   };
 
-  const setAppStateToMenuAndGoHome = () => {
-    setAppState("menu");
-    window.history.pushState({}, "", "/home");
-  };
-
   return (
     <header className={appState} id="page-header">
       <h1
         onClick={(e) => {
-          e.preventDefault();
-          setAppStateToMenuAndGoHome();
+          handleWindowHistory(e, "menu", "/home");
         }}
       >
         Darrell Long
@@ -65,12 +59,11 @@ export default function Header() {
         className="App-logo"
         alt="Darrell Long"
         onClick={(e) => {
-          e.preventDefault();
-          setAppStateToMenuAndGoHome();
+          handleWindowHistory(e, "menu", "/home");
         }}
       />
       {showHamburger(appState, windowWidth) && (
-        <Hamburger setAppState={setAppStateToMenuAndGoHome} />
+        <Hamburger setAppState={handleWindowHistory} />
       )}
       {showMenu(appState, windowWidth) && <Menu />}
     </header>

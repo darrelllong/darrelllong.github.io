@@ -8,36 +8,32 @@ import {
   faSquareCaretRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function PublicationCard({ publication, setSearchTerm }) {
-  const { setAppState } = React.useContext(Context);
-
-  const showPublication = (e, id) => {
-    const publication = `publication-${id}`;
-    e.preventDefault();
-    setAppState(publication);
-    window.history.pushState({}, "", publication);
-  };
-
-  const searchPaper = (e, term) => {
-    e.preventDefault();
-    setSearchTerm(term);
-  };
+export default function PublicationCard({ publication, search }) {
+  const { handleWindowHistory } = React.useContext(Context);
+  const path = `publication-${publication.id}`;
 
   return (
     <article>
       <header>
         <h2>
-          <a
-            href={`/publication-${publication.id}`}
-            onClick={(e) => showPublication(e, publication.id)}
-          >
+          <a href={path} onClick={(e) => handleWindowHistory(e, path, path)}>
             {publication.title}
           </a>
         </h2>
         <ul className="authors">
           {publication.author.map((author, index) => (
             <li key={index}>
-              <a href="/publications" onClick={(e) => searchPaper(e, author)}>
+              <a
+                href="/publications"
+                onClick={(e) =>
+                  handleWindowHistory(
+                    e,
+                    "publications",
+                    "publications",
+                    search(author),
+                  )
+                }
+              >
                 {author}
               </a>
             </li>
@@ -45,7 +41,14 @@ export default function PublicationCard({ publication, setSearchTerm }) {
         </ul>
         <a
           href="/publications"
-          onClick={(e) => searchPaper(e, publication.date)}
+          onClick={(e) =>
+            handleWindowHistory(
+              e,
+              "publications",
+              "publications",
+              search(publication.date),
+            )
+          }
         >
           {publication.date}
         </a>
@@ -57,10 +60,7 @@ export default function PublicationCard({ publication, setSearchTerm }) {
         <a href={publication.url} target="_blank" rel="noreferrer">
           Download <FontAwesomeIcon icon={faFileArrowDown} />
         </a>
-        <a
-          href={`/publication-${publication.id}`}
-          onClick={(e) => showPublication(e, publication.id)}
-        >
+        <a href={path} onClick={(e) => handleWindowHistory(e, path, path)}>
           Read more <FontAwesomeIcon icon={faSquareCaretRight} />
         </a>
       </footer>
