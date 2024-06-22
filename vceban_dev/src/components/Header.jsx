@@ -29,7 +29,7 @@ export default function Header() {
     if (["menu", "home"].includes(appState)) {
       return false;
     }
-    if (windowWidth >= 768) {
+    if (windowWidth >= 968) {
       return false;
     }
     return true;
@@ -39,7 +39,7 @@ export default function Header() {
     if (["menu", "home"].includes(appState)) {
       return false;
     }
-    if (windowWidth < 768) {
+    if (windowWidth < 968) {
       return false;
     }
     return true;

@@ -1,6 +1,10 @@
 @import "variables";
 
 main.about {
+  &:after {
+    display: none;
+  }
+
   .aboutSection {
     padding-bottom: 84px;
     max-width: 430px;

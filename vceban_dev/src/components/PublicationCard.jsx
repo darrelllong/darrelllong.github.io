@@ -15,53 +15,64 @@ export default function PublicationCard({ publication, search }) {
   return (
     <article>
       <header>
-        <h2>
+        <h3>
           <a href={path} onClick={(e) => handleWindowHistory(e, path, path)}>
             {publication.title}
           </a>
-        </h2>
-        <ul className="authors">
-          {publication.author.map((author, index) => (
-            <li key={index}>
-              <a
-                href="/publications"
-                onClick={(e) =>
-                  handleWindowHistory(
-                    e,
-                    "publications",
-                    "publications",
-                    search(author),
-                  )
-                }
-              >
-                {author}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <a
-          href="/publications"
-          onClick={(e) =>
-            handleWindowHistory(
-              e,
-              "publications",
-              "publications",
-              search(publication.date),
-            )
-          }
-        >
-          {publication.date}
-        </a>
+        </h3>
+        {publication.author && (
+          <ul className="authors">
+            {publication.author.map((author, index, authors) => (
+              <li key={index}>
+                <a
+                  href="/publications"
+                  onClick={(e) =>
+                    handleWindowHistory(
+                      e,
+                      "publications",
+                      "publications",
+                      search(author),
+                    )
+                  }
+                >
+                  {author}
+                  {index === authors.length - 1 ? "" : ","}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
+        {publication.date && (
+          <a
+            href="/publications"
+            onClick={(e) =>
+              handleWindowHistory(
+                e,
+                "publications",
+                "publications",
+                search(publication.date),
+              )
+            }
+          >
+            {publication.date}
+          </a>
+        )}
       </header>
       <main>
-        <p>{publication.short_description}</p>
+        {publication.short_description && (
+          <p>{publication.short_description}</p>
+        )}
       </main>
       <footer>
-        <a href={publication.url} target="_blank" rel="noreferrer">
-          Download <FontAwesomeIcon icon={faFileArrowDown} />
-        </a>
+        {publication.url && (
+          <a href={publication.url} target="_blank" rel="noreferrer">
+            Download
+            <FontAwesomeIcon icon={faFileArrowDown} />
+          </a>
+        )}
         <a href={path} onClick={(e) => handleWindowHistory(e, path, path)}>
-          Read more <FontAwesomeIcon icon={faSquareCaretRight} />
+          Read more
+          <FontAwesomeIcon icon={faSquareCaretRight} />
         </a>
       </footer>
     </article>

@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
+
 export default function Pagination(props) {
   // eslint-disable-next-line react/prop-types
   const { totalPublications, publicationsPerPage, currentPage, changePage } =
@@ -11,11 +14,13 @@ export default function Pagination(props) {
     const pageNumbers = [];
 
     const addPageButton = (pageNumber) => {
+      const active = currentPage === pageNumber;
       pageNumbers.push(
         <button
           key={pageNumber}
           onClick={() => changePage(pageNumber)}
-          disabled={currentPage === pageNumber}
+          disabled={active}
+          className={active && "active"}
         >
           {pageNumber + 1}
         </button>,
@@ -68,23 +73,25 @@ export default function Pagination(props) {
     return pageNumbers;
   };
 
-  return (
-    <nav>
-      <button
-        onClick={() => changePage(currentPage - 1)}
-        disabled={currentPage === 0}
-        className="prev"
-      >
-        Previous
-      </button>
-      {renderPageNumbers()}
-      <button
-        onClick={() => changePage(currentPage + 1)}
-        disabled={currentPage === lastPage}
-        className="next"
-      >
-        Next
-      </button>
-    </nav>
-  );
+  if (totalPublications) {
+    return (
+      <nav>
+        <button
+          onClick={() => changePage(currentPage - 1)}
+          disabled={currentPage === 0}
+          className="prev"
+        >
+          <FontAwesomeIcon icon={faCaretLeft} />
+        </button>
+        {renderPageNumbers()}
+        <button
+          onClick={() => changePage(currentPage + 1)}
+          disabled={currentPage === lastPage}
+          className="next"
+        >
+          <FontAwesomeIcon icon={faCaretRight} />
+        </button>
+      </nav>
+    );
+  }
 }
