@@ -23,8 +23,17 @@
   >main {
     padding: 0 20px;
 
+    &.home,
+    &.menu,
+    &.about {
+      &:after {
+        display: none;
+      }
+    }
+
     &:after {
-      display: none;
+      max-width: calc(100% - 40px);
+      transform: translateX(20px);
     }
 
     &.about,
@@ -32,18 +41,26 @@
     &.publication,
     &.consultancy {
       max-width: 430px;
-      margin: 96px auto 0;
+      margin: 96px auto 58px;
+      padding-bottom: 50px;
 
       @media screen and (min-width: 968px) {
         max-width: 100%;
         margin: 58px 0;
-        padding-bottom: 50px;
 
         &:after {
           display: inherit;
           max-width: calc(100% - 40px);
           transform: translateX(20px);
         }
+      }
+    }
+
+    &.about {
+      margin-bottom: 0;
+
+      @media screen and (min-width: 968px) {
+        margin-bottom: 58px;
       }
     }
   }
