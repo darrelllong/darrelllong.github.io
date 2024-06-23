@@ -20,13 +20,14 @@ export const ContextProvider = ({ children }) => {
   const state = getValueFromUrl(window.location.pathname) || "menu";
   const [appState, setAppState] = React.useState(state);
 
-  const handleWindowHistory = (e, state, path, callback) => {
+  const handleWindowHistory = (e, state, callback) => {
     e.preventDefault();
     setAppState(state);
-    window.history.pushState({}, "", path);
+    window.history.pushState({}, "", `/${state}`);
     if (callback) {
       callback();
     }
+    window.scrollTo(0, 0);
   };
 
   useEffect(() => {

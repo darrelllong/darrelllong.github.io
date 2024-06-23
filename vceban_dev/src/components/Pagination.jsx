@@ -1,9 +1,9 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Pagination(props) {
-  // eslint-disable-next-line react/prop-types
   const { totalPublications, publicationsPerPage, currentPage, changePage } =
     props;
   const totalPages = Math.ceil(totalPublications / publicationsPerPage);
@@ -20,7 +20,7 @@ export default function Pagination(props) {
           key={pageNumber}
           onClick={() => changePage(pageNumber)}
           disabled={active}
-          className={active && "active"}
+          className={active ? "active" : undefined}
         >
           {pageNumber + 1}
         </button>,
@@ -95,3 +95,10 @@ export default function Pagination(props) {
     );
   }
 }
+
+Pagination.propTypes = {
+  totalPublications: PropTypes.number.isRequired,
+  publicationsPerPage: PropTypes.number.isRequired,
+  currentPage: PropTypes.number.isRequired,
+  changePage: PropTypes.func.isRequired,
+};

@@ -7,7 +7,8 @@ import Menu from "./Menu";
 // CSS
 import "../assets/css/header.scss";
 // Assets
-import logo from "../assets/img/DLong.avif";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnchor } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   const { appState, handleWindowHistory } = React.useContext(Context);
@@ -25,8 +26,12 @@ export default function Header() {
     };
   }, []);
 
+  const isAppStateMenuOrHome = (appState) => {
+    return ["menu", "home"].includes(appState);
+  };
+
   const showHamburger = (appState, windowWidth) => {
-    if (["menu", "home"].includes(appState)) {
+    if (isAppStateMenuOrHome(appState)) {
       return false;
     }
     if (windowWidth >= 968) {
@@ -35,8 +40,8 @@ export default function Header() {
     return true;
   };
 
-  const showMenu = () => {
-    if (["menu", "home"].includes(appState)) {
+  const showMenu = (appState, windowWidth) => {
+    if (isAppStateMenuOrHome(appState)) {
       return false;
     }
     if (windowWidth < 968) {
@@ -46,22 +51,26 @@ export default function Header() {
   };
 
   return (
-    <header className={appState} id="page-header">
+    <header
+      className={isAppStateMenuOrHome(appState) ? appState : undefined}
+      id="page-header"
+    >
+      <FontAwesomeIcon
+        icon={faAnchor}
+        className="logo"
+        alt="Logo"
+        fixedWidth
+        onClick={(e) => {
+          handleWindowHistory(e, "home");
+        }}
+      />
       <h1
         onClick={(e) => {
-          handleWindowHistory(e, "menu", "/home");
+          handleWindowHistory(e, "home");
         }}
       >
         Darrell Long
       </h1>
-      <img
-        src={logo}
-        className="App-logo"
-        alt="Darrell Long"
-        onClick={(e) => {
-          handleWindowHistory(e, "menu", "/home");
-        }}
-      />
       {showHamburger(appState, windowWidth) && (
         <Hamburger setAppState={handleWindowHistory} />
       )}

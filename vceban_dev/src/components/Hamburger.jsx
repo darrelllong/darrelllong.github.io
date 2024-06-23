@@ -9,7 +9,7 @@ export default function Hamburger() {
     <button
       className={styles["hamburger-btn"]}
       onClick={(e) => {
-        handleWindowHistory(e, "menu", "/home");
+        handleWindowHistory(e, "menu");
       }}
     >
       <span className={styles["hamburger-container"]}>

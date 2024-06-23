@@ -93,15 +93,19 @@ main.publications {
       padding: 8px 13px 18px;
       border-radius: 5px;
       box-shadow: $layer-shadow;
-      max-width: 390px;
       position: relative;
 
       @media screen and (min-width: 968px) {
-        justify-self: center;
+        max-width: 390px;
+
+        &:nth-child(2n) {
+          justify-self: flex-end;
+        }
       }
 
       @media screen and (min-width: 1208px) {
 
+        &:nth-child(2n),
         &:nth-child(1),
         &:nth-child(4) {
           justify-self: inherit;

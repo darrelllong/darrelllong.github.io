@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from "react";
+import PropTypes from "prop-types";
 import { Context } from "../ContextProvider";
 /* Font Awesome icons */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,7 +16,7 @@ export default function PublicationCard({ publication, search }) {
     <article>
       <header>
         <h3>
-          <a href={path} onClick={(e) => handleWindowHistory(e, path, path)}>
+          <a href={path} onClick={(e) => handleWindowHistory(e, path)}>
             {publication.title}
           </a>
         </h3>
@@ -27,12 +27,7 @@ export default function PublicationCard({ publication, search }) {
                 <a
                   href="/publications"
                   onClick={(e) =>
-                    handleWindowHistory(
-                      e,
-                      "publications",
-                      "publications",
-                      search(author),
-                    )
+                    handleWindowHistory(e, "publications", search(author))
                   }
                 >
                   {author}
@@ -46,12 +41,7 @@ export default function PublicationCard({ publication, search }) {
           <a
             href="/publications"
             onClick={(e) =>
-              handleWindowHistory(
-                e,
-                "publications",
-                "publications",
-                search(publication.date),
-              )
+              handleWindowHistory(e, "publications", search(publication.date))
             }
           >
             {publication.date}
@@ -70,7 +60,7 @@ export default function PublicationCard({ publication, search }) {
             <FontAwesomeIcon icon={faFileArrowDown} />
           </a>
         )}
-        <a href={path} onClick={(e) => handleWindowHistory(e, path, path)}>
+        <a href={path} onClick={(e) => handleWindowHistory(e, path)}>
           Read more
           <FontAwesomeIcon icon={faSquareCaretRight} />
         </a>
@@ -78,3 +68,8 @@ export default function PublicationCard({ publication, search }) {
     </article>
   );
 }
+
+PublicationCard.propTypes = {
+  publication: PropTypes.object.isRequired,
+  search: PropTypes.func.isRequired,
+};
