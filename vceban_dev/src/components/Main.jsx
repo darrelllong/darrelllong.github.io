@@ -29,11 +29,19 @@ export default function Main() {
     const id = parseInt(appState.split("-")[1], 10);
     const publication = publications.find((pub) => pub.id === id);
     component = (
-      <Publication publication={publication} search={setSearchTerm} />
+      <Publication
+        publication={publication}
+        total={publications.length}
+        search={setSearchTerm}
+      />
     );
   } else {
     component = components[appState] || components.default;
   }
 
-  return <main className={`dottedBorder ${appState}`}>{component}</main>;
+  return (
+    <main className={`${appState.replace(/-\d+$/, "")} dottedBorder`}>
+      {component}
+    </main>
+  );
 }

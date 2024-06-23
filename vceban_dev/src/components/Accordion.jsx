@@ -1,12 +1,12 @@
 // React
 import React from "react";
+import PropTypes from "prop-types";
 // Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 // CSS
 import "../assets/css/accordion.scss";
 
-/* eslint-disable react/prop-types */
 export default function Accordion(props) {
   const title = props.title;
   const body = props.body;
@@ -26,3 +26,9 @@ export default function Accordion(props) {
     </article>
   );
 }
+
+Accordion.propTypes = {
+  title: PropTypes.string,
+  body: PropTypes.array,
+  state: PropTypes.bool,
+};

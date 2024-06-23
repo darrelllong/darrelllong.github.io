@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from "react";
+import PropTypes from "prop-types";
 import publications from "../assets/publications.json";
 import Pagination from "./Pagination";
 import PublicationCard from "./PublicationCard";
@@ -75,3 +75,8 @@ export default function Publications({ searchTerm, search }) {
     </>
   );
 }
+
+Publications.propTypes = {
+  searchTerm: PropTypes.string,
+  search: PropTypes.func,
+};
