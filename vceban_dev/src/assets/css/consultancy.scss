@@ -103,6 +103,76 @@ main.consultancy {
     }
   }
 
+  .contact {
+    form {
+      margin-top: 32px;
+
+      label,
+      input,
+      textarea,
+      button {
+        display: block;
+        width: 100%;
+        border: none;
+      }
+
+      input,
+      textarea {
+        background: $layer;
+        box-shadow: $layer-shadow;
+        border-radius: 5px;
+        padding: 8px;
+        margin-top: 18px;
+        font-size: 16px;
+        font-weight: 400;
+
+        &::placeholder {
+          font-weight: 300;
+        }
+      }
+
+      textarea {
+        resize: none;
+        min-height: 233px;
+      }
+
+      label {
+        margin-bottom: 22px;
+        font-size: 20px;
+        font-weight: 500;
+
+        span {
+          color: $red;
+          font-size: 14px;
+        }
+      }
+
+      button {
+        color: $light;
+        background: $link;
+        font-size: 20px;
+        padding: 12px 0;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 57px;
+
+        &:hover {
+          background: darken($link, 5%);
+        }
+
+        &:active {
+          background: darken($link, 10%);
+        }
+      }
+    }
+
+    p.success {
+      font-size: 20px;
+      font-weight: 500;
+      margin: 32px 0;
+    }
+  }
+
   @media screen and (min-width: 968px) {
     display: grid;
     grid-template-columns: auto 390px;

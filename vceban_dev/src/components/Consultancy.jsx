@@ -146,14 +146,23 @@ const ContactForm = () => {
   };
 
   if (submit.succeeded) {
-    return <p className="success">Your message was sent.</p>;
+    return (
+      <p className="success">
+        Thank you for considering Pentexoire Consulting, your message was sent.
+      </p>
+    );
   }
 
   return (
     <form onSubmit={handleFormSubmit}>
       <label>
         Your name
-        <input type="text" name="name" onChange={handleChange} />
+        <input
+          type="text"
+          name="name"
+          onChange={handleChange}
+          placeholder="Your name"
+        />
         {errors.name && <span>{errors.name}</span>}
       </label>
       <ValidationError
@@ -164,7 +173,12 @@ const ContactForm = () => {
       />
       <label>
         Your email
-        <input type="email" name="email" onChange={handleChange} />
+        <input
+          type="email"
+          name="email"
+          onChange={handleChange}
+          placeholder="Your email"
+        />
         {errors.email && <span>{errors.email}</span>}
       </label>
       <ValidationError
@@ -175,7 +189,11 @@ const ContactForm = () => {
       />
       <label>
         Your message
-        <textarea name="message" onChange={handleChange} />
+        <textarea
+          name="message"
+          onChange={handleChange}
+          placeholder="Please enter your message here"
+        />
         {errors.message && <span>{errors.message}</span>}
       </label>
       <ValidationError
@@ -185,7 +203,7 @@ const ContactForm = () => {
         errors={submit.errors}
       />
       <button type="submit" disabled={submit.submitting}>
-        Submit
+        Send
       </button>
     </form>
   );
@@ -249,7 +267,6 @@ export default function Consultancy() {
           social media or fill out the form below.
         </p>
         <ContactForm />
-        <p>Thank you for considering Pentexoire Consulting.</p>
       </section>
     </>
   );
