@@ -155,13 +155,7 @@ const Publication = ({ publication, total, search }) => {
   return (
     <>
       <article>
-        <Header
-          title={publication.title}
-          author={publication.author}
-          date={publication.date}
-          url={publication.url}
-          search={search}
-        />
+        <Header {...publication} search={search} />
         <Abstract paragraphs={lines} />
         <footer>
           <BibTeX bibTeX={publication.bibTeX} />
