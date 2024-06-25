@@ -23,6 +23,7 @@ main.about {
       object-fit: cover;
       border-radius: 5px;
       margin-bottom: 24px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
       @media screen and (min-width: 700px) {
         float: left;
