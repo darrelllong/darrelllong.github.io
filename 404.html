@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <title>Page Not Found</title>
     <script>
-      const currentPath = window.location.pathname;
-      const newPath = currentPath.startsWith("/react")
-        ? currentPath
-        : "/react" + currentPath;
+      const pathname = window.location.pathname;
+      const search = window.location.search;
+      const hash = window.location.hash;
+      const newPath = `/react/index.html?redirect=${encodeURIComponent(pathname + search + hash)}`;
       setTimeout(function () {
         window.location.href = newPath;
       }, 0);
