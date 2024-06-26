@@ -1,51 +1,39 @@
+// Dependencies
 import React from "react";
 import PropTypes from "prop-types";
-import { Context } from "../ContextProvider";
-/* Font Awesome icons */
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// Assets
 import {
   faFileArrowDown,
   faSquareCaretRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function PublicationCard({ publication, search }) {
-  const { handleWindowHistory } = React.useContext(Context);
-  const path = `publication-${publication.id}`;
+  const path = `${publication.id}`;
 
   return (
     <article>
       <header>
         <h3>
-          <a href={path} onClick={(e) => handleWindowHistory(e, path)}>
-            {publication.title}
-          </a>
+          <Link to={path}>{publication.title}</Link>
         </h3>
         {publication.author && (
           <ul className="authors">
             {publication.author.map((author, index, authors) => (
               <li key={index}>
-                <a
-                  href="/publications"
-                  onClick={(e) =>
-                    handleWindowHistory(e, "publications", search(author))
-                  }
-                >
+                <Link to="/publications" onClick={() => search(author)}>
                   {author}
                   {index === authors.length - 1 ? "" : ","}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
         )}
         {publication.date && (
-          <a
-            href="/publications"
-            onClick={(e) =>
-              handleWindowHistory(e, "publications", search(publication.date))
-            }
-          >
+          <Link to="/publications" onClick={() => search(publication.date)}>
             {publication.date}
-          </a>
+          </Link>
         )}
       </header>
       <main>
@@ -60,10 +48,10 @@ export default function PublicationCard({ publication, search }) {
             <FontAwesomeIcon icon={faFileArrowDown} />
           </a>
         )}
-        <a href={path} onClick={(e) => handleWindowHistory(e, path)}>
+        <Link to={path}>
           Read more
           <FontAwesomeIcon icon={faSquareCaretRight} />
-        </a>
+        </Link>
       </footer>
     </article>
   );

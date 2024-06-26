@@ -1,12 +1,12 @@
+// Dependencies
 import React from "react";
 import PropTypes from "prop-types";
 import { useForm, ValidationError } from "@formspree/react";
-// Pictures
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// Assets
 import pentexoire from "../assets/img/pentexoire.avif";
 import darrell from "../assets/img/DLong.avif";
 import ahmed from "../assets/img/AAmer.avif";
-// Icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDatabase,
   faShield,

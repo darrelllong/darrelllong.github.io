@@ -1,7 +1,7 @@
-// React
+// Dependencies
 import React from "react";
-// Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// Assets
 import {
   faGithub,
   faLinkedin,
@@ -9,7 +9,7 @@ import {
   faGoogleScholar,
   faWikipediaW,
 } from "@fortawesome/free-brands-svg-icons";
-// CSS
+// Styles
 import "../assets/css/footer.scss";
 
 const socialMediaLinks = [

@@ -1,6 +1,8 @@
+// Dependencies
 import React from "react";
-import { Context } from "../ContextProvider";
+import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// Assets
 import {
   faFileArrowDown,
   faUpRightFromSquare,
@@ -8,8 +10,6 @@ import {
 import cv from "../assets/cv.pdf";
 
 export default function Menu() {
-  const { appState, setAppState } = React.useContext(Context);
-
   const menuItems = [
     { label: "About", page: "about" },
     { label: "Publications", page: "publications" },
@@ -28,7 +28,7 @@ export default function Menu() {
   ];
 
   return (
-    <nav className={["menu", "home"].includes(appState) ? "dottedBorder" : ""}>
+    <nav className={useLocation().pathname === "/" ? "dottedBorder" : ""}>
       <ul>
         {menuItems.map((item, index) => (
           <li key={index}>
@@ -38,16 +38,7 @@ export default function Menu() {
                 <FontAwesomeIcon icon={item.icon} />
               </a>
             ) : (
-              <a
-                href={`/${item.page}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.history.pushState({}, "", item.page);
-                  setAppState(item.page);
-                }}
-              >
-                {item.label}
-              </a>
+              <Link to={`/${item.page}`}>{item.label}</Link>
             )}
           </li>
         ))}
