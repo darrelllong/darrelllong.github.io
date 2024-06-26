@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <>
-      <Router basename={"https://darrelllong.github.io/react/"}>
+      <Router>
         <ContextProvider>
           <Header />
           <Main />
