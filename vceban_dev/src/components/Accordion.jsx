@@ -1,10 +1,10 @@
-// React
+// Dependencies
 import React from "react";
 import PropTypes from "prop-types";
-// Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// Assets
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-// CSS
+// Styles
 import "../assets/css/accordion.scss";
 
 export default function Accordion(props) {

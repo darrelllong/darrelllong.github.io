@@ -1,8 +1,9 @@
+// Dependencies
 import React from "react";
 import PropTypes from "prop-types";
-import { Context } from "../ContextProvider";
-/* Font Awesome icons */
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// Assets
 import {
   faFileArrowDown,
   faUsers,
@@ -10,6 +11,7 @@ import {
   faCaretLeft,
   faCaretRight,
 } from "@fortawesome/free-solid-svg-icons";
+// Styles
 import "../assets/css/publication.scss";
 
 const BibTeX = ({ bibTeX }) => {
@@ -65,7 +67,6 @@ Abstract.propTypes = {
 };
 
 const Header = ({ title, author, date, url, search }) => {
-  const { handleWindowHistory } = React.useContext(Context);
   return (
     <header className="dottedBorder">
       {title && <h2>{title}</h2>}
@@ -75,30 +76,30 @@ const Header = ({ title, author, date, url, search }) => {
           <ul>
             {author.map((name, index) => (
               <li key={index}>
-                <a
-                  href="/publications"
-                  onClick={(e) => {
-                    handleWindowHistory(e, "publications", search(name));
+                <Link
+                  to="/publications"
+                  onClick={() => {
+                    search(name);
                   }}
                 >
                   {name}
                   {index === author.length - 1 ? "" : ","}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
         </section>
       )}
       {date && (
-        <a
-          href="/publications"
-          onClick={(e) => {
-            handleWindowHistory(e, "publications", search(date));
+        <Link
+          to="/publications"
+          onClick={() => {
+            search(date);
           }}
         >
           <FontAwesomeIcon icon={faCalendar} fixedWidth />
           {date}
-        </a>
+        </Link>
       )}
       {url && (
         <a href={url} target="_blank" rel="noreferrer">
@@ -119,20 +120,11 @@ Header.propTypes = {
 };
 
 const Publication = ({ publication, total, search }) => {
-  const { handleWindowHistory } = React.useContext(Context);
-
   if (!publication) {
     return (
       <>
         <h2>No publication found</h2>
-        <a
-          href="/publications"
-          onClick={(e) => {
-            handleWindowHistory(e, "publications");
-          }}
-        >
-          Go back
-        </a>
+        <Link to="/publications">Go back</Link>
       </>
     );
   }
@@ -144,13 +136,13 @@ const Publication = ({ publication, total, search }) => {
 
   const prev =
     publication.id > 1
-      ? `publication-${publication.id - 1}`
-      : `publication-${total}`;
+      ? `/publications/${publication.id - 1}`
+      : `/publications/${total}`;
 
   const next =
     publication.id < total
-      ? `publication-${publication.id + 1}`
-      : "publication-1";
+      ? `/publications/${publication.id + 1}`
+      : "/publications/1";
 
   return (
     <>
@@ -167,32 +159,15 @@ const Publication = ({ publication, total, search }) => {
         </footer>
       </article>
       <nav>
-        <a
-          href={`/${prev}`}
-          onClick={(e) => {
-            handleWindowHistory(e, prev);
-          }}
-        >
+        <Link to={prev}>
           <FontAwesomeIcon icon={faCaretLeft} />
           Previous publication
-        </a>
-        <a
-          href="/publications"
-          onClick={(e) => {
-            handleWindowHistory(e, "publications");
-          }}
-        >
-          Back to all publications
-        </a>
-        <a
-          href={`/${next}`}
-          onClick={(e) => {
-            handleWindowHistory(e, next);
-          }}
-        >
+        </Link>
+        <Link to="/publications">Back to all publications</Link>
+        <Link to={next}>
           Next publication
           <FontAwesomeIcon icon={faCaretRight} />
-        </a>
+        </Link>
       </nav>
     </>
   );

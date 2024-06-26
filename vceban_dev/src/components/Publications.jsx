@@ -1,10 +1,14 @@
+// Dependencies
 import React from "react";
 import PropTypes from "prop-types";
-import publications from "../assets/publications.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// Components
 import Pagination from "./Pagination";
 import PublicationCard from "./PublicationCard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// Asseets
+import publications from "../assets/publications.json";
 import { faCircleXmark, faSearch } from "@fortawesome/free-solid-svg-icons";
+// Stylesx
 import "../assets/css/publications.scss";
 
 export default function Publications({ searchTerm, search }) {

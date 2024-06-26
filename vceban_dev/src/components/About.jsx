@@ -1,6 +1,10 @@
+// Dependencies
 import React from "react";
+// Components
 import Accordion from "./Accordion";
+// Assets
 import picture from "../assets/img/DLong.avif";
+// Styles
 import "../assets/css/about.scss";
 
 const accordionData = [

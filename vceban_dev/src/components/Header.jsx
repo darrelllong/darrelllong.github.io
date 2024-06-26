@@ -1,17 +1,18 @@
-// React
+// Dependencies
 import React from "react";
 import { Context } from "../ContextProvider";
+import { Link, useLocation } from "react-router-dom";
 // Components
 import Hamburger from "./Hamburger";
 import Menu from "./Menu";
-// CSS
+// Styles
 import "../assets/css/header.scss";
 // Assets
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnchor } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
-  const { appState, handleWindowHistory } = React.useContext(Context);
+  const { pathClass } = React.useContext(Context);
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
 
   React.useEffect(() => {
@@ -26,12 +27,12 @@ export default function Header() {
     };
   }, []);
 
-  const isAppStateMenuOrHome = (appState) => {
-    return ["menu", "home"].includes(appState);
+  const isHome = () => {
+    return useLocation().pathname === "/";
   };
 
-  const showHamburger = (appState, windowWidth) => {
-    if (isAppStateMenuOrHome(appState)) {
+  const showHamburger = (windowWidth) => {
+    if (isHome()) {
       return false;
     }
     if (windowWidth >= 968) {
@@ -40,8 +41,8 @@ export default function Header() {
     return true;
   };
 
-  const showMenu = (appState, windowWidth) => {
-    if (isAppStateMenuOrHome(appState)) {
+  const showMenu = (windowWidth) => {
+    if (isHome()) {
       return false;
     }
     if (windowWidth < 968) {
@@ -51,30 +52,15 @@ export default function Header() {
   };
 
   return (
-    <header
-      className={isAppStateMenuOrHome(appState) ? appState : undefined}
-      id="page-header"
-    >
-      <FontAwesomeIcon
-        icon={faAnchor}
-        className="logo"
-        alt="Logo"
-        fixedWidth
-        onClick={(e) => {
-          handleWindowHistory(e, "home");
-        }}
-      />
-      <h1
-        onClick={(e) => {
-          handleWindowHistory(e, "home");
-        }}
-      >
-        Darrell Long
-      </h1>
-      {showHamburger(appState, windowWidth) && (
-        <Hamburger setAppState={handleWindowHistory} />
-      )}
-      {showMenu(appState, windowWidth) && <Menu />}
+    <header className={pathClass(useLocation().pathname)} id="page-header">
+      <Link to="/" className="logo">
+        <FontAwesomeIcon icon={faAnchor} alt="Logo" fixedWidth />
+      </Link>
+      <Link to="/" className="h1-logo">
+        <h1>Darrell Long</h1>
+      </Link>
+      {showHamburger(windowWidth) && <Hamburger />}
+      {showMenu(windowWidth) && <Menu />}
     </header>
   );
 }
