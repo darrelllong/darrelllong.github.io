@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>Page Not Found</title>
-    <meta http-equiv="refresh" content="0; url=/" />
     <script>
+      const currentPath = window.location.pathname;
+      const newPath = currentPath.startsWith("/react")
+        ? currentPath
+        : "/react" + currentPath;
       setTimeout(function () {
-        window.location.href = "/react/";
+        window.location.href = newPath;
       }, 0);
     </script>
   </head>
