@@ -34,5 +34,6 @@
     "globals": "^15.3.0",
     "sass": "^1.77.2",
     "vite": "^5.2.0"
-  }
+  },
+  "homepage": "https://darrelllong.github.io/react"
 }
