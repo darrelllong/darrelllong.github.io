@@ -3,13 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>Page Not Found</title>
+    <meta http-equiv="refresh" content="0; url=/" />
     <script>
-      const pathname = window.location.pathname;
-      const search = window.location.search;
-      const hash = window.location.hash;
-      const newPath = `/react/index.html?redirect=${encodeURIComponent(pathname + search + hash)}`;
       setTimeout(function () {
-        window.location.href = newPath;
+        window.location.href = "/react/";
       }, 0);
     </script>
   </head>
