@@ -1,6 +1,7 @@
 // Dependencies
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import { useForm, ValidationError } from "@formspree/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Assets
@@ -94,7 +95,7 @@ Person.propTypes = {
 };
 
 const ContactForm = () => {
-  const [submit, sendForm] = useForm("xblrrzqj");
+  const [submit, sendForm, reset] = useForm("xblrrzqj");
   const [errors, setErrors] = React.useState({});
 
   const validateInput = (name, value) => {
@@ -149,6 +150,10 @@ const ContactForm = () => {
     return (
       <p className="success">
         Thank you for considering Pentexoire Consulting, your message was sent.
+        <br />
+        <Link to="/consultancy" onClick={reset}>
+          Send another message
+        </Link>
       </p>
     );
   }
