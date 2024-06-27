@@ -1,6 +1,6 @@
 // Dependencies
 import React from "react";
-import { Routes, Route, Link, useLocation, Navigate } from "react-router-dom";
+import { Routes, Route, Link, useLocation } from "react-router-dom";
 import { Context } from "../ContextProvider";
 // Components
 import About from "./About";
@@ -73,22 +73,6 @@ export default function Main() {
               <h2>Oops... This page doesn&apos;t exist</h2>
               <Link to="/">Go back to the home page</Link>
             </>
-          }
-        />
-        <Route
-          path="/react/:section"
-          element={
-            <Navigate
-              to={`/${location.split("/react/")[1].replace(/[?&]/g, "")}`}
-            />
-          }
-        />
-        <Route
-          path="/react/publications/:id"
-          element={
-            <Navigate
-              to={`/publications/${location.split("/react/publications/")[1].replace(/[?&]/g, "")}`}
-            />
           }
         />
       </Routes>
