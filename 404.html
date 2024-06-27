@@ -12,9 +12,9 @@
     if (match) {
       const section = match[1];
       const id = match[2];
-      let newUrl = "/react?";
-      if (section === "publications" && id) {
-        newUrl += `publications&id=${id}`;
+      let newUrl = "/react";
+      if (section === "?publications" && id) {
+        newUrl += `?publications&id=${id}`;
       } else {
         newUrl += section;
       }
