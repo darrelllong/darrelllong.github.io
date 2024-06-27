@@ -2,6 +2,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Context } from "../ContextProvider";
 // Assets
 import {
   faFileArrowDown,
@@ -27,11 +28,21 @@ export default function Menu() {
     },
   ];
 
+  const { setShowMenu } = React.useContext(Context);
+
   return (
-    <nav className={useLocation().pathname === "/" ? "dottedBorder" : ""}>
+    <nav
+      className={useLocation().pathname === "/" ? "dottedBorder menu" : "menu"}
+    >
       <ul>
         {menuItems.map((item, index) => (
-          <li key={index}>
+          <li
+            key={index}
+            onClick={() => {
+              setShowMenu(false);
+              window.scrollTo(0, 0);
+            }}
+          >
             {item.link ? (
               <a href={item.link} target="_blank" rel="noreferrer">
                 {item.label}

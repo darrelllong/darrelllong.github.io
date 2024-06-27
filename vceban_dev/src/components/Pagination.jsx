@@ -77,7 +77,7 @@ export default function Pagination(props) {
 
   if (totalPublications) {
     return (
-      <nav>
+      <nav className="pagination">
         <button
           onClick={() => changePage(currentPage - 1)}
           disabled={currentPage === 0}
