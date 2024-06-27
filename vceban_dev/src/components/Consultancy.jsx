@@ -63,20 +63,20 @@ Area.propTypes = {
   icon: PropTypes.object,
 };
 
-const people = [
-  {
-    name: "Dr. Darrell Long",
-    title: "Founder",
-    bio: "Dr. Long is a renowned expert witness with over 30 years of experience in the field of computer science.",
-    picture: darrell,
-  },
-  {
-    name: "Dr. Ahmed Amer",
-    title: "Senior Consultant",
-    bio: "Dr. Amer is a seasoned professional with a background in computer security and cryptography.",
-    picture: ahmed,
-  },
-];
+// const people = [
+//   {
+//     name: "Dr. Darrell Long",
+//     title: "Founder",
+//     bio: "Dr. Long is a renowned expert witness with over 30 years of experience in the field of computer science.",
+//     picture: darrell,
+//   },
+//   {
+//     name: "Dr. Ahmed Amer",
+//     title: "Senior Consultant",
+//     bio: "Dr. Amer is a seasoned professional with a background in computer security and cryptography.",
+//     picture: ahmed,
+//   },
+// ];
 
 const Person = ({ name, title, bio, picture }) => (
   <li>
@@ -215,6 +215,14 @@ const ContactForm = () => {
 };
 
 export default function Consultancy() {
+  const [people, setPeople] = React.useState([]);
+  React.useEffect(() => {
+    fetch("/react/pentexoire.json")
+      .then((response) => response.json())
+      .then((data) => setPeople(data))
+      .catch((error) => console.error("Error fetching file:", error));
+  }, []);
+
   return (
     <>
       <section className="dottedBorder darrell">

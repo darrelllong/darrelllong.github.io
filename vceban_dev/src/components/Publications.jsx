@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Pagination from "./Pagination";
 import PublicationCard from "./PublicationCard";
 // Asseets
-import publications from "../assets/publications.json";
 import { faCircleXmark, faSearch } from "@fortawesome/free-solid-svg-icons";
 // Stylesx
 import "../assets/css/publications.scss";
@@ -14,6 +13,13 @@ import "../assets/css/publications.scss";
 export default function Publications({ searchTerm, search }) {
   const [currentPage, setCurrentPage] = React.useState(0);
   const publicationsPerPage = 6;
+  const [publications, setPublications] = React.useState([]);
+  React.useEffect(() => {
+    fetch("/react/publications.json")
+      .then((response) => response.json())
+      .then((data) => setPublications(data))
+      .catch((error) => console.error("Error fetching the JSON file:", error));
+  }, []);
 
   const filteredPublications = publications.filter((publication) => {
     const searchString = searchTerm.toLowerCase();
@@ -68,7 +74,9 @@ export default function Publications({ searchTerm, search }) {
             ))}
         </section>
       ) : (
-        <h3>No publications found, please refine your search</h3>
+        <h3>
+          No publications found, please refine your search or try again later
+        </h3>
       )}
       <Pagination
         currentPage={currentPage}
