@@ -3,9 +3,9 @@ import React from "react";
 import {
   Routes,
   Route,
-  Link,
   useLocation,
   useNavigate,
+  Navigate,
 } from "react-router-dom";
 import { Context } from "../ContextProvider";
 // Components
@@ -69,7 +69,7 @@ export default function Main() {
         <Route
           path={`/publications/:id`}
           element={
-            publicationId !== null && (
+            publicationId !== null ? (
               <Publication
                 publication={publications.find(
                   (pub) => pub.id === publicationId,
@@ -77,19 +77,13 @@ export default function Main() {
                 total={publications.length}
                 search={setSearchTerm}
               />
+            ) : (
+              <Route path="*" element={<Navigate to="/" replace />} />
             )
           }
         />
         <Route path="/" element={<Menu />} />
-        <Route
-          path="*"
-          element={
-            <>
-              <h2>Oops... This page doesn&apos;t exist</h2>
-              <Link to="/">Go back to the home page</Link>
-            </>
-          }
-        />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       {showMenu && location.pathname !== "/" && <Menu />}
     </main>
