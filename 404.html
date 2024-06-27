@@ -5,23 +5,11 @@
   <meta charset="utf-8" />
   <title>Page Not Found</title>
   <script>
-    const path = window.location.pathname;
-    const match = path.match(
-      /^\/react\/(about|publications|consultancy|publications\/(\d+))$/,
-    );
-    if (match) {
-      const section = match[1];
-      const id = match[2];
-      let newUrl = "/react";
-      if (section === "?publications" && id) {
-        newUrl += `?publications&id=${id}`;
-      } else {
-        newUrl += section;
-      }
-      window.location.href = newUrl;
-    } else {
-      window.location.href = "/react";
-    }
+    setTimeout(function () {
+      var pathname = window.location.pathname;
+      window.location.href =
+        "/react/?redirect=" + encodeURIComponent(pathname);
+    }, 0);
   </script>
 </head>
 
