@@ -79,7 +79,7 @@ export default function Main() {
           path="/react/:section"
           element={
             <Navigate
-              to={`/${location.pathname.split("/react/")[1].replace(/[?&]/g, "")}`}
+              to={`/${location.split("/react/")[1].replace(/[?&]/g, "")}`}
             />
           }
         />
@@ -87,7 +87,7 @@ export default function Main() {
           path="/react/publications/:id"
           element={
             <Navigate
-              to={`/publications/${location.pathname.split("/react/publications/")[1].replace(/[?&]/g, "")}`}
+              to={`/publications/${location.split("/react/publications/")[1].replace(/[?&]/g, "")}`}
             />
           }
         />
