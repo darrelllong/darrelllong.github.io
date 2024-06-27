@@ -78,14 +78,16 @@ export default function Main() {
         <Route
           path="/react/:section"
           element={
-            <Navigate to={`/${location.pathname.split("/react/")[1]}`} />
+            <Navigate
+              to={`/${location.pathname.split("/react/")[1].replace(/[?&]/g, "")}`}
+            />
           }
         />
         <Route
           path="/react/publications/:id"
           element={
             <Navigate
-              to={`/publications/${location.pathname.split("/react/publications/")[1]}`}
+              to={`/publications/${location.pathname.split("/react/publications/")[1].replace(/[?&]/g, "")}`}
             />
           }
         />
