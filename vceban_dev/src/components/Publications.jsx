@@ -2,6 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Context } from "../ContextProvider";
 // Components
 import Pagination from "./Pagination";
 import PublicationCard from "./PublicationCard";
@@ -13,13 +14,7 @@ import "../assets/css/publications.scss";
 export default function Publications({ searchTerm, search }) {
   const [currentPage, setCurrentPage] = React.useState(0);
   const publicationsPerPage = 6;
-  const [publications, setPublications] = React.useState([]);
-  React.useEffect(() => {
-    fetch("/react/publications.json")
-      .then((response) => response.json())
-      .then((data) => setPublications(data))
-      .catch((error) => console.error("Error fetching the JSON file:", error));
-  }, []);
+  const { publications } = React.useContext(Context);
 
   const filteredPublications = publications.filter((publication) => {
     const searchString = searchTerm.toLowerCase();

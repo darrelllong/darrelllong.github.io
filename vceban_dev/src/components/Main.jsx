@@ -1,6 +1,6 @@
 // Dependencies
 import React from "react";
-import { Routes, Route, Link, useLocation } from "react-router-dom";
+import { Routes, Route, Link, useLocation, Navigate } from "react-router-dom";
 import { Context } from "../ContextProvider";
 // Components
 import About from "./About";
@@ -8,23 +8,40 @@ import Publications from "./Publications";
 import Consultancy from "./Consultancy";
 import Menu from "./Menu";
 import Publication from "./Publication";
-// Publications
-import publications from "../assets/publications.json";
 // Styles
 import "../assets/css/home.scss";
 
 export default function Main() {
   const [searchTerm, setSearchTerm] = React.useState("");
-  const location = useLocation();
-  const { pathClass } = React.useContext(Context);
+  const location = useLocation().pathname;
+  const { pathClass, publications, showMenu, setShowMenu } =
+    React.useContext(Context);
 
-  const matchPublication = location.pathname.match(/^\/publications\/(\d+)$/);
+  const disableMenu = () => {
+    if (location === "/") {
+      setShowMenu(false);
+    }
+    if (window.innerWidth > 968) {
+      setShowMenu(false);
+    }
+  };
+
+  React.useEffect(() => {
+    disableMenu();
+    const handleResize = () => disableMenu();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const matchPublication = location.match(/^\/publications\/(\d+)$/);
   const publicationId = matchPublication
     ? parseInt(matchPublication[1], 10)
     : null;
 
   return (
-    <main className={`dottedBorder ${pathClass(location.pathname)}`}>
+    <main
+      className={`dottedBorder ${pathClass(location)} ${showMenu && location != "/" ? "menuShown" : ""}`}
+    >
       <Routes>
         <Route path="/about" element={<About />} />
         <Route
@@ -58,7 +75,22 @@ export default function Main() {
             </>
           }
         />
+        <Route
+          path="/react/:section"
+          element={
+            <Navigate to={`/${location.pathname.split("/react/")[1]}`} />
+          }
+        />
+        <Route
+          path="/react/publications/:id"
+          element={
+            <Navigate
+              to={`/publications/${location.pathname.split("/react/publications/")[1]}`}
+            />
+          }
+        />
       </Routes>
+      {showMenu && location != "/" && <Menu />}
     </main>
   );
 }

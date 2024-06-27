@@ -106,7 +106,6 @@
   }
 
   @media screen and (min-width: 1160px) {
-    z-index: 1;
 
     &.home,
     &.menu {
@@ -126,5 +125,13 @@
         height: 200px;
       }
     }
+  }
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 2;
   }
 }

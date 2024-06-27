@@ -11,6 +11,7 @@ import "../assets/css/header.scss";
 export default function Header() {
   const { pathClass } = React.useContext(Context);
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+  const { showMenu } = React.useContext(Context);
 
   React.useEffect(() => {
     const handleResize = () => {
@@ -28,7 +29,7 @@ export default function Header() {
     return useLocation().pathname === "/";
   };
 
-  const showHamburger = (windowWidth) => {
+  const toShowHamburger = (windowWidth) => {
     if (isHome()) {
       return false;
     }
@@ -38,7 +39,7 @@ export default function Header() {
     return true;
   };
 
-  const showMenu = (windowWidth) => {
+  const toShowMenu = (windowWidth) => {
     if (isHome()) {
       return false;
     }
@@ -48,16 +49,21 @@ export default function Header() {
     return true;
   };
 
+  const path = useLocation().pathname;
+
   return (
-    <header className={pathClass(useLocation().pathname)} id="page-header">
+    <header
+      className={`${pathClass(path)} ${showMenu && path != "/" ? "fixed" : ""}`}
+      id="page-header"
+    >
       <Link to="/" className="logo">
         <img src="/react/logo.avif" alt="Logo" />
       </Link>
       <Link to="/" className="h1-logo">
         <h1>Darrell Long</h1>
       </Link>
-      {showHamburger(windowWidth) && <Hamburger />}
-      {showMenu(windowWidth) && <Menu />}
+      {toShowHamburger(windowWidth) && <Hamburger />}
+      {toShowMenu(windowWidth) && <Menu />}
     </header>
   );
 }

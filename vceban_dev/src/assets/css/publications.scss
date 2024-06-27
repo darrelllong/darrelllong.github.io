@@ -64,17 +64,13 @@ main.publications {
       display: inline-block;
       width: 388px;
       position: absolute;
+      border-radius: 3px;
+      padding-bottom: 0;
       right: 20px;
       top: 0;
 
       &:after {
-        height: 12px;
-        background: repeating-linear-gradient(to right,
-            $dark,
-            $dark 6px,
-            transparent 6px,
-            transparent 12px);
-        transform: translateX(0);
+        display: none;
       }
     }
   }
@@ -167,7 +163,7 @@ main.publications {
     }
   }
 
-  >nav {
+  nav.pagination {
     max-width: 390px;
     display: flex;
     justify-content: space-between;

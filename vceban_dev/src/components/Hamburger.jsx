@@ -1,15 +1,25 @@
 // Dependencies
 import React from "react";
-import { Link } from "react-router-dom";
+import { Context } from "../ContextProvider";
 // Styles
 import styles from "../assets/css/hamburger.module.scss";
 
 export default function Hamburger() {
+  const { showMenu, setShowMenu } = React.useContext(Context);
+
   return (
-    <Link to="/" className={styles["hamburger-btn"]}>
+    <button
+      className={
+        styles["hamburger-btn"] + (showMenu ? ` ${styles["is-active"]}` : "")
+      }
+      onClick={(e) => {
+        e.preventDefault();
+        setShowMenu(!showMenu);
+      }}
+    >
       <span className={styles["hamburger-container"]}>
         <span className={styles["hamburger-line"]}></span>
       </span>
-    </Link>
+    </button>
   );
 }

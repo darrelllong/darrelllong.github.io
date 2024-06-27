@@ -1,17 +1,32 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Page Not Found</title>
-    <meta http-equiv="refresh" content="0; url=/" />
-    <script>
-      setTimeout(function () {
-        window.location.href = "/react/";
-      }, 0);
-    </script>
-  </head>
 
-  <body>
-    <p>Page not found. Redirecting...</p>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <title>Page Not Found</title>
+  <script>
+    const path = window.location.pathname;
+    const match = path.match(
+      /^\/react\/(about|publications|consultancy|publications\/(\d+))$/,
+    );
+    if (match) {
+      const section = match[1];
+      const id = match[2];
+      let newUrl = "/react?";
+      if (section === "publications" && id) {
+        newUrl += `publications&id=${id}`;
+      } else {
+        newUrl += section;
+      }
+      window.location.href = newUrl;
+    } else {
+      window.location.href = "/react";
+    }
+  </script>
+</head>
+
+<body>
+  <p>Page not found. Redirecting...</p>
+</body>
+
 </html>
