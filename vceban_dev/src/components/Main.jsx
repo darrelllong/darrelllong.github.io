@@ -1,6 +1,12 @@
 // Dependencies
 import React from "react";
-import { Routes, Route, Link, useLocation } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  Link,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 import { Context } from "../ContextProvider";
 // Components
 import About from "./About";
@@ -13,12 +19,13 @@ import "../assets/css/home.scss";
 
 export default function Main() {
   const [searchTerm, setSearchTerm] = React.useState("");
-  const location = useLocation().pathname;
+  const location = useLocation();
+  const navigate = useNavigate();
   const { pathClass, publications, showMenu, setShowMenu } =
     React.useContext(Context);
 
   const disableMenu = () => {
-    if (location === "/") {
+    if (location.pathname === "/") {
       setShowMenu(false);
     }
     if (window.innerWidth > 968) {
@@ -33,14 +40,22 @@ export default function Main() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const matchPublication = location.match(/^\/publications\/(\d+)$/);
+  React.useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const redirectPath = params.get("redirect");
+    if (redirectPath) {
+      navigate(redirectPath, { replace: true });
+    }
+  }, [location, navigate]);
+
+  const matchPublication = location.pathname.match(/^\/publications\/(\d+)$/);
   const publicationId = matchPublication
     ? parseInt(matchPublication[1], 10)
     : null;
 
   return (
     <main
-      className={`dottedBorder ${pathClass(location)} ${showMenu && location != "/" ? "menuShown" : ""}`}
+      className={`dottedBorder ${pathClass(location.pathname)} ${showMenu && location.pathname !== "/" ? "menuShown" : ""}`}
     >
       <Routes>
         <Route path="/about" element={<About />} />
@@ -76,7 +91,7 @@ export default function Main() {
           }
         />
       </Routes>
-      {showMenu && location != "/" && <Menu />}
+      {showMenu && location.pathname !== "/" && <Menu />}
     </main>
   );
 }
