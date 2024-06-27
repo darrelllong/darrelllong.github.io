@@ -6,7 +6,10 @@
   <title>Page Not Found</title>
   <script>
     setTimeout(function () {
-      var pathname = window.location.pathname;
+      let pathname = window.location.pathname;
+      if (pathname.startsWith("/react")) {
+        pathname = pathname.substring(6);
+      }
       window.location.href =
         "/react/?redirect=" + encodeURIComponent(pathname);
     }, 0);
