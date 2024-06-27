@@ -25,7 +25,6 @@ export default function Publications({ searchTerm, search }) {
     const searchString = searchTerm.toLowerCase();
     return (
       publication.title.toLowerCase().includes(searchString) ||
-      publication.full_content.toLowerCase().includes(searchString) ||
       publication.author.some((author) =>
         author.toLowerCase().includes(searchString),
       ) ||
