@@ -158,7 +158,7 @@ const Publication = ({ publication, total, search }) => {
           )}
         </footer>
       </article>
-      <nav>
+      <nav className="main-nav">
         <Link to={prev}>
           <FontAwesomeIcon icon={faCaretLeft} />
           Previous publication
