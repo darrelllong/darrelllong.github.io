@@ -7,9 +7,6 @@ import Hamburger from "./Hamburger";
 import Menu from "./Menu";
 // Styles
 import "../assets/css/header.scss";
-// Assets
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAnchor } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   const { pathClass } = React.useContext(Context);
@@ -54,7 +51,7 @@ export default function Header() {
   return (
     <header className={pathClass(useLocation().pathname)} id="page-header">
       <Link to="/" className="logo">
-        <FontAwesomeIcon icon={faAnchor} alt="Logo" fixedWidth />
+        <img src="/react/logo.avif" alt="Logo" />
       </Link>
       <Link to="/" className="h1-logo">
         <h1>Darrell Long</h1>
