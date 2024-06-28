@@ -2,8 +2,6 @@
 import React from "react";
 // Components
 import Accordion from "./Accordion";
-// Assets
-import picture from "../assets/img/DLong.avif";
 // Styles
 import "../assets/css/about.scss";
 
@@ -40,7 +38,7 @@ export default function About() {
     <>
       <section className="aboutSection dottedBorder">
         <h2>About</h2>
-        <img src={picture} alt="Darrell Long" />
+        <img src="/react/DLong.avif" alt="Darrell Long" />
         <p>
           Dr. Darrell D. E. Long is a Distinguished Visiting Scholar at Santa
           Clara University and is Distinguished Professor of Engineering,
