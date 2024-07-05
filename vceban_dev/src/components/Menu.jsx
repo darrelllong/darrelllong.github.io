@@ -18,7 +18,7 @@ export default function Menu() {
     { label: "CV", link: cv, icon: faFileArrowDown },
     {
       label: "Laboratory",
-      link: "https://www.ssrc.ucsc.edu/index.html",
+      link: "https://www.crss.us/",
       icon: faUpRightFromSquare,
     },
     {
