@@ -57,7 +57,7 @@ export default function Header() {
       id="page-header"
     >
       <Link to="/" className="logo">
-        <img src="/react/logo.avif" alt="Logo" />
+        <img src="/logo.avif" alt="Logo" />
       </Link>
       <Link to="/" className="h1-logo">
         <h1>Darrell Long</h1>

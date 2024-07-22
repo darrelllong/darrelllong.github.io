@@ -18,7 +18,7 @@ export const ContextProvider = ({ children }) => {
 
   const [publications, setPublications] = React.useState([]);
   React.useEffect(() => {
-    fetch("/react/publications.json")
+    fetch("/publications.json")
       .then((response) => response.json())
       .then((data) => setPublications(data))
       .catch((error) => console.error("Error fetching the JSON file:", error));

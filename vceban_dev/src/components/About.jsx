@@ -38,7 +38,7 @@ export default function About() {
     <>
       <section className="aboutSection dottedBorder">
         <h2>About</h2>
-        <img src="/react/DLong.avif" alt="Darrell Long" />
+        <img src="/DLong.avif" alt="Darrell Long" />
         <p>
           Dr. Darrell D. E. Long is a Distinguished Visiting Scholar at Santa
           Clara University and is Distinguished Professor of Engineering,
