@@ -3,12 +3,12 @@
     "name": "Dr. Darrell Long",
     "title": "Founder",
     "bio": "Dr. Long is a renowned expert witness with over 30 years of experience in the field of computer science.",
-    "picture": "/react/DLong.avif"
+    "picture": "/DLong.avif"
   },
   {
     "name": "Dr. Ahmed Amer",
     "title": "Senior Consultant",
     "bio": "Dr. Amer is a seasoned professional with a background in computer security and cryptography.",
-    "picture": "/react/AAmer.avif"
+    "picture": "/AAmer.avif"
   }
 ]

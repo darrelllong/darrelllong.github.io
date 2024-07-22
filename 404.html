@@ -7,11 +7,7 @@
   <script>
     setTimeout(function () {
       let pathname = window.location.pathname;
-      if (pathname.startsWith("/react")) {
-        pathname = pathname.substring(6);
-      }
-      window.location.href =
-        "/react/?redirect=" + encodeURIComponent(pathname);
+      window.location.href = "?redirect=" + encodeURIComponent(pathname);
     }, 0);
   </script>
 </head>
