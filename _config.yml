@@ -7,7 +7,6 @@ email: "darrell@ucsc.edu"
 description: "A work in progress."
 show_excerpts: true
 
-
 #
 # Site specific config.
 #
@@ -25,16 +24,15 @@ darrell:
 
   navigation:
     - title: "About"
-      url: "/"
+      url: "/old/index.html"
     - title: "Curriculum Vitae"
       url: "/cv.pdf"
     - title: "Publications"
-      url: "/publications.html"
+      url: "/old/publications.html"
     - title: "Laboratory"
       url: "https://www.ssrc.ucsc.edu/index.html"
     - title: "Students"
       url: "https://www.genealogy.math.ndsu.nodak.edu/id.php?id=10794"
-
 
 #
 # Custom collections (publications, articles, etc.).
@@ -42,8 +40,7 @@ darrell:
 collections:
   publications:
     output: true
-    permalink: "/publications/:path"
-
+    permalink: "/old/publications/:path"
 
 #
 # No man's land.
