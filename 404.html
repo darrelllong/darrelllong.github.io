@@ -7,7 +7,10 @@
   <script>
     setTimeout(function () {
       let pathname = window.location.pathname;
-      window.location.href = encodeURIComponent(pathname);
+      if (pathname.startsWith("/")) {
+        pathname = pathname.substring(1);
+      }
+      window.location.href = "/?redirect=" + encodeURIComponent(pathname);
     }, 0);
   </script>
 </head>
