@@ -42,8 +42,9 @@ title: Darrell Long | Publications
     </div>
   </li>
 
-  {% assign id = 0 %}
-  {%- assign date_format = site.darrell.date_format | default: "%B %-d, %Y" -%}
+{% assign id = 0 %}
+{%- assign date_format = site.darrell.date_format | default: "%B %-d, %Y" -%}
+
   <li>
     {% assign publications = site.publications | reverse %}
     {% for publication in publications %}
@@ -70,4 +71,3 @@ title: Darrell Long | Publications
     {% endfor %}
   </li>
 </ul>
-
