@@ -651,23 +651,4 @@
       "year": "2022"
     }
   },
-  {
-    "id": 35,
-    "title": "Privacy-Preserving Data Mining Techniques",
-    "short_description": "Privacy-preserving data mining techniques aim to extract useful information from datasets while protecting sensitive information. This paper reviews various approaches and proposes a new method.",
-    "full_content": "Privacy-preserving data mining techniques aim to extract useful information from datasets while protecting sensitive information. This paper reviews various approaches, including k-anonymity, differential privacy, and homomorphic encryption, and proposes a new method that combines the strengths of these techniques. Our hybrid approach leverages secure multi-party computation to enable collaborative data mining without revealing individual data entries. We also introduce an efficient algorithm for anonymizing large datasets, ensuring that the privacy requirements are met while maintaining data utility. Experimental evaluations on real-world datasets demonstrate the effectiveness of our method in preserving privacy and achieving high data mining accuracy.",
-    "author": ["Jessica L. Williams", "Robert A. Johnson", "Emily N. Davis"],
-    "date": "November 2021",
-    "url": "https://www.example.com/papers/privacy_preserving_data_mining.pdf",
-    "bibTeX": {
-      "@article": "williams-ppdm21",
-      "author": "Jessica L. Williams and Robert A. Johnson and Emily N. Davis",
-      "title": "Privacy-Preserving Data Mining Techniques",
-      "journal": "Journal of Data Privacy",
-      "pages": "38-52",
-      "volume": "12",
-      "month": "nov",
-      "year": "2021"
-    }
-  }
 ]
