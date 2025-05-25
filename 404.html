@@ -1,36 +1,152 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Page Not Found</title>
+  <meta charset="UTF-8">
+  <title>404 Not Found</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
+      width: 100%;
       height: 100%;
-      width: 100%;
-      background-color: #000;
+      overflow: hidden;
+      background: url('https://darrelllong.github.io/not-found.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: sans-serif;
     }
-    img {
-      display: block;
+    #gameCanvas {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: auto;
+      height: 100%;
+    }
+    .message {
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+      color: #fff;
+      text-shadow: 0 0 5px rgba(0,0,0,0.7);
+      z-index: 2;
+      pointer-events: none;
     }
   </style>
-  <script>
-    setTimeout(function () {
-      let pathname = window.location.pathname;
-      if (pathname.startsWith("/")) {
-        pathname = pathname.substring(1);
-      }
-      window.location.href = "/?redirect=" + encodeURIComponent(pathname);
-    }, 15000); // 15 seconds in milliseconds
-  </script>
 </head>
-
 <body>
-  <img src="not-found.jpg" alt="Page not found image" />
-</body>
+  <div class="message">404 Not Found</div>
+  <canvas id="gameCanvas"></canvas>
+  <script>
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+    const paddleWidth = 10, paddleHeight = 80;
+    const puckRadius = 20, puckText = '404';
+    let leftPaddle = { x: 10, y: 0 };
+    let rightPaddle = { x: 0, y: 0 };
+    let puck = { x: 0, y: 0, vx: 4, vy: 4 };
 
+    function resize() {
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      canvas.width = w;
+      canvas.height = h;
+      leftPaddle.y = (h - paddleHeight) / 2;
+      rightPaddle.x = w - paddleWidth - 10;
+      rightPaddle.y = (h - paddleHeight) / 2;
+      puck.x = w / 2;
+      puck.y = h / 2;
+    }
+
+    function drawPaddle(p) {
+      ctx.fillStyle = '#fff';
+      ctx.fillRect(p.x, p.y, paddleWidth, paddleHeight);
+    }
+
+    function drawPuck() {
+      ctx.fillStyle = '#fff';
+      ctx.beginPath();
+      ctx.arc(puck.x, puck.y, puckRadius, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = '#000';
+      ctx.font = '16px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(puckText, puck.x, puck.y);
+    }
+
+    // Predict vertical intercept position accounting for bounces
+    function predictInterceptY(paddleX) {
+      const dx = paddleX - puck.x;
+      const t = dx / puck.vx;
+      if (t <= 0) return canvas.height / 2;
+      let y = puck.y + puck.vy * t;
+      const H = canvas.height;
+      // Reflect off top/bottom
+      while (y < 0 || y > H) {
+        if (y < 0) y = -y;
+        if (y > H) y = 2 * H - y;
+      }
+      return y;
+    }
+
+    function update() {
+      // Move puck
+      puck.x += puck.vx;
+      puck.y += puck.vy;
+      // Wall bounce
+      if (puck.y - puckRadius < 0 || puck.y + puckRadius > canvas.height) {
+        puck.vy *= -1;
+      }
+      // Paddle collision
+      if (puck.x - puckRadius < leftPaddle.x + paddleWidth &&
+          puck.y > leftPaddle.y && puck.y < leftPaddle.y + paddleHeight) {
+        puck.vx = Math.abs(puck.vx);
+      }
+      if (puck.x + puckRadius > rightPaddle.x &&
+          puck.y > rightPaddle.y && puck.y < rightPaddle.y + paddleHeight) {
+        puck.vx = -Math.abs(puck.vx);
+      }
+      // Reset
+      if (puck.x < 0 || puck.x > canvas.width) {
+        puck.x = canvas.width / 2;
+        puck.y = canvas.height / 2;
+        puck.vx = 4 * (Math.random() > 0.5 ? 1 : -1);
+        puck.vy = 4 * (Math.random() > 0.5 ? 1 : -1);
+      }
+      // AI movement
+      const speed = 3;
+      // Left paddle AI
+      const targetL = predictInterceptY(leftPaddle.x + paddleWidth);
+      if (targetL < leftPaddle.y + paddleHeight / 2 - 5) {
+        leftPaddle.y -= speed;
+      } else if (targetL > leftPaddle.y + paddleHeight / 2 + 5) {
+        leftPaddle.y += speed;
+      }
+      // Right paddle AI
+      const targetR = predictInterceptY(rightPaddle.x);
+      if (targetR < rightPaddle.y + paddleHeight / 2 - 5) {
+        rightPaddle.y -= speed;
+      } else if (targetR > rightPaddle.y + paddleHeight / 2 + 5) {
+        rightPaddle.y += speed;
+      }
+      // Constrain
+      leftPaddle.y = Math.max(0, Math.min(canvas.height - paddleHeight, leftPaddle.y));
+      rightPaddle.y = Math.max(0, Math.min(canvas.height - paddleHeight, rightPaddle.y));
+    }
+
+    function loop() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawPaddle(leftPaddle);
+      drawPuck();
+      drawPaddle(rightPaddle);
+      update();
+      requestAnimationFrame(loop);
+    }
+
+    window.addEventListener('resize', resize);
+    resize();
+    loop();
+  </script>
+</body>
 </html>
