@@ -7,6 +7,12 @@ module.exports = {
         "eslint:recommended",
         "plugin:react/recommended"
     ],
+    "ignorePatterns": ["dist/"],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
     "overrides": [
         {
             "env": {

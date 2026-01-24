@@ -6,8 +6,6 @@ import { useForm, ValidationError } from "@formspree/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Assets
 import pentexoire from "../assets/img/pentexoire.avif";
-import darrell from "../assets/img/DLong.avif";
-import ahmed from "../assets/img/AAmer.avif";
 import {
   faDatabase,
   faShield,
