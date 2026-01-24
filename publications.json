@@ -1,785 +1,3727 @@
 [
   {
     "id": 1,
-    "title": "Accessing Replicated Data in a Large-Scale Distributed System",
-    "short_description": "Replicating a data object improves the availability of the data, and can improve access latency by locating copies of the object near to their use. When accessing replicated objects across an internetwork, the time to access different replicas is non-uniform. ",
-    "full_content": "Replicating a data object improves the availability of the data, and can improve access latency by locating copies of the object near to their use. When accessing replicated objects across an internetwork, the time to access different replicas is non-uniform. Further, the probability that a particular replica is inaccessible is much higher in an internetwork than in a local-area network (LAN) because of partitions and the many intermediate hosts and networks that can fail. We report three replica-accessing algorithms which can be tuned to minimize either access latency or the number of messages sent. These algorithms assume only an unreliable datagram mechanism for communicating with replicas. Our work extends previous investigations into the performance of replication algorithms by assuming unreliable communication.\nWe have investigated the performance of these algorithms by measuring the communication behavior of the Internet, and by building discrete-event simulations based on our measurements. We find that almost all message failures are either transient or due to long-term host failure, so that retrying messages a few times adds only a small amount to the overall message traffic while improving both access latency as long as the probability of message failure is small. Moreover, the algorithms which retry messages on failure provide significantly improved availability over those which do not.",
+    "title": "Estimating the Reliability of Regeneration-Based Replica Control Protocols",
+    "short_description": "",
+    "full_content": "",
     "author": [
-      "Richard Golding",
       "Darrell D. E. Long"
     ],
-    "date": "July 2003",
-    "url": "https://www.crss.us/media/pubs/c92408e66e20a15d78c3888c31c4b90e761320f1.pdf",
+    "date": "Dec 1, 1989",
+    "url": "https://ssrc.us/media/pubs/aa5ffe2d7d9ecc32c3c9a1fa347724599c773956.pdf",
     "bibTeX": {
-      "@article": "golding-ijcs91",
-      "author": "Richard Golding and Darrell D. E. Long",
-      "title": "Accessing Replicated Data in a Large-Scale Distributed System",
-      "journal": "International Journal in Computer Simulation",
-      "pages": "347-372",
-      "volume": "1",
-      "number": "4",
-      "month": "jul",
-      "year": "1991"
+      "@article": "TC-Long-1989",
+      "author": "Darrell D. E. Long and John L. Carroll and Kris Stewart",
+      "title": "Estimating the Reliability of Regeneration-Based Replica Control Protocols",
+      "journal": "IEEE Transactions on Computers",
+      "volume": "",
+      "year": 1989,
+      "month": "dec"
     }
   },
   {
     "id": 2,
-    "title": "Scalable Session Locking for a Distributed File System",
-    "short_description": "File systems provide an interface for applications to obtain exclusive access to files, in which a process holds privileges to a file that cannot be preempted and restrict the capabilities of other processes. Local file systems do this by maintaining information about the privileges of current file sessions, and checking subsequent sessions for compatibility. ",
-    "full_content": "File systems provide an interface for applications to obtain exclusive access to files, in which a process holds privileges to a file that cannot be preempted and restrict the capabilities of other processes. Local file systems do this by maintaining information about the privileges of current file sessions, and checking subsequent sessions for compatibility. Implementing exclusive access in this manner for distributed file systems degrades performance by requiring every new file session to be registered with a lock server that maintains global session state. We present two techniques for improving the performance of session management in the distributed environment. We introduce a distributed lock for managing file access, called a semi-preemptible lock, that allows clients to cache privileges. Under a semi-preemptible lock, a file system creates new sessions without messages to the lock manager. This improves performance by exploiting locality – the affinity of files to clients. We also present data structures and algorithms for the dynamic evaluation of locks that allow a distributed file system to efficiently manage arbitrarily complex locking. In this case, complex means that an object can be locked in a large number of unique modes. The combination of these techniques results in a distributed locking scheme that supports fine-grained concurrency control with low memory and message overhead and with the assurance that their locking system is correct and avoids unnecessary deadlocks.",
+    "title": "Resilient Memory-Resident Data Objects",
+    "short_description": "",
+    "full_content": "",
     "author": [
-      "Randal C. Burns",
-      "Robert M. Rees",
-      "Larry J. Stockmeyer",
+      "Jehan-François Pâris",
       "Darrell D. E. Long"
     ],
-    "date": "January 2001",
-    "url": "https://www.crss.us/media/pubs/c92408e66e20a15d78c3888c31c4b90e761320f1.pdf",
+    "date": "Mar 1, 1991",
+    "url": "https://ssrc.us/media/pubs/a6a7a22b9280c2c99ea13639b7d543113a3493ff.pdf",
+    "bibTeX": {
+      "@inproceedings": "paris-ipccc91",
+      "author": "Jehan-François Pâris and Darrell D. E. Long",
+      "title": "Resilient Memory-Resident Data Objects",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication",
+      "pages": "145-151",
+      "year": 1991,
+      "month": "mar"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Voting with Regenerable Volatile Witnesses",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 1, 1991",
+    "url": "https://ssrc.us/media/pubs/65be35ba630fa9ce7ae749368810901343b2f2cf.pdf",
+    "bibTeX": {
+      "@inproceedings": "ICDE-Paris-1991",
+      "author": "Jehan-François Pâris and Darrell D. E. Long",
+      "title": "Voting with Regenerable Volatile Witnesses",
+      "booktitle": "Proceedings of the Seventh International Conference on Data Engineering",
+      "year": 1991,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Swift: A Storage Architecture for Large Objects",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long"
+    ],
+    "date": "Oct 1, 1991",
+    "url": "https://ssrc.us/media/pubs/b05f14d6012bbf31e75e617ef652b57e579edbb0.pdf",
+    "bibTeX": {
+      "@inproceedings": "MSST-Cabrera-1991",
+      "author": "Luis-Felipe Cabrera and Darrell D. E. Long",
+      "title": "Swift: A Storage Architecture for Large Objects",
+      "booktitle": "Proceedings of the Eleventh Symposium on Mass Storage Systems",
+      "year": 1991,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 5,
+    "title": "A Comparison of Two Implementations of the Token Ring Priority Function",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long"
+    ],
+    "date": "Jan 1, 1994",
+    "url": "https://ssrc.us/media/pubs/a08002805a8cadaf36fd9471a6e5fd62390979e1.pdf",
+    "bibTeX": {
+      "@article": "IJCS-Fellner-94",
+      "author": "Ivan  Fellner and Ivan Racko and Milos Racek and Karol Fabian and Darrell D. E. Long",
+      "title": "A Comparison of Two Implementations of the Token Ring Priority Function",
+      "journal": "International Journal in Computer Simulation",
+      "volume": "",
+      "year": 1994,
+      "month": "jan"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Using an Object-oriented Framework to Construct Wide-area Group Communication Mechanisms",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Richard Golding",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jan 1, 1994",
+    "url": "https://ssrc.us/media/pubs/35affe3607a3ec1e5cfc9fb38c04d1a6836616ca.pdf",
+    "bibTeX": {
+      "@inproceedings": "PISAC-Golding-1993",
+      "author": "Richard Golding and Darrell D. E. Long and John Wilkes",
+      "title": "Using an Object-oriented Framework to Construct Wide-area Group Communication Mechanisms",
+      "booktitle": "Proceedings of the 1994 Usenix Winter Technical Conferenc",
+      "year": 1994,
+      "month": "jan"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Predicting file-system actions from prior events",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Thomas Kroeger",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jan 1, 1996",
+    "url": "https://ssrc.us/media/pubs/0608a3d38ff69b522073de54ba5f864ded8a240c.pdf",
+    "bibTeX": {
+      "@inproceedings": "kroeger-usenix96",
+      "author": "Thomas Kroeger and Darrell D. E. Long",
+      "title": "Predicting file-system actions from prior events",
+      "booktitle": "Proceedings of the Winter 1996 USENIX Technical Conference",
+      "pages": "319–328",
+      "year": 1996,
+      "month": "jan"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Exploring the bounds of web latency reduction from caching and prefetching",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Thomas Kroeger",
+      "Darrell D. E. Long",
+      "Jeffrey C. Mogul"
+    ],
+    "date": "Dec 1, 1997",
+    "url": "https://ssrc.us/media/pubs/507f23acd756883f557ca853b43dd6ffcd2941bd.pdf",
+    "bibTeX": {
+      "@inproceedings": "kroeger-usits97",
+      "author": "Thomas Kroeger and Darrell D. E. Long and Jeffrey C. Mogul",
+      "title": "Exploring the bounds of web latency reduction from caching and prefetching",
+      "booktitle": "Proceedings of the USENIX Symposium on Internet Technologies and Systems (USITS '97)",
+      "pages": "13–22",
+      "year": 1997,
+      "month": "dec"
+    }
+  },
+  {
+    "id": 9,
+    "title": "In-Place Reconstruction of Delta Compressed Files",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Randal Burns",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jun 1, 1998",
+    "url": "https://ssrc.us/media/pubs/1e38dfef5b6289881f47ad0cd35bb4c509f6af3e.pdf",
+    "bibTeX": {
+      "@inproceedings": "PODC-Burns-1998",
+      "author": "Randal Burns and Darrell D. E. Long",
+      "title": "In-Place Reconstruction of Delta Compressed Files",
+      "booktitle": "Proceedings of Principles of Distributed Computing",
+      "year": 1998,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 10,
+    "title": "The case for efficient file access pattern modeling",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Thomas Kroeger",
+      "Darrell D. E. Long"
+    ],
+    "date": "Mar 1, 1999",
+    "url": "https://ssrc.us/media/pubs/7960c010601a7a90f42bb21ba1ea6e52b0626b22.pdf",
+    "bibTeX": {
+      "@inproceedings": "kroeger-hotos99",
+      "author": "Thomas Kroeger and Darrell D. E. Long",
+      "title": "The case for efficient file access pattern modeling",
+      "booktitle": "Proceedings of the 7th IEEE Workshop on Hot Topics in Operating Systems (HotOS-VII)",
+      "pages": "14–19",
+      "year": 1999,
+      "month": "mar"
+    }
+  },
+  {
+    "id": 11,
+    "title": "Zero-Delay Broadcasting Protocols for Video on Demand",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell D. E. Long",
+      "Patrick Mantey"
+    ],
+    "date": "Oct 1, 1999",
+    "url": "https://ssrc.us/media/pubs/01b9fd1a5abb9b55809d73c35d7267f08858303f.pdf",
+    "bibTeX": {
+      "@inproceedings": "paris-mm99",
+      "author": "Jehan-François Pâris and Darrell D. E. Long and Patrick Mantey",
+      "title": "Zero-Delay Broadcasting Protocols for Video on Demand",
+      "booktitle": "Proceedings of the Seventh ACM International Multimedia Conference,",
+      "year": 1999,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 12,
+    "title": "Adaptive Disk Spin-Down for Mobile Computers",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long"
+    ],
+    "date": "Jan 1, 2000",
+    "url": "https://ssrc.us/media/pubs/23187ba74b5b5c465fc7c9595be10d6d5ea8a4dc.pdf",
+    "bibTeX": {
+      "@article": "MONET-Helmbold-2000",
+      "author": "David P. Helmbold and Darrell D. E. Long and Tracey L. Sconyers and Bruce Sherrod",
+      "title": "Adaptive Disk Spin-Down for Mobile Computers",
+      "journal": "ACM/Baltzer Mobile Networks and Applications Journal",
+      "volume": "",
+      "year": 2000,
+      "month": "jan"
+    }
+  },
+  {
+    "id": 13,
+    "title": "Semi-Preemptible Locks for a Distributed File System",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Randal Burns",
+      "Darrell D. E. Long"
+    ],
+    "date": "Feb 1, 2000",
+    "url": "https://ssrc.us/media/pubs/509ccaeb00d3f565746b8af08c6d1e0bb35f353f.pdf",
+    "bibTeX": {
+      "@inproceedings": "burns-ipccc00",
+      "author": "Randal Burns and Robert M. Rees and Darrell D. E. Long",
+      "title": "Semi-Preemptible Locks for a Distributed File System",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication",
+      "year": 2000,
+      "month": "feb"
+    }
+  },
+  {
+    "id": 14,
+    "title": "Increasing predictive accuracy through limited prefetching",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Tsozen Yeh",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jan 1, 2001",
+    "url": "https://ssrc.us/media/pubs/f0c51402c600fd60463c6fa175cca43898e98623.pdf",
+    "bibTeX": {
+      "@inproceedings": "yeh-cnds02",
+      "author": "Tsozen Yeh and Darrell D. E. Long and Scott A. Brandt",
+      "title": "Increasing predictive accuracy through limited prefetching",
+      "booktitle": "Proceedings of Communications Networks and Distributed Systems Modeling and Simulation (CNDS 2002)",
+      "pages": "131–138",
+      "year": 2001,
+      "month": "jan"
+    }
+  },
+  {
+    "id": 15,
+    "title": "Design and implementation of a predictive file prefetching algorithm",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Thomas Kroeger",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jan 1, 2001",
+    "url": "https://ssrc.us/media/pubs/fa6c3750ddb12fe0165bfd014593880513756115.pdf",
+    "bibTeX": {
+      "@inproceedings": "kroeger-usenix01",
+      "author": "Thomas Kroeger and Darrell D. E. Long",
+      "title": "Design and implementation of a predictive file prefetching algorithm",
+      "booktitle": "Proceedings of the 2001 USENIX Annual Technical Conference",
+      "pages": "105–118",
+      "year": 2001,
+      "month": "jan"
+    }
+  },
+  {
+    "id": 16,
+    "title": "Strong security for distributed file systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ethan L. Miller",
+      "Darrell D. E. Long",
+      "William E. Freeman",
+      "Benjamin C. Reed"
+    ],
+    "date": "Apr 1, 2001",
+    "url": "https://ssrc.us/media/pubs/13e25f6d063b2e30fae817e42387d13ef34de727.pdf",
+    "bibTeX": {
+      "@inproceedings": "miller-ipccc01",
+      "author": "Ethan L. Miller and Darrell D. E. Long and William E. Freeman and Benjamin C. Reed",
+      "title": "Strong security for distributed file systems",
+      "booktitle": "Proceedings of the 20th IEEE International Performance, Computing and Communications Conference (IPCCC '01)",
+      "pages": "34–40",
+      "year": 2001,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 17,
+    "title": "Noah: Low-cost file access prediction through pairs",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ahmed Amer",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 1, 2001",
+    "url": "https://ssrc.us/media/pubs/ce55f8ccfc0ffef56bc5631f7db34eead40a4c59.pdf",
+    "bibTeX": {
+      "@inproceedings": "amer-ipccc01",
+      "author": "Ahmed Amer and Darrell D. E. Long",
+      "title": "Noah: Low-cost file access prediction through pairs",
+      "booktitle": "Proceedings of the 20th IEEE International Performance, Computing and Communications Conference (IPCCC '01)",
+      "pages": "27–33",
+      "year": 2001,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 18,
+    "title": "HeRMES: High-Performance Reliable MRAM-Enabled Storage",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "May 15, 2001",
+    "url": "https://ssrc.us/media/pubs/1065fdf3a405f4387b0f39afde5446cd98bf9a70.pdf",
+    "bibTeX": {
+      "@inproceedings": "miller-hotos01",
+      "author": "Ethan L. Miller and Scott A. Brandt and Darrell D. E. Long",
+      "title": "{HeRMES",
+      "booktitle": "Proceedings of the 8th IEEE Workshop on Hot Topics in Operating Systems (HotOS-VIII)",
+      "pages": "83-87",
+      "year": 2001,
+      "month": "may"
+    }
+  },
+  {
+    "id": 19,
+    "title": "Conserving Battery Energy through Making Fewer Incorrect File Predictions",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Tsozen Yeh",
+      "Darrell D. E. Long"
+    ],
+    "date": "May 29, 2001",
+    "url": "https://ssrc.us/media/pubs/e74e2913de61c1f751c4ac15c4d3e69e276ef853.pdf",
+    "bibTeX": {
+      "@inproceedings": "yeh-wpmrtes01",
+      "author": "Tsozen Yeh and Darrell D. E. Long and Scott A. Brandt",
+      "title": "Conserving Battery Energy through Making Fewer Incorrect File Predictions",
+      "booktitle": "IEEE Workshop on Power Management for Real-Time and Embedded Systems  at the IEEE Real-Time Technology and Applications Symposium",
+      "year": 2001,
+      "month": "may"
+    }
+  },
+  {
+    "id": 20,
+    "title": "Caching Files with a Program-based Last N Successors",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Tsozen Yeh",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jun 17, 2001",
+    "url": "https://ssrc.us/media/pubs/fac624b8c7071c8e67a6231b2c0dfc5ff6ec48a6.pdf",
+    "bibTeX": {
+      "@inproceedings": "yeh-wc01",
+      "author": "Tsozen Yeh and Darrell D. E. Long and Scott A. Brandt",
+      "title": "Caching Files with a Program-based Last N Successors",
+      "booktitle": "Workshop on Caching, Coherency and Consistency (WC3 '01)",
+      "year": 2001,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 21,
+    "title": "Efficient Data Distribution in a Web Server Farm",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Randal Burns",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jul 1, 2001",
+    "url": "https://ssrc.us/media/pubs/facc207da8dea2e441f6c114d02992e99927a0b9.pdf",
+    "bibTeX": {
+      "@article": "IC-Burns-2001",
+      "author": "Randal Burns and Robert M. Rees and Darrell D. E. Long",
+      "title": "Efficient Data Distribution in a Web Server Farm",
+      "journal": "Internet Computing",
+      "volume": "",
+      "year": 2001,
+      "month": "jul"
+    }
+  },
+  {
+    "id": 22,
+    "title": "Aggregating caches: A mechanism for implicit file prefetching",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ahmed Amer",
+      "Darrell D. E. Long"
+    ],
+    "date": "Aug 1, 2001",
+    "url": "https://ssrc.us/media/pubs/47390cbc9be6f85f6b1a746ded73b1c2f0e2a3e9.pdf",
+    "bibTeX": {
+      "@inproceedings": "amer-mascots01",
+      "author": "Ahmed Amer and Darrell D. E. Long",
+      "title": "Aggregating caches: A mechanism for implicit file prefetching",
+      "booktitle": "Proceedings of the 9th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '01)",
+      "pages": "293–301",
+      "year": 2001,
+      "month": "aug"
+    }
+  },
+  {
+    "id": 23,
+    "title": "Performing file prediction with a program-based successor model",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Tsozen Yeh",
+      "Darrell D. E. Long"
+    ],
+    "date": "Aug 1, 2001",
+    "url": "https://ssrc.us/media/pubs/e1b72bb0c98debd2f681bb45d00c511cf57c7e0b.pdf",
+    "bibTeX": {
+      "@inproceedings": "yeh-mascots01",
+      "author": "Tsozen Yeh and Darrell D. E. Long and Scott A. Brandt",
+      "title": "Performing file prediction with a program-based successor model",
+      "booktitle": "Proceedings of the 9th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '01)",
+      "pages": "193–202",
+      "year": 2001,
+      "month": "aug"
+    }
+  },
+  {
+    "id": 24,
+    "title": "Scalable Session Locking for a Distributed File System",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Randal Burns",
+      "Larry Stockmeyer",
+      "Darrell D. E. Long"
+    ],
+    "date": "Oct 1, 2001",
+    "url": "https://ssrc.us/media/pubs/c92d2f101cffec31e0f2c60230caa157b5409960.pdf",
     "bibTeX": {
       "@article": "burns-ccj01",
       "author": "Randal Burns and Robert M. Rees and Larry Stockmeyer and Darrell D. E. Long",
       "title": "Scalable Session Locking for a Distributed File System",
       "journal": "Cluster Computing Journal",
       "pages": "295-306",
-      "volume": "4",
-      "month": "oct",
-      "year": "2001"
-    }
-  },
-  {
-    "id": 3,
-    "title": "DELETE EVERYTHING AFTER THIS BEFORE DEPLOYMENT",
-    "short_description": "This and every other paper below that don't list Darrell Long as an author were generated with AI to test pagination and UI. Every connection to real individuals and works is unintended.",
-    "full_content": "Data synchronization between mobile devices and cloud services can be challenging due to limited bandwidth and connectivity issues. This paper discusses techniques to improve the efficiency of data synchronization in mobile environments. We introduce a novel synchronization algorithm that minimizes data transfer by identifying and transmitting only the changed portions of files. This approach leverages a combination of delta encoding and predictive modeling to reduce the amount of data sent over the network. Additionally, we present a lightweight protocol that adapts to varying network conditions, ensuring robust performance even in low-bandwidth scenarios. Our experimental results demonstrate significant reductions in synchronization time and data usage compared to traditional methods.",
-    "author": [
-      "Alice B. Smith",
-      "John D. Doe",
-      "Michael Q. Brown"
-    ],
-    "date": "March 2015",
-    "url": "https://www.example.com/papers/mobile_sync.pdf",
-    "bibTeX": {
-      "@article": "smith-dsync15",
-      "author": "Alice B. Smith and John D. Doe and Michael Q. Brown",
-      "title": "Efficient Data Synchronization for Mobile Devices",
-      "journal": "Mobile Computing Journal",
-      "pages": "123-135",
-      "volume": "10",
-      "month": "mar",
-      "year": "2015"
-    }
-  },
-  {
-    "id": 4,
-    "title": "Machine Learning for Predictive Maintenance in Manufacturing",
-    "short_description": "Predictive maintenance uses machine learning algorithms to forecast equipment failures before they occur, improving reliability and reducing downtime in manufacturing processes.",
-    "full_content": "Predictive maintenance uses machine learning algorithms to forecast equipment failures before they occur, improving reliability and reducing downtime in manufacturing processes. This paper explores various machine learning models, including regression analysis, neural networks, and support vector machines, to predict maintenance needs based on sensor data from manufacturing equipment. We propose a hybrid approach that combines historical data with real-time monitoring to enhance prediction accuracy. Our framework integrates with existing industrial control systems and provides actionable insights through a user-friendly dashboard. Case studies from multiple manufacturing plants demonstrate the effectiveness of our solution in reducing unexpected equipment failures and optimizing maintenance schedules.",
-    "author": [
-      "Linda K. Johnson",
-      "Henry M. Lee",
-      "Sarah P. Anderson"
-    ],
-    "date": "June 2018",
-    "url": "https://www.example.com/papers/predictive_maintenance.pdf",
-    "bibTeX": {
-      "@article": "johnson-mlpm18",
-      "author": "Linda K. Johnson and Henry M. Lee and Sarah P. Anderson",
-      "title": "Machine Learning for Predictive Maintenance in Manufacturing",
-      "journal": "Journal of Industrial Engineering",
-      "pages": "67-82",
-      "volume": "22",
-      "month": "jun",
-      "year": "2018"
-    }
-  },
-  {
-    "id": 5,
-    "title": "Advanced Encryption Techniques for Secure Data Storage",
-    "short_description": "This paper discusses advanced encryption methods to secure sensitive data stored in cloud environments, focusing on performance and robustness against attacks.",
-    "full_content": "This paper discusses advanced encryption methods to secure sensitive data stored in cloud environments, focusing on performance and robustness against attacks. We evaluate several encryption algorithms, including AES, RSA, and elliptic curve cryptography (ECC), in terms of their computational efficiency and security properties. A novel hybrid encryption scheme is introduced, combining the strengths of symmetric and asymmetric cryptography to provide high security with minimal performance overhead. Additionally, we propose an adaptive key management system that dynamically adjusts key lengths based on the sensitivity of the data and current threat landscape. Our experiments show that the proposed scheme achieves a balance between security and performance, making it suitable for real-time applications.",
-    "author": [
-      "David R. Martinez",
-      "Emily L. Wang",
-      "James T. Harris"
-    ],
-    "date": "September 2020",
-    "url": "https://www.example.com/papers/secure_storage.pdf",
-    "bibTeX": {
-      "@article": "martinez-aets20",
-      "author": "David R. Martinez and Emily L. Wang and James T. Harris",
-      "title": "Advanced Encryption Techniques for Secure Data Storage",
-      "journal": "Journal of Cryptographic Research",
-      "pages": "45-58",
-      "volume": "15",
-      "month": "sep",
-      "year": "2020"
-    }
-  },
-  {
-    "id": 6,
-    "title": "Optimizing Cloud Resource Allocation with Machine Learning",
-    "short_description": "This paper explores machine learning techniques for optimizing resource allocation in cloud computing environments to improve efficiency and reduce costs.",
-    "full_content": "This paper explores machine learning techniques for optimizing resource allocation in cloud computing environments to improve efficiency and reduce costs. We investigate the use of reinforcement learning algorithms to dynamically allocate resources based on real-time workload demands. Our proposed model learns from historical data to predict future resource needs and adjusts allocations accordingly. We also introduce a novel feedback mechanism that continuously monitors system performance and updates the learning model to adapt to changing conditions. Experimental results demonstrate that our approach significantly reduces resource wastage and improves overall system performance compared to traditional static allocation methods.",
-    "author": [
-      "Laura S. Cooper",
-      "Thomas V. Nguyen",
-      "Patricia R. Wilson"
-    ],
-    "date": "November 2019",
-    "url": "https://www.example.com/papers/cloud_resource_allocation.pdf",
-    "bibTeX": {
-      "@article": "cooper-ocra19",
-      "author": "Laura S. Cooper and Thomas V. Nguyen and Patricia R. Wilson",
-      "title": "Optimizing Cloud Resource Allocation with Machine Learning",
-      "journal": "Cloud Computing Journal",
-      "pages": "87-99",
-      "volume": "12",
-      "month": "nov",
-      "year": "2019"
-    }
-  },
-  {
-    "id": 7,
-    "title": "Blockchain Technology for Secure Voting Systems",
-    "short_description": "Blockchain technology offers a decentralized and tamper-proof solution for secure electronic voting systems, ensuring transparency and integrity in the electoral process.",
-    "full_content": "Blockchain technology offers a decentralized and tamper-proof solution for secure electronic voting systems, ensuring transparency and integrity in the electoral process. This paper presents a detailed analysis of blockchain-based voting systems, highlighting their advantages over traditional methods. We propose a novel voting protocol that leverages smart contracts to automate the election process, from voter registration to result tallying. The protocol ensures voter anonymity while providing a verifiable audit trail that can be independently verified by third parties. We also discuss potential challenges, such as scalability and voter accessibility, and propose solutions to address these issues. Our prototype implementation demonstrates the feasibility of using blockchain for secure and transparent elections.",
-    "author": [
-      "Michael G. Robinson",
-      "Anna P. Lee",
-      "Kevin T. Clark"
-    ],
-    "date": "February 2021",
-    "url": "https://www.example.com/papers/blockchain_voting.pdf",
-    "bibTeX": {
-      "@article": "robinson-bvs21",
-      "author": "Michael G. Robinson and Anna P. Lee and Kevin T. Clark",
-      "title": "Blockchain Technology for Secure Voting Systems",
-      "journal": "Journal of Blockchain Research",
-      "pages": "101-115",
-      "volume": "9",
-      "month": "feb",
-      "year": "2021"
-    }
-  },
-  {
-    "id": 8,
-    "title": "Energy-Efficient Wireless Sensor Networks for IoT Applications",
-    "short_description": "This paper explores strategies to enhance the energy efficiency of wireless sensor networks (WSNs) used in Internet of Things (IoT) applications, extending the lifetime of sensor nodes.",
-    "full_content": "This paper explores strategies to enhance the energy efficiency of wireless sensor networks (WSNs) used in Internet of Things (IoT) applications, extending the lifetime of sensor nodes. We propose a hierarchical routing protocol that minimizes energy consumption by optimizing data transmission paths. Our protocol includes a dynamic power management scheme that adjusts the transmission power based on the distance to the receiving node, reducing unnecessary energy expenditure. Additionally, we introduce an adaptive sleep schedule that allows sensor nodes to enter low-power modes during periods of inactivity. Simulation results show that our approach significantly extends the network lifetime compared to existing protocols, making it suitable for long-term IoT deployments.",
-    "author": [
-      "Rachel T. Miller",
-      "Daniel S. Garcia",
-      "Monica L. Evans"
-    ],
-    "date": "April 2022",
-    "url": "https://www.example.com/papers/energy_efficient_wsn.pdf",
-    "bibTeX": {
-      "@article": "miller-eewsn22",
-      "author": "Rachel T. Miller and Daniel S. Garcia and Monica L. Evans",
-      "title": "Energy-Efficient Wireless Sensor Networks for IoT Applications",
-      "journal": "Journal of Internet of Things",
-      "pages": "23-36",
-      "volume": "18",
-      "month": "apr",
-      "year": "2022"
-    }
-  },
-  {
-    "id": 9,
-    "title": "Real-Time Analytics for Big Data",
-    "short_description": "This paper examines the challenges and solutions for real-time analytics in big data environments, focusing on scalable processing frameworks and algorithms.",
-    "full_content": "This paper examines the challenges and solutions for real-time analytics in big data environments, focusing on scalable processing frameworks and algorithms. We review the limitations of traditional batch processing methods and highlight the need for real-time analytics to derive actionable insights from streaming data. Our proposed solution leverages Apache Kafka for data ingestion and Apache Flink for stream processing, enabling low-latency data analysis. We also introduce a machine learning pipeline that integrates with the streaming platform to provide predictive analytics in real time. Case studies from various industries demonstrate the effectiveness of our approach in handling large volumes of data with minimal delay.",
-    "author": [
-      "Stephen P. Thompson",
-      "Victoria R. Brooks",
-      "Albert J. Diaz"
-    ],
-    "date": "August 2020",
-    "url": "https://www.example.com/papers/real_time_analytics.pdf",
-    "bibTeX": {
-      "@article": "thompson-rta20",
-      "author": "Stephen P. Thompson and Victoria R. Brooks and Albert J. Diaz",
-      "title": "Real-Time Analytics for Big Data",
-      "journal": "Journal of Big Data",
-      "pages": "54-68",
-      "volume": "7",
-      "month": "aug",
-      "year": "2020"
-    }
-  },
-  {
-    "id": 10,
-    "title": "Deep Learning for Image Recognition in Autonomous Vehicles",
-    "short_description": "Deep learning techniques have revolutionized image recognition tasks in autonomous vehicles, improving accuracy and reliability in real-world driving scenarios.",
-    "full_content": "Deep learning techniques have revolutionized image recognition tasks in autonomous vehicles, improving accuracy and reliability in real-world driving scenarios. This paper presents a comprehensive study of convolutional neural networks (CNNs) for object detection and classification in autonomous vehicles. We compare various CNN architectures, such as VGGNet, ResNet, and Inception, in terms of their performance and computational requirements. Our proposed model, AutoNet, combines the strengths of these architectures and includes a custom preprocessing pipeline to handle diverse lighting and weather conditions. Experimental results on benchmark datasets demonstrate that AutoNet achieves state-of-the-art accuracy while maintaining real-time processing capabilities, making it suitable for deployment in autonomous driving systems.",
-    "author": [
-      "Karen W. Moore",
-      "Oliver H. Scott",
-      "Yasmine F. Harris"
-    ],
-    "date": "May 2021",
-    "url": "https://www.example.com/papers/deep_learning_autonomous.pdf",
-    "bibTeX": {
-      "@article": "moore-dlir21",
-      "author": "Karen W. Moore and Oliver H. Scott and Yasmine F. Harris",
-      "title": "Deep Learning for Image Recognition in Autonomous Vehicles",
-      "journal": "Journal of Artificial Intelligence Research",
-      "pages": "89-104",
-      "volume": "25",
-      "month": "may",
-      "year": "2021"
-    }
-  },
-  {
-    "id": 11,
-    "title": "Augmented Reality Applications in Education",
-    "short_description": "Augmented reality (AR) has the potential to transform education by providing immersive and interactive learning experiences. This paper explores various AR applications in educational settings.",
-    "full_content": "Augmented reality (AR) has the potential to transform education by providing immersive and interactive learning experiences. This paper explores various AR applications in educational settings, ranging from primary schools to higher education. We discuss the benefits of AR in enhancing student engagement, motivation, and understanding of complex concepts. Our proposed AR platform, EduAR, integrates with existing educational tools and provides a user-friendly interface for creating and sharing AR content. Case studies from pilot programs demonstrate the positive impact of AR on student learning outcomes, highlighting the potential of this technology to revolutionize the educational landscape.",
-    "author": [
-      "Natalie E. White",
-      "Christopher J. Thompson",
-      "Sophia L. Reed"
-    ],
-    "date": "July 2023",
-    "url": "https://www.example.com/papers/ar_education.pdf",
-    "bibTeX": {
-      "@article": "white-are23",
-      "author": "Natalie E. White and Christopher J. Thompson and Sophia L. Reed",
-      "title": "Augmented Reality Applications in Education",
-      "journal": "Educational Technology Journal",
-      "pages": "78-92",
-      "volume": "30",
-      "month": "jul",
-      "year": "2023"
-    }
-  },
-  {
-    "id": 12,
-    "title": "Cybersecurity Challenges in the Internet of Things",
-    "short_description": "The Internet of Things (IoT) introduces new cybersecurity challenges due to the vast number of connected devices and their varying levels of security. This paper addresses these challenges and proposes solutions.",
-    "full_content": "The Internet of Things (IoT) introduces new cybersecurity challenges due to the vast number of connected devices and their varying levels of security. This paper addresses these challenges and proposes solutions to enhance the security of IoT networks. We analyze common vulnerabilities in IoT devices, such as weak authentication mechanisms and inadequate encryption protocols. Our proposed security framework includes a multi-layered approach that combines device-level security measures with network-level defenses. We also introduce a machine learning-based anomaly detection system that identifies and mitigates potential threats in real time. Experimental evaluations show that our framework significantly improves the security posture of IoT deployments, reducing the risk of cyber attacks.",
-    "author": [
-      "Brian T. Jackson",
-      "Laura M. Young",
-      "Anthony P. Green"
-    ],
-    "date": "October 2021",
-    "url": "https://www.example.com/papers/iot_cybersecurity.pdf",
-    "bibTeX": {
-      "@article": "jackson-csiot21",
-      "author": "Brian T. Jackson and Laura M. Young and Anthony P. Green",
-      "title": "Cybersecurity Challenges in the Internet of Things",
-      "journal": "Journal of Cybersecurity",
-      "pages": "34-47",
-      "volume": "14",
-      "month": "oct",
-      "year": "2021"
-    }
-  },
-  {
-    "id": 13,
-    "title": "Edge Computing for Real-Time Data Processing",
-    "short_description": "Edge computing enables real-time data processing by bringing computation closer to data sources, reducing latency and bandwidth usage. This paper explores various edge computing architectures and use cases.",
-    "full_content": "Edge computing enables real-time data processing by bringing computation closer to data sources, reducing latency and bandwidth usage. This paper explores various edge computing architectures and use cases, highlighting their benefits and challenges. We present a modular edge computing framework that supports diverse applications, from smart cities to industrial IoT. Our framework includes an intelligent data routing mechanism that optimizes resource utilization and ensures low-latency processing. We also discuss the integration of edge computing with cloud services, providing a hybrid solution that balances local processing with centralized control. Case studies demonstrate the effectiveness of our approach in real-world scenarios, showcasing significant improvements in performance and efficiency.",
-    "author": [
-      "Jason D. Walker",
-      "Megan S. Clark",
-      "Ethan B. Adams"
-    ],
-    "date": "December 2019",
-    "url": "https://www.example.com/papers/edge_computing.pdf",
-    "bibTeX": {
-      "@article": "walker-ecdp19",
-      "author": "Jason D. Walker and Megan S. Clark and Ethan B. Adams",
-      "title": "Edge Computing for Real-Time Data Processing",
-      "journal": "Journal of Distributed Systems",
-      "pages": "113-127",
-      "volume": "16",
-      "month": "dec",
-      "year": "2019"
-    }
-  },
-  {
-    "id": 14,
-    "title": "Natural Language Processing for Sentiment Analysis",
-    "short_description": "This paper explores the use of natural language processing (NLP) techniques for sentiment analysis, focusing on applications in social media monitoring and customer feedback analysis.",
-    "full_content": "This paper explores the use of natural language processing (NLP) techniques for sentiment analysis, focusing on applications in social media monitoring and customer feedback analysis. We review various NLP models, including traditional methods such as bag-of-words and modern approaches like transformer-based architectures (e.g., BERT and GPT). Our proposed sentiment analysis pipeline integrates preprocessing, feature extraction, and classification modules to accurately determine the sentiment of textual data. We also introduce a novel ensemble method that combines the outputs of multiple models to improve prediction accuracy. Experimental results on benchmark datasets demonstrate the effectiveness of our approach, achieving state-of-the-art performance in sentiment classification tasks.",
-    "author": [
-      "Grace H. Campbell",
-      "Isaac N. Rivera",
-      "Olivia M. Turner"
-    ],
-    "date": "January 2022",
-    "url": "https://www.example.com/papers/nlp_sentiment_analysis.pdf",
-    "bibTeX": {
-      "@article": "campbell-nlpsa22",
-      "author": "Grace H. Campbell and Isaac N. Rivera and Olivia M. Turner",
-      "title": "Natural Language Processing for Sentiment Analysis",
-      "journal": "Journal of Computational Linguistics",
-      "pages": "77-91",
-      "volume": "29",
-      "month": "jan",
-      "year": "2022"
-    }
-  },
-  {
-    "id": 15,
-    "title": "Quantum Computing: Algorithms and Applications",
-    "short_description": "Quantum computing promises to revolutionize computational tasks by leveraging the principles of quantum mechanics. This paper discusses various quantum algorithms and their potential applications.",
-    "full_content": "Quantum computing promises to revolutionize computational tasks by leveraging the principles of quantum mechanics. This paper discusses various quantum algorithms and their potential applications in fields such as cryptography, optimization, and machine learning. We provide an overview of key quantum algorithms, including Shor's algorithm for integer factorization and Grover's algorithm for database search. Additionally, we introduce a novel quantum algorithm for solving large-scale linear equations, demonstrating its superiority over classical methods. Our proposed algorithm is implemented on a simulated quantum computer, and experimental results show significant improvements in computation time. We also explore potential real-world applications of quantum computing, highlighting its transformative impact on various industries.",
-    "author": [
-      "David J. Kim",
-      "Elena S. Martinez",
-      "Samuel P. Roberts"
-    ],
-    "date": "June 2023",
-    "url": "https://www.example.com/papers/quantum_computing.pdf",
-    "bibTeX": {
-      "@article": "kim-qca23",
-      "author": "David J. Kim and Elena S. Martinez and Samuel P. Roberts",
-      "title": "Quantum Computing: Algorithms and Applications",
-      "journal": "Quantum Information Journal",
-      "pages": "12-28",
-      "volume": "11",
-      "month": "jun",
-      "year": "2023"
-    }
-  },
-  {
-    "id": 16,
-    "title": "IoT-Based Smart Agriculture: Enhancing Crop Yield",
-    "short_description": "The Internet of Things (IoT) offers innovative solutions for smart agriculture, helping farmers to enhance crop yield through real-time monitoring and data-driven decision-making.",
-    "full_content": "The Internet of Things (IoT) offers innovative solutions for smart agriculture, helping farmers to enhance crop yield through real-time monitoring and data-driven decision-making. This paper presents an IoT-based system that integrates soil moisture sensors, weather stations, and automated irrigation systems to optimize water usage and improve crop health. Our system includes a cloud-based platform that aggregates data from various sensors and provides actionable insights through predictive analytics. We also introduce a machine learning model that predicts crop diseases based on environmental conditions and historical data, enabling proactive intervention. Field trials demonstrate significant improvements in crop yield and resource efficiency, highlighting the potential of IoT in transforming agriculture.",
-    "author": [
-      "Emma R. Thompson",
-      "Benjamin K. Scott",
-      "Laura M. Reed"
-    ],
-    "date": "April 2022",
-    "url": "https://www.example.com/papers/iot_smart_agriculture.pdf",
-    "bibTeX": {
-      "@article": "thompson-iosa22",
-      "author": "Emma R. Thompson and Benjamin K. Scott and Laura M. Reed",
-      "title": "IoT-Based Smart Agriculture: Enhancing Crop Yield",
-      "journal": "Journal of Agricultural Technology",
-      "pages": "59-73",
-      "volume": "20",
-      "month": "apr",
-      "year": "2022"
-    }
-  },
-  {
-    "id": 17,
-    "title": "Privacy-Preserving Data Mining Techniques",
-    "short_description": "Privacy-preserving data mining techniques aim to extract useful information from datasets while protecting sensitive information. This paper reviews various approaches and proposes a new method.",
-    "full_content": "Privacy-preserving data mining techniques aim to extract useful information from datasets while protecting sensitive information. This paper reviews various approaches, including k-anonymity, differential privacy, and homomorphic encryption, and proposes a new method that combines the strengths of these techniques. Our hybrid approach leverages secure multi-party computation to enable collaborative data mining without revealing individual data entries. We also introduce an efficient algorithm for anonymizing large datasets, ensuring that the privacy requirements are met while maintaining data utility. Experimental evaluations on real-world datasets demonstrate the effectiveness of our method in preserving privacy and achieving high data mining accuracy.",
-    "author": [
-      "Jessica L. Williams",
-      "Robert A. Johnson",
-      "Emily N. Davis"
-    ],
-    "date": "November 2021",
-    "url": "https://www.example.com/papers/privacy_preserving_data_mining.pdf",
-    "bibTeX": {
-      "@article": "williams-ppdm21",
-      "author": "Jessica L. Williams and Robert A. Johnson and Emily N. Davis",
-      "title": "Privacy-Preserving Data Mining Techniques",
-      "journal": "Journal of Data Privacy",
-      "pages": "38-52",
-      "volume": "12",
-      "month": "nov",
-      "year": "2021"
-    }
-  },
-  {
-    "id": 18,
-    "title": "5G Network Architecture and Its Impact on IoT",
-    "short_description": "5G technology promises to revolutionize IoT by providing high-speed, low-latency connectivity. This paper explores the architecture of 5G networks and their implications for IoT applications.",
-    "full_content": "5G technology promises to revolutionize IoT by providing high-speed, low-latency connectivity. This paper explores the architecture of 5G networks and their implications for IoT applications. We discuss the key components of 5G infrastructure, including the core network, radio access network (RAN), and edge computing. Our analysis highlights the benefits of 5G for IoT, such as enhanced device density, improved energy efficiency, and real-time data processing. We also address the challenges of deploying 5G networks, including spectrum allocation and security concerns. Case studies from various industries demonstrate the transformative potential of 5G in enabling advanced IoT applications, such as smart cities and autonomous vehicles.",
-    "author": [
-      "Alexander J. Brown",
-      "Jennifer L. Smith",
-      "Charles T. Wilson"
-    ],
-    "date": "January 2023",
-    "url": "https://www.example.com/papers/5g_iot.pdf",
-    "bibTeX": {
-      "@article": "brown-5giot23",
-      "author": "Alexander J. Brown and Jennifer L. Smith and Charles T. Wilson",
-      "title": "5G Network Architecture and Its Impact on IoT",
-      "journal": "Journal of Wireless Communications",
-      "pages": "23-37",
-      "volume": "10",
-      "month": "jan",
-      "year": "2023"
-    }
-  },
-  {
-    "id": 19,
-    "title": "Artificial Intelligence in Healthcare: Opportunities and Challenges",
-    "short_description": "Artificial intelligence (AI) has the potential to revolutionize healthcare by improving diagnostics, treatment planning, and patient care. This paper explores the opportunities and challenges of AI in healthcare.",
-    "full_content": "Artificial intelligence (AI) has the potential to revolutionize healthcare by improving diagnostics, treatment planning, and patient care. This paper explores the opportunities and challenges of AI in healthcare. We review various AI applications, including machine learning models for disease prediction, natural language processing for clinical documentation, and computer vision for medical imaging analysis. Our proposed AI framework integrates these technologies into a cohesive system that supports healthcare professionals in making data-driven decisions. We also address the ethical and regulatory challenges of implementing AI in healthcare, such as patient privacy, algorithmic bias, and the need for transparent and explainable AI models. Case studies illustrate the positive impact of AI on patient outcomes and healthcare efficiency.",
-    "author": [
-      "Michael L. Carter",
-      "Susan P. Davis",
-      "Ethan J. Mitchell"
-    ],
-    "date": "August 2021",
-    "url": "https://www.example.com/papers/ai_healthcare.pdf",
-    "bibTeX": {
-      "@article": "carter-aihc21",
-      "author": "Michael L. Carter and Susan P. Davis and Ethan J. Mitchell",
-      "title": "Artificial Intelligence in Healthcare: Opportunities and Challenges",
-      "journal": "Journal of Medical Informatics",
-      "pages": "49-63",
-      "volume": "8",
-      "month": "aug",
-      "year": "2021"
-    }
-  },
-  {
-    "id": 20,
-    "title": "Data-Driven Approaches to Traffic Management",
-    "short_description": "This paper explores data-driven approaches to traffic management, focusing on the use of big data and machine learning to optimize traffic flow and reduce congestion.",
-    "full_content": "This paper explores data-driven approaches to traffic management, focusing on the use of big data and machine learning to optimize traffic flow and reduce congestion. We present a comprehensive framework that integrates data from various sources, such as traffic cameras, GPS devices, and social media, to provide real-time insights into traffic conditions. Our machine learning models predict traffic patterns and suggest optimal routing strategies to minimize delays. We also introduce a simulation platform that allows city planners to evaluate the impact of different traffic management policies before implementation. Case studies from major cities demonstrate the effectiveness of our approach in improving traffic efficiency and reducing travel times.",
-    "author": [
-      "Jonathan P. Clark",
-      "Rebecca E. Lee",
-      "Steven R. White"
-    ],
-    "date": "October 2022",
-    "url": "https://www.example.com/papers/data_driven_traffic_management.pdf",
-    "bibTeX": {
-      "@article": "clark-ddtm22",
-      "author": "Jonathan P. Clark and Rebecca E. Lee and Steven R. White",
-      "title": "Data-Driven Approaches to Traffic Management",
-      "journal": "Journal of Transportation Research",
-      "pages": "102-116",
-      "volume": "15",
-      "month": "oct",
-      "year": "2022"
-    }
-  },
-  {
-    "id": 21,
-    "title": "DELETE EVERYTHING AFTER THIS BEFORE DEPLOYMENT",
-    "short_description": "This and every other paper below that don't list Darrell Long as an author were generated with AI to test pagination and UI. Every connection to real individuals and works is unintended.",
-    "full_content": "Data synchronization between mobile devices and cloud services can be challenging due to limited bandwidth and connectivity issues. This paper discusses techniques to improve the efficiency of data synchronization in mobile environments. We introduce a novel synchronization algorithm that minimizes data transfer by identifying and transmitting only the changed portions of files. This approach leverages a combination of delta encoding and predictive modeling to reduce the amount of data sent over the network. Additionally, we present a lightweight protocol that adapts to varying network conditions, ensuring robust performance even in low-bandwidth scenarios. Our experimental results demonstrate significant reductions in synchronization time and data usage compared to traditional methods.",
-    "author": [
-      "Alice B. Smith",
-      "John D. Doe",
-      "Michael Q. Brown"
-    ],
-    "date": "March 2015",
-    "url": "https://www.example.com/papers/mobile_sync.pdf",
-    "bibTeX": {
-      "@article": "smith-dsync15",
-      "author": "Alice B. Smith and John D. Doe and Michael Q. Brown",
-      "title": "Efficient Data Synchronization for Mobile Devices",
-      "journal": "Mobile Computing Journal",
-      "pages": "123-135",
-      "volume": "10",
-      "month": "mar",
-      "year": "2015"
-    }
-  },
-  {
-    "id": 22,
-    "title": "Machine Learning for Predictive Maintenance in Manufacturing",
-    "short_description": "Predictive maintenance uses machine learning algorithms to forecast equipment failures before they occur, improving reliability and reducing downtime in manufacturing processes.",
-    "full_content": "Predictive maintenance uses machine learning algorithms to forecast equipment failures before they occur, improving reliability and reducing downtime in manufacturing processes. This paper explores various machine learning models, including regression analysis, neural networks, and support vector machines, to predict maintenance needs based on sensor data from manufacturing equipment. We propose a hybrid approach that combines historical data with real-time monitoring to enhance prediction accuracy. Our framework integrates with existing industrial control systems and provides actionable insights through a user-friendly dashboard. Case studies from multiple manufacturing plants demonstrate the effectiveness of our solution in reducing unexpected equipment failures and optimizing maintenance schedules.",
-    "author": [
-      "Linda K. Johnson",
-      "Henry M. Lee",
-      "Sarah P. Anderson"
-    ],
-    "date": "June 2018",
-    "url": "https://www.example.com/papers/predictive_maintenance.pdf",
-    "bibTeX": {
-      "@article": "johnson-mlpm18",
-      "author": "Linda K. Johnson and Henry M. Lee and Sarah P. Anderson",
-      "title": "Machine Learning for Predictive Maintenance in Manufacturing",
-      "journal": "Journal of Industrial Engineering",
-      "pages": "67-82",
-      "volume": "22",
-      "month": "jun",
-      "year": "2018"
-    }
-  },
-  {
-    "id": 23,
-    "title": "Advanced Encryption Techniques for Secure Data Storage",
-    "short_description": "This paper discusses advanced encryption methods to secure sensitive data stored in cloud environments, focusing on performance and robustness against attacks.",
-    "full_content": "This paper discusses advanced encryption methods to secure sensitive data stored in cloud environments, focusing on performance and robustness against attacks. We evaluate several encryption algorithms, including AES, RSA, and elliptic curve cryptography (ECC), in terms of their computational efficiency and security properties. A novel hybrid encryption scheme is introduced, combining the strengths of symmetric and asymmetric cryptography to provide high security with minimal performance overhead. Additionally, we propose an adaptive key management system that dynamically adjusts key lengths based on the sensitivity of the data and current threat landscape. Our experiments show that the proposed scheme achieves a balance between security and performance, making it suitable for real-time applications.",
-    "author": [
-      "David R. Martinez",
-      "Emily L. Wang",
-      "James T. Harris"
-    ],
-    "date": "September 2020",
-    "url": "https://www.example.com/papers/secure_storage.pdf",
-    "bibTeX": {
-      "@article": "martinez-aets20",
-      "author": "David R. Martinez and Emily L. Wang and James T. Harris",
-      "title": "Advanced Encryption Techniques for Secure Data Storage",
-      "journal": "Journal of Cryptographic Research",
-      "pages": "45-58",
-      "volume": "15",
-      "month": "sep",
-      "year": "2020"
-    }
-  },
-  {
-    "id": 24,
-    "title": "Optimizing Cloud Resource Allocation with Machine Learning",
-    "short_description": "This paper explores machine learning techniques for optimizing resource allocation in cloud computing environments to improve efficiency and reduce costs.",
-    "full_content": "This paper explores machine learning techniques for optimizing resource allocation in cloud computing environments to improve efficiency and reduce costs. We investigate the use of reinforcement learning algorithms to dynamically allocate resources based on real-time workload demands. Our proposed model learns from historical data to predict future resource needs and adjusts allocations accordingly. We also introduce a novel feedback mechanism that continuously monitors system performance and updates the learning model to adapt to changing conditions. Experimental results demonstrate that our approach significantly reduces resource wastage and improves overall system performance compared to traditional static allocation methods.",
-    "author": [
-      "Laura S. Cooper",
-      "Thomas V. Nguyen",
-      "Patricia R. Wilson"
-    ],
-    "date": "November 2019",
-    "url": "https://www.example.com/papers/cloud_resource_allocation.pdf",
-    "bibTeX": {
-      "@article": "cooper-ocra19",
-      "author": "Laura S. Cooper and Thomas V. Nguyen and Patricia R. Wilson",
-      "title": "Optimizing Cloud Resource Allocation with Machine Learning",
-      "journal": "Cloud Computing Journal",
-      "pages": "87-99",
-      "volume": "12",
-      "month": "nov",
-      "year": "2019"
+      "volume": 4,
+      "year": 2001,
+      "month": "oct"
     }
   },
   {
     "id": 25,
-    "title": "Blockchain Technology for Secure Voting Systems",
-    "short_description": "Blockchain technology offers a decentralized and tamper-proof solution for secure electronic voting systems, ensuring transparency and integrity in the electoral process.",
-    "full_content": "Blockchain technology offers a decentralized and tamper-proof solution for secure electronic voting systems, ensuring transparency and integrity in the electoral process. This paper presents a detailed analysis of blockchain-based voting systems, highlighting their advantages over traditional methods. We propose a novel voting protocol that leverages smart contracts to automate the election process, from voter registration to result tallying. The protocol ensures voter anonymity while providing a verifiable audit trail that can be independently verified by third parties. We also discuss potential challenges, such as scalability and voter accessibility, and propose solutions to address these issues. Our prototype implementation demonstrates the feasibility of using blockchain for secure and transparent elections.",
+    "title": "Using program and user information to improve file prediction performance",
+    "short_description": "",
+    "full_content": "",
     "author": [
-      "Michael G. Robinson",
-      "Anna P. Lee",
-      "Kevin T. Clark"
+      "Tsozen Yeh",
+      "Darrell D. E. Long"
     ],
-    "date": "February 2021",
-    "url": "https://www.example.com/papers/blockchain_voting.pdf",
+    "date": "Nov 1, 2001",
+    "url": "https://ssrc.us/media/pubs/7f3a743da8b930fb0ddc8fae0df5dab33cab1b0d.pdf",
     "bibTeX": {
-      "@article": "robinson-bvs21",
-      "author": "Michael G. Robinson and Anna P. Lee and Kevin T. Clark",
-      "title": "Blockchain Technology for Secure Voting Systems",
-      "journal": "Journal of Blockchain Research",
-      "pages": "101-115",
-      "volume": "9",
-      "month": "feb",
-      "year": "2021"
+      "@inproceedings": "yeh-ispass01",
+      "author": "Tsozen Yeh and Darrell D. E. Long and Scott A. Brandt",
+      "title": "Using program and user information to improve file prediction performance",
+      "booktitle": "Proceedings of the International Symposium on Performance Analysis of Systems and Software (ISPASS '01)",
+      "pages": "Proceedings",
+      "year": 2001,
+      "month": "nov"
     }
   },
   {
     "id": 26,
-    "title": "Energy-Efficient Wireless Sensor Networks for IoT Applications",
-    "short_description": "This paper explores strategies to enhance the energy efficiency of wireless sensor networks (WSNs) used in Internet of Things (IoT) applications, extending the lifetime of sensor nodes.",
-    "full_content": "This paper explores strategies to enhance the energy efficiency of wireless sensor networks (WSNs) used in Internet of Things (IoT) applications, extending the lifetime of sensor nodes. We propose a hierarchical routing protocol that minimizes energy consumption by optimizing data transmission paths. Our protocol includes a dynamic power management scheme that adjusts the transmission power based on the distance to the receiving node, reducing unnecessary energy expenditure. Additionally, we introduce an adaptive sleep schedule that allows sensor nodes to enter low-power modes during periods of inactivity. Simulation results show that our approach significantly extends the network lifetime compared to existing protocols, making it suitable for long-term IoT deployments.",
+    "title": "Compactly Encoding Unstructured Inputs with Differential Compression",
+    "short_description": "",
+    "full_content": "",
     "author": [
-      "Rachel T. Miller",
-      "Daniel S. Garcia",
-      "Monica L. Evans"
+      "Randal Burns",
+      "Darrell D. E. Long",
+      "Larry Stockmeyer"
     ],
-    "date": "April 2022",
-    "url": "https://www.example.com/papers/energy_efficient_wsn.pdf",
+    "date": "Jan 1, 2002",
+    "url": "https://ssrc.us/media/pubs/5a186979c59835aa8409c8ba9261ae3fb6bdcff1.pdf",
     "bibTeX": {
-      "@article": "miller-eewsn22",
-      "author": "Rachel T. Miller and Daniel S. Garcia and Monica L. Evans",
-      "title": "Energy-Efficient Wireless Sensor Networks for IoT Applications",
-      "journal": "Journal of Internet of Things",
-      "pages": "23-36",
-      "volume": "18",
-      "month": "apr",
-      "year": "2022"
+      "@article": "ajtai-jacm02",
+      "author": "Jiacheng Ma and Randal Burns and Darrell D. E. Long and Larry Stockmeyer",
+      "title": "Compactly Encoding Unstructured Inputs with Differential Compression",
+      "journal": "Journal of the ACM",
+      "volume": "",
+      "year": 2002,
+      "month": "jan"
     }
   },
   {
     "id": 27,
-    "title": "Real-Time Analytics for Big Data",
-    "short_description": "This paper examines the challenges and solutions for real-time analytics in big data environments, focusing on scalable processing frameworks and algorithms.",
-    "full_content": "This paper examines the challenges and solutions for real-time analytics in big data environments, focusing on scalable processing frameworks and algorithms. We review the limitations of traditional batch processing methods and highlight the need for real-time analytics to derive actionable insights from streaming data. Our proposed solution leverages Apache Kafka for data ingestion and Apache Flink for stream processing, enabling low-latency data analysis. We also introduce a machine learning pipeline that integrates with the streaming platform to provide predictive analytics in real time. Case studies from various industries demonstrate the effectiveness of our approach in handling large volumes of data with minimal delay.",
+    "title": "Strong Security for Network-Attached Storage",
+    "short_description": "",
+    "full_content": "",
     "author": [
-      "Stephen P. Thompson",
-      "Victoria R. Brooks",
-      "Albert J. Diaz"
+      "Ethan L. Miller",
+      "Darrell D. E. Long",
+      "William E. Freeman",
+      "Benjamin C. Reed"
     ],
-    "date": "August 2020",
-    "url": "https://www.example.com/papers/real_time_analytics.pdf",
+    "date": "Jan 15, 2002",
+    "url": "https://ssrc.us/media/pubs/1c418abf401c2ced804f4ccff2b3c37f9647bd19.pdf",
     "bibTeX": {
-      "@article": "thompson-rta20",
-      "author": "Stephen P. Thompson and Victoria R. Brooks and Albert J. Diaz",
-      "title": "Real-Time Analytics for Big Data",
-      "journal": "Journal of Big Data",
-      "pages": "54-68",
-      "volume": "7",
-      "month": "aug",
-      "year": "2020"
+      "@inproceedings": "miller-fast02",
+      "author": "Ethan L. Miller and Darrell D. E. Long and William E. Freeman and Benjamin C. Reed",
+      "title": "Strong Security for Network-Attached Storage",
+      "booktitle": "Proceedings of the 2002 Conference on File and Storage Technologies (FAST)",
+      "pages": "1-13",
+      "year": 2002,
+      "month": "jan"
     }
   },
   {
     "id": 28,
-    "title": "Deep Learning for Image Recognition in Autonomous Vehicles",
-    "short_description": "Deep learning techniques have revolutionized image recognition tasks in autonomous vehicles, improving accuracy and reliability in real-world driving scenarios.",
-    "full_content": "Deep learning techniques have revolutionized image recognition tasks in autonomous vehicles, improving accuracy and reliability in real-world driving scenarios. This paper presents a comprehensive study of convolutional neural networks (CNNs) for object detection and classification in autonomous vehicles. We compare various CNN architectures, such as VGGNet, ResNet, and Inception, in terms of their performance and computational requirements. Our proposed model, AutoNet, combines the strengths of these architectures and includes a custom preprocessing pipeline to handle diverse lighting and weather conditions. Experimental results on benchmark datasets demonstrate that AutoNet achieves state-of-the-art accuracy while maintaining real-time processing capabilities, making it suitable for deployment in autonomous driving systems.",
+    "title": "Data Placement Based on Seek Time Analysis of a MEMS-based Storage Device",
+    "short_description": "",
+    "full_content": "",
     "author": [
-      "Karen W. Moore",
-      "Oliver H. Scott",
-      "Yasmine F. Harris"
+      "Zachary Peterson",
+      "Darrell D. E. Long"
     ],
-    "date": "May 2021",
-    "url": "https://www.example.com/papers/deep_learning_autonomous.pdf",
+    "date": "Jan 28, 2002",
+    "url": "https://ssrc.us/media/pubs/7b45b4b007e2744803712192a42a3baa4d62adde.pdf",
     "bibTeX": {
-      "@article": "moore-dlir21",
-      "author": "Karen W. Moore and Oliver H. Scott and Yasmine F. Harris",
-      "title": "Deep Learning for Image Recognition in Autonomous Vehicles",
-      "journal": "Journal of Artificial Intelligence Research",
-      "pages": "89-104",
-      "volume": "25",
-      "month": "may",
-      "year": "2021"
+      "@inproceedings": "peterson-fast02",
+      "author": "Zachary Peterson and Darrell D. E. Long and Scott A. Brandt",
+      "title": "Data Placement Based on Seek Time Analysis of a {MEMS",
+      "booktitle": "Work-In-Progress Session of the Conference on File and Storage Technology (FAST 2002)",
+      "year": 2002,
+      "month": "jan"
     }
   },
   {
     "id": 29,
-    "title": "Augmented Reality Applications in Education",
-    "short_description": "Augmented reality (AR) has the potential to transform education by providing immersive and interactive learning experiences. This paper explores various AR applications in educational settings.",
-    "full_content": "Augmented reality (AR) has the potential to transform education by providing immersive and interactive learning experiences. This paper explores various AR applications in educational settings, ranging from primary schools to higher education. We discuss the benefits of AR in enhancing student engagement, motivation, and understanding of complex concepts. Our proposed AR platform, EduAR, integrates with existing educational tools and provides a user-friendly interface for creating and sharing AR content. Case studies from pilot programs demonstrate the positive impact of AR on student learning outcomes, highlighting the potential of this technology to revolutionize the educational landscape.",
+    "title": "Who is more adaptive? ACME: adaptive caching using multiple experts",
+    "short_description": "",
+    "full_content": "",
     "author": [
-      "Natalie E. White",
-      "Christopher J. Thompson",
-      "Sophia L. Reed"
+      "Ismail Ari",
+      "Ahmed Amer",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
     ],
-    "date": "July 2023",
-    "url": "https://www.example.com/papers/ar_education.pdf",
+    "date": "Mar 1, 2002",
+    "url": "https://ssrc.us/media/pubs/7f4e71177a2a7078b1848d7a0d6c8e98c4986cf1.pdf",
     "bibTeX": {
-      "@article": "white-are23",
-      "author": "Natalie E. White and Christopher J. Thompson and Sophia L. Reed",
-      "title": "Augmented Reality Applications in Education",
-      "journal": "Educational Technology Journal",
-      "pages": "78-92",
-      "volume": "30",
-      "month": "jul",
-      "year": "2023"
+      "@inproceedings": "ari-wdas02",
+      "author": "Ismail Ari and Ahmed Amer and Ethan L. Miller and Scott A. Brandt and Darrell D. E. Long",
+      "title": "Who is more adaptive? {ACME",
+      "booktitle": "Workshop on Distributed Data and Structures (WDAS 2002)",
+      "year": 2002,
+      "month": "mar"
     }
   },
   {
     "id": 30,
-    "title": "Cybersecurity Challenges in the Internet of Things",
-    "short_description": "The Internet of Things (IoT) introduces new cybersecurity challenges due to the vast number of connected devices and their varying levels of security. This paper addresses these challenges and proposes solutions.",
-    "full_content": "The Internet of Things (IoT) introduces new cybersecurity challenges due to the vast number of connected devices and their varying levels of security. This paper addresses these challenges and proposes solutions to enhance the security of IoT networks. We analyze common vulnerabilities in IoT devices, such as weak authentication mechanisms and inadequate encryption protocols. Our proposed security framework includes a multi-layered approach that combines device-level security measures with network-level defenses. We also introduce a machine learning-based anomaly detection system that identifies and mitigates potential threats in real time. Experimental evaluations show that our framework significantly improves the security posture of IoT deployments, reducing the risk of cyber attacks.",
+    "title": "File access prediction with adjustable accuracy",
+    "short_description": "",
+    "full_content": "",
     "author": [
-      "Brian T. Jackson",
-      "Laura M. Young",
-      "Anthony P. Green"
+      "Ahmed Amer",
+      "Darrell D. E. Long",
+      "Jehan-François Pâris",
+      "Randal Burns"
     ],
-    "date": "October 2021",
-    "url": "https://www.example.com/papers/iot_cybersecurity.pdf",
+    "date": "Apr 1, 2002",
+    "url": "https://ssrc.us/media/pubs/5cd3b23df47846a9021e668f6637cc4e8675109f.pdf",
     "bibTeX": {
-      "@article": "jackson-csiot21",
-      "author": "Brian T. Jackson and Laura M. Young and Anthony P. Green",
-      "title": "Cybersecurity Challenges in the Internet of Things",
-      "journal": "Journal of Cybersecurity",
-      "pages": "34-47",
-      "volume": "14",
-      "month": "oct",
-      "year": "2021"
+      "@inproceedings": "amer-ipccc02",
+      "author": "Ahmed Amer and Darrell D. E. Long and Jehan-François Pâris and Randal Burns",
+      "title": "File access prediction with adjustable accuracy",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC '02)",
+      "year": 2002,
+      "month": "apr"
     }
   },
   {
     "id": 31,
-    "title": "Edge Computing for Real-Time Data Processing",
-    "short_description": "Edge computing enables real-time data processing by bringing computation closer to data sources, reducing latency and bandwidth usage. This paper explores various edge computing architectures and use cases.",
-    "full_content": "Edge computing enables real-time data processing by bringing computation closer to data sources, reducing latency and bandwidth usage. This paper explores various edge computing architectures and use cases, highlighting their benefits and challenges. We present a modular edge computing framework that supports diverse applications, from smart cities to industrial IoT. Our framework includes an intelligent data routing mechanism that optimizes resource utilization and ensures low-latency processing. We also discuss the integration of edge computing with cloud services, providing a hybrid solution that balances local processing with centralized control. Case studies demonstrate the effectiveness of our approach in real-world scenarios, showcasing significant improvements in performance and efficiency.",
+    "title": "Group-based management of distributed file caches",
+    "short_description": "",
+    "full_content": "",
     "author": [
-      "Jason D. Walker",
-      "Megan S. Clark",
-      "Ethan B. Adams"
+      "Ahmed Amer",
+      "Darrell D. E. Long",
+      "Randal Burns"
     ],
-    "date": "December 2019",
-    "url": "https://www.example.com/papers/edge_computing.pdf",
+    "date": "Jul 1, 2002",
+    "url": "https://ssrc.us/media/pubs/d596362817aa990d06c1c497d4c2a5423ea5829d.pdf",
     "bibTeX": {
-      "@article": "walker-ecdp19",
-      "author": "Jason D. Walker and Megan S. Clark and Ethan B. Adams",
-      "title": "Edge Computing for Real-Time Data Processing",
-      "journal": "Journal of Distributed Systems",
-      "pages": "113-127",
-      "volume": "16",
-      "month": "dec",
-      "year": "2019"
+      "@inproceedings": "amer-icdcs02",
+      "author": "Ahmed Amer and Darrell D. E. Long and Randal Burns",
+      "title": "Group-based management of distributed file caches",
+      "booktitle": "Proceedings of the 22nd International Conference on Distributed Computing Systems (ICDCS '02)",
+      "year": 2002,
+      "month": "jul"
     }
   },
   {
     "id": 32,
-    "title": "Natural Language Processing for Sentiment Analysis",
-    "short_description": "This paper explores the use of natural language processing (NLP) techniques for sentiment analysis, focusing on applications in social media monitoring and customer feedback analysis.",
-    "full_content": "This paper explores the use of natural language processing (NLP) techniques for sentiment analysis, focusing on applications in social media monitoring and customer feedback analysis. We review various NLP models, including traditional methods such as bag-of-words and modern approaches like transformer-based architectures (e.g., BERT and GPT). Our proposed sentiment analysis pipeline integrates preprocessing, feature extraction, and classification modules to accurately determine the sentiment of textual data. We also introduce a novel ensemble method that combines the outputs of multiple models to improve prediction accuracy. Experimental results on benchmark datasets demonstrate the effectiveness of our approach, achieving state-of-the-art performance in sentiment classification tasks.",
+    "title": "Power conservation strategies for MEMS-based storage devices",
+    "short_description": "",
+    "full_content": "",
     "author": [
-      "Grace H. Campbell",
-      "Isaac N. Rivera",
-      "Olivia M. Turner"
+      "Ying Lin",
+      "Darrell D. E. Long",
+      "Ethan L. Miller"
     ],
-    "date": "January 2022",
-    "url": "https://www.example.com/papers/nlp_sentiment_analysis.pdf",
+    "date": "Oct 1, 2002",
+    "url": "https://ssrc.us/media/pubs/6f89379bc0ae69a695406e103aaa488b6c385454.pdf",
     "bibTeX": {
-      "@article": "campbell-nlpsa22",
-      "author": "Grace H. Campbell and Isaac N. Rivera and Olivia M. Turner",
-      "title": "Natural Language Processing for Sentiment Analysis",
-      "journal": "Journal of Computational Linguistics",
-      "pages": "77-91",
-      "volume": "29",
-      "month": "jan",
-      "year": "2022"
+      "@inproceedings": "lin-mascots02",
+      "author": "Ying Lin and Scott A. Brandt and Darrell D. E. Long and Ethan L. Miller",
+      "title": "Power conservation strategies for {MEMS",
+      "booktitle": "Proceedings of the 10th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '02)",
+      "year": 2002,
+      "month": "oct"
     }
   },
   {
     "id": 33,
-    "title": "Quantum Computing: Algorithms and Applications",
-    "short_description": "Quantum computing promises to revolutionize computational tasks by leveraging the principles of quantum mechanics. This paper discusses various quantum algorithms and their potential applications.",
-    "full_content": "Quantum computing promises to revolutionize computational tasks by leveraging the principles of quantum mechanics. This paper discusses various quantum algorithms and their potential applications in fields such as cryptography, optimization, and machine learning. We provide an overview of key quantum algorithms, including Shor's algorithm for integer factorization and Grover's algorithm for database search. Additionally, we introduce a novel quantum algorithm for solving large-scale linear equations, demonstrating its superiority over classical methods. Our proposed algorithm is implemented on a simulated quantum computer, and experimental results show significant improvements in computation time. We also explore potential real-world applications of quantum computing, highlighting its transformative impact on various industries.",
+    "title": "ACME: Adaptive Caching Using Multiple Experts",
+    "short_description": "",
+    "full_content": "",
     "author": [
-      "David J. Kim",
-      "Elena S. Martinez",
-      "Samuel P. Roberts"
+      "Ismail Ari",
+      "Ahmed Amer",
+      "Robert Gramacy",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
     ],
-    "date": "June 2023",
-    "url": "https://www.example.com/papers/quantum_computing.pdf",
+    "date": "Dec 5, 2002",
+    "url": "https://ssrc.us/media/pubs/96c7ffa6733e50e6fd43f14d4493118f07e369ab.pdf",
     "bibTeX": {
-      "@article": "kim-qca23",
-      "author": "David J. Kim and Elena S. Martinez and Samuel P. Roberts",
-      "title": "Quantum Computing: Algorithms and Applications",
-      "journal": "Quantum Information Journal",
-      "pages": "12-28",
-      "volume": "11",
-      "month": "jun",
-      "year": "2023"
+      "@article": "ari-ddas02",
+      "author": "Ismail Ari and Ahmed Amer and Robert Gramacy and Ethan L. Miller and Scott A. Brandt and Darrell D. E. Long",
+      "title": "{ACME",
+      "journal": "Proceedings in Informatics",
+      "pages": "143-158",
+      "volume": 14,
+      "year": 2002,
+      "month": "dec"
     }
   },
   {
     "id": 34,
-    "title": "IoT-Based Smart Agriculture: Enhancing Crop Yield",
-    "short_description": "The Internet of Things (IoT) offers innovative solutions for smart agriculture, helping farmers to enhance crop yield through real-time monitoring and data-driven decision-making.",
-    "full_content": "The Internet of Things (IoT) offers innovative solutions for smart agriculture, helping farmers to enhance crop yield through real-time monitoring and data-driven decision-making. This paper presents an IoT-based system that integrates soil moisture sensors, weather stations, and automated irrigation systems to optimize water usage and improve crop health. Our system includes a cloud-based platform that aggregates data from various sensors and provides actionable insights through predictive analytics. We also introduce a machine learning model that predicts crop diseases based on environmental conditions and historical data, enabling proactive intervention. Field trials demonstrate significant improvements in crop yield and resource efficiency, highlighting the potential of IoT in transforming agriculture.",
+    "title": "A Variable Bandwidth Broadcasting Protocol For Video-onDemand",
+    "short_description": "",
+    "full_content": "",
     "author": [
-      "Emma R. Thompson",
-      "Benjamin K. Scott",
-      "Laura M. Reed"
+      "Jehan-François Pâris",
+      "Darrell D. E. Long"
     ],
-    "date": "April 2022",
-    "url": "https://www.example.com/papers/iot_smart_agriculture.pdf",
+    "date": "Jan 1, 2003",
+    "url": "https://ssrc.us/media/pubs/18cd2bfc2e22ef31b7c0631b67be9263fdd2ed27.pdf",
     "bibTeX": {
-      "@article": "thompson-iosa22",
-      "author": "Emma R. Thompson and Benjamin K. Scott and Laura M. Reed",
-      "title": "IoT-Based Smart Agriculture: Enhancing Crop Yield",
-      "journal": "Journal of Agricultural Technology",
-      "pages": "59-73",
-      "volume": "20",
-      "month": "apr",
-      "year": "2022"
+      "@inproceedings": "MMCN-Paris-2003",
+      "author": "Jehan-François Pâris and Darrell D. E. Long",
+      "title": "A Variable Bandwidth Broadcasting Protocol For Video-{onDemand",
+      "booktitle": "Proceedings of the 2003 SPIE Multimedia Computing and Networking Conference",
+      "year": 2003,
+      "month": "jan"
+    }
+  },
+  {
+    "id": 35,
+    "title": "Using Multiple Predictors to Improve the Accuracy of File Access Predictors",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Gary Whittle",
+      "Jehan-François Pâris",
+      "Ahmed Amer",
+      "Darrell D. E. Long",
+      "Randal Burns"
+    ],
+    "date": "Apr 1, 2003",
+    "url": "https://ssrc.us/media/pubs/a917ac198431394c2b99c74908fe451443399537.pdf",
+    "bibTeX": {
+      "@inproceedings": "whittle-msst03",
+      "author": "Gary Whittle and Jehan-François Pâris and Ahmed Amer and Darrell D. E. Long and Randal Burns",
+      "title": "Using Multiple Predictors to Improve the Accuracy of File Access Predictors",
+      "booktitle": "Proceedings of the Twentieth IEEE/Eleventh NASA Goddard Conference on Mass Storage Systems and Technologies (MSST '03)",
+      "year": 2003,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 36,
+    "title": "Visualizing Cache Effects on I/O Workload Predictability",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ahmed Amer",
+      "Alison Luo",
+      "Newton Der",
+      "Darrell D. E. Long",
+      "Alexander Pang"
+    ],
+    "date": "Apr 1, 2003",
+    "url": "https://ssrc.us/media/pubs/eab92f87efdf3bf336a03603e7b8ba6889d5cb45.pdf",
+    "bibTeX": {
+      "@inproceedings": "amer-ipccc03",
+      "author": "Ahmed Amer and Alison Luo and Newton Der and Darrell D. E. Long and Alexander Pang",
+      "title": "Visualizing Cache Effects on I/O Workload Predictability",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC '03)",
+      "year": 2003,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 37,
+    "title": "Efficient Metadata Management in Large Distributed File Systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ethan L. Miller",
+      "Darrell D. E. Long",
+      "Lan Xue"
+    ],
+    "date": "Apr 15, 2003",
+    "url": "https://ssrc.us/media/pubs/a3d8d7cf4deff274fc35948573910760c593c5a9.pdf",
+    "bibTeX": {
+      "@inproceedings": "brandt-msst03",
+      "author": "Scott A. Brandt and Ethan L. Miller and Darrell D. E. Long and Lan Xue",
+      "title": "Efficient Metadata Management in Large Distributed File Systems",
+      "booktitle": "Proceedings of the 20th IEEE / 11th NASA Goddard Conference on Mass Storage Systems and Technologies (MSST 2003)",
+      "pages": "290-298",
+      "year": 2003,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 38,
+    "title": "Reliability Mechanisms for Very large Storage Systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Qin Xin",
+      "Ethan L. Miller",
+      "Thomas Schwarz",
+      "Darrell D. E. Long",
+      "Witold Litwin"
+    ],
+    "date": "Apr 15, 2003",
+    "url": "https://ssrc.us/media/pubs/92ca6e61ab487a1947c85029cedcd02d32dd3f34.pdf",
+    "bibTeX": {
+      "@inproceedings": "xin-msst03",
+      "author": "Qin Xin and Ethan L. Miller and Thomas Schwarz and Darrell D. E. Long and Scott A. Brandt and Witold Litwin",
+      "title": "Reliability Mechanisms for Very large Storage Systems",
+      "booktitle": "Proceedings of the 20th IEEE / 11th NASA Goddard Conference on Mass Storage Systems and Technologies",
+      "pages": "146-156",
+      "year": 2003,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 39,
+    "title": "In-Place Reconstruction of Version Differences",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Randal Burns",
+      "Larry Stockmeyer",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jul 1, 2003",
+    "url": "https://ssrc.us/media/pubs/2f301095bc2a766873f54153eaec6d83e10b142d.pdf",
+    "bibTeX": {
+      "@article": "TKDE-Burns-2003",
+      "author": "Randal Burns and Larry Stockmeyer and Darrell D. E. Long",
+      "title": "In-Place Reconstruction of Version Differences",
+      "journal": "IEEE Transactions on Knowledge and Data Engineering",
+      "volume": "",
+      "year": 2003,
+      "month": "jul"
+    }
+  },
+  {
+    "id": 40,
+    "title": "A Stochastic Approach to File Access Prediction",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Ahmed Amer",
+      "Darrell D. E. Long"
+    ],
+    "date": "Sep 1, 2003",
+    "url": "https://ssrc.us/media/pubs/18d1d1827feea73154044eb088d7b10ab57ed69a.pdf",
+    "bibTeX": {
+      "@inproceedings": "paris-snapi03",
+      "author": "Jehan-François Pâris and Ahmed Amer and Darrell D. E. Long",
+      "title": "A Stochastic Approach to File Access Prediction",
+      "booktitle": "Proceedings of the International Workshop on Storage Network Architecture and Parallel I/O (SNAPI '03)",
+      "year": 2003,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 41,
+    "title": "Zone-based shortest positioning time first scheduling for MEMS-based storage devices",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Bo Hong",
+      "Darrell D. E. Long",
+      "Ethan L. Miller",
+      "Karen Glocer",
+      "Zachary Peterson"
+    ],
+    "date": "Oct 1, 2003",
+    "url": "https://ssrc.us/media/pubs/e224295a36adce6779233ef1857f0d11049e19d3.pdf",
+    "bibTeX": {
+      "@inproceedings": "hong-mascots03",
+      "author": "Bo Hong and Scott A. Brandt and Darrell D. E. Long and Ethan L. Miller and Karen Glocer and Zachary Peterson",
+      "title": "Zone-based shortest positioning time first scheduling for {MEMS",
+      "booktitle": "Proceedings of the 11th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '03)",
+      "pages": "104-113",
+      "year": 2003,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 42,
+    "title": "Managing flash crowds on the Internet",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ismail Ari",
+      "Bo Hong",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Oct 1, 2003",
+    "url": "https://ssrc.us/media/pubs/b6d9fb1b60f68f48bb8f6c32894bd02a135d12a5.pdf",
+    "bibTeX": {
+      "@inproceedings": "ari-mascots03",
+      "author": "Ismail Ari and Bo Hong and Ethan L. Miller and Scott A. Brandt and Darrell D. E. Long",
+      "title": "Managing flash crowds on the Internet",
+      "booktitle": "Proceedings of the 11th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '03)",
+      "pages": "246–249",
+      "year": 2003,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 43,
+    "title": "Identifying Stable File Access Patterns",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Purvi Shah",
+      "Jehan-François Pâris",
+      "Ahmed Amer",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 1, 2004",
+    "url": "https://ssrc.us/media/pubs/e021012af63507f472049c007939b842aa2a5f10.pdf",
+    "bibTeX": {
+      "@inproceedings": "shah-msst04",
+      "author": "Purvi Shah and Jehan-François Pâris and Ahmed Amer and Darrell D. E. Long",
+      "title": "Identifying Stable File Access Patterns",
+      "booktitle": "Proceedings of the Twelfth NASA Goddard/Twenty First IEEE Conference on Mass Storage Systems and Technologies (MSST '04)",
+      "year": 2004,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 44,
+    "title": "File System Workload Analysis For Large Scientific Computing Applications",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Feng Wang",
+      "Qin Xin",
+      "Bo Hong",
+      "Ethan L. Miller",
+      "Darrell D. E. Long",
+      "Tyce T. Mclarty"
+    ],
+    "date": "Apr 13, 2004",
+    "url": "https://ssrc.us/media/pubs/d0b29be475da4315b7e3e7bb06a579fe3fc30b0e.pdf",
+    "bibTeX": {
+      "@inproceedings": "wang-msst04b",
+      "author": "Feng Wang and Qin Xin and Bo Hong and Scott A. Brandt and Ethan L. Miller and Darrell D. E. Long and Tyce T. Mclarty",
+      "title": "File System Workload Analysis For Large Scientific Computing Applications",
+      "booktitle": "NASA/IEEE Conference on Mass Storage Systems and Technologies (MSST 2004)",
+      "pages": "139–152",
+      "year": 2004,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 45,
+    "title": "OBFS: A File System for Object-Based Storage Devices",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Feng Wang",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 15, 2004",
+    "url": "https://ssrc.us/media/pubs/791542036f88a466f05945aab74004a9cc7d5b9f.pdf",
+    "bibTeX": {
+      "@inproceedings": "wang-msst04a",
+      "author": "Feng Wang and Scott A. Brandt and Ethan L. Miller and Darrell D. E. Long",
+      "title": "{OBFS",
+      "booktitle": "Proceedings of the 21st IEEE / 12th NASA Goddard Conference on Mass Storage Systems and Technologies",
+      "pages": "283-300",
+      "year": 2004,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 46,
+    "title": "Reliability of MEMS-Based Storage Enclosures",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Bo Hong",
+      "Thomas Schwarz",
+      "Darrell D. E. Long"
+    ],
+    "date": "Oct 1, 2004",
+    "url": "https://ssrc.us/media/pubs/57a1adb40306db70c6d52376e389a836f60a29c1.pdf",
+    "bibTeX": {
+      "@inproceedings": "hong-mascots04",
+      "author": "Bo Hong and Thomas Schwarz and Scott A. Brandt and Darrell D. E. Long",
+      "title": "Reliability of {MEMS",
+      "booktitle": "roceedings of the 12th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '04)",
+      "pages": "571-579",
+      "year": 2004,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 47,
+    "title": "Predicting When Not To Predict",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Karl Brandt",
+      "Darrell D. E. Long",
+      "Ahmed Amer"
+    ],
+    "date": "Oct 1, 2004",
+    "url": "https://ssrc.us/media/pubs/25bd1fcf849efacb1591a3f06488113089755cf4.pdf",
+    "bibTeX": {
+      "@inproceedings": "kbrandt-mascots04",
+      "author": "Karl Brandt and Darrell D. E. Long and Ahmed Amer",
+      "title": "Predicting When Not To Predict",
+      "booktitle": "Proceedings of the 12th Annual IEEE/ACM International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '04)",
+      "year": 2004,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 48,
+    "title": "Disk Scrubbing in Large Archival Storage Systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Thomas Schwarz",
+      "Qin Xin",
+      "Ethan L. Miller",
+      "Darrell D. E. Long",
+      "Spencer Ng"
+    ],
+    "date": "Oct 10, 2004",
+    "url": "https://ssrc.us/media/pubs/d0a1a0161119593cfdb6235492f689bdf8c79b76.pdf",
+    "bibTeX": {
+      "@inproceedings": "schwarz-mascots04",
+      "author": "Thomas Schwarz and Qin Xin and Ethan L. Miller and Darrell D. E. Long and Andy Hospodor and Spencer Ng",
+      "title": "Disk Scrubbing in Large Archival Storage Systems",
+      "booktitle": "Proceedings of the 12th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '04)",
+      "pages": "409-418",
+      "year": 2004,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 49,
+    "title": "Using MEMS-based Storage to Boost Disk Performance",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Feng Wang",
+      "Bo Hong",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 11, 2005",
+    "url": "https://ssrc.us/media/pubs/d8c4c91815536f170fc553a933e03f59f21ff7a6.pdf",
+    "bibTeX": {
+      "@inproceedings": "wang-msst05",
+      "author": "Feng Wang and Bo Hong and Scott A. Brandt and Darrell D. E. Long",
+      "title": "Using {MEMS",
+      "booktitle": "IEEE / NASA Goddard Conference on Mass Storage Systems and Technologies (MSST 2005)",
+      "pages": "202–209",
+      "year": 2005,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 50,
+    "title": "Deep Store: An Archival Storage System Architecture",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Lawrence You",
+      "Kristal Pollack",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 15, 2005",
+    "url": "https://ssrc.us/media/pubs/7015b2eb3c689db69837dddea1af32c8e30709d8.pdf",
+    "bibTeX": {
+      "@inproceedings": "you-icde05",
+      "author": "Lawrence You and Kristal Pollack and Darrell D. E. Long",
+      "title": "Deep Store: An Archival Storage System Architecture",
+      "booktitle": "Proceedings of the 21st International Conference on Data Engineering (ICDE '05)",
+      "year": 2005,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 51,
+    "title": "Impact of Failure on Interconnection Networks in Large Storage Systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Qin Xin",
+      "Ethan L. Miller",
+      "Thomas Schwarz",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 20, 2005",
+    "url": "https://ssrc.us/media/pubs/b5ba78d21ddfee517fc4b68648b8a8e0eae4b51c.pdf",
+    "bibTeX": {
+      "@inproceedings": "xin-msst05",
+      "author": "Qin Xin and Ethan L. Miller and Thomas Schwarz and Darrell D. E. Long",
+      "title": "Impact of Failure on Interconnection Networks in Large Storage Systems",
+      "booktitle": "Proceedings of the 22nd IEEE / 13th NASA Goddard Conference on Mass Storage Systems and Technologies",
+      "year": 2005,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 52,
+    "title": "Ceph: A Scalable Object-Based Storage System",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Sage Weil",
+      "Feng Wang",
+      "Qin Xin",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Mar 1, 2006",
+    "url": "https://ssrc.us/media/pubs/80c09985415c15cb8be9ca91d85730027ad848e4.pdf",
+    "bibTeX": {
+      "@inproceedings": "weil-ssrctr06",
+      "author": "Sage Weil and Feng Wang and Qin Xin and Scott A. Brandt and Ethan L. Miller and Darrell D. E. Long and Carlos Maltzahn",
+      "title": "Ceph: A Scalable Object-Based Storage System",
+      "booktitle": "Technical Report UCSC-SSRC-06-01",
+      "year": 2006,
+      "month": "mar"
+    }
+  },
+  {
+    "id": 53,
+    "title": "Using MEMS-Based Storage in Computer Systems—Device Modeling and Management",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Bo Hong",
+      "Darrell D. E. Long",
+      "Ethan L. Miller",
+      "Ying Lin"
+    ],
+    "date": "May 26, 2006",
+    "url": "https://ssrc.us/media/pubs/68a8dc82b2cfe3eec329a4f28bcf68b49513499c.pdf",
+    "bibTeX": {
+      "@article": "hong-tos06a",
+      "author": "Bo Hong and Scott A. Brandt and Darrell D. E. Long and Ethan L. Miller and Ying Lin",
+      "title": "Using {MEMS",
+      "journal": "ACM Transactions on Storage",
+      "pages": "139-160",
+      "volume": 2,
+      "number": 2,
+      "year": 2006,
+      "month": "may"
+    }
+  },
+  {
+    "id": 54,
+    "title": "NVCache: Increasing the Effectiveness of Disk Spindown Algorithms with Caching",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Timothy Bisson",
+      "Darrell D. E. Long"
+    ],
+    "date": "Sep 1, 2006",
+    "url": "https://ssrc.us/media/pubs/a08002805a8cadaf36fd9471a6e5fd62390979e1.pdf",
+    "bibTeX": {
+      "@inproceedings": "MASCOTS-Bisson-2006",
+      "author": "Timothy Bisson and Scott A. Brandt and Darrell D. E. Long",
+      "title": "{NVCache",
+      "booktitle": "Proceedings of the Fourteenth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
+      "year": 2006,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 55,
+    "title": "Providing High Reliability in a Minimum Redundancy Archival Storage System",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Deepavali Bhagwat",
+      "Kristal Pollack",
+      "Darrell D. E. Long",
+      "Thomas Schwarz",
+      "Ethan L. Miller",
+      "Jehan-François Pâris"
+    ],
+    "date": "Sep 13, 2006",
+    "url": "https://ssrc.us/media/pubs/1bd42e936db567ec1c9a5d30b8ba7b46d4ad8a26.pdf",
+    "bibTeX": {
+      "@inproceedings": "bhagwat-mascots06",
+      "author": "Deepavali Bhagwat and Kristal Pollack and Darrell D. E. Long and Thomas Schwarz and Ethan L. Miller and Jehan-François Pâris",
+      "title": "Providing High Reliability in a Minimum Redundancy Archival Storage System",
+      "booktitle": "Proceedings of the 14th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '06)",
+      "pages": "413-421",
+      "year": 2006,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 56,
+    "title": "Adapting Predictions and Workloads for Power Management",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jeff Rybczynski",
+      "Darrell D. E. Long",
+      "Ahmed Amer"
+    ],
+    "date": "Sep 14, 2006",
+    "url": "https://ssrc.us/media/pubs/2a5d4c672e1a534d5bf1c0680837abcd2d7d775f.pdf",
+    "bibTeX": {
+      "@inproceedings": "rybczynski-mascots06",
+      "author": "Jeff Rybczynski and Darrell D. E. Long and Ahmed Amer",
+      "title": "Adapting Predictions and Workloads for Power Management",
+      "booktitle": "14th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunications Systems (MASCOTS 2006)",
+      "year": 2006,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 57,
+    "title": "NVCache: Increasing the effectiveness of disk spin-down algorithms with caching",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Timothy Bisson",
+      "Darrell D. E. Long"
+    ],
+    "date": "Sep 15, 2006",
+    "url": "https://ssrc.us/media/pubs/a0658e22d071314eb4920dadfae263da7b057f55.pdf",
+    "bibTeX": {
+      "@inproceedings": "bisson-mascots06",
+      "author": "Timothy Bisson and Scott A. Brandt and Darrell D. E. Long",
+      "title": "{NVCache",
+      "booktitle": "Proceedings of the 14th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2006)",
+      "year": 2006,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 58,
+    "title": "Using Device Diversity to Protect Data against Batch-Correlated Disk Failures",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell D. E. Long"
+    ],
+    "date": "Oct 30, 2006",
+    "url": "https://ssrc.us/media/pubs/31e34accfa6c62bd0d269bf6ca0ad60de631a7e9.pdf",
+    "bibTeX": {
+      "@inproceedings": "paris-storagess06",
+      "author": "Jehan-François Pâris and Darrell D. E. Long",
+      "title": "Using Device Diversity to Protect Data against Batch-Correlated Disk Failures",
+      "booktitle": "Proceedings of the 2nd ACM Workshop on Storage Security and Survivability (StorageSS 2006)",
+      "year": 2006,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 59,
+    "title": "Ceph: A Scalable, High-Performance Distributed File System",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Sage Weil",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Nov 6, 2006",
+    "url": "https://ssrc.us/media/pubs/a7a45f7ef6849137936503f5b1cdabf103c5a661.pdf",
+    "bibTeX": {
+      "@inproceedings": "weil-osdi06",
+      "author": "Sage Weil and Scott A. Brandt and Ethan L. Miller and Darrell D. E. Long and Carlos Maltzahn",
+      "title": "Ceph: A Scalable, High-Performance Distributed File System",
+      "booktitle": "Proceedings of the 7th Conference on Operating Systems Design and Implementation (OSDI '06)",
+      "year": 2006,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 60,
+    "title": "Self-Adaptive Disk Arrays",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Thomas Schwarz",
+      "Darrell D. E. Long"
+    ],
+    "date": "Nov 15, 2006",
+    "url": "https://ssrc.us/media/pubs/489b2ce20ab86e8c9e62d4fad4308e653417daea.pdf",
+    "bibTeX": {
+      "@inproceedings": "paris-sss06",
+      "author": "Jehan-François Pâris and Thomas Schwarz and Darrell D. E. Long",
+      "title": "Self-Adaptive Disk Arrays",
+      "booktitle": "Proceedings of the 8th International Symposium on Stabilization, Safety, and Security of Distributed Systems (SSS 2006)",
+      "year": 2006,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 61,
+    "title": "Protecting Data Against Early Disk Failures",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Thomas Schwarz",
+      "Darrell D. E. Long"
+    ],
+    "date": "Dec 15, 2006",
+    "url": "https://ssrc.us/media/pubs/417501a9844940233bea34b82988012342606779.pdf",
+    "bibTeX": {
+      "@inproceedings": "paris-i06",
+      "author": "Jehan-François Pâris and Thomas Schwarz and Darrell D. E. Long",
+      "title": "Protecting Data Against Early Disk Failures",
+      "booktitle": "Proceedings of the 5th International Information and Telecommunication Technologies Symposium (I2TS ‘06)",
+      "year": 2006,
+      "month": "dec"
+    }
+  },
+  {
+    "id": 62,
+    "title": "Self-Adaptive Two-Dimensional RAID Arrays",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Thomas Schwarz",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 11, 2007",
+    "url": "https://ssrc.us/media/pubs/2ecd1bbacf54c7173e461fabfeffbf9e83eb1573.pdf",
+    "bibTeX": {
+      "@inproceedings": "paris-ipccc07",
+      "author": "Jehan-François Pâris and Thomas Schwarz and Darrell D. E. Long",
+      "title": "Self-Adaptive Two-Dimensional {RAID",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC '07)",
+      "year": 2007,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 63,
+    "title": "A Hybrid Disk-Aware Spin-Down Algorithm with I/O Subsystem Support",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Timothy Bisson",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 12, 2007",
+    "url": "https://ssrc.us/media/pubs/00bbfdfb354b8db0b4cc92bc9d44e447c48b19e1.pdf",
+    "bibTeX": {
+      "@inproceedings": "bisson-ipccc07",
+      "author": "Timothy Bisson and Scott A. Brandt and Darrell D. E. Long",
+      "title": "A Hybrid Disk-Aware Spin-Down Algorithm with I/O Subsystem Support",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC '07)",
+      "year": 2007,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 64,
+    "title": "Quota Enforcement for High-Performance Distributed Storage Systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Kristal Pollack",
+      "Darrell D. E. Long",
+      "Richard Golding",
+      "Benjamin C. Reed"
+    ],
+    "date": "Sep 26, 2007",
+    "url": "https://ssrc.us/media/pubs/810538e2f651e7a602c66f683e26baeb0e14f18f.pdf",
+    "bibTeX": {
+      "@inproceedings": "pollack-msst07",
+      "author": "Kristal Pollack and Darrell D. E. Long and Richard Golding and Ralph Becker-Szendy and Benjamin C. Reed",
+      "title": "Quota Enforcement for High-Performance Distributed Storage Systems",
+      "booktitle": "Proceedings of the 24th IEEE Conference on Mass Storage Systems and Technologies (MSST 2007)",
+      "pages": "72-84",
+      "year": 2007,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 65,
+    "title": "Disaster Recovery Codes: Increasing Reliability with Large-Stripe Error Correction Codes",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Kevin Greenan",
+      "Ethan L. Miller",
+      "Thomas Schwarz",
+      "Darrell D. E. Long"
+    ],
+    "date": "Oct 29, 2007",
+    "url": "https://ssrc.us/media/pubs/9ecab7b0d63fdb3455318123c3d7cd2e7fc1ca60.pdf",
+    "bibTeX": {
+      "@inproceedings": "greenan-storagess07",
+      "author": "Kevin Greenan and Ethan L. Miller and Thomas Schwarz and Darrell D. E. Long",
+      "title": "Disaster Recovery Codes: Increasing Reliability with Large-Stripe Error Correction Codes",
+      "booktitle": "Proceedings of the 3rd International Workshop on Storage Security and Survivability (StorageSS 2007)",
+      "year": 2007,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 66,
+    "title": "Ensuring Data Survival on Solid-State Storage Devices",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell D. E. Long",
+      "Thomas Schwarz"
+    ],
+    "date": "Feb 17, 2008",
+    "url": "https://ssrc.us/media/pubs/5177d775770337e41f3815753f0d2b42816ffe9a.pdf",
+    "bibTeX": {
+      "@inproceedings": "paris-speed08",
+      "author": "Jehan-François Pâris and Darrell D. E. Long and Thomas Schwarz",
+      "title": "Ensuring Data Survival on Solid-State Storage Devices",
+      "booktitle": "Proceedings of the 1st International Workshop on Storage and I/O Virtualization, Performance, Energy, Evaluation and Dependability",
+      "year": 2008,
+      "month": "feb"
+    }
+  },
+  {
+    "id": 67,
+    "title": "Energy-Reliability Tradeoffs in Sensor Networks",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Neerja Bhatnagar",
+      "Kevin Greenan",
+      "Rosie Wacha",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jun 2, 2008",
+    "url": "https://ssrc.us/media/pubs/ed3909032135f1d1d500725bac4854f0b9687826.pdf",
+    "bibTeX": {
+      "@inproceedings": "bhatnagar-emnets08",
+      "author": "Neerja Bhatnagar and Kevin Greenan and Rosie Wacha and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Energy-Reliability Tradeoffs in Sensor Networks",
+      "booktitle": "Proceedings of the Fifth Workshop on Embedded Networked Sensors (HotEmNets 2008)",
+      "year": 2008,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 68,
+    "title": "Increased Reliability with SSPiRAL Data Layouts",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ahmed Amer",
+      "Darrell D. E. Long",
+      "Jehan-François Pâris",
+      "Thomas Schwarz"
+    ],
+    "date": "Sep 8, 2008",
+    "url": "https://ssrc.us/media/pubs/83c957e36f53982d7ba0351e0677999b3764b689.pdf",
+    "bibTeX": {
+      "@inproceedings": "amer-mascots08",
+      "author": "Ahmed Amer and Darrell D. E. Long and Jehan-François Pâris and Thomas Schwarz",
+      "title": "Increased Reliability with {SSPiRAL",
+      "booktitle": "Proceedings of the 16th International Symposium on Modeling, Analysis,and Simulation of Computer and Telecommunication Systems (MASCOTS 2008)",
+      "pages": "189-198",
+      "year": 2008,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 69,
+    "title": "Secure Data Deduplication",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Mark W. Storer",
+      "Kevin Greenan",
+      "Darrell D. E. Long",
+      "Ethan L. Miller"
+    ],
+    "date": "Oct 31, 2008",
+    "url": "https://ssrc.us/media/pubs/9edc12c724b33d544db123004462843deb173edf.pdf",
+    "bibTeX": {
+      "@inproceedings": "storer-storagess08",
+      "author": "Mark W. Storer and Kevin Greenan and Darrell D. E. Long and Ethan L. Miller",
+      "title": "Secure Data Deduplication",
+      "booktitle": "Proceedings of the 4th International Workshop on Storage Security and Survivability (StorageSS 2008)",
+      "year": 2008,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 70,
+    "title": "Logan: Automatic Management for Evolvable, Large-Scale, Archival Storage",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Mark W. Storer",
+      "Kevin Greenan",
+      "Ian Adams",
+      "Ethan L. Miller",
+      "Darrell D. E. Long",
+      "Kaladhar Voruganti"
+    ],
+    "date": "Nov 17, 2008",
+    "url": "https://ssrc.us/media/pubs/04fb9e71b120f3b6c53a6c4c69b690350ebc2897.pdf",
+    "bibTeX": {
+      "@inproceedings": "storer-pdsw08",
+      "author": "Mark W. Storer and Kevin Greenan and Ian Adams and Ethan L. Miller and Darrell D. E. Long and Kaladhar Voruganti",
+      "title": "Logan: Automatic Management for Evolvable, Large-Scale, Archival Storage",
+      "booktitle": "Proceedings of the 2008 Petascale Data Storage Workshop (PDSW 08)",
+      "year": 2008,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 71,
+    "title": "A Spin-Up Saved is Energy Earned: Achieving Power-Efficient, Erasure-Coded Storage",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Kevin Greenan",
+      "Darrell D. E. Long",
+      "Ethan L. Miller",
+      "Thomas Schwarz",
+      "Jay Wylie"
+    ],
+    "date": "Dec 7, 2008",
+    "url": "https://ssrc.us/media/pubs/ec4209788a97532b732838320b54ee1e6434ae54.pdf",
+    "bibTeX": {
+      "@inproceedings": "greenan-hotdep08",
+      "author": "Kevin Greenan and Darrell D. E. Long and Ethan L. Miller and Thomas Schwarz and Jay Wylie",
+      "title": "A Spin-Up Saved is Energy Earned: Achieving Power-Efficient, Erasure-Coded Storage",
+      "booktitle": "Proceedings of the Fourth Workshop on Hot Topics in System Dependability (HotDep '08)",
+      "year": 2008,
+      "month": "dec"
+    }
+  },
+  {
+    "id": 72,
+    "title": "Progressive Parity-Based Hardening of Data Stores",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ahmed Amer",
+      "Jehan-François Pâris",
+      "Darrell D. E. Long",
+      "Thomas Schwarz"
+    ],
+    "date": "Dec 14, 2008",
+    "url": "https://ssrc.us/media/pubs/806db63f21c79d55881f1961f1d2238f1fddb222.pdf",
+    "bibTeX": {
+      "@inproceedings": "amer-ipccc08",
+      "author": "Ahmed Amer and Jehan-François Pâris and Darrell D. E. Long and Thomas Schwarz",
+      "title": "Progressive Parity-Based Hardening of Data Stores",
+      "booktitle": "Proceedings of the 27th International Performance of Computers and Communication Conference (IPCCC '08)",
+      "pages": "34-42",
+      "year": 2008,
+      "month": "dec"
+    }
+  },
+  {
+    "id": 73,
+    "title": "When MTTDLs Are Not Good Enough: Providing Better Estimates of Disk Array Reliability",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Thomas Schwarz",
+      "Darrell D. E. Long",
+      "Ahmed Amer"
+    ],
+    "date": "Dec 15, 2008",
+    "url": "https://ssrc.us/media/pubs/b51479a2c778381473b9db678a69b70d893685da.pdf",
+    "bibTeX": {
+      "@inproceedings": "paris-i08",
+      "author": "Jehan-François Pâris and Thomas Schwarz and Darrell D. E. Long and Ahmed Amer",
+      "title": "When {MTTDLs",
+      "booktitle": "Proceedings of the 7th International Information and Telecommunication Technologies Symposium (I2TS ‘08)",
+      "year": 2008,
+      "month": "dec"
+    }
+  },
+  {
+    "id": 74,
+    "title": "Protecting Against Rare Event Failures in  Archival Systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Avani Wildani",
+      "Thomas Schwarz",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 15, 2009",
+    "url": "https://ssrc.us/media/pubs/4970261ac6b15d9f3a3adbd7842a74b0ed50b44d.pdf",
+    "bibTeX": {
+      "@techreport": "wildani-ssrctr0903",
+      "author": "Avani Wildani and Thomas Schwarz and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Protecting Against Rare Event Failures in  Archival Systems",
+      "institution": "University of California, Santa Cruz",
+      "number": "UCSC-SSRC-09-03",
+      "year": 2009,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 75,
+    "title": "Using storage class memories to increase the reliability of two-dimensional RAID arrays",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Ahmed Amer",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 17, 2009",
+    "url": "https://ssrc.us/media/pubs/b5602a4af0428b1c2b2b1b03de68fc94e8aeff84.pdf",
+    "bibTeX": {
+      "@techreport": "paris-ssrctr09",
+      "author": "Jehan-François Pâris and Ahmed Amer and Darrell D. E. Long",
+      "title": "Using storage class memories to increase the reliability of two-dimensional {RAID",
+      "institution": "University of California, Santa Cruz",
+      "number": "UCSC-SSRC-09-04",
+      "year": 2009,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 76,
+    "title": "Reliability Modelling of Disk Subsystems with Probabilistic Model Checking",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Kanchi Gopinath",
+      "Jon Elerath",
+      "Darrell D. E. Long"
+    ],
+    "date": "May 6, 2009",
+    "url": "https://ssrc.us/media/pubs/b6074d5b97475e65a5c3082d4767797a479d108c.pdf",
+    "bibTeX": {
+      "@techreport": "gopinath-ssrctr09",
+      "author": "Kanchi Gopinath and Jon Elerath and Darrell D. E. Long",
+      "title": "Reliability Modelling of Disk Subsystems with Probabilistic Model Checking",
+      "institution": "University of California, Santa Cruz",
+      "number": "UCSC-SSRC-09-05",
+      "year": 2009,
+      "month": "may"
+    }
+  },
+  {
+    "id": 77,
+    "title": "Maximizing Efficiency By Trading Storage for Computation",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ian Adams",
+      "Darrell D. E. Long",
+      "Ethan L. Miller",
+      "Shankar Pasupathy",
+      "Mark W. Storer"
+    ],
+    "date": "Jun 15, 2009",
+    "url": "https://ssrc.us/media/pubs/148a4703eafdb2b708b144e8e49544d3476c4844.pdf",
+    "bibTeX": {
+      "@inproceedings": "adams-hotcloud09",
+      "author": "Ian Adams and Darrell D. E. Long and Ethan L. Miller and Shankar Pasupathy and Mark W. Storer",
+      "title": "Maximizing Efficiency By Trading Storage for Computation",
+      "booktitle": "Proceedings of the Workshop on Hot Topics  in Cloud Computing (HotCloud ’09)",
+      "year": 2009,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 78,
+    "title": "Building Flexible, Fault-Tolerant Flash-based Storage Systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Kevin Greenan",
+      "Darrell D. E. Long",
+      "Ethan L. Miller",
+      "Thomas Schwarz",
+      "Avani Wildani"
+    ],
+    "date": "Jun 29, 2009",
+    "url": "https://ssrc.us/media/pubs/85487ca09999d24c4f3d5c7148a8e1686d922147.pdf",
+    "bibTeX": {
+      "@inproceedings": "greenan-hotdep09",
+      "author": "Kevin Greenan and Darrell D. E. Long and Ethan L. Miller and Thomas Schwarz and Avani Wildani",
+      "title": "Building Flexible, Fault-Tolerant Flash-based Storage Systems",
+      "booktitle": "Proceedings of the Fifth Workshop on Hot Topics in System Dependability (HotDep 2009)",
+      "year": 2009,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 79,
+    "title": "Using Storage Class Memories to Increase the Reliability of Two-Dimensional RAID Arrays",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Ahmed Amer",
+      "Darrell D. E. Long"
+    ],
+    "date": "Sep 21, 2009",
+    "url": "https://ssrc.us/media/pubs/d4d1aadca8935513f3d409ef9cb5ed63b9087673.pdf",
+    "bibTeX": {
+      "@inproceedings": "amer-mascots09",
+      "author": "Jehan-François Pâris and Ahmed Amer and Darrell D. E. Long",
+      "title": "Using Storage Class Memories to Increase the Reliability of Two-Dimensional {RAID",
+      "booktitle": "Proceedings of the 17th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2009)",
+      "year": 2009,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 80,
+    "title": "Extreme Binning: Scalable, Parallel Deduplication for Chunk-based File Backup",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Deepavali Bhagwat",
+      "Kave Eshghi",
+      "Darrell D. E. Long",
+      "Mark Lillibridge"
+    ],
+    "date": "Sep 21, 2009",
+    "url": "https://ssrc.us/media/pubs/b53c92a4725d8a656e4e9dcce3a7f03b5349d1e0.pdf",
+    "bibTeX": {
+      "@inproceedings": "bhagwat-mascots09",
+      "author": "Deepavali Bhagwat and Kave Eshghi and Darrell D. E. Long and Mark Lillibridge",
+      "title": "Extreme Binning: Scalable, Parallel Deduplication for Chunk-based File Backup",
+      "booktitle": "Proceedings of the 17th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2009)",
+      "year": 2009,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 81,
+    "title": "Protecting Against Rare Event Failures in Archival Systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Avani Wildani",
+      "Thomas Schwarz",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Sep 21, 2009",
+    "url": "https://ssrc.us/media/pubs/feae612154adaf068c68b509dcf0ab9605608238.pdf",
+    "bibTeX": {
+      "@inproceedings": "wildani-mascots09",
+      "author": "Avani Wildani and Thomas Schwarz and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Protecting Against Rare Event Failures in Archival Systems",
+      "booktitle": "Proceedings of the 17th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2009)",
+      "year": 2009,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 82,
+    "title": "Evaluating the Impact of  Irrecoverable Read Errors on Disk Array Reliability",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Ahmed Amer",
+      "Darrell D. E. Long",
+      "Thomas Schwarz"
+    ],
+    "date": "Nov 16, 2009",
+    "url": "https://ssrc.us/media/pubs/d88bd54a99747e1c26b31f9501e872a9b9c5bf84.pdf",
+    "bibTeX": {
+      "@inproceedings": "paris-prdc09",
+      "author": "Jehan-François Pâris and Ahmed Amer and Darrell D. E. Long and Thomas Schwarz",
+      "title": "Evaluating the Impact of  Irrecoverable Read Errors on Disk Array Reliability",
+      "booktitle": "Proceedings of the IEEE 15th Paciﬁc Rim International  Symposium on Dependable Computing (PRDC09)",
+      "year": 2009,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 83,
+    "title": "Security Aware Partitioning for Efficient File System Search",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Aleatha Parker-Wood",
+      "Christina Strong",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "May 6, 2010",
+    "url": "https://ssrc.us/media/pubs/5503961c7ba8d36fed0d9146a9cb9276ad93f459.pdf",
+    "bibTeX": {
+      "@inproceedings": "parkerwood-msst10",
+      "author": "Aleatha Parker-Wood and Christina Strong and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Security Aware Partitioning for Efficient File System Search",
+      "booktitle": "26th IEEE Symposium on Massive Storage Systems and Technologies: Research Track (MSST 2010)",
+      "year": 2010,
+      "month": "may"
+    }
+  },
+  {
+    "id": 84,
+    "title": "Design Issues for a Shingled Write Disk System",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ahmed Amer",
+      "Darrell D. E. Long",
+      "Ethan L. Miller",
+      "Jehan-François Pâris",
+      "Thomas Schwarz"
+    ],
+    "date": "May 6, 2010",
+    "url": "https://ssrc.us/media/pubs/8434c823fcb223a740f2dd59f213c4c5eb4d0960.pdf",
+    "bibTeX": {
+      "@inproceedings": "amer-msst10",
+      "author": "Ahmed Amer and Darrell D. E. Long and Ethan L. Miller and Jehan-François Pâris and Thomas Schwarz",
+      "title": "Design Issues for a Shingled Write Disk System",
+      "booktitle": "26th IEEE Symposium on Massive Storage Systems and Technologies: Research Track (MSST 2010)",
+      "year": 2010,
+      "month": "may"
+    }
+  },
+  {
+    "id": 85,
+    "title": "Improving Disk Array Reliability Though Expedited Scrubbing",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Thomas Schwarz",
+      "Ahmed Amer",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jul 17, 2010",
+    "url": "https://ssrc.us/media/pubs/278033b73afed2d3a8fdb01ec46c3b79ce00d57b.pdf",
+    "bibTeX": {
+      "@inproceedings": "paris-nas10",
+      "author": "Jehan-François Pâris and Thomas Schwarz and Ahmed Amer and Darrell D. E. Long",
+      "title": "Improving Disk Array Reliability Though Expedited Scrubbing",
+      "booktitle": "5th IEEE International Conference on Networking, Architecture, and Storage",
+      "year": 2010,
+      "month": "jul"
+    }
+  },
+  {
+    "id": 86,
+    "title": "Fived: A Service-Based Architecture Implementation to Innovate at the Endpoints",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "D J Capelis",
+      "Darrell D. E. Long"
+    ],
+    "date": "Aug 1, 2010",
+    "url": "https://ssrc.us/media/pubs/44fbc56314ce67d804898a27fa2c7dc5f4239f86.pdf",
+    "bibTeX": {
+      "@misc": "capelis-sigcomm10",
+      "author": "D J Capelis and Darrell D. E. Long",
+      "title": "Fived: A Service-Based Architecture Implementation to Innovate at the Endpoints",
+      "howpublished": "Poster in ACM SIGCOMM 2010 Conference",
+      "year": 2010,
+      "month": "aug"
+    }
+  },
+  {
+    "id": 87,
+    "title": "Clasas: A Key-Store for the Cloud",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Thomas Schwarz",
+      "Darrell D. E. Long"
+    ],
+    "date": "Aug 17, 2010",
+    "url": "https://ssrc.us/media/pubs/6b56720e2d87218a4e0742c3dad7fd24dad83dd4.pdf",
+    "bibTeX": {
+      "@inproceedings": "schwarz-clasas-mascots10",
+      "author": "Thomas Schwarz and Darrell D. E. Long",
+      "title": "Clasas: A Key-Store for the Cloud",
+      "booktitle": "Proceedings of the 18th Annual Meeting of the IEEE International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS 2010)",
+      "year": 2010,
+      "month": "aug"
+    }
+  },
+  {
+    "id": 88,
+    "title": "Self-Adjusting Two-Failure Tolerant Disk Arrays",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ignacio Corderi",
+      "Thomas Schwarz",
+      "Ahmed Amer",
+      "Darrell D. E. Long",
+      "Jehan-François Pâris"
+    ],
+    "date": "Nov 15, 2010",
+    "url": "https://ssrc.us/media/pubs/958ed1d376157c456f37cb2f7ab6a2e1e44b2fa1.pdf",
+    "bibTeX": {
+      "@inproceedings": "corderi-pdsw10",
+      "author": "Ignacio Corderi and Thomas Schwarz and Ahmed Amer and Darrell D. E. Long and Jehan-François Pâris",
+      "title": "Self-Adjusting Two-Failure Tolerant Disk Arrays",
+      "booktitle": "Proceedings of the 5th International Workshop on Petascale Data Storage (PDSW10), held in conjunction with SC2010",
+      "year": 2010,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 89,
+    "title": "Provenance Based Rebuild: Using Data Provenance to Improve Reliability",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Brian Madden",
+      "Ian Adams",
+      "Mark W. Storer",
+      "Ethan L. Miller",
+      "Darrell D. E. Long",
+      "Thomas Kroeger"
+    ],
+    "date": "May 24, 2011",
+    "url": "https://ssrc.us/media/pubs/19130bd472435b4f8473a164f9ff73a964aa0120.pdf",
+    "bibTeX": {
+      "@techreport": "madden-ssrctr1104",
+      "author": "Brian Madden and Ian Adams and Mark W. Storer and Ethan L. Miller and Darrell D. E. Long and Thomas Kroeger",
+      "title": "Provenance Based Rebuild: Using Data Provenance to Improve Reliability",
+      "institution": "University of California, Santa Cruz",
+      "number": "UCSC-SSRC-11-04",
+      "year": 2011,
+      "month": "may"
+    }
+  },
+  {
+    "id": 90,
+    "title": "Design and Evaluation of Oasis: An Active Storage Framework based on T10 OSD Standard",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Yulai Xie",
+      "Kiran-Kumar Muniswamy-Reddy",
+      "Dan Feng",
+      "Darrell D. E. Long",
+      "Yangwook Kang",
+      "Zhongying Niu",
+      "Zhipeng Tan"
+    ],
+    "date": "May 27, 2011",
+    "url": "https://ssrc.us/media/pubs/a46f415ca8f67861f1e87147fd12f6ed5267d2f4.pdf",
+    "bibTeX": {
+      "@inproceedings": "xie-msst11",
+      "author": "Yulai Xie and Kiran-Kumar Muniswamy-Reddy and Dan Feng and Darrell D. E. Long and Yangwook Kang and Zhongying Niu and Zhipeng Tan",
+      "title": "Design and Evaluation of Oasis: An Active Storage Framework based on T10 {OSD",
+      "booktitle": "Proceedings of the 27th IEEE Symposium on Massive Storage Systems and Technologies (MSST 2011)",
+      "year": 2011,
+      "month": "may"
+    }
+  },
+  {
+    "id": 91,
+    "title": "Compressing Provenance Graphs",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Yulai Xie",
+      "Kiran-Kumar Muniswamy-Reddy",
+      "Darrell D. E. Long",
+      "Ahmed Amer",
+      "Dan Feng",
+      "Zhipeng Tan"
+    ],
+    "date": "Jun 20, 2011",
+    "url": "https://ssrc.us/media/pubs/1b0fc490ef2493f79cc67f2409570e75f4f64b3d.pdf",
+    "bibTeX": {
+      "@inproceedings": "xie-tapp11",
+      "author": "Yulai Xie and Kiran-Kumar Muniswamy-Reddy and Darrell D. E. Long and Ahmed Amer and Dan Feng and Zhipeng Tan",
+      "title": "Compressing Provenance Graphs",
+      "booktitle": "3rd USENIX Workshop on the Theory and Practice of Provenance",
+      "year": 2011,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 92,
+    "title": "Tracking Emigrant Data via Transient Provenance",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Stephanie Jones",
+      "Christina Strong",
+      "Darrell D. E. Long",
+      "Ethan L. Miller"
+    ],
+    "date": "Jun 20, 2011",
+    "url": "https://ssrc.us/media/pubs/5877b5c8b0dd2d70a70a54c4121cdecd283913ff.pdf",
+    "bibTeX": {
+      "@inproceedings": "jones-tapp11",
+      "author": "Stephanie Jones and Christina Strong and Darrell D. E. Long and Ethan L. Miller",
+      "title": "Tracking Emigrant Data via Transient Provenance",
+      "booktitle": "Proceedings of the 3rd USENIX Workshop on the Theory and Practice of Provenance (TaPP '11)",
+      "year": 2011,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 93,
+    "title": "PRESIDIO: A Framework for Efficient Archival Data Storage",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Lawrence You",
+      "Kristal Pollack",
+      "Darrell D. E. Long",
+      "Kanchi Gopinath"
+    ],
+    "date": "Jul 1, 2011",
+    "url": "https://ssrc.us/media/pubs/33ef15dd54e7d4175fe554cff674cb6e386038c6.pdf",
+    "bibTeX": {
+      "@article": "you-acm11",
+      "author": "Lawrence You and Kristal Pollack and Darrell D. E. Long and Kanchi Gopinath",
+      "title": "{PRESIDIO",
+      "journal": "ACM Transactions on Storage",
+      "volume": 7,
+      "number": 2,
+      "year": 2011,
+      "month": "jul"
+    }
+  },
+  {
+    "id": 94,
+    "title": "Los Alamos National Laboratory Interviews",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Christina Strong",
+      "Stephanie Jones",
+      "Aleatha Parker-Wood",
+      "Alexandra Holloway",
+      "Darrell D. E. Long"
+    ],
+    "date": "Sep 12, 2011",
+    "url": "https://ssrc.us/media/pubs/cd2f2a372894d912db4bac074535b77a0ebb5c38.pdf",
+    "bibTeX": {
+      "@techreport": "strong-ssrctr-11-06",
+      "author": "Christina Strong and Stephanie Jones and Aleatha Parker-Wood and Alexandra Holloway and Darrell D. E. Long",
+      "title": "Los Alamos National Laboratory Interviews",
+      "institution": "University of California, Santa Cruz",
+      "number": "UCSC-SSRC-11-06",
+      "year": 2011,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 95,
+    "title": "Data Management and Layout for Shingled Magnetic Recording",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ahmed Amer",
+      "JoAnne Holliday",
+      "Darrell D. E. Long",
+      "Ethan L. Miller",
+      "Jehan-François Pâris",
+      "Thomas Schwarz"
+    ],
+    "date": "Oct 15, 2011",
+    "url": "https://ssrc.us/media/pubs/fa661ead680269180527ae691db7e725299eacce.pdf",
+    "bibTeX": {
+      "@article": "amer-ieeetm11",
+      "author": "Ahmed Amer and JoAnne Holliday and Darrell D. E. Long and Ethan L. Miller and Jehan-François Pâris and Thomas Schwarz",
+      "title": "Data Management and Layout for Shingled Magnetic Recording",
+      "journal": "IEEE Transactions on Magnetics",
+      "volume": 47,
+      "number": 10,
+      "year": 2011,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 96,
+    "title": "Easing the Burdens of HPC File Management",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Stephanie Jones",
+      "Christina Strong",
+      "Aleatha Parker-Wood",
+      "Alexandra Holloway",
+      "Darrell D. E. Long"
+    ],
+    "date": "Nov 6, 2011",
+    "url": "https://ssrc.us/media/pubs/ab95dce7cd57c2fb7654ca6b0c0e8b920472848a.pdf",
+    "bibTeX": {
+      "@inproceedings": "jones-pdsw11",
+      "author": "Stephanie Jones and Christina Strong and Aleatha Parker-Wood and Alexandra Holloway and Darrell D. E. Long",
+      "title": "Easing the Burdens of {HPC",
+      "booktitle": "Proceedings of the 6th Parallel Data Storage Workshop (PDSW '11)",
+      "year": 2011,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 97,
+    "title": "Horus: Fine-Grained Encryption-Based Security for High Performance Petascale Storage",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ranjana Rajendran",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Nov 13, 2011",
+    "url": "https://ssrc.us/media/pubs/8951dfeb2e0dfaa788b496c0be1f1f260137ad7d.pdf",
+    "bibTeX": {
+      "@inproceedings": "rajendran-pdsw11",
+      "author": "Ranjana Rajendran and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Horus: Fine-Grained Encryption-Based Security for High Performance Petascale Storage",
+      "booktitle": "Proceedings of the 6th Parallel Data Storage Workshop (PDSW '11)",
+      "year": 2011,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 98,
+    "title": "Combining Chunk Boundary and Chunk Signature Calculations for Deduplication",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Witold Litwin",
+      "Darrell D. E. Long",
+      "Thomas Schwarz"
+    ],
+    "date": "Jan 1, 2012",
+    "url": "https://ssrc.us/media/pubs/049bda82fad21815ebfdde1f3ca653287009b929.pdf",
+    "bibTeX": {
+      "@article": "LAT-Litwin-2012",
+      "author": "Witold Litwin and Darrell D. E. Long and Thomas Schwarz",
+      "title": "Combining Chunk Boundary and Chunk Signature Calculations for Deduplication",
+      "journal": "IEEE Latin America Transactions",
+      "volume": "",
+      "year": 2012,
+      "month": "jan"
+    }
+  },
+  {
+    "id": 99,
+    "title": "Making Sense of File Systems Through Provenance and Rich Metadata",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Aleatha Parker-Wood",
+      "Darrell D. E. Long",
+      "Ethan L. Miller",
+      "Margo Seltzer",
+      "Daniel Tunkelang"
+    ],
+    "date": "Mar 2, 2012",
+    "url": "https://ssrc.us/media/pubs/32f01eab601b8048db6a76325e8f0db6dc6b4cfe.pdf",
+    "bibTeX": {
+      "@techreport": "parkerwood-ssrctr-12-01",
+      "author": "Aleatha Parker-Wood and Darrell D. E. Long and Ethan L. Miller and Margo Seltzer and Daniel Tunkelang",
+      "title": "Making Sense of File Systems Through Provenance and Rich Metadata",
+      "institution": "University of California, Santa Cruz",
+      "number": "UCSC-SSRC-12-01",
+      "year": 2012,
+      "month": "mar"
+    }
+  },
+  {
+    "id": 100,
+    "title": "Computer Hard Drive Geolocation by HTTP Feature Extraction",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Alex Nelson",
+      "Darrell D. E. Long"
+    ],
+    "date": "May 4, 2012",
+    "url": "https://ssrc.us/media/pubs/c81a0bc54a2e58e00660bae349fe59bcfed8a7b2.pdf",
+    "bibTeX": {
+      "@techreport": "wan-ssrctr-12-04",
+      "author": "Ziqian Wan and Alex Nelson and Tao Li and Darrell D. E. Long and Andy Hospodor",
+      "title": "Computer Hard Drive Geolocation by {HTTP",
+      "institution": "University of California, Santa Cruz",
+      "number": "UCSC-SSRC-12-04",
+      "year": 2012,
+      "month": "may"
+    }
+  },
+  {
+    "id": 101,
+    "title": "Understanding Data Survivability in Archival Storage Systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Yan Li",
+      "Darrell D. E. Long",
+      "Ethan L. Miller"
+    ],
+    "date": "Jun 4, 2012",
+    "url": "https://ssrc.us/media/pubs/41ba07bff60028bf2d1ce5ed11f975340413f4cd.pdf",
+    "bibTeX": {
+      "@inproceedings": "li-systor12",
+      "author": "Yan Li and Darrell D. E. Long and Ethan L. Miller",
+      "title": "Understanding Data Survivability in Archival Storage Systems",
+      "booktitle": "Proceedings of the 5th Annual International Systems and Storage Conference (SYSTOR 2012)",
+      "year": 2012,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 102,
+    "title": "Exploring Trusted Networking for Protected Applications",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "D J Capelis",
+      "James Larkby-Lahet",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jun 8, 2012",
+    "url": "https://ssrc.us/media/pubs/74023ead4c4af866237377b17a526f5e61e45ebd.pdf",
+    "bibTeX": {
+      "@techreport": "wasptr-12-01",
+      "author": "D J Capelis and James Larkby-Lahet and Darrell D. E. Long",
+      "title": "Exploring Trusted Networking for Protected Applications",
+      "institution": "University of California, Santa Cruz",
+      "number": "UCSC-WASP-12-01",
+      "year": 2012,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 103,
+    "title": "Emulating a Shingled Write Disk",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Rekha Pitchumani",
+      "Ahmed Amer",
+      "Yangwook Kang",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Aug 6, 2012",
+    "url": "https://ssrc.us/media/pubs/8e8dfcab3d23cba2f60a8df9ffdf6c7442fa953b.pdf",
+    "bibTeX": {
+      "@inproceedings": "pitchumani-mascots12",
+      "author": "Rekha Pitchumani and Andy Hospodor and Ahmed Amer and Yangwook Kang and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Emulating a Shingled Write Disk",
+      "booktitle": "Proceedings of the 20th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2012)",
+      "year": 2012,
+      "month": "aug"
+    }
+  },
+  {
+    "id": 104,
+    "title": "PERSES: Data Layout for Low Impact Failures",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Avani Wildani",
+      "Ethan L. Miller",
+      "Ian Adams",
+      "Darrell D. E. Long"
+    ],
+    "date": "Sep 28, 2012",
+    "url": "https://ssrc.us/media/pubs/269379e9c89be1f8ff0d24bf64c6fa30a6e15d47.pdf",
+    "bibTeX": {
+      "@techreport": "wildani-ssrctr1206",
+      "author": "Avani Wildani and Ethan L. Miller and Ian Adams and Darrell D. E. Long",
+      "title": "{PERSES",
+      "institution": "University of California, Santa Cruz",
+      "number": "UCSC-SSRC-12-06",
+      "year": 2012,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 105,
+    "title": "A Hybrid Approach for Efficient Provenance Storage",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Yulai Xie",
+      "Kiran-Kumar Muniswamy-Reddy",
+      "Dan Feng",
+      "Yan Li",
+      "Darrell D. E. Long",
+      "Zhipeng Tan",
+      "Lei Chen"
+    ],
+    "date": "Oct 29, 2012",
+    "url": "https://ssrc.us/media/pubs/1c86fd98ff7b0fe1da0298746532ce56be7914f3.pdf",
+    "bibTeX": {
+      "@inproceedings": "xie-cikm12",
+      "author": "Yulai Xie and Kiran-Kumar Muniswamy-Reddy and Dan Feng and Yan Li and Darrell D. E. Long and Zhipeng Tan and Lei Chen",
+      "title": "A Hybrid Approach for Efficient Provenance Storage",
+      "booktitle": "The 21st ACM Conference on Information and Knowledge Management (CIKM)",
+      "year": 2012,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 106,
+    "title": "Highly Reliable Two-Dimensional RAID Arrays for Archival Storage",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Thomas Schwarz",
+      "Ahmed Amer",
+      "Darrell D. E. Long"
+    ],
+    "date": "Dec 1, 2012",
+    "url": "https://ssrc.us/media/pubs/797505c7e2d985c98fc071183f30a6234e2f6e76.pdf",
+    "bibTeX": {
+      "@inproceedings": "paris-ipccc12",
+      "author": "Jehan-François Pâris and Thomas Schwarz and Ahmed Amer and Darrell D. E. Long",
+      "title": "Highly Reliable Two-Dimensional {RAID",
+      "booktitle": "31st IEEE International Performance Computing and Communications Conference",
+      "year": 2012,
+      "month": "dec"
+    }
+  },
+  {
+    "id": 107,
+    "title": "Improved Deduplication through Parallel Binning",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Zhike Zhang",
+      "Deepavali Bhagwat",
+      "Witold Litwin",
+      "Darrell D. E. Long",
+      "Thomas Schwarz"
+    ],
+    "date": "Dec 1, 2012",
+    "url": "https://ssrc.us/media/pubs/e5318725a703fca005efbefc1df99c14d9f7a8d2.pdf",
+    "bibTeX": {
+      "@inproceedings": "zhang-ipccc12",
+      "author": "Zhike Zhang and Deepavali Bhagwat and Witold Litwin and Darrell D. E. Long and Thomas Schwarz",
+      "title": "Improved Deduplication through Parallel Binning",
+      "booktitle": "Proceedings of the 31st IEEE International Performance, Computing and Communications Conference (IPCCC '12)",
+      "year": 2012,
+      "month": "dec"
+    }
+  },
+  {
+    "id": 108,
+    "title": "Examining Extended and Scientific Metadata for Scalable Index Designs",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Aleatha Parker-Wood",
+      "Brian Madden",
+      "Michael McThrow",
+      "Darrell D. E. Long"
+    ],
+    "date": "Dec 14, 2012",
+    "url": "https://ssrc.us/media/pubs/dd9e7db2b76fc5e150eb442361114ed7b74cefe7.pdf",
+    "bibTeX": {
+      "@techreport": "ssrctr-12-07",
+      "author": "Aleatha Parker-Wood and Brian Madden and Michael McThrow and Darrell D. E. Long",
+      "title": "Examining Extended and Scientific Metadata for Scalable Index Designs",
+      "institution": "University of California, Santa Cruz",
+      "number": "UCSC-SSRC-12-07",
+      "year": 2012,
+      "month": "dec"
+    }
+  },
+  {
+    "id": 109,
+    "title": "Simple, Exact Placement of Data in Containers",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Thomas Schwarz",
+      "Ignacio Corderi",
+      "Darrell D. E. Long",
+      "Jehan-François Pâris"
+    ],
+    "date": "Jan 28, 2013",
+    "url": "https://ssrc.us/media/pubs/5c0b6915412ef0437316db7ff08edd464c1ae251.pdf",
+    "bibTeX": {
+      "@inproceedings": "schwarz-icnc13",
+      "author": "Thomas Schwarz and Ignacio Corderi and Darrell D. E. Long and Jehan-François Pâris",
+      "title": "Simple, Exact Placement of Data in Containers",
+      "booktitle": "Proceedings of the International Conference on Computing, Networking and Communications (ICNC)",
+      "year": 2013,
+      "month": "jan"
+    }
+  },
+  {
+    "id": 110,
+    "title": "Horus: Fine-Grained Encryption-Based Security for Large-Scale Storage",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Yan Li",
+      "Nakul Dhotre",
+      "Yasuhiro Ohara",
+      "Thomas Kroeger",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Feb 13, 2013",
+    "url": "https://ssrc.us/media/pubs/a7e9d6c768fb788a18a01408cd376898681a3b59.pdf",
+    "bibTeX": {
+      "@inproceedings": "li-fast13",
+      "author": "Yan Li and Nakul Dhotre and Yasuhiro Ohara and Thomas Kroeger and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Horus: Fine-Grained Encryption-Based Security for Large-Scale Storage",
+      "booktitle": "Proceedings of the 11th Conference on File and Storage Systems (FAST 2013)",
+      "year": 2013,
+      "month": "feb"
+    }
+  },
+  {
+    "id": 111,
+    "title": "A Flexible Simulation Tool for Estimating Data Loss Risks in Storage Arrays",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Hsu-Wan Kao",
+      "Jehan-François Pâris",
+      "Darrell D. E. Long",
+      "Thomas Schwarz"
+    ],
+    "date": "May 8, 2013",
+    "url": "https://ssrc.us/media/pubs/c4f125b292178426b9b8c88d9416da160fadc2ae.pdf",
+    "bibTeX": {
+      "@inproceedings": "kao-msst13",
+      "author": "Hsu-Wan Kao and Jehan-François Pâris and Darrell D. E. Long and Thomas Schwarz",
+      "title": "A Flexible Simulation Tool for Estimating Data Loss Risks in Storage Arrays",
+      "booktitle": "29th IEEE Symposium on Massive Storage Systems and Technologies",
+      "year": 2013,
+      "month": "may"
+    }
+  },
+  {
+    "id": 112,
+    "title": "Examining Extended and Scientific Metadata for Scalable Index Designs",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Aleatha Parker-Wood",
+      "Brian Madden",
+      "Michael McThrow",
+      "Darrell D. E. Long",
+      "Ian Adams",
+      "Avani Wildani"
+    ],
+    "date": "Jun 30, 2013",
+    "url": "https://ssrc.us/media/pubs/e7225d7288c8d36124427ea03981d19d12e220e5.pdf",
+    "bibTeX": {
+      "@inproceedings": "parkerwood-systor13",
+      "author": "Aleatha Parker-Wood and Brian Madden and Michael McThrow and Darrell D. E. Long and Ian Adams and Avani Wildani",
+      "title": "Examining Extended and Scientific Metadata for Scalable Index Designs",
+      "booktitle": "Proceedings of the 6th International Systems and Storage Conference (SYSTOR 2013)",
+      "year": 2013,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 113,
+    "title": "Evaluation of a Hybrid Approach for Efficient Provenance Storage",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Yulai Xie",
+      "Kiran-Kumar Muniswamy-Reddy",
+      "Dan Feng",
+      "Yan Li",
+      "Darrell D. E. Long"
+    ],
+    "date": "Nov 1, 2013",
+    "url": "https://ssrc.us/media/pubs/ad9b5bfc8371836c5499d5525493935d8adda5f9.pdf",
+    "bibTeX": {
+      "@article": "xie-tos13",
+      "author": "Yulai Xie and Kiran-Kumar Muniswamy-Reddy and Dan Feng and Yan Li and Darrell D. E. Long",
+      "title": "Evaluation of a Hybrid Approach for Efficient Provenance Storage",
+      "journal": "ACM Transactions on Storage",
+      "volume": "",
+      "year": 2013,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 114,
+    "title": "Building JACK: Developing Metrics for Use in Multi-Objective Optimal Data Allocation Strategies",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Christina Strong",
+      "Ahmed Amer",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jan 7, 2014",
+    "url": "https://ssrc.us/media/pubs/49d0443910c8167f38187eebf4ca8c6fd3e81127.pdf",
+    "bibTeX": {
+      "@techreport": "strong-techreport14",
+      "author": "Christina Strong and Ahmed Amer and Darrell D. E. Long",
+      "title": "Building {JACK",
+      "institution": "University of California, Santa Cruz",
+      "number": "UCSC-SSRC-14-01",
+      "year": 2014,
+      "month": "jan"
+    }
+  },
+  {
+    "id": 115,
+    "title": "A File By Any Other Name: Managing File Names with Metadata",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Aleatha Parker-Wood",
+      "Darrell D. E. Long",
+      "Ethan L. Miller",
+      "Philippe Rigaux",
+      "Andy Isaacson"
+    ],
+    "date": "Jun 10, 2014",
+    "url": "https://ssrc.us/media/pubs/e6a4e47c11c5a468d9b7e33a5210e8fc57ddf159.pdf",
+    "bibTeX": {
+      "@inproceedings": "parkerwood-systor14",
+      "author": "Aleatha Parker-Wood and Darrell D. E. Long and Ethan L. Miller and Philippe Rigaux and Andy Isaacson",
+      "title": "A File By Any Other Name: Managing File Names with Metadata",
+      "booktitle": "Proceedings of the 7th International Systems and Storage Conference (SYSTOR '14)",
+      "year": 2014,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 116,
+    "title": "PERSES: Data Layout for Low Impact Failures",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Avani Wildani",
+      "Ethan L. Miller",
+      "Ian Adams",
+      "Darrell D. E. Long"
+    ],
+    "date": "Sep 9, 2014",
+    "url": "https://ssrc.us/media/pubs/db9e477f8d70c6439364112f4bb7d7a9ca95a617.pdf",
+    "bibTeX": {
+      "@inproceedings": "wildani-mascots14",
+      "author": "Avani Wildani and Ethan L. Miller and Ian Adams and Darrell D. E. Long",
+      "title": "{PERSES",
+      "booktitle": "22th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2014)",
+      "year": 2014,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 117,
+    "title": "Which Storage Device is the Greenest? Modeling the Energy Cost of I/O Workloads",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Yan Li",
+      "Darrell D. E. Long"
+    ],
+    "date": "Sep 10, 2014",
+    "url": "https://ssrc.us/media/pubs/7d16df559585d26c07cea39fb6fe33503007438a.pdf",
+    "bibTeX": {
+      "@inproceedings": "li-mascots14",
+      "author": "Yan Li and Darrell D. E. Long",
+      "title": "Which Storage Device is the Greenest? Modeling the Energy Cost of I/O Workloads",
+      "booktitle": "22nd IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2014)",
+      "year": 2014,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 118,
+    "title": "Protecting RAID Arrays Against Unexpectedly High Disk Failure Rates",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Ahmed Amer",
+      "Darrell D. E. Long",
+      "Thomas Schwarz"
+    ],
+    "date": "Nov 1, 2014",
+    "url": "https://ssrc.us/media/pubs/b7e8714a7341963723c7a64ae40a801cfb8c7187.pdf",
+    "bibTeX": {
+      "@inproceedings": "paris-prdc14",
+      "author": "Jehan-François Pâris and Ahmed Amer and Darrell D. E. Long and Thomas Schwarz",
+      "title": "Protecting {RAID",
+      "booktitle": "IEEE Pacific Rim International Symposium on Dependable Computing (PRDC'14)",
+      "year": 2014,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 119,
+    "title": "Self-Repairing Disk Arrays",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Ahmed Amer",
+      "Darrell D. E. Long",
+      "Thomas Schwarz"
+    ],
+    "date": "Jan 21, 2015",
+    "url": "",
+    "bibTeX": {
+      "@inproceedings": "paris-adapt15",
+      "author": "Jehan-François Pâris and Ahmed Amer and Darrell D. E. Long and Thomas Schwarz",
+      "title": "Self-Repairing Disk Arrays",
+      "booktitle": "Proceedings of the Fifth International Workshop on Adaptive Self-tuning Computing Systems (ADAPT)",
+      "year": 2015,
+      "month": "jan"
+    }
+  },
+  {
+    "id": 120,
+    "title": "Even or Odd: A Simple Graphical Authentication System",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Nicolas Lopez",
+      "Matias Rodriguez",
+      "Catalina Fellegi",
+      "Darrell D. E. Long",
+      "Thomas Schwarz"
+    ],
+    "date": "Mar 1, 2015",
+    "url": "https://ssrc.us/media/pubs/a13df07eff9a3a0add4b629872905bc9b853af7c.pdf",
+    "bibTeX": {
+      "@article": "lopez-revistaieee15",
+      "author": "Nicolas Lopez and Matias Rodriguez and Catalina Fellegi and Darrell D. E. Long and Thomas Schwarz",
+      "title": "Even or Odd: A Simple Graphical Authentication System",
+      "journal": "Revista IEEE América Latina",
+      "volume": 13,
+      "number": 3,
+      "year": 2015,
+      "month": "mar"
+    }
+  },
+  {
+    "id": 121,
+    "title": "ASCAR: Automating Contention Management for High-Performance Storage Systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Yan Li",
+      "Xiaoyuan Lu",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jun 2, 2015",
+    "url": "https://ssrc.us/media/pubs/35501b12a19824cf2f4cf48eb65ceb1445b28c0e.pdf",
+    "bibTeX": {
+      "@inproceedings": "li-msst15",
+      "author": "Yan Li and Xiaoyuan Lu and Ethan L. Miller and Darrell D. E. Long",
+      "title": "{ASCAR",
+      "booktitle": "31st International Conference on Massive Storage Systems and Technologies (MSST2015)",
+      "year": 2015,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 122,
+    "title": "Classifying Data to Reduce Long Term Data Movement in Shingled Write Disks",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Stephanie Jones",
+      "Ahmed Amer",
+      "Ethan L. Miller",
+      "Darrell D. E. Long",
+      "Rekha Pitchumani",
+      "Christina Strong"
+    ],
+    "date": "Jun 4, 2015",
+    "url": "https://ssrc.us/media/pubs/beab0307cea322529784d702dc70dcbdad9a171c.pdf",
+    "bibTeX": {
+      "@inproceedings": "jones-msst15",
+      "author": "Stephanie Jones and Ahmed Amer and Ethan L. Miller and Darrell D. E. Long and Rekha Pitchumani and Christina Strong",
+      "title": "Classifying Data to Reduce Long Term Data Movement in Shingled Write Disks",
+      "booktitle": "Proceedings of the 31st International Conference on Massive Storage Systems and Technology (MSST 2015)",
+      "year": 2015,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 123,
+    "title": "Percival: A Searchable Secret Split Datastore",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Joel Frank",
+      "Lincoln Thurlow",
+      "Thomas Kroeger",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jun 4, 2015",
+    "url": "https://ssrc.us/media/pubs/b3ecd7f064f22088266ca2a52935d1f840151d0f.pdf",
+    "bibTeX": {
+      "@inproceedings": "frank-msst15",
+      "author": "Joel Frank and Shayna Frank and Lincoln Thurlow and Thomas Kroeger and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Percival: A Searchable Secret Split Datastore",
+      "booktitle": "31st International Conference on Massive Storage Systems and Technologies (MSST2015)",
+      "year": 2015,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 124,
+    "title": "Classifying Data to Reduce Long-Term Data Movement in Shingled Write Disks",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Stephanie Jones",
+      "Ahmed Amer",
+      "Ethan L. Miller",
+      "Darrell D. E. Long",
+      "Rekha Pitchumani",
+      "Christina Strong"
+    ],
+    "date": "Feb 1, 2016",
+    "url": "https://ssrc.us/media/pubs/3a6a2a2a5904469af04d266995dc84b0eec89ee2.pdf",
+    "bibTeX": {
+      "@article": "jones-tos16",
+      "author": "Stephanie Jones and Ahmed Amer and Ethan L. Miller and Darrell D. E. Long and Rekha Pitchumani and Christina Strong",
+      "title": "Classifying Data to Reduce Long-Term Data Movement in Shingled Write Disks",
+      "journal": "ACM Transactions on Storage",
+      "volume": 12,
+      "number": 1,
+      "year": 2016,
+      "month": "feb"
+    }
+  },
+  {
+    "id": 125,
+    "title": "Oasis: an Active Storage Framework for Object Storage Platform",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Yulai Xie",
+      "Dan Feng",
+      "Yan Li",
+      "Darrell D. E. Long"
+    ],
+    "date": "Mar 1, 2016",
+    "url": "https://ssrc.us/media/pubs/a08002805a8cadaf36fd9471a6e5fd62390979e1.pdf",
+    "bibTeX": {
+      "@article": "xie-fgcs16",
+      "author": "Yulai Xie and Dan Feng and Yan Li and Darrell D. E. Long",
+      "title": "Oasis: an Active Storage Framework for Object Storage Platform",
+      "journal": "Future Generation Computer Systems",
+      "volume": "",
+      "year": 2016,
+      "month": "mar"
+    }
+  },
+  {
+    "id": 126,
+    "title": "Effects of Prolonged Media Usage and Long-term Planning on Archival Systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Preeti Gupta",
+      "Darrell D. E. Long",
+      "Ethan L. Miller",
+      "David S.H. Rosenthal",
+      "Avani Wildani"
+    ],
+    "date": "May 5, 2016",
+    "url": "https://ssrc.us/media/pubs/e6d80e26fce5d8d5ec549c3f0939aadd133e530a.pdf",
+    "bibTeX": {
+      "@inproceedings": "gupta-msst16",
+      "author": "Preeti Gupta and Darrell D. E. Long and Ethan L. Miller and David S.H. Rosenthal and Avani Wildani",
+      "title": "Effects of Prolonged Media Usage and Long-term Planning on Archival Systems",
+      "booktitle": "32nd International Conference on Massive Storage Systems and Technologies (MSST2016), May 2016",
+      "year": 2016,
+      "month": "may"
+    }
+  },
+  {
+    "id": 127,
+    "title": "Pilot: A Framework that Understands How to Do Performance Benchmarks The Right Way",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Yan Li",
+      "Yash Gupta",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Sep 19, 2016",
+    "url": "https://ssrc.us/media/pubs/1fc262bbb19b5ff0ec48ec4912d9f75c15917ce7.pdf",
+    "bibTeX": {
+      "@inproceedings": "li-mascots16",
+      "author": "Yan Li and Yash Gupta and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Pilot: A Framework that Understands How to Do Performance Benchmarks The Right Way",
+      "booktitle": "Proceedings of the 24th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2016)",
+      "year": 2016,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 128,
+    "title": "RESAR: Reliable Storage at Exabyte Scale",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Thomas Schwarz",
+      "Ahmed Amer",
+      "Thomas Kroeger",
+      "Ethan L. Miller",
+      "Darrell D. E. Long",
+      "Jehan-François Pâris"
+    ],
+    "date": "Sep 21, 2016",
+    "url": "https://ssrc.us/media/pubs/495396c0b29a40d17d4c6e7bc2627abce18ffc1c.pdf",
+    "bibTeX": {
+      "@inproceedings": "schwarz-mascots16",
+      "author": "Thomas Schwarz and Ahmed Amer and Thomas Kroeger and Ethan L. Miller and Darrell D. E. Long and Jehan-François Pâris",
+      "title": "{RESAR",
+      "booktitle": "Proceedings of the 24th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2016)",
+      "year": 2016,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 129,
+    "title": "CAPES: Unsupervised Storage Performance Tuning Using Neural Network-Based Deep Reinforcement Learning",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Yan Li",
+      "Oceane Bel",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Nov 13, 2017",
+    "url": "https://ssrc.us/media/pubs/ea175a9f07f9f172005c62cf0514051fa08ff0f1.pdf",
+    "bibTeX": {
+      "@inproceedings": "li-sc17",
+      "author": "Yan Li and Oceane Bel and Kenneth Chang and Ethan L. Miller and Darrell D. E. Long",
+      "title": "{CAPES",
+      "booktitle": "Supercomputing '17",
+      "year": 2017,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 130,
+    "title": "Twizzler: An Operating System for Next-Generation Memory Hierarchies",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Daniel Bittman",
+      "Matt Bryson",
+      "Yuanjiang Ni",
+      "Arjun Govindjee",
+      "Isaak Cherdak",
+      "Pankaj Mehra",
+      "Darrell D. E. Long",
+      "Ethan L. Miller"
+    ],
+    "date": "Dec 5, 2017",
+    "url": "https://ssrc.us/media/pubs/39d6b0bee42492871fd9d2a1a41fcc56add986cc.pdf",
+    "bibTeX": {
+      "@techreport": "bittman-ssrctr-17-01",
+      "author": "Daniel Bittman and Matt Bryson and Yuanjiang Ni and Arjun Govindjee and Isaak Cherdak and Pankaj Mehra and Darrell D. E. Long and Ethan L. Miller",
+      "title": "Twizzler: An Operating System for Next-Generation Memory Hierarchies",
+      "institution": "University of California, Santa Cruz",
+      "number": "UCSC-SSRC-17-01",
+      "year": 2017,
+      "month": "dec"
+    }
+  },
+  {
+    "id": 131,
+    "title": "Inkpack: A Secure, Data-Exposure Resistant Storage System",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Oceane Bel",
+      "Daniel Bittman",
+      "Hiroshi Isozaki",
+      "Darrell D. E. Long",
+      "Ethan L. Miller"
+    ],
+    "date": "Jun 4, 2018",
+    "url": "https://ssrc.us/media/pubs/63636bdd45dc0eda47f6db142582fefb1dcc3216.pdf",
+    "bibTeX": {
+      "@inproceedings": "bel-systor18",
+      "author": "Oceane Bel and Kenneth Chang and Daniel Bittman and Hiroshi Isozaki and Darrell D. E. Long and Ethan L. Miller",
+      "title": "Inkpack: A Secure, Data-Exposure Resistant Storage System",
+      "booktitle": "Proceedings of the 11th ACM International Systems and Storage Conference (SYSTOR 2018)",
+      "year": 2018,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 132,
+    "title": "Designing Data Structures to Minimize Bit Flips on NVM",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Daniel Bittman",
+      "Mathew Gray",
+      "Justin Raizes",
+      "Matt Bryson",
+      "Peter Alvaro",
+      "Darrell D. E. Long",
+      "Ethan L. Miller"
+    ],
+    "date": "Aug 28, 2018",
+    "url": "https://ssrc.us/media/pubs/22231b2cf1a7af7c758716f9ed669d47b30228ad.pdf",
+    "bibTeX": {
+      "@inproceedings": "bittman-nvmsa18",
+      "author": "Daniel Bittman and Mathew Gray and Justin Raizes and Sinjoni Mukhopadhyay and Matt Bryson and Peter Alvaro and Darrell D. E. Long and Ethan L. Miller",
+      "title": "Designing Data Structures to Minimize Bit Flips on {NVM",
+      "booktitle": "The 7th IEEE Non-Volatile Memory Systems and Applications Symposium (NVMSA)",
+      "year": 2018,
+      "month": "aug"
+    }
+  },
+  {
+    "id": 133,
+    "title": "Pagoda: A Hybrid Approach to Enable Efficient Real-time Provenance Based Intrusion Detection in Big Data Environments",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Yulai Xie",
+      "Dan Feng",
+      "Yuchong Hu",
+      "Yan Li",
+      "Staunton Sample",
+      "Darrell D. E. Long"
+    ],
+    "date": "Aug 29, 2018",
+    "url": "https://ssrc.us/media/pubs/ada6e507e18591586bcfb4a69a137673505e36cb.pdf",
+    "bibTeX": {
+      "@article": "xie-tdsc18",
+      "author": "Yulai Xie and Dan Feng and Yuchong Hu and Yan Li and Staunton Sample and Darrell D. E. Long",
+      "title": "Pagoda: A Hybrid Approach to Enable Efficient Real-time Provenance Based Intrusion Detection in Big Data Environments",
+      "journal": "IEEE transactions on dependable and secure computing",
+      "volume": "",
+      "year": 2018,
+      "month": "aug"
+    }
+  },
+  {
+    "id": 134,
+    "title": "Efficient Reconstruction Techniques for Disaster Recovery in Secret-Split Datastores",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Joel Frank",
+      "Daniel Bittman",
+      "Darrell D. E. Long",
+      "Ethan L. Miller"
+    ],
+    "date": "Sep 25, 2018",
+    "url": "https://ssrc.us/media/pubs/9b7193806988f1c135c7ce6321bb7359f0b00d84.pdf",
+    "bibTeX": {
+      "@inproceedings": "mukhopadhyay-mascots18",
+      "author": "Sinjoni Mukhopadhyay and Joel Frank and Daniel Bittman and Darrell D. E. Long and Ethan L. Miller",
+      "title": "Efficient Reconstruction Techniques for Disaster Recovery in Secret-Split Datastores",
+      "booktitle": "Proceedings of the 26th IEEE International Symposium on the Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2018)",
+      "year": 2018,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 135,
+    "title": "Using Simulation to Design Scalable and Cost-Efficient Archival Storage Systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "James Byron",
+      "Darrell D. E. Long",
+      "Ethan L. Miller"
+    ],
+    "date": "Sep 26, 2018",
+    "url": "https://ssrc.us/media/pubs/5afa96a4fbf610b4d45e9c41d4fca786aa59de32.pdf",
+    "bibTeX": {
+      "@inproceedings": "byron-mascots18",
+      "author": "James Byron and Darrell D. E. Long and Ethan L. Miller",
+      "title": "Using Simulation to Design Scalable and Cost-Efficient Archival Storage Systems",
+      "booktitle": "Proceedings of the 26th IEEE International Symposium on the Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2018)",
+      "year": 2018,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 136,
+    "title": "Optimizing Systems for Byte-Addressable NVM by Reducing Bit Flipping",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Daniel Bittman",
+      "Peter Alvaro",
+      "Darrell D. E. Long",
+      "Ethan L. Miller"
+    ],
+    "date": "Feb 25, 2019",
+    "url": "https://ssrc.us/media/pubs/24b1890968914309db6e6962267747f55c7b7dc9.pdf",
+    "bibTeX": {
+      "@inproceedings": "bittman-fast19",
+      "author": "Daniel Bittman and Peter Alvaro and Darrell D. E. Long and Ethan L. Miller",
+      "title": "Optimizing Systems for Byte-Addressable {NVM",
+      "booktitle": "17th USENIX Conference on File and Storage Technologies",
+      "year": 2019,
+      "month": "feb"
+    }
+  },
+  {
+    "id": 137,
+    "title": "Efficient Provenance Management via Clustering and Hybrid Storage in Big Data Environments",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Die Hu",
+      "Dan Feng",
+      "Yulai Xie",
+      "Gongming Xu",
+      "Xinrui Gu",
+      "Darrell D. E. Long"
+    ],
+    "date": "Mar 25, 2019",
+    "url": "",
+    "bibTeX": {
+      "@article": "xie-tbd19",
+      "author": "Die Hu and Dan Feng and Yulai Xie and Gongming Xu and Xinrui Gu and Darrell D. E. Long",
+      "title": "Efficient Provenance Management via Clustering and Hybrid Storage in Big Data Environments",
+      "journal": "IEEE transactions on big data",
+      "volume": "",
+      "year": 2019,
+      "month": "mar"
+    }
+  },
+  {
+    "id": 138,
+    "title": "The Flipside: A Bit Flip Saved is Power and Lifetime Earned",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Daniel Bittman",
+      "Peter Alvaro",
+      "Darrell D. E. Long",
+      "Ethan L. Miller"
+    ],
+    "date": "Jun 1, 2019",
+    "url": "https://ssrc.us/media/pubs/6d9e1139b7972d9484f1f93f463035a1f529333c.pdf",
+    "bibTeX": {
+      "@article": "bittman-login19",
+      "author": "Daniel Bittman and Peter Alvaro and Darrell D. E. Long and Ethan L. Miller",
+      "title": "The Flipside: A Bit Flip Saved is Power and Lifetime Earned",
+      "journal": ";login:",
+      "pages": "27-31",
+      "volume": 44,
+      "number": 2,
+      "year": 2019,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 139,
+    "title": "A Tale of Two Abstractions: The Case for Object Space",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Daniel Bittman",
+      "Peter Alvaro",
+      "Darrell D. E. Long",
+      "Ethan L. Miller"
+    ],
+    "date": "Jul 8, 2019",
+    "url": "https://ssrc.us/media/pubs/fb2174c4c08b9b7cc8ac45f4a97dcb04eecc56be.pdf",
+    "bibTeX": {
+      "@inproceedings": "bittman-hotstorage19",
+      "author": "Daniel Bittman and Peter Alvaro and Darrell D. E. Long and Ethan L. Miller",
+      "title": "A Tale of Two Abstractions: The Case for Object Space",
+      "booktitle": "Proceedings of HotStorage '19",
+      "year": 2019,
+      "month": "jul"
+    }
+  },
+  {
+    "id": 140,
+    "title": "Artifice: A Deniable Steganographic File System",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Austen Barker",
+      "Staunton Sample",
+      "Yash Gupta",
+      "Ana McTaggart",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Aug 13, 2019",
+    "url": "https://ssrc.us/media/pubs/b24a5e0bae67ea4d648789f05461ab7281e4b44a.pdf",
+    "bibTeX": {
+      "@inproceedings": "barker-foci19",
+      "author": "Austen Barker and Staunton Sample and Yash Gupta and Ana McTaggart and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Artifice: A Deniable Steganographic File System",
+      "booktitle": "Proceedings of the 9th USENIX Workshop on Free and Open Communications on the Internet  (FOCI '19)",
+      "year": 2019,
+      "month": "aug"
+    }
+  },
+  {
+    "id": 141,
+    "title": "A Docker Container Anomaly Monitoring System Based on Optimized Isolation Forest",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Zhuping Zou",
+      "Kai Huang",
+      "Gongming Xu",
+      "Yulai Xie",
+      "Dan Feng",
+      "Darrell D. E. Long"
+    ],
+    "date": "Aug 20, 2019",
+    "url": "https://ssrc.us/media/pubs/328563c30a4f38c3860bf200194ba490cba5592f.pdf",
+    "bibTeX": {
+      "@article": "xie-tcc19",
+      "author": "Zhuping Zou and Kai Huang and Gongming Xu and Yulai Xie and Dan Feng and Darrell D. E. Long",
+      "title": "A Docker Container Anomaly Monitoring System Based on Optimized Isolation Forest",
+      "journal": "IEEE transactions on cloud computing",
+      "volume": "",
+      "year": 2019,
+      "month": "aug"
+    }
+  },
+  {
+    "id": 142,
+    "title": "P-Gaussian: Provenance-Based Gaussian Distribution for Detecting Intrusion Behavior Variants Using High Efficient and Real Time Memory Databases",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Yulai Xie",
+      "Yafeng Wu",
+      "Dan Feng",
+      "Darrell D. E. Long"
+    ],
+    "date": "Dec 17, 2019",
+    "url": "",
+    "bibTeX": {
+      "@article": "xie-tdsc19",
+      "author": "Yulai Xie and Yafeng Wu and Dan Feng and Darrell D. E. Long",
+      "title": "P-Gaussian: Provenance-Based Gaussian Distribution for Detecting Intrusion Behavior Variants Using High Efficient and Real Time Memory Databases",
+      "journal": "IEEE transactions on dependable and secure computing",
+      "volume": "",
+      "year": 2019,
+      "month": "dec"
+    }
+  },
+  {
+    "id": 143,
+    "title": "Real-time Prediction of Docker Container Resource Load Based on A Hybrid Model of ARIMA and Triple Exponential Smoothing",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Yulai Xie",
+      "Minpeng Jin",
+      "Zhuping Zou",
+      "Gongming Xu",
+      "Dan Feng",
+      "Wenmao Liu",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 22, 2020",
+    "url": "",
+    "bibTeX": {
+      "@article": "xie-tcc2020",
+      "author": "Yulai Xie and Minpeng Jin and Zhuping Zou and Gongming Xu and Dan Feng and Wenmao Liu and Darrell D. E. Long",
+      "title": "Real-time Prediction of Docker Container Resource Load Based on A Hybrid Model of {ARIMA",
+      "journal": "IEEE transactions on cloud computing",
+      "volume": "",
+      "year": 2020,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 144,
+    "title": "Twizzler: a Data-Centric OS for Non-Volatile Memory",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Daniel Bittman",
+      "Peter Alvaro",
+      "Pankaj Mehra",
+      "Darrell D. E. Long",
+      "Ethan L. Miller"
+    ],
+    "date": "Jul 7, 2020",
+    "url": "https://ssrc.us/media/pubs/0e45877f839d4b9e6b6d87de5e97c023b8cbdd9c.pdf",
+    "bibTeX": {
+      "@inproceedings": "bittman-atc20",
+      "author": "Daniel Bittman and Peter Alvaro and Pankaj Mehra and Darrell D. E. Long and Ethan L. Miller",
+      "title": "Twizzler: a Data-Centric {OS",
+      "booktitle": "2020 USENIX Annual Technical Conference (USENIX ATC 20)",
+      "year": 2020,
+      "month": "jul"
+    }
+  },
+  {
+    "id": 145,
+    "title": "Artifice: Data in Disguise",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Austen Barker",
+      "Yash Gupta",
+      "Sabrina Au",
+      "Eugene Chou",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Oct 1, 2020",
+    "url": "https://ssrc.us/media/pubs/f9f0f1e811d466113531bbac73f3cab0f2611bf6.pdf",
+    "bibTeX": {
+      "@inproceedings": "barker-msst20",
+      "author": "Austen Barker and Yash Gupta and Sabrina Au and Eugene Chou and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Artifice: Data in Disguise",
+      "booktitle": "Proceeding of the Conference on Mass Storage Systems and Technologies (MSST '20)",
+      "year": 2020,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 146,
+    "title": "Measuring the Cost of Reliability in Archival Systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "James Byron",
+      "Darrell D. E. Long",
+      "Ethan L. Miller"
+    ],
+    "date": "Oct 1, 2020",
+    "url": "https://ssrc.us/media/pubs/916f5482d2c0dfd400923bd43a0f6299f3aa4a81.pdf",
+    "bibTeX": {
+      "@inproceedings": "byron-msst20",
+      "author": "James Byron and Darrell D. E. Long and Ethan L. Miller",
+      "title": "Measuring the Cost of Reliability in Archival Systems",
+      "booktitle": "Proceeding of the Conference on Mass Storage Systems and Technologies (MSST '20)",
+      "year": 2020,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 147,
+    "title": "Geomancy: Automated Performance Enhancement through Data Layout Optimization",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Oceane Bel",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Oct 1, 2020",
+    "url": "https://ssrc.us/media/pubs/8ae7913294f888870063952e4a4bf25272f43ec8.pdf",
+    "bibTeX": {
+      "@inproceedings": "bel-msst20",
+      "author": "Oceane Bel and Kenneth Chang and Nathan Tallent and Dirk Duellman and Ethan L. Miller and Faisal Nawab and Darrell D. E. Long",
+      "title": "Geomancy: Automated Performance Enhancement through Data Layout Optimization",
+      "booktitle": "Proceeding of the Conference on Mass Storage Systems and Technologies (MSST '20)",
+      "year": 2020,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 148,
+    "title": "Twizzler: A Data-centric OS for Non-volatile Memory",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Daniel Bittman",
+      "Peter Alvaro",
+      "Pankaj Mehra",
+      "Darrell D. E. Long",
+      "Ethan L. Miller"
+    ],
+    "date": "Jun 1, 2021",
+    "url": "https://ssrc.us/media/pubs/8a6e23e0c8e3ad1d0f2813cb326abd60f2387a35.pdf",
+    "bibTeX": {
+      "@article": "bittman-tos21",
+      "author": "Daniel Bittman and Peter Alvaro and Pankaj Mehra and Darrell D. E. Long and Ethan L. Miller",
+      "title": "Twizzler: A Data-centric {OS",
+      "journal": "ACM Transactions on Storage",
+      "volume": 17,
+      "number": 2,
+      "year": 2021,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 149,
+    "title": "A Multiple Snapshot Attack on Deniable Storage Systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Kyle Fredrickson",
+      "Austen Barker",
+      "Darrell D. E. Long"
+    ],
+    "date": "Oct 9, 2021",
+    "url": "https://ssrc.us/media/pubs/b5d2cdef04702983d608a8f3ca2994db1fc22f2d.pdf",
+    "bibTeX": {
+      "@inproceedings": "fredrickson-mascots21",
+      "author": "Kyle Fredrickson and Austen Barker and Darrell D. E. Long",
+      "title": "A Multiple Snapshot Attack on Deniable Storage Systems",
+      "booktitle": "MASCOTS 2021",
+      "pages": "8",
+      "year": 2021,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 150,
+    "title": "Lethe: Secure Deletion by Addition",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Eugene Chou",
+      "Leo Conrad-Shah",
+      "Austen Barker",
+      "Andrew Quinn",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "May 8, 2023",
+    "url": "https://ssrc.us/media/pubs/ded7bf9486d2d05ce6eb53026b887aa6869b4a0b.pdf",
+    "bibTeX": {
+      "@inproceedings": "chou-cheops23",
+      "author": "Eugene Chou and Leo Conrad-Shah and Austen Barker and Andrew Quinn and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Lethe: Secure Deletion by Addition",
+      "booktitle": "Workshop on Challenges and Opportunities of Efficient and Performant Storage Systems (CHEOPS ’23)",
+      "year": 2023,
+      "month": "may"
+    }
+  },
+  {
+    "id": 151,
+    "title": "Avoiding Surprise in an Era of Global Technology Advances",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ruth A. David",
+      "Steven R.J. Brueck",
+      "Stephen W. Drew",
+      "Alan H. Epstein",
+      "Robert A. Furman",
+      "Sharon Glotzer",
+      "Christopher C. Green",
+      "Diane E. Griffin",
+      "J. Jerome Holton",
+      "Michael R. Ladisch",
+      "Darrell Long",
+      "Frederick R. Lopez",
+      "Richard M. Osgood",
+      "Stewart D. Personick",
+      "Alton D. Romig",
+      "S. Shankar Sasrty",
+      "James B. Smith",
+      "Camillo J. Taylor",
+      "Diane Wiley"
+    ],
+    "date": "2005",
+    "url": "https://www.academia.edu/search?q=Avoiding+Surprise+in+an+Era+of+Global+Technology+Advances",
+    "bibTeX": {
+      "venue": "National Research Council, National Academies Press",
+      "type": "book"
+    }
+  },
+  {
+    "id": 152,
+    "title": "Theory of Finite Automata",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "John L. Carroll",
+      "Darrell D. E. Long"
+    ],
+    "date": "1989",
+    "url": "https://www.academia.edu/search?q=Theory+of+Finite+Automata",
+    "bibTeX": {
+      "venue": "Prentice-Hall",
+      "type": "book"
+    }
+  },
+  {
+    "id": 153,
+    "title": "Video-on-Demand Broadcasting Protocols",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Steven W. Carter",
+      "Darrell D. E. Long",
+      "Jehan-François Pâris"
+    ],
+    "date": "2000",
+    "url": "https://www.academia.edu/search?q=Video-on-Demand+Broadcasting+Protocols",
+    "bibTeX": {
+      "venue": "Multimedia Communications: Directions and Innovations, Academic Press",
+      "type": "book_chapter"
+    }
+  },
+  {
+    "id": 154,
+    "title": "Simulation Modeling of Weak-Consistency Protocols",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Richard A. Golding",
+      "Darrell D. E. Long"
+    ],
+    "date": "1999",
+    "url": "https://www.academia.edu/search?q=Simulation+Modeling+of+Weak-Consistency+Protocols",
+    "bibTeX": {
+      "venue": "Network Systems Design, Gordon and Breach Science Publishers",
+      "type": "book_chapter"
+    }
+  },
+  {
+    "id": 155,
+    "title": "Using Simulation to Evaluate Consistency Protocols for Replicated Data",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long",
+      "John L. Carroll"
+    ],
+    "date": "1995",
+    "url": "https://www.academia.edu/search?q=Using+Simulation+to+Evaluate+Consistency+Protocols+for+Replicated+Data",
+    "bibTeX": {
+      "venue": "Progress in Simulation II, Ablex Publishing",
+      "type": "book_chapter"
+    }
+  },
+  {
+    "id": 156,
+    "title": "A Novel Hybrid Model for Docker Container Workload Prediction",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Liangkang Zhang",
+      "Yulai Xie",
+      "Minpeng Jin",
+      "Pan Zhou",
+      "Gongming Xu",
+      "Yafeng Wu",
+      "Dan Feng",
+      "Darrell Long"
+    ],
+    "date": "to appear",
+    "url": "https://www.academia.edu/search?q=A+Novel+Hybrid+Model+for+Docker+Container+Workload+Prediction",
+    "bibTeX": {
+      "venue": "IEEE Transactions on Network and Service Management",
+      "type": "journal"
+    }
+  },
+  {
+    "id": 157,
+    "title": "Paradise: Real-time, Generalized, and Distributed Provenance-Based Intrusion Detection",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Yafeng Wu",
+      "Yulai Xie",
+      "Xuelong Liao",
+      "Pan Zhou",
+      "Dan Feng",
+      "Lin Wu",
+      "Xuan Li",
+      "Avani Wildani",
+      "Darrell Long"
+    ],
+    "date": "to appear",
+    "url": "https://www.academia.edu/search?q=Paradise:+Real-time,+Generalized,+and+Distributed+Provenance-Based+Intrusion+Detection",
+    "bibTeX": {
+      "venue": "ACM Transactions on Dependable and Secure Computing",
+      "type": "journal"
+    }
+  },
+  {
+    "id": 158,
+    "title": "Rethinking the Adversary and Operational Characteristics of Deniable Storage",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Austen Barker",
+      "Yash Gupta",
+      "James Hughes",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "May 27, 2021",
+    "url": "https://www.academia.edu/search?q=Rethinking+the+Adversary+and+Operational+Characteristics+of+Deniable+Storage",
+    "bibTeX": {
+      "venue": "Journal of Surveillance, Security and Safety",
+      "type": "journal"
+    }
+  },
+  {
+    "id": 159,
+    "title": "Valet: Efficient Data Placement on Modern SSDs",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Devashish R. Purandare",
+      "Peter Alvaro",
+      "Avani Wildani",
+      "Darrell D. E. Long",
+      "Ethan L. Miller"
+    ],
+    "date": "November 2025",
+    "url": "https://www.academia.edu/search?q=Valet:+Efficient+Data+Placement+on+Modern+SSDs",
+    "bibTeX": {
+      "venue": "Sixteenth Symposium on Cloud Computing (SOCC '25)",
+      "type": "conference"
+    }
+  },
+  {
+    "id": 160,
+    "title": "Sparta: Practical Anonymity with Long-Term Resistance to Traffic Analysis",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Kyle Fredrickson",
+      "Ioannis Demertzis",
+      "James P. Hughes",
+      "Darrell D. E. Long"
+    ],
+    "date": "May 2025",
+    "url": "https://www.academia.edu/search?q=Sparta:+Practical+Anonymity+with+Long-Term+Resistance+to+Traffic+Analysis",
+    "bibTeX": {
+      "venue": "Forty-fifth IEEE Symposium on Security and Privacy (S&P)",
+      "type": "conference"
+    }
+  },
+  {
+    "id": 161,
+    "title": "Accurate Generation of I/O Workloads Using Generative Adversarial Networks",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Heyu Zhang",
+      "Zhen Yang",
+      "Yulai Xie",
+      "Yafeng Wu",
+      "Jiakun Li",
+      "Dan Feng",
+      "Avani Wildani",
+      "Darrell Long"
+    ],
+    "date": "November 2024",
+    "url": "https://www.academia.edu/search?q=Accurate+Generation+of+I/O+Workloads+Using+Generative+Adversarial+Networks",
+    "bibTeX": {
+      "venue": "Seventeenth IEEE International Conference on Networking, Architecture, and Storage (NAS 2024)",
+      "type": "conference"
+    }
+  },
+  {
+    "id": 162,
+    "title": "WinnowML: Stable Feature Selection for Maximizing Prediction Accuracy of Time-based System Modeling",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Oceane Bel",
+      "Sinjoni Mukhopadhyay",
+      "Nathan Tallent",
+      "Faisal Nawab",
+      "Darrell Long"
+    ],
+    "date": "December 2021",
+    "url": "https://www.academia.edu/search?q=WinnowML:+Stable+Feature+Selection+for+Maximizing+Prediction+Accuracy+of+Time-based+System+Modeling",
+    "bibTeX": {
+      "venue": "IEEE International Conference on Big Data",
+      "type": "short_paper"
+    }
+  },
+  {
+    "id": 163,
+    "title": "Introducing SeaOS",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Daniel Bittman",
+      "D.J. Capelis",
+      "Darrell Long"
+    ],
+    "date": "May 2014",
+    "url": "https://www.academia.edu/search?q=Introducing+SeaOS",
+    "bibTeX": {
+      "venue": "International Conference on Information Science and Applications (ICISA)",
+      "type": "short_paper"
+    }
+  },
+  {
+    "id": 164,
+    "title": "Future File Systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "David Pease",
+      "Darrell D.E. Long"
+    ],
+    "date": "September 2008",
+    "url": "https://www.academia.edu/search?q=Future+File+Systems",
+    "bibTeX": {
+      "venue": "Computing with Massive and Persistent Data (CMPD)",
+      "type": "invited"
+    }
+  },
+  {
+    "id": 165,
+    "title": "Experimentally Evaluating In-Place Delta Reconstruction",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Randal Burns",
+      "Larry Stockmeyer",
+      "Darrell D.E. Long"
+    ],
+    "date": "April 2002",
+    "url": "https://www.academia.edu/search?q=Experimentally+Evaluating+In-Place+Delta+Reconstruction",
+    "bibTeX": {
+      "venue": "NASA and IEEE Mass Storage Conference",
+      "type": "invited"
+    }
+  },
+  {
+    "id": 166,
+    "title": "A Technique for Managing Mirrored Disks",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long"
+    ],
+    "date": "April 2001",
+    "url": "https://www.academia.edu/search?q=A+Technique+for+Managing+Mirrored+Disks",
+    "bibTeX": {
+      "venue": "International Performance Conference on Computers and Communication (IPCCC)",
+      "type": "invited"
+    }
+  },
+  {
+    "id": 167,
+    "title": "REINAS: the Real-Time Environmental Information Network and Analysis System",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long",
+      "Patrick E. Mantey",
+      "Craig M. Wittenbrink",
+      "Theodore R. Haining",
+      "Bruce R. Montague"
+    ],
+    "date": "March 1995",
+    "url": "https://www.academia.edu/search?q=REINAS:+the+Real-Time+Environmental+Information+Network+and+Analysis+System",
+    "bibTeX": {
+      "venue": "IEEE Computer Society CompCon",
+      "type": "invited"
+    }
+  },
+  {
+    "id": 168,
+    "title": "Analysis of Caching Algorithms for Distributed File Systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Benjamin Reed",
+      "Darrell D. E. Long"
+    ],
+    "date": "July 1996",
+    "url": "https://www.academia.edu/search?q=Analysis+of+Caching+Algorithms+for+Distributed+File+Systems",
+    "bibTeX": {
+      "venue": "Operating Systems Review",
+      "type": "misc"
+    }
+  },
+  {
+    "id": 169,
+    "title": "REINAS: Real-Time Environmental Information Network",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Daniel M. Fernandez",
+      "Patrick E. Mantey",
+      "Darrell D. E. Long",
+      "Eric Rosen",
+      "Craig M. Wittenbrink"
+    ],
+    "date": "May 1996",
+    "url": "https://www.academia.edu/search?q=REINAS:+Real-Time+Environmental+Information+Network",
+    "bibTeX": {
+      "venue": "Sea Technology",
+      "type": "misc"
+    }
+  },
+  {
+    "id": 170,
+    "title": "A Note On Bit-Mapped Free Sector Management",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long"
+    ],
+    "date": "April 1993",
+    "url": "https://www.academia.edu/search?q=A+Note+On+Bit-Mapped+Free+Sector+Management",
+    "bibTeX": {
+      "venue": "Operating Systems Review",
+      "type": "misc"
     }
   }
 ]
