@@ -5,18 +5,22 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Darrell D. E. Long"
+      "Darrell D. E. Long",
+      "John L. Carroll",
+      "Kris Stewart"
     ],
     "date": "Dec 1, 1989",
     "url": "https://ssrc.us/media/pubs/aa5ffe2d7d9ecc32c3c9a1fa347724599c773956.pdf",
     "bibTeX": {
-      "@article": "TC-Long-1989",
+      "@article": "long-tc89",
       "author": "Darrell D. E. Long and John L. Carroll and Kris Stewart",
       "title": "Estimating the Reliability of Regeneration-Based Replica Control Protocols",
       "journal": "IEEE Transactions on Computers",
-      "volume": "",
+      "volume": 38,
+      "number": 12,
       "year": 1989,
-      "month": "dec"
+      "month": "dec",
+      "pages": "1691--1702"
     }
   },
   {
@@ -32,12 +36,14 @@
     "url": "https://ssrc.us/media/pubs/a6a7a22b9280c2c99ea13639b7d543113a3493ff.pdf",
     "bibTeX": {
       "@inproceedings": "paris-ipccc91",
-      "author": "Jehan-François Pâris and Darrell D. E. Long",
+      "author": "Jehan-Fran\\c{c}ois P\\^aris and Darrell D. E. Long",
       "title": "Resilient Memory-Resident Data Objects",
-      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication",
-      "pages": "145-151",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC)",
       "year": 1991,
-      "month": "mar"
+      "month": "mar",
+      "address": "Phoenix",
+      "organization": "IEEE",
+      "pages": "145--151"
     }
   },
   {
@@ -52,31 +58,38 @@
     "date": "Apr 1, 1991",
     "url": "https://ssrc.us/media/pubs/65be35ba630fa9ce7ae749368810901343b2f2cf.pdf",
     "bibTeX": {
-      "@inproceedings": "ICDE-Paris-1991",
-      "author": "Jehan-François Pâris and Darrell D. E. Long",
+      "@inproceedings": "paris-icde91",
+      "author": "Jehan-Fran\\c{c}ois P\\^aris and Darrell D. E. Long",
       "title": "Voting with Regenerable Volatile Witnesses",
-      "booktitle": "Proceedings of the Seventh International Conference on Data Engineering",
+      "booktitle": "Proceedings of the Seventh International Conference on Data Engineering (ICDE)",
       "year": 1991,
-      "month": "apr"
+      "month": "apr",
+      "address": "Kobe, Japan",
+      "organization": "IEEE",
+      "pages": "112--119"
     }
   },
   {
     "id": 4,
-    "title": "Swift: A Storage Architecture for Large Objects",
+    "title": "Swift: A Distributed Storage Architecture for Large Objects",
     "short_description": "",
     "full_content": "",
     "author": [
+      "Luis-Felipe Cabrera",
       "Darrell D. E. Long"
     ],
     "date": "Oct 1, 1991",
     "url": "https://ssrc.us/media/pubs/b05f14d6012bbf31e75e617ef652b57e579edbb0.pdf",
     "bibTeX": {
-      "@inproceedings": "MSST-Cabrera-1991",
+      "@inproceedings": "cabrera-mss91",
       "author": "Luis-Felipe Cabrera and Darrell D. E. Long",
-      "title": "Swift: A Storage Architecture for Large Objects",
-      "booktitle": "Proceedings of the Eleventh Symposium on Mass Storage Systems",
+      "title": "Swift: A Distributed Storage Architecture for Large Objects",
+      "booktitle": "Proceedings of the Eleventh Symposium on Mass Storage Systems (MSS)",
       "year": 1991,
-      "month": "oct"
+      "month": "oct",
+      "address": "Monterey",
+      "organization": "IEEE",
+      "pages": "123--128"
     }
   },
   {
@@ -85,18 +98,23 @@
     "short_description": "",
     "full_content": "",
     "author": [
+      "Ivan Fellner",
+      "Ivan Racko",
+      "Milos Racek",
+      "Karol Fabian",
       "Darrell D. E. Long"
     ],
     "date": "Jan 1, 1994",
     "url": "https://ssrc.us/media/pubs/a08002805a8cadaf36fd9471a6e5fd62390979e1.pdf",
     "bibTeX": {
-      "@article": "IJCS-Fellner-94",
-      "author": "Ivan  Fellner and Ivan Racko and Milos Racek and Karol Fabian and Darrell D. E. Long",
+      "@article": "fellner-ijcs94",
+      "author": "Ivan Fellner and Ivan Racko and Milos Racek and Karol Fabian and Darrell D. E. Long",
       "title": "A Comparison of Two Implementations of the Token Ring Priority Function",
       "journal": "International Journal in Computer Simulation",
-      "volume": "",
+      "volume": 5,
+      "number": 1,
       "year": 1994,
-      "month": "jan"
+      "pages": "13--28"
     }
   },
   {
@@ -105,18 +123,20 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Richard Golding",
+      "Richard A. Golding",
       "Darrell D. E. Long"
     ],
-    "date": "Jan 1, 1994",
+    "date": "Oct 1, 1993",
     "url": "https://ssrc.us/media/pubs/35affe3607a3ec1e5cfc9fb38c04d1a6836616ca.pdf",
     "bibTeX": {
-      "@inproceedings": "PISAC-Golding-1993",
-      "author": "Richard Golding and Darrell D. E. Long and John Wilkes",
+      "@inproceedings": "golding-sac93",
+      "author": "Richard A. Golding and Darrell D. E. Long",
       "title": "Using an Object-oriented Framework to Construct Wide-area Group Communication Mechanisms",
-      "booktitle": "Proceedings of the 1994 Usenix Winter Technical Conferenc",
-      "year": 1994,
-      "month": "jan"
+      "booktitle": "Proceedings of the International Symposium on Applied Computing",
+      "year": 1993,
+      "month": "oct",
+      "address": "Monterrey, Mexico",
+      "pages": "65--74"
     }
   },
   {
@@ -132,12 +152,14 @@
     "url": "https://ssrc.us/media/pubs/0608a3d38ff69b522073de54ba5f864ded8a240c.pdf",
     "bibTeX": {
       "@inproceedings": "kroeger-usenix96",
-      "author": "Thomas Kroeger and Darrell D. E. Long",
-      "title": "Predicting file-system actions from prior events",
-      "booktitle": "Proceedings of the Winter 1996 USENIX Technical Conference",
-      "pages": "319–328",
+      "author": "Thomas M. Kroeger and Darrell D. E. Long",
+      "title": "Predicting File-System Actions from Prior Events",
+      "booktitle": "Proceedings of 1996 Usenix Winter Technical Conference",
       "year": 1996,
-      "month": "jan"
+      "month": "jan",
+      "address": "San Diego",
+      "organization": "Usenix Association",
+      "pages": "319--328"
     }
   },
   {
@@ -153,13 +175,15 @@
     "date": "Dec 1, 1997",
     "url": "https://ssrc.us/media/pubs/507f23acd756883f557ca853b43dd6ffcd2941bd.pdf",
     "bibTeX": {
-      "@inproceedings": "kroeger-usits97",
-      "author": "Thomas Kroeger and Darrell D. E. Long and Jeffrey C. Mogul",
-      "title": "Exploring the bounds of web latency reduction from caching and prefetching",
-      "booktitle": "Proceedings of the USENIX Symposium on Internet Technologies and Systems (USITS '97)",
-      "pages": "13–22",
+      "@inproceedings": "kroeger-sits97",
+      "author": "Thomas M. Kroeger and Darrell D. E. Long and Jeffrey C. Mogul",
+      "title": "Exploring the Bounds of Web Latency Reduction from Caching and Prefetching",
+      "booktitle": "Proceedings of the Symposium on Internet Technologies and Systems",
       "year": 1997,
-      "month": "dec"
+      "month": "dec",
+      "address": "Monterey",
+      "organization": "Usenix Association",
+      "pages": "13--22"
     }
   },
   {
@@ -174,12 +198,15 @@
     "date": "Jun 1, 1998",
     "url": "https://ssrc.us/media/pubs/1e38dfef5b6289881f47ad0cd35bb4c509f6af3e.pdf",
     "bibTeX": {
-      "@inproceedings": "PODC-Burns-1998",
-      "author": "Randal Burns and Darrell D. E. Long",
+      "@inproceedings": "burns-podc98",
+      "author": "Randal C. Burns and Darrell D. E. Long",
       "title": "In-Place Reconstruction of Delta Compressed Files",
-      "booktitle": "Proceedings of Principles of Distributed Computing",
+      "booktitle": "Proceedings of Principles of Distributed Computing (PODC)",
       "year": 1998,
-      "month": "jun"
+      "month": "jun",
+      "address": "Puerto Vallarta",
+      "organization": "ACM",
+      "pages": "267--275"
     }
   },
   {
@@ -195,33 +222,38 @@
     "url": "https://ssrc.us/media/pubs/7960c010601a7a90f42bb21ba1ea6e52b0626b22.pdf",
     "bibTeX": {
       "@inproceedings": "kroeger-hotos99",
-      "author": "Thomas Kroeger and Darrell D. E. Long",
-      "title": "The case for efficient file access pattern modeling",
-      "booktitle": "Proceedings of the 7th IEEE Workshop on Hot Topics in Operating Systems (HotOS-VII)",
-      "pages": "14–19",
+      "author": "Thomas M. Kroeger and Darrell D. E. Long",
+      "title": "The Case for Efficient File Access Pattern Modeling",
+      "booktitle": "Proceedings of the Seventh Workshop on Hot Topics in Operating Systems (HotOS-VII)",
       "year": 1999,
-      "month": "mar"
+      "month": "mar",
+      "address": "Rio Rico, Arizona",
+      "organization": "IEEE",
+      "pages": "14--19"
     }
   },
   {
     "id": 11,
-    "title": "Zero-Delay Broadcasting Protocols for Video on Demand",
+    "title": "A Zero-delay Broadcasting Protocol for Video on Demand",
     "short_description": "",
     "full_content": "",
     "author": [
       "Jehan-François Pâris",
       "Darrell D. E. Long",
-      "Patrick Mantey"
+      "Patrick E. Mantey"
     ],
     "date": "Oct 1, 1999",
     "url": "https://ssrc.us/media/pubs/01b9fd1a5abb9b55809d73c35d7267f08858303f.pdf",
     "bibTeX": {
-      "@inproceedings": "paris-mm99",
-      "author": "Jehan-François Pâris and Darrell D. E. Long and Patrick Mantey",
-      "title": "Zero-Delay Broadcasting Protocols for Video on Demand",
-      "booktitle": "Proceedings of the Seventh ACM International Multimedia Conference,",
+      "@inproceedings": "paris-acmmm99",
+      "author": "Jehan-Fran\\c{c}ois P\\^aris and Darrell D. E. Long and Patrick E. Mantey",
+      "title": "A Zero-delay Broadcasting Protocol for Video on Demand",
+      "booktitle": "Proceedings of the Seventh ACM International Multimedia Conference",
       "year": 1999,
-      "month": "oct"
+      "month": "oct",
+      "address": "Orlando",
+      "organization": "ACM",
+      "pages": "189--197"
     }
   },
   {
@@ -230,18 +262,22 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Darrell D. E. Long"
+      "David P. Helmbold",
+      "Darrell D. E. Long",
+      "Tracey L. Sconyers",
+      "Bruce Sherrod"
     ],
     "date": "Jan 1, 2000",
     "url": "https://ssrc.us/media/pubs/23187ba74b5b5c465fc7c9595be10d6d5ea8a4dc.pdf",
     "bibTeX": {
-      "@article": "MONET-Helmbold-2000",
+      "@article": "helmbold-monet00",
       "author": "David P. Helmbold and Darrell D. E. Long and Tracey L. Sconyers and Bruce Sherrod",
       "title": "Adaptive Disk Spin-Down for Mobile Computers",
       "journal": "ACM/Baltzer Mobile Networks and Applications Journal",
-      "volume": "",
+      "volume": 5,
+      "number": 4,
       "year": 2000,
-      "month": "jan"
+      "pages": "285--297"
     }
   },
   {
@@ -250,18 +286,22 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Randal Burns",
+      "Randal C. Burns",
+      "Robert M. Rees",
       "Darrell D. E. Long"
     ],
     "date": "Feb 1, 2000",
     "url": "https://ssrc.us/media/pubs/509ccaeb00d3f565746b8af08c6d1e0bb35f353f.pdf",
     "bibTeX": {
       "@inproceedings": "burns-ipccc00",
-      "author": "Randal Burns and Robert M. Rees and Darrell D. E. Long",
+      "author": "Randal C. Burns and Robert M. Rees and Darrell D. E. Long",
       "title": "Semi-Preemptible Locks for a Distributed File System",
-      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC)",
       "year": 2000,
-      "month": "feb"
+      "month": "feb",
+      "address": "Phoenix",
+      "organization": "IEEE",
+      "pages": "397--404"
     }
   },
   {
@@ -271,18 +311,21 @@
     "full_content": "",
     "author": [
       "Tsozen Yeh",
-      "Darrell D. E. Long"
+      "Darrell D. E. Long",
+      "Scott A. Brandt"
     ],
     "date": "Jan 1, 2001",
     "url": "https://ssrc.us/media/pubs/f0c51402c600fd60463c6fa175cca43898e98623.pdf",
     "bibTeX": {
       "@inproceedings": "yeh-cnds02",
       "author": "Tsozen Yeh and Darrell D. E. Long and Scott A. Brandt",
-      "title": "Increasing predictive accuracy through limited prefetching",
-      "booktitle": "Proceedings of Communications Networks and Distributed Systems Modeling and Simulation (CNDS 2002)",
-      "pages": "131–138",
-      "year": 2001,
-      "month": "jan"
+      "title": "Increasing Predictive Accuracy through Limited Prefetching",
+      "booktitle": "Proceedings of Communications Networks and Distributed Systems Modeling and Simulation (CNDS)",
+      "year": 2002,
+      "month": "jan",
+      "address": "San Antonio",
+      "organization": "Society for Computer Simulation",
+      "pages": "131--138"
     }
   },
   {
@@ -298,12 +341,14 @@
     "url": "https://ssrc.us/media/pubs/fa6c3750ddb12fe0165bfd014593880513756115.pdf",
     "bibTeX": {
       "@inproceedings": "kroeger-usenix01",
-      "author": "Thomas Kroeger and Darrell D. E. Long",
-      "title": "Design and implementation of a predictive file prefetching algorithm",
-      "booktitle": "Proceedings of the 2001 USENIX Annual Technical Conference",
-      "pages": "105–118",
+      "author": "Thomas M. Kroeger and Darrell D. E. Long",
+      "title": "Design and Implementation of a Predictive File Prefetching Algorithm",
+      "booktitle": "Proceedings of Usenix Technical Conference",
       "year": 2001,
-      "month": "jan"
+      "month": "jun",
+      "address": "Boston",
+      "organization": "Usenix Association",
+      "pages": "105--118"
     }
   },
   {
@@ -321,12 +366,14 @@
     "url": "https://ssrc.us/media/pubs/13e25f6d063b2e30fae817e42387d13ef34de727.pdf",
     "bibTeX": {
       "@inproceedings": "miller-ipccc01",
-      "author": "Ethan L. Miller and Darrell D. E. Long and William E. Freeman and Benjamin C. Reed",
-      "title": "Strong security for distributed file systems",
-      "booktitle": "Proceedings of the 20th IEEE International Performance, Computing and Communications Conference (IPCCC '01)",
-      "pages": "34–40",
+      "author": "Ethan Miller and Darrell Long and William Freeman and Benjamin Reed",
+      "title": "Strong Security for Distributed File Systems",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC)",
       "year": 2001,
-      "month": "apr"
+      "month": "apr",
+      "address": "Phoenix",
+      "organization": "IEEE",
+      "pages": "34--40"
     }
   },
   {
@@ -343,11 +390,13 @@
     "bibTeX": {
       "@inproceedings": "amer-ipccc01",
       "author": "Ahmed Amer and Darrell D. E. Long",
-      "title": "Noah: Low-cost file access prediction through pairs",
-      "booktitle": "Proceedings of the 20th IEEE International Performance, Computing and Communications Conference (IPCCC '01)",
-      "pages": "27–33",
+      "title": "Noah: Low-cost File Access Prediction Through Pairs",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC)",
       "year": 2001,
-      "month": "apr"
+      "month": "apr",
+      "address": "Phoenix",
+      "organization": "IEEE",
+      "pages": "27--33"
     }
   },
   {
@@ -357,18 +406,21 @@
     "full_content": "",
     "author": [
       "Ethan L. Miller",
+      "Scott A. Brandt",
       "Darrell D. E. Long"
     ],
-    "date": "May 15, 2001",
+    "date": "May 1, 2001",
     "url": "https://ssrc.us/media/pubs/1065fdf3a405f4387b0f39afde5446cd98bf9a70.pdf",
     "bibTeX": {
       "@inproceedings": "miller-hotos01",
       "author": "Ethan L. Miller and Scott A. Brandt and Darrell D. E. Long",
-      "title": "{HeRMES",
-      "booktitle": "Proceedings of the 8th IEEE Workshop on Hot Topics in Operating Systems (HotOS-VIII)",
-      "pages": "83-87",
+      "title": "HeRMES: High-Performance Reliable MRAM-Enabled Storage",
+      "booktitle": "Proceedings of the Eighth Workshop on Hot Topics in Operating Systems (HotOS-VIII)",
       "year": 2001,
-      "month": "may"
+      "month": "may",
+      "address": "Elmau, Germany",
+      "organization": "IEEE",
+      "pages": "95--99"
     }
   },
   {
@@ -377,38 +429,43 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Tsozen Yeh",
+      "Ahmed Amer",
       "Darrell D. E. Long"
     ],
-    "date": "May 29, 2001",
+    "date": "Jul 1, 2004",
     "url": "https://ssrc.us/media/pubs/e74e2913de61c1f751c4ac15c4d3e69e276ef853.pdf",
     "bibTeX": {
-      "@inproceedings": "yeh-wpmrtes01",
-      "author": "Tsozen Yeh and Darrell D. E. Long and Scott A. Brandt",
+      "@inproceedings": "amer-icpads04",
+      "author": "Ahmed Amer and Darrell D. E. Long",
       "title": "Conserving Battery Energy through Making Fewer Incorrect File Predictions",
-      "booktitle": "IEEE Workshop on Power Management for Real-Time and Embedded Systems  at the IEEE Real-Time Technology and Applications Symposium",
-      "year": 2001,
-      "month": "may"
+      "booktitle": "Proceedings of the International Conference on Parallel and Distributed Systems (ICPADS)",
+      "year": 2004,
+      "month": "jul",
+      "address": "Newport Beach",
+      "organization": "IEEE"
     }
   },
   {
     "id": 20,
-    "title": "Caching Files with a Program-based Last N Successors",
+    "title": "Caching Files with a Program-Based Last-N Successors Model",
     "short_description": "",
     "full_content": "",
     "author": [
-      "Tsozen Yeh",
+      "James Griffioen",
+      "Randy Appleton",
       "Darrell D. E. Long"
     ],
-    "date": "Jun 17, 2001",
+    "date": "Jan 1, 1995",
     "url": "https://ssrc.us/media/pubs/fac624b8c7071c8e67a6231b2c0dfc5ff6ec48a6.pdf",
     "bibTeX": {
-      "@inproceedings": "yeh-wc01",
-      "author": "Tsozen Yeh and Darrell D. E. Long and Scott A. Brandt",
-      "title": "Caching Files with a Program-based Last N Successors",
-      "booktitle": "Workshop on Caching, Coherency and Consistency (WC3 '01)",
-      "year": 2001,
-      "month": "jun"
+      "@inproceedings": "griffioen-atec95",
+      "author": "James Griffioen and Randy Appleton and Darrell D. E. Long",
+      "title": "Caching Files with a Program-Based Last-N Successors Model",
+      "booktitle": "Proceedings of the USENIX Annual Technical Conference (ATEC)",
+      "year": 1995,
+      "month": "jan",
+      "address": "New Orleans",
+      "organization": "Usenix Association"
     }
   },
   {
@@ -417,19 +474,22 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Randal Burns",
+      "Randal C. Burns",
+      "Robert M. Rees",
       "Darrell D. E. Long"
     ],
     "date": "Jul 1, 2001",
     "url": "https://ssrc.us/media/pubs/facc207da8dea2e441f6c114d02992e99927a0b9.pdf",
     "bibTeX": {
-      "@article": "IC-Burns-2001",
-      "author": "Randal Burns and Robert M. Rees and Darrell D. E. Long",
+      "@article": "burns-ic01",
+      "author": "Randal C. Burns and Robert M. Rees and Darrell D. E. Long",
       "title": "Efficient Data Distribution in a Web Server Farm",
-      "journal": "Internet Computing",
-      "volume": "",
+      "journal": "IEEE Internet Computing",
+      "volume": 5,
+      "number": 4,
       "year": 2001,
-      "month": "jul"
+      "month": "jul",
+      "pages": "56--65"
     }
   },
   {
@@ -446,11 +506,13 @@
     "bibTeX": {
       "@inproceedings": "amer-mascots01",
       "author": "Ahmed Amer and Darrell D. E. Long",
-      "title": "Aggregating caches: A mechanism for implicit file prefetching",
-      "booktitle": "Proceedings of the 9th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '01)",
-      "pages": "293–301",
+      "title": "Aggregating Caches: A Mechanism for Implicit File Prefetching",
+      "booktitle": "Proceedings of the Ninth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2001,
-      "month": "aug"
+      "month": "aug",
+      "address": "Cincinnati",
+      "organization": "IEEE",
+      "pages": "293--301"
     }
   },
   {
@@ -460,18 +522,21 @@
     "full_content": "",
     "author": [
       "Tsozen Yeh",
-      "Darrell D. E. Long"
+      "Darrell D. E. Long",
+      "Scott A. Brandt"
     ],
     "date": "Aug 1, 2001",
     "url": "https://ssrc.us/media/pubs/e1b72bb0c98debd2f681bb45d00c511cf57c7e0b.pdf",
     "bibTeX": {
       "@inproceedings": "yeh-mascots01",
       "author": "Tsozen Yeh and Darrell D. E. Long and Scott A. Brandt",
-      "title": "Performing file prediction with a program-based successor model",
-      "booktitle": "Proceedings of the 9th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '01)",
-      "pages": "193–202",
+      "title": "Performing File Prediction with a Program-Based Successor Model",
+      "booktitle": "Proceedings of the Ninth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2001,
-      "month": "aug"
+      "month": "aug",
+      "address": "Cincinnati",
+      "organization": "IEEE",
+      "pages": "193--202"
     }
   },
   {
@@ -480,7 +545,8 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Randal Burns",
+      "Randal C. Burns",
+      "Robert M. Rees",
       "Larry Stockmeyer",
       "Darrell D. E. Long"
     ],
@@ -488,13 +554,14 @@
     "url": "https://ssrc.us/media/pubs/c92d2f101cffec31e0f2c60230caa157b5409960.pdf",
     "bibTeX": {
       "@article": "burns-ccj01",
-      "author": "Randal Burns and Robert M. Rees and Larry Stockmeyer and Darrell D. E. Long",
+      "author": "Randal C. Burns and Robert M. Rees and Larry Stockmeyer and Darrell D. E. Long",
       "title": "Scalable Session Locking for a Distributed File System",
       "journal": "Cluster Computing Journal",
-      "pages": "295-306",
       "volume": 4,
+      "number": 4,
       "year": 2001,
-      "month": "oct"
+      "month": "oct",
+      "pages": "295--306"
     }
   },
   {
@@ -504,18 +571,21 @@
     "full_content": "",
     "author": [
       "Tsozen Yeh",
-      "Darrell D. E. Long"
+      "Darrell D. E. Long",
+      "Scott A. Brandt"
     ],
     "date": "Nov 1, 2001",
     "url": "https://ssrc.us/media/pubs/7f3a743da8b930fb0ddc8fae0df5dab33cab1b0d.pdf",
     "bibTeX": {
       "@inproceedings": "yeh-ispass01",
       "author": "Tsozen Yeh and Darrell D. E. Long and Scott A. Brandt",
-      "title": "Using program and user information to improve file prediction performance",
-      "booktitle": "Proceedings of the International Symposium on Performance Analysis of Systems and Software (ISPASS '01)",
-      "pages": "Proceedings",
+      "title": "Using Program and User Information to Improve File Prediction Performance",
+      "booktitle": "Proceedings of the International Symposium on Performance Analysis of Systems and Software (ISPASS)",
       "year": 2001,
-      "month": "nov"
+      "month": "nov",
+      "address": "Tucson",
+      "organization": "IEEE",
+      "pages": "111--119"
     }
   },
   {
@@ -524,7 +594,9 @@
     "short_description": "",
     "full_content": "",
     "author": [
+      "Miklós Ajtai",
       "Randal Burns",
+      "Ronald Fagin",
       "Darrell D. E. Long",
       "Larry Stockmeyer"
     ],
@@ -532,12 +604,14 @@
     "url": "https://ssrc.us/media/pubs/5a186979c59835aa8409c8ba9261ae3fb6bdcff1.pdf",
     "bibTeX": {
       "@article": "ajtai-jacm02",
-      "author": "Jiacheng Ma and Randal Burns and Darrell D. E. Long and Larry Stockmeyer",
+      "author": "Mikl\\'os Ajtai and Randal Burns and Ronald Fagin and Darrell Long and Larry Stockmeyer",
       "title": "Compactly Encoding Unstructured Inputs with Differential Compression",
       "journal": "Journal of the ACM",
-      "volume": "",
+      "volume": 49,
+      "number": 3,
       "year": 2002,
-      "month": "jan"
+      "month": "may",
+      "pages": "318--367"
     }
   },
   {
@@ -555,12 +629,14 @@
     "url": "https://ssrc.us/media/pubs/1c418abf401c2ced804f4ccff2b3c37f9647bd19.pdf",
     "bibTeX": {
       "@inproceedings": "miller-fast02",
-      "author": "Ethan L. Miller and Darrell D. E. Long and William E. Freeman and Benjamin C. Reed",
+      "author": "Ethan L. Miller and Darrell D. E. Long and William Freeman and Benjamin C. Reed",
       "title": "Strong Security for Network-Attached Storage",
-      "booktitle": "Proceedings of the 2002 Conference on File and Storage Technologies (FAST)",
-      "pages": "1-13",
+      "booktitle": "Proceedings of the Conference on File and Storage Technologies (FAST)",
       "year": 2002,
-      "month": "jan"
+      "month": "jan",
+      "address": "Monterey",
+      "organization": "Usenix Association",
+      "pages": "1--13"
     }
   },
   {
@@ -569,18 +645,22 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Zachary Peterson",
+      "Euiseong Seo",
+      "Seon-Yeong Park",
+      "Bhuvan Urgaonkar",
       "Darrell D. E. Long"
     ],
-    "date": "Jan 28, 2002",
+    "date": "Sep 1, 2005",
     "url": "https://ssrc.us/media/pubs/7b45b4b007e2744803712192a42a3baa4d62adde.pdf",
     "bibTeX": {
-      "@inproceedings": "peterson-fast02",
-      "author": "Zachary Peterson and Darrell D. E. Long and Scott A. Brandt",
-      "title": "Data Placement Based on Seek Time Analysis of a {MEMS",
-      "booktitle": "Work-In-Progress Session of the Conference on File and Storage Technology (FAST 2002)",
-      "year": 2002,
-      "month": "jan"
+      "@inproceedings": "seo-mascots05",
+      "author": "Euiseong Seo and Seon-Yeong Park and Bhuvan Urgaonkar and Darrell D. E. Long",
+      "title": "Data Placement Based on Seek Time Analysis of a MEMS-based Storage Device",
+      "booktitle": "Proceedings of the International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS)",
+      "year": 2005,
+      "month": "sep",
+      "address": "Atlanta",
+      "organization": "IEEE"
     }
   },
   {
@@ -592,17 +672,23 @@
       "Ismail Ari",
       "Ahmed Amer",
       "Ethan L. Miller",
+      "Robert Gramacy",
+      "Scott A. Brandt",
       "Darrell D. E. Long"
     ],
     "date": "Mar 1, 2002",
     "url": "https://ssrc.us/media/pubs/7f4e71177a2a7078b1848d7a0d6c8e98c4986cf1.pdf",
     "bibTeX": {
-      "@inproceedings": "ari-wdas02",
-      "author": "Ismail Ari and Ahmed Amer and Ethan L. Miller and Scott A. Brandt and Darrell D. E. Long",
-      "title": "Who is more adaptive? {ACME",
-      "booktitle": "Workshop on Distributed Data and Structures (WDAS 2002)",
+      "@incollection": "ari-carleton02",
+      "author": "Ismail Ari and Ahmed Amer and Ethan L. Miller and Robert Gramacy and Scott A. Brandt and Darrell D. E. Long",
+      "title": "ACME: Adaptive Caching using Multiple Experts",
+      "booktitle": "Distributed Data \\& Structures 4 (Proceedings in Informatics 14)",
+      "editor": "W. Litwin and G. L\\`evy",
+      "publisher": "Carleton Scientific",
       "year": 2002,
-      "month": "mar"
+      "month": "mar",
+      "address": "Paris, France",
+      "pages": "143--158"
     }
   },
   {
@@ -620,11 +706,14 @@
     "url": "https://ssrc.us/media/pubs/5cd3b23df47846a9021e668f6637cc4e8675109f.pdf",
     "bibTeX": {
       "@inproceedings": "amer-ipccc02",
-      "author": "Ahmed Amer and Darrell D. E. Long and Jehan-François Pâris and Randal Burns",
-      "title": "File access prediction with adjustable accuracy",
-      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC '02)",
+      "author": "Ahmed Amer and Darrell D. E. Long and Jehan-Fran\\c{c}ois P\\^aris and Randal C. Burns",
+      "title": "File Access Prediction with Adjustable Accuracy",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC)",
       "year": 2002,
-      "month": "apr"
+      "month": "apr",
+      "address": "Phoenix",
+      "organization": "IEEE",
+      "pages": "131--140"
     }
   },
   {
@@ -641,11 +730,14 @@
     "url": "https://ssrc.us/media/pubs/d596362817aa990d06c1c497d4c2a5423ea5829d.pdf",
     "bibTeX": {
       "@inproceedings": "amer-icdcs02",
-      "author": "Ahmed Amer and Darrell D. E. Long and Randal Burns",
-      "title": "Group-based management of distributed file caches",
-      "booktitle": "Proceedings of the 22nd International Conference on Distributed Computing Systems (ICDCS '02)",
+      "author": "Ahmed Amer and Darrell D. E. Long and Randal C. Burns",
+      "title": "Group-Based Management of Distributed File Caches",
+      "booktitle": "Proceedings of the Twenty-second International Conference on Distributed Computing Systems (ICDCS)",
       "year": 2002,
-      "month": "jul"
+      "month": "jul",
+      "address": "Vienna",
+      "organization": "IEEE",
+      "pages": "525--534"
     }
   },
   {
@@ -655,6 +747,7 @@
     "full_content": "",
     "author": [
       "Ying Lin",
+      "Scott A. Brandt",
       "Darrell D. E. Long",
       "Ethan L. Miller"
     ],
@@ -663,10 +756,13 @@
     "bibTeX": {
       "@inproceedings": "lin-mascots02",
       "author": "Ying Lin and Scott A. Brandt and Darrell D. E. Long and Ethan L. Miller",
-      "title": "Power conservation strategies for {MEMS",
-      "booktitle": "Proceedings of the 10th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '02)",
+      "title": "Power Conservation Strategies for MEMS-based Storage Devices",
+      "booktitle": "Proceedings of the Tenth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2002,
-      "month": "oct"
+      "month": "oct",
+      "address": "Fort Worth",
+      "organization": "IEEE",
+      "pages": "53--62"
     }
   },
   {
@@ -677,21 +773,24 @@
     "author": [
       "Ismail Ari",
       "Ahmed Amer",
-      "Robert Gramacy",
       "Ethan L. Miller",
+      "Robert Gramacy",
+      "Scott A. Brandt",
       "Darrell D. E. Long"
     ],
     "date": "Dec 5, 2002",
     "url": "https://ssrc.us/media/pubs/96c7ffa6733e50e6fd43f14d4493118f07e369ab.pdf",
     "bibTeX": {
-      "@article": "ari-ddas02",
-      "author": "Ismail Ari and Ahmed Amer and Robert Gramacy and Ethan L. Miller and Scott A. Brandt and Darrell D. E. Long",
-      "title": "{ACME",
-      "journal": "Proceedings in Informatics",
-      "pages": "143-158",
-      "volume": 14,
+      "@incollection": "ari-carleton02",
+      "author": "Ismail Ari and Ahmed Amer and Ethan L. Miller and Robert Gramacy and Scott A. Brandt and Darrell D. E. Long",
+      "title": "ACME: Adaptive Caching using Multiple Experts",
+      "booktitle": "Distributed Data \\& Structures 4 (Proceedings in Informatics 14)",
+      "editor": "W. Litwin and G. L\\`evy",
+      "publisher": "Carleton Scientific",
       "year": 2002,
-      "month": "dec"
+      "month": "mar",
+      "address": "Paris, France",
+      "pages": "143--158"
     }
   },
   {
@@ -706,21 +805,24 @@
     "date": "Jan 1, 2003",
     "url": "https://ssrc.us/media/pubs/18cd2bfc2e22ef31b7c0631b67be9263fdd2ed27.pdf",
     "bibTeX": {
-      "@inproceedings": "MMCN-Paris-2003",
-      "author": "Jehan-François Pâris and Darrell D. E. Long",
-      "title": "A Variable Bandwidth Broadcasting Protocol For Video-{onDemand",
-      "booktitle": "Proceedings of the 2003 SPIE Multimedia Computing and Networking Conference",
+      "@inproceedings": "paris-mmcn03",
+      "author": "Jehan-Fran\\c{c}ois P\\^aris and Darrell D. E. Long",
+      "title": "A Variable Bandwidth Broadcasting Protocol For Video-on-Demand",
+      "booktitle": "Proceedings of the 2003 SPIE Multimedia Computing and Networking Conference (MMCN)",
       "year": 2003,
-      "month": "jan"
+      "month": "jan",
+      "address": "San Jose",
+      "organization": "SPIE",
+      "pages": "209--219"
     }
   },
   {
     "id": 35,
-    "title": "Using Multiple Predictors to Improve the Accuracy of File Access Predictors",
+    "title": "Using Multiple Predictors to Improve the Accuracy of File Access Predictions",
     "short_description": "",
     "full_content": "",
     "author": [
-      "Gary Whittle",
+      "Gary A. S. Whittle",
       "Jehan-François Pâris",
       "Ahmed Amer",
       "Darrell D. E. Long",
@@ -729,12 +831,15 @@
     "date": "Apr 1, 2003",
     "url": "https://ssrc.us/media/pubs/a917ac198431394c2b99c74908fe451443399537.pdf",
     "bibTeX": {
-      "@inproceedings": "whittle-msst03",
-      "author": "Gary Whittle and Jehan-François Pâris and Ahmed Amer and Darrell D. E. Long and Randal Burns",
-      "title": "Using Multiple Predictors to Improve the Accuracy of File Access Predictors",
-      "booktitle": "Proceedings of the Twentieth IEEE/Eleventh NASA Goddard Conference on Mass Storage Systems and Technologies (MSST '03)",
+      "@inproceedings": "whittle-mss03",
+      "author": "Gary A. S. Whittle and Jehan-Fran\\c{c}ois P\\^aris and Ahmed Amer and Darrell D. E. Long and Randal Burns",
+      "title": "Using Multiple Predictors to Improve the Accuracy of File Access Predictions",
+      "booktitle": "Proceedings of the Twentieth Symposium on Mass Storage Systems (MSS)",
       "year": 2003,
-      "month": "apr"
+      "month": "apr",
+      "address": "San Diego",
+      "organization": "IEEE",
+      "pages": "230--240"
     }
   },
   {
@@ -753,33 +858,39 @@
     "url": "https://ssrc.us/media/pubs/eab92f87efdf3bf336a03603e7b8ba6889d5cb45.pdf",
     "bibTeX": {
       "@inproceedings": "amer-ipccc03",
-      "author": "Ahmed Amer and Alison Luo and Newton Der and Darrell D. E. Long and Alexander Pang",
+      "author": "Ahmed Amer and Alison Luo and Newton Der and Darrell D. E. Long and Alex Pang",
       "title": "Visualizing Cache Effects on I/O Workload Predictability",
-      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC '03)",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC)",
       "year": 2003,
-      "month": "apr"
+      "month": "apr",
+      "address": "Phoenix",
+      "organization": "IEEE",
+      "pages": "417--424"
     }
   },
   {
     "id": 37,
-    "title": "Efficient Metadata Management in Large Distributed File Systems",
+    "title": "Efficient Metadata Management in a Large Distributed Storage System",
     "short_description": "",
     "full_content": "",
     "author": [
+      "Scott A. Brandt",
       "Ethan L. Miller",
       "Darrell D. E. Long",
       "Lan Xue"
     ],
-    "date": "Apr 15, 2003",
+    "date": "Apr 1, 2003",
     "url": "https://ssrc.us/media/pubs/a3d8d7cf4deff274fc35948573910760c593c5a9.pdf",
     "bibTeX": {
-      "@inproceedings": "brandt-msst03",
+      "@inproceedings": "brandt-mss03",
       "author": "Scott A. Brandt and Ethan L. Miller and Darrell D. E. Long and Lan Xue",
-      "title": "Efficient Metadata Management in Large Distributed File Systems",
-      "booktitle": "Proceedings of the 20th IEEE / 11th NASA Goddard Conference on Mass Storage Systems and Technologies (MSST 2003)",
-      "pages": "290-298",
+      "title": "Efficient Metadata Management in a Large Distributed Storage System",
+      "booktitle": "Proceedings of the Twentieth Symposium on Mass Storage Systems (MSS)",
       "year": 2003,
-      "month": "apr"
+      "month": "apr",
+      "address": "San Diego",
+      "organization": "IEEE",
+      "pages": "290--298"
     }
   },
   {
@@ -790,20 +901,23 @@
     "author": [
       "Qin Xin",
       "Ethan L. Miller",
-      "Thomas Schwarz",
+      "Scott A. Brandt",
       "Darrell D. E. Long",
+      "Thomas Schwarz",
       "Witold Litwin"
     ],
     "date": "Apr 15, 2003",
     "url": "https://ssrc.us/media/pubs/92ca6e61ab487a1947c85029cedcd02d32dd3f34.pdf",
     "bibTeX": {
-      "@inproceedings": "xin-msst03",
-      "author": "Qin Xin and Ethan L. Miller and Thomas Schwarz and Darrell D. E. Long and Scott A. Brandt and Witold Litwin",
-      "title": "Reliability Mechanisms for Very large Storage Systems",
-      "booktitle": "Proceedings of the 20th IEEE / 11th NASA Goddard Conference on Mass Storage Systems and Technologies",
-      "pages": "146-156",
+      "@inproceedings": "xin-mss03",
+      "author": "Qin Xin and Ethan L. Miller and Scott A. Brandt and Darrell D. E. Long and Thomas Schwarz and Witold Litwin",
+      "title": "Reliability Mechanisms for Very Large Storage Systems",
+      "booktitle": "Proceedings of the Twentieth Symposium on Mass Storage Systems (MSS)",
       "year": 2003,
-      "month": "apr"
+      "month": "apr",
+      "address": "San Diego",
+      "organization": "IEEE",
+      "pages": "146--156"
     }
   },
   {
@@ -819,13 +933,15 @@
     "date": "Jul 1, 2003",
     "url": "https://ssrc.us/media/pubs/2f301095bc2a766873f54153eaec6d83e10b142d.pdf",
     "bibTeX": {
-      "@article": "TKDE-Burns-2003",
-      "author": "Randal Burns and Larry Stockmeyer and Darrell D. E. Long",
+      "@article": "burns-tkde03",
+      "author": "Randal Burns and Larry Stockmeyer and Darrell Long",
       "title": "In-Place Reconstruction of Version Differences",
       "journal": "IEEE Transactions on Knowledge and Data Engineering",
-      "volume": "",
+      "volume": 15,
+      "number": 4,
       "year": 2003,
-      "month": "jul"
+      "month": "jul",
+      "pages": "973--984"
     }
   },
   {
@@ -842,11 +958,12 @@
     "url": "https://ssrc.us/media/pubs/18d1d1827feea73154044eb088d7b10ab57ed69a.pdf",
     "bibTeX": {
       "@inproceedings": "paris-snapi03",
-      "author": "Jehan-François Pâris and Ahmed Amer and Darrell D. E. Long",
+      "author": "Jehan-Fran\\c{c}ois P\\^aris and Ahmed Amer and Darrell D. E. Long",
       "title": "A Stochastic Approach to File Access Prediction",
-      "booktitle": "Proceedings of the International Workshop on Storage Network Architecture and Parallel I/O (SNAPI '03)",
+      "booktitle": "Proceedings of the International Workshop on Storage Network Architecture and Parallel I/Os (SNAPI)",
       "year": 2003,
-      "month": "sep"
+      "month": "sep",
+      "organization": "ACM"
     }
   },
   {
@@ -856,21 +973,24 @@
     "full_content": "",
     "author": [
       "Bo Hong",
+      "Scott A. Brandt",
       "Darrell D. E. Long",
       "Ethan L. Miller",
-      "Karen Glocer",
-      "Zachary Peterson"
+      "Karen A. Glocer",
+      "Zachary N. J. Peterson"
     ],
     "date": "Oct 1, 2003",
     "url": "https://ssrc.us/media/pubs/e224295a36adce6779233ef1857f0d11049e19d3.pdf",
     "bibTeX": {
       "@inproceedings": "hong-mascots03",
-      "author": "Bo Hong and Scott A. Brandt and Darrell D. E. Long and Ethan L. Miller and Karen Glocer and Zachary Peterson",
-      "title": "Zone-based shortest positioning time first scheduling for {MEMS",
-      "booktitle": "Proceedings of the 11th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '03)",
-      "pages": "104-113",
+      "author": "Bo Hong and Scott A. Brandt and Darrell D. E. Long and Ethan L. Miller and Karen A. Glocer and Zachary N. J. Peterson",
+      "title": "Zone-Based Shortest Positioning Time First Scheduling for MEMS-Based Storage Devices",
+      "booktitle": "Proceedings of the Eleventh International Symposium on Modeling, Analysis, and Simulation in Computer and Telecommunication Systems (MASCOTS)",
       "year": 2003,
-      "month": "oct"
+      "month": "oct",
+      "address": "Orlando",
+      "organization": "IEEE",
+      "pages": "104--113"
     }
   },
   {
@@ -882,6 +1002,7 @@
       "Ismail Ari",
       "Bo Hong",
       "Ethan L. Miller",
+      "Scott A. Brandt",
       "Darrell D. E. Long"
     ],
     "date": "Oct 1, 2003",
@@ -889,11 +1010,13 @@
     "bibTeX": {
       "@inproceedings": "ari-mascots03",
       "author": "Ismail Ari and Bo Hong and Ethan L. Miller and Scott A. Brandt and Darrell D. E. Long",
-      "title": "Managing flash crowds on the Internet",
-      "booktitle": "Proceedings of the 11th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '03)",
-      "pages": "246–249",
+      "title": "Managing Flash Crowds on the Internet",
+      "booktitle": "Proceedings of the Eleventh International Symposium on Modeling, Analysis, and Simulation in Computer and Telecommunication Systems (MASCOTS)",
       "year": 2003,
-      "month": "oct"
+      "month": "oct",
+      "address": "Orlando",
+      "organization": "IEEE",
+      "pages": "246--249"
     }
   },
   {
@@ -910,12 +1033,15 @@
     "date": "Apr 1, 2004",
     "url": "https://ssrc.us/media/pubs/e021012af63507f472049c007939b842aa2a5f10.pdf",
     "bibTeX": {
-      "@inproceedings": "shah-msst04",
-      "author": "Purvi Shah and Jehan-François Pâris and Ahmed Amer and Darrell D. E. Long",
+      "@inproceedings": "shah-mss04",
+      "author": "Purvi Shah and Jehan-Fran\\c{c}ois P\\^aris and Ahmed Amer and Darrell D. E. Long",
       "title": "Identifying Stable File Access Patterns",
-      "booktitle": "Proceedings of the Twelfth NASA Goddard/Twenty First IEEE Conference on Mass Storage Systems and Technologies (MSST '04)",
+      "booktitle": "Proceedings of the Twenty-first Symposium on Mass Storage Systems (MSS)",
       "year": 2004,
-      "month": "apr"
+      "month": "apr",
+      "address": "Goddard, Maryland",
+      "organization": "NASA",
+      "pages": "159--163"
     }
   },
   {
@@ -927,20 +1053,23 @@
       "Feng Wang",
       "Qin Xin",
       "Bo Hong",
+      "Scott A. Brandt",
       "Ethan L. Miller",
       "Darrell D. E. Long",
-      "Tyce T. Mclarty"
+      "Tyce T. McLarty"
     ],
     "date": "Apr 13, 2004",
     "url": "https://ssrc.us/media/pubs/d0b29be475da4315b7e3e7bb06a579fe3fc30b0e.pdf",
     "bibTeX": {
-      "@inproceedings": "wang-msst04b",
-      "author": "Feng Wang and Qin Xin and Bo Hong and Scott A. Brandt and Ethan L. Miller and Darrell D. E. Long and Tyce T. Mclarty",
-      "title": "File System Workload Analysis For Large Scientific Computing Applications",
-      "booktitle": "NASA/IEEE Conference on Mass Storage Systems and Technologies (MSST 2004)",
-      "pages": "139–152",
+      "@inproceedings": "wang-mss04",
+      "author": "Feng Wang and Qin Xin and Bo Hong and Scott A. Brandt and Ethan Miller and Darrell Long and Tyce T. McLarty",
+      "title": "File System Workload Analysis For Large Scale Scientific Computing Applications",
+      "booktitle": "Proceedings of the Twenty-first Symposium on Mass Storage Systems (MSS)",
       "year": 2004,
-      "month": "apr"
+      "month": "apr",
+      "address": "Goddard, Maryland",
+      "organization": "NASA",
+      "pages": "139--152"
     }
   },
   {
@@ -950,19 +1079,22 @@
     "full_content": "",
     "author": [
       "Feng Wang",
+      "Scott A. Brandt",
       "Ethan L. Miller",
       "Darrell D. E. Long"
     ],
     "date": "Apr 15, 2004",
     "url": "https://ssrc.us/media/pubs/791542036f88a466f05945aab74004a9cc7d5b9f.pdf",
     "bibTeX": {
-      "@inproceedings": "wang-msst04a",
+      "@inproceedings": "wang-mss04b",
       "author": "Feng Wang and Scott A. Brandt and Ethan L. Miller and Darrell D. E. Long",
-      "title": "{OBFS",
-      "booktitle": "Proceedings of the 21st IEEE / 12th NASA Goddard Conference on Mass Storage Systems and Technologies",
-      "pages": "283-300",
+      "title": "OBFS: A File System for Object-Based Storage Devices",
+      "booktitle": "Proceedings of the Twenty-first Symposium on Mass Storage Systems (MSS)",
       "year": 2004,
-      "month": "apr"
+      "month": "apr",
+      "address": "Goddard, Maryland",
+      "organization": "NASA",
+      "pages": "283--300"
     }
   },
   {
@@ -972,19 +1104,22 @@
     "full_content": "",
     "author": [
       "Bo Hong",
-      "Thomas Schwarz",
+      "Thomas J. E. Schwarz",
+      "Scott A. Brandt",
       "Darrell D. E. Long"
     ],
     "date": "Oct 1, 2004",
     "url": "https://ssrc.us/media/pubs/57a1adb40306db70c6d52376e389a836f60a29c1.pdf",
     "bibTeX": {
       "@inproceedings": "hong-mascots04",
-      "author": "Bo Hong and Thomas Schwarz and Scott A. Brandt and Darrell D. E. Long",
-      "title": "Reliability of {MEMS",
-      "booktitle": "roceedings of the 12th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '04)",
-      "pages": "571-579",
+      "author": "Bo Hong and Thomas J. E. Schwarz and Scott A. Brandt and Darrell D. E. Long",
+      "title": "Reliability of MEMS-Based Storage Enclosures",
+      "booktitle": "Proceedings of the Twelfth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2004,
-      "month": "oct"
+      "month": "oct",
+      "address": "Volendam, The Netherlands",
+      "organization": "IEEE",
+      "pages": "571--579"
     }
   },
   {
@@ -1000,12 +1135,15 @@
     "date": "Oct 1, 2004",
     "url": "https://ssrc.us/media/pubs/25bd1fcf849efacb1591a3f06488113089755cf4.pdf",
     "bibTeX": {
-      "@inproceedings": "kbrandt-mascots04",
+      "@inproceedings": "brandt-mascots04",
       "author": "Karl Brandt and Darrell D. E. Long and Ahmed Amer",
       "title": "Predicting When Not To Predict",
-      "booktitle": "Proceedings of the 12th Annual IEEE/ACM International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '04)",
+      "booktitle": "Proceedings of the Twelfth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2004,
-      "month": "oct"
+      "month": "oct",
+      "address": "Volendam, The Netherlands",
+      "organization": "IEEE",
+      "pages": "419--426"
     }
   },
   {
@@ -1014,22 +1152,25 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Thomas Schwarz",
+      "Thomas J. E. Schwarz",
       "Qin Xin",
       "Ethan L. Miller",
       "Darrell D. E. Long",
+      "Andrew Hospodor",
       "Spencer Ng"
     ],
     "date": "Oct 10, 2004",
     "url": "https://ssrc.us/media/pubs/d0a1a0161119593cfdb6235492f689bdf8c79b76.pdf",
     "bibTeX": {
       "@inproceedings": "schwarz-mascots04",
-      "author": "Thomas Schwarz and Qin Xin and Ethan L. Miller and Darrell D. E. Long and Andy Hospodor and Spencer Ng",
+      "author": "Thomas J. E. Schwarz and Qin Xin and Ethan L. Miller and Darrell D. E. Long and Andrew Hospodor and Spencer Ng",
       "title": "Disk Scrubbing in Large Archival Storage Systems",
-      "booktitle": "Proceedings of the 12th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '04)",
-      "pages": "409-418",
+      "booktitle": "Proceedings of the Twelfth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2004,
-      "month": "oct"
+      "month": "oct",
+      "address": "Volendam, The Netherlands",
+      "organization": "IEEE",
+      "pages": "409--418"
     }
   },
   {
@@ -1040,6 +1181,7 @@
     "author": [
       "Feng Wang",
       "Bo Hong",
+      "Scott A. Brandt",
       "Darrell D. E. Long"
     ],
     "date": "Apr 11, 2005",
@@ -1047,11 +1189,13 @@
     "bibTeX": {
       "@inproceedings": "wang-msst05",
       "author": "Feng Wang and Bo Hong and Scott A. Brandt and Darrell D. E. Long",
-      "title": "Using {MEMS",
-      "booktitle": "IEEE / NASA Goddard Conference on Mass Storage Systems and Technologies (MSST 2005)",
-      "pages": "202–209",
+      "title": "Using MEMS-based Storage to Boost Disk Performance",
+      "booktitle": "Proceedings of the Twenty-second Conference on Mass Storage Systems and Technologies",
       "year": 2005,
-      "month": "apr"
+      "month": "apr",
+      "address": "Monterey",
+      "organization": "IEEE",
+      "pages": "202--209"
     }
   },
   {
@@ -1068,11 +1212,14 @@
     "url": "https://ssrc.us/media/pubs/7015b2eb3c689db69837dddea1af32c8e30709d8.pdf",
     "bibTeX": {
       "@inproceedings": "you-icde05",
-      "author": "Lawrence You and Kristal Pollack and Darrell D. E. Long",
-      "title": "Deep Store: An Archival Storage System Architecture",
-      "booktitle": "Proceedings of the 21st International Conference on Data Engineering (ICDE '05)",
+      "author": "Lawrence L. You and Kristal T. Pollack and Darrell D. E. Long",
+      "title": "Deep Store: an Archival Storage System Architecture",
+      "booktitle": "Proceedings of the Twenty-first International Conference on Data Engineering (ICDE)",
       "year": 2005,
-      "month": "apr"
+      "month": "apr",
+      "address": "Tokyo",
+      "organization": "IEEE",
+      "pages": "804--815"
     }
   },
   {
@@ -1090,11 +1237,14 @@
     "url": "https://ssrc.us/media/pubs/b5ba78d21ddfee517fc4b68648b8a8e0eae4b51c.pdf",
     "bibTeX": {
       "@inproceedings": "xin-msst05",
-      "author": "Qin Xin and Ethan L. Miller and Thomas Schwarz and Darrell D. E. Long",
+      "author": "Qin Xin and Ethan L. Miller and Thomas J. E. Schwarz and Darrell D. E. Long",
       "title": "Impact of Failure on Interconnection Networks in Large Storage Systems",
-      "booktitle": "Proceedings of the 22nd IEEE / 13th NASA Goddard Conference on Mass Storage Systems and Technologies",
+      "booktitle": "Proceedings of the Twenty-second Conference on Mass Storage Systems and Technologies",
       "year": 2005,
-      "month": "apr"
+      "month": "apr",
+      "address": "Monterey",
+      "organization": "IEEE",
+      "pages": "189--196"
     }
   },
   {
@@ -1103,46 +1253,48 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Sage Weil",
-      "Feng Wang",
-      "Qin Xin",
+      "Sage A. Weil",
+      "Scott A. Brandt",
       "Ethan L. Miller",
       "Darrell D. E. Long"
     ],
     "date": "Mar 1, 2006",
     "url": "https://ssrc.us/media/pubs/80c09985415c15cb8be9ca91d85730027ad848e4.pdf",
     "bibTeX": {
-      "@inproceedings": "weil-ssrctr06",
-      "author": "Sage Weil and Feng Wang and Qin Xin and Scott A. Brandt and Ethan L. Miller and Darrell D. E. Long and Carlos Maltzahn",
+      "@inproceedings": "weil-osdi06",
+      "author": "Sage A. Weil and Scott A. Brandt and Ethan L. Miller and Darrell D. E. Long",
       "title": "Ceph: A Scalable Object-Based Storage System",
-      "booktitle": "Technical Report UCSC-SSRC-06-01",
+      "booktitle": "Proceedings of the OSDI Workshop on Object Storage (WOS)",
       "year": 2006,
-      "month": "mar"
+      "month": "nov",
+      "address": "Seattle",
+      "organization": "Usenix Association"
     }
   },
   {
     "id": 53,
-    "title": "Using MEMS-Based Storage in Computer Systems—Device Modeling and Management",
+    "title": "Using MEMS-Based Storage in Computer Systems -- Device Modeling and Management",
     "short_description": "",
     "full_content": "",
     "author": [
       "Bo Hong",
+      "Scott A. Brandt",
       "Darrell D. E. Long",
       "Ethan L. Miller",
       "Ying Lin"
     ],
-    "date": "May 26, 2006",
+    "date": "May 1, 2006",
     "url": "https://ssrc.us/media/pubs/68a8dc82b2cfe3eec329a4f28bcf68b49513499c.pdf",
     "bibTeX": {
-      "@article": "hong-tos06a",
+      "@article": "hong-tos06",
       "author": "Bo Hong and Scott A. Brandt and Darrell D. E. Long and Ethan L. Miller and Ying Lin",
-      "title": "Using {MEMS",
+      "title": "Using MEMS-Based Storage in Computer Systems -- Device Modeling and Management",
       "journal": "ACM Transactions on Storage",
-      "pages": "139-160",
       "volume": 2,
       "number": 2,
       "year": 2006,
-      "month": "may"
+      "month": "may",
+      "pages": "139--160"
     }
   },
   {
@@ -1152,17 +1304,21 @@
     "full_content": "",
     "author": [
       "Timothy Bisson",
+      "Scott A. Brandt",
       "Darrell D. E. Long"
     ],
     "date": "Sep 1, 2006",
     "url": "https://ssrc.us/media/pubs/a08002805a8cadaf36fd9471a6e5fd62390979e1.pdf",
     "bibTeX": {
-      "@inproceedings": "MASCOTS-Bisson-2006",
+      "@inproceedings": "bisson-mascots06",
       "author": "Timothy Bisson and Scott A. Brandt and Darrell D. E. Long",
-      "title": "{NVCache",
+      "title": "NVCache: Increasing the Effectiveness of Disk Spin-down Algorithms with Caching",
       "booktitle": "Proceedings of the Fourteenth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2006,
-      "month": "sep"
+      "month": "sep",
+      "address": "Monterey",
+      "organization": "IEEE",
+      "pages": "422--432"
     }
   },
   {
@@ -1182,12 +1338,14 @@
     "url": "https://ssrc.us/media/pubs/1bd42e936db567ec1c9a5d30b8ba7b46d4ad8a26.pdf",
     "bibTeX": {
       "@inproceedings": "bhagwat-mascots06",
-      "author": "Deepavali Bhagwat and Kristal Pollack and Darrell D. E. Long and Thomas Schwarz and Ethan L. Miller and Jehan-François Pâris",
+      "author": "Deepavali Bhagwat and Kristal Pollack and Darrell D. E. Long and Ethan L. Miller and Thomas Schwarz and Jehan-Fran\\c{c}ois P\\^aris",
       "title": "Providing High Reliability in a Minimum Redundancy Archival Storage System",
-      "booktitle": "Proceedings of the 14th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS '06)",
-      "pages": "413-421",
+      "booktitle": "Proceedings of the Fourteenth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2006,
-      "month": "sep"
+      "month": "sep",
+      "address": "Monterey",
+      "organization": "IEEE",
+      "pages": "412--421"
     }
   },
   {
@@ -1204,11 +1362,14 @@
     "url": "https://ssrc.us/media/pubs/2a5d4c672e1a534d5bf1c0680837abcd2d7d775f.pdf",
     "bibTeX": {
       "@inproceedings": "rybczynski-mascots06",
-      "author": "Jeff Rybczynski and Darrell D. E. Long and Ahmed Amer",
+      "author": "Jeffrey P. Rybczynski and Darrell D. E. Long and Ahmed Amer",
       "title": "Adapting Predictions and Workloads for Power Management",
-      "booktitle": "14th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunications Systems (MASCOTS 2006)",
+      "booktitle": "Proceedings of the Fourteenth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2006,
-      "month": "sep"
+      "month": "sep",
+      "address": "Monterey",
+      "organization": "IEEE",
+      "pages": "3--12"
     }
   },
   {
@@ -1218,6 +1379,7 @@
     "full_content": "",
     "author": [
       "Timothy Bisson",
+      "Scott A. Brandt",
       "Darrell D. E. Long"
     ],
     "date": "Sep 15, 2006",
@@ -1225,10 +1387,13 @@
     "bibTeX": {
       "@inproceedings": "bisson-mascots06",
       "author": "Timothy Bisson and Scott A. Brandt and Darrell D. E. Long",
-      "title": "{NVCache",
-      "booktitle": "Proceedings of the 14th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2006)",
+      "title": "NVCache: Increasing the Effectiveness of Disk Spin-down Algorithms with Caching",
+      "booktitle": "Proceedings of the Fourteenth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2006,
-      "month": "sep"
+      "month": "sep",
+      "address": "Monterey",
+      "organization": "IEEE",
+      "pages": "422--432"
     }
   },
   {
@@ -1237,18 +1402,23 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Jehan-François Pâris",
-      "Darrell D. E. Long"
+      "Kevin M. Greenan",
+      "Darrell D. E. Long",
+      "Ethan L. Miller",
+      "Thomas J. E. Schwarz",
+      "Avani Wildani"
     ],
-    "date": "Oct 30, 2006",
+    "date": "Feb 1, 2009",
     "url": "https://ssrc.us/media/pubs/31e34accfa6c62bd0d269bf6ca0ad60de631a7e9.pdf",
     "bibTeX": {
-      "@inproceedings": "paris-storagess06",
-      "author": "Jehan-François Pâris and Darrell D. E. Long",
+      "@inproceedings": "greenan-fast09",
+      "author": "Kevin M. Greenan and Darrell D. E. Long and Ethan L. Miller and Thomas J. E. Schwarz and Avani Wildani",
       "title": "Using Device Diversity to Protect Data against Batch-Correlated Disk Failures",
-      "booktitle": "Proceedings of the 2nd ACM Workshop on Storage Security and Survivability (StorageSS 2006)",
-      "year": 2006,
-      "month": "oct"
+      "booktitle": "Poster Session of the USENIX Conference on File and Storage Technologies (FAST)",
+      "year": 2009,
+      "month": "feb",
+      "address": "San Francisco",
+      "organization": "Usenix Association"
     }
   },
   {
@@ -1257,19 +1427,24 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Sage Weil",
+      "Sage A. Weil",
+      "Scott A. Brandt",
       "Ethan L. Miller",
-      "Darrell D. E. Long"
+      "Darrell D. E. Long",
+      "Carlos Maltzahn"
     ],
     "date": "Nov 6, 2006",
     "url": "https://ssrc.us/media/pubs/a7a45f7ef6849137936503f5b1cdabf103c5a661.pdf",
     "bibTeX": {
       "@inproceedings": "weil-osdi06",
-      "author": "Sage Weil and Scott A. Brandt and Ethan L. Miller and Darrell D. E. Long and Carlos Maltzahn",
+      "author": "Sage A. Weil and Scott A. Brandt and Ethan L. Miller and Darrell D. E. Long and Carlos Maltzahn",
       "title": "Ceph: A Scalable, High-Performance Distributed File System",
-      "booktitle": "Proceedings of the 7th Conference on Operating Systems Design and Implementation (OSDI '06)",
+      "booktitle": "Proceedings of the Seventh Symposium on Operating Systems Design and Implementation (OSDI)",
       "year": 2006,
-      "month": "nov"
+      "month": "nov",
+      "address": "Seattle",
+      "organization": "Usenix Association",
+      "pages": "307--320"
     }
   },
   {
@@ -1279,18 +1454,21 @@
     "full_content": "",
     "author": [
       "Jehan-François Pâris",
-      "Thomas Schwarz",
+      "Thomas J. Schwarz, S.J.",
       "Darrell D. E. Long"
     ],
-    "date": "Nov 15, 2006",
+    "date": "Nov 1, 2006",
     "url": "https://ssrc.us/media/pubs/489b2ce20ab86e8c9e62d4fad4308e653417daea.pdf",
     "bibTeX": {
       "@inproceedings": "paris-sss06",
-      "author": "Jehan-François Pâris and Thomas Schwarz and Darrell D. E. Long",
+      "author": "Jehan-Fran\\c{c}ois P\\^aris and Thomas J. Schwarz, S.J. and Darrell D. E. Long",
       "title": "Self-Adaptive Disk Arrays",
-      "booktitle": "Proceedings of the 8th International Symposium on Stabilization, Safety, and Security of Distributed Systems (SSS 2006)",
+      "booktitle": "Proceedings of the Eighth International Symposium on Stabilization, Safety, and Security of Distributed Systems (SSS)",
       "year": 2006,
-      "month": "nov"
+      "month": "nov",
+      "address": "Dallas",
+      "publisher": "Springer, Lecture Notes in Computer Science",
+      "pages": "469--483"
     }
   },
   {
@@ -1306,12 +1484,14 @@
     "date": "Dec 15, 2006",
     "url": "https://ssrc.us/media/pubs/417501a9844940233bea34b82988012342606779.pdf",
     "bibTeX": {
-      "@inproceedings": "paris-i06",
-      "author": "Jehan-François Pâris and Thomas Schwarz and Darrell D. E. Long",
+      "@inproceedings": "paris-i2ts06",
+      "author": "Jehan-Fran\\c{c}ois P\\^aris and Thomas J. Schwarz and Darrell D. E. Long",
       "title": "Protecting Data Against Early Disk Failures",
-      "booktitle": "Proceedings of the 5th International Information and Telecommunication Technologies Symposium (I2TS ‘06)",
+      "booktitle": "Proceedings of the Fifth International Information and Telecommunication Technologies Symposium (I2TS)",
       "year": 2006,
-      "month": "dec"
+      "month": "dec",
+      "address": "Cuiab\\'a, Brazil",
+      "pages": "113--119"
     }
   },
   {
@@ -1321,18 +1501,20 @@
     "full_content": "",
     "author": [
       "Jehan-François Pâris",
-      "Thomas Schwarz",
+      "Thomas J. Schwarz, S.J.",
       "Darrell D. E. Long"
     ],
     "date": "Apr 11, 2007",
     "url": "https://ssrc.us/media/pubs/2ecd1bbacf54c7173e461fabfeffbf9e83eb1573.pdf",
     "bibTeX": {
       "@inproceedings": "paris-ipccc07",
-      "author": "Jehan-François Pâris and Thomas Schwarz and Darrell D. E. Long",
-      "title": "Self-Adaptive Two-Dimensional {RAID",
-      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC '07)",
+      "author": "Jehan-Fran\\c{c}ois P\\^aris and Thomas J. Schwarz, S.J. and Darrell D. E. Long",
+      "title": "Self-Adaptive Two-Dimensional RAID Arrays",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC)",
       "year": 2007,
-      "month": "apr"
+      "month": "apr",
+      "address": "New Orleans",
+      "organization": "IEEE"
     }
   },
   {
@@ -1342,17 +1524,20 @@
     "full_content": "",
     "author": [
       "Timothy Bisson",
+      "Scott A. Brandt",
       "Darrell D. E. Long"
     ],
-    "date": "Apr 12, 2007",
+    "date": "Apr 11, 2007",
     "url": "https://ssrc.us/media/pubs/00bbfdfb354b8db0b4cc92bc9d44e447c48b19e1.pdf",
     "bibTeX": {
       "@inproceedings": "bisson-ipccc07",
       "author": "Timothy Bisson and Scott A. Brandt and Darrell D. E. Long",
       "title": "A Hybrid Disk-Aware Spin-Down Algorithm with I/O Subsystem Support",
-      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC '07)",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC)",
       "year": 2007,
-      "month": "apr"
+      "month": "apr",
+      "address": "New Orleans",
+      "organization": "IEEE"
     }
   },
   {
@@ -1361,21 +1546,24 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Kristal Pollack",
+      "Kristal T. Pollack",
       "Darrell D. E. Long",
-      "Richard Golding",
-      "Benjamin C. Reed"
+      "Richard A. Golding",
+      "Ralph A. Becker-Szendy",
+      "Benjamin Reed"
     ],
     "date": "Sep 26, 2007",
     "url": "https://ssrc.us/media/pubs/810538e2f651e7a602c66f683e26baeb0e14f18f.pdf",
     "bibTeX": {
       "@inproceedings": "pollack-msst07",
-      "author": "Kristal Pollack and Darrell D. E. Long and Richard Golding and Ralph Becker-Szendy and Benjamin C. Reed",
-      "title": "Quota Enforcement for High-Performance Distributed Storage Systems",
-      "booktitle": "Proceedings of the 24th IEEE Conference on Mass Storage Systems and Technologies (MSST 2007)",
-      "pages": "72-84",
+      "author": "Kristal T. Pollack and Darrell D. E. Long and Richard A. Golding and Ralph A. Becker-Szendy and Benjamin Reed",
+      "title": "Quota Enforcement for High-performance Distributed Storage Systems",
+      "booktitle": "Proceedings of the Conference on Mass Storage Systems and Technologies",
       "year": 2007,
-      "month": "sep"
+      "month": "sep",
+      "address": "San Diego",
+      "organization": "IEEE",
+      "pages": "72--84"
     }
   },
   {
@@ -1395,9 +1583,11 @@
       "@inproceedings": "greenan-storagess07",
       "author": "Kevin Greenan and Ethan L. Miller and Thomas Schwarz and Darrell D. E. Long",
       "title": "Disaster Recovery Codes: Increasing Reliability with Large-Stripe Error Correction Codes",
-      "booktitle": "Proceedings of the 3rd International Workshop on Storage Security and Survivability (StorageSS 2007)",
+      "booktitle": "Proceedings of the Third International Workshop on Storage Security and Survivability (StorageSS)",
       "year": 2007,
-      "month": "oct"
+      "month": "oct",
+      "address": "Alexandria, Virginia",
+      "organization": "ACM"
     }
   },
   {
@@ -1406,19 +1596,20 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Jehan-François Pâris",
+      "Yangyang Huang",
       "Darrell D. E. Long",
-      "Thomas Schwarz"
+      "Ethan L. Miller"
     ],
-    "date": "Feb 17, 2008",
+    "date": "Mar 1, 2010",
     "url": "https://ssrc.us/media/pubs/5177d775770337e41f3815753f0d2b42816ffe9a.pdf",
     "bibTeX": {
-      "@inproceedings": "paris-speed08",
-      "author": "Jehan-François Pâris and Darrell D. E. Long and Thomas Schwarz",
+      "@inproceedings": "huang-nvmw10",
+      "author": "Yangyang Huang and Darrell D. E. Long and Ethan L. Miller",
       "title": "Ensuring Data Survival on Solid-State Storage Devices",
-      "booktitle": "Proceedings of the 1st International Workshop on Storage and I/O Virtualization, Performance, Energy, Evaluation and Dependability",
-      "year": 2008,
-      "month": "feb"
+      "booktitle": "Proceedings of the Non-Volatile Memories Workshop (NVMW)",
+      "year": 2010,
+      "month": "mar",
+      "address": "San Diego"
     }
   },
   {
@@ -1427,21 +1618,21 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Neerja Bhatnagar",
-      "Kevin Greenan",
-      "Rosie Wacha",
-      "Ethan L. Miller",
+      "Yulai Xie",
+      "Dan Feng",
       "Darrell D. E. Long"
     ],
-    "date": "Jun 2, 2008",
+    "date": "Jun 1, 2009",
     "url": "https://ssrc.us/media/pubs/ed3909032135f1d1d500725bac4854f0b9687826.pdf",
     "bibTeX": {
-      "@inproceedings": "bhatnagar-emnets08",
-      "author": "Neerja Bhatnagar and Kevin Greenan and Rosie Wacha and Ethan L. Miller and Darrell D. E. Long",
+      "@inproceedings": "xie-inss09",
+      "author": "Yulai Xie and Dan Feng and Darrell D. E. Long",
       "title": "Energy-Reliability Tradeoffs in Sensor Networks",
-      "booktitle": "Proceedings of the Fifth Workshop on Embedded Networked Sensors (HotEmNets 2008)",
-      "year": 2008,
-      "month": "jun"
+      "booktitle": "Proceedings of the International Conference on Networked Sensing Systems (INSS)",
+      "year": 2009,
+      "month": "jun",
+      "address": "Pittsburgh",
+      "organization": "IEEE"
     }
   },
   {
@@ -1459,12 +1650,14 @@
     "url": "https://ssrc.us/media/pubs/83c957e36f53982d7ba0351e0677999b3764b689.pdf",
     "bibTeX": {
       "@inproceedings": "amer-mascots08",
-      "author": "Ahmed Amer and Darrell D. E. Long and Jehan-François Pâris and Thomas Schwarz",
-      "title": "Increased Reliability with {SSPiRAL",
-      "booktitle": "Proceedings of the 16th International Symposium on Modeling, Analysis,and Simulation of Computer and Telecommunication Systems (MASCOTS 2008)",
-      "pages": "189-198",
+      "author": "Ahmed Amer and Darrell D. E. Long and Jehan-Fran\\c{c}ois P\\^aris and Thomas Schwarz",
+      "title": "Increased Reliability with SSPiRAL Data Layouts",
+      "booktitle": "Proceedings of the Sixteenth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2008,
-      "month": "sep"
+      "month": "sep",
+      "address": "Baltimore",
+      "organization": "IEEE",
+      "pages": "189--198"
     }
   },
   {
@@ -1484,9 +1677,11 @@
       "@inproceedings": "storer-storagess08",
       "author": "Mark W. Storer and Kevin Greenan and Darrell D. E. Long and Ethan L. Miller",
       "title": "Secure Data Deduplication",
-      "booktitle": "Proceedings of the 4th International Workshop on Storage Security and Survivability (StorageSS 2008)",
+      "booktitle": "Proceedings of the Fourth International Workshop on Storage Security and Survivability (StorageSS)",
       "year": 2008,
-      "month": "oct"
+      "month": "oct",
+      "address": "Alexandria, Virginia",
+      "organization": "ACM"
     }
   },
   {
@@ -1496,21 +1691,21 @@
     "full_content": "",
     "author": [
       "Mark W. Storer",
-      "Kevin Greenan",
-      "Ian Adams",
+      "Kevin M. Greenan",
       "Ethan L. Miller",
-      "Darrell D. E. Long",
-      "Kaladhar Voruganti"
+      "Darrell D. E. Long"
     ],
     "date": "Nov 17, 2008",
     "url": "https://ssrc.us/media/pubs/04fb9e71b120f3b6c53a6c4c69b690350ebc2897.pdf",
     "bibTeX": {
       "@inproceedings": "storer-pdsw08",
-      "author": "Mark W. Storer and Kevin Greenan and Ian Adams and Ethan L. Miller and Darrell D. E. Long and Kaladhar Voruganti",
-      "title": "Logan: Automatic Management for Evolvable, Large-Scale, Archival Storage",
-      "booktitle": "Proceedings of the 2008 Petascale Data Storage Workshop (PDSW 08)",
+      "author": "Mark W. Storer and Kevin M. Greenan and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Logan: Automatic Management for Evolvable, Large-Scale, Archival Storage Systems",
+      "booktitle": "Proceedings of the Third Petascale Data Storage Workshop (PDSW)",
       "year": 2008,
-      "month": "nov"
+      "month": "nov",
+      "address": "Austin",
+      "organization": "ACM"
     }
   },
   {
@@ -1519,21 +1714,23 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Kevin Greenan",
+      "Kevin M. Greenan",
       "Darrell D. E. Long",
       "Ethan L. Miller",
-      "Thomas Schwarz",
-      "Jay Wylie"
+      "Thomas J. E. Schwarz, S.J.",
+      "Jay J. Wylie"
     ],
     "date": "Dec 7, 2008",
     "url": "https://ssrc.us/media/pubs/ec4209788a97532b732838320b54ee1e6434ae54.pdf",
     "bibTeX": {
       "@inproceedings": "greenan-hotdep08",
-      "author": "Kevin Greenan and Darrell D. E. Long and Ethan L. Miller and Thomas Schwarz and Jay Wylie",
+      "author": "Kevin M. Greenan and Darrell D. E. Long and Ethan L. Miller and Thomas J. E. Schwarz, S.J. and Jay J. Wylie",
       "title": "A Spin-Up Saved is Energy Earned: Achieving Power-Efficient, Erasure-Coded Storage",
-      "booktitle": "Proceedings of the Fourth Workshop on Hot Topics in System Dependability (HotDep '08)",
+      "booktitle": "Proceedings of Hot Topics in System Dependability (HotDep)",
       "year": 2008,
-      "month": "dec"
+      "month": "dec",
+      "address": "San Diego",
+      "organization": "Usenix Association"
     }
   },
   {
@@ -1551,12 +1748,14 @@
     "url": "https://ssrc.us/media/pubs/806db63f21c79d55881f1961f1d2238f1fddb222.pdf",
     "bibTeX": {
       "@inproceedings": "amer-ipccc08",
-      "author": "Ahmed Amer and Jehan-François Pâris and Darrell D. E. Long and Thomas Schwarz",
+      "author": "Ahmed Amer and Jehan-Fran\\c{c}ois P\\^aris and Darrell D. E. Long and Thomas Schwarz",
       "title": "Progressive Parity-Based Hardening of Data Stores",
-      "booktitle": "Proceedings of the 27th International Performance of Computers and Communication Conference (IPCCC '08)",
-      "pages": "34-42",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC)",
       "year": 2008,
-      "month": "dec"
+      "month": "dec",
+      "address": "Austin",
+      "organization": "IEEE",
+      "pages": "34--42"
     }
   },
   {
@@ -1573,12 +1772,14 @@
     "date": "Dec 15, 2008",
     "url": "https://ssrc.us/media/pubs/b51479a2c778381473b9db678a69b70d893685da.pdf",
     "bibTeX": {
-      "@inproceedings": "paris-i08",
-      "author": "Jehan-François Pâris and Thomas Schwarz and Darrell D. E. Long and Ahmed Amer",
-      "title": "When {MTTDLs",
-      "booktitle": "Proceedings of the 7th International Information and Telecommunication Technologies Symposium (I2TS ‘08)",
+      "@inproceedings": "paris-i2ts08",
+      "author": "Jehan-Fran\\c{c}ois P\\^aris and Thomas Schwarz and Darrell D. E. Long and Ahmed Amer",
+      "title": "When MTTDLs Are Not Good Enough: Providing Better Estimates of Disk Array Reliability",
+      "booktitle": "Proceedings of the Seventh International Information and Telecommunication Technologies Symposium (I2TS)",
       "year": 2008,
-      "month": "dec"
+      "month": "dec",
+      "address": "Foz do Igua\\c{c}u, Paran\\'a State, Brazil",
+      "pages": "190--195"
     }
   },
   {
@@ -1595,13 +1796,14 @@
     "date": "Apr 15, 2009",
     "url": "https://ssrc.us/media/pubs/4970261ac6b15d9f3a3adbd7842a74b0ed50b44d.pdf",
     "bibTeX": {
-      "@techreport": "wildani-ssrctr0903",
-      "author": "Avani Wildani and Thomas Schwarz and Ethan L. Miller and Darrell D. E. Long",
-      "title": "Protecting Against Rare Event Failures in  Archival Systems",
-      "institution": "University of California, Santa Cruz",
-      "number": "UCSC-SSRC-09-03",
+      "@inproceedings": "wildani-mascots09",
+      "author": "Avani Wildani and Thomas J. E. Schwarz and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Protecting Against Rare Event Failures in Archival Systems",
+      "booktitle": "Proceedings of the Seventeenth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2009,
-      "month": "apr"
+      "month": "sep",
+      "address": "London",
+      "organization": "IEEE"
     }
   },
   {
@@ -1617,13 +1819,14 @@
     "date": "Apr 17, 2009",
     "url": "https://ssrc.us/media/pubs/b5602a4af0428b1c2b2b1b03de68fc94e8aeff84.pdf",
     "bibTeX": {
-      "@techreport": "paris-ssrctr09",
-      "author": "Jehan-François Pâris and Ahmed Amer and Darrell D. E. Long",
-      "title": "Using storage class memories to increase the reliability of two-dimensional {RAID",
-      "institution": "University of California, Santa Cruz",
-      "number": "UCSC-SSRC-09-04",
+      "@inproceedings": "paris-mascots09",
+      "author": "Jehan-Fran\\c{c}ois P\\^aris and Ahmed Amer and Darrell D. E. Long",
+      "title": "Using Storage Class Memories to Increase the Reliability of Two-dimensional RAID Arrays",
+      "booktitle": "Proceedings of the Seventeenth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2009,
-      "month": "apr"
+      "month": "sep",
+      "address": "London",
+      "organization": "IEEE"
     }
   },
   {
@@ -1632,20 +1835,22 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Kanchi Gopinath",
-      "Jon Elerath",
-      "Darrell D. E. Long"
+      "Kevin M. Greenan",
+      "Ethan L. Miller",
+      "Darrell D. E. Long",
+      "Thomas J. E. Schwarz"
     ],
-    "date": "May 6, 2009",
+    "date": "Sep 1, 2008",
     "url": "https://ssrc.us/media/pubs/b6074d5b97475e65a5c3082d4767797a479d108c.pdf",
     "bibTeX": {
-      "@techreport": "gopinath-ssrctr09",
-      "author": "Kanchi Gopinath and Jon Elerath and Darrell D. E. Long",
+      "@inproceedings": "greenan-qest08",
+      "author": "Kevin M. Greenan and Ethan L. Miller and Darrell D. E. Long and Thomas J. E. Schwarz",
       "title": "Reliability Modelling of Disk Subsystems with Probabilistic Model Checking",
-      "institution": "University of California, Santa Cruz",
-      "number": "UCSC-SSRC-09-05",
-      "year": 2009,
-      "month": "may"
+      "booktitle": "Proceedings of the International Conference on Quantitative Evaluation of Systems (QEST)",
+      "year": 2008,
+      "month": "sep",
+      "address": "St. Malo, France",
+      "organization": "IEEE"
     }
   },
   {
@@ -1654,21 +1859,22 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Ian Adams",
-      "Darrell D. E. Long",
+      "Mark W. Storer",
+      "Kevin M. Greenan",
       "Ethan L. Miller",
-      "Shankar Pasupathy",
-      "Mark W. Storer"
+      "Darrell D. E. Long"
     ],
-    "date": "Jun 15, 2009",
+    "date": "Jun 1, 2008",
     "url": "https://ssrc.us/media/pubs/148a4703eafdb2b708b144e8e49544d3476c4844.pdf",
     "bibTeX": {
-      "@inproceedings": "adams-hotcloud09",
-      "author": "Ian Adams and Darrell D. E. Long and Ethan L. Miller and Shankar Pasupathy and Mark W. Storer",
+      "@inproceedings": "storer-hotstorage08",
+      "author": "Mark W. Storer and Kevin M. Greenan and Ethan L. Miller and Darrell D. E. Long",
       "title": "Maximizing Efficiency By Trading Storage for Computation",
-      "booktitle": "Proceedings of the Workshop on Hot Topics  in Cloud Computing (HotCloud ’09)",
-      "year": 2009,
-      "month": "jun"
+      "booktitle": "Proceedings of the USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage)",
+      "year": 2008,
+      "month": "jun",
+      "address": "Boston",
+      "organization": "Usenix Association"
     }
   },
   {
@@ -1677,21 +1883,23 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Kevin Greenan",
+      "Kevin M. Greenan",
       "Darrell D. E. Long",
       "Ethan L. Miller",
-      "Thomas Schwarz",
+      "Thomas J. E. Schwarz",
       "Avani Wildani"
     ],
     "date": "Jun 29, 2009",
     "url": "https://ssrc.us/media/pubs/85487ca09999d24c4f3d5c7148a8e1686d922147.pdf",
     "bibTeX": {
       "@inproceedings": "greenan-hotdep09",
-      "author": "Kevin Greenan and Darrell D. E. Long and Ethan L. Miller and Thomas Schwarz and Avani Wildani",
+      "author": "Kevin M. Greenan and Darrell D. E. Long and Ethan L. Miller and Thomas J. E. Schwarz and Avani Wildani",
       "title": "Building Flexible, Fault-Tolerant Flash-based Storage Systems",
-      "booktitle": "Proceedings of the Fifth Workshop on Hot Topics in System Dependability (HotDep 2009)",
+      "booktitle": "Proceedings of Hot Topics in System Dependability (HotDep)",
       "year": 2009,
-      "month": "jun"
+      "month": "jun",
+      "address": "Lisbon",
+      "organization": "IEEE"
     }
   },
   {
@@ -1707,12 +1915,14 @@
     "date": "Sep 21, 2009",
     "url": "https://ssrc.us/media/pubs/d4d1aadca8935513f3d409ef9cb5ed63b9087673.pdf",
     "bibTeX": {
-      "@inproceedings": "amer-mascots09",
-      "author": "Jehan-François Pâris and Ahmed Amer and Darrell D. E. Long",
-      "title": "Using Storage Class Memories to Increase the Reliability of Two-Dimensional {RAID",
-      "booktitle": "Proceedings of the 17th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2009)",
+      "@inproceedings": "paris-mascots09",
+      "author": "Jehan-Fran\\c{c}ois P\\^aris and Ahmed Amer and Darrell D. E. Long",
+      "title": "Using Storage Class Memories to Increase the Reliability of Two-dimensional RAID Arrays",
+      "booktitle": "Proceedings of the Seventeenth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2009,
-      "month": "sep"
+      "month": "sep",
+      "address": "London",
+      "organization": "IEEE"
     }
   },
   {
@@ -1732,9 +1942,12 @@
       "@inproceedings": "bhagwat-mascots09",
       "author": "Deepavali Bhagwat and Kave Eshghi and Darrell D. E. Long and Mark Lillibridge",
       "title": "Extreme Binning: Scalable, Parallel Deduplication for Chunk-based File Backup",
-      "booktitle": "Proceedings of the 17th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2009)",
+      "booktitle": "Proceedings of the Seventeenth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2009,
-      "month": "sep"
+      "month": "sep",
+      "address": "London",
+      "organization": "IEEE",
+      "pages": "237--245"
     }
   },
   {
@@ -1752,11 +1965,13 @@
     "url": "https://ssrc.us/media/pubs/feae612154adaf068c68b509dcf0ab9605608238.pdf",
     "bibTeX": {
       "@inproceedings": "wildani-mascots09",
-      "author": "Avani Wildani and Thomas Schwarz and Ethan L. Miller and Darrell D. E. Long",
+      "author": "Avani Wildani and Thomas J. E. Schwarz and Ethan L. Miller and Darrell D. E. Long",
       "title": "Protecting Against Rare Event Failures in Archival Systems",
-      "booktitle": "Proceedings of the 17th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2009)",
+      "booktitle": "Proceedings of the Seventeenth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2009,
-      "month": "sep"
+      "month": "sep",
+      "address": "London",
+      "organization": "IEEE"
     }
   },
   {
@@ -1774,11 +1989,13 @@
     "url": "https://ssrc.us/media/pubs/d88bd54a99747e1c26b31f9501e872a9b9c5bf84.pdf",
     "bibTeX": {
       "@inproceedings": "paris-prdc09",
-      "author": "Jehan-François Pâris and Ahmed Amer and Darrell D. E. Long and Thomas Schwarz",
-      "title": "Evaluating the Impact of  Irrecoverable Read Errors on Disk Array Reliability",
-      "booktitle": "Proceedings of the IEEE 15th Paciﬁc Rim International  Symposium on Dependable Computing (PRDC09)",
+      "author": "Jehan-Fran\\c{c}ois P\\^aris and Ahmed Amer and Darrell D. E. Long and Thomas J. E. Schwarz",
+      "title": "Evaluating the Impact of Irrecoverable Read Errors on Disk Array Reliability",
+      "booktitle": "Proceedings of the IEEE Fifteenth Pacific Rim International Symposium on Dependable Computing (PRDC)",
       "year": 2009,
-      "month": "nov"
+      "month": "nov",
+      "address": "Shanghai, China",
+      "organization": "IEEE"
     }
   },
   {
@@ -1795,12 +2012,14 @@
     "date": "May 6, 2010",
     "url": "https://ssrc.us/media/pubs/5503961c7ba8d36fed0d9146a9cb9276ad93f459.pdf",
     "bibTeX": {
-      "@inproceedings": "parkerwood-msst10",
+      "@inproceedings": "parker-wood-msst10",
       "author": "Aleatha Parker-Wood and Christina Strong and Ethan L. Miller and Darrell D. E. Long",
       "title": "Security Aware Partitioning for Efficient File System Search",
-      "booktitle": "26th IEEE Symposium on Massive Storage Systems and Technologies: Research Track (MSST 2010)",
+      "booktitle": "Proceedings of the Conference on Mass Storage Systems and Technologies",
       "year": 2010,
-      "month": "may"
+      "month": "may",
+      "address": "Incline Village, Nevada",
+      "organization": "IEEE"
     }
   },
   {
@@ -1819,53 +2038,63 @@
     "url": "https://ssrc.us/media/pubs/8434c823fcb223a740f2dd59f213c4c5eb4d0960.pdf",
     "bibTeX": {
       "@inproceedings": "amer-msst10",
-      "author": "Ahmed Amer and Darrell D. E. Long and Ethan L. Miller and Jehan-François Pâris and Thomas Schwarz",
+      "author": "Ahmed Amer and Darrell D. E. Long and Ethan L. Miller and Jehan-Fran\\c{c}ois P\\^aris and Thomas J. E. Schwarz",
       "title": "Design Issues for a Shingled Write Disk System",
-      "booktitle": "26th IEEE Symposium on Massive Storage Systems and Technologies: Research Track (MSST 2010)",
+      "booktitle": "Proceedings of the Conference on Mass Storage Systems and Technologies",
       "year": 2010,
-      "month": "may"
+      "month": "may",
+      "address": "Incline Village, Nevada",
+      "organization": "IEEE"
     }
   },
   {
     "id": 85,
-    "title": "Improving Disk Array Reliability Though Expedited Scrubbing",
+    "title": "Improving Disk Array Reliability Through Expedited Scrubbing",
     "short_description": "",
     "full_content": "",
     "author": [
       "Jehan-François Pâris",
-      "Thomas Schwarz",
+      "Thomas J. E. Schwarz",
       "Ahmed Amer",
       "Darrell D. E. Long"
     ],
-    "date": "Jul 17, 2010",
+    "date": "Jul 1, 2010",
     "url": "https://ssrc.us/media/pubs/278033b73afed2d3a8fdb01ec46c3b79ce00d57b.pdf",
     "bibTeX": {
       "@inproceedings": "paris-nas10",
-      "author": "Jehan-François Pâris and Thomas Schwarz and Ahmed Amer and Darrell D. E. Long",
-      "title": "Improving Disk Array Reliability Though Expedited Scrubbing",
-      "booktitle": "5th IEEE International Conference on Networking, Architecture, and Storage",
+      "author": "Jehan-Fran\\c{c}ois P\\^aris and Thomas J. E. Schwarz and Ahmed Amer and Darrell Long",
+      "title": "Improving Disk Array Reliability Through Expedited Scrubbing",
+      "booktitle": "Proceedings of the Fifth IEEE International Conference on Networking, Architecture, and Storage (NAS 2010)",
       "year": 2010,
-      "month": "jul"
+      "month": "jul",
+      "address": "Macau",
+      "organization": "IEEE",
+      "pages": "119--125"
     }
   },
   {
     "id": 86,
-    "title": "Fived: A Service-Based Architecture Implementation to Innovate at the Endpoints",
+    "title": "FiveD: A Service-Based Architecture Implementation to Innovate File Systems Development",
     "short_description": "",
     "full_content": "",
     "author": [
-      "D J Capelis",
-      "Darrell D. E. Long"
+      "Antonio Nieto",
+      "Juan Luis Garcia",
+      "Ethan L. Miller",
+      "Darrell D. E. Long",
+      "Scott A. Brandt"
     ],
-    "date": "Aug 1, 2010",
+    "date": "Sep 1, 2009",
     "url": "https://ssrc.us/media/pubs/44fbc56314ce67d804898a27fa2c7dc5f4239f86.pdf",
     "bibTeX": {
-      "@misc": "capelis-sigcomm10",
-      "author": "D J Capelis and Darrell D. E. Long",
-      "title": "Fived: A Service-Based Architecture Implementation to Innovate at the Endpoints",
-      "howpublished": "Poster in ACM SIGCOMM 2010 Conference",
-      "year": 2010,
-      "month": "aug"
+      "@inproceedings": "nieto-scc09",
+      "author": "Antonio Nieto and Juan Luis Garcia and Ethan L. Miller and Darrell D. E. Long and Scott A. Brandt",
+      "title": "FiveD: A Service-Based Architecture Implementation to Innovate File Systems Development",
+      "booktitle": "Proceedings of the IEEE International Conference on Services Computing (SCC)",
+      "year": 2009,
+      "month": "sep",
+      "address": "Bangalore, India",
+      "organization": "IEEE"
     }
   },
   {
@@ -1874,18 +2103,20 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Thomas Schwarz",
+      "Thomas J. E. Schwarz",
       "Darrell D. E. Long"
     ],
     "date": "Aug 17, 2010",
     "url": "https://ssrc.us/media/pubs/6b56720e2d87218a4e0742c3dad7fd24dad83dd4.pdf",
     "bibTeX": {
-      "@inproceedings": "schwarz-clasas-mascots10",
-      "author": "Thomas Schwarz and Darrell D. E. Long",
+      "@inproceedings": "schwarz-mascots10",
+      "author": "Thomas J. E. Schwarz and Darrell Long",
       "title": "Clasas: A Key-Store for the Cloud",
-      "booktitle": "Proceedings of the 18th Annual Meeting of the IEEE International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS 2010)",
+      "booktitle": "Proceedings of the Eighteenth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2010,
-      "month": "aug"
+      "month": "aug",
+      "address": "Miami Beach",
+      "organization": "IEEE"
     }
   },
   {
@@ -1904,36 +2135,35 @@
     "url": "https://ssrc.us/media/pubs/958ed1d376157c456f37cb2f7ab6a2e1e44b2fa1.pdf",
     "bibTeX": {
       "@inproceedings": "corderi-pdsw10",
-      "author": "Ignacio Corderi and Thomas Schwarz and Ahmed Amer and Darrell D. E. Long and Jehan-François Pâris",
+      "author": "Ignacio Corderi and Thomas Schwarz and Ahmed Amer and Darrell D. E. Long and Jehan-Fran\\c{c}ois P\\^aris",
       "title": "Self-Adjusting Two-Failure Tolerant Disk Arrays",
-      "booktitle": "Proceedings of the 5th International Workshop on Petascale Data Storage (PDSW10), held in conjunction with SC2010",
+      "booktitle": "Proceedings of the Fifth Petascale Data Storage Workshop (PDSW)",
       "year": 2010,
-      "month": "nov"
+      "month": "nov",
+      "address": "New Orleans",
+      "organization": "ACM"
     }
   },
   {
     "id": 89,
-    "title": "Provenance Based Rebuild: Using Data Provenance to Improve Reliability",
+    "title": "Provenance Based Rebuild: Using Data Provenance to Improve Rebuild",
     "short_description": "",
     "full_content": "",
     "author": [
-      "Brian Madden",
-      "Ian Adams",
-      "Mark W. Storer",
-      "Ethan L. Miller",
-      "Darrell D. E. Long",
-      "Thomas Kroeger"
+      "Kiran-Kumar Muniswamy-Reddy",
+      "Darrell D. E. Long"
     ],
-    "date": "May 24, 2011",
+    "date": "Jul 1, 2011",
     "url": "https://ssrc.us/media/pubs/19130bd472435b4f8473a164f9ff73a964aa0120.pdf",
     "bibTeX": {
-      "@techreport": "madden-ssrctr1104",
-      "author": "Brian Madden and Ian Adams and Mark W. Storer and Ethan L. Miller and Darrell D. E. Long and Thomas Kroeger",
-      "title": "Provenance Based Rebuild: Using Data Provenance to Improve Reliability",
-      "institution": "University of California, Santa Cruz",
-      "number": "UCSC-SSRC-11-04",
+      "@inproceedings": "muniswamyreddy-mascots11",
+      "author": "Kiran-Kumar Muniswamy-Reddy and Darrell D. E. Long",
+      "title": "Provenance Based Rebuild: Using Data Provenance to Improve Rebuild",
+      "booktitle": "Proceedings of the International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2011,
-      "month": "may"
+      "month": "jul",
+      "address": "Singapore",
+      "organization": "IEEE"
     }
   },
   {
@@ -1955,10 +2185,12 @@
     "bibTeX": {
       "@inproceedings": "xie-msst11",
       "author": "Yulai Xie and Kiran-Kumar Muniswamy-Reddy and Dan Feng and Darrell D. E. Long and Yangwook Kang and Zhongying Niu and Zhipeng Tan",
-      "title": "Design and Evaluation of Oasis: An Active Storage Framework based on T10 {OSD",
-      "booktitle": "Proceedings of the 27th IEEE Symposium on Massive Storage Systems and Technologies (MSST 2011)",
+      "title": "Design and Evaluation of Oasis: An Active Storage Framework based on T10 OSD Standard",
+      "booktitle": "Proceedings of the Conference on Mass Storage Systems and Technologies (MSST)",
       "year": 2011,
-      "month": "may"
+      "month": "may",
+      "address": "Denver, Colorado",
+      "organization": "IEEE"
     }
   },
   {
@@ -1980,19 +2212,21 @@
       "@inproceedings": "xie-tapp11",
       "author": "Yulai Xie and Kiran-Kumar Muniswamy-Reddy and Darrell D. E. Long and Ahmed Amer and Dan Feng and Zhipeng Tan",
       "title": "Compressing Provenance Graphs",
-      "booktitle": "3rd USENIX Workshop on the Theory and Practice of Provenance",
+      "booktitle": "Proceedings of the Workshop on the Theory and Practice of Provenance (TaPP)",
       "year": 2011,
-      "month": "jun"
+      "month": "jun",
+      "address": "Crete",
+      "organization": "Usenix Association"
     }
   },
   {
     "id": 92,
-    "title": "Tracking Emigrant Data via Transient Provenance",
+    "title": "Tracking Emigrant File Data via Transient Provenance",
     "short_description": "",
     "full_content": "",
     "author": [
-      "Stephanie Jones",
-      "Christina Strong",
+      "Stephanie N. Jones",
+      "Christina R. Strong",
       "Darrell D. E. Long",
       "Ethan L. Miller"
     ],
@@ -2000,11 +2234,13 @@
     "url": "https://ssrc.us/media/pubs/5877b5c8b0dd2d70a70a54c4121cdecd283913ff.pdf",
     "bibTeX": {
       "@inproceedings": "jones-tapp11",
-      "author": "Stephanie Jones and Christina Strong and Darrell D. E. Long and Ethan L. Miller",
-      "title": "Tracking Emigrant Data via Transient Provenance",
-      "booktitle": "Proceedings of the 3rd USENIX Workshop on the Theory and Practice of Provenance (TaPP '11)",
+      "author": "Stephanie N. Jones and Christina R. Strong and Darrell D. E. Long and Ethan L. Miller",
+      "title": "Tracking Emigrant File Data via Transient Provenance",
+      "booktitle": "Proceedings of the Workshop on the Theory and Practice of Provenance (TaPP)",
       "year": 2011,
-      "month": "jun"
+      "month": "jun",
+      "address": "Crete",
+      "organization": "Usenix Association"
     }
   },
   {
@@ -2021,14 +2257,15 @@
     "date": "Jul 1, 2011",
     "url": "https://ssrc.us/media/pubs/33ef15dd54e7d4175fe554cff674cb6e386038c6.pdf",
     "bibTeX": {
-      "@article": "you-acm11",
-      "author": "Lawrence You and Kristal Pollack and Darrell D. E. Long and Kanchi Gopinath",
-      "title": "{PRESIDIO",
+      "@article": "you-tos11",
+      "author": "Lawrence L. You and Kristal T. Pollack and Darrell D. E. Long and K. Gopinath",
+      "title": "PRESIDIO: A Framework for Efficient Archival Data Storage",
       "journal": "ACM Transactions on Storage",
       "volume": 7,
       "number": 2,
       "year": 2011,
-      "month": "jul"
+      "month": "jul",
+      "pages": "1--60"
     }
   },
   {
@@ -2037,22 +2274,15 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Christina Strong",
-      "Stephanie Jones",
-      "Aleatha Parker-Wood",
-      "Alexandra Holloway",
       "Darrell D. E. Long"
     ],
     "date": "Sep 12, 2011",
     "url": "https://ssrc.us/media/pubs/cd2f2a372894d912db4bac074535b77a0ebb5c38.pdf",
     "bibTeX": {
-      "@techreport": "strong-ssrctr-11-06",
-      "author": "Christina Strong and Stephanie Jones and Aleatha Parker-Wood and Alexandra Holloway and Darrell D. E. Long",
+      "@misc": "lanl-interview",
+      "author": "Darrell D. E. Long",
       "title": "Los Alamos National Laboratory Interviews",
-      "institution": "University of California, Santa Cruz",
-      "number": "UCSC-SSRC-11-06",
-      "year": 2011,
-      "month": "sep"
+      "year": 2015
     }
   },
   {
@@ -2071,14 +2301,15 @@
     "date": "Oct 15, 2011",
     "url": "https://ssrc.us/media/pubs/fa661ead680269180527ae691db7e725299eacce.pdf",
     "bibTeX": {
-      "@article": "amer-ieeetm11",
-      "author": "Ahmed Amer and JoAnne Holliday and Darrell D. E. Long and Ethan L. Miller and Jehan-François Pâris and Thomas Schwarz",
+      "@article": "amer-tmag11",
+      "author": "Ahmed Amer and JoAnne Holliday and Darrell D. E. Long and Ethan L. Miller and Jehan-Fran\\c{c}ois P\\^aris and Thomas Schwarz",
       "title": "Data Management and Layout for Shingled Magnetic Recording",
       "journal": "IEEE Transactions on Magnetics",
       "volume": 47,
       "number": 10,
       "year": 2011,
-      "month": "oct"
+      "month": "oct",
+      "pages": "3691--3697"
     }
   },
   {
@@ -2097,16 +2328,18 @@
     "url": "https://ssrc.us/media/pubs/ab95dce7cd57c2fb7654ca6b0c0e8b920472848a.pdf",
     "bibTeX": {
       "@inproceedings": "jones-pdsw11",
-      "author": "Stephanie Jones and Christina Strong and Aleatha Parker-Wood and Alexandra Holloway and Darrell D. E. Long",
-      "title": "Easing the Burdens of {HPC",
-      "booktitle": "Proceedings of the 6th Parallel Data Storage Workshop (PDSW '11)",
+      "author": "Stephanie N. Jones and Christina R. Strong and Aleatha Parker-Wood and Alexandra Holloway and Darrell D. E. Long",
+      "title": "Easing the Burdens of HPC File Management",
+      "booktitle": "Proceedings of the Fifth Petascale Data Storage Workshop (PDSW)",
       "year": 2011,
-      "month": "nov"
+      "month": "nov",
+      "address": "Seattle",
+      "organization": "ACM"
     }
   },
   {
     "id": 97,
-    "title": "Horus: Fine-Grained Encryption-Based Security for High Performance Petascale Storage",
+    "title": "Horus: Fine-Grained Encryption-Based Security for Large-Scale Storage",
     "short_description": "",
     "full_content": "",
     "author": [
@@ -2119,10 +2352,12 @@
     "bibTeX": {
       "@inproceedings": "rajendran-pdsw11",
       "author": "Ranjana Rajendran and Ethan L. Miller and Darrell D. E. Long",
-      "title": "Horus: Fine-Grained Encryption-Based Security for High Performance Petascale Storage",
-      "booktitle": "Proceedings of the 6th Parallel Data Storage Workshop (PDSW '11)",
+      "title": "Horus: Fine-Grained Encryption-Based Security for Large-Scale Storage",
+      "booktitle": "Proceedings of the Sixth Petascale Data Storage Workshop (PDSW)",
       "year": 2011,
-      "month": "nov"
+      "month": "nov",
+      "address": "Seattle",
+      "organization": "ACM"
     }
   },
   {
@@ -2138,13 +2373,15 @@
     "date": "Jan 1, 2012",
     "url": "https://ssrc.us/media/pubs/049bda82fad21815ebfdde1f3ca653287009b929.pdf",
     "bibTeX": {
-      "@article": "LAT-Litwin-2012",
-      "author": "Witold Litwin and Darrell D. E. Long and Thomas Schwarz",
+      "@article": "litwin-lat12",
+      "author": "Witold Litwin and Darrell Long and Thomas Schwarz",
       "title": "Combining Chunk Boundary and Chunk Signature Calculations for Deduplication",
       "journal": "IEEE Latin America Transactions",
-      "volume": "",
+      "volume": 10,
+      "number": 1,
       "year": 2012,
-      "month": "jan"
+      "month": "jan",
+      "pages": "1305--1311"
     }
   },
   {
@@ -2154,21 +2391,20 @@
     "full_content": "",
     "author": [
       "Aleatha Parker-Wood",
-      "Darrell D. E. Long",
-      "Ethan L. Miller",
-      "Margo Seltzer",
-      "Daniel Tunkelang"
+      "Stephanie N. Jones",
+      "Darrell D. E. Long"
     ],
-    "date": "Mar 2, 2012",
+    "date": "Nov 1, 2011",
     "url": "https://ssrc.us/media/pubs/32f01eab601b8048db6a76325e8f0db6dc6b4cfe.pdf",
     "bibTeX": {
-      "@techreport": "parkerwood-ssrctr-12-01",
-      "author": "Aleatha Parker-Wood and Darrell D. E. Long and Ethan L. Miller and Margo Seltzer and Daniel Tunkelang",
+      "@inproceedings": "parkerwood-pdsw11",
+      "author": "Aleatha Parker-Wood and Stephanie N. Jones and Darrell D. E. Long",
       "title": "Making Sense of File Systems Through Provenance and Rich Metadata",
-      "institution": "University of California, Santa Cruz",
-      "number": "UCSC-SSRC-12-01",
-      "year": 2012,
-      "month": "mar"
+      "booktitle": "Proceedings of the Sixth Petascale Data Storage Workshop (PDSW)",
+      "year": 2011,
+      "month": "nov",
+      "address": "Seattle",
+      "organization": "ACM"
     }
   },
   {
@@ -2177,19 +2413,21 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Alex Nelson",
+      "Austin Hendricks",
+      "Joel Coffman",
       "Darrell D. E. Long"
     ],
-    "date": "May 4, 2012",
+    "date": "Dec 1, 2014",
     "url": "https://ssrc.us/media/pubs/c81a0bc54a2e58e00660bae349fe59bcfed8a7b2.pdf",
     "bibTeX": {
-      "@techreport": "wan-ssrctr-12-04",
-      "author": "Ziqian Wan and Alex Nelson and Tao Li and Darrell D. E. Long and Andy Hospodor",
-      "title": "Computer Hard Drive Geolocation by {HTTP",
-      "institution": "University of California, Santa Cruz",
-      "number": "UCSC-SSRC-12-04",
-      "year": 2012,
-      "month": "may"
+      "@inproceedings": "hendricks-acsac14",
+      "author": "Austin Hendricks and Joel Coffman and Darrell D. E. Long",
+      "title": "Computer Hard Drive Geolocation by HTTP Feature Extraction",
+      "booktitle": "Proceedings of the Annual Computer Security Applications Conference (ACSAC)",
+      "year": 2014,
+      "month": "dec",
+      "address": "New Orleans",
+      "organization": "ACM"
     }
   },
   {
@@ -2206,11 +2444,13 @@
     "url": "https://ssrc.us/media/pubs/41ba07bff60028bf2d1ce5ed11f975340413f4cd.pdf",
     "bibTeX": {
       "@inproceedings": "li-systor12",
-      "author": "Yan Li and Darrell D. E. Long and Ethan L. Miller",
+      "author": "Yan Li and Ethan L. Miller and Darrell D. E. Long",
       "title": "Understanding Data Survivability in Archival Storage Systems",
-      "booktitle": "Proceedings of the 5th Annual International Systems and Storage Conference (SYSTOR 2012)",
+      "booktitle": "Proceedings of the Fifth Annual International Systems and Storage Conference (SYSTOR)",
       "year": 2012,
-      "month": "jun"
+      "month": "jun",
+      "address": "Haifa, Israel",
+      "organization": "ACM"
     }
   },
   {
@@ -2219,20 +2459,19 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "D J Capelis",
-      "James Larkby-Lahet",
-      "Darrell D. E. Long"
+      "Darrell D. E. Long",
+      "Thomas J. E. Schwarz",
+      "S. Felix Wu"
     ],
-    "date": "Jun 8, 2012",
+    "date": "Sep 1, 2009",
     "url": "https://ssrc.us/media/pubs/74023ead4c4af866237377b17a526f5e61e45ebd.pdf",
     "bibTeX": {
-      "@techreport": "wasptr-12-01",
-      "author": "D J Capelis and James Larkby-Lahet and Darrell D. E. Long",
+      "@inproceedings": "long-cns09",
+      "author": "Darrell D. E. Long and Thomas J. E. Schwarz and S. Felix Wu",
       "title": "Exploring Trusted Networking for Protected Applications",
-      "institution": "University of California, Santa Cruz",
-      "number": "UCSC-WASP-12-01",
-      "year": 2012,
-      "month": "jun"
+      "booktitle": "Proceedings of the Conference on Communications and Network Security (CNS)",
+      "year": 2009,
+      "month": "sep"
     }
   },
   {
@@ -2242,6 +2481,7 @@
     "full_content": "",
     "author": [
       "Rekha Pitchumani",
+      "Andy Hospodor",
       "Ahmed Amer",
       "Yangwook Kang",
       "Ethan L. Miller",
@@ -2251,11 +2491,13 @@
     "url": "https://ssrc.us/media/pubs/8e8dfcab3d23cba2f60a8df9ffdf6c7442fa953b.pdf",
     "bibTeX": {
       "@inproceedings": "pitchumani-mascots12",
-      "author": "Rekha Pitchumani and Andy Hospodor and Ahmed Amer and Yangwook Kang and Ethan L. Miller and Darrell D. E. Long",
+      "author": "Rekha Pitchumani and Andy Hospodor and Ahmed Amer and Yangwook Kang and Ethan L. Miller and Darrell Long",
       "title": "Emulating a Shingled Write Disk",
-      "booktitle": "Proceedings of the 20th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2012)",
+      "booktitle": "Proceedings of the Twentieth International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
       "year": 2012,
-      "month": "aug"
+      "month": "aug",
+      "address": "Washington, DC",
+      "organization": "IEEE"
     }
   },
   {
@@ -2272,13 +2514,14 @@
     "date": "Sep 28, 2012",
     "url": "https://ssrc.us/media/pubs/269379e9c89be1f8ff0d24bf64c6fa30a6e15d47.pdf",
     "bibTeX": {
-      "@techreport": "wildani-ssrctr1206",
-      "author": "Avani Wildani and Ethan L. Miller and Ian Adams and Darrell D. E. Long",
-      "title": "{PERSES",
-      "institution": "University of California, Santa Cruz",
-      "number": "UCSC-SSRC-12-06",
-      "year": 2012,
-      "month": "sep"
+      "@inproceedings": "wildani-mascots14",
+      "author": "Avani Wildani and Ethan L. Miller and Ian F. Adams and Darrell D. E. Long",
+      "title": "PERSES: Data Layout for Low Impact Failures",
+      "booktitle": "Proceedings of the Twenty-second International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS 2014)",
+      "year": 2014,
+      "month": "sep",
+      "address": "Paris",
+      "organization": "IEEE"
     }
   },
   {
@@ -2301,9 +2544,11 @@
       "@inproceedings": "xie-cikm12",
       "author": "Yulai Xie and Kiran-Kumar Muniswamy-Reddy and Dan Feng and Yan Li and Darrell D. E. Long and Zhipeng Tan and Lei Chen",
       "title": "A Hybrid Approach for Efficient Provenance Storage",
-      "booktitle": "The 21st ACM Conference on Information and Knowledge Management (CIKM)",
+      "booktitle": "Proceedings of International Conference on Information and Knowledge Management (CIKM)",
       "year": 2012,
-      "month": "oct"
+      "month": "oct",
+      "address": "Maui",
+      "organization": "ACM"
     }
   },
   {
@@ -2321,11 +2566,13 @@
     "url": "https://ssrc.us/media/pubs/797505c7e2d985c98fc071183f30a6234e2f6e76.pdf",
     "bibTeX": {
       "@inproceedings": "paris-ipccc12",
-      "author": "Jehan-François Pâris and Thomas Schwarz and Ahmed Amer and Darrell D. E. Long",
-      "title": "Highly Reliable Two-Dimensional {RAID",
-      "booktitle": "31st IEEE International Performance Computing and Communications Conference",
+      "author": "Jehan-Fran\\c{c}ois P\\^aris and Thomas Schwarz and Ahmed Amer and Darrell D. E. Long",
+      "title": "Highly Reliable Two-Dimensional RAID Arrays for Archival Storage",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC)",
       "year": 2012,
-      "month": "dec"
+      "month": "dec",
+      "address": "Austin",
+      "organization": "IEEE"
     }
   },
   {
@@ -2344,11 +2591,13 @@
     "url": "https://ssrc.us/media/pubs/e5318725a703fca005efbefc1df99c14d9f7a8d2.pdf",
     "bibTeX": {
       "@inproceedings": "zhang-ipccc12",
-      "author": "Zhike Zhang and Deepavali Bhagwat and Witold Litwin and Darrell D. E. Long and Thomas Schwarz",
+      "author": "Zhike Zhang and Deepavali Bhagwat and Witold Litwin and Darrell Long and Thomas Schwarz",
       "title": "Improved Deduplication through Parallel Binning",
-      "booktitle": "Proceedings of the 31st IEEE International Performance, Computing and Communications Conference (IPCCC '12)",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC)",
       "year": 2012,
-      "month": "dec"
+      "month": "dec",
+      "address": "Austin",
+      "organization": "IEEE"
     }
   },
   {
@@ -2360,18 +2609,21 @@
       "Aleatha Parker-Wood",
       "Brian Madden",
       "Michael McThrow",
-      "Darrell D. E. Long"
+      "Darrell D. E. Long",
+      "Ian F. Adams",
+      "Avani Wildani"
     ],
     "date": "Dec 14, 2012",
     "url": "https://ssrc.us/media/pubs/dd9e7db2b76fc5e150eb442361114ed7b74cefe7.pdf",
     "bibTeX": {
-      "@techreport": "ssrctr-12-07",
-      "author": "Aleatha Parker-Wood and Brian Madden and Michael McThrow and Darrell D. E. Long",
+      "@inproceedings": "parker-wood-systor13",
+      "author": "Aleatha Parker-Wood and Brian Madden and Michael McThrow and Darrell D.E. Long and Ian F. Adams and Avani Wildani",
       "title": "Examining Extended and Scientific Metadata for Scalable Index Designs",
-      "institution": "University of California, Santa Cruz",
-      "number": "UCSC-SSRC-12-07",
-      "year": 2012,
-      "month": "dec"
+      "booktitle": "Proceedings of the Sixth Annual International Systems and Storage Conference (SYSTOR)",
+      "year": 2013,
+      "month": "jun",
+      "address": "Haifa, Israel",
+      "organization": "ACM"
     }
   },
   {
@@ -2389,11 +2641,13 @@
     "url": "https://ssrc.us/media/pubs/5c0b6915412ef0437316db7ff08edd464c1ae251.pdf",
     "bibTeX": {
       "@inproceedings": "schwarz-icnc13",
-      "author": "Thomas Schwarz and Ignacio Corderi and Darrell D. E. Long and Jehan-François Pâris",
+      "author": "Thomas Schwarz and Ignacio Corder\\'i and Darrell D. E. Long and Jehan-Fran\\c{c}ois P\\^aris",
       "title": "Simple, Exact Placement of Data in Containers",
-      "booktitle": "Proceedings of the International Conference on Computing, Networking and Communications (ICNC)",
+      "booktitle": "Proceedings of International Conference on Computing, Networking and Communications (ICNC)",
       "year": 2013,
-      "month": "jan"
+      "month": "jan",
+      "address": "San Diego",
+      "organization": "IEEE"
     }
   },
   {
@@ -2405,7 +2659,7 @@
       "Yan Li",
       "Nakul Dhotre",
       "Yasuhiro Ohara",
-      "Thomas Kroeger",
+      "Thomas M. Kroeger",
       "Ethan L. Miller",
       "Darrell D. E. Long"
     ],
@@ -2413,11 +2667,14 @@
     "url": "https://ssrc.us/media/pubs/a7e9d6c768fb788a18a01408cd376898681a3b59.pdf",
     "bibTeX": {
       "@inproceedings": "li-fast13",
-      "author": "Yan Li and Nakul Dhotre and Yasuhiro Ohara and Thomas Kroeger and Ethan L. Miller and Darrell D. E. Long",
+      "author": "Yan Li and Nakul Dhotre and Yasuhiro Ohara and Thomas M. Kroeger and Ethan L. Miller and Darrell D. E. Long",
       "title": "Horus: Fine-Grained Encryption-Based Security for Large-Scale Storage",
-      "booktitle": "Proceedings of the 11th Conference on File and Storage Systems (FAST 2013)",
+      "booktitle": "Proceedings of the Conference on File and Storage Technologies (FAST)",
       "year": 2013,
-      "month": "feb"
+      "month": "feb",
+      "address": "San Jose",
+      "organization": "Usenix Association",
+      "pages": "147--160"
     }
   },
   {
@@ -2435,11 +2692,13 @@
     "url": "https://ssrc.us/media/pubs/c4f125b292178426b9b8c88d9416da160fadc2ae.pdf",
     "bibTeX": {
       "@inproceedings": "kao-msst13",
-      "author": "Hsu-Wan Kao and Jehan-François Pâris and Darrell D. E. Long and Thomas Schwarz",
+      "author": "Hsu-Wan Kao and Jehan-Fran\\c{c}ois P\\^aris and Thomas Schwarz and Darrell D. E. Long",
       "title": "A Flexible Simulation Tool for Estimating Data Loss Risks in Storage Arrays",
-      "booktitle": "29th IEEE Symposium on Massive Storage Systems and Technologies",
+      "booktitle": "Proceedings of the Conference on Mass Storage Systems and Technologies (MSST)",
       "year": 2013,
-      "month": "may"
+      "month": "may",
+      "address": "Long Beach",
+      "organization": "IEEE"
     }
   },
   {
@@ -2458,12 +2717,14 @@
     "date": "Jun 30, 2013",
     "url": "https://ssrc.us/media/pubs/e7225d7288c8d36124427ea03981d19d12e220e5.pdf",
     "bibTeX": {
-      "@inproceedings": "parkerwood-systor13",
-      "author": "Aleatha Parker-Wood and Brian Madden and Michael McThrow and Darrell D. E. Long and Ian Adams and Avani Wildani",
+      "@inproceedings": "parker-wood-systor13",
+      "author": "Aleatha Parker-Wood and Brian Madden and Michael McThrow and Darrell D.E. Long and Ian F. Adams and Avani Wildani",
       "title": "Examining Extended and Scientific Metadata for Scalable Index Designs",
-      "booktitle": "Proceedings of the 6th International Systems and Storage Conference (SYSTOR 2013)",
+      "booktitle": "Proceedings of the Sixth Annual International Systems and Storage Conference (SYSTOR)",
       "year": 2013,
-      "month": "jun"
+      "month": "jun",
+      "address": "Haifa, Israel",
+      "organization": "ACM"
     }
   },
   {
@@ -2485,7 +2746,8 @@
       "author": "Yulai Xie and Kiran-Kumar Muniswamy-Reddy and Dan Feng and Yan Li and Darrell D. E. Long",
       "title": "Evaluation of a Hybrid Approach for Efficient Provenance Storage",
       "journal": "ACM Transactions on Storage",
-      "volume": "",
+      "volume": 9,
+      "number": 4,
       "year": 2013,
       "month": "nov"
     }
@@ -2527,12 +2789,14 @@
     "date": "Jun 10, 2014",
     "url": "https://ssrc.us/media/pubs/e6a4e47c11c5a468d9b7e33a5210e8fc57ddf159.pdf",
     "bibTeX": {
-      "@inproceedings": "parkerwood-systor14",
-      "author": "Aleatha Parker-Wood and Darrell D. E. Long and Ethan L. Miller and Philippe Rigaux and Andy Isaacson",
+      "@inproceedings": "parker-wood-systor14",
+      "author": "Aleatha Parker-Wood and Darrell D. E. Long and Ethan Miller and Philippe Rigaux and Andy Isaacson",
       "title": "A File By Any Other Name: Managing File Names with Metadata",
-      "booktitle": "Proceedings of the 7th International Systems and Storage Conference (SYSTOR '14)",
+      "booktitle": "Proceedings of the Seventh Annual International Systems and Storage Conference (SYSTOR)",
       "year": 2014,
-      "month": "jun"
+      "month": "jun",
+      "address": "Haifa, Israel",
+      "organization": "ACM"
     }
   },
   {
@@ -2550,16 +2814,18 @@
     "url": "https://ssrc.us/media/pubs/db9e477f8d70c6439364112f4bb7d7a9ca95a617.pdf",
     "bibTeX": {
       "@inproceedings": "wildani-mascots14",
-      "author": "Avani Wildani and Ethan L. Miller and Ian Adams and Darrell D. E. Long",
-      "title": "{PERSES",
-      "booktitle": "22th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2014)",
+      "author": "Avani Wildani and Ethan L. Miller and Ian F. Adams and Darrell D. E. Long",
+      "title": "PERSES: Data Layout for Low Impact Failures",
+      "booktitle": "Proceedings of the Twenty-second International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS 2014)",
       "year": 2014,
-      "month": "sep"
+      "month": "sep",
+      "address": "Paris",
+      "organization": "IEEE"
     }
   },
   {
     "id": 117,
-    "title": "Which Storage Device is the Greenest? Modeling the Energy Cost of I/O Workloads",
+    "title": "Which Storage Device is Greenest? Modeling the Energy Cost of I/O Workloads",
     "short_description": "",
     "full_content": "",
     "author": [
@@ -2571,10 +2837,12 @@
     "bibTeX": {
       "@inproceedings": "li-mascots14",
       "author": "Yan Li and Darrell D. E. Long",
-      "title": "Which Storage Device is the Greenest? Modeling the Energy Cost of I/O Workloads",
-      "booktitle": "22nd IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2014)",
+      "title": "Which Storage Device is Greenest? Modeling the Energy Cost of I/O Workloads",
+      "booktitle": "Proceedings of the Twenty-second International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS 2014)",
       "year": 2014,
-      "month": "sep"
+      "month": "sep",
+      "address": "Paris",
+      "organization": "IEEE"
     }
   },
   {
@@ -2584,19 +2852,21 @@
     "full_content": "",
     "author": [
       "Jehan-François Pâris",
+      "Thomas J. E. Schwarz",
       "Ahmed Amer",
-      "Darrell D. E. Long",
-      "Thomas Schwarz"
+      "Darrell D. E. Long"
     ],
     "date": "Nov 1, 2014",
     "url": "https://ssrc.us/media/pubs/b7e8714a7341963723c7a64ae40a801cfb8c7187.pdf",
     "bibTeX": {
       "@inproceedings": "paris-prdc14",
-      "author": "Jehan-François Pâris and Ahmed Amer and Darrell D. E. Long and Thomas Schwarz",
-      "title": "Protecting {RAID",
-      "booktitle": "IEEE Pacific Rim International Symposium on Dependable Computing (PRDC'14)",
+      "author": "Jehan-Fran\\c{c}ois P\\^aris and Thomas J. E. Schwarz and Ahmed Amer and Darrell Long",
+      "title": "Protecting RAID Arrays Against Unexpectedly High Disk Failure Rates",
+      "booktitle": "Proceedings of the Twentieth IEEE Pacific Rim International Symposium on Dependable Computing (PRDC 2014)",
       "year": 2014,
-      "month": "nov"
+      "month": "nov",
+      "address": "Singapore",
+      "organization": "IEEE"
     }
   },
   {
@@ -2614,11 +2884,12 @@
     "url": "",
     "bibTeX": {
       "@inproceedings": "paris-adapt15",
-      "author": "Jehan-François Pâris and Ahmed Amer and Darrell D. E. Long and Thomas Schwarz",
+      "author": "Jehan-Fran\\c{c}ois P\\^aris and Ahmed Amer and Darrell Long and Thomas Schwarz",
       "title": "Self-Repairing Disk Arrays",
       "booktitle": "Proceedings of the Fifth International Workshop on Adaptive Self-tuning Computing Systems (ADAPT)",
       "year": 2015,
-      "month": "jan"
+      "month": "jan",
+      "address": "Amsterdam, The Netherlands"
     }
   },
   {
@@ -2636,14 +2907,15 @@
     "date": "Mar 1, 2015",
     "url": "https://ssrc.us/media/pubs/a13df07eff9a3a0add4b629872905bc9b853af7c.pdf",
     "bibTeX": {
-      "@article": "lopez-revistaieee15",
-      "author": "Nicolas Lopez and Matias Rodriguez and Catalina Fellegi and Darrell D. E. Long and Thomas Schwarz",
+      "@article": "lopez-lat15",
+      "author": "Nicol\\'as L\\'opez and Mat\\'ias Rodr\\'iguez and Catalina Fellegi and Darrell Long and Thomas Schwarz",
       "title": "Even or Odd: A Simple Graphical Authentication System",
-      "journal": "Revista IEEE América Latina",
+      "journal": "IEEE Latin America Transactions",
       "volume": 13,
       "number": 3,
       "year": 2015,
-      "month": "mar"
+      "month": "mar",
+      "pages": "804--809"
     }
   },
   {
@@ -2662,10 +2934,12 @@
     "bibTeX": {
       "@inproceedings": "li-msst15",
       "author": "Yan Li and Xiaoyuan Lu and Ethan L. Miller and Darrell D. E. Long",
-      "title": "{ASCAR",
-      "booktitle": "31st International Conference on Massive Storage Systems and Technologies (MSST2015)",
+      "title": "ASCAR: Automating Contention Management for High-Performance Storage Systems",
+      "booktitle": "Proceedings of the Conference on Mass Storage Systems and Technologies (MSST)",
       "year": 2015,
-      "month": "jun"
+      "month": "may",
+      "address": "Santa Clara University",
+      "organization": "IEEE"
     }
   },
   {
@@ -2684,12 +2958,14 @@
     "date": "Jun 4, 2015",
     "url": "https://ssrc.us/media/pubs/beab0307cea322529784d702dc70dcbdad9a171c.pdf",
     "bibTeX": {
-      "@inproceedings": "jones-msst15",
-      "author": "Stephanie Jones and Ahmed Amer and Ethan L. Miller and Darrell D. E. Long and Rekha Pitchumani and Christina Strong",
-      "title": "Classifying Data to Reduce Long Term Data Movement in Shingled Write Disks",
-      "booktitle": "Proceedings of the 31st International Conference on Massive Storage Systems and Technology (MSST 2015)",
-      "year": 2015,
-      "month": "jun"
+      "@article": "jones-tos16",
+      "author": "Stephanie N. Jones and Ahmed Amer and Ethan L. Miller and Darrell D. E. Long and Rekha Pitchumani and Christina R. Strong",
+      "title": "Classifying Data to Reduce Long-Term Data Movement in Shingled Write Disks",
+      "journal": "ACM Transactions on Storage",
+      "volume": 12,
+      "number": 1,
+      "year": 2016,
+      "month": "feb"
     }
   },
   {
@@ -2698,9 +2974,10 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Joel Frank",
-      "Lincoln Thurlow",
-      "Thomas Kroeger",
+      "Joel C. Frank",
+      "Shayna M. Frank",
+      "Lincoln A. Thurlow",
+      "Thomas M. Kroeger",
       "Ethan L. Miller",
       "Darrell D. E. Long"
     ],
@@ -2708,11 +2985,13 @@
     "url": "https://ssrc.us/media/pubs/b3ecd7f064f22088266ca2a52935d1f840151d0f.pdf",
     "bibTeX": {
       "@inproceedings": "frank-msst15",
-      "author": "Joel Frank and Shayna Frank and Lincoln Thurlow and Thomas Kroeger and Ethan L. Miller and Darrell D. E. Long",
+      "author": "Joel C. Frank and Shayna M. Frank and Lincoln A. Thurlow and Thomas M. Kroeger and Ethan L. Miller and Darrell D. E. Long",
       "title": "Percival: A Searchable Secret Split Datastore",
-      "booktitle": "31st International Conference on Massive Storage Systems and Technologies (MSST2015)",
+      "booktitle": "Proceedings of the Conference on Mass Storage Systems and Technologies (MSST)",
       "year": 2015,
-      "month": "jun"
+      "month": "may",
+      "address": "Santa Clara University",
+      "organization": "IEEE"
     }
   },
   {
@@ -2732,7 +3011,7 @@
     "url": "https://ssrc.us/media/pubs/3a6a2a2a5904469af04d266995dc84b0eec89ee2.pdf",
     "bibTeX": {
       "@article": "jones-tos16",
-      "author": "Stephanie Jones and Ahmed Amer and Ethan L. Miller and Darrell D. E. Long and Rekha Pitchumani and Christina Strong",
+      "author": "Stephanie N. Jones and Ahmed Amer and Ethan L. Miller and Darrell D. E. Long and Rekha Pitchumani and Christina R. Strong",
       "title": "Classifying Data to Reduce Long-Term Data Movement in Shingled Write Disks",
       "journal": "ACM Transactions on Storage",
       "volume": 12,
@@ -2759,9 +3038,10 @@
       "author": "Yulai Xie and Dan Feng and Yan Li and Darrell D. E. Long",
       "title": "Oasis: an Active Storage Framework for Object Storage Platform",
       "journal": "Future Generation Computer Systems",
-      "volume": "",
+      "volume": 56,
       "year": 2016,
-      "month": "mar"
+      "month": "mar",
+      "pages": "746--758"
     }
   },
   {
@@ -2782,9 +3062,10 @@
       "@inproceedings": "gupta-msst16",
       "author": "Preeti Gupta and Darrell D. E. Long and Ethan L. Miller and David S.H. Rosenthal and Avani Wildani",
       "title": "Effects of Prolonged Media Usage and Long-term Planning on Archival Systems",
-      "booktitle": "32nd International Conference on Massive Storage Systems and Technologies (MSST2016), May 2016",
+      "booktitle": "Proceedings of the Conference on Mass Storage Systems and Technologies (MSST)",
       "year": 2016,
-      "month": "may"
+      "month": "may",
+      "organization": "IEEE"
     }
   },
   {
@@ -2802,11 +3083,13 @@
     "url": "https://ssrc.us/media/pubs/1fc262bbb19b5ff0ec48ec4912d9f75c15917ce7.pdf",
     "bibTeX": {
       "@inproceedings": "li-mascots16",
-      "author": "Yan Li and Yash Gupta and Ethan L. Miller and Darrell D. E. Long",
-      "title": "Pilot: A Framework that Understands How to Do Performance Benchmarks The Right Way",
-      "booktitle": "Proceedings of the 24th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2016)",
+      "author": "Yan Li and Ethan Miller and Darrell Long and Yash Gupta",
+      "title": "Pilot: A Framework that Understands How to Do Performance Benchmarks the Right Way",
+      "booktitle": "Proceedings of the Twenty-fourth International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS 2016)",
       "year": 2016,
-      "month": "sep"
+      "month": "sep",
+      "address": "London",
+      "organization": "IEEE"
     }
   },
   {
@@ -2826,11 +3109,13 @@
     "url": "https://ssrc.us/media/pubs/495396c0b29a40d17d4c6e7bc2627abce18ffc1c.pdf",
     "bibTeX": {
       "@inproceedings": "schwarz-mascots16",
-      "author": "Thomas Schwarz and Ahmed Amer and Thomas Kroeger and Ethan L. Miller and Darrell D. E. Long and Jehan-François Pâris",
-      "title": "{RESAR",
-      "booktitle": "Proceedings of the 24th IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2016)",
+      "author": "Thomas Schwarz and Ahmed Amer and Thomas Kroeger and Ethan Miller and Darrell Long and Jehan-Fran\\c{c}ois P\\^aris",
+      "title": "RESAR: Reliable Storage at Exabyte Scale",
+      "booktitle": "Proceedings of the Twenty-fourth International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS 2016)",
       "year": 2016,
-      "month": "sep"
+      "month": "sep",
+      "address": "London",
+      "organization": "IEEE"
     }
   },
   {
@@ -2840,6 +3125,7 @@
     "full_content": "",
     "author": [
       "Yan Li",
+      "Kenneth Chang",
       "Oceane Bel",
       "Ethan L. Miller",
       "Darrell D. E. Long"
@@ -2848,9 +3134,9 @@
     "url": "https://ssrc.us/media/pubs/ea175a9f07f9f172005c62cf0514051fa08ff0f1.pdf",
     "bibTeX": {
       "@inproceedings": "li-sc17",
-      "author": "Yan Li and Oceane Bel and Kenneth Chang and Ethan L. Miller and Darrell D. E. Long",
-      "title": "{CAPES",
-      "booktitle": "Supercomputing '17",
+      "author": "Yan Li and Kenneth Chang and Oceane Bel and Ethan L. Miller and Darrell D. E. Long",
+      "title": "CAPES: Unsupervised Storage Performance Tuning Using Neural Network-Based Deep Reinforcement Learning",
+      "booktitle": "Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC '17)",
       "year": 2017,
       "month": "nov"
     }
@@ -2862,24 +3148,20 @@
     "full_content": "",
     "author": [
       "Daniel Bittman",
-      "Matt Bryson",
-      "Yuanjiang Ni",
-      "Arjun Govindjee",
-      "Isaak Cherdak",
-      "Pankaj Mehra",
       "Darrell D. E. Long",
-      "Ethan L. Miller"
+      "Ethan L. Miller",
+      "Peter Alvaro"
     ],
-    "date": "Dec 5, 2017",
+    "date": "Jul 1, 2019",
     "url": "https://ssrc.us/media/pubs/39d6b0bee42492871fd9d2a1a41fcc56add986cc.pdf",
     "bibTeX": {
-      "@techreport": "bittman-ssrctr-17-01",
-      "author": "Daniel Bittman and Matt Bryson and Yuanjiang Ni and Arjun Govindjee and Isaak Cherdak and Pankaj Mehra and Darrell D. E. Long and Ethan L. Miller",
+      "@inproceedings": "bittman-atc19-poster",
+      "author": "Daniel Bittman and Darrell D. E. Long and Ethan L. Miller and Peter Alvaro",
       "title": "Twizzler: An Operating System for Next-Generation Memory Hierarchies",
-      "institution": "University of California, Santa Cruz",
-      "number": "UCSC-SSRC-17-01",
-      "year": 2017,
-      "month": "dec"
+      "booktitle": "Poster Session of the USENIX Annual Technical Conference (ATC)",
+      "year": 2019,
+      "month": "jul",
+      "organization": "Usenix Association"
     }
   },
   {
@@ -2889,20 +3171,23 @@
     "full_content": "",
     "author": [
       "Oceane Bel",
+      "Kenneth Chang",
       "Daniel Bittman",
-      "Hiroshi Isozaki",
+      "Ethan L. Miller",
       "Darrell D. E. Long",
-      "Ethan L. Miller"
+      "Hiroshi Isozaki"
     ],
     "date": "Jun 4, 2018",
     "url": "https://ssrc.us/media/pubs/63636bdd45dc0eda47f6db142582fefb1dcc3216.pdf",
     "bibTeX": {
       "@inproceedings": "bel-systor18",
-      "author": "Oceane Bel and Kenneth Chang and Daniel Bittman and Hiroshi Isozaki and Darrell D. E. Long and Ethan L. Miller",
+      "author": "Oceane Bel and Kenneth Chang and Daniel Bittman and Ethan L. Miller and Darrell D. E. Long and Hiroshi Isozaki",
       "title": "Inkpack: A Secure, Data-Exposure Resistant Storage System",
-      "booktitle": "Proceedings of the 11th ACM International Systems and Storage Conference (SYSTOR 2018)",
+      "booktitle": "Proceedings of the Eleventh Annual International Systems and Storage Conference (SYSTOR)",
       "year": 2018,
-      "month": "jun"
+      "month": "jun",
+      "address": "Haifa, Israel",
+      "organization": "ACM"
     }
   },
   {
@@ -2912,9 +3197,10 @@
     "full_content": "",
     "author": [
       "Daniel Bittman",
-      "Mathew Gray",
+      "Matthew Gray",
       "Justin Raizes",
-      "Matt Bryson",
+      "Sinjoni Mukhopadhyay",
+      "Matthew Bryson",
       "Peter Alvaro",
       "Darrell D. E. Long",
       "Ethan L. Miller"
@@ -2923,11 +3209,13 @@
     "url": "https://ssrc.us/media/pubs/22231b2cf1a7af7c758716f9ed669d47b30228ad.pdf",
     "bibTeX": {
       "@inproceedings": "bittman-nvmsa18",
-      "author": "Daniel Bittman and Mathew Gray and Justin Raizes and Sinjoni Mukhopadhyay and Matt Bryson and Peter Alvaro and Darrell D. E. Long and Ethan L. Miller",
-      "title": "Designing Data Structures to Minimize Bit Flips on {NVM",
-      "booktitle": "The 7th IEEE Non-Volatile Memory Systems and Applications Symposium (NVMSA)",
+      "author": "Daniel Bittman and Matthew Gray and Justin Raizes and Sinjoni Mukhopadhyay and Matthew Bryson and Peter Alvaro and Darrell Long and Ethan Miller",
+      "title": "Designing Data Structures to Minimize Bit Flips on NVM",
+      "booktitle": "Proceedings of the Seventh IEEE Non-Volatile Memory Systems and Applications Symposium (NVMSA '18)",
       "year": 2018,
-      "month": "aug"
+      "month": "aug",
+      "address": "Hakodate, Japan",
+      "organization": "IEEE"
     }
   },
   {
@@ -2947,10 +3235,9 @@
     "url": "https://ssrc.us/media/pubs/ada6e507e18591586bcfb4a69a137673505e36cb.pdf",
     "bibTeX": {
       "@article": "xie-tdsc18",
-      "author": "Yulai Xie and Dan Feng and Yuchong Hu and Yan Li and Staunton Sample and Darrell D. E. Long",
+      "author": "Yulai Xie and Dan Feng and Yuchong Hu and Yan Li and Staunton Sample and Darrell Long",
       "title": "Pagoda: A Hybrid Approach to Enable Efficient Real-time Provenance Based Intrusion Detection in Big Data Environments",
-      "journal": "IEEE transactions on dependable and secure computing",
-      "volume": "",
+      "journal": "IEEE Transactions on Dependable and Secure Computing",
       "year": 2018,
       "month": "aug"
     }
@@ -2961,6 +3248,7 @@
     "short_description": "",
     "full_content": "",
     "author": [
+      "Sinjoni Mukhopadhyay",
       "Joel Frank",
       "Daniel Bittman",
       "Darrell D. E. Long",
@@ -2970,11 +3258,13 @@
     "url": "https://ssrc.us/media/pubs/9b7193806988f1c135c7ce6321bb7359f0b00d84.pdf",
     "bibTeX": {
       "@inproceedings": "mukhopadhyay-mascots18",
-      "author": "Sinjoni Mukhopadhyay and Joel Frank and Daniel Bittman and Darrell D. E. Long and Ethan L. Miller",
+      "author": "Sinjoni Mukhopadhyay and Joel Frank and Daniel Bittman and Darrell Long and Ethan Miller",
       "title": "Efficient Reconstruction Techniques for Disaster Recovery in Secret-Split Datastores",
-      "booktitle": "Proceedings of the 26th IEEE International Symposium on the Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2018)",
+      "booktitle": "Proceedings of the Twenty-sixth International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS 2018)",
       "year": 2018,
-      "month": "sep"
+      "month": "sep",
+      "address": "Milwaukee",
+      "organization": "IEEE"
     }
   },
   {
@@ -2991,11 +3281,13 @@
     "url": "https://ssrc.us/media/pubs/5afa96a4fbf610b4d45e9c41d4fca786aa59de32.pdf",
     "bibTeX": {
       "@inproceedings": "byron-mascots18",
-      "author": "James Byron and Darrell D. E. Long and Ethan L. Miller",
+      "author": "James Byron and Ethan Miller and Darrell Long",
       "title": "Using Simulation to Design Scalable and Cost-Efficient Archival Storage Systems",
-      "booktitle": "Proceedings of the 26th IEEE International Symposium on the Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2018)",
+      "booktitle": "Proceedings of the Twenty-sixth International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS 2018)",
       "year": 2018,
-      "month": "sep"
+      "month": "sep",
+      "address": "Milwaukee",
+      "organization": "IEEE"
     }
   },
   {
@@ -3013,11 +3305,13 @@
     "url": "https://ssrc.us/media/pubs/24b1890968914309db6e6962267747f55c7b7dc9.pdf",
     "bibTeX": {
       "@inproceedings": "bittman-fast19",
-      "author": "Daniel Bittman and Peter Alvaro and Darrell D. E. Long and Ethan L. Miller",
-      "title": "Optimizing Systems for Byte-Addressable {NVM",
-      "booktitle": "17th USENIX Conference on File and Storage Technologies",
+      "author": "Daniel Bittman and Darrell D. E. Long and Peter Alvaro and Ethan L. Miller",
+      "title": "Optimizing Systems for Byte-Addressable NVM by Reducing Bit Flipping",
+      "booktitle": "Proceedings of the Conference on File and Storage Technologies (FAST)",
       "year": 2019,
-      "month": "feb"
+      "month": "feb",
+      "address": "San Jose",
+      "organization": "Usenix Association"
     }
   },
   {
@@ -3036,13 +3330,15 @@
     "date": "Mar 25, 2019",
     "url": "",
     "bibTeX": {
-      "@article": "xie-tbd19",
-      "author": "Die Hu and Dan Feng and Yulai Xie and Gongming Xu and Xinrui Gu and Darrell D. E. Long",
+      "@article": "hu-tbd20",
+      "author": "Die Hu and Dan Feng and Yulai Xie and Gongming Xu and Xinrui Gu and Darrell Long",
       "title": "Efficient Provenance Management via Clustering and Hybrid Storage in Big Data Environments",
-      "journal": "IEEE transactions on big data",
-      "volume": "",
-      "year": 2019,
-      "month": "mar"
+      "journal": "IEEE Transactions on Big Data",
+      "volume": 6,
+      "number": 4,
+      "year": 2020,
+      "month": "dec",
+      "pages": "792--803"
     }
   },
   {
@@ -3052,22 +3348,19 @@
     "full_content": "",
     "author": [
       "Daniel Bittman",
-      "Peter Alvaro",
       "Darrell D. E. Long",
       "Ethan L. Miller"
     ],
-    "date": "Jun 1, 2019",
+    "date": "Mar 1, 2017",
     "url": "https://ssrc.us/media/pubs/6d9e1139b7972d9484f1f93f463035a1f529333c.pdf",
     "bibTeX": {
-      "@article": "bittman-login19",
-      "author": "Daniel Bittman and Peter Alvaro and Darrell D. E. Long and Ethan L. Miller",
+      "@inproceedings": "bittman-nvmw17",
+      "author": "Daniel Bittman and Darrell D. E. Long and Ethan L. Miller",
       "title": "The Flipside: A Bit Flip Saved is Power and Lifetime Earned",
-      "journal": ";login:",
-      "pages": "27-31",
-      "volume": 44,
-      "number": 2,
-      "year": 2019,
-      "month": "jun"
+      "booktitle": "Proceedings of the Non-Volatile Memories Workshop (NVMW)",
+      "year": 2017,
+      "month": "mar",
+      "address": "San Diego"
     }
   },
   {
@@ -3087,9 +3380,11 @@
       "@inproceedings": "bittman-hotstorage19",
       "author": "Daniel Bittman and Peter Alvaro and Darrell D. E. Long and Ethan L. Miller",
       "title": "A Tale of Two Abstractions: The Case for Object Space",
-      "booktitle": "Proceedings of HotStorage '19",
+      "booktitle": "Proceedings of the Eleventh Hot Topics in Storage and File Systems (Hot Storage 2019)",
       "year": 2019,
-      "month": "jul"
+      "month": "jul",
+      "address": "Renton",
+      "organization": "Usenix Association"
     }
   },
   {
@@ -3108,12 +3403,14 @@
     "date": "Aug 13, 2019",
     "url": "https://ssrc.us/media/pubs/b24a5e0bae67ea4d648789f05461ab7281e4b44a.pdf",
     "bibTeX": {
-      "@inproceedings": "barker-foci19",
+      "@inproceedings": "barker-fast17-poster",
       "author": "Austen Barker and Staunton Sample and Yash Gupta and Ana McTaggart and Ethan L. Miller and Darrell D. E. Long",
       "title": "Artifice: A Deniable Steganographic File System",
-      "booktitle": "Proceedings of the 9th USENIX Workshop on Free and Open Communications on the Internet  (FOCI '19)",
-      "year": 2019,
-      "month": "aug"
+      "booktitle": "Poster Session of the USENIX Conference on File and Storage Technologies (FAST)",
+      "year": 2017,
+      "month": "feb",
+      "address": "Santa Clara",
+      "organization": "Usenix Association"
     }
   },
   {
@@ -3132,13 +3429,12 @@
     "date": "Aug 20, 2019",
     "url": "https://ssrc.us/media/pubs/328563c30a4f38c3860bf200194ba490cba5592f.pdf",
     "bibTeX": {
-      "@article": "xie-tcc19",
-      "author": "Zhuping Zou and Kai Huang and Gongming Xu and Yulai Xie and Dan Feng and Darrell D. E. Long",
+      "@article": "xie-tcc18",
+      "author": "Yulai Xie and Zhuping Zhou and Kai Huang and Gongming Xu and Dan Feng and Darrell Long",
       "title": "A Docker Container Anomaly Monitoring System Based on Optimized Isolation Forest",
-      "journal": "IEEE transactions on cloud computing",
-      "volume": "",
-      "year": 2019,
-      "month": "aug"
+      "journal": "IEEE Transactions on Cloud Computing",
+      "year": 2018,
+      "month": "sep"
     }
   },
   {
@@ -3156,10 +3452,9 @@
     "url": "",
     "bibTeX": {
       "@article": "xie-tdsc19",
-      "author": "Yulai Xie and Yafeng Wu and Dan Feng and Darrell D. E. Long",
+      "author": "Yulai Xie and Yafeng Wu and Dan Feng and Darrell Long",
       "title": "P-Gaussian: Provenance-Based Gaussian Distribution for Detecting Intrusion Behavior Variants Using High Efficient and Real Time Memory Databases",
-      "journal": "IEEE transactions on dependable and secure computing",
-      "volume": "",
+      "journal": "IEEE Transactions on Dependable and Secure Computing",
       "year": 2019,
       "month": "dec"
     }
@@ -3181,11 +3476,10 @@
     "date": "Apr 22, 2020",
     "url": "",
     "bibTeX": {
-      "@article": "xie-tcc2020",
-      "author": "Yulai Xie and Minpeng Jin and Zhuping Zou and Gongming Xu and Dan Feng and Wenmao Liu and Darrell D. E. Long",
-      "title": "Real-time Prediction of Docker Container Resource Load Based on A Hybrid Model of {ARIMA",
-      "journal": "IEEE transactions on cloud computing",
-      "volume": "",
+      "@article": "xie-tcc20",
+      "author": "Yulai Xie and Minpeng Jin and Zhuping Zou and Gongming Xu and Dan Feng and Wenmao Liu and Darrell Long",
+      "title": "Real-time Prediction of Docker Container Resource Load Based on A Hybrid Model of ARIMA and Triple Exponential Smoothing",
+      "journal": "IEEE Transactions on Cloud Computing",
       "year": 2020,
       "month": "apr"
     }
@@ -3205,12 +3499,13 @@
     "date": "Jul 7, 2020",
     "url": "https://ssrc.us/media/pubs/0e45877f839d4b9e6b6d87de5e97c023b8cbdd9c.pdf",
     "bibTeX": {
-      "@inproceedings": "bittman-atc20",
+      "@inproceedings": "bittman-atc21",
       "author": "Daniel Bittman and Peter Alvaro and Pankaj Mehra and Darrell D. E. Long and Ethan L. Miller",
-      "title": "Twizzler: a Data-Centric {OS",
-      "booktitle": "2020 USENIX Annual Technical Conference (USENIX ATC 20)",
-      "year": 2020,
-      "month": "jul"
+      "title": "Twizzler: A Data-Centric OS for Non-Volatile Memory",
+      "booktitle": "Proceedings of the USENIX Annual Technical Conference (ATC)",
+      "year": 2021,
+      "month": "jul",
+      "organization": "Usenix Association"
     }
   },
   {
@@ -3232,9 +3527,11 @@
       "@inproceedings": "barker-msst20",
       "author": "Austen Barker and Yash Gupta and Sabrina Au and Eugene Chou and Ethan L. Miller and Darrell D. E. Long",
       "title": "Artifice: Data in Disguise",
-      "booktitle": "Proceeding of the Conference on Mass Storage Systems and Technologies (MSST '20)",
+      "booktitle": "Proceedings of the Conference on Mass Storage Systems and Technologies (MSST)",
       "year": 2020,
-      "month": "oct"
+      "month": "oct",
+      "address": "Santa Clara University",
+      "organization": "IEEE"
     }
   },
   {
@@ -3251,11 +3548,13 @@
     "url": "https://ssrc.us/media/pubs/916f5482d2c0dfd400923bd43a0f6299f3aa4a81.pdf",
     "bibTeX": {
       "@inproceedings": "byron-msst20",
-      "author": "James Byron and Darrell D. E. Long and Ethan L. Miller",
+      "author": "James Byron and Ethan L. Miller and Darrell D. E. Long",
       "title": "Measuring the Cost of Reliability in Archival Systems",
-      "booktitle": "Proceeding of the Conference on Mass Storage Systems and Technologies (MSST '20)",
+      "booktitle": "Proceedings of the Conference on Mass Storage Systems and Technologies (MSST)",
       "year": 2020,
-      "month": "oct"
+      "month": "oct",
+      "address": "Santa Clara University",
+      "organization": "IEEE"
     }
   },
   {
@@ -3265,18 +3564,24 @@
     "full_content": "",
     "author": [
       "Oceane Bel",
+      "Kenneth Chang",
+      "Nathan R. Tallent",
+      "Dirk Duellmann",
       "Ethan L. Miller",
+      "Faisal Nawab",
       "Darrell D. E. Long"
     ],
     "date": "Oct 1, 2020",
     "url": "https://ssrc.us/media/pubs/8ae7913294f888870063952e4a4bf25272f43ec8.pdf",
     "bibTeX": {
       "@inproceedings": "bel-msst20",
-      "author": "Oceane Bel and Kenneth Chang and Nathan Tallent and Dirk Duellman and Ethan L. Miller and Faisal Nawab and Darrell D. E. Long",
+      "author": "Oceane Bel and Kenneth Chang and Nathan R. Tallent and Dirk Duellmann and Ethan L. Miller and Faisal Nawab and Darrell D. E. Long",
       "title": "Geomancy: Automated Performance Enhancement through Data Layout Optimization",
-      "booktitle": "Proceeding of the Conference on Mass Storage Systems and Technologies (MSST '20)",
+      "booktitle": "Proceedings of the Conference on Mass Storage Systems and Technologies (MSST)",
       "year": 2020,
-      "month": "oct"
+      "month": "oct",
+      "address": "Santa Clara University",
+      "organization": "IEEE"
     }
   },
   {
@@ -3294,14 +3599,13 @@
     "date": "Jun 1, 2021",
     "url": "https://ssrc.us/media/pubs/8a6e23e0c8e3ad1d0f2813cb326abd60f2387a35.pdf",
     "bibTeX": {
-      "@article": "bittman-tos21",
+      "@inproceedings": "bittman-atc21",
       "author": "Daniel Bittman and Peter Alvaro and Pankaj Mehra and Darrell D. E. Long and Ethan L. Miller",
-      "title": "Twizzler: A Data-centric {OS",
-      "journal": "ACM Transactions on Storage",
-      "volume": 17,
-      "number": 2,
+      "title": "Twizzler: A Data-Centric OS for Non-Volatile Memory",
+      "booktitle": "Proceedings of the USENIX Annual Technical Conference (ATC)",
       "year": 2021,
-      "month": "jun"
+      "month": "jul",
+      "organization": "Usenix Association"
     }
   },
   {
@@ -3318,12 +3622,12 @@
     "url": "https://ssrc.us/media/pubs/b5d2cdef04702983d608a8f3ca2994db1fc22f2d.pdf",
     "bibTeX": {
       "@inproceedings": "fredrickson-mascots21",
-      "author": "Kyle Fredrickson and Austen Barker and Darrell D. E. Long",
+      "author": "Kyle Fredrickson and Austen Barker and Darrell Long",
       "title": "A Multiple Snapshot Attack on Deniable Storage Systems",
-      "booktitle": "MASCOTS 2021",
-      "pages": "8",
+      "booktitle": "Proceedings of the Twenty-ninth International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS 2021)",
       "year": 2021,
-      "month": "oct"
+      "month": "nov",
+      "organization": "IEEE"
     }
   },
   {
@@ -3345,9 +3649,11 @@
       "@inproceedings": "chou-cheops23",
       "author": "Eugene Chou and Leo Conrad-Shah and Austen Barker and Andrew Quinn and Ethan L. Miller and Darrell D. E. Long",
       "title": "Lethe: Secure Deletion by Addition",
-      "booktitle": "Workshop on Challenges and Opportunities of Efficient and Performant Storage Systems (CHEOPS ’23)",
+      "booktitle": "Workshop on Challenges and Opportunities of Efficient and Performant Storage Systems (CHEOPS '23)",
       "year": 2023,
-      "month": "may"
+      "month": "may",
+      "address": "Rome",
+      "organization": "ACM"
     }
   },
   {
@@ -3377,7 +3683,7 @@
       "Diane Wiley"
     ],
     "date": "2005",
-    "url": "https://www.academia.edu/search?q=Avoiding+Surprise+in+an+Era+of+Global+Technology+Advances",
+    "url": "https://scholar.google.com/scholar?q=Avoiding%20Surprise%20in%20an%20Era%20of%20Global%20Technology%20Advances",
     "bibTeX": {
       "@book": "david-nrc05",
       "author": "Ruth A. David and Steven R.J. Brueck and Stephen W. Drew and Alan H. Epstein and Robert A. Furman and Sharon Glotzer and Christopher C. Green and Diane E. Griffin and J. Jerome Holton and Michael R. Ladisch and Darrell Long and Frederick R. Lopez and Richard M. Osgood and Stewart D. Personick and Alton D. Romig and S. Shankar Sasrty and James B. Smith and Camillo J. Taylor and Diane Wiley",
@@ -3397,7 +3703,7 @@
       "Darrell D. E. Long"
     ],
     "date": "1989",
-    "url": "https://www.academia.edu/search?q=Theory+of+Finite+Automata",
+    "url": "https://scholar.google.com/scholar?q=Theory%20of%20Finite%20Automata",
     "bibTeX": {
       "@book": "carroll-prentice89",
       "author": "John L. Carroll and Darrell D. E. Long",
@@ -3418,17 +3724,16 @@
       "Jehan-François Pâris"
     ],
     "date": "2000",
-    "url": "https://www.academia.edu/search?q=Video-on-Demand+Broadcasting+Protocols",
+    "url": "https://scholar.google.com/scholar?q=Video-on-Demand%20Broadcasting%20Protocols",
     "bibTeX": {
       "@incollection": "carter-academic00",
-      "author": "Steven W. Carter and Darrell D. E. Long and Jehan-François Pâris",
+      "author": "Steven W. Carter and Darrell D. E. Long and Jehan-Fran\\c{c}ois P\\^aris",
       "title": "Video-on-Demand Broadcasting Protocols",
-      "booktitle": "Multimedia Communications: Directions and Innovations",
-      "editor": "J. D. Gibson",
-      "publisher": "Academic Press",
+      "booktitle": "Multimedia Systems and Techniques",
+      "editor": "Borko Furht",
+      "publisher": "Kluwer Academic",
       "year": 2000,
-      "address": "San Diego",
-      "pages": "179--189"
+      "address": "Boston"
     }
   },
   {
@@ -3441,7 +3746,7 @@
       "Darrell D. E. Long"
     ],
     "date": "1999",
-    "url": "https://www.academia.edu/search?q=Simulation+Modeling+of+Weak-Consistency+Protocols",
+    "url": "https://scholar.google.com/scholar?q=Simulation%20Modeling%20of%20Weak-Consistency%20Protocols",
     "bibTeX": {
       "@incollection": "golding-gordon99",
       "author": "Richard A. Golding and Darrell D. E. Long",
@@ -3463,7 +3768,7 @@
       "John L. Carroll"
     ],
     "date": "1995",
-    "url": "https://www.academia.edu/search?q=Using+Simulation+to+Evaluate+Consistency+Protocols+for+Replicated+Data",
+    "url": "https://scholar.google.com/scholar?q=Using%20Simulation%20to%20Evaluate%20Consistency%20Protocols%20for%20Replicated%20Data",
     "bibTeX": {
       "@incollection": "long-ablex95",
       "author": "Darrell D. E. Long and John L. Carroll",
@@ -3490,7 +3795,7 @@
       "Darrell Long"
     ],
     "date": "to appear",
-    "url": "https://www.academia.edu/search?q=A+Novel+Hybrid+Model+for+Docker+Container+Workload+Prediction",
+    "url": "https://scholar.google.com/scholar?q=A%20Novel%20Hybrid%20Model%20for%20Docker%20Container%20Workload%20Prediction",
     "bibTeX": {
       "@article": "zhang-tnsm",
       "author": "Liangkang Zhang and Yulai Xie and Minpeng Jin and Pan Zhou and Gongming Xu and Yafeng Wu and Dan Feng and Darrell Long",
@@ -3516,7 +3821,7 @@
       "Darrell Long"
     ],
     "date": "to appear",
-    "url": "https://www.academia.edu/search?q=Paradise:+Real-time,+Generalized,+and+Distributed+Provenance-Based+Intrusion+Detection",
+    "url": "https://scholar.google.com/scholar?q=Paradise%3A%20Real-time%2C%20Generalized%2C%20and%20Distributed%20Provenance-Based%20Intrusion%20Detection",
     "bibTeX": {
       "@article": "wu-tdsc",
       "author": "Yafeng Wu and Yulai Xie and Xuelong Liao and Pan Zhou and Dan Feng and Lin Wu and Xuan Li and Avani Wildani and Darrell Long",
@@ -3538,7 +3843,7 @@
       "Darrell D. E. Long"
     ],
     "date": "May 27, 2021",
-    "url": "https://www.academia.edu/search?q=Rethinking+the+Adversary+and+Operational+Characteristics+of+Deniable+Storage",
+    "url": "https://scholar.google.com/scholar?q=Rethinking%20the%20Adversary%20and%20Operational%20Characteristics%20of%20Deniable%20Storage",
     "bibTeX": {
       "@article": "barker-jsss21",
       "author": "Austen Barker and Yash Gupta and James Hughes and Ethan L. Miller and Darrell D. E. Long",
@@ -3562,7 +3867,7 @@
       "Ethan L. Miller"
     ],
     "date": "November 2025",
-    "url": "https://www.academia.edu/search?q=Valet:+Efficient+Data+Placement+on+Modern+SSDs",
+    "url": "https://scholar.google.com/scholar?q=Valet%3A%20Efficient%20Data%20Placement%20on%20Modern%20SSDs",
     "bibTeX": {
       "@inproceedings": "purandare-socc25",
       "author": "Devashish R. Purandare and Peter Alvaro and Avani Wildani and Darrell D. E. Long and Ethan L. Miller",
@@ -3585,7 +3890,7 @@
       "Darrell D. E. Long"
     ],
     "date": "May 2025",
-    "url": "https://www.academia.edu/search?q=Sparta:+Practical+Anonymity+with+Long-Term+Resistance+to+Traffic+Analysis",
+    "url": "https://scholar.google.com/scholar?q=Sparta%3A%20Practical%20Anonymity%20with%20Long-Term%20Resistance%20to%20Traffic%20Analysis",
     "bibTeX": {
       "@inproceedings": "fredrickson-sp25",
       "author": "Kyle Fredrickson and Ioannis Demertzis and James P. Hughes and Darrell D. E. Long",
@@ -3613,7 +3918,7 @@
       "Darrell Long"
     ],
     "date": "November 2024",
-    "url": "https://www.academia.edu/search?q=Accurate+Generation+of+I/O+Workloads+Using+Generative+Adversarial+Networks",
+    "url": "https://scholar.google.com/scholar?q=Accurate%20Generation%20of%20I%2FO%20Workloads%20Using%20Generative%20Adversarial%20Networks",
     "bibTeX": {
       "@inproceedings": "zhang-nas24",
       "author": "Heyu Zhang and Zhen Yang and Yulai Xie and Yafeng Wu and Jiakun Li and Dan Feng and Avani Wildani and Darrell Long",
@@ -3638,7 +3943,7 @@
       "Darrell Long"
     ],
     "date": "December 2021",
-    "url": "https://www.academia.edu/search?q=WinnowML:+Stable+Feature+Selection+for+Maximizing+Prediction+Accuracy+of+Time-based+System+Modeling",
+    "url": "https://scholar.google.com/scholar?q=WinnowML%3A%20Stable%20Feature%20Selection%20for%20Maximizing%20Prediction%20Accuracy%20of%20Time-based%20System%20Modeling",
     "bibTeX": {
       "@inproceedings": "bel-bigdata21",
       "author": "Oceane Bel and Sinjoni Mukhopadhyay and Nathan Tallent and Faisal Nawab and Darrell Long",
@@ -3659,7 +3964,7 @@
       "Darrell Long"
     ],
     "date": "May 2014",
-    "url": "https://www.academia.edu/search?q=Introducing+SeaOS",
+    "url": "https://scholar.google.com/scholar?q=Introducing%20SeaOS",
     "bibTeX": {
       "@inproceedings": "bittman-icisa14",
       "author": "Daniel Bittman and D.J. Capelis and Darrell Long",
@@ -3679,19 +3984,17 @@
     "full_content": "",
     "author": [
       "David Pease",
-      "Darrell D.E. Long"
+      "Darrell D. E. Long"
     ],
-    "date": "September 2008",
-    "url": "https://www.academia.edu/search?q=Future+File+Systems",
+    "date": "Sep 1, 2008",
+    "url": "https://scholar.google.com/scholar?q=Future%20File%20Systems",
     "bibTeX": {
-      "@inproceedings": "pease-cmpd08",
-      "author": "David Pease and Darrell D.E. Long",
+      "@techreport": "pease-tr08",
+      "author": "David Pease and Darrell D. E. Long",
       "title": "Future File Systems",
-      "booktitle": "Proceedings of Computing with Massive and Persistent Data (CMPD)",
+      "institution": "University of California, Santa Cruz",
       "year": 2008,
-      "month": "sep",
-      "address": "Baltimore",
-      "organization": "IEEE"
+      "month": "sep"
     }
   },
   {
@@ -3700,21 +4003,20 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Randal Burns",
-      "Larry Stockmeyer",
-      "Darrell D.E. Long"
+      "Purushottam Kulkarni",
+      "Darrell D. E. Long",
+      "Fred Douglis"
     ],
-    "date": "April 2002",
-    "url": "https://www.academia.edu/search?q=Experimentally+Evaluating+In-Place+Delta+Reconstruction",
+    "date": "Mar 1, 1999",
+    "url": "https://scholar.google.com/scholar?q=Experimentally%20Evaluating%20In-Place%20Delta%20Reconstruction",
     "bibTeX": {
-      "@inproceedings": "burns-msst02",
-      "author": "Randal Burns and Larry Stockmeyer and Darrell D.E. Long",
+      "@inproceedings": "kulkarni-dcc99",
+      "author": "Purushottam Kulkarni and Darrell D. E. Long and Fred Douglis",
       "title": "Experimentally Evaluating In-Place Delta Reconstruction",
-      "booktitle": "Proceedings of the NASA and IEEE Mass Storage Conference",
-      "year": 2002,
-      "month": "apr",
-      "address": "College Park",
-      "pages": "137--151",
+      "booktitle": "Proceedings of the Data Compression Conference (DCC)",
+      "year": 1999,
+      "month": "mar",
+      "address": "Snowbird",
       "organization": "IEEE"
     }
   },
@@ -3724,19 +4026,19 @@
     "short_description": "",
     "full_content": "",
     "author": [
-      "Darrell D. E. Long"
+      "Darrell D. E. Long",
+      "Jehan-François Pâris"
     ],
-    "date": "April 2001",
-    "url": "https://www.academia.edu/search?q=A+Technique+for+Managing+Mirrored+Disks",
+    "date": "Oct 1, 1988",
+    "url": "https://scholar.google.com/scholar?q=A%20Technique%20for%20Managing%20Mirrored%20Disks",
     "bibTeX": {
-      "@inproceedings": "long-ipccc01",
-      "author": "Darrell D. E. Long",
+      "@inproceedings": "long-srdsds88",
+      "author": "Darrell D. E. Long and Jehan-Fran\\c{c}ois P\\^aris",
       "title": "A Technique for Managing Mirrored Disks",
-      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC)",
-      "year": 2001,
-      "month": "apr",
-      "address": "Phoenix",
-      "pages": "272--277",
+      "booktitle": "Proceedings of the Symposium on Reliability in Distributed Software and Database Systems (SRDSDS)",
+      "year": 1988,
+      "month": "oct",
+      "address": "Los Angeles",
       "organization": "IEEE"
     }
   },
@@ -3752,18 +4054,16 @@
       "Theodore R. Haining",
       "Bruce R. Montague"
     ],
-    "date": "March 1995",
-    "url": "https://www.academia.edu/search?q=REINAS:+the+Real-Time+Environmental+Information+Network+and+Analysis+System",
+    "date": "Mar 1, 1995",
+    "url": "https://scholar.google.com/scholar?q=REINAS%3A%20the%20Real-Time%20Environmental%20Information%20Network%20and%20Analysis%20System",
     "bibTeX": {
-      "@inproceedings": "long-compcon95",
+      "@inproceedings": "long-compass95",
       "author": "Darrell D. E. Long and Patrick E. Mantey and Craig M. Wittenbrink and Theodore R. Haining and Bruce R. Montague",
       "title": "REINAS: the Real-Time Environmental Information Network and Analysis System",
-      "booktitle": "Proceedings of the IEEE Computer Society CompCon",
+      "booktitle": "Proceedings of the Tenth Annual Conference on Computer Assurance (COMPASS)",
       "year": 1995,
       "month": "mar",
-      "address": "San Francisco",
-      "pages": "482--487",
-      "organization": "IEEE"
+      "address": "Gaithersburg, Maryland"
     }
   },
   {
@@ -3776,17 +4076,17 @@
       "Darrell D. E. Long"
     ],
     "date": "July 1996",
-    "url": "https://www.academia.edu/search?q=Analysis+of+Caching+Algorithms+for+Distributed+File+Systems",
+    "url": "https://scholar.google.com/scholar?q=Analysis%20of%20Caching%20Algorithms%20for%20Distributed%20File%20Systems",
     "bibTeX": {
       "@article": "reed-osr96",
       "author": "Benjamin Reed and Darrell D. E. Long",
       "title": "Analysis of Caching Algorithms for Distributed File Systems",
-      "journal": "Operating Systems Review",
+      "journal": "ACM SIGOPS Operating Systems Review",
       "volume": 30,
       "number": 3,
       "year": 1996,
       "month": "jul",
-      "pages": "12--21"
+      "pages": "12--17"
     }
   },
   {
@@ -3801,18 +4101,15 @@
       "Eric Rosen",
       "Craig M. Wittenbrink"
     ],
-    "date": "May 1996",
-    "url": "https://www.academia.edu/search?q=REINAS:+Real-Time+Environmental+Information+Network",
+    "date": "May 1, 1996",
+    "url": "https://scholar.google.com/scholar?q=REINAS%3A%20Real-Time%20Environmental%20Information%20Network",
     "bibTeX": {
-      "@article": "fernandez-seatech96",
+      "@inproceedings": "fernandez-cps96",
       "author": "Daniel M. Fernandez and Patrick E. Mantey and Darrell D. E. Long and Eric Rosen and Craig M. Wittenbrink",
       "title": "REINAS: Real-Time Environmental Information Network",
-      "journal": "Sea Technology",
-      "volume": 37,
-      "number": 5,
+      "booktitle": "Proceedings of the International Symposium on Computer-Aided Control System Design",
       "year": 1996,
-      "month": "may",
-      "pages": "47--53"
+      "month": "may"
     }
   },
   {
@@ -3824,7 +4121,7 @@
       "Darrell D. E. Long"
     ],
     "date": "April 1993",
-    "url": "https://www.academia.edu/search?q=A+Note+On+Bit-Mapped+Free+Sector+Management",
+    "url": "https://scholar.google.com/scholar?q=A%20Note%20On%20Bit-Mapped%20Free%20Sector%20Management",
     "bibTeX": {
       "@article": "long-osr93",
       "author": "Darrell D. E. Long",
