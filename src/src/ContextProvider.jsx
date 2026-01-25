@@ -20,7 +20,15 @@ export const ContextProvider = ({ children }) => {
   React.useEffect(() => {
     fetch("/publications.json")
       .then((response) => response.json())
-      .then((data) => setPublications(data))
+      .then((data) => {
+        // Sort publications by date, newest first
+        const sorted = data.sort((a, b) => {
+          const dateA = new Date(a.date);
+          const dateB = new Date(b.date);
+          return dateB - dateA;
+        });
+        setPublications(sorted);
+      })
       .catch((error) => console.error("Error fetching the JSON file:", error));
   }, []);
 
