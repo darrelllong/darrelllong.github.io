@@ -3379,8 +3379,12 @@
     "date": "2005",
     "url": "https://www.academia.edu/search?q=Avoiding+Surprise+in+an+Era+of+Global+Technology+Advances",
     "bibTeX": {
-      "venue": "National Research Council, National Academies Press",
-      "type": "book"
+      "@book": "david-nrc05",
+      "author": "Ruth A. David and Steven R.J. Brueck and Stephen W. Drew and Alan H. Epstein and Robert A. Furman and Sharon Glotzer and Christopher C. Green and Diane E. Griffin and J. Jerome Holton and Michael R. Ladisch and Darrell Long and Frederick R. Lopez and Richard M. Osgood and Stewart D. Personick and Alton D. Romig and S. Shankar Sasrty and James B. Smith and Camillo J. Taylor and Diane Wiley",
+      "title": "Avoiding Surprise in an Era of Global Technology Advances",
+      "publisher": "National Academies Press",
+      "year": 2005,
+      "address": "Washington, DC"
     }
   },
   {
@@ -3395,8 +3399,12 @@
     "date": "1989",
     "url": "https://www.academia.edu/search?q=Theory+of+Finite+Automata",
     "bibTeX": {
-      "venue": "Prentice-Hall",
-      "type": "book"
+      "@book": "carroll-prentice89",
+      "author": "John L. Carroll and Darrell D. E. Long",
+      "title": "Theory of Finite Automata",
+      "publisher": "Prentice-Hall",
+      "year": 1989,
+      "address": "Englewood Cliffs, New Jersey"
     }
   },
   {
@@ -3412,8 +3420,15 @@
     "date": "2000",
     "url": "https://www.academia.edu/search?q=Video-on-Demand+Broadcasting+Protocols",
     "bibTeX": {
-      "venue": "Multimedia Communications: Directions and Innovations, Academic Press",
-      "type": "book_chapter"
+      "@incollection": "carter-academic00",
+      "author": "Steven W. Carter and Darrell D. E. Long and Jehan-François Pâris",
+      "title": "Video-on-Demand Broadcasting Protocols",
+      "booktitle": "Multimedia Communications: Directions and Innovations",
+      "editor": "J. D. Gibson",
+      "publisher": "Academic Press",
+      "year": 2000,
+      "address": "San Diego",
+      "pages": "179--189"
     }
   },
   {
@@ -3428,8 +3443,14 @@
     "date": "1999",
     "url": "https://www.academia.edu/search?q=Simulation+Modeling+of+Weak-Consistency+Protocols",
     "bibTeX": {
-      "venue": "Network Systems Design, Gordon and Breach Science Publishers",
-      "type": "book_chapter"
+      "@incollection": "golding-gordon99",
+      "author": "Richard A. Golding and Darrell D. E. Long",
+      "title": "Simulation Modeling of Weak-Consistency Protocols",
+      "booktitle": "Network Systems Design",
+      "editor": "E. Gelenbe and K. Bagchi and G. Zobrist",
+      "publisher": "Gordon and Breach Science Publishers",
+      "year": 1999,
+      "pages": "161--186"
     }
   },
   {
@@ -3444,8 +3465,13 @@
     "date": "1995",
     "url": "https://www.academia.edu/search?q=Using+Simulation+to+Evaluate+Consistency+Protocols+for+Replicated+Data",
     "bibTeX": {
-      "venue": "Progress in Simulation II, Ablex Publishing",
-      "type": "book_chapter"
+      "@incollection": "long-ablex95",
+      "author": "Darrell D. E. Long and John L. Carroll",
+      "title": "Using Simulation to Evaluate Consistency Protocols for Replicated Data",
+      "booktitle": "Progress in Simulation II",
+      "editor": "G. W. Zobrist and J. V. Leonard",
+      "publisher": "Ablex Publishing",
+      "year": 1995
     }
   },
   {
@@ -3466,8 +3492,11 @@
     "date": "to appear",
     "url": "https://www.academia.edu/search?q=A+Novel+Hybrid+Model+for+Docker+Container+Workload+Prediction",
     "bibTeX": {
-      "venue": "IEEE Transactions on Network and Service Management",
-      "type": "journal"
+      "@article": "zhang-tnsm",
+      "author": "Liangkang Zhang and Yulai Xie and Minpeng Jin and Pan Zhou and Gongming Xu and Yafeng Wu and Dan Feng and Darrell Long",
+      "title": "A Novel Hybrid Model for Docker Container Workload Prediction",
+      "journal": "IEEE Transactions on Network and Service Management",
+      "year": "to appear"
     }
   },
   {
@@ -3489,8 +3518,11 @@
     "date": "to appear",
     "url": "https://www.academia.edu/search?q=Paradise:+Real-time,+Generalized,+and+Distributed+Provenance-Based+Intrusion+Detection",
     "bibTeX": {
-      "venue": "ACM Transactions on Dependable and Secure Computing",
-      "type": "journal"
+      "@article": "wu-tdsc",
+      "author": "Yafeng Wu and Yulai Xie and Xuelong Liao and Pan Zhou and Dan Feng and Lin Wu and Xuan Li and Avani Wildani and Darrell Long",
+      "title": "Paradise: Real-time, Generalized, and Distributed Provenance-Based Intrusion Detection",
+      "journal": "ACM Transactions on Dependable and Secure Computing",
+      "year": "to appear"
     }
   },
   {
@@ -3508,8 +3540,13 @@
     "date": "May 27, 2021",
     "url": "https://www.academia.edu/search?q=Rethinking+the+Adversary+and+Operational+Characteristics+of+Deniable+Storage",
     "bibTeX": {
-      "venue": "Journal of Surveillance, Security and Safety",
-      "type": "journal"
+      "@article": "barker-jsss21",
+      "author": "Austen Barker and Yash Gupta and James Hughes and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Rethinking the Adversary and Operational Characteristics of Deniable Storage",
+      "journal": "Journal of Surveillance, Security and Safety",
+      "volume": 2,
+      "year": 2021,
+      "month": "may"
     }
   },
   {
@@ -3527,8 +3564,13 @@
     "date": "November 2025",
     "url": "https://www.academia.edu/search?q=Valet:+Efficient+Data+Placement+on+Modern+SSDs",
     "bibTeX": {
-      "venue": "Sixteenth Symposium on Cloud Computing (SOCC '25)",
-      "type": "conference"
+      "@inproceedings": "purandare-socc25",
+      "author": "Devashish R. Purandare and Peter Alvaro and Avani Wildani and Darrell D. E. Long and Ethan L. Miller",
+      "title": "Valet: Efficient Data Placement on Modern SSDs",
+      "booktitle": "Proceedings of the Sixteenth Symposium on Cloud Computing (SOCC '25)",
+      "year": 2025,
+      "month": "nov",
+      "organization": "ACM"
     }
   },
   {
@@ -3545,8 +3587,14 @@
     "date": "May 2025",
     "url": "https://www.academia.edu/search?q=Sparta:+Practical+Anonymity+with+Long-Term+Resistance+to+Traffic+Analysis",
     "bibTeX": {
-      "venue": "Forty-fifth IEEE Symposium on Security and Privacy (S&P)",
-      "type": "conference"
+      "@inproceedings": "fredrickson-sp25",
+      "author": "Kyle Fredrickson and Ioannis Demertzis and James P. Hughes and Darrell D. E. Long",
+      "title": "Sparta: Practical Anonymity with Long-Term Resistance to Traffic Analysis",
+      "booktitle": "Proceedings of the Forty-fifth IEEE Symposium on Security and Privacy (S\\&P)",
+      "year": 2025,
+      "month": "may",
+      "address": "San Francisco",
+      "organization": "IEEE"
     }
   },
   {
@@ -3567,8 +3615,14 @@
     "date": "November 2024",
     "url": "https://www.academia.edu/search?q=Accurate+Generation+of+I/O+Workloads+Using+Generative+Adversarial+Networks",
     "bibTeX": {
-      "venue": "Seventeenth IEEE International Conference on Networking, Architecture, and Storage (NAS 2024)",
-      "type": "conference"
+      "@inproceedings": "zhang-nas24",
+      "author": "Heyu Zhang and Zhen Yang and Yulai Xie and Yafeng Wu and Jiakun Li and Dan Feng and Avani Wildani and Darrell Long",
+      "title": "Accurate Generation of I/O Workloads Using Generative Adversarial Networks",
+      "booktitle": "Proceedings of the Seventeenth IEEE International Conference on Networking, Architecture, and Storage (NAS 2024)",
+      "year": 2024,
+      "month": "nov",
+      "address": "Guangzhou, China",
+      "organization": "IEEE"
     }
   },
   {
@@ -3586,8 +3640,12 @@
     "date": "December 2021",
     "url": "https://www.academia.edu/search?q=WinnowML:+Stable+Feature+Selection+for+Maximizing+Prediction+Accuracy+of+Time-based+System+Modeling",
     "bibTeX": {
-      "venue": "IEEE International Conference on Big Data",
-      "type": "short_paper"
+      "@inproceedings": "bel-bigdata21",
+      "author": "Oceane Bel and Sinjoni Mukhopadhyay and Nathan Tallent and Faisal Nawab and Darrell Long",
+      "title": "WinnowML: Stable Feature Selection for Maximizing Prediction Accuracy of Time-based System Modeling",
+      "booktitle": "IEEE International Conference on Big Data (Big Data)",
+      "year": 2021,
+      "month": "dec"
     }
   },
   {
@@ -3603,8 +3661,15 @@
     "date": "May 2014",
     "url": "https://www.academia.edu/search?q=Introducing+SeaOS",
     "bibTeX": {
-      "venue": "International Conference on Information Science and Applications (ICISA)",
-      "type": "short_paper"
+      "@inproceedings": "bittman-icisa14",
+      "author": "Daniel Bittman and D.J. Capelis and Darrell Long",
+      "title": "Introducing SeaOS",
+      "booktitle": "Proceedings of the 2014 International Conference on Information Science and Applications (ICISA)",
+      "year": 2014,
+      "month": "may",
+      "address": "Seoul, Korea",
+      "pages": "1--3",
+      "organization": "IEEE"
     }
   },
   {
@@ -3619,8 +3684,14 @@
     "date": "September 2008",
     "url": "https://www.academia.edu/search?q=Future+File+Systems",
     "bibTeX": {
-      "venue": "Computing with Massive and Persistent Data (CMPD)",
-      "type": "invited"
+      "@inproceedings": "pease-cmpd08",
+      "author": "David Pease and Darrell D.E. Long",
+      "title": "Future File Systems",
+      "booktitle": "Proceedings of Computing with Massive and Persistent Data (CMPD)",
+      "year": 2008,
+      "month": "sep",
+      "address": "Baltimore",
+      "organization": "IEEE"
     }
   },
   {
@@ -3636,8 +3707,15 @@
     "date": "April 2002",
     "url": "https://www.academia.edu/search?q=Experimentally+Evaluating+In-Place+Delta+Reconstruction",
     "bibTeX": {
-      "venue": "NASA and IEEE Mass Storage Conference",
-      "type": "invited"
+      "@inproceedings": "burns-msst02",
+      "author": "Randal Burns and Larry Stockmeyer and Darrell D.E. Long",
+      "title": "Experimentally Evaluating In-Place Delta Reconstruction",
+      "booktitle": "Proceedings of the NASA and IEEE Mass Storage Conference",
+      "year": 2002,
+      "month": "apr",
+      "address": "College Park",
+      "pages": "137--151",
+      "organization": "IEEE"
     }
   },
   {
@@ -3651,8 +3729,15 @@
     "date": "April 2001",
     "url": "https://www.academia.edu/search?q=A+Technique+for+Managing+Mirrored+Disks",
     "bibTeX": {
-      "venue": "International Performance Conference on Computers and Communication (IPCCC)",
-      "type": "invited"
+      "@inproceedings": "long-ipccc01",
+      "author": "Darrell D. E. Long",
+      "title": "A Technique for Managing Mirrored Disks",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication (IPCCC)",
+      "year": 2001,
+      "month": "apr",
+      "address": "Phoenix",
+      "pages": "272--277",
+      "organization": "IEEE"
     }
   },
   {
@@ -3670,8 +3755,15 @@
     "date": "March 1995",
     "url": "https://www.academia.edu/search?q=REINAS:+the+Real-Time+Environmental+Information+Network+and+Analysis+System",
     "bibTeX": {
-      "venue": "IEEE Computer Society CompCon",
-      "type": "invited"
+      "@inproceedings": "long-compcon95",
+      "author": "Darrell D. E. Long and Patrick E. Mantey and Craig M. Wittenbrink and Theodore R. Haining and Bruce R. Montague",
+      "title": "REINAS: the Real-Time Environmental Information Network and Analysis System",
+      "booktitle": "Proceedings of the IEEE Computer Society CompCon",
+      "year": 1995,
+      "month": "mar",
+      "address": "San Francisco",
+      "pages": "482--487",
+      "organization": "IEEE"
     }
   },
   {
@@ -3686,8 +3778,15 @@
     "date": "July 1996",
     "url": "https://www.academia.edu/search?q=Analysis+of+Caching+Algorithms+for+Distributed+File+Systems",
     "bibTeX": {
-      "venue": "Operating Systems Review",
-      "type": "misc"
+      "@article": "reed-osr96",
+      "author": "Benjamin Reed and Darrell D. E. Long",
+      "title": "Analysis of Caching Algorithms for Distributed File Systems",
+      "journal": "Operating Systems Review",
+      "volume": 30,
+      "number": 3,
+      "year": 1996,
+      "month": "jul",
+      "pages": "12--21"
     }
   },
   {
@@ -3705,8 +3804,15 @@
     "date": "May 1996",
     "url": "https://www.academia.edu/search?q=REINAS:+Real-Time+Environmental+Information+Network",
     "bibTeX": {
-      "venue": "Sea Technology",
-      "type": "misc"
+      "@article": "fernandez-seatech96",
+      "author": "Daniel M. Fernandez and Patrick E. Mantey and Darrell D. E. Long and Eric Rosen and Craig M. Wittenbrink",
+      "title": "REINAS: Real-Time Environmental Information Network",
+      "journal": "Sea Technology",
+      "volume": 37,
+      "number": 5,
+      "year": 1996,
+      "month": "may",
+      "pages": "47--53"
     }
   },
   {
@@ -3720,8 +3826,15 @@
     "date": "April 1993",
     "url": "https://www.academia.edu/search?q=A+Note+On+Bit-Mapped+Free+Sector+Management",
     "bibTeX": {
-      "venue": "Operating Systems Review",
-      "type": "misc"
+      "@article": "long-osr93",
+      "author": "Darrell D. E. Long",
+      "title": "A Note On Bit-Mapped Free Sector Management",
+      "journal": "Operating Systems Review",
+      "volume": 27,
+      "number": 2,
+      "year": 1993,
+      "month": "apr",
+      "pages": "7--9"
     }
   }
 ]
