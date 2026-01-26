@@ -23,7 +23,7 @@ npm run dev          # Development server with HMR
 npm run build        # Production build (outputs to dist/)
 npm run lint         # ESLint checking
 npm run preview      # Preview production build
-npm run deploy       # Deploy to gh-pages
+npm run deploy       # Build and copy to repo root
 ```
 
 ### Jekyll (legacy pages)
@@ -43,15 +43,17 @@ ESLint configured in `src/.eslintrc.cjs`:
 
 ## Deployment
 
-**No CI/CD pipeline** - deployment is manual.
+**No CI/CD pipeline** - deployment is manual. Site is served from master branch root.
 
 React SPA deployment:
 ```bash
 cd src
-npm run deploy    # Runs build, then gh-pages -d dist
+npm run deploy    # Builds and copies dist/* to repo root
+cd ..
+git add -A && git commit -m "Deploy" && git push
 ```
 
-This deploys the React build to the `gh-pages` branch. The main site is served by GitHub Pages from the repository root.
+The build outputs to `src/dist/`, then gets copied to the repo root. Pushing to master deploys the site.
 
 ## Local Development Without Database
 
