@@ -18,12 +18,13 @@ export default function Publications({ searchTerm, search }) {
 
   const filteredPublications = publications.filter((publication) => {
     const searchString = searchTerm.toLowerCase();
+    const year = String(publication.bibTeX?.year || "");
     return (
       publication.title.toLowerCase().includes(searchString) ||
       publication.author.some((author) =>
         author.toLowerCase().includes(searchString),
       ) ||
-      publication.date.toLowerCase().includes(searchString)
+      year.includes(searchString)
     );
   });
 

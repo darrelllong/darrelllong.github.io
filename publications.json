@@ -3803,6 +3803,7 @@
       "journal": "IEEE Transactions on Network and Service Management",
       "volume": 20,
       "number": 3,
+      "month": "feb",
       "year": 2023
     }
   },
@@ -3822,7 +3823,6 @@
       "Avani Wildani",
       "Darrell Long"
     ],
-    "date": "March 2022",
     "url": "https://ieeexplore.ieee.org/document/9739913",
     "bibTeX": {
       "@article": "wu-tdsc",
@@ -3831,6 +3831,7 @@
       "journal": "IEEE Transactions on Dependable and Secure Computing",
       "volume": 20,
       "number": 2,
+      "month": "mar",
       "year": 2022
     }
   },
