@@ -3794,14 +3794,16 @@
       "Dan Feng",
       "Darrell Long"
     ],
-    "date": "to appear",
-    "url": "https://scholar.google.com/scholar?q=A%20Novel%20Hybrid%20Model%20for%20Docker%20Container%20Workload%20Prediction",
+    "date": "February 2023",
+    "url": "https://ieeexplore.ieee.org/document/10052731",
     "bibTeX": {
       "@article": "zhang-tnsm",
       "author": "Liangkang Zhang and Yulai Xie and Minpeng Jin and Pan Zhou and Gongming Xu and Yafeng Wu and Dan Feng and Darrell Long",
       "title": "A Novel Hybrid Model for Docker Container Workload Prediction",
       "journal": "IEEE Transactions on Network and Service Management",
-      "year": "to appear"
+      "volume": 20,
+      "number": 3,
+      "year": 2023
     }
   },
   {
@@ -3820,14 +3822,14 @@
       "Avani Wildani",
       "Darrell Long"
     ],
-    "date": "to appear",
-    "url": "https://scholar.google.com/scholar?q=Paradise%3A%20Real-time%2C%20Generalized%2C%20and%20Distributed%20Provenance-Based%20Intrusion%20Detection",
+    "date": "March 2022",
+    "url": "https://ieeexplore.ieee.org/document/9739913",
     "bibTeX": {
       "@article": "wu-tdsc",
       "author": "Yafeng Wu and Yulai Xie and Xuelong Liao and Pan Zhou and Dan Feng and Lin Wu and Xuan Li and Avani Wildani and Darrell Long",
       "title": "Paradise: Real-time, Generalized, and Distributed Provenance-Based Intrusion Detection",
-      "journal": "ACM Transactions on Dependable and Secure Computing",
-      "year": "to appear"
+      "journal": "IEEE Transactions on Dependable and Secure Computing",
+      "year": 2022
     }
   },
   {
