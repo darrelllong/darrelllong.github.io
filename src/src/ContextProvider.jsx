@@ -18,33 +18,24 @@ export const ContextProvider = ({ children }) => {
 
   const [publications, setPublications] = React.useState([]);
   React.useEffect(() => {
-    // Parse various date formats: "Apr 1, 1991", "July 1996", "1989"
-    const parseDate = (dateStr) => {
-      if (!dateStr) return new Date(0);
-      // Try standard parsing first (works for "Apr 1, 1991")
-      let date = new Date(dateStr);
-      if (!isNaN(date.getTime())) return date;
-      // Handle "Month Year" format (e.g., "July 1996")
-      const monthYear = dateStr.match(/^([A-Za-z]+)\s+(\d{4})$/);
-      if (monthYear) {
-        return new Date(`${monthYear[1]} 1, ${monthYear[2]}`);
-      }
-      // Handle year-only (e.g., "1989")
-      const yearOnly = dateStr.match(/^(\d{4})$/);
-      if (yearOnly) {
-        return new Date(`Jan 1, ${yearOnly[1]}`);
-      }
-      return new Date(0);
+    // Month abbreviation to number (0-11)
+    const monthToNum = {
+      jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5,
+      jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11
     };
 
     fetch("/publications.json")
       .then((response) => response.json())
       .then((data) => {
-        // Sort publications by date, newest first
+        // Sort publications by year and month, newest first
         const sorted = data.sort((a, b) => {
-          const dateA = parseDate(a.date);
-          const dateB = parseDate(b.date);
-          return dateB - dateA;
+          const yearA = a.bibTeX?.year || 0;
+          const yearB = b.bibTeX?.year || 0;
+          if (yearB !== yearA) return yearB - yearA;
+          // Same year, sort by month
+          const monthA = monthToNum[a.bibTeX?.month?.toLowerCase()] ?? 0;
+          const monthB = monthToNum[b.bibTeX?.month?.toLowerCase()] ?? 0;
+          return monthB - monthA;
         });
         setPublications(sorted);
       })
