@@ -8,14 +8,13 @@ import {
   faFileArrowDown,
   faUpRightFromSquare,
 } from "@fortawesome/free-solid-svg-icons";
-import cv from "../assets/cv.pdf";
 
 export default function Menu() {
   const menuItems = [
     { label: "About", page: "about" },
     { label: "Publications", page: "publications" },
     { label: "Consultancy", page: "consultancy" },
-    { label: "CV", link: cv, icon: faFileArrowDown },
+    { label: "CV", link: "/cv.pdf", icon: faFileArrowDown },
     {
       label: "Laboratory",
       link: "https://www.crss.us/",
