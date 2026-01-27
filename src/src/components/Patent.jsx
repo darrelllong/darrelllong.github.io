@@ -121,6 +121,23 @@ Header.propTypes = {
   search: PropTypes.func,
 };
 
+const Description = ({ text }) => {
+  if (!text) {
+    return null;
+  }
+
+  return (
+    <main className="dottedBorder">
+      <h3>Description</h3>
+      <p>{text}</p>
+    </main>
+  );
+};
+
+Description.propTypes = {
+  text: PropTypes.string,
+};
+
 const Patent = ({ patent, total, search }) => {
   if (!patent) {
     return (
@@ -145,11 +162,7 @@ const Patent = ({ patent, total, search }) => {
     <>
       <article>
         <Header {...patent} search={search} />
-        <main className="dottedBorder">
-          {patent.short_description && (
-            <p>{patent.short_description}</p>
-          )}
-        </main>
+        <Description text={patent.short_description} />
         <footer>
           <BibTeX bibTeX={patent.bibTeX} />
           {patent.url && (
