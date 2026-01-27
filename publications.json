@@ -4138,5 +4138,218 @@
       "month": "apr",
       "pages": "7--9"
     }
+  },
+  {
+    "id": 171,
+    "title": "PRESIDIO: A Framework for Efficient Archival Data Storage",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Lawrence L. You",
+      "Kristal T. Pollack",
+      "Darrell D. E. Long",
+      "K. Gopinath"
+    ],
+    "date": "Jul 1, 2011",
+    "url": "https://ssrc.us/media/pubs/33ef15dd54e7d4175fe554cff674cb6e386038c6.pdf",
+    "bibTeX": {
+      "@article": "you-tos11",
+      "author": "Lawrence L. You and Kristal T. Pollack and Darrell D. E. Long and K. Gopinath",
+      "title": "PRESIDIO: A Framework for Efficient Archival Data Storage",
+      "journal": "ACM Transactions on Storage",
+      "volume": 7,
+      "number": 2,
+      "year": 2011,
+      "month": "jul",
+      "pages": "1--60"
+    }
+  },
+  {
+    "id": 172,
+    "title": "Using MEMS-Based Storage in Computer Systems -- MEMS Storage Architectures",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Bo Hong",
+      "Feng Wang",
+      "Scott A. Brandt",
+      "Darrell D. E. Long",
+      "Thomas J. E. Schwarz"
+    ],
+    "date": "Feb 1, 2006",
+    "url": "https://escholarship.org/content/qt8076d22w/qt8076d22w.pdf",
+    "bibTeX": {
+      "@article": "hong-tos06a",
+      "author": "Bo Hong and Feng Wang and Scott A. Brandt and Darrell D. E. Long and Thomas J. E. Schwarz",
+      "title": "Using MEMS-Based Storage in Computer Systems -- MEMS Storage Architectures",
+      "journal": "ACM Transactions on Storage",
+      "volume": 2,
+      "number": 1,
+      "year": 2006,
+      "month": "feb",
+      "pages": "1--21"
+    }
+  },
+  {
+    "id": 173,
+    "title": "Authenticating Network Attached Storage",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Benjamin C. Reed",
+      "Darrell D. E. Long",
+      "Edward G. Chron",
+      "Randal C. Burns"
+    ],
+    "date": "Jan 1, 2000",
+    "url": "https://ieeexplore.ieee.org/document/820053/",
+    "bibTeX": {
+      "@article": "reed-micro00",
+      "author": "Benjamin C. Reed and Darrell D. E. Long and Edward G. Chron and Randal C. Burns",
+      "title": "Authenticating Network Attached Storage",
+      "journal": "IEEE Micro",
+      "volume": 20,
+      "number": 1,
+      "year": 2000,
+      "month": "jan",
+      "pages": "49--57"
+    }
+  },
+  {
+    "id": 174,
+    "title": "Improving Bandwidth Efficiency of Video-on-Demand Servers",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Steven W. Carter",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jan 1, 1999",
+    "url": "https://escholarship.org/content/qt9xj6z13f/qt9xj6z13f_noSplash_e1050e26548b547def3fb1dd310a1307.pdf",
+    "bibTeX": {
+      "@article": "carter-cn99",
+      "author": "Steven W. Carter and Darrell D. E. Long",
+      "title": "Improving Bandwidth Efficiency of Video-on-Demand Servers",
+      "journal": "Computer Networks",
+      "volume": 31,
+      "number": "1--2",
+      "year": 1999,
+      "month": "jan",
+      "pages": "99--111"
+    }
+  },
+  {
+    "id": 175,
+    "title": "REINAS: A Real-time System for Managing Environmental Data",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Eric C. Rosen",
+      "Theodore R. Haining",
+      "Darrell D. E. Long",
+      "Patrick E. Mantey"
+    ],
+    "date": "Jan 1, 1998",
+    "url": "https://escholarship.org/uc/item/34x467zf",
+    "bibTeX": {
+      "@article": "rosen-jseke98",
+      "author": "Eric C. Rosen and Theodore R. Haining and Darrell D. E. Long and Patrick E. Mantey",
+      "title": "REINAS: A Real-time System for Managing Environmental Data",
+      "journal": "Journal of Software Engineering and Knowledge Engineering",
+      "volume": 8,
+      "number": 1,
+      "year": 1998,
+      "pages": "35--53"
+    }
+  },
+  {
+    "id": 176,
+    "title": "Swift/RAID: A Distributed RAID System",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long",
+      "Bruce R. Montague",
+      "Luis-Felipe Cabrera"
+    ],
+    "date": "Jan 1, 1994",
+    "url": "https://escholarship.org/uc/item/5dp278wc",
+    "bibTeX": {
+      "@article": "long-cs94",
+      "author": "Darrell D. E. Long and Bruce R. Montague and Luis-Felipe Cabrera",
+      "title": "Swift/RAID: A Distributed RAID System",
+      "journal": "Computing Systems",
+      "volume": 7,
+      "number": 3,
+      "year": 1994,
+      "pages": "333--359"
+    }
+  },
+  {
+    "id": 177,
+    "title": "Swift: Using Distributed Disk Striping to Provide High I/O Data Rates",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Luis-Felipe Cabrera",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jan 1, 1991",
+    "url": "https://www.usenix.org/legacy/publications/compsystems/1991/fall_cabrera.pdf",
+    "bibTeX": {
+      "@article": "cabrera-cs91",
+      "author": "Luis-Felipe Cabrera and Darrell D. E. Long",
+      "title": "Swift: Using Distributed Disk Striping to Provide High I/O Data Rates",
+      "journal": "Computing Systems",
+      "volume": 4,
+      "number": 4,
+      "year": 1991,
+      "pages": "405--436"
+    }
+  },
+  {
+    "id": 178,
+    "title": "Accessing Replicated Data in a Large-Scale Distributed System",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Richard A. Golding",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jan 1, 1991",
+    "url": "https://crss.us/media/pubs/c92408e66e20a15d78c3888c31c4b90e761320f1.pdf",
+    "bibTeX": {
+      "@article": "golding-ijcs91",
+      "author": "Richard A. Golding and Darrell D. E. Long",
+      "title": "Accessing Replicated Data in a Large-Scale Distributed System",
+      "journal": "International Journal in Computer Simulation",
+      "volume": 1,
+      "number": 4,
+      "year": 1991,
+      "pages": "347--372"
+    }
+  },
+  {
+    "id": 179,
+    "title": "The Performance of Available Copy Protocols for the Management of Replicated Data",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 1, 1990",
+    "url": "https://ssrc.us/media/pubs/91119e35f3253892d6ea5a9edfc12be0e54261c1.pdf",
+    "bibTeX": {
+      "@article": "paris-pe90",
+      "author": "Jehan-Fran\\c{c}ois P\\^aris and Darrell D. E. Long",
+      "title": "The Performance of Available Copy Protocols for the Management of Replicated Data",
+      "journal": "Performance Evaluation",
+      "volume": 11,
+      "number": 1,
+      "year": 1990,
+      "month": "apr",
+      "pages": "9--30"
+    }
   }
 ]
