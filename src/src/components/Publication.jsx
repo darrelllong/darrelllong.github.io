@@ -135,7 +135,7 @@ const Header = ({ title, author, bibTeX, url, search }) => {
       {url && (
         <a href={url} target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faFileArrowDown} fixedWidth />
-          Dowload full paper PDF
+          Download full paper PDF
         </a>
       )}
     </header>
@@ -184,7 +184,7 @@ const Publication = ({ publication, total, search }) => {
           <BibTeX bibTeX={publication.bibTeX} />
           {publication.url && (
             <a href={publication.url} target="_blank" rel="noreferrer">
-              Dowload full paper PDF <FontAwesomeIcon icon={faFileArrowDown} />
+              Download full paper PDF <FontAwesomeIcon icon={faFileArrowDown} />
             </a>
           )}
         </footer>
