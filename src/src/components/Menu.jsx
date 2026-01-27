@@ -13,6 +13,7 @@ export default function Menu() {
   const menuItems = [
     { label: "About", page: "about" },
     { label: "Publications", page: "publications" },
+    { label: "Patents", page: "patents" },
     { label: "Consultancy", page: "consultancy" },
     { label: "CV", link: "/cv.pdf", icon: faFileArrowDown },
     {
