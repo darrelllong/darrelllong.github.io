@@ -4,7 +4,8 @@ import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const repoRoot = join(__dirname, '..', '..');
-const indexHtml = join(repoRoot, 'index.html');
+const distDir = join(__dirname, '..', 'dist');
+const indexHtml = join(distDir, 'index.html');
 
 // Static routes
 const routes = ['about', 'consultancy', 'publications', 'patents'];
