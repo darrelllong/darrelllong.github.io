@@ -11,9 +11,11 @@ import { Context } from "../ContextProvider";
 // Components
 import About from "./About";
 import Publications from "./Publications";
+import Publication from "./Publication";
+import Patents from "./Patents";
+import Patent from "./Patent";
 import Consultancy from "./Consultancy";
 import Menu from "./Menu";
-import Publication from "./Publication";
 // Styles
 import "../assets/css/home.scss";
 
@@ -21,7 +23,7 @@ export default function Main() {
   const [searchTerm, setSearchTerm] = React.useState("");
   const location = useLocation();
   const navigate = useNavigate();
-  const { pathClass, publications, showMenu, setShowMenu } =
+  const { pathClass, publications, patents, showMenu, setShowMenu } =
     React.useContext(Context);
 
   const disableMenu = () => {
@@ -53,6 +55,11 @@ export default function Main() {
     ? parseInt(matchPublication[1], 10)
     : null;
 
+  const matchPatent = location.pathname.match(/^\/patents\/(\d+)$/);
+  const patentId = matchPatent
+    ? parseInt(matchPatent[1], 10)
+    : null;
+
   return (
     <main
       className={`dottedBorder ${pathClass(location.pathname)} ${showMenu && location.pathname !== "/" ? "menuShown" : ""}`}
@@ -67,6 +74,12 @@ export default function Main() {
         />
         <Route path="/consultancy" element={<Consultancy />} />
         <Route
+          path="/patents"
+          element={
+            <Patents searchTerm={searchTerm} search={setSearchTerm} />
+          }
+        />
+        <Route
           path={`/publications/:id`}
           element={
             publicationId !== null ? (
@@ -75,6 +88,22 @@ export default function Main() {
                   (pub) => pub.id === publicationId,
                 )}
                 total={publications.length}
+                search={setSearchTerm}
+              />
+            ) : (
+              <Route path="*" element={<Navigate to="/" replace />} />
+            )
+          }
+        />
+        <Route
+          path={`/patents/:id`}
+          element={
+            patentId !== null ? (
+              <Patent
+                patent={patents.find(
+                  (pat) => pat.id === patentId,
+                )}
+                total={patents.length}
                 search={setSearchTerm}
               />
             ) : (

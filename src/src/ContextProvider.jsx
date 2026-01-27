@@ -9,7 +9,10 @@ export const ContextProvider = ({ children }) => {
     if (path === "/") {
       return "home";
     }
-    if (/\d$/.test(path)) {
+    if (/^\/patents\/\d+$/.test(path)) {
+      return "patent";
+    }
+    if (/^\/publications\/\d+$/.test(path)) {
       return "publication";
     }
     return path.replace(/\//g, "");
@@ -17,6 +20,8 @@ export const ContextProvider = ({ children }) => {
   const [showMenu, setShowMenu] = React.useState(false);
 
   const [publications, setPublications] = React.useState([]);
+  const [patents, setPatents] = React.useState([]);
+
   React.useEffect(() => {
     // Month abbreviation to number (0-11)
     const monthToNum = {
@@ -39,12 +44,29 @@ export const ContextProvider = ({ children }) => {
         });
         setPublications(sorted);
       })
-      .catch((error) => console.error("Error fetching the JSON file:", error));
+      .catch((error) => console.error("Error fetching publications:", error));
+
+    fetch("/patents.json")
+      .then((response) => response.json())
+      .then((data) => {
+        // Sort patents by year and month, newest first
+        const sorted = data.sort((a, b) => {
+          const yearA = a.bibTeX?.year || 0;
+          const yearB = b.bibTeX?.year || 0;
+          if (yearB !== yearA) return yearB - yearA;
+          // Same year, sort by month
+          const monthA = monthToNum[a.bibTeX?.month?.toLowerCase()] ?? 0;
+          const monthB = monthToNum[b.bibTeX?.month?.toLowerCase()] ?? 0;
+          return monthB - monthA;
+        });
+        setPatents(sorted);
+      })
+      .catch((error) => console.error("Error fetching patents:", error));
   }, []);
 
   return (
     <Context.Provider
-      value={{ pathClass, showMenu, setShowMenu, publications }}
+      value={{ pathClass, showMenu, setShowMenu, publications, patents }}
     >
       {children}
     </Context.Provider>

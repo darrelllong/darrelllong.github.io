@@ -7,7 +7,7 @@ const repoRoot = join(__dirname, '..', '..');
 const indexHtml = join(repoRoot, 'index.html');
 
 // Static routes
-const routes = ['about', 'consultancy', 'publications'];
+const routes = ['about', 'consultancy', 'publications', 'patents'];
 
 for (const route of routes) {
   const routeDir = join(repoRoot, route);
@@ -25,4 +25,14 @@ for (const pub of publications) {
   cpSync(indexHtml, join(routeDir, 'index.html'));
 }
 
-console.log(`Generated ${routes.length} static routes and ${publications.length} publication routes`);
+// Generate routes for individual patents
+const patentsJson = join(repoRoot, 'patents.json');
+const patents = JSON.parse(readFileSync(patentsJson, 'utf-8'));
+
+for (const pat of patents) {
+  const routeDir = join(repoRoot, 'patents', String(pat.id));
+  mkdirSync(routeDir, { recursive: true });
+  cpSync(indexHtml, join(routeDir, 'index.html'));
+}
+
+console.log(`Generated ${routes.length} static routes, ${publications.length} publication routes, and ${patents.length} patent routes`);
