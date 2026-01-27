@@ -6,9 +6,9 @@ import { Context } from "../ContextProvider";
 // Components
 import Pagination from "./Pagination";
 import PublicationCard from "./PublicationCard";
-// Asseets
+// Assets
 import { faCircleXmark, faSearch } from "@fortawesome/free-solid-svg-icons";
-// Stylesx
+// Styles
 import "../assets/css/publications.scss";
 
 export default function Publications({ searchTerm, search }) {
