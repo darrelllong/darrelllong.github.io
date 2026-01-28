@@ -69,7 +69,7 @@ export const ContextProvider = ({ children }) => {
 
   return (
     <Context.Provider
-      value={{ pathClass, showMenu, setShowMenu, publications, patents, loading }}
+      value={{ pathClass, showMenu, setShowMenu, publications, patents, loading, dataReady: !loading }}
     >
       {children}
     </Context.Provider>
