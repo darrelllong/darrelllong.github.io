@@ -62,7 +62,7 @@ export default function Main() {
 
   return (
     <main
-      className={`dottedBorder ${pathClass(location.pathname)} ${showMenu && location.pathname !== "/" ? "menuShown" : ""}`}
+      className={`${pathClass(location.pathname)} ${showMenu && location.pathname !== "/" ? "menuShown" : ""}`}
     >
       <Routes>
         <Route path="/about" element={<About />} />
@@ -107,6 +107,7 @@ export default function Main() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       {showMenu && location.pathname !== "/" && <Menu />}
+      <div className="decorativeBar" />
     </main>
   );
 }
