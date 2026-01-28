@@ -128,7 +128,7 @@ const Description = ({ text }) => {
   }
 
   return (
-    <main className="dottedBorder">
+    <main>
       <h3>Description</h3>
       <p>{text}</p>
     </main>
