@@ -23,7 +23,7 @@ export default function Main() {
   const [searchTerm, setSearchTerm] = React.useState("");
   const location = useLocation();
   const navigate = useNavigate();
-  const { pathClass, publications, patents, showMenu, setShowMenu } =
+  const { pathClass, publications, patents, showMenu, setShowMenu, loading } =
     React.useContext(Context);
 
   const disableMenu = () => {
@@ -88,6 +88,7 @@ export default function Main() {
               )}
               total={publications.length}
               search={setSearchTerm}
+              loading={loading}
             />
           }
         />
@@ -100,6 +101,7 @@ export default function Main() {
               )}
               total={patents.length}
               search={setSearchTerm}
+              loading={loading}
             />
           }
         />
