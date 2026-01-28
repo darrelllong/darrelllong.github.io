@@ -64,7 +64,7 @@ const Header = ({ title, author, bibTeX, patent_number, url, search }) => {
   const displayDate = formatDate(bibTeX);
 
   return (
-    <header className="dottedBorder">
+    <header>
       {title && <h2>{title}</h2>}
       {author && (
         <section>
