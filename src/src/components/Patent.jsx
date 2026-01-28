@@ -2,6 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { Context } from "../ContextProvider";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Assets
 import {
@@ -139,8 +140,10 @@ Description.propTypes = {
 };
 
 const Patent = ({ patent, total, search }) => {
-  // If total is 0, data hasn't loaded yet
-  if (total === 0) {
+  const { patents } = React.useContext(Context);
+
+  // If patents array is empty, data hasn't loaded yet
+  if (patents.length === 0) {
     return <h2>Loading...</h2>;
   }
 
