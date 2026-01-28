@@ -428,7 +428,7 @@
     "id": 19,
     "title": "Conserving Battery Energy through Making Fewer Incorrect File Predictions",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Recent increases in CPU performance have outpaced increases in hard drive performance. As a result, disk operations have become more expensive in terms of CPU cycles spent waiting for disk operations to complete. File prediction can mitigate this problem by prefetching files into cache before they are accessed. However, incorrect prediction is to a certain degree both unavoidable and costly. Battery is a valuable resource in a mobile computing environment. The utility of mobile computers is greatly affected the battery life. Incorrect prediction not only wastes cache space, also consumes battery energy. Consequently, incorrect prediction is more expensive to mobile computers than its counterpart to desktop computers. Last Successor (LS) is a commonly-used predicting algorithm in practice. We present the Program-based Last Successor (PLS) file prediction model that identifies relationships between files through the names of the programs accessing them. Our simulation results show that PLS makes 21",
     "author": [
       "Ahmed Amer",
       "Darrell D. E. Long"
@@ -473,7 +473,7 @@
     "id": 21,
     "title": "Efficient Data Distribution in a Web Server Farm",
     "short_description": "",
-    "full_content": "",
+    "full_content": "For low-latency access and scalability, Web site replication with a distributed file system has advantages over proxy caching. In particular, file systems encapsulate data consistency and recovery from failure behind a simple interface so that Web servers and Internet applications can operate as if they were on a single system. However, distributing content changes to many Web servers using a file system can heavily load the network between the servers, resulting in added latency. Poor performance arises in this environment because the Web-serving workload differs radically from the assumed file system workload. To address this shortcoming of file systems, we introduce the publish cache consistency model well suited to the Web-serving workload, which relaxes cache-consistency constraints slightly in order to enhance performance. We implement publish consistency in the producer-consumer locking protocol, in which the file system pushes content updates to Web servers. A comparison of this protocol against other file system protocols by simulation shows that producer-consumer locking removes almost all latency due to protocol overhead and significantly reduces network load.",
     "author": [
       "Randal C. Burns",
       "Robert M. Rees",
@@ -544,7 +544,7 @@
     "id": 24,
     "title": "Scalable Session Locking for a Distributed File System",
     "short_description": "",
-    "full_content": "",
+    "full_content": "File systems provide an interface for applications to obtain exclusive access to files, in which a process holds privileges to a file that cannot be preempted and restrict the capabilities of other processes. Local file systems do this by maintaining information about the privileges of current file sessions, and checking subsequent sessions for compatibility. Implementing exclusive access in this manner for distributed file systems degrades performance by requiring every new session file to be registered with a lock server that maintains global session state. We present two techniques for improving the performance of session management in the distributed environment. We introduce a distributed lock for managing file access, called a semi-preemptible lock, that allows clients to cache privileges. Under a semi-preemptible lock, a file system creates new sessions without messages to the lock manager. This improves performance by exploiting locality -- the affinity of files to clients. We also present data structures and algorithms for the dynamic evaluation of locks that allow a distributed system file to efficiently manage arbitrarily complex locking systems. In this case, complex means that an object can be locked in a large number of unique modes. The combination of these techniques results in a distributed locking scheme that supports fine-grained concurrency control with low memory and message overhead and with the assurance that their locking system is correct and avoids unnecessary deadlocks.",
     "author": [
       "Randal C. Burns",
       "Robert M. Rees",
@@ -593,7 +593,7 @@
     "id": 26,
     "title": "Compactly Encoding Unstructured Inputs with Differential Compression",
     "short_description": "",
-    "full_content": "",
+    "full_content": "The subject of this paper is differential compression, the algorithmic task of finding common strings between versions of data and using them to encode one version compactly by describing it as a set of changes from its companion. A main goal of this work is to present new differencing algorithms that (i) operate at a fine granularity (the atomic unit of change), (ii) make no assumptions about the format or alignment of input data, and (iii) in practice use linear time, use constant space, and give good compression. We present new algorithms, which do not always compress optimally but use considerably less time or space than existing algorithms. One new algorithm runs in O(n) time and O(1) space in the worst case (where each unit of space contains n bits), as compared to algorithms that run in O(n) time and O(n) space or in O(n^2) time and O(1) space. We introduce two new techniques for differential compression and apply these to give additional algorithms that improve compression and time performance. We experimentally explore the properties of our algorithms by running them on actual versioned data. Finally, we present theoretical results that limit the compression power of differencing algorithms that are restricted to making only a single pass over the data. Categories and Subject Descriptors: D.2.7 [Software Engineering]: Distribution, Maintenance, and Enhancement-- version control; E.4 [Data]: Coding and Information Theory -- data compaction and compression; E.5 [Data]: Files -- backup/recovery; F.2.2 [Analysis of Algorithms and Problem Complexity]: Nonnumerical Algorithms and Problems; H.2.7 [Database Management]: Database Administration -- data warehouse and repository; H.3.5 [Information Storage and Retrieval]: Online Information Services -- web-based services General Terms: Algorithms, Experimentation, Performance, Theory Additional Key Words and Phrases: Delta compression, differencing, differential compressions",
     "author": [
       "Mikl\u00f3s Ajtai",
       "Randal Burns",
@@ -668,7 +668,7 @@
     "id": 29,
     "title": "Who is more adaptive? ACME: adaptive caching using multiple experts",
     "short_description": "",
-    "full_content": "",
+    "full_content": "The gap between CPU speeds and the speed of the technologies providing the data is increasing. As a result, latency and bandwidth to needed data is limited by the performance of the storage devices and the networks that connect them to the CPU. Distributed caching techniques are often used to reduce the penalties associated with such caching; however, such techniques need further development to be truly integrated into the network. This paper describes the preliminary design of an adaptive caching scheme using multiple experts, called ACME. ACME is used to manage the replacement policies within distributed caches to further improve the hit rates over static caching techniques. We propose the use of machine learning algorithms to rate and select the current best policies or mixtures of policies via weight updates based on their recent success, allowing each adaptive cache node to tune itself based on the workload it observes. Since no cache databases or synchronization messages are exchanged for adaptivity, the clusters composed of these nodes will be scalable and manageable. We show that static techniques are suboptimal when combined in networks of caches, providing potential for adaptivity to improve performance. : Caching, adaptive systems, clusters, adaptive caching, static caching",
     "author": [
       "Ismail Ari",
       "Ahmed Amer",
@@ -873,7 +873,7 @@
     "id": 37,
     "title": "Efficient Metadata Management in a Large Distributed Storage System",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Existing file access predictors keep track of previous file access patterns and rely on a single heuristic to predict which of the previous successors to the file being currently accessed is the most likely to be accessed next. We present here a novel composite predictor that applies multiple heuristics to this selection problem. As a result, it can make use of specialized heuristics that can make very accurate predictions when access patterns are observed to meet their particular criteria. Simulation results involving a total of seven file access traces indicate that our predictor delivers more correct predictions and less inaccurate guesses than predictors relying on a single heuristic for selecting a successor.",
     "author": [
       "Scott A. Brandt",
       "Ethan L. Miller",
@@ -949,7 +949,7 @@
     "id": 40,
     "title": "A Stochastic Approach to File Access Prediction",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Most existing studies of file access prediction are experimental in nature and rely on trace driven simulation to predict the performance of the schemes being investigated. We present a first order Markov analysis of file access prediction, discuss its limitations and show how it can be used to estimate the performance of file access predictors, such as First Successor, Last Successor, Stable Successor and Best-k-out-of-n. We compare these analytical results with experimental measurements performed on several file traces and find out that specific workloads, and indeed individual files, can exhibit very different levels of non-stationarity. Overall, at least 60 percent of access requests appear to remain stable over at least a month. Terms: File access prediction, storage hierarchies, storage management.",
     "author": [
       "Jehan-Fran\u00e7ois P\u00e2ris",
       "Ahmed Amer",
@@ -1024,7 +1024,7 @@
     "id": 43,
     "title": "Identifying Stable File Access Patterns",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Parallel scientific applications require high-performance I/O support from underlying file systems. A comprehensive understanding of the expected workload is therefore essential for the design of high-performance parallel file systems. We re-examine the workload characteristics in parallel computing environments in the light of recent technology advances and new applications. We analyze application traces from a cluster with hundreds of nodes. On average, each application has only one or two typical request sizes. Large requests from several hundred kilobytes to several megabytes are very common. Although in some applications, small requests account for more than 90 are transferred by large requests. All of these applications show bursty access patterns. More than 65 within one millisecond in most applications. By running the same benchmark on different file models, we also find that the write throughput of using an individual output file for each node exceeds that of using a shared file for all nodes by a factor of 5. This indicates that current file systems are not well optimized for file sharing.",
     "author": [
       "Purvi Shah",
       "Jehan-Fran\u00e7ois P\u00e2ris",
@@ -1049,7 +1049,7 @@
     "id": 44,
     "title": "File System Workload Analysis For Large Scientific Computing Applications",
     "short_description": "",
-    "full_content": "",
+    "full_content": "The object-based storage model, in which files are made up of one or more data objects stored on self-contained Object-Based Storage Devices (OBSDs), is emerging as an architecture for distributed storage systems. The workload presented to the OBSDs will be quite different from that of general-purpose file systems, yet many distributed file systems employ general-purpose file systems as their underlying file system. We present OBFS, a small and highly efficient file system designed for use in OBSDs. Our experiments show that our user-level implementation of OBFS outperforms Linux Ext2 and Ext3 by a factor of two or three, and while OBFS is 1/25 the size of XFS, it provides only slightly lower read performance and up to 40 write performance.",
     "author": [
       "Feng Wang",
       "Qin Xin",
@@ -1252,7 +1252,7 @@
     "id": 52,
     "title": "Ceph: A Scalable Object-Based Storage System",
     "short_description": "",
-    "full_content": "",
+    "full_content": "abstract We have developed Ceph, a distributed file system that provides excellent performance, reliability, and scalability. Ceph maximizes the separation between data and metadata management by replacing allocation tables with a pseudo-random data distribution function (CRUSH) designed for heterogeneous and dynamic clusters of unreliable object storage devices (OSDs). We leverage device intelligence by distributing data replication, failure detection and recovery to semi-autonomous OSDs running a specialized local object file system. A dynamic distributed metadata cluster provides extremely efficient metadata management and seamlessly adapts to a wide range of general purpose and scientific computing file system workloads. Performance measurements under a variety of workloads show that Ceph has excellent I/O performance and scalable metadata management, supporting more than 250,000 metadata operations per second. abstract",
     "author": [
       "Sage A. Weil",
       "Scott A. Brandt",
@@ -1377,7 +1377,7 @@
     "id": 57,
     "title": "NVCache: Increasing the effectiveness of disk spin-down algorithms with caching",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Being one of the few mechanical components in a typical computer system, hard drives consume a significant amount of the overall power used by a computer. Spinning down a hard drive reduces its power consumption, but only works when no disk accesses occur, limiting overall effectiveness. We have designed and implemented a technique to extend disk spin-down times using a small non-volatile storage cache called NVCache, which contains a combination of caching techniques to service reads and writes while the hard disk is in low-power mode. We show that combining NVCache with an adaptive disk spin-down algorithm, a hard disk's power consumption can be reduced by up to 90",
     "author": [
       "Timothy Bisson",
       "Scott A. Brandt",
@@ -1401,7 +1401,7 @@
     "id": 58,
     "title": "Using Device Diversity to Protect Data against Batch-Correlated Disk Failures",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Batch-correlated failures result from the manifestation of a common defect in most, if not all, disk drives belonging to the same production batch. They are much less frequent than random disk failures but can cause catastrophic data losses even in systems that rely on mirroring or erasure codes to protect their data. We propose to reduce impact of batch-correlated failures on disk arrays by storing redundant copies of the same data on disks from different batches and, possibly, different manufacturers. The technique is especially attractive for mirrored organizations as it only requires that the two disks that hold copies of the same data never belong to the same production batch. We also show that even partial diversity can greatly increase the probability that the data stored in a RAID array will survive batch-correlated failures.",
     "author": [
       "Kevin M. Greenan",
       "Darrell D. E. Long",
@@ -1596,7 +1596,7 @@
     "id": 66,
     "title": "Ensuring Data Survival on Solid-State Storage Devices",
     "short_description": "",
-    "full_content": "",
+    "full_content": "The emergence of more reliable, often much faster solid-stage storage devices is revolutionizing most aspects of data storage technology. Here we address the impact of these new storage devices on the techniques used to ensure data survival. In particular, we show that the higher bandwidth-to-capacity ratios of the new Storage Class Memory devices will make self- adaptive storage solutions much more attractive.",
     "author": [
       "Yangyang Huang",
       "Darrell D. E. Long",
@@ -1691,7 +1691,7 @@
     "id": 70,
     "title": "Logan: Automatic Management for Evolvable, Large-Scale, Archival Storage",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Archival storage systems designed to preserve scientific data, business data, and consumer data must maintain and safeguard tens to hundreds of petabytes of data on tens of thousands of media for decades. Such systems are currently designed in the same way as higher-performance, shorter-term storage systems, which have a useful lifetime but must be replaced in their entirety via a ``fork-lift'' upgrade. Thus, while existing solutions can provide good energy efficiency and relatively low cost, they do not adapt well to continuous improvements in technology, becoming less efficient relative to current technology as they age. In an archival storage environment, this paradigm implies an endless series of wholesale migrations and upgrades to remain efficient and up to date. Our approach, Logan, manages node addition, removal, and failure on a distributed network of intelligent storage appliances, allowing the system to gradually evolve as device technology advances. By automatically handling most of the common administration chores---integrating new devices into the system, managing groups of devices that work together to provide redundancy, and recovering from failed devices---Logan reduces management overhead and thus cost. Logan can also improve cost and space efficiency by identifying and decommissioning outdated devices, thus reducing space and power requirements for the archival storage system.",
     "author": [
       "Mark W. Storer",
       "Kevin M. Greenan",
@@ -1861,7 +1861,7 @@
     "id": 77,
     "title": "Maximizing Efficiency By Trading Storage for Computation",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Traditionally, computing has meant calculating results and then storing those results for later use. Unfortunately, committing large volumes of rarely used data to storage wastes space and energy, making it a very expensive strategy. Cloud computing, with its readily available and flexibly allocatable computing resources, suggests an alternative: storing the provenance data, and means to recomputing results as needed. While computation and storage are equivalent, finding the balance between the two that maximizes efficiency is difficult. One of the fundamental challenges of this issue is rooted in the knowledge gap separating the users and the cloud administrators---neither has a completely informed view. Users have a semantic understanding of their data, while administrators have an understanding of the cloud's underlying structure. We detail the user knowledge and system knowledge needed to construct a comprehensive cost model for analyzing the trade-off between storing a result and regenerating a result, allowing users and administrators to make an informed cost-benefit analysis.",
     "author": [
       "Mark W. Storer",
       "Kevin M. Greenan",
@@ -1910,7 +1910,7 @@
     "id": 79,
     "title": "Using Storage Class Memories to Increase the Reliability of Two-Dimensional RAID Arrays",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Digital archives are growing rapidly, necessitating stronger reliability measures than RAID to avoid data loss from device failure. Mirroring, a popular solution, is too expensive over time. We present a compromise solution that uses multi-level redundancy coding to reduce the probability of data loss from multiple simultaneous device failures. This approach handles small-scale failures of one or two devices efficiently while still allowing the system to survive rare-event, larger-scale failures of four or more devices. In our approach, each disk is split into a set of fixed size disklets which are used to construct reliability stripes. To protect against rare event failures, reliability stripes are grouped into larger super-groups, each of which has a corresponding super-parity; super-parity is only used to recover data when disk failures overwhelm the redundancy in a single reliability stripe. Super-parity can be stored on a variety of devices such as NV-RAM and always-on disks to offset write bottlenecks while still keeping the number of active devices low. Our calculations of failure probabilities show that adding super-parity allows our system to absorb many more disk failures without data loss. Through discrete event simulation, we found that adding super-groups has a significant impact on mean time to data loss and that rebuilds are slow but not unmanageable. Finally, we showed that robustness against rare events can be achieved for a fraction of total system cost.",
     "author": [
       "Jehan-Fran\u00e7ois P\u00e2ris",
       "Ahmed Amer",
@@ -1958,7 +1958,7 @@
     "id": 81,
     "title": "Protecting Against Rare Event Failures in Archival Systems",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Data deduplication is an essential and critical component of backup systems. Essential, because it reduces storage space requirements, and critical, because the performance of the entire backup operation depends on its throughput. Traditional backup workloads consist of large data streams with high locality, which existing deduplication techniques require to provide reasonable throughput. We present Extreme Binning, a scalable deduplication technique for non-traditional backup workloads that are made up of individual files with no locality among consecutive files in a given window of time. Due to lack of locality, existing techniques perform poorly on these workloads. Extreme Binning exploits file similarity instead of locality, and makes only one disk access for chunk lookup per file, which gives reasonable throughput. Multi-node backup systems built with Extreme Binning scale gracefully with the amount of input data; more backup nodes can be added to boost throughput. Each file is allocated using a stateless routing algorithm to only one node, allowing for maximum parallelization, and each backup node is autonomous with no dependency across nodes, making data management tasks robust with low overhead.",
     "author": [
       "Avani Wildani",
       "Thomas Schwarz",
@@ -2276,7 +2276,7 @@
     "id": 94,
     "title": "Los Alamos National Laboratory Interviews",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Efficient metadata management is a critical aspect of overall system performance in large distributed storage systems. Directory subtree partitioning and pure hashing are two common techniques used for managing metadata in such systems, but both suffer from bottlenecks at very high concurrent access rates. We present a new approach called Lazy Hybrid (LH) metadata management that combines the best aspects of these two approaches while avoiding their shortcomings.",
     "author": [
       "Darrell D. E. Long"
     ],
@@ -2736,7 +2736,7 @@
     "id": 113,
     "title": "Evaluation of a Hybrid Approach for Efficient Provenance Storage",
     "short_description": "",
-    "full_content": "",
+    "full_content": "abstract Efficient provenance storage is an essential step towards the adoption of provenance. In this paper, we analyze the provenance collected from multiple workloads with a view towards efficient storage. Based on our analysis, we characterize the properties of provenance with respect to long term storage. We then propose a hybrid scheme that takes advantage of the graph structure of provenance data and the inherent duplication in provenance data. Our evaluation indicates that our hybrid scheme, a combination of web graph compression (adapted for provenance) and dictionary encoding, provides the best tradeoff in terms of compression ratio, compression time and query performance when compared to other compression schemes. Categories and Subject Descriptors E.4[Coding and Information Theory]: Data compaction and compression; H.3.2[Information Storage and Retrieval]: Information Storage - File organization Keywords: provenance graphs; storage; compression abstract",
     "author": [
       "Yulai Xie",
       "Kiran-Kumar Muniswamy-Reddy",
@@ -2902,7 +2902,7 @@
     "id": 120,
     "title": "Even or Odd: A Simple Graphical Authentication System",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Many portable devices need a simple authentication system to protect them from being used by an unauthenticated person such as a thief. The security of traditional methods such as pin codes or passwords is limited by shoulder surfing where a casual or intentional observer observes an authentication session and derives all information necessary for authentication. Graphical authentication systems have been developed to forestall this attack. We present here an especially simple variant of a graphical authentication system based on the capacity of humans to recognize faces well. In our challenge-response scheme, a user is presented with a row of typically three faces and needs to decide whether the number of ``friends'' is even or odd. We present here an analysis of security and usability of this scheme. Keywords--- Authentication, Usability, Graphical Passwords",
     "author": [
       "Nicolas Lopez",
       "Matias Rodriguez",
@@ -3229,7 +3229,7 @@
     "id": 133,
     "title": "Pagoda: A Hybrid Approach to Enable Efficient Real-time Provenance Based Intrusion Detection in Big Data Environments",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Efficient provenance storage is an essential step towards the adoption of provenance. In this paper, we analyze the provenance collected from multiple workloads with a view towards efficient storage. Based on our analysis, we characterize the properties of provenance with respect to long term storage. We then propose a hybrid scheme that takes advantage of the graph structure of provenance data and the inherent duplication in provenance data. Our evaluation indicates that our hybrid scheme, a combination of web graph compression (adapted for provenance) and dictionary encoding, provides the best tradeoff in terms of compression ratio, compression time and query performance when compared to other compression schemes. Categories and Subject Descriptors E.4[Coding and Information Theory]: Data compaction and compression; H.3.2[Information Storage and Retrieval]: Information Storage - File organization Keywords: provenance graphs; storage; compression",
     "author": [
       "Yulai Xie",
       "Dan Feng",
@@ -3596,7 +3596,7 @@
     "id": 148,
     "title": "Twizzler: A Data-centric OS for Non-volatile Memory",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Byte-addressable, non-volatile memory ( ) presents an opportunity to rethink the entire system stack. We present , an operating system redesign for this near-future. removes the kernel from the I/O path, provides programs with memory-style access to persistent data using small (64 bit), object-relative cross-object pointers, and enables simple and efficient long-term sharing of data both between applications and between runs of an application. provides a clean-slate programming model for persistent data, realizing the vision of in a world of persistent RAM@. We show that is simpler, more extensible, and more secure than existing I/O models and implementations by building software for and evaluating it on DIMMs. Most persistent pointer operations in impose less than 0.5,ns added latency. operations are up to 13x faster than , and SQLite queries are up to 4.2x faster than on PMDK@. YCSB workloads ran 1.1--2.9x faster on than on native and -optimized SQLite backends.",
     "author": [
       "Daniel Bittman",
       "Peter Alvaro",
@@ -3770,7 +3770,7 @@
     "id": 155,
     "title": "Using Simulation to Evaluate Consistency Protocols for Replicated Data",
     "short_description": "",
-    "full_content": "",
+    "full_content": "The need for reliable and cost-effective data storage grows as digital information becomes increasingly ubiquitous. Archival systems must store valuable data for years while adapting to changing user needs, capacity, and performance requirements. Storage devices differ in terms of performance, capacity, reliability, acquisition cost, power consumption, and the rates at which their features change over time. Today, numerous alternative and emerging storage technologies may become viable for use in archival storage systems as their cost, performance, and reliability change. Differences between storage devices also complicate the choice of the best storage technology to use for an archival system. We have designed a simulator that models the capacity, performance, acquisition cost, and power cost of archival systems. Our simulator compares four storage technologies that exhibit different cost and performance characteristics: tape, optical disc, hard disk, and NAND flash SSD. We evaluate the total cost of ownership for each storage technology within an archival system, and we explore the effect that prospective technological advancements and growth rates over time may have on the relative cost and viability of each storage technology. We show that, in order for each storage technology to remain cost-effective in archival systems over time, it must increase in capacity at least as quickly as the demand for storage overall. We compare trends in storage technologies to suggest developments that could minimize the long-term total cost of ownership for archival systems. We show that hard disks and flash could become cost-competitive with tape-based archives by adopting new designs to minimize infrastructure and electricity costs.",
     "author": [
       "Darrell D. E. Long",
       "John L. Carroll"
@@ -4038,7 +4038,7 @@
     "id": 166,
     "title": "A Technique for Managing Mirrored Disks",
     "short_description": "",
-    "full_content": "",
+    "full_content": "When data is replicated, an access protocol must be chosen to insure the presentation of a consistent view of the data. Protocols based on quorum consensus provide good availability with the added benefit of mutual exclusion. Of the protocols based on quorum consensus, the dynamic voting protocols provide the highest known availability. We describe a dynamic voting protocol that does not need the instantaneous state information required by the same performance as the original dynamic voting in the asymptotic case, and quickly converges to it for realistic access rates. Our protocol does this at a cost in network similar to that of statistic majority consensus voting. The first realistic analysis of the availability afforded by dynamic voting protocols is presented, taking the access frequency into account. The analysis confirms our hypothesis that delaying state information does not appreciably affect availability. Discrete event simulation is used to confirm and to extend the results we obtain using analytic models. Keywords: file consistency; fault-tolerant systems; replicated files; majority consensus voting",
     "author": [
       "Darrell D. E. Long",
       "Jehan-Fran\u00e7ois P\u00e2ris"
@@ -4154,7 +4154,7 @@
     "id": 171,
     "title": "PRESIDIO: A Framework for Efficient Archival Data Storage",
     "short_description": "",
-    "full_content": "",
+    "full_content": "The ever-increasing volume of archival data that needs to be reliably retained for long periods of time and the decreasing costs of disk storage, memory, and processing have motivated the design of low-cost, high-efficiency disk-based storage systems. However, managed disk storage cost is still expensive. To further lower the cost, redundancy can be eliminated with the use of interfile and intrafile data compression. However, it is not clear what the optimal strategy is for compressing data is, given diverse collections of data. To create a scalable archival storage system that efficiently stores diverse data, we present PRESIDIO, a framework that selects from different space-reduction efficient storage methods (ESMs) to detect similarity and reduce or eliminate redundancy when storing objects. In addition, the framework uses a virtualized content addressable store (VCAS) that hides from the user the complexity of knowing which space-efficient techniques are used, including chunk-based deduplication or delta compression. Storing and retrieving objects are polymorphic operations independent of their content-based address. A new technique, harmonic super-fingerprinting, is also used for obtaining successively more accurate (but also more costly) measures of similarity to identify the existing objects in a very large data set that are most similar to an incoming new object. The PRESIDIO design, when reported earlier, had comprehensively introduced for the first time the notion of deduplication, which is now being offered as a service in storage systems by major vendors. As an aid to the design of such systems, we evaluate and present various parameters that affect the efficiency of a storage system using empirical data. Categories and Subject Descriptors: D.4.2 [Operating Systems]: Storage Management: E.2 [Data]: Data Storage Representations--Object representation; E.5 [Data]: Files--Organization/structure General Terms: Algorithms, Design Additional Key Words and Phrases: Archival storage systems, data compression, content-addressable storage, CAS, progressive compression Reference Format: You, L. L., Pollack, K. T., Long, D. D. E., and Gopinath, K. 2011. PRESIDIO: A framework for efficient archival data storage. ACM Trans. Storage 7, 2, Article 6 (July 2011), 60 pages. DOI = 10.1145/1970348.1970351 http://doi.acm.org/10.1145/1970348.1970351 This work was conducted by all the authors at the University of California, Santa Cruz, and includes part of L. L. You's dissertation. Authors' addresses: L. L. You, Google Inc., Mountain View, CA 94043; K. T. Pollack; email: kristal@cs.ucsc.edu; D. D. E. Long, Storage Systems Research Center, University of California, Santa Cruz, CA 95064; K. Gopinath, Department of Computer Science and Automation, Indian Institute of Science, Bangalore 560 012, India; email: gopi@csa.iisc.ernet.in. Permission to make digital or hard copies of part or all of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies show this notice on the first page or initial screen of a display along with the full citation. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, to republish, to post on servers, to redistribute to lists, or to use any component of this work in other works requires prior specific permission and/or a fee. Permission may be requested from Publications Dept., ACM, Inc., 2 Penn Plaza, Suite 701, New York, NY 10121-0701, USA, fax +1 (212) 869-0481, or permissions@acm.org. 2011 ACM 1553-3077/2011/07-ART6 10.00 DOI 10.1145/1970348.1970351 http://doi.acm.org/10.1145/1970348.1970351",
     "author": [
       "Lawrence L. You",
       "Kristal T. Pollack",
@@ -4230,7 +4230,7 @@
     "id": 174,
     "title": "Improving Bandwidth Efficiency of Video-on-Demand Servers",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Video-on-demand (VOD) servers have a limited amount of bandwidth with which to service client requests. Conventional VOD servers dedicate a unique stream of data for each client, and that strategy can quickly allocate all of the available bandwidth on the server. We describe a system called stream tapping that allows clients to ``tap'' into existing streams on the VOD server. By using existing streams as much as possible, clients can reduce the amount of new bandwidth they require, and that allows more clients to use the server at once, reducing client latency. Stream tapping uses less than 20 by a conventional VOD server for popular videos, and it performs better than many other strategies designed to improve VOD servers. : Video-on-demand -- Efficiency -- Bandwidth",
     "author": [
       "Steven W. Carter",
       "Darrell D. E. Long"
@@ -4277,7 +4277,7 @@
     "id": 176,
     "title": "Swift/RAID: A Distributed RAID System",
     "short_description": "",
-    "full_content": "",
+    "full_content": "The Swift I/O architecture is designed to provide high data rates in support of multimedia type applications in general purpose distributed environments through the use of distributed striping. Striping techniques place sections of a single logical data space onto multiple physical devices. The original Swift prototype was designed to validate the architecture, but did not provide fault tolerance. We have implemented a new prototype of the Swift architecture that provides fault tolerance in the distributed environment in the same manner as RAID levels 4 and 5. RAID (Redundant Arrays of Inexpensive Disks) techniques have recently been widely used to increase both performance and fault tolerance of disk storage systems. The new Swift/RAID implementation manages all communication using a distributed transfer plan executor/ which isolates all communication code from the rest of Swift. The transfer plan executor is implemented as a distributed finite state machine which decodes and executes a set of reliable data transfer operations. This approach enabled us to easily investigate alternative architectures and communications protocols. Providing fault tolerance comes at a cost, since computing and administering parity data impacts Swift/RAID data rates. For a five node system, in one typical performance benchmark, Swift/RAID level 5 obtained 87 write throughput. Swift/RAID level 4 obtained 92 and 34",
     "author": [
       "Darrell D. E. Long",
       "Bruce R. Montague",
@@ -4300,7 +4300,7 @@
     "id": 177,
     "title": "Swift: Using Distributed Disk Striping to Provide High I/O Data Rates",
     "short_description": "",
-    "full_content": "",
+    "full_content": "We present an I/O architecture, called Swift, that addresses the problem of data rate mismatches between the requirements of an application, storage devices, and the interconnection medium. The goal of Swift is to support high data rates in general purpose distributed systems. Swift uses a high-speed interconnection medium to provide high data rate transfers by using multiple slower storage devices in parallel. It scales well when using multiple storage devices and interconnections, and can use any appropriate storage technology, including high-performance devices such as disk arrays. To address the problem of partial failures, Swift stores data redundantly. Using the UNIX operating system, we have constructed a simplified prototype of the Swift architecture. The prototype provides data rates that are significantly faster than access to the local SCSI disk, limited by the capacity of a single Ethernet segment, or in the case of multiple Ethernet segments by the ability of the client to drive them. We have constructed a simulation model to demonstrate how the Swift architecture can exploit advances in processor, communication and storage technology. We consider the effects of processor speed, interconnection capacity, and multiple storage agents on the utilization of the components and the data rate of the system. We show that the data rates scale well in the number of storage devices, and that by replacing the most highly stressed components by more powerful ones the data rates of the entire system increase significantly. Keywords: high-performance storage systems, distributed file systems, distributed disk striping, high-speed networks, high-speed I/O, client-server model, video server, multimedia, data resiliency.",
     "author": [
       "Luis-Felipe Cabrera",
       "Darrell D. E. Long"
@@ -4322,7 +4322,7 @@
     "id": 178,
     "title": "Accessing Replicated Data in a Large-Scale Distributed System",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Replicating a data object improves the availability of the data, and can improve access latency by locating copies of the object near to their use. When accessing replicated objects across an internetwork, the time to access different replicas is non-uniform. Further, the probability that a particular replica is inaccessible is much higher in an internetwork than in a local-area network (LAN) because of partitions and the many intermediate hosts and networks that can fail. We report three replica-accessing algorithms which can be tuned to minimize either access latency or the number of messages sent. These algorithms assume only an unreliable datagram mechanism for communicating with replicas. Our work extends previous investigations into the performance of replication algorithms by assuming unreliable communication. We have investigated the performance of these algorithms by measuring the communication behavior of the Internet, and by building discrete-event simulations based on our measurements. We find that almost all message failures are either transient or due to long-term host failure, so that retrying messages a few times adds only a small amount to the overall message traffic while improving both access latency as long as the probability of message failure is small. Moreover, the algorithms which retry messages on failure provide significantly improved availability over those which do not.",
     "author": [
       "Richard A. Golding",
       "Darrell D. E. Long"
@@ -4344,7 +4344,7 @@
     "id": 179,
     "title": "The Performance of Available Copy Protocols for the Management of Replicated Data",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Available copy protocols guarantee the consistency of replicated data objects against any combination of non-Byzantine failures that do not result in partial communication failures. While the original available copy protocol assumed instantaneous detection of failures and instantaneous propagation of this information, more realistic protocols that do not rely on these assumptions have been devised. Two such protocols are investigated in this paper: a naive available copy (NAC) protocol that does not maintain any state information, and an optimistic available copy (OAC) protocol that only maintains state information at write and recovery times. Markov models are used to compare the performance of these two protocols with that of the original available copy protocol. These protocols are shown to perform nearly as well as the original available copy protocol, which is shown to perform much better than quorum consensus protocols. Keywords: Mutual Consistency, Fault-Tolerant Systems, Replicated Data, Available Copy, Majority Consensus Voting, Dynamic Voting.",
     "author": [
       "Jehan-Fran\u00e7ois P\u00e2ris",
       "Darrell D. E. Long"
@@ -4702,7 +4702,7 @@
     "id": 195,
     "title": "Increasing Predictive Accuracy by Prefetching Multiple Program and User Specific Files",
     "short_description": "",
-    "full_content": "",
+    "full_content": "abstract Prefetching multiple files per prediction can improve the predictive accuracy. However, it comes with the cost of using extra cache space and disk bandwidth. This paper discusses the most Recent distinct n Successor (RnS) model and uses it to demonstrate the effectiveness of our earlier work, Program-based Last n Successor (PLnS) model, a program-based prediction algorithm . We analyze the simulation results from different trace data and show that PLnS can perform better than RnS while it only predicts at most 59 RnS when the n in PLnS equals to two. PLnS is a good candidate when considering prefetching multiple files per prediction to improve predictive accuracy. Keywords: file prediction; prefetching abstract",
     "author": [
       "Tsozen Yeh",
       "Darrell D. E. Long",
@@ -4946,7 +4946,7 @@
     "id": 206,
     "title": "A Hybrid Broadcasting Protocol for Video on Demand",
     "short_description": "",
-    "full_content": "",
+    "full_content": "abstract Broadcasting protocols can improve the efficiency of video on demand services by reducing the bandwidth required to transmit videos that are simultaneously watched by many viewers. It has been recently shown that broadcasting protocols using a very large number of very low bandwidth streams for each video required less total bandwidth than protocols using a few high-bandwidth streams shared by all videos. We present a hybrid broadcasting protocol that combines the advantages of these two classes of protocols. Our pagoda broadcasting protocol uses only a small number of high-bandwidth streams and requires only slightly more bandwidth than the best extant protocols to achieve a given maximum waiting time. Keywords: video on demand; video broadcasting; harmonic broadcasting abstract",
     "author": [
       "Jehan-Fran\u00e7ois P\u00e2ris",
       "Steven W. Carter",
@@ -5118,7 +5118,7 @@
     "id": 214,
     "title": "A Dynamic Disk Spin-down Technique for Mobile Computing",
     "short_description": "",
-    "full_content": "",
+    "full_content": "We address the problem of deciding when to spin down the disk of a mobile computer in order to extend battery life. Since one of the most critical resources in mobile computing environments is battery life, good energy conservation methods can dramatically increase the utility of mobile systems. We use a simple and efficient algorithm based on machine learning techniques that has excellent performance in practice. Our experimental results are based on traces collected from HP C2474s disks. Using this data, the algorithm outperforms several algorithms that are theoretically optimal in under various worst-case assumptions, as well as the best fixed time-out strategy. In particular, the algorithm reduces the power consumption of the disk to about half (depending on the disk's properties) of the energy consumed by a one minute fixed time-out. Since the algorithm adapts to usage patterns, it uses as little as 88 computed in retrospect.",
     "author": [
       "David P. Helmbold",
       "Darrell D. E. Long",
@@ -5573,7 +5573,7 @@
     "id": 235,
     "title": "Block-Level Consistency of Replicated Files",
     "short_description": "",
-    "full_content": "",
+    "full_content": "We investigate the construction of a reliable device. Such a device appears to the file system as an ordinary block-structured device, but is implemented as a set of server processes on several sites. This allows for replication while leaving the operating system kernel and the file system unchanged. The regular structure of the block-level replication environment allows the use of consistency control algorithms that are simpler and less network intensive. We present three algorithms for maintaining file consistency in a block-level replication environment. The first is a majority consensus voting algorithm that recovers blocks only when required for data access; the second is a variant of the available copy scheme modified for replication at the block level; the third is a na\"ive version of the available copy scheme that does not maintain any failure information. Each scheme is evaluated in terms of availability and network traffic. While block-level replication is shown to allow improvements in the network traffic burden incurred by voting, available copy schemes are shown to have better availability and require significantly less traffic than voting schemes. The na\"ive available copy variant proposed here is shown to be the algorithm of choice.",
     "author": [
       "John L. Carroll",
       "Darrell D. E. Long",
@@ -5616,7 +5616,7 @@
     "id": 237,
     "title": "Improving Disk Array Reliability Through Faster Repairs",
     "short_description": "",
-    "full_content": "",
+    "full_content": "abstract Disk scrubbing periodically scans the contents of a disk array to detect the presence of irrecoverable read errors and reconstitute the contents of the lost blocks using the built-in redundancy of the disk array. We address the issue of scheduling scrubbing runs in disk arrays that can tolerate two disk failures without incurring a data loss, and propose to start an urgent scrubbing run of the whole array whenever a disk failure is detected. Used alone or in combination with periodic scrubbing runs, these expedited runs can improve the mean time to data loss of disk arrays over a wide range of disk repair times. As a result, our technique eliminates the need for frequent scrubbing runs and the need to maintain spare disks and personnel on site to replace failed disks within a twenty-four hour interval. Keywords: irrecoverable read errors; RAID arrays; disk scrubbing. abstract",
     "author": [
       "Jehan-Fran\u00e7ois P\u00e2ris",
       "Thomas Schwarz, S.J.",
@@ -5660,7 +5660,7 @@
     "id": 239,
     "title": "Using a Shared Storage Class Memory Device to Improve the Reliability of RAID Arrays",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Storage class memories (SCMs) constitute an emerging class of non-volatile storage devices that promise to be significantly faster and more reliable than magnetic disks. We propose to add one of these devices to each group of two or three RAID level arrays and store on it additional parity data. We show that the new organization can tolerate all double disk failures, between 75 and 90 percent of all triple disk failures and between 50 and 70 percent of all failures involving two disks and the SCM device without incurring any data loss. As a result, the additional parity device increases the mean time to data loss of the arrays in the group it protects by at least 200-fold.",
     "author": [
       "Sara Chaarawi",
       "Jehan-Fran\u00e7ois P\u00e2ris",
@@ -5684,7 +5684,7 @@
     "id": 240,
     "title": "Fived: A Service-Based Architecture Implementation to Innovate at the Endpoints",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Security functions such as access control, encryption and authentication are typically left up to applications on the modern Internet. There is no unified system to implement these critical features. The access control that does exist on the network doesn't integrate well with user authentication systems, so access control decisions are based on the network location of a computer rather than the privilege level of its user. Just about every layer of the Internet provides optional encryption, yet most data on the Internet continues to be sent in the clear. Application developers routinely make mistakes in security critical code leading to bugs that manifest in worms, malware or provide a doorway for actively malicious attackers. We propose a unified session layer that integrates trustworthiness features into the core of the network. This would reverse the fortunes of security on the Internet and lead us toward a safer, more secure global network.",
     "author": [
       "D. J. Capelis",
       "Darrell D. E. Long"
@@ -5705,7 +5705,7 @@
     "id": 241,
     "title": "Energy-Reliability Tradeoffs in Sensor Network Storage",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Sensor nodes that store their data locally are increasingly being deployed in hostile and remote environments such as active volcanoes and battlefields. Observations gathered in these environments are often irreplaceable, and must be protected from loss due to node failures. Nodes may fail individually due to power depletion or hardware/software problems, or they may suffer correlated failures from localized destructive events such as fire or rockfall. While many file systems can guard against these events, they do not consider energy usage in their approach to redundancy. We examine tradeoffs between energy and reliability in three contexts: choice of redundancy technique, choice of redundancy nodes, and frequency of verifying correctness of remotely-stored data. By matching the choice of reliability techniques to the failure characteristics of sensor networks in hostile and inaccessible environments, we can build systems that use less energy while providing higher system reliability.",
     "author": [
       "Neerja Bhatnagar",
       "Kevin M. Greenan",
@@ -5751,7 +5751,7 @@
     "id": 243,
     "title": "An Analytic Study of Stream Tapping Protocols",
     "short_description": "",
-    "full_content": "",
+    "full_content": "We present the first analytic study of stream tapping protocols, a family of protocols that provide the most efficient way to distribute videos on demand at low to medium request arrival rates, say, less than ten requests per hour for a two-hour video. The main results of this study are analytical solutions for the optimal operational points of stream tapping, stream tapping with small client buffers, stream tapping with partial preloading and stream tapping with proactive streams. In addition we introduce a new stream tapping protocol with batching that caps the bandwidth requirements of stream tapping at high to very high arrival rates.",
     "author": [
       "Jehan-Fran\u00e7ois P\u00e2ris",
       "Darrell D. E. Long"
@@ -5772,7 +5772,7 @@
     "id": 244,
     "title": "Expecting the Unexpected: Adaptation for Predictive Energy Conservation",
     "short_description": "",
-    "full_content": "",
+    "full_content": "The use of access predictors to improve storage device performance has been investigated for both improving access times, as well as a means of reducing energy consumed by the disk. Such predictors also offer us an opportunity to demonstrate the benefits of an adaptive approach to handling unexpected workloads, whether they are the result of natural variation or deliberate attempts to generate a problematic workload. Such workloads can pose a threat to system availability if they result in the excessive consumption of potentially limited resources such as energy. We propose that actively reshaping a disk access workload, using a dynamically self-adjusting access predictor, allows for consistently good performance in the face of varying workloads. Specifically, we describe how our Best Shifting prefetching policy, by adapting to the needs of the currently observed workload, can use 15",
     "author": [
       "Jeffrey P. Rybczynski",
       "Darrell D. E. Long",
@@ -5794,7 +5794,7 @@
     "id": 245,
     "title": "The Case for Aggressive Partial Preloading in Video-on-Demand Broadcasting Protocols",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Broadcasting protocols for video-on-demand usually consume over fifty percent of their bandwidth to distribute the first ten to fifteen minutes of the videos they distribute. Since all these protocols require the user set-top box to include a disk drive, we propose to use this drive to store the first five to twenty minutes of the ten to twenty most popular videos. This will provide low-cost instant access to these videos.",
     "author": [
       "Jehan-Fran\u00e7ois P\u00e2ris",
       "Darrell D. E. Long"
@@ -5815,7 +5815,7 @@
     "id": 246,
     "title": "Caching Files with a Program-based Last $n$ Successors Model",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Recent increases in CPU performance have outpaced increases in hard drive performance. As a result, disk operations have become more expensive in terms of CPU cycles spent waiting for disk operations to complete. File prediction can mitigate this problem by prefetching files into cache before they are accessed. However, incorrect prediction is to a certain degree both unavoidable and costly. We present the Program-based Last N Successors (PLNS) file prediction model that identifies relationships between files through the names of the programs accessing them. Our simulation results show that PLNS makes at least 21.11",
     "author": [
       "Tsozen Yeh",
       "Darrell D. E. Long",
@@ -5837,7 +5837,7 @@
     "id": 247,
     "title": "Adverse Filtering Effects and the Resilience of Aggregating Caches",
     "short_description": "",
-    "full_content": "",
+    "full_content": "We introduce the aggregating cache, and demonstrate how it can be used to reduce the number of file retrieval requests made by a caching client, improving storage system performance by reducing the impact of latency. The aggregating cache utilizes predetermined groupings of files to perform group retrievals. These groups are maintained by the server, and built dynamically using observed inter-file relationships. Through a simple analytical model we demonstrate how this mechanism has the potential to reduce average latencies by 75 Through trace-based simulation we demonstrate that a simple aggregating cache can reduce the number of demand fetches by almost 50 improving cache hit ratios by up to 5",
     "author": [
       "Ahmed Amer",
       "Darrell D. E. Long"
@@ -5858,7 +5858,7 @@
     "id": 248,
     "title": "Dynamic Relationships and the Persistence of Pairings",
     "short_description": "",
-    "full_content": "",
+    "full_content": "The ability to automatically hoard data on a computer's local store would go a long way towards freeing the mobile user from dependence on the network and potentially unbounded latencies. An important step in developing a fully automated file hoarding algorithm is the ability to automatically identify strong relationships between files. We present a mechanism for visualizing the degree of long-term relationships inherent in a file access stream. We do this by comparing the performance of static and dynamic relationship predictors. We demonstrate that even the simplest associations (from a static/first-successor predictor) maintain relatively high accuracy over extended periods of time, closely tracking the performance of an equivalent dynamic (last-successor) predictor. We then introduce rank-difference plots, a visualization technique which allows us to demonstrate how this behavior is caused by stable static pairings of files that are lost by the adaptation of the dynamic predictor for a substantial subset of frequently accessed files. We conclude by demonstrating how a third pairing mechanism can make use of these observations to outperform both the dynamic and static predictors.",
     "author": [
       "Ahmed Amer",
       "Darrell D. E. Long"
@@ -5879,7 +5879,7 @@
     "id": 249,
     "title": "A Universal Distribution Protocol for Video-on-Demand",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Most existing distribution protocols for video-on-demand are tailored for a specific range of request arrival rates and do not perform well beyond that range. We present a universal distribution protocol based on Juhn and Tseng's fast broadcasting protocol. Our protocol performs as well as the best reactive protocol at low to moderate request arrival rates and reverts to the fast broadcasting protocol at high arrival rates. : video-on-demand, broadcasting protocols, stream tapping.",
     "author": [
       "Jehan-Fran\u00e7ois P\u00e2ris",
       "Steven W. Carter",
@@ -5901,7 +5901,7 @@
     "id": 250,
     "title": "Limiting the Client Bandwidth of Broadcasting Protocols for Videos on Demand",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Broadcasting protocols can lower the cost of video-on-demand services by more efficiently distributing all videos that are simultaneously watched by many viewers. The most efficient broadcasting protocols require a customer set-top box capable of capturing data from five to seven video channels at the same time. We show how to modify existing broadcasting protocols so that their client bandwidth would never exceed three to four channels and apply our method to the fast broadcasting and the new pagoda broadcasting protocols. Our data show that this modification has only a moderate effect on the overall performance of the two protocols because their server bandwidth never increases by more than 15 percent. : video-on-demand, broadcasting protocols, fast broadcasting, new pagoda broadcasting.",
     "author": [
       "Jehan-Fran\u00e7ois P\u00e2ris",
       "Darrell D. E. Long"
@@ -5944,7 +5944,7 @@
     "id": 252,
     "title": "A Replicated Monitoring Tool",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Modeling the reliability of distributed systems requires a good understanding of the reliability of the components. Careful modeling allows highly fault-tolerant distributed applications to be constructed at the least cost. Realistic estimates can be found by measuring the performance of actual systems. An enormous amount of information about system performance can be acquired with no special privileges via the Internet. A distributed monitoring tool called a tattler is described. The system is composed of a group of tattler processes that monitor a set of selected hosts. The tattlers cooperate to provide a fault-tolerant distributed data base of information about the hosts they monitor. They use weak-consistency replication techniques to ensure their own fault-tolerance and the eventual consistency of the data base that they maintain.",
     "author": [
       "Darrell D. E. Long"
     ],
@@ -5964,7 +5964,7 @@
     "id": 253,
     "title": "Analysis of Replication Control Protocols",
     "short_description": "",
-    "full_content": "",
+    "full_content": "In recent years many replication control protocols have been proposed, but too often these protocols are presented with insufficient evidence to demonstrate superiority over existing protocols. In this article, some simple analytical tools are presented that allow replication control protocols to be compared. A dynamic voting/ protocol is used as an example. Keywords: fault tolerance, replication, data management.",
     "author": [
       "Darrell D. E. Long"
     ],
@@ -5984,7 +5984,7 @@
     "id": 254,
     "title": "The Management of Consistency in Fault-Tolerant File Systems",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Available copy protocols guarantee the consistency of replicated data objects against any combination of non-Byzantine failures that do not result in partial communication failures. While the original available copy protocol assumed instantaneous detection of failures and instantaneous propagation of this information, more realistic protocols that do not rely on these assumptions have been devised. Two such protocols are investigated in this paper: a naive available copy (NAC) protocol that does not maintain any state information, and an optimistic available copy (OAC) protocol that only maintains state information at write and recovery times. Markov models are used to compare the performance of these two protocols with that of the original available copy protocol. These protocols are shown to perform nearly as well as the original available copy protocol, which is shown to perform much better than quorum consensus protocols.",
     "author": [
       "Jehan-Fran\u00e7ois P\u00e2ris",
       "Darrell D. E. Long",
@@ -6063,7 +6063,7 @@
     "id": 257,
     "title": "Combining Chunk Boundary and Chunk Signature Calculations for Deduplication (Combinar la calculacion de limites de trozos y de firmas de trozos para deduplicacion)",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Many modern, large-scale storage solutions offer deduplication, which can achieve impressive compression rates for many loads, especially for backups. When accepting new data for storage, deduplication checks whether parts of the data is already stored. If this is the case, then the system does not store that part of the new data but replaces it with a reference to the location where the data already resides. A typical deduplication system breaks data into chunks, hashes each chunk, and uses an index to see whether the chunk has already been stored. Variable chunk systems offer better compression, but process data byte-for-byte twice, first to calculate the chunk boundaries and then to calculate the hash. This limits the ingress bandwidth of a system. We propose a method to reuse the chunk boundary calculations in order to strengthen the collision resistance of the hash, allowing us to use a faster hashing method with fewer bytes or a much larger (256 times by adding two bytes) storage system with the same high assurance against chunk collision and resulting data loss. --Deduplication, Algebraic Signatures.",
     "author": [
       "Witold Litwin",
       "Darrell Long",
