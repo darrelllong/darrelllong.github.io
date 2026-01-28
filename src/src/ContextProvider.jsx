@@ -9,10 +9,10 @@ export const ContextProvider = ({ children }) => {
     if (path === "/") {
       return "home";
     }
-    if (/^\/patents\/\d+$/.test(path)) {
+    if (/^\/patents\/\d+\/?$/.test(path)) {
       return "patent";
     }
-    if (/^\/publications\/\d+$/.test(path)) {
+    if (/^\/publications\/\d+\/?$/.test(path)) {
       return "publication";
     }
     return path.replace(/\//g, "");
