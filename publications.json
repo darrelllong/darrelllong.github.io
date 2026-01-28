@@ -4351,5 +4351,1646 @@
       "month": "apr",
       "pages": "9--30"
     }
+  },
+  {
+    "id": 180,
+    "title": "Disk Failure Prediction in Heterogeneous Environments",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Carlos A. Rincon",
+      "Jehan-François Pâris",
+      "Ricardo Vilalta",
+      "Albert M. K. Cheng",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jul 1, 2017",
+    "url": "https://scholar.google.com/scholar?q=Disk%20Failure%20Prediction%20in%20Heterogeneous%20Environments",
+    "bibTeX": {
+      "@inproceedings": "rincon-ipccc17",
+      "author": "Carlos A. Rincon and Jehan-François Pâris and Ricardo Vilalta and Albert M. K. Cheng and Darrell D. E. Long",
+      "title": "Disk Failure Prediction in Heterogeneous Environments",
+      "booktitle": "Proceedings of the International Symposium on Performance Evaluation of Computer and Telecommunication Systems",
+      "year": 2017,
+      "month": "jul"
+    }
+  },
+  {
+    "id": 181,
+    "title": "Pirogue: A lighter dynamic version of the Raft distributed consensus algorithm",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell D. E. Long"
+    ],
+    "date": "Dec 1, 2015",
+    "url": "https://scholar.google.com/scholar?q=Pirogue%3A%20A%20lighter%20dynamic%20version%20of%20the%20Raft%20distributed%20consensus%20algorithm",
+    "bibTeX": {
+      "@inproceedings": "pris-ipccc15",
+      "author": "Jehan-François Pâris and Darrell D. E. Long",
+      "title": "Pirogue: A lighter dynamic version of the Raft distributed consensus algorithm",
+      "booktitle": "Proceedings of the Thirty-fourth International Performance of Computers and Communication Conference",
+      "year": 2015,
+      "month": "dec"
+    }
+  },
+  {
+    "id": 182,
+    "title": "Triple failure tolerant storage systems using only exclusive-or parity calculations",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Thomas Schwarz",
+      "Darrell D. E. Long",
+      "Jehan-François Pâris"
+    ],
+    "date": "Nov 1, 2015",
+    "url": "https://scholar.google.com/scholar?q=Triple%20failure%20tolerant%20storage%20systems%20using%20only%20exclusive-or%20parity%20calculations",
+    "bibTeX": {
+      "@inproceedings": "schwarz-prdc15",
+      "author": "Thomas Schwarz and Darrell D. E. Long and Jehan-François Pâris",
+      "title": "Triple failure tolerant storage systems using only exclusive-or parity calculations",
+      "booktitle": "Proceedings of the Twenty-first IEEE Pacific Rim International Symposium on Dependable Computing",
+      "year": 2015,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 183,
+    "title": "Reducing the Energy Footprint of a Distributed Consensus Algorithm",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell Long"
+    ],
+    "date": "Sep 1, 2015",
+    "url": "https://scholar.google.com/scholar?q=Reducing%20the%20Energy%20Footprint%20of%20a%20Distributed%20Consensus%20Algorithm",
+    "bibTeX": {
+      "@inproceedings": "pris-edcc15",
+      "author": "Jehan-François Pâris and Darrell Long",
+      "title": "Reducing the Energy Footprint of a Distributed Consensus Algorithm",
+      "booktitle": "Proceedings of the European Dependable Computing Conference",
+      "year": 2015,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 184,
+    "title": "Cooperative mode: Comparing interpretations of the Xbox 360 storage system",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Alex Nelson",
+      "Erik Steggall",
+      "Darrell Long"
+    ],
+    "date": "Aug 1, 2014",
+    "url": "https://scholar.google.com/scholar?q=Cooperative%20mode%3A%20Comparing%20interpretations%20of%20the%20Xbox%20360%20storage%20system",
+    "bibTeX": {
+      "@inproceedings": "nelson-dfrws14",
+      "author": "Alex Nelson and Erik Steggall and Darrell Long",
+      "title": "Cooperative mode: Comparing interpretations of the Xbox 360 storage system",
+      "booktitle": "Proceedings of the Digital Forensics Research Conference",
+      "year": 2014,
+      "month": "aug"
+    }
+  },
+  {
+    "id": 185,
+    "title": "DBaaS-Expert: A Recommender for the Selection of the Right Cloud Database",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Soror Sahri",
+      "Rim Moussa",
+      "Salima Benbernou",
+      "Darrell Long"
+    ],
+    "date": "Jun 1, 2014",
+    "url": "https://scholar.google.com/scholar?q=DBaaS-Expert%3A%20A%20Recommender%20for%20the%20Selection%20of%20the%20Right%20Cloud%20Database",
+    "bibTeX": {
+      "@inproceedings": "sahri-procee14",
+      "author": "Soror Sahri and Rim Moussa and Salima Benbernou and Darrell Long",
+      "title": "DBaaS-Expert: A Recommender for the Selection of the Right Cloud Database",
+      "booktitle": "Proceedings of the Twenty-first International Symposium on Methodologies for Intelligent Systems",
+      "year": 2014,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 186,
+    "title": "Reliability Challenges for Storing Exabytes",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ahmed Amer",
+      "Darrell D. E. Long",
+      "Thomas Schwarz"
+    ],
+    "date": "Feb 1, 2014",
+    "url": "https://scholar.google.com/scholar?q=Reliability%20Challenges%20for%20Storing%20Exabytes",
+    "bibTeX": {
+      "@inproceedings": "amer-procee14",
+      "author": "Ahmed Amer and Darrell D. E. Long and Thomas Schwarz",
+      "title": "Reliability Challenges for Storing Exabytes",
+      "booktitle": "Proceedings of the International Conference on Computing, Networking and Communications",
+      "year": 2014,
+      "month": "feb"
+    }
+  },
+  {
+    "id": 187,
+    "title": "Zero-Maintenance Disk Arrays",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell D. E. Long",
+      "Thomas Schwarz"
+    ],
+    "date": "Dec 1, 2013",
+    "url": "https://scholar.google.com/scholar?q=Zero-Maintenance%20Disk%20Arrays",
+    "bibTeX": {
+      "@inproceedings": "pris-prdc13",
+      "author": "Jehan-François Pâris and Darrell D. E. Long and Thomas Schwarz",
+      "title": "Zero-Maintenance Disk Arrays",
+      "booktitle": "Proceedings of the IEEE Nineteenth Pacific Rim International Symposium on Dependable Computing",
+      "year": 2013,
+      "month": "dec"
+    }
+  },
+  {
+    "id": 188,
+    "title": "Reliability of Disk Arrays with Double Parity",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Thomas Schwarz",
+      "Darrell D. E. Long",
+      "Jehan-François Pâris"
+    ],
+    "date": "Dec 1, 2013",
+    "url": "https://scholar.google.com/scholar?q=Reliability%20of%20Disk%20Arrays%20with%20Double%20Parity",
+    "bibTeX": {
+      "@inproceedings": "schwarz-prdc13",
+      "author": "Thomas Schwarz and Darrell D. E. Long and Jehan-François Pâris",
+      "title": "Reliability of Disk Arrays with Double Parity",
+      "booktitle": "Proceedings of the IEEE Nineteenth Pacific Rim International Symposium on Dependable Computing",
+      "year": 2013,
+      "month": "dec"
+    }
+  },
+  {
+    "id": 189,
+    "title": "Three-Dimensional Redundancy Codes for Archival Storage",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell D. E. Long",
+      "Witold Litwin"
+    ],
+    "date": "Aug 1, 2013",
+    "url": "https://scholar.google.com/scholar?q=Three-Dimensional%20Redundancy%20Codes%20for%20Archival%20Storage",
+    "bibTeX": {
+      "@inproceedings": "pris-sim13",
+      "author": "Jehan-François Pâris and Darrell D. E. Long and Witold Litwin",
+      "title": "Three-Dimensional Redundancy Codes for Archival Storage",
+      "booktitle": "Proceedings of the Twenty-first International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems",
+      "year": 2013,
+      "month": "aug"
+    }
+  },
+  {
+    "id": 190,
+    "title": "Accelerated Chaining: A Better Way to Harness Peer Power in Video-on-Demand Applications",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Ahmed Amer",
+      "Darrell Long"
+    ],
+    "date": "Mar 1, 2011",
+    "url": "https://scholar.google.com/scholar?q=Accelerated%20Chaining%3A%20A%20Better%20Way%20to%20Harness%20Peer%20Power%20in%20Video-on-Demand%20Applications",
+    "bibTeX": {
+      "@inproceedings": "pris-procee11",
+      "author": "Jehan-François Pâris and Ahmed Amer and Darrell Long",
+      "title": "Accelerated Chaining: A Better Way to Harness Peer Power in Video-on-Demand Applications",
+      "booktitle": "Proceedings of the Twenty-sixth ACM Symposium on Applied Computing",
+      "year": 2011,
+      "month": "mar"
+    }
+  },
+  {
+    "id": 191,
+    "title": "Duplicate Data Elimination in a SAN File System",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Bo Hong",
+      "Demyn Plantenberg",
+      "Darrell D. E. Long",
+      "Miriam Sivan-Zimet"
+    ],
+    "date": "Apr 1, 2004",
+    "url": "https://scholar.google.com/scholar?q=Duplicate%20Data%20Elimination%20in%20a%20SAN%20File%20System",
+    "bibTeX": {
+      "@inproceedings": "hong-msst04",
+      "author": "Bo Hong and Demyn Plantenberg and Darrell D. E. Long and Miriam Sivan-Zimet",
+      "title": "Duplicate Data Elimination in a SAN File System",
+      "booktitle": "Proceedings of the Twenty-first Symposium on Mass Storage Systems",
+      "year": 2004,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 192,
+    "title": "File System Workload Analysis For Large Scale Scientific Computing Applications",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Feng Wang",
+      "Qin Xin",
+      "Bo Hong",
+      "Scott A. Brandt",
+      "Ethan Miller",
+      "Darrell Long",
+      "Tyce T. M$^c$Larty"
+    ],
+    "date": "Apr 1, 2004",
+    "url": "https://scholar.google.com/scholar?q=File%20System%20Workload%20Analysis%20For%20Large%20Scale%20Scientific%20Computing%20Applications",
+    "bibTeX": {
+      "@inproceedings": "wang-msst04",
+      "author": "Feng Wang and Qin Xin and Bo Hong and Scott A. Brandt and Ethan Miller and Darrell Long and Tyce T. M$^c$Larty",
+      "title": "File System Workload Analysis For Large Scale Scientific Computing Applications",
+      "booktitle": "Proceedings of the Twenty-first Symposium on Mass Storage Systems",
+      "year": 2004,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 193,
+    "title": "Tabbycat: An Inexpensive Scalable Server for Video-on-Demand",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Karthik Thirumalai",
+      "Jehan-François Pâris",
+      "Darrell D. E. Long"
+    ],
+    "date": "May 1, 2003",
+    "url": "https://scholar.google.com/scholar?q=Tabbycat%3A%20An%20Inexpensive%20Scalable%20Server%20for%20Video-on-Demand",
+    "bibTeX": {
+      "@inproceedings": "thirumalai-procee03",
+      "author": "Karthik Thirumalai and Jehan-François Pâris and Darrell D. E. Long",
+      "title": "Tabbycat: An Inexpensive Scalable Server for Video-on-Demand",
+      "booktitle": "Proceedings of the IEEE 2003 International Conference on Communications",
+      "year": 2003,
+      "month": "may"
+    }
+  },
+  {
+    "id": 194,
+    "title": "A Proactive Implementation of Interactive Video-on-Demand",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 1, 2003",
+    "url": "https://scholar.google.com/scholar?q=A%20Proactive%20Implementation%20of%20Interactive%20Video-on-Demand",
+    "bibTeX": {
+      "@inproceedings": "pris-ipccc03",
+      "author": "Jehan-François Pâris and Darrell D. E. Long",
+      "title": "A Proactive Implementation of Interactive Video-on-Demand",
+      "booktitle": "Proceedings of the International Performance, Computing, and Communications Conference",
+      "year": 2003,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 195,
+    "title": "Increasing Predictive Accuracy by Prefetching Multiple Program and User Specific Files",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Tsozen Yeh",
+      "Darrell D. E. Long",
+      "Scott A. Brandt"
+    ],
+    "date": "Jun 1, 2002",
+    "url": "https://scholar.google.com/scholar?q=Increasing%20Predictive%20Accuracy%20by%20Prefetching%20Multiple%20Program%20and%20User%20Specific%20Files",
+    "bibTeX": {
+      "@inproceedings": "yeh-procee02",
+      "author": "Tsozen Yeh and Darrell D. E. Long and Scott A. Brandt",
+      "title": "Increasing Predictive Accuracy by Prefetching Multiple Program and User Specific Files",
+      "booktitle": "Proceedings of the Sixteenth Annual International Symposium on High Performance Computing Systems and Applications",
+      "year": 2002,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 196,
+    "title": "Visualizing I/O Predictability",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Alison Luo",
+      "Ahmed Amer",
+      "Scott Speidel",
+      "Darrell D. E. Long",
+      "Alex Pang"
+    ],
+    "date": "Jun 1, 2002",
+    "url": "https://scholar.google.com/scholar?q=Visualizing%20I/O%20Predictability",
+    "bibTeX": {
+      "@inproceedings": "luo-procee02",
+      "author": "Alison Luo and Ahmed Amer and Scott Speidel and Darrell D. E. Long and Alex Pang",
+      "title": "Visualizing I/O Predictability",
+      "booktitle": "Proceedings of the First International Symposium on 3D Data Processing, Visualization, and Transmission",
+      "year": 2002,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 197,
+    "title": "A Dynamic Heuristic Broadcasting Protocol for Video-on-Demand",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Scott R. Carter",
+      "Jehan-François Pâris",
+      "Saurabh Mohan",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 1, 2001",
+    "url": "https://scholar.google.com/scholar?q=A%20Dynamic%20Heuristic%20Broadcasting%20Protocol%20for%20Video-on-Demand",
+    "bibTeX": {
+      "@inproceedings": "carter-procee01",
+      "author": "Scott R. Carter and Jehan-François Pâris and Saurabh Mohan and Darrell D. E. Long",
+      "title": "A Dynamic Heuristic Broadcasting Protocol for Video-on-Demand",
+      "booktitle": "Proceedings of the Twenty-first International Conference on Distributed Computing Systems",
+      "year": 2001,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 198,
+    "title": "An Analytical Study of Opportunistic Lease Renewal",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Randal C. Burns",
+      "Robert M. Rees",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 1, 2001",
+    "url": "https://scholar.google.com/scholar?q=An%20Analytical%20Study%20of%20Opportunistic%20Lease%20Renewal",
+    "bibTeX": {
+      "@inproceedings": "burns-procee01",
+      "author": "Randal C. Burns and Robert M. Rees and Darrell D. E. Long",
+      "title": "An Analytical Study of Opportunistic Lease Renewal",
+      "booktitle": "Proceedings of the Twenty-first International Conference on Distributed Computing Systems",
+      "year": 2001,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 199,
+    "title": "Efficient Implementation of Interactive Video-on-Demand",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Steven W. Carter",
+      "Darrell D. E. Long",
+      "Jehan-François Pâris"
+    ],
+    "date": "Aug 1, 2000",
+    "url": "https://scholar.google.com/scholar?q=Efficient%20Implementation%20of%20Interactive%20Video-on-Demand",
+    "bibTeX": {
+      "@inproceedings": "carter-sim00",
+      "author": "Steven W. Carter and Darrell D. E. Long and Jehan-François Pâris",
+      "title": "Efficient Implementation of Interactive Video-on-Demand",
+      "booktitle": "Proceedings of the Eighth International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems",
+      "year": 2000,
+      "month": "aug"
+    }
+  },
+  {
+    "id": 200,
+    "title": "Consistency and Locking for Distributing Updates to Web Servers Using a File System",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Randal C. Burns",
+      "Robert M. Rees",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jun 1, 2000",
+    "url": "https://scholar.google.com/scholar?q=Consistency%20and%20Locking%20for%20Distributing%20Updates%20to%20Web%20Servers%20Using%20a%20File%20System",
+    "bibTeX": {
+      "@inproceedings": "burns-procee00",
+      "author": "Randal C. Burns and Robert M. Rees and Darrell D. E. Long",
+      "title": "Consistency and Locking for Distributing Updates to Web Servers Using a File System",
+      "booktitle": "Proceedings of Performance and Architecture of Web Servers",
+      "year": 2000,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 201,
+    "title": "Safe Caching in a Distributed File System for Network Attached Storage",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Randal C. Burns",
+      "Robert M. Rees",
+      "Darrell D. E. Long"
+    ],
+    "date": "May 1, 2000",
+    "url": "https://scholar.google.com/scholar?q=Safe%20Caching%20in%20a%20Distributed%20File%20System%20for%20Network%20Attached%20Storage",
+    "bibTeX": {
+      "@inproceedings": "burns-procee00",
+      "author": "Randal C. Burns and Robert M. Rees and Darrell D. E. Long",
+      "title": "Safe Caching in a Distributed File System for Network Attached Storage",
+      "booktitle": "Proceedings of the International Parallel and Distributed Processing Symposium",
+      "year": 2000,
+      "month": "may"
+    }
+  },
+  {
+    "id": 202,
+    "title": "A Stack Model Based Replacement Policy for a Non-Volatile Write Cache",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Theodore R. Haining",
+      "Darrell~D. E. Long"
+    ],
+    "date": "Mar 1, 2000",
+    "url": "https://scholar.google.com/scholar?q=A%20Stack%20Model%20Based%20Replacement%20Policy%20for%20a%20Non-Volatile%20Write%20Cache",
+    "bibTeX": {
+      "@inproceedings": "pris-msst00",
+      "author": "Jehan-François Pâris and Theodore R. Haining and Darrell~D. E. Long",
+      "title": "A Stack Model Based Replacement Policy for a Non-Volatile Write Cache",
+      "booktitle": "Proceedings of the Eighth NASA Goddard Conference on Mass Storage Systems and Technologies",
+      "year": 2000,
+      "month": "mar"
+    }
+  },
+  {
+    "id": 203,
+    "title": "A Reactive Broadcasting Protocol for Video on Demand",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Steven W. Carter",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jan 1, 2000",
+    "url": "https://scholar.google.com/scholar?q=A%20Reactive%20Broadcasting%20Protocol%20for%20Video%20on%20Demand",
+    "bibTeX": {
+      "@inproceedings": "pris-icme00",
+      "author": "Jehan-François Pâris and Steven W. Carter and Darrell D. E. Long",
+      "title": "A Reactive Broadcasting Protocol for Video on Demand",
+      "booktitle": "Proceedings of the Multimedia Computing and Networking Conference",
+      "year": 2000,
+      "month": "jan"
+    }
+  },
+  {
+    "id": 204,
+    "title": "Combining Pay-per-View and Video-on-Demand Services",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Steven W. Carter",
+      "Darrell D. E. Long"
+    ],
+    "date": "Oct 1, 1999",
+    "url": "https://scholar.google.com/scholar?q=Combining%20Pay-per-View%20and%20Video-on-Demand%20Services",
+    "bibTeX": {
+      "@inproceedings": "pris-sim99",
+      "author": "Jehan-François Pâris and Steven W. Carter and Darrell D. E. Long",
+      "title": "Combining Pay-per-View and Video-on-Demand Services",
+      "booktitle": "Proceedings of the International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems",
+      "year": 1999,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 205,
+    "title": "Management Policies for Non-volatile Write Caches",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Theodore R. Haining",
+      "Darrell D. E. Long"
+    ],
+    "date": "Feb 1, 1999",
+    "url": "https://scholar.google.com/scholar?q=Management%20Policies%20for%20Non-volatile%20Write%20Caches",
+    "bibTeX": {
+      "@inproceedings": "haining-ipccc99",
+      "author": "Theodore R. Haining and Darrell D. E. Long",
+      "title": "Management Policies for Non-volatile Write Caches",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication",
+      "year": 1999,
+      "month": "feb"
+    }
+  },
+  {
+    "id": 206,
+    "title": "A Hybrid Broadcasting Protocol for Video on Demand",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Steven W. Carter",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jan 1, 1999",
+    "url": "https://scholar.google.com/scholar?q=A%20Hybrid%20Broadcasting%20Protocol%20for%20Video%20on%20Demand",
+    "bibTeX": {
+      "@inproceedings": "pris-icme99",
+      "author": "Jehan-François Pâris and Steven W. Carter and Darrell D. E. Long",
+      "title": "A Hybrid Broadcasting Protocol for Video on Demand",
+      "booktitle": "Proceedings of the Multimedia Computing and Networking Conference",
+      "year": 1999,
+      "month": "jan"
+    }
+  },
+  {
+    "id": 207,
+    "title": "Long-term File Activity and Inter-reference Patterns",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Timothy Gibson",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Dec 1, 1998",
+    "url": "https://scholar.google.com/scholar?q=Long-term%20File%20Activity%20and%20Inter-reference%20Patterns",
+    "bibTeX": {
+      "@inproceedings": "gibson-procee98",
+      "author": "Timothy Gibson and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Long-term File Activity and Inter-reference Patterns",
+      "booktitle": "Proceedings of the Computer Measurement Group Conference",
+      "year": 1998,
+      "month": "dec"
+    }
+  },
+  {
+    "id": 208,
+    "title": "A Low Bandwidth Broadcasting Protocol for Video on Demand",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Steven W. Carter",
+      "Darrell D. E. Long"
+    ],
+    "date": "Oct 1, 1998",
+    "url": "https://scholar.google.com/scholar?q=A%20Low%20Bandwidth%20Broadcasting%20Protocol%20for%20Video%20on%20Demand",
+    "bibTeX": {
+      "@inproceedings": "pris-procee98",
+      "author": "Jehan-François Pâris and Steven W. Carter and Darrell D. E. Long",
+      "title": "A Low Bandwidth Broadcasting Protocol for Video on Demand",
+      "booktitle": "Proceedings of the International Conference on Computer Communication and Networks",
+      "year": 1998,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 209,
+    "title": "Efficient Broadcasting Protocols for Video on Demand",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Steven W. Carter",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jul 1, 1998",
+    "url": "https://scholar.google.com/scholar?q=Efficient%20Broadcasting%20Protocols%20for%20Video%20on%20Demand",
+    "bibTeX": {
+      "@inproceedings": "pris-sim98",
+      "author": "Jehan-François Pâris and Steven W. Carter and Darrell D. E. Long",
+      "title": "Efficient Broadcasting Protocols for Video on Demand",
+      "booktitle": "Proceedings of the International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems",
+      "year": 1998,
+      "month": "jul"
+    }
+  },
+  {
+    "id": 210,
+    "title": "Efficient Distributed Back-up with Delta Compression",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Randal C. Burns",
+      "Darrell D. E. Long"
+    ],
+    "date": "Nov 1, 1997",
+    "url": "https://scholar.google.com/scholar?q=Efficient%20Distributed%20Back-up%20with%20Delta%20Compression",
+    "bibTeX": {
+      "@inproceedings": "burns-procee97",
+      "author": "Randal C. Burns and Darrell D. E. Long",
+      "title": "Efficient Distributed Back-up with Delta Compression",
+      "booktitle": "Proceedings of I/O in Parallel and Distributed Systems",
+      "year": 1997,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 211,
+    "title": "Improving Video-on-Demand Server Efficiency Through Stream Tapping",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Steven W. Carter",
+      "Darrell D. E. Long"
+    ],
+    "date": "Sep 1, 1997",
+    "url": "https://scholar.google.com/scholar?q=Improving%20Video-on-Demand%20Server%20Efficiency%20Through%20Stream%20Tapping",
+    "bibTeX": {
+      "@inproceedings": "carter-procee97",
+      "author": "Steven W. Carter and Darrell D. E. Long",
+      "title": "Improving Video-on-Demand Server Efficiency Through Stream Tapping",
+      "booktitle": "Proceedings of the Sixth International Conference on Computer Communications and Networks",
+      "year": 1997,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 212,
+    "title": "Voting Without Version Numbers",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long",
+      "Jehan-François Pâris"
+    ],
+    "date": "Feb 1, 1997",
+    "url": "https://scholar.google.com/scholar?q=Voting%20Without%20Version%20Numbers",
+    "bibTeX": {
+      "@inproceedings": "long-ipccc97",
+      "author": "Darrell D. E. Long and Jehan-François Pâris",
+      "title": "Voting Without Version Numbers",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication",
+      "year": 1997,
+      "month": "feb"
+    }
+  },
+  {
+    "id": 213,
+    "title": "A Linear Time, Constant Space Differencing Algorithm",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Randal C. Burns",
+      "Darrell D. E. Long"
+    ],
+    "date": "Feb 1, 1997",
+    "url": "https://scholar.google.com/scholar?q=A%20Linear%20Time%2C%20Constant%20Space%20Differencing%20Algorithm",
+    "bibTeX": {
+      "@inproceedings": "burns-ipccc97",
+      "author": "Randal C. Burns and Darrell D. E. Long",
+      "title": "A Linear Time, Constant Space Differencing Algorithm",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication",
+      "year": 1997,
+      "month": "feb"
+    }
+  },
+  {
+    "id": 214,
+    "title": "A Dynamic Disk Spin-down Technique for Mobile Computing",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "David P. Helmbold",
+      "Darrell D. E. Long",
+      "Bruce Sherrod"
+    ],
+    "date": "Nov 1, 1996",
+    "url": "https://scholar.google.com/scholar?q=A%20Dynamic%20Disk%20Spin-down%20Technique%20for%20Mobile%20Computing",
+    "bibTeX": {
+      "@inproceedings": "helmbold-procee96",
+      "author": "David P. Helmbold and Darrell D. E. Long and Bruce Sherrod",
+      "title": "A Dynamic Disk Spin-down Technique for Mobile Computing",
+      "booktitle": "Proceedings of the Second Annual International Conference on Mobile Computing and Networking",
+      "year": 1996,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 215,
+    "title": "A Leaner, More Efficient, Available Copy Protocol",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long",
+      "Jehan-François Pâris"
+    ],
+    "date": "Oct 1, 1996",
+    "url": "https://scholar.google.com/scholar?q=A%20Leaner%2C%20More%20Efficient%2C%20Available%20Copy%20Protocol",
+    "bibTeX": {
+      "@inproceedings": "long-procee96",
+      "author": "Darrell D. E. Long and Jehan-François Pâris",
+      "title": "A Leaner, More Efficient, Available Copy Protocol",
+      "booktitle": "Proceedings of the Symposium on Parallel and Distributed Processing",
+      "year": 1996,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 216,
+    "title": "A Longitudinal Study of Internet Host Reliability",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell Long",
+      "Andrew Muir",
+      "Richard Golding"
+    ],
+    "date": "Sep 1, 1995",
+    "url": "https://scholar.google.com/scholar?q=A%20Longitudinal%20Study%20of%20Internet%20Host%20Reliability",
+    "bibTeX": {
+      "@inproceedings": "long-procee95",
+      "author": "Darrell Long and Andrew Muir and Richard Golding",
+      "title": "A Longitudinal Study of Internet Host Reliability",
+      "booktitle": "Proceedings of the Fourteenth Symposium on Reliable Distributed Systems",
+      "year": 1995,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 217,
+    "title": "Adding Adaptive Flow Control to Swift/RAID",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Chane L. Fullmer",
+      "Darrell D. E. Long",
+      "Luis-Felipe Cabrera"
+    ],
+    "date": "Mar 1, 1995",
+    "url": "https://scholar.google.com/scholar?q=Adding%20Adaptive%20Flow%20Control%20to%20Swift/RAID",
+    "bibTeX": {
+      "@inproceedings": "fullmer-ipccc95",
+      "author": "Chane L. Fullmer and Darrell D. E. Long and Luis-Felipe Cabrera",
+      "title": "Adding Adaptive Flow Control to Swift/RAID",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication",
+      "year": 1995,
+      "month": "mar"
+    }
+  },
+  {
+    "id": 218,
+    "title": "An Archiecture Supporting Real-Time and Retrospective Environmental Data Management",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long",
+      "Patrick E. Mantey",
+      "Theodore R. Haining",
+      "Bruce R. Montague",
+      "Eric C. Rosen"
+    ],
+    "date": "Jun 1, 1994",
+    "url": "https://scholar.google.com/scholar?q=An%20Archiecture%20Supporting%20Real-Time%20and%20Retrospective%20Environmental%20Data%20Management",
+    "bibTeX": {
+      "@inproceedings": "long-adb94",
+      "author": "Darrell D. E. Long and Patrick E. Mantey and Theodore R. Haining and Bruce R. Montague and Eric C. Rosen",
+      "title": "An Archiecture Supporting Real-Time and Retrospective Environmental Data Management",
+      "booktitle": "Proceedings of the First International Conference for Applications of Databases (ADB)",
+      "year": 1994,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 219,
+    "title": "Performance Guarantees on ATM Networks",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Cheng Tang",
+      "Shree Murthy",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 1, 1994",
+    "url": "https://scholar.google.com/scholar?q=Performance%20Guarantees%20on%20ATM%20Networks",
+    "bibTeX": {
+      "@inproceedings": "tang-ipccc94",
+      "author": "Cheng Tang and Shree Murthy and Darrell D. E. Long",
+      "title": "Performance Guarantees on ATM Networks",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication",
+      "year": 1994,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 220,
+    "title": "The refdbms Distributed Bibliographic Database System",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Richard A. Golding",
+      "Darrell D. E. Long",
+      "John Wilkes"
+    ],
+    "date": "Jan 1, 1994",
+    "url": "https://scholar.google.com/scholar?q=The%20refdbms%20Distributed%20Bibliographic%20Database%20System",
+    "bibTeX": {
+      "@inproceedings": "golding-usenix94",
+      "author": "Richard A. Golding and Darrell D. E. Long and John Wilkes",
+      "title": "The refdbms Distributed Bibliographic Database System",
+      "booktitle": "Proceedings of the 1994 Usenix Winter Technical Conference",
+      "year": 1994,
+      "month": "jan"
+    }
+  },
+  {
+    "id": 221,
+    "title": "Providing Performance Guarantees in an FDDI Network",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long",
+      "Carol Osterbrock",
+      "Luis-Felipe Cabrera"
+    ],
+    "date": "May 1, 1993",
+    "url": "https://scholar.google.com/scholar?q=Providing%20Performance%20Guarantees%20in%20an%20FDDI%20Network",
+    "bibTeX": {
+      "@inproceedings": "long-procee93",
+      "author": "Darrell D. E. Long and Carol Osterbrock and Luis-Felipe Cabrera",
+      "title": "Providing Performance Guarantees in an FDDI Network",
+      "booktitle": "Proceedings of the Thirteenth International Conference on Distributed Computing Systems",
+      "year": 1993,
+      "month": "may"
+    }
+  },
+  {
+    "id": 222,
+    "title": "Scheduling Real-Time Disk Transfers for Continuous Media Applications",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long",
+      "Madhukar N. Thakur"
+    ],
+    "date": "Apr 1, 1993",
+    "url": "https://scholar.google.com/scholar?q=Scheduling%20Real-Time%20Disk%20Transfers%20for%20Continuous%20Media%20Applications",
+    "bibTeX": {
+      "@inproceedings": "long-msst93",
+      "author": "Darrell D. E. Long and Madhukar N. Thakur",
+      "title": "Scheduling Real-Time Disk Transfers for Continuous Media Applications",
+      "booktitle": "Proceedings of the Twelfth Symposium on Mass Storage Systems",
+      "year": 1993,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 223,
+    "title": "A Simulation Study of Replication Control Protocols Using Volatile Witnesses",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Perry K. Sloope",
+      "Jehan-François Pâris",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 1, 1992",
+    "url": "https://scholar.google.com/scholar?q=A%20Simulation%20Study%20of%20Replication%20Control%20Protocols%20Using%20Volatile%20Witnesses",
+    "bibTeX": {
+      "@inproceedings": "sloope-sim92",
+      "author": "Perry K. Sloope and Jehan-François Pâris and Darrell D. E. Long",
+      "title": "A Simulation Study of Replication Control Protocols Using Volatile Witnesses",
+      "booktitle": "Proceedings of the Twenty-fifth Annual Simulation Symposium",
+      "year": 1992,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 224,
+    "title": "Protecting Replicated Objects Against Media Failures",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell D. E. Long"
+    ],
+    "date": "Feb 1, 1992",
+    "url": "https://scholar.google.com/scholar?q=Protecting%20Replicated%20Objects%20Against%20Media%20Failures",
+    "bibTeX": {
+      "@inproceedings": "pris-procee92",
+      "author": "Jehan-François Pâris and Darrell D. E. Long",
+      "title": "Protecting Replicated Objects Against Media Failures",
+      "booktitle": "Proceedings of the Workshop on Research Issues on Transaction and Query Processing",
+      "year": 1992,
+      "month": "feb"
+    }
+  },
+  {
+    "id": 225,
+    "title": "Quorum-oriented Multicast Protocols for Data Replication",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Richard A. Golding",
+      "Darrell D. E. Long"
+    ],
+    "date": "Feb 1, 1992",
+    "url": "https://scholar.google.com/scholar?q=Quorum-oriented%20Multicast%20Protocols%20for%20Data%20Replication",
+    "bibTeX": {
+      "@inproceedings": "golding-procee92",
+      "author": "Richard A. Golding and Darrell D. E. Long",
+      "title": "Quorum-oriented Multicast Protocols for Data Replication",
+      "booktitle": "Proceedings of the Eighth International Conference on Data Engineering",
+      "year": 1992,
+      "month": "feb"
+    }
+  },
+  {
+    "id": 226,
+    "title": "A Study of the Reliability of Internet Sites",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long",
+      "John L. Carroll",
+      "C. J. Park"
+    ],
+    "date": "Sep 1, 1991",
+    "url": "https://scholar.google.com/scholar?q=A%20Study%20of%20the%20Reliability%20of%20Internet%20Sites",
+    "bibTeX": {
+      "@inproceedings": "long-procee91",
+      "author": "Darrell D. E. Long and John L. Carroll and C. J. Park",
+      "title": "A Study of the Reliability of Internet Sites",
+      "booktitle": "Proceedings of the Tenth Symposium on Reliable Distributed Systems",
+      "year": 1991,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 227,
+    "title": "Exploiting Multiple I/O Streams to Provide High Data-Rates",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long",
+      "Luis-Felipe Cabrera"
+    ],
+    "date": "Jun 1, 1991",
+    "url": "https://scholar.google.com/scholar?q=Exploiting%20Multiple%20I/O%20Streams%20to%20Provide%20High%20Data-Rates",
+    "bibTeX": {
+      "@inproceedings": "long-usenix91",
+      "author": "Darrell D. E. Long and Luis-Felipe Cabrera",
+      "title": "Exploiting Multiple I/O Streams to Provide High Data-Rates",
+      "booktitle": "1991 Summer Usenix Technical Conference",
+      "year": 1991,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 228,
+    "title": "The Reliability of Regeneration-Based Replica Control Protocols",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long",
+      "John L. Carroll",
+      "Kris Stewart"
+    ],
+    "date": "Jun 1, 1989",
+    "url": "https://scholar.google.com/scholar?q=The%20Reliability%20of%20Regeneration-Based%20Replica%20Control%20Protocols",
+    "bibTeX": {
+      "@inproceedings": "long-procee89",
+      "author": "Darrell D. E. Long and John L. Carroll and Kris Stewart",
+      "title": "The Reliability of Regeneration-Based Replica Control Protocols",
+      "booktitle": "Proceedings of the International Conference on Distributed Computing Systems",
+      "year": 1989,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 229,
+    "title": "The Effect of Failure and Repair Distributions on Consistency Protocols for Replicated Data Objects",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "John L. Carroll",
+      "Darrell D. E. Long"
+    ],
+    "date": "Mar 1, 1989",
+    "url": "https://scholar.google.com/scholar?q=The%20Effect%20of%20Failure%20and%20Repair%20Distributions%20on%20Consistency%20Protocols%20for%20Replicated%20Data%20Objects",
+    "bibTeX": {
+      "@inproceedings": "carroll-sim89",
+      "author": "John L. Carroll and Darrell D. E. Long",
+      "title": "The Effect of Failure and Repair Distributions on Consistency Protocols for Replicated Data Objects",
+      "booktitle": "Proceedings of the Twenty-second Annual Simulation Symposium",
+      "year": 1989,
+      "month": "mar"
+    }
+  },
+  {
+    "id": 230,
+    "title": "Reliability of Replicated Data Objects",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long",
+      "Jehan-François Pâris",
+      "John L. Carroll"
+    ],
+    "date": "Mar 1, 1989",
+    "url": "https://scholar.google.com/scholar?q=Reliability%20of%20Replicated%20Data%20Objects",
+    "bibTeX": {
+      "@inproceedings": "long-ipccc89",
+      "author": "Darrell D. E. Long and Jehan-François Pâris and John L. Carroll",
+      "title": "Reliability of Replicated Data Objects",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication",
+      "year": 1989,
+      "month": "mar"
+    }
+  },
+  {
+    "id": 231,
+    "title": "Regeneration Protocols for Replicated Objects",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long",
+      "Jehan-François Pâris"
+    ],
+    "date": "Feb 1, 1989",
+    "url": "https://scholar.google.com/scholar?q=Regeneration%20Protocols%20for%20Replicated%20Objects",
+    "bibTeX": {
+      "@inproceedings": "long-procee89",
+      "author": "Darrell D. E. Long and Jehan-François Pâris",
+      "title": "Regeneration Protocols for Replicated Objects",
+      "booktitle": "Proceedings of the International Conference on Data Engineering",
+      "year": 1989,
+      "month": "feb"
+    }
+  },
+  {
+    "id": 232,
+    "title": "A Realistic Evaluation of Optimistic Dynamic Voting",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long",
+      "Jehan-François Pâris"
+    ],
+    "date": "Oct 1, 1988",
+    "url": "https://scholar.google.com/scholar?q=A%20Realistic%20Evaluation%20of%20Optimistic%20Dynamic%20Voting",
+    "bibTeX": {
+      "@inproceedings": "long-procee88",
+      "author": "Darrell D. E. Long and Jehan-François Pâris",
+      "title": "A Realistic Evaluation of Optimistic Dynamic Voting",
+      "booktitle": "Proceedings of the Seventh Symposium on Reliable Distributed Systems",
+      "year": 1988,
+      "month": "oct"
+    }
+  },
+  {
+    "id": 233,
+    "title": "A Realistic Evaluation of Consistency Algorithms for Replicated Files",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell D. E. Long",
+      "Alexander Glockner"
+    ],
+    "date": "Mar 1, 1988",
+    "url": "https://scholar.google.com/scholar?q=A%20Realistic%20Evaluation%20of%20Consistency%20Algorithms%20for%20Replicated%20Files",
+    "bibTeX": {
+      "@inproceedings": "pris-sim88",
+      "author": "Jehan-François Pâris and Darrell D. E. Long and Alexander Glockner",
+      "title": "A Realistic Evaluation of Consistency Algorithms for Replicated Files",
+      "booktitle": "Proceedings of the Twenty-first Annual Simulation Symposium",
+      "year": 1988,
+      "month": "mar"
+    }
+  },
+  {
+    "id": 234,
+    "title": "Efficient Dynamic Voting Algorithms",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell D. E. Long"
+    ],
+    "date": "Feb 1, 1988",
+    "url": "https://scholar.google.com/scholar?q=Efficient%20Dynamic%20Voting%20Algorithms",
+    "bibTeX": {
+      "@inproceedings": "pris-procee88",
+      "author": "Jehan-François Pâris and Darrell D. E. Long",
+      "title": "Efficient Dynamic Voting Algorithms",
+      "booktitle": "Proceedings of the International Conference on Data Engineering",
+      "year": 1988,
+      "month": "feb"
+    }
+  },
+  {
+    "id": 235,
+    "title": "Block-Level Consistency of Replicated Files",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "John L. Carroll",
+      "Darrell D. E. Long",
+      "Jehan-François Pâris"
+    ],
+    "date": "Sep 1, 1987",
+    "url": "https://scholar.google.com/scholar?q=Block-Level%20Consistency%20of%20Replicated%20Files",
+    "bibTeX": {
+      "@inproceedings": "carroll-procee87",
+      "author": "John L. Carroll and Darrell D. E. Long and Jehan-François Pâris",
+      "title": "Block-Level Consistency of Replicated Files",
+      "booktitle": "Proceedings of the International Conference on Distributed Computing Systems",
+      "year": 1987,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 236,
+    "title": "On Improving the Availability of Replicated Files",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long",
+      "Jehan-François Pâris"
+    ],
+    "date": "Mar 1, 1987",
+    "url": "https://scholar.google.com/scholar?q=On%20Improving%20the%20Availability%20of%20Replicated%20Files",
+    "bibTeX": {
+      "@inproceedings": "long-procee87",
+      "author": "Darrell D. E. Long and Jehan-François Pâris",
+      "title": "On Improving the Availability of Replicated Files",
+      "booktitle": "Proceedings of the Symposium on Reliability in Distributed Software and Database Systems",
+      "year": 1987,
+      "month": "mar"
+    }
+  },
+  {
+    "id": 237,
+    "title": "Improving Disk Array Reliability Through Faster Repairs",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Thomas Schwarz",
+      "S. J",
+      "Darrell D. E. Long"
+    ],
+    "date": "Dec 1, 2016",
+    "url": "https://scholar.google.com/scholar?q=Improving%20Disk%20Array%20Reliability%20Through%20Faster%20Repairs",
+    "bibTeX": {
+      "@inproceedings": "pris-ipccc16",
+      "author": "Jehan-François Pâris and Thomas Schwarz and S. J and Darrell D. E. Long",
+      "title": "Improving Disk Array Reliability Through Faster Repairs",
+      "booktitle": "Proceedings of the Thirty-fifth International Performance of Computers and Communication Conference",
+      "year": 2016,
+      "month": "dec"
+    }
+  },
+  {
+    "id": 238,
+    "title": "Horus: Fine-Grained Encryption-Based Security for High Performance Petascale Storage",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ranjana Rajendran",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Nov 1, 2011",
+    "url": "https://scholar.google.com/scholar?q=Horus%3A%20Fine-Grained%20Encryption-Based%20Security%20for%20High%20Performance%20Petascale%20Storage",
+    "bibTeX": {
+      "@inproceedings": "rajendran-pdsw11",
+      "author": "Ranjana Rajendran and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Horus: Fine-Grained Encryption-Based Security for High Performance Petascale Storage",
+      "booktitle": "Proceedings of the Sixth Petascale Data Storage Workshop",
+      "year": 2011,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 239,
+    "title": "Using a Shared Storage Class Memory Device to Improve the Reliability of RAID Arrays",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Sara Chaarawi",
+      "Jehan-François Pâris",
+      "Ahmed Amer",
+      "Thomas Schwarz",
+      "Darrell D. E. Long"
+    ],
+    "date": "Nov 1, 2010",
+    "url": "https://scholar.google.com/scholar?q=Using%20a%20Shared%20Storage%20Class%20Memory%20Device%20to%20Improve%20the%20Reliability%20of%20RAID%20Arrays",
+    "bibTeX": {
+      "@inproceedings": "chaarawi-pdsw10",
+      "author": "Sara Chaarawi and Jehan-François Pâris and Ahmed Amer and Thomas Schwarz and Darrell D. E. Long",
+      "title": "Using a Shared Storage Class Memory Device to Improve the Reliability of RAID Arrays",
+      "booktitle": "Proceedings of the Fifth Petascale Data Storage Workshop",
+      "year": 2010,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 240,
+    "title": "Fived: A Service-Based Architecture Implementation to Innovate at the Endpoints",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "D. J. Capelis",
+      "Darrell D. E. Long"
+    ],
+    "date": "Sep 1, 2010",
+    "url": "https://scholar.google.com/scholar?q=Fived%3A%20A%20Service-Based%20Architecture%20Implementation%20to%20Innovate%20at%20the%20Endpoints",
+    "bibTeX": {
+      "@inproceedings": "capelis-sigcomm10",
+      "author": "D. J. Capelis and Darrell D. E. Long",
+      "title": "Fived: A Service-Based Architecture Implementation to Innovate at the Endpoints",
+      "booktitle": "Proceedings of SIGCOMM 2010",
+      "year": 2010,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 241,
+    "title": "Energy-Reliability Tradeoffs in Sensor Network Storage",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Neerja Bhatnagar",
+      "Kevin M. Greenan",
+      "Rosie Wacha",
+      "Ethan L. Miller",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jun 1, 2008",
+    "url": "https://scholar.google.com/scholar?q=Energy-Reliability%20Tradeoffs%20in%20Sensor%20Network%20Storage",
+    "bibTeX": {
+      "@inproceedings": "bhatnagar-procee08",
+      "author": "Neerja Bhatnagar and Kevin M. Greenan and Rosie Wacha and Ethan L. Miller and Darrell D. E. Long",
+      "title": "Energy-Reliability Tradeoffs in Sensor Network Storage",
+      "booktitle": "Proceedings of Fifth Workshop on Embedded Networked Sensors",
+      "year": 2008,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 242,
+    "title": "Ensuring Data Survival in Solid-State Storage Devices",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell D. E. Long",
+      "Thomas J. E. Schwarz"
+    ],
+    "date": "Feb 1, 2008",
+    "url": "https://scholar.google.com/scholar?q=Ensuring%20Data%20Survival%20in%20Solid-State%20Storage%20Devices",
+    "bibTeX": {
+      "@inproceedings": "pris-procee08",
+      "author": "Jehan-François Pâris and Darrell D. E. Long and Thomas J. E. Schwarz",
+      "title": "Ensuring Data Survival in Solid-State Storage Devices",
+      "booktitle": "Proceedings of the First International Workshop on Storage and I/O Virtualization, Performance, Energy, Evaluation and Dependability",
+      "year": 2008,
+      "month": "feb"
+    }
+  },
+  {
+    "id": 243,
+    "title": "An Analytic Study of Stream Tapping Protocols",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jul 1, 2006",
+    "url": "https://scholar.google.com/scholar?q=An%20Analytic%20Study%20of%20Stream%20Tapping%20Protocols",
+    "bibTeX": {
+      "@inproceedings": "pris-icme06",
+      "author": "Jehan-François Pâris and Darrell D. E. Long",
+      "title": "An Analytic Study of Stream Tapping Protocols",
+      "booktitle": "Proceedings of the 2006 IEEE International Conference on Multimedia",
+      "year": 2006,
+      "month": "jul"
+    }
+  },
+  {
+    "id": 244,
+    "title": "Expecting the Unexpected: Adaptation for Predictive Energy Conservation",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jeffrey P. Rybczynski",
+      "Darrell D. E. Long",
+      "Ahmed Amer"
+    ],
+    "date": "Nov 1, 2005",
+    "url": "https://scholar.google.com/scholar?q=Expecting%20the%20Unexpected%3A%20Adaptation%20for%20Predictive%20Energy%20Conservation",
+    "bibTeX": {
+      "@inproceedings": "rybczynski-procee05",
+      "author": "Jeffrey P. Rybczynski and Darrell D. E. Long and Ahmed Amer",
+      "title": "Expecting the Unexpected: Adaptation for Predictive Energy Conservation",
+      "booktitle": "Proceedings of the International Workshop on Storage Security and Survivability",
+      "year": 2005,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 245,
+    "title": "The Case for Aggressive Partial Preloading in Video-on-Demand Broadcasting Protocols",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell D. E. Long"
+    ],
+    "date": "Aug 1, 2001",
+    "url": "https://scholar.google.com/scholar?q=The%20Case%20for%20Aggressive%20Partial%20Preloading%20in%20Video-on-Demand%20Broadcasting%20Protocols",
+    "bibTeX": {
+      "@inproceedings": "pris-icme01",
+      "author": "Jehan-François Pâris and Darrell D. E. Long",
+      "title": "The Case for Aggressive Partial Preloading in Video-on-Demand Broadcasting Protocols",
+      "booktitle": "Proceedings of the 2001 IEEE International Conference on Multimedia",
+      "year": 2001,
+      "month": "aug"
+    }
+  },
+  {
+    "id": 246,
+    "title": "Caching Files with a Program-based Last $n$ Successors Model",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Tsozen Yeh",
+      "Darrell D. E. Long",
+      "Scott A. Brandt"
+    ],
+    "date": "Jun 1, 2001",
+    "url": "https://scholar.google.com/scholar?q=Caching%20Files%20with%20a%20Program-based%20Last%20%24n%24%20Successors%20Model",
+    "bibTeX": {
+      "@inproceedings": "yeh-procee01",
+      "author": "Tsozen Yeh and Darrell D. E. Long and Scott A. Brandt",
+      "title": "Caching Files with a Program-based Last $n$ Successors Model",
+      "booktitle": "Proceedings of the Workshop on Caching, Coherence and Consistency",
+      "year": 2001,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 247,
+    "title": "Adverse Filtering Effects and the Resilience of Aggregating Caches",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ahmed Amer",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jun 1, 2001",
+    "url": "https://scholar.google.com/scholar?q=Adverse%20Filtering%20Effects%20and%20the%20Resilience%20of%20Aggregating%20Caches",
+    "bibTeX": {
+      "@inproceedings": "amer-procee01",
+      "author": "Ahmed Amer and Darrell D. E. Long",
+      "title": "Adverse Filtering Effects and the Resilience of Aggregating Caches",
+      "booktitle": "Proceedings of the Workshop on Caching, Coherence and Consistency",
+      "year": 2001,
+      "month": "jun"
+    }
+  },
+  {
+    "id": 248,
+    "title": "Dynamic Relationships and the Persistence of Pairings",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Ahmed Amer",
+      "Darrell D. E. Long"
+    ],
+    "date": "Apr 1, 2001",
+    "url": "https://scholar.google.com/scholar?q=Dynamic%20Relationships%20and%20the%20Persistence%20of%20Pairings",
+    "bibTeX": {
+      "@inproceedings": "amer-procee01",
+      "author": "Ahmed Amer and Darrell D. E. Long",
+      "title": "Dynamic Relationships and the Persistence of Pairings",
+      "booktitle": "Proceedings of the International Workshop on Wireless Networks and Mobile Computing",
+      "year": 2001,
+      "month": "apr"
+    }
+  },
+  {
+    "id": 249,
+    "title": "A Universal Distribution Protocol for Video-on-Demand",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Steven W. Carter",
+      "Darrell D. E. Long"
+    ],
+    "date": "Jul 1, 2000",
+    "url": "https://scholar.google.com/scholar?q=A%20Universal%20Distribution%20Protocol%20for%20Video-on-Demand",
+    "bibTeX": {
+      "@inproceedings": "pris-icme00",
+      "author": "Jehan-François Pâris and Steven W. Carter and Darrell D. E. Long",
+      "title": "A Universal Distribution Protocol for Video-on-Demand",
+      "booktitle": "Proceedings of the 2000 IEEE International Conference on Multimedia",
+      "year": 2000,
+      "month": "jul"
+    }
+  },
+  {
+    "id": 250,
+    "title": "Limiting the Client Bandwidth of Broadcasting Protocols for Videos on Demand",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell D. E. Long"
+    ],
+    "date": "May 1, 2000",
+    "url": "https://scholar.google.com/scholar?q=Limiting%20the%20Client%20Bandwidth%20of%20Broadcasting%20Protocols%20for%20Videos%20on%20Demand",
+    "bibTeX": {
+      "@inproceedings": "pris-euromedia00",
+      "author": "Jehan-François Pâris and Darrell D. E. Long",
+      "title": "Limiting the Client Bandwidth of Broadcasting Protocols for Videos on Demand",
+      "booktitle": "Proceedings of Euromedia 2000",
+      "year": 2000,
+      "month": "may"
+    }
+  },
+  {
+    "id": 251,
+    "title": "Bandwidth Allocation Issues in Near Video on Demand Services",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Steven W. Carter",
+      "Darrell D. E. Long"
+    ],
+    "date": "Sep 1, 1998",
+    "url": "https://scholar.google.com/scholar?q=Bandwidth%20Allocation%20Issues%20in%20Near%20Video%20on%20Demand%20Services",
+    "bibTeX": {
+      "@inproceedings": "pris-icme98",
+      "author": "Jehan-François Pâris and Steven W. Carter and Darrell D. E. Long",
+      "title": "Bandwidth Allocation Issues in Near Video on Demand Services",
+      "booktitle": "Proceedings of the Third Annual Multimedia Technology and Applications Conference",
+      "year": 1998,
+      "month": "sep"
+    }
+  },
+  {
+    "id": 252,
+    "title": "A Replicated Monitoring Tool",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long"
+    ],
+    "date": "Nov 1, 1992",
+    "url": "https://scholar.google.com/scholar?q=A%20Replicated%20Monitoring%20Tool",
+    "bibTeX": {
+      "@inproceedings": "long-wmrd92",
+      "author": "Darrell D. E. Long",
+      "title": "A Replicated Monitoring Tool",
+      "booktitle": "Proceedings of the Second Workshop on the Management of Replicated Data",
+      "year": 1992,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 253,
+    "title": "Analysis of Replication Control Protocols",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long"
+    ],
+    "date": "Nov 1, 1990",
+    "url": "https://scholar.google.com/scholar?q=Analysis%20of%20Replication%20Control%20Protocols",
+    "bibTeX": {
+      "@inproceedings": "long-wmrd90",
+      "author": "Darrell D. E. Long",
+      "title": "Analysis of Replication Control Protocols",
+      "booktitle": "Proceedings of the First Workshop on the Management of Replicated Data",
+      "year": 1990,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 254,
+    "title": "The Management of Consistency in Fault-Tolerant File Systems",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Jehan-François Pâris",
+      "Darrell D. E. Long",
+      "Walter A. Burkhard"
+    ],
+    "date": "Dec 1, 1987",
+    "url": "https://scholar.google.com/scholar?q=The%20Management%20of%20Consistency%20in%20Fault-Tolerant%20File%20Systems",
+    "bibTeX": {
+      "@inproceedings": "pris-procee87",
+      "author": "Jehan-François Pâris and Darrell D. E. Long and Walter A. Burkhard",
+      "title": "The Management of Consistency in Fault-Tolerant File Systems",
+      "booktitle": "Proceedings of the Workshop on Fault Tolerance in Parallel and Distributed Computing",
+      "year": 1987,
+      "month": "dec"
+    }
+  },
+  {
+    "id": 255,
+    "title": "Optimistic Algorithms for Replicated Data Management",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Darrell D. E. Long"
+    ],
+    "date": "Nov 1, 1987",
+    "url": "https://scholar.google.com/scholar?q=Optimistic%20Algorithms%20for%20Replicated%20Data%20Management",
+    "bibTeX": {
+      "@inproceedings": "long-procee87",
+      "author": "Darrell D. E. Long",
+      "title": "Optimistic Algorithms for Replicated Data Management",
+      "booktitle": "Proceedings of the Second Workshop on Large-Grained Parallelism",
+      "year": 1987,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 256,
+    "title": "Towards a Multipurpose Forecast Systems for the Columbia River Estuary",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "António M. Baptista",
+      "Michael Wilkin",
+      "Phillip Pearson",
+      "Paul Turner",
+      "Cole M$^c$Candlish",
+      "Phillip Barrett",
+      "Salil Das",
+      "Wendy Sommerfield",
+      "Ming Qi",
+      "Neetu Nangia",
+      "David Jay",
+      "Darrell Long",
+      "Calton Pu",
+      "John Hunt",
+      "Zhaoqing Yang",
+      "Edward Myers",
+      "Jeff Darland",
+      "Anna Farrenkopf"
+    ],
+    "date": "Nov 1, 1998",
+    "url": "https://scholar.google.com/scholar?q=Towards%20a%20Multipurpose%20Forecast%20Systems%20for%20the%20Columbia%20River%20Estuary",
+    "bibTeX": {
+      "@inproceedings": "baptista-procee98",
+      "author": "António M. Baptista and Michael Wilkin and Phillip Pearson and Paul Turner and Cole M$^c$Candlish and Phillip Barrett and Salil Das and Wendy Sommerfield and Ming Qi and Neetu Nangia and David Jay and Darrell Long and Calton Pu and John Hunt and Zhaoqing Yang and Edward Myers and Jeff Darland and Anna Farrenkopf",
+      "title": "Towards a Multipurpose Forecast Systems for the Columbia River Estuary",
+      "booktitle": "Proceedings of the Ocean Community Conference",
+      "year": 1998,
+      "month": "nov"
+    }
+  },
+  {
+    "id": 257,
+    "title": "Combining Chunk Boundary and Chunk Signature Calculations for Deduplication (Combinar la calculacion de limites de trozos y de firmas de trozos para deduplicacion)",
+    "short_description": "",
+    "full_content": "",
+    "author": [
+      "Witold Litwin",
+      "Darrell Long",
+      "Thomas Schwarz"
+    ],
+    "date": "Jan 1, 2012",
+    "url": "https://scholar.google.com/scholar?q=Combining%20Chunk%20Boundary%20and%20Chunk%20Signature%20Calculations%20for%20Deduplication%20%28Combinar%20la%20calculacion%20de%20limites%20de%20trozos%20y%20de%20firmas%20de%20trozos%20para%20deduplicacion%29",
+    "bibTeX": {
+      "@inproceedings": "litwin-ieee12",
+      "author": "Witold Litwin and Darrell Long and Thomas Schwarz",
+      "title": "Combining Chunk Boundary and Chunk Signature Calculations for Deduplication (Combinar la calculacion de limites de trozos y de firmas de trozos para deduplicacion)",
+      "booktitle": "IEEE Latin America Transactions",
+      "year": 2012,
+      "month": "jan"
+    }
   }
 ]
