@@ -198,7 +198,7 @@ a:active {
         $dark 5px,
         transparent 5px,
         transparent 10px);
-    z-index: -1;
+    pointer-events: none;
 
     @media screen and (min-width: 1160px) {
       background: repeating-linear-gradient(to right,
