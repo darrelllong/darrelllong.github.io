@@ -139,11 +139,18 @@ Description.propTypes = {
 };
 
 const Patent = ({ patent, total, search }) => {
+  // Always render same structure for consistent layout
   if (!patent) {
     return (
       <>
-        <h2>No patent found</h2>
-        <Link to="/patents">Go back</Link>
+        <article>
+          <header>
+            <h2>Loading...</h2>
+          </header>
+        </article>
+        <nav className="main-nav">
+          <Link to="/patents">Back to all patents</Link>
+        </nav>
       </>
     );
   }
