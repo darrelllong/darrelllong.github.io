@@ -2,6 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { Context } from "../ContextProvider";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Assets
 import {
@@ -151,8 +152,10 @@ Header.propTypes = {
 };
 
 const Publication = ({ publication, total, search }) => {
-  // If total is 0, data hasn't loaded yet
-  if (total === 0) {
+  const { publications } = React.useContext(Context);
+
+  // If publications array is empty, data hasn't loaded yet
+  if (publications.length === 0) {
     return <h2>Loading...</h2>;
   }
 
