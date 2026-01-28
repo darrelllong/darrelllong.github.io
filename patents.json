@@ -5,7 +5,7 @@
     "author": ["Darrell D. E. Long", "Thomas M. Kroeger"],
     "patent_number": "5,889,993",
     "short_description": "A method for predictive event tracking that enables efficient anticipation and handling of system events.",
-    "url": "https://pdfpiw.uspto.gov/.piw?docid=5889993",
+    "url": "https://patents.google.com/patent/US5889993",
     "bibTeX": {
       "@misc": "Long1999Predictive",
       "author": "Darrell D. E. Long and Thomas M. Kroeger",
@@ -21,7 +21,7 @@
     "author": ["Luis Felipe Cabrera", "Darrell D. E. Long"],
     "patent_number": "5,917,998",
     "short_description": "A method for managing membership sets in mirrored I/O operations without the overhead of logging.",
-    "url": "https://pdfpiw.uspto.gov/.piw?docid=5917998",
+    "url": "https://patents.google.com/patent/US5917998",
     "bibTeX": {
       "@misc": "Cabrera1999Membership",
       "author": "Luis Felipe Cabrera and Darrell D. E. Long",
@@ -37,7 +37,7 @@
     "author": ["Randal C. Burns", "Edward G. Chron", "Darrell D. E. Long", "Benjamin C. Reed"],
     "patent_number": "5,931,947",
     "short_description": "A secure storage system using an array of remotely encrypted storage devices for data protection.",
-    "url": "https://pdfpiw.uspto.gov/.piw?docid=5931947",
+    "url": "https://patents.google.com/patent/US5931947",
     "bibTeX": {
       "@misc": "Burns1999Secure",
       "author": "Randal C. Burns and Edward G. Chron and Darrell D. E. Long and Benjamin C. Reed",
@@ -53,7 +53,7 @@
     "author": ["Randal C. Burns", "Darrell D. E. Long"],
     "patent_number": "6,018,747",
     "short_description": "An efficient method for generating and reconstructing delta files in-place, reducing storage and bandwidth requirements.",
-    "url": "https://pdfpiw.uspto.gov/.piw?docid=6018747",
+    "url": "https://patents.google.com/patent/US6018747",
     "bibTeX": {
       "@misc": "Burns2000Delta",
       "author": "Randal C. Burns and Darrell D. E. Long",
@@ -69,7 +69,7 @@
     "author": ["Edward G. Chron", "Darrell D. E. Long", "Randal C. Burns", "Benjamin Reed"],
     "patent_number": "6,405,315",
     "short_description": "A decentralized file system architecture that provides remote encryption capabilities for secure distributed storage.",
-    "url": "https://pdfpiw.uspto.gov/.piw?docid=6405315",
+    "url": "https://patents.google.com/patent/US6405315",
     "bibTeX": {
       "@misc": "Chron2002Decentralized",
       "author": "Edward G. Chron and Darrell D. E. Long and Randal C. Burns and Benjamin Reed",
@@ -85,7 +85,7 @@
     "author": ["Randal C. Burns", "Robert M. Rees", "Darrell D. E. Long"],
     "patent_number": "6,651,147",
     "short_description": "A method for optimizing data placement and allocation through virtual contiguity to improve storage system performance.",
-    "url": "https://pdfpiw.uspto.gov/.piw?docid=6651147",
+    "url": "https://patents.google.com/patent/US6651147",
     "bibTeX": {
       "@misc": "Burns2003Virtual",
       "author": "Randal C. Burns and Robert M. Rees and Darrell D. E. Long",
@@ -101,7 +101,7 @@
     "author": ["Randal C. Burns", "Robert M. Rees", "Darrell D. E. Long", "Atul Goel"],
     "patent_number": "6,775,703",
     "short_description": "A lease-based protocol ensuring safety and consistency in distributed systems operating across multiple networks.",
-    "url": "https://pdfpiw.uspto.gov/.piw?docid=6775703",
+    "url": "https://patents.google.com/patent/US6775703",
     "bibTeX": {
       "@misc": "Burns2004Lease",
       "author": "Randal C. Burns and Robert M. Rees and Darrell D. E. Long and Atul Goel",
@@ -117,7 +117,7 @@
     "author": ["Randal C. Burns", "Darrell D. E. Long"],
     "patent_number": "6,792,424",
     "short_description": "A system for managing authentication and maintaining data coherency in storage area networks.",
-    "url": "https://pdfpiw.uspto.gov/.piw?docid=6792424",
+    "url": "https://patents.google.com/patent/US6792424",
     "bibTeX": {
       "@misc": "Burns2004Authentication",
       "author": "Randal C. Burns and Darrell D. E. Long",
@@ -133,7 +133,7 @@
     "author": ["Randal C. Burns", "Darrell D. E. Long", "Robert M. Rees"],
     "patent_number": "6,938,056",
     "short_description": "A method for accurately restoring file systems from backups while properly handling file deletions.",
-    "url": "https://pdfpiw.uspto.gov/.piw?docid=6938056",
+    "url": "https://patents.google.com/patent/US6938056",
     "bibTeX": {
       "@misc": "Burns2005Restoring",
       "author": "Randal C. Burns and Darrell D. E. Long and Robert M. Rees",
@@ -149,7 +149,7 @@
     "author": ["Rajagopal Ananthanarayanan", "Ralph Becker-Szendy", "Randal C. Burns", "Darrell D. E. Long", "Jujjuri Venkateswararao", "David M. Wolf", "Jason C. Young"],
     "patent_number": "7,085,909",
     "short_description": "An efficient implementation of copy-on-write semantics for file systems, optimizing storage utilization.",
-    "url": "https://pdfpiw.uspto.gov/.piw?docid=7085909",
+    "url": "https://patents.google.com/patent/US7085909",
     "bibTeX": {
       "@misc": "Ananthanarayanan2006CopyOnWrite",
       "author": "Rajagopal Ananthanarayanan and Ralph Becker-Szendy and Randal C. Burns and Darrell D. E. Long and Jujjuri Venkateswararao and David M. Wolf and Jason C. Young",
@@ -165,7 +165,7 @@
     "author": ["Jason C. Young", "Rajagopal Ananthanarayanan", "Randal C. Burns", "Darrell D. E. Long", "Robert M. Rees", "Ralph A. Becker-Szendy", "James J. Seeger", "David M. Wolf"],
     "patent_number": "7,139,781",
     "short_description": "A comprehensive system for managing multiple versions of files within a file system.",
-    "url": "https://pdfpiw.uspto.gov/.piw?docid=7139781",
+    "url": "https://patents.google.com/patent/US7139781",
     "bibTeX": {
       "@misc": "Young2006Versions",
       "author": "Jason C. Young and Rajagopal Ananthanarayanan and Randal C. Burns and Darrell D. E. Long and Robert M. Rees and Ralph A. Becker-Szendy and James J. Seeger and David M. Wolf",
