@@ -80,35 +80,27 @@ export default function Main() {
           }
         />
         <Route
-          path={`/publications/:id`}
+          path="/publications/:id"
           element={
-            publicationId !== null ? (
-              <Publication
-                publication={publications.find(
-                  (pub) => pub.id === publicationId,
-                )}
-                total={publications.length}
-                search={setSearchTerm}
-              />
-            ) : (
-              <Route path="*" element={<Navigate to="/" replace />} />
-            )
+            <Publication
+              publication={publications.find(
+                (pub) => pub.id === publicationId,
+              )}
+              total={publications.length}
+              search={setSearchTerm}
+            />
           }
         />
         <Route
-          path={`/patents/:id`}
+          path="/patents/:id"
           element={
-            patentId !== null ? (
-              <Patent
-                patent={patents.find(
-                  (pat) => pat.id === patentId,
-                )}
-                total={patents.length}
-                search={setSearchTerm}
-              />
-            ) : (
-              <Route path="*" element={<Navigate to="/" replace />} />
-            )
+            <Patent
+              patent={patents.find(
+                (pat) => pat.id === patentId,
+              )}
+              total={patents.length}
+              search={setSearchTerm}
+            />
           }
         />
         <Route path="/" element={<Menu />} />
