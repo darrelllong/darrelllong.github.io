@@ -150,8 +150,9 @@ Header.propTypes = {
   search: PropTypes.func,
 };
 
-const Publication = ({ publication, total, search, loading }) => {
-  if (loading) {
+const Publication = ({ publication, total, search }) => {
+  // If total is 0, data hasn't loaded yet
+  if (total === 0) {
     return <h2>Loading...</h2>;
   }
 
@@ -211,7 +212,6 @@ const Publication = ({ publication, total, search, loading }) => {
 Publication.propTypes = {
   publication: PropTypes.object,
   total: PropTypes.number,
-  loading: PropTypes.bool,
   search: PropTypes.func,
 };
 
