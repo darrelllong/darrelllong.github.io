@@ -50,12 +50,12 @@ export default function Main() {
     }
   }, [location, navigate]);
 
-  const matchPublication = location.pathname.match(/^\/publications\/(\d+)$/);
+  const matchPublication = location.pathname.match(/^\/publications\/(\d+)\/?$/);
   const publicationId = matchPublication
     ? parseInt(matchPublication[1], 10)
     : null;
 
-  const matchPatent = location.pathname.match(/^\/patents\/(\d+)$/);
+  const matchPatent = location.pathname.match(/^\/patents\/(\d+)\/?$/);
   const patentId = matchPatent
     ? parseInt(matchPatent[1], 10)
     : null;
