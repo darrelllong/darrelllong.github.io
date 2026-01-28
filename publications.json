@@ -4365,7 +4365,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Jul 1, 2017",
-    "url": "https://scholar.google.com/scholar?q=Disk%20Failure%20Prediction%20in%20Heterogeneous%20Environments",
+    "url": "https://ieeexplore.ieee.org/document/8046776",
     "bibTeX": {
       "@inproceedings": "rincon-ipccc17",
       "author": "Carlos A. Rincon and Jehan-François Pâris and Ricardo Vilalta and Albert M. K. Cheng and Darrell D. E. Long",
@@ -4385,7 +4385,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Dec 1, 2015",
-    "url": "https://scholar.google.com/scholar?q=Pirogue%3A%20A%20lighter%20dynamic%20version%20of%20the%20Raft%20distributed%20consensus%20algorithm",
+    "url": "https://ieeexplore.ieee.org/document/7410281",
     "bibTeX": {
       "@inproceedings": "pris-ipccc15",
       "author": "Jehan-François Pâris and Darrell D. E. Long",
@@ -4406,7 +4406,7 @@
       "Jehan-François Pâris"
     ],
     "date": "Nov 1, 2015",
-    "url": "https://scholar.google.com/scholar?q=Triple%20failure%20tolerant%20storage%20systems%20using%20only%20exclusive-or%20parity%20calculations",
+    "url": "https://ieeexplore.ieee.org/document/7371868",
     "bibTeX": {
       "@inproceedings": "schwarz-prdc15",
       "author": "Thomas Schwarz and Darrell D. E. Long and Jehan-François Pâris",
@@ -4426,7 +4426,7 @@
       "Darrell Long"
     ],
     "date": "Sep 1, 2015",
-    "url": "https://scholar.google.com/scholar?q=Reducing%20the%20Energy%20Footprint%20of%20a%20Distributed%20Consensus%20Algorithm",
+    "url": "https://ieeexplore.ieee.org/document/7371967",
     "bibTeX": {
       "@inproceedings": "pris-edcc15",
       "author": "Jehan-François Pâris and Darrell Long",
@@ -4438,7 +4438,7 @@
   },
   {
     "id": 184,
-    "title": "Cooperative mode: Comparing interpretations of the Xbox 360 storage system",
+    "title": "Cooperative mode: Comparative storage metadata verification applied to the Xbox 360",
     "short_description": "",
     "full_content": "",
     "author": [
@@ -4447,11 +4447,11 @@
       "Darrell Long"
     ],
     "date": "Aug 1, 2014",
-    "url": "https://scholar.google.com/scholar?q=Cooperative%20mode%3A%20Comparing%20interpretations%20of%20the%20Xbox%20360%20storage%20system",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1742287614000474",
     "bibTeX": {
       "@inproceedings": "nelson-dfrws14",
       "author": "Alex Nelson and Erik Steggall and Darrell Long",
-      "title": "Cooperative mode: Comparing interpretations of the Xbox 360 storage system",
+      "title": "Cooperative mode: Comparative storage metadata verification applied to the Xbox 360",
       "booktitle": "Proceedings of the Digital Forensics Research Conference",
       "year": 2014,
       "month": "aug"
@@ -4490,7 +4490,7 @@
       "Thomas Schwarz"
     ],
     "date": "Feb 1, 2014",
-    "url": "https://scholar.google.com/scholar?q=Reliability%20Challenges%20for%20Storing%20Exabytes",
+    "url": "https://ieeexplore.ieee.org/document/6785458",
     "bibTeX": {
       "@inproceedings": "amer-procee14",
       "author": "Ahmed Amer and Darrell D. E. Long and Thomas Schwarz",
@@ -4511,7 +4511,7 @@
       "Thomas Schwarz"
     ],
     "date": "Dec 1, 2013",
-    "url": "https://scholar.google.com/scholar?q=Zero-Maintenance%20Disk%20Arrays",
+    "url": "https://ieeexplore.ieee.org/document/6820858",
     "bibTeX": {
       "@inproceedings": "pris-prdc13",
       "author": "Jehan-François Pâris and Darrell D. E. Long and Thomas Schwarz",
@@ -4532,7 +4532,7 @@
       "Jehan-François Pâris"
     ],
     "date": "Dec 1, 2013",
-    "url": "https://scholar.google.com/scholar?q=Reliability%20of%20Disk%20Arrays%20with%20Double%20Parity",
+    "url": "https://ieeexplore.ieee.org/document/6820846",
     "bibTeX": {
       "@inproceedings": "schwarz-prdc13",
       "author": "Thomas Schwarz and Darrell D. E. Long and Jehan-François Pâris",
@@ -4553,7 +4553,7 @@
       "Witold Litwin"
     ],
     "date": "Aug 1, 2013",
-    "url": "https://scholar.google.com/scholar?q=Three-Dimensional%20Redundancy%20Codes%20for%20Archival%20Storage",
+    "url": "https://ieeexplore.ieee.org/document/6730780",
     "bibTeX": {
       "@inproceedings": "pris-sim13",
       "author": "Jehan-François Pâris and Darrell D. E. Long and Witold Litwin",
@@ -4574,7 +4574,7 @@
       "Darrell Long"
     ],
     "date": "Mar 1, 2011",
-    "url": "https://scholar.google.com/scholar?q=Accelerated%20Chaining%3A%20A%20Better%20Way%20to%20Harness%20Peer%20Power%20in%20Video-on-Demand%20Applications",
+    "url": "https://dl.acm.org/doi/10.1145/1982185.1982237",
     "bibTeX": {
       "@inproceedings": "pris-procee11",
       "author": "Jehan-François Pâris and Ahmed Amer and Darrell Long",
@@ -4596,7 +4596,7 @@
       "Miriam Sivan-Zimet"
     ],
     "date": "Apr 1, 2004",
-    "url": "https://scholar.google.com/scholar?q=Duplicate%20Data%20Elimination%20in%20a%20SAN%20File%20System",
+    "url": "https://ssrc.us/media/pubs/eb0bb6eeade3ea84a23bf30d1b8a1862c458fe8b.pdf",
     "bibTeX": {
       "@inproceedings": "hong-msst04",
       "author": "Bo Hong and Demyn Plantenberg and Darrell D. E. Long and Miriam Sivan-Zimet",
@@ -4621,7 +4621,7 @@
       "Tyce T. M$^c$Larty"
     ],
     "date": "Apr 1, 2004",
-    "url": "https://scholar.google.com/scholar?q=File%20System%20Workload%20Analysis%20For%20Large%20Scale%20Scientific%20Computing%20Applications",
+    "url": "https://escholarship.org/uc/item/7m82b6d9",
     "bibTeX": {
       "@inproceedings": "wang-msst04",
       "author": "Feng Wang and Qin Xin and Bo Hong and Scott A. Brandt and Ethan Miller and Darrell Long and Tyce T. M$^c$Larty",
@@ -4642,7 +4642,7 @@
       "Darrell D. E. Long"
     ],
     "date": "May 1, 2003",
-    "url": "https://scholar.google.com/scholar?q=Tabbycat%3A%20An%20Inexpensive%20Scalable%20Server%20for%20Video-on-Demand",
+    "url": "https://ieeexplore.ieee.org/document/1204467",
     "bibTeX": {
       "@inproceedings": "thirumalai-procee03",
       "author": "Karthik Thirumalai and Jehan-François Pâris and Darrell D. E. Long",
@@ -4830,13 +4830,13 @@
     "author": [
       "Jehan-François Pâris",
       "Theodore R. Haining",
-      "Darrell~D. E. Long"
+      "Darrell D. E. Long"
     ],
     "date": "Mar 1, 2000",
     "url": "https://scholar.google.com/scholar?q=A%20Stack%20Model%20Based%20Replacement%20Policy%20for%20a%20Non-Volatile%20Write%20Cache",
     "bibTeX": {
-      "@inproceedings": "pris-msst00",
-      "author": "Jehan-François Pâris and Theodore R. Haining and Darrell~D. E. Long",
+      "@inproceedings": "paris-msst00",
+      "author": "Jehan-François Pâris and Theodore R. Haining and Darrell D. E. Long",
       "title": "A Stack Model Based Replacement Policy for a Non-Volatile Write Cache",
       "booktitle": "Proceedings of the Eighth NASA Goddard Conference on Mass Storage Systems and Technologies",
       "year": 2000,
@@ -4999,7 +4999,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Nov 1, 1997",
-    "url": "https://scholar.google.com/scholar?q=Efficient%20Distributed%20Back-up%20with%20Delta%20Compression",
+    "url": "https://dl.acm.org/doi/10.1145/266220.266223",
     "bibTeX": {
       "@inproceedings": "burns-procee97",
       "author": "Randal C. Burns and Darrell D. E. Long",
@@ -5019,7 +5019,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Sep 1, 1997",
-    "url": "https://scholar.google.com/scholar?q=Improving%20Video-on-Demand%20Server%20Efficiency%20Through%20Stream%20Tapping",
+    "url": "https://ieeexplore.ieee.org/document/623313",
     "bibTeX": {
       "@inproceedings": "carter-procee97",
       "author": "Steven W. Carter and Darrell D. E. Long",
@@ -5059,7 +5059,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Feb 1, 1997",
-    "url": "https://scholar.google.com/scholar?q=A%20Linear%20Time%2C%20Constant%20Space%20Differencing%20Algorithm",
+    "url": "https://ieeexplore.ieee.org/document/582199",
     "bibTeX": {
       "@inproceedings": "burns-ipccc97",
       "author": "Randal C. Burns and Darrell D. E. Long",
@@ -5080,7 +5080,7 @@
       "Bruce Sherrod"
     ],
     "date": "Nov 1, 1996",
-    "url": "https://scholar.google.com/scholar?q=A%20Dynamic%20Disk%20Spin-down%20Technique%20for%20Mobile%20Computing",
+    "url": "https://dl.acm.org/doi/10.1145/236387.236423",
     "bibTeX": {
       "@inproceedings": "helmbold-procee96",
       "author": "David P. Helmbold and Darrell D. E. Long and Bruce Sherrod",
@@ -5121,7 +5121,7 @@
       "Richard Golding"
     ],
     "date": "Sep 1, 1995",
-    "url": "https://scholar.google.com/scholar?q=A%20Longitudinal%20Study%20of%20Internet%20Host%20Reliability",
+    "url": "https://ieeexplore.ieee.org/document/403267",
     "bibTeX": {
       "@inproceedings": "long-procee95",
       "author": "Darrell Long and Andrew Muir and Richard Golding",
@@ -5154,7 +5154,7 @@
   },
   {
     "id": 218,
-    "title": "An Archiecture Supporting Real-Time and Retrospective Environmental Data Management",
+    "title": "An Architecture Supporting Real-Time and Retrospective Environmental Data Management",
     "short_description": "",
     "full_content": "",
     "author": [
@@ -5165,11 +5165,11 @@
       "Eric C. Rosen"
     ],
     "date": "Jun 1, 1994",
-    "url": "https://scholar.google.com/scholar?q=An%20Archiecture%20Supporting%20Real-Time%20and%20Retrospective%20Environmental%20Data%20Management",
+    "url": "https://scholar.google.com/scholar?q=An%20Architecture%20Supporting%20Real-Time%20and%20Retrospective%20Environmental%20Data%20Management",
     "bibTeX": {
       "@inproceedings": "long-adb94",
       "author": "Darrell D. E. Long and Patrick E. Mantey and Theodore R. Haining and Bruce R. Montague and Eric C. Rosen",
-      "title": "An Archiecture Supporting Real-Time and Retrospective Environmental Data Management",
+      "title": "An Architecture Supporting Real-Time and Retrospective Environmental Data Management",
       "booktitle": "Proceedings of the First International Conference for Applications of Databases (ADB)",
       "year": 1994,
       "month": "jun"
@@ -5248,7 +5248,7 @@
       "Madhukar N. Thakur"
     ],
     "date": "Apr 1, 1993",
-    "url": "https://scholar.google.com/scholar?q=Scheduling%20Real-Time%20Disk%20Transfers%20for%20Continuous%20Media%20Applications",
+    "url": "https://ieeexplore.ieee.org/document/289755",
     "bibTeX": {
       "@inproceedings": "long-msst93",
       "author": "Darrell D. E. Long and Madhukar N. Thakur",
@@ -5551,15 +5551,14 @@
     "full_content": "",
     "author": [
       "Jehan-François Pâris",
-      "Thomas Schwarz",
-      "S. J",
+      "Thomas Schwarz, S.J.",
       "Darrell D. E. Long"
     ],
     "date": "Dec 1, 2016",
-    "url": "https://scholar.google.com/scholar?q=Improving%20Disk%20Array%20Reliability%20Through%20Faster%20Repairs",
+    "url": "https://ieeexplore.ieee.org/document/7820607",
     "bibTeX": {
-      "@inproceedings": "pris-ipccc16",
-      "author": "Jehan-François Pâris and Thomas Schwarz and S. J and Darrell D. E. Long",
+      "@inproceedings": "paris-ipccc16",
+      "author": "Jehan-François Pâris and Thomas Schwarz, S.J. and Darrell D. E. Long",
       "title": "Improving Disk Array Reliability Through Faster Repairs",
       "booktitle": "Proceedings of the Thirty-fifth International Performance of Computers and Communication Conference",
       "year": 2016,
@@ -5577,7 +5576,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Nov 1, 2011",
-    "url": "https://scholar.google.com/scholar?q=Horus%3A%20Fine-Grained%20Encryption-Based%20Security%20for%20High%20Performance%20Petascale%20Storage",
+    "url": "https://dl.acm.org/doi/10.1145/2159352.2159354",
     "bibTeX": {
       "@inproceedings": "rajendran-pdsw11",
       "author": "Ranjana Rajendran and Ethan L. Miller and Darrell D. E. Long",
@@ -5985,12 +5984,15 @@
     "date": "Jan 1, 2012",
     "url": "https://scholar.google.com/scholar?q=Combining%20Chunk%20Boundary%20and%20Chunk%20Signature%20Calculations%20for%20Deduplication%20%28Combinar%20la%20calculacion%20de%20limites%20de%20trozos%20y%20de%20firmas%20de%20trozos%20para%20deduplicacion%29",
     "bibTeX": {
-      "@inproceedings": "litwin-ieee12",
+      "@article": "litwin-latam12",
       "author": "Witold Litwin and Darrell Long and Thomas Schwarz",
       "title": "Combining Chunk Boundary and Chunk Signature Calculations for Deduplication (Combinar la calculacion de limites de trozos y de firmas de trozos para deduplicacion)",
-      "booktitle": "IEEE Latin America Transactions",
+      "journal": "IEEE Latin America Transactions (Revista IEEE América Latina)",
+      "volume": 10,
+      "number": 1,
       "year": 2012,
-      "month": "jan"
+      "month": "jan",
+      "pages": "1305--1311"
     }
   }
 ]
