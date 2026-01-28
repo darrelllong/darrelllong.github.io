@@ -23,7 +23,7 @@ export default function Main() {
   const [searchTerm, setSearchTerm] = React.useState("");
   const location = useLocation();
   const navigate = useNavigate();
-  const { pathClass, publications, patents, showMenu, setShowMenu, dataReady } =
+  const { pathClass, publications, patents, showMenu, setShowMenu } =
     React.useContext(Context);
 
   const disableMenu = () => {
@@ -59,16 +59,6 @@ export default function Main() {
   const patentId = matchPatent
     ? parseInt(matchPatent[1], 10)
     : null;
-
-  // Wait for data before rendering detail pages
-  const isDetailPage = location.pathname.match(/^\/(publications|patents)\/\d+\/?$/);
-  if (isDetailPage && !dataReady) {
-    return (
-      <main className={pathClass(location.pathname)}>
-        <h2>Loading...</h2>
-      </main>
-    );
-  }
 
   return (
     <main

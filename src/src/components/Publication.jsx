@@ -151,11 +151,18 @@ Header.propTypes = {
 };
 
 const Publication = ({ publication, total, search }) => {
+  // Always render same structure for consistent layout
   if (!publication) {
     return (
       <>
-        <h2>No publication found</h2>
-        <Link to="/publications">Go back</Link>
+        <article>
+          <header>
+            <h2>Loading...</h2>
+          </header>
+        </article>
+        <nav className="main-nav">
+          <Link to="/publications">Back to all publications</Link>
+        </nav>
       </>
     );
   }
