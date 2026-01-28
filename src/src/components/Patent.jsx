@@ -138,7 +138,11 @@ Description.propTypes = {
   text: PropTypes.string,
 };
 
-const Patent = ({ patent, total, search }) => {
+const Patent = ({ patent, total, search, loading }) => {
+  if (loading) {
+    return <h2>Loading...</h2>;
+  }
+
   if (!patent) {
     return (
       <>
@@ -191,6 +195,7 @@ Patent.propTypes = {
   patent: PropTypes.object,
   total: PropTypes.number,
   search: PropTypes.func,
+  loading: PropTypes.bool,
 };
 
 export default Patent;

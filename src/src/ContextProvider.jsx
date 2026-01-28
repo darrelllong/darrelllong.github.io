@@ -21,6 +21,7 @@ export const ContextProvider = ({ children }) => {
 
   const [publications, setPublications] = React.useState([]);
   const [patents, setPatents] = React.useState([]);
+  const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
     // Month abbreviation to number (0-11)
@@ -29,7 +30,7 @@ export const ContextProvider = ({ children }) => {
       jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11
     };
 
-    fetch("/publications.json")
+    const pubPromise = fetch("/publications.json")
       .then((response) => response.json())
       .then((data) => {
         // Sort publications by year and month, newest first
@@ -46,7 +47,7 @@ export const ContextProvider = ({ children }) => {
       })
       .catch((error) => console.error("Error fetching publications:", error));
 
-    fetch("/patents.json")
+    const patPromise = fetch("/patents.json")
       .then((response) => response.json())
       .then((data) => {
         // Sort patents by year and month, newest first
@@ -62,11 +63,13 @@ export const ContextProvider = ({ children }) => {
         setPatents(sorted);
       })
       .catch((error) => console.error("Error fetching patents:", error));
+
+    Promise.all([pubPromise, patPromise]).then(() => setLoading(false));
   }, []);
 
   return (
     <Context.Provider
-      value={{ pathClass, showMenu, setShowMenu, publications, patents }}
+      value={{ pathClass, showMenu, setShowMenu, publications, patents, loading }}
     >
       {children}
     </Context.Provider>

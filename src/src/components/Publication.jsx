@@ -150,7 +150,11 @@ Header.propTypes = {
   search: PropTypes.func,
 };
 
-const Publication = ({ publication, total, search }) => {
+const Publication = ({ publication, total, search, loading }) => {
+  if (loading) {
+    return <h2>Loading...</h2>;
+  }
+
   if (!publication) {
     return (
       <>
@@ -207,6 +211,7 @@ const Publication = ({ publication, total, search }) => {
 Publication.propTypes = {
   publication: PropTypes.object,
   total: PropTypes.number,
+  loading: PropTypes.bool,
   search: PropTypes.func,
 };
 
