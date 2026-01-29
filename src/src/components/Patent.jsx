@@ -105,7 +105,7 @@ const Header = ({ title, author, bibTeX, patent_number, url, search }) => {
       {url && (
         <a href={url} target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faFileArrowDown} fixedWidth />
-          Download patent PDF from USPTO
+          Download PDF from Google Patents
         </a>
       )}
     </header>
@@ -174,7 +174,7 @@ const Patent = ({ patent, total, search }) => {
           <BibTeX bibTeX={patent.bibTeX} />
           {patent.url && (
             <a href={patent.url} target="_blank" rel="noreferrer">
-              Download patent PDF from USPTO <FontAwesomeIcon icon={faFileArrowDown} />
+              Download PDF from Google Patents <FontAwesomeIcon icon={faFileArrowDown} />
             </a>
           )}
         </footer>
