@@ -75,27 +75,29 @@ export default function Pagination(props) {
     return pageNumbers;
   };
 
-  if (totalPublications) {
-    return (
-      <nav className="pagination">
-        <button
-          onClick={() => changePage(currentPage - 1)}
-          disabled={currentPage === 0}
-          className="prev"
-        >
-          <FontAwesomeIcon icon={faCaretLeft} />
-        </button>
-        {renderPageNumbers()}
-        <button
-          onClick={() => changePage(currentPage + 1)}
-          disabled={currentPage === lastPage}
-          className="next"
-        >
-          <FontAwesomeIcon icon={faCaretRight} />
-        </button>
-      </nav>
-    );
+  if (!totalPublications) {
+    return null;
   }
+
+  return (
+    <nav className="pagination">
+      <button
+        onClick={() => changePage(currentPage - 1)}
+        disabled={currentPage === 0}
+        className="prev"
+      >
+        <FontAwesomeIcon icon={faCaretLeft} />
+      </button>
+      {renderPageNumbers()}
+      <button
+        onClick={() => changePage(currentPage + 1)}
+        disabled={currentPage === lastPage}
+        className="next"
+      >
+        <FontAwesomeIcon icon={faCaretRight} />
+      </button>
+    </nav>
+  );
 }
 
 Pagination.propTypes = {

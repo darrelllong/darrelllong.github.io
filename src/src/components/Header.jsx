@@ -25,35 +25,14 @@ export default function Header() {
     };
   }, []);
 
-  const isHome = () => {
-    return useLocation().pathname === "/";
-  };
-
-  const toShowHamburger = (windowWidth) => {
-    if (isHome()) {
-      return false;
-    }
-    if (windowWidth >= 968) {
-      return false;
-    }
-    return true;
-  };
-
-  const toShowMenu = (windowWidth) => {
-    if (isHome()) {
-      return false;
-    }
-    if (windowWidth < 968) {
-      return false;
-    }
-    return true;
-  };
-
   const path = useLocation().pathname;
+  const isHome = path === "/";
+  const showHamburger = !isHome && windowWidth < 968;
+  const showNav = !isHome && windowWidth >= 968;
 
   return (
     <header
-      className={`${pathClass(path)} ${showMenu && path != "/" ? "fixed" : ""}`}
+      className={`${pathClass(path)} ${showMenu && !isHome ? "fixed" : ""}`}
       id="page-header"
     >
       <Link to="/" className="logo">
@@ -62,8 +41,8 @@ export default function Header() {
       <Link to="/" className="h1-logo">
         <h1>Darrell Long</h1>
       </Link>
-      {toShowHamburger(windowWidth) && <Hamburger />}
-      {toShowMenu(windowWidth) && <Menu />}
+      {showHamburger && <Hamburger />}
+      {showNav && <Menu />}
     </header>
   );
 }
