@@ -1619,7 +1619,7 @@
     "id": 67,
     "title": "Energy-Reliability Tradeoffs in Sensor Networks",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Sensor nodes that store their data locally are increasingly being deployed in hostile and remote environments such as active volcanoes and battlefields. Observations gathered in these environments are often irreplaceable, and must be protected from loss due to node failures. Nodes may fail individually due to power depletion or hardware/software problems, or they may suffer correlated failures from localized destructive events such as fire or rockfall. While many file systems can guard against these events, they do not consider energy usage in their approach to redundancy. We examine tradeoffs between energy and reliability in three contexts: choice of redundancy technique, choice of redundancy nodes, and frequency of verifying correctness of remotely-stored data. By matching the choice of reliability techniques to the failure characteristics of sensor networks in hostile and inaccessible environments, we can build systems that use less energy while providing higher system reliability.",
     "author": [
       "Yulai Xie",
       "Dan Feng",
@@ -2127,7 +2127,7 @@
     "id": 88,
     "title": "Self-Adjusting Two-Failure Tolerant Disk Arrays",
     "short_description": "",
-    "full_content": "",
+    "full_content": "We have presented a representation for a storage system with two failure tolerance based on flat XOR codes. We argue that this representation allows us to implement fast algorithm for the layout of very large, evolving disk arrays. Much needs to be done. Fast, but efficient algorithms for major changes in the disk array such as rack failure or insertion of new disks still need to be implemented and tested. Our goal is usually not to find an optimal layout (in a sense to be defined precisely), but one that is close to optimal. To assert that our algorithms perform at this level involves a more mathematical analysis of the consequences of failures in such an array to derive bounds on the robustness of optimal layouts, a task we have barely started. Nevertheless, the results we have indicate that the algorithms are quite effective and certainly fast and easy to implement. This presents definite progress over the true optimization (including looking for proven optimal designs) that can be done only for special, small cases and supports our pragmatic attitude.",
     "author": [
       "Ignacio Corderi",
       "Thomas Schwarz",
@@ -2320,7 +2320,7 @@
     "id": 96,
     "title": "Easing the Burdens of HPC File Management",
     "short_description": "",
-    "full_content": "",
+    "full_content": "While the amount of data we can process and store grows, our ability to find data remains dependent upon our own memories more often than not. Manual metadata management is common among scientific users, consuming their time while not making use of the computing resources at hand. Our system design proposes to empower users with more powerful data finding tools, such as unified search spaces, provenance, and ranked file system search. By returning the responsibility of file management to the file system, we enable scientists to focus on their science without the need for a customized file organization scheme for their work.",
     "author": [
       "Stephanie Jones",
       "Christina Strong",
@@ -2560,7 +2560,7 @@
     "id": 106,
     "title": "Highly Reliable Two-Dimensional RAID Arrays for Archival Storage",
     "short_description": "",
-    "full_content": "",
+    "full_content": "We present a two-dimensional RAID architecture that is specifically tailored to the needs of archival storage systems. Our proposal starts with a fairly conventional two-dimensional RAID architecture where each disk belongs to exactly one horizontal and one vertical RAID level 4 stripe. Once the array has been populated, we add a superparity device that contains the exclusive OR of all the contents of all horizontal-or vertical-parity disks. The new organization tolerates all triple disk failures and nearly all quadruple and quintuple disk failures. As a result, it provides mean times to data loss (MTTDLs) more than a hundred times better than those of sets of RAID level 6 stripes with equal capacity and similar parity overhead.",
     "author": [
       "Jehan-Fran\u00e7ois P\u00e2ris",
       "Thomas Schwarz",
@@ -2584,7 +2584,7 @@
     "id": 107,
     "title": "Improved Deduplication through Parallel Binning",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Many modern storage systems use deduplication in order to compress data by avoiding storing the same data twice. Deduplication needs to use data stored in the past, but accessing information about all data stored can cause a severe bottleneck. Similarity based deduplication only accesses information on past data that is likely to be similar and thus more likely to yield good deduplication. We present an adaptive deduplication strategy that extends Extreme Binning and investigate theoretically and experimentally the effects of the additional bin accesses.",
     "author": [
       "Zhike Zhang",
       "Deepavali Bhagwat",
@@ -2609,7 +2609,7 @@
     "id": 108,
     "title": "Examining Extended and Scientific Metadata for Scalable Index Designs",
     "short_description": "",
-    "full_content": "",
+    "full_content": "While file system metadata is well characterized by a variety of workload studies, scientific metadata is much less well understood. We characterize scientific metadata, in order to better understand the implications for index design. Based on our findings, existing solutions for either file system or scientific search will not suffice for indexing a large scientific file system. We describe the problems with existing solutions, and suggest column stores as an alternative approach.",
     "author": [
       "Aleatha Parker-Wood",
       "Brian Madden",
@@ -2686,7 +2686,7 @@
     "id": 111,
     "title": "A Flexible Simulation Tool for Estimating Data Loss Risks in Storage Arrays",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Proteus is an open-source simulation program that can predict the risk of data loss in many disk array configurations, among which, mirrored disks, all levels of RAID arrays and various two-dimensional RAID arrays. It characterizes each array by five numbers, namely, the size n of the array, the number nf of simultaneous disk failures the array will always tolerate without data loss, and the respective fractions f <sub xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">1</sub> , f <sub xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">2</sub> and f <sub xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">3</sub> of simultaneous failures of n <sub xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">f</sub> + 1, n <sub xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">f</sub> + 2 and n <sub xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">f</sub> + 3 disks that will not result in a data loss. As with any simulation tool, Proteus imposes no restriction on the distributions of failure and repair events. Our measurements have shown a surprisingly good agreement with the results obtained through analytical techniques and no measurable difference between values obtained assuming deterministic repair times and those assuming exponential repair times.",
     "author": [
       "Hsu-Wan Kao",
       "Jehan-Fran\u00e7ois P\u00e2ris",
@@ -2710,7 +2710,7 @@
     "id": 112,
     "title": "Examining Extended and Scientific Metadata for Scalable Index Designs",
     "short_description": "",
-    "full_content": "",
+    "full_content": "While file system metadata is well characterized by a variety of workload studies, scientific metadata is much less well understood. We characterize scientific metadata, in order to better understand the implications for index design. Based on our findings, existing solutions for either file system or scientific search will not suffice for indexing a large scientific file system. We describe the problems with existing solutions, and suggest column stores as an alternative approach.",
     "author": [
       "Aleatha Parker-Wood",
       "Brian Madden",
@@ -2832,7 +2832,7 @@
     "id": 117,
     "title": "Which Storage Device is Greenest? Modeling the Energy Cost of I/O Workloads",
     "short_description": "",
-    "full_content": "",
+    "full_content": "The performance requirements and amount of work of an I/O workload affect the number of storage devices and the run time needed by the workload, and should be included in the calculation of the cost or energy consumption of storage devices. This paper introduces models to calculate the cost and energy consumption of storage devices for running a variety of workloads, categorized by their dominant requirements. Measurements of two latest hard disk and solid-state drive (SSD) are included to illustrate the models in practice. Contrary to common belief, SSD is not the energy efficient choice for many workloads.",
     "author": [
       "Yan Li",
       "Darrell D. E. Long"
@@ -2854,7 +2854,7 @@
     "id": 118,
     "title": "Protecting RAID Arrays Against Unexpectedly High Disk Failure Rates",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Disk failure rates vary so widely among different makes and models that designing storage solutions for the worst case scenario is a losing proposition. The approach we propose here is to design our storage solutions for the most probable case while incorporating in our design the option of adding extra redundancy when we find out that its disks are less reliable than expected. To illustrate our proposal, we show how to increase the reliability of existing two-dimensional disk arrays with n <sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">2</sup> data elements and 2n parity elements by adding n additional parity elements that will mirror the contents of half the existing parity elements. Our approach offers the three advantages of being easy to deploy, not affecting the complexity of parity calculations, and providing a five-year reliability of 99.999 percent in the face of catastrophic levels of data loss where the array would lose up to a quarter of its storage capacity in a year.",
     "author": [
       "Jehan-Fran\u00e7ois P\u00e2ris",
       "Thomas J. E. Schwarz",
@@ -3054,7 +3054,7 @@
     "id": 126,
     "title": "Effects of Prolonged Media Usage and Long-term Planning on Archival Systems",
     "short_description": "",
-    "full_content": "",
+    "full_content": "In archival systems, storage media are often replaced much earlier than their expected service life in exchange for other benefits of new media, such as higher capacity, bandwidth, and I/O operations per second, or lower costs. In an era of decreasing media density growth rates, retiring media early by considering only short-term benefits while discarding potential long-term cost benefits could have a negative long-term impact on an archival system's economics. To extend an archival system's life, at low cost, while limiting performance degradation, we suggest extending media lifetime past manufacturer recommendations as well as increasing the horizon for planning and provisioning future media purchases. We present a cost-benefit analysis of the impact of prolonged media usage and long-term planning. Through Monte Carlo simulation, we simulate the behavior of an archival system using tapes, hard disk drives (HDDs), solid state devices (SSDs), and Blu-ray discs. We show that leaving older media in the archival system makes economic sense for SSDs without significantly affecting reliability; we show cost improvements of approximately 10% for SSDs for a low annual media density growth rate, such as 5%, which would have been a loss of 35%, for a high annual media density rate, such as 20%. We show that, for SSDs and hard disks, the optimal planning time of an archival system is at least as long as the media service life. Combining prolonged media usage with an extended planning horizon reduced costs by 15% for a system using SSDs.",
     "author": [
       "Preeti Gupta",
       "Darrell D. E. Long",
@@ -3325,7 +3325,7 @@
     "id": 137,
     "title": "Efficient Provenance Management via Clustering and Hybrid Storage in Big Data Environments",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Provenance is a type of metadata that records the creation and transformation of data objects. It has been applied to a wide variety of areas such as security, search, and experimental documentation. However, provenance usually has a vast amount of data with its rapid growth rate which hinders the effective extraction and application of provenance. This paper proposes an efficient provenance management system via clustering and hybrid storage. Specifically, we propose a Provenance-Based Label Propagation Algorithm which is able to regularize and cluster a large number of irregular provenance. Then, we use separate physical storage mediums, such as SSD and HDD, to store hot and cold data separately, and implement a hot/cold scheduling scheme which can update and schedule data between them automatically. Besides, we implement a feedback mechanism which can locate and compress the rarely used cold data according to the query request. The experimental test shows that the system can significantly improve provenance query performance with a small run-time overhead.",
     "author": [
       "Die Hu",
       "Dan Feng",
@@ -3425,7 +3425,7 @@
     "id": 141,
     "title": "A Docker Container Anomaly Monitoring System Based on Optimized Isolation Forest",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Container-based virtualization has gradually become a main solution in today's cloud computing environments. Detecting and analyzing anomaly in containers present a major challenge for cloud vendors and users. This paper proposes an online container anomaly detection system by monitoring and analyzing multidimensional resource metrics of the containers based on the optimized isolation forest algorithm. To improve the detection accuracy, it assigns each resource metric a weight and changes the random feature selection in the isolation forest algorithm to the weighted feature selection according to the resource bias of the container. In addition, it can identify abnormal resource metrics and automatically adjust the monitoring period to reduce the monitoring delay and system overhead. Moreover, it can locate the cause of the anomalies via analyzing and exploring the container log. The experimental results demonstrate the performance and efficiency of the system on detecting the typical anomalies in containers in both simulated and real cloud environments.",
     "author": [
       "Zhuping Zou",
       "Kai Huang",
@@ -3449,7 +3449,7 @@
     "id": 142,
     "title": "P-Gaussian: Provenance-Based Gaussian Distribution for Detecting Intrusion Behavior Variants Using High Efficient and Real Time Memory Databases",
     "short_description": "",
-    "full_content": "",
+    "full_content": "It is increasingly important and a big challenge to detect intrusion behavior variants in today's world. Previous host-based intrusion detection methods typically explore the sequence of system calls or unix shell commands to detect the intrusion behavior. This article abstracts the detection of intrusion behavior variants as the comparison between different sequences when the sequence order or length transforms. To overcome the impact of sequence transformation on the detection accuracy, we propose P-Gaussian, a provenance-based Gaussian distribution detection scheme which comprises two key design features: (1) it utilizes provenance to describe and identify intrusion behavior variants, and eliminates the impact of sequence order transformation on the detection accuracy. (2) it adopts Gaussian distribution principle to accurately compute the similarity between intrusion behavior and its variant, and eliminates the impact of intrusion behavior sequence length increase on the detection accuracy. To improve the detection performance, P-Gaussian employs a Redis memory database with multiple Redis instances and multiple threads to enable the parallelism of provenance processing in multi-core environments. It also classifies hot and cold provenance to provide high-efficient long-term forensic analysis. Experimental results on widely-used real world applications demonstrate the performance and efficiency of our system.",
     "author": [
       "Yulai Xie",
       "Yafeng Wu",
@@ -3471,7 +3471,7 @@
     "id": 143,
     "title": "Real-time Prediction of Docker Container Resource Load Based on A Hybrid Model of ARIMA and Triple Exponential Smoothing",
     "short_description": "",
-    "full_content": "",
+    "full_content": "More and more enterprises are beginning to use Docker containers to build cloud platforms. Predicting the resource usage of container workload has been an important and challenging problem to improve the performance of cloud computing platform. The existing prediction models either incur large time overhead or have insufficient accuracy. This article proposes a hybrid model of the ARIMA and triple exponential smoothing. It can accurately predict both linear and nonlinear relationships in the container resource load sequence. To deal with the dynamic Docker container resource load, the weighting values of the two single models in the hybrid model are chosen according to the sum of squares of their predicted errors for a period of time. We also design and implement a real-time prediction system that consists of the collection, storage, prediction of Docker container resource load data and scheduling optimization of CPU and memory resource usage based on predicted values. The experimental results show that the predicting accuracy of the hybrid model improves by 52.64, 20.15, and 203.72 percent on average compared to the ARIMA, the triple exponential smoothing model and ANN+SaDE model respectively with a small time overhead.",
     "author": [
       "Yulai Xie",
       "Minpeng Jin",
@@ -3725,7 +3725,7 @@
     "id": 153,
     "title": "Video-on-Demand Broadcasting Protocols",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Broadcasting protocols are proved to be efficient for transmitting most of the popular videos in video-on-demand systems. We propose a generalized analytical approach to evaluate the efficiency of the broadcasting protocols and derive the theoretical lower bandwidth requirement bound for any periodic broadcasting protocols. By means of the proposed analytical tool-temporal-bandwidth map, the approach can be used to direct the design of periodic broadcasting protocols to achieve different goals, e.g., server bandwidth requirement, client waiting time, client I/O bandwidth requirement etc. As the most important performance index in a VOD system is the required server bandwidth, we give the solution to achieve the optimal bandwidth efficiency given client waiting time requirement and the length of the video. To take into account the popular compressed video with variable bit rate, the optimal approach is applied readily to the VBR videos and can achieve zero loss and best bandwidth efficiency. We give a proof why existing techniques such as smoothing and prefetching is not necessary and in some cases inefficient in broadcasting protocols. We also discuss how broadcasting schemes can be tailored to support true and interactive VOD service. An insightful comparison between broadcasting and multicasting schemes is also given.",
     "author": [
       "Steven W. Carter",
       "Darrell D. E. Long",
@@ -3791,7 +3791,7 @@
     "id": 156,
     "title": "A Novel Hybrid Model for Docker Container Workload Prediction",
     "short_description": "",
-    "full_content": "",
+    "full_content": "The emergence of containers dramatically simplifies and facilitates the development and deployment of applications. More and more enterprises deploy their applications on the container cloud platform. For cloud service providers, an effective container workload prediction method is a must to achieve efficient utilization of cloud resources. However, the existing methods are either rarely based on container load characteristics or cannot make accurate real-time predictions. In this paper, we propose a Docker container workload proactive prediction method using a hybrid model combining triple exponential smoothing and long short-term memory (LSTM), which not only can capture both short-term and long-term dependencies in container resource time series but also smooth the container resource utilization data. In order to improve the prediction accuracy of the hybrid model, those two single models are combined using the mean absolute percentage error (MAPE) method. Besides, we design a real-time Docker workload prediction system for the hybrid model. Our experiments show that the mean absolute percentage error of the hybrid model is decreased by an average of 3.24%, 12.18%, 13.42%, 43.45%, and 50.69% compared with the LSTM, the triple exponential smoothing, ES-ARIMA, Bayesian Ridge Regression and BiLSTM with an acceptable time and computational cost overhead.",
     "author": [
       "Liangkang Zhang",
       "Yulai Xie",
@@ -3847,7 +3847,7 @@
     "id": 158,
     "title": "Rethinking the Adversary and Operational Characteristics of Deniable Storage",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Aim: With the widespread adoption of disk encryption technologies, it has become common for adversaries to employ coercive tactics to force users to surrender encryption keys. For some users, this creates a need for hidden volumes that provide plausible deniability, the ability to deny the existence of sensitive information. Previous deniable storage solutions only offer pieces of an implementable solution that do not take into account more advanced adversaries, such as intelligence agencies, and operational concerns. Specifically, they do not address an adversary that is familiar with the design characteristics of any deniable system. Methods: We evaluated existing threat models and deniable storage system designs to produce a new, stronger threat model and identified design characteristics necessary in a plausibly deniable storage system. To better explore the implications of this stronger adversary, we developed Artifice, the first tunable, operationally secure, self repairing, and fully deniable storage system. Results: With Artifice, hidden data blocks are split with an information dispersal algorithm such as Shamir Secret Sharing to produce a set of obfuscated carrier blocks that are indistinguishable from other pseudorandom blocks on the disk. The blocks are then stored in unallocated space of an existing file system. The erasure correcting capabilities of an information dispersal algorithm allow Artifice to self repair damage caused by writes to the public file system. Unlike preceding systems, Artifice addresses problems regarding flash storage devices and multiple snapshot attacks through simple block allocation schemes and operational security measures. To hide the user\u2019s ability to run a deniable system and prevent information leakage, a user accesses Artifice through a separate OS stored on an external Linux live disk. Conclusion: In this paper, we present a stronger adversary model and show that our proposed design addresses the primary weaknesses of existing approaches to deniable storage under this stronger assumed adversary.",
     "author": [
       "Austen Barker",
       "Yash Gupta",
@@ -3947,7 +3947,7 @@
     "id": 162,
     "title": "WinnowML: Stable Feature Selection for Maximizing Prediction Accuracy of Time-based System Modeling",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Online deep learning (ODL) has become an important methodology for modeling time-based performance of computer systems. An open problem is the intelligent selection of features from raw workload traces of computer systems. The best methods are overly sensitive to noisy data, causing frequent feature changes and re-training. Using all available features inflates training time and introduces model artifacts if some features should have been dropped. We present WinnowML, a method for automatically determining the most relevant feature subset for a predictive time-series model. WinnowML combines existing feature ranking algorithms and a history of each feature's ranking to iteratively rank a feature set to lower prediction error and maximize long term relevance. From this ranked feature set, the most relevant and stable subset is selected to train a model. Experimentally, we show how WinnowML can lower a model's mean absolute relative error up to 42% on average compared to the closest performing approach. Additionally, we lower the fluctuation in feature ranking and selection up to 65%. We also demonstrate how to combine WinnowML and a model search tool to provide improvements in performance of up to 14.5% when compared to using all the feature available.",
     "author": [
       "Oceane Bel",
       "Sinjoni Mukhopadhyay",
@@ -3971,7 +3971,7 @@
     "id": 163,
     "title": "Introducing SeaOS",
     "short_description": "",
-    "full_content": "",
+    "full_content": "SeaOS is a simple operating system developed for fast prototyping of research concepts. SeaOS implements a POSIX-like interface in less than 30,000 lines of C kernel code. Its userspace is complete enough to be self-hosting and includes ports of gcc, bash, grub, binutils, and coreutils. SeaOS runs on modern x86 and x86_64 architectures and is designed to support our lab's operating system research in scheduling, virtualization and security architectures.",
     "author": [
       "Daniel Bittman",
       "D.J. Capelis",
@@ -4412,7 +4412,7 @@
     "id": 182,
     "title": "Triple failure tolerant storage systems using only exclusive-or parity calculations",
     "short_description": "",
-    "full_content": "",
+    "full_content": "We present a disk array organization that can survive three simultaneous disk failures while only using exclusive-or operations to calculate the parities that generate this failure tolerance. The reliability of storage systems using magnetic disks depends on how prone individual disks are to failure. Unfortunately, disk failure rates are impossible to predict and it is well known that individual batches might be subject to much higher failure rates at some point during their lifetime. It is also known that many disk drive families, but not all, suffer a substantially higher failure rate at the beginning and some at the end of their economic lifespan. Our proposed organization can be built on top of a dense two-failure tolerant layout using only exclusive-or operations and with a ratio of parity to data disks of 2/k. If the disk failure rates are higher than expected, the new organization can be super-imposed on the existing two-failure tolerant organization by introducing (k+1)/2 new parity disks and (k+1)/2 new reliability stripes to yield a three-failure tolerant layout without moving any data or calculating any other parity but the new one. We derive the organization using a graph visualization and a construction by Lawless of factoring a complete graph into paths.",
     "author": [
       "Thomas Schwarz",
       "Darrell D. E. Long",
@@ -4434,7 +4434,7 @@
     "id": 183,
     "title": "Reducing the Energy Footprint of a Distributed Consensus Algorithm",
     "short_description": "",
-    "full_content": "",
+    "full_content": "The Raft consensus algorithm is a new distributed consensus algorithm that is both easier to understand and more straightforward to implement than the older Paxos algorithm. Its major limitation is its high energy footprint. As it relies on majority consensus voting for deciding when to commit an update, Raft requires five participants to protect against two simultaneous failures. We propose two methods for reducing this huge energy footprint. Our first proposal consists of adjusting Raft quorums in a way that would allow updates to proceed with as few as two servers while requiring a larger quorum for electing a new leader. Our second proposal consists of replacing one or two of the five Raft servers with witnesses, that is, lightweight servers that maintain the same metadata as other servers but hold no data and can therefore run on very low-power hosts. We show that these substitutions have little impact on the cluster availability but very different impacts on the risks of incurring a data loss.",
     "author": [
       "Jehan-Fran\u00e7ois P\u00e2ris",
       "Darrell Long"
@@ -4455,7 +4455,7 @@
     "id": 184,
     "title": "Cooperative mode: Comparative storage metadata verification applied to the Xbox 360",
     "short_description": "",
-    "full_content": "",
+    "full_content": "This work addresses the question of determining the correctness of forensic file system analysis software. Current storage systems are built on theory that is robust but not invincible to faults, from software, hardware, or adversaries. Given a parsing of a storage system of unknown provenance, the lack of a sound and complete analytic theory means the parsing's correctness cannot be proven. However, with recent advances in digital forensic theory, a measure of its incorrectness can be taken. We present FSNView, an N-Version programming utility. FSNView reports exhaustively the metadata of a single disk image, using multiple storage system parsers. Each parser reports its perspective of the metadata in Digital Forensics XML, a storage language used recently in a study on differential analysis. We repurpose the tools used for studying the changes in file systems from time to the changes in file systems from perspective. The differences in metadata summaries immediately note bugs in at least one of the tools employed. Diversity in tools and their analysis algorithms strengthens the analysis of a storage subject. We apply file system differencing to study the external storage of the Microsoft Xbox 360 game console. The console's storage serves as an exemplar analysis subject; the described strategy is general to storage system analysis. The custom volume management and new-though-familiar file system are features typical to an embedded system analysis. Two open-source utilities developed solely for analyzing this game console, and a third developed for general file system forensics, are extended to compare storage system metadata perspectives. We present a new file system and revisions to the DFXML language, library, and differencing process, which were necessary to enable a principled, automatic evaluation of storage analysis tools.",
     "author": [
       "Alex Nelson",
       "Erik Steggall",
@@ -4500,7 +4500,7 @@
     "id": 186,
     "title": "Reliability Challenges for Storing Exabytes",
     "short_description": "",
-    "full_content": "",
+    "full_content": "As we move towards data centers at the exascale, the reliability challenges of such enormous storage systems are daunting. We demonstrate how such systems will suffer substantial annual data loss if only traditional reliability mechanisms are employed. We argue that the architecture for exascale storage systems should incorporate novel mechanisms at or below the object level to address this problem. Our argument for such a research focus is that focusing solely on the device level will not scale, and in this study we analytically evaluate how rapidly this problem manifests.",
     "author": [
       "Ahmed Amer",
       "Darrell D. E. Long",
@@ -4522,7 +4522,7 @@
     "id": 187,
     "title": "Zero-Maintenance Disk Arrays",
     "short_description": "",
-    "full_content": "",
+    "full_content": "We present a disk array architecture that does not require users to perform any maintenance tasks over the expected lifetime of the array. Preliminary results indicate that the key factor in the feasibility of our design is the failure rate of unused spare disks. As long as these rates remain negligible, zero maintenance disk arrays with at least 77 disks can provide a five-year reliability of five nines (99.999 percent) with a space overhead comparable to that of mirroring. If this is not the case, we would need between 64 and 70 percent extra spare disks to achieve the same five-year reliability, which would result in a higher space overhead.",
     "author": [
       "Jehan-Fran\u00e7ois P\u00e2ris",
       "Darrell D. E. Long",
@@ -4544,7 +4544,7 @@
     "id": 188,
     "title": "Reliability of Disk Arrays with Double Parity",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Abstract\u2014We present a general method for estimating the risk of data loss in arbitrary two-dimensional RAID arrays where each data disk belongs to exactly two single-parity stripes. We start by representing each array organization by a graph where each parity stripe, and its associated parity disk, is represented by a node and each data disk by an edge. We then use this representation to identify and enumerate minimal sets of disk failures, say, triple failures, quadruple failures and so forth, that will cause a data loss. The overall probabilities that a given number n of disk failures will cause a data loss is then given by the ratio of the total number of fatal disk failures involving n disks over the total number of possible failures of n disks. To illustrate the power of our method, we apply it to two distinct, archival two-dimensional array organizations. The first, \u201dsquare \u201d organization is a traditional square layout where data disks are formed into a square and the parity stripes are formed by the rows and columns in the square. Hence a square layout organization with n2 data disks will have 2n parity disks. The second, \u201dcomplete \u201d organization corresponds to a closer weave, where all parity stripes intersect and each intersection contains a parity disk. This organization with n parity disks will have n(n\u2212 1)/2 data disks. Our results show that previous ad hoc estimates of the reliability of these arrays significantly underestimated their reliability by assuming that either all triple or all quadruple disk failures were fatal. We show that the two two-dimensional array organizations exhibit mean times to data loss and five-year survival rates that are very similar to those of a RAID Level 6 organization of much smaller capacity. Our complete organization is about 4.5 times and the square organization is about 8 times more reliable than a disk array with same storage capacity built from RAID level 6 stripes. Index Terms\u2014Disk array organization, archival storage sys-tem, Markov model, mean time to data loss, five year survival rate I.",
     "author": [
       "Thomas Schwarz",
       "Darrell D. E. Long",
@@ -4566,7 +4566,7 @@
     "id": 189,
     "title": "Three-Dimensional Redundancy Codes for Archival Storage",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Fault-tolerant disk arrays rely on replication or erasure-coding to reconstruct lost data after a disk failure. As disk capacity increases, so does the risk of encountering irrecoverable read errors that would prevent the full recovery of the lost data. We propose a three-dimensional erasure-coding technique that reduces that risk by guaranteeing full recovery in the presence of all triple and nearly all quadruple disk failures. Our solution performs better than existing solutions, such as sets of disk arrays using Reed-Solomon codes against triple failures in each individual array. Given its very high reliability, it is especially suited to the needs of very large data sets that must be preserved over long periods of time.",
     "author": [
       "Jehan-Fran\u00e7ois P\u00e2ris",
       "Darrell D. E. Long",
@@ -4990,7 +4990,7 @@
     "id": 208,
     "title": "A Low Bandwidth Broadcasting Protocol for Video on Demand",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Broadcasting protocols can improve the efficiency of video on demand services by reducing the bandwidth required to transmit videos that are simultaneously watched by many viewers. We present a polyharmonic broadcasting protocol that requires less bandwidth than the best extant protocols to achieve the same low maximum waiting time. We also show how to modify the protocol to accommodate very long videos without increasing the buffering capacity of the set-top box.",
     "author": [
       "Jehan-Fran\u00e7ois P\u00e2ris",
       "Steven W. Carter",
