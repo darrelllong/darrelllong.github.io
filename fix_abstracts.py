@@ -1,0 +1,196 @@
+#!/usr/bin/env python3
+"""
+Fix abstracts in publications.json:
+1. Fix HTML entities (&#39; -> ', etc.)
+2. Remove "abstract" word from beginning/end
+3. Add manually found abstracts
+"""
+
+import json
+import re
+import html
+
+# Manually found abstracts (from web searches)
+MANUAL_ABSTRACTS = {
+    33: """The trend in cache design research is towards finding the single optimum replacement policy that performs better than any other proposed policy by using all the useful criteria at once. However, due to the variety of workloads and system topologies it is daunting, if not impossible, to summarize all this information into one magical value using any static formula. We propose a workload and topology adaptive cache management algorithm to address this problem. Based on proven machine learning techniques, this algorithm uses a weighted voting mechanism guided by a pool of cache replacement policies. Objects that collect the highest total vote from all policies stay in the cache. The policies that predict the workload well are rewarded by an increase in their weight and the policies that lead to wrong decisions are punished by a decrease in their weight. Weight adjustments of the replacement policies, or caching experts, are managed by extremely powerful but computationally simple machine learning algorithms. The scheme is different from hybrid criteria schemes and partitioned cache management policies because it is adaptive, and because it favors objects that are rated highly by many policies rather than simply favoring objects with high weight by a single, possibly complex policy.""",
+
+    97: """With the growing use of large-scale distributed systems, the likelihood that at least one node is compromised is increasing. Large-scale systems that process sensitive data such as geographic data with defense implications, drug modeling, nuclear explosion modeling, and private genomic data would benefit greatly from strong security for their storage. Nevertheless, many high performance computing (HPC), cloud, or secure content delivery network (SCDN) systems that handle such data still store them unencrypted or use simple encryption schemes, relying heavily on physical isolation to ensure confidentiality, providing little protection against compromised computers or malicious insiders. Moreover, current encryption solutions cannot efficiently provide fine-grained encryption for large datasets. Our approach, Horus, encrypts large datasets using keyed hash trees (KHTs) to generate different keys for each region of the dataset, providing fine-grained security: the key for one region cannot be used to access another region. Horus also reduces key management and distribution overhead while providing end-to-end data encryption and reducing the need to trust system operators or cloud service providers.""",
+
+    110: """With the growing use of large-scale distributed systems, the likelihood that at least one node is compromised is increasing. Large-scale systems that process sensitive data such as geographic data with defense implications, drug modeling, nuclear explosion modeling, and private genomic data would benefit greatly from strong security for their storage. Nevertheless, many high performance computing (HPC), cloud, or secure content delivery network (SCDN) systems that handle such data still store them unencrypted or use simple encryption schemes, relying heavily on physical isolation to ensure confidentiality, providing little protection against compromised computers or malicious insiders. Moreover, current encryption solutions cannot efficiently provide fine-grained encryption for large datasets. Our approach, Horus, encrypts large datasets using keyed hash trees (KHTs) to generate different keys for each region of the dataset, providing fine-grained security: the key for one region cannot be used to access another region.""",
+
+    104: """Growth in disk capacity continues to outpace advances in read speed and device reliability. This has led to storage systems spending increasing amounts of time in a degraded state while failed disks reconstruct. Users and applications that do not use the data on the failed or degraded drives are negligibly impacted by the failure, increasing the perceived performance of the system. We leverage this observation with PERSES, a statistical data allocation scheme to reduce the performance impact of failures by clustering data on disks such that data with high probability of co-access is placed on the same device as often as possible.""",
+
+    116: """Growth in disk capacity continues to outpace advances in read speed and device reliability. This has led to storage systems spending increasing amounts of time in a degraded state while failed disks reconstruct. Users and applications that do not use the data on the failed or degraded drives are negligibly impacted by the failure, increasing the perceived performance of the system. We leverage this observation with PERSES, a statistical data allocation scheme to reduce the performance impact of failures by clustering data on disks such that data with high probability of co-access is placed on the same device as often as possible.""",
+
+    119: """As the prices of magnetic storage continue to decrease, the cost of replacing failed disks becomes increasingly dominated by the cost of the service call itself. We propose to eliminate these calls by building disk arrays that contain enough spare disks to operate without any human intervention during their whole lifetime. To evaluate the feasibility of this approach, we simulated the behavior of two-dimensional disk arrays with n parity disks and n(n-1)/2 data disks under realistic failure and repair assumptions. Our conclusion is that having n(n+1)/2 spare disks is more than enough to achieve a 99.999 percent probability of not losing data over four years. We also observe that the same objectives cannot be reached with RAID level 6 organizations and would require RAID stripes that could tolerate triple disk failures.""",
+
+    121: """High-performance parallel storage systems, such as those used by supercomputers and data centers, can suffer from performance degradation when a large number of clients are contending for limited resources, like bandwidth. These contentions lower the efficiency of the system and cause unwanted speed variances. ASCAR (Automatic Storage Contention Alleviation and Reduction) is a storage traffic management system for improving the bandwidth utilization and fairness of resource allocation. ASCAR regulates I/O traffic from the clients using a rule-based algorithm that controls the congestion window and rate limit. The rule-based client controllers are fast responding to burst I/O because no runtime coordination between clients or with a central coordinator is needed; they are also autonomous so the system has no scale-out bottleneck. Evaluation shows that the ASCAR prototype can improve the throughput of all tested workloads - some by as much as 35%.""",
+
+    122: """Shingled Magnetic Recording (SMR) is a means of increasing the density of hard drives that brings a new set of challenges. Due to the nature of SMR disks, updating in place is not an option. Holes left by invalidated data can only be filled if the entire band is reclaimed, and a poor band compaction algorithm could result in spending a lot of time moving blocks over the lifetime of the device. We propose using write frequency to separate blocks to reduce data movement and develop a band compaction algorithm that implements this heuristic. We demonstrate how our algorithm results in improved data management, resulting in an up to 47% reduction in required data movements when compared to naive approaches to band management.""",
+
+    124: """Shingled Magnetic Recording (SMR) is a means of increasing the density of hard drives that brings a new set of challenges. Due to the nature of SMR disks, updating in place is not an option. Holes left by invalidated data can only be filled if the entire band is reclaimed, and a poor band compaction algorithm could result in spending a lot of time moving blocks over the lifetime of the device. We propose using write frequency to separate blocks to reduce data movement and develop a band compaction algorithm that implements this heuristic. We demonstrate how our algorithm results in improved data management, resulting in an up to 47% reduction in required data movements when compared to naive approaches to band management.""",
+
+    123: """Maintaining information privacy is challenging when sharing data across a distributed long-term datastore. In such applications, secret splitting the data across independent sites has been shown to be a superior alternative to fixed-key encryption; it improves reliability, reduces the risk of insider threat, and removes the issues surrounding key management. However, the inherent security of such a datastore normally precludes it from being directly searched without reassembling the data; this, however, is neither computationally feasible nor without risk since reassembly introduces a single point of compromise. As a result, the secret-split data must be pre-indexed in some way in order to facilitate searching. To meet these needs, we developed Percival: a novel system that enables searching a secret-split datastore while maintaining information privacy. The system leverages salted hashing, performed within hardware security modules, to access prerecorded queries that have been secret split and stored in a distributed environment. When testing Percival on a corpus of approximately one million files, we found that the average search operation completed in less than one second.""",
+
+    130: """The introduction of NVDIMMs (truly non-volatile and directly accessible) requires us to rethink all levels of the system stack, from processor features to applications. Operating systems, too, must evolve to support new I/O models for applications accessing persistent data. We developed Twizzler, an operating system for next-generation memory hierarchies. Twizzler is designed to provide applications with direct access to persistent storage while providing mechanisms for cross-object pointers, removing itself from the common access path to persistent data, and providing fine-grained security and recoverability. Twizzler removes the kernel from the I/O path, provides programs with memory-style access to persistent data using small (64 bit), object-relative cross-object pointers, and enables simple and efficient long-term sharing of data both between applications and between runs of an application.""",
+
+    132: """New byte-addressable non-volatile memory (BNVM) technologies such as phase change memory (PCM) enable the construction of systems with large persistent memories, improving reliability and potentially reducing power consumption. However, BNVM technologies only support a limited number of lifetime writes per cell and consume most of their power when flipping a bit's state during a write. We develop a framework for using the number of bit flips as the measure of 'goodness' for a range of hardware and software techniques. We confirm that approaches with the fewest writes often have more bit flips than those optimized to reduce bit flipping. We were able to reduce the number of bits flipped by up to 3.56x over standard implementations of the same data structures with negligible overhead.""",
+
+    140: """The challenge of deniability for sensitive data can be a life or death issue depending on location. Plausible deniability directly impacts groups such as democracy advocates relaying information in repressive regimes, journalists covering human rights stories in a war zone, and NGO workers hiding food shipment schedules from violent militias. All of these users would benefit from a plausibly deniable data storage system. Previous deniable storage solutions only offer pieces of an implementable solution. Artifice is the first tunable, operationally secure, self repairing, and fully deniable steganographic file system. A set of data blocks to be hidden are combined with entropy blocks through error correcting codes to produce a set of obfuscated carrier blocks that are indistinguishable from other pseudorandom blocks on the disk.""",
+
+    145: """The challenge of deniability for sensitive data can be a life or death issue depending on location. Plausible deniability directly impacts groups such as democracy advocates relaying information in repressive regimes, journalists covering human rights stories in a war zone, and NGO workers hiding food shipment schedules from violent militias. All of these users would benefit from a plausibly deniable data storage system. Artifice presents a truly deniable storage solution through its use of external entropy and error correcting codes, while providing better reliability than other deniable storage systems.""",
+
+    149: """Multiple snapshot attacks, where an adversary is able to gain access to two or more images of a disk, have often been proposed in the deniable storage system literature; however, there have been no concrete attacks proposed or carried out. This paper describes a multiple snapshot attack for use against deniable storage systems, using Artifice as an example system. We designed and implemented the first multiple snapshot attack against a deniable storage system.""",
+
+    150: """Modern data privacy regulations such as GDPR, CCPA, and CDPA stipulate that data pertaining to a user must be deleted without undue delay upon the user's request. Existing systems are not designed to comply with these regulations and can leave traces of deleted data for indeterminate periods of time, often as long as months. We developed Lethe to address these problems by providing fine-grained secure deletion on any system and any storage medium, provided that Lethe has access to a fixed, small amount of securely-deletable storage. Lethe achieves this using keyed hash forests (KHFs), extensions of keyed hash trees (KHTs), structured to serve as efficient representations of encryption key hierarchies. By using a KHF as a regulator for data access, Lethe provides its secure deletion not by removing the KHF, but by adding a new KHF that only grants access to still-valid data.""",
+
+    157: """Identifying intrusion from massive and multi-source logs accurately and in real-time presents challenges for today's users. This paper presents Paradise, a real-time, generalized, and distributed provenance-based intrusion detection method. Paradise introduces a novel extract strategy to prune and extract process feature vectors from provenance dependencies at the system log level, and it stores them in high-efficiency memory databases. Using this strategy, Paradise does not depend on the specific operating system type or provenance collection framework. Provenance-based dependencies are calculated independently during the detection phase, thus, Paradise can negotiate all detection results from multiple detectors without extra communication overhead between detectors. Paradise also employs an efficient load-balanced distribution scheme that enhances the Kafka architecture to efficiently distribute provenance graph feature vectors to the detectors.""",
+
+    159: """Valet leverages userspace shim layers to add placement hints for application data, delivering up to 2-4x write throughput over filesystems and comparable or better performance than application-specific solutions, with up to 6x lower tail latency. Valet generates dynamic placement hints, remapping application data to modern SSDs with zero modifications to the application, the filesystem, or the kernel. To the authors' knowledge, this is the first work to present a generalized theory of data placement, showcasing affinity and lifetime as the important parameters over temperature-based approaches of the past. Valet is fast: achieving 2-6 times higher write throughput, up to 6 times lower latency, and reduced garbage overhead over filesystems and application backends.""",
+
+    238: """With the growing use of large-scale distributed systems, the likelihood that at least one node is compromised is increasing. Large-scale systems that process sensitive data such as geographic data with defense implications, drug modeling, nuclear explosion modeling, and private genomic data would benefit greatly from strong security for their storage. Our approach, Horus, encrypts large datasets using keyed hash trees (KHTs) to generate different keys for each region of the dataset, providing fine-grained security: the key for one region cannot be used to access another region. Horus also reduces key management and distribution overhead while providing end-to-end data encryption and reducing the need to trust system operators or cloud service providers.""",
+}
+
+
+def fix_html_entities(text):
+    """Convert HTML entities to plain text."""
+    if not text:
+        return text
+    # Use html.unescape for standard entities
+    text = html.unescape(text)
+    # Fix common issues from double-encoded or misused entities
+    # Two single quotes followed by 's' is likely a possessive, not a quote
+    text = text.replace("''s ", "'s ")
+    return text
+
+
+def clean_abstract(text):
+    """Remove 'abstract' from beginning and end of text."""
+    if not text:
+        return text
+
+    # Remove from beginning (case insensitive)
+    text = re.sub(r'^abstract\s*', '', text, flags=re.IGNORECASE)
+
+    # Remove from end (case insensitive)
+    text = re.sub(r'\s*abstract$', '', text, flags=re.IGNORECASE)
+
+    return text.strip()
+
+
+def fix_latex_formatting(text):
+    """Convert common LaTeX formatting to plain text."""
+    if not text:
+        return text
+
+    # LaTeX commands to remove/convert
+    replacements = [
+        (r'\\textit\{([^}]*)\}', r'\1'),      # \textit{text} -> text
+        (r'\\textbf\{([^}]*)\}', r'\1'),      # \textbf{text} -> text
+        (r'\\emph\{([^}]*)\}', r'\1'),        # \emph{text} -> text
+        (r'\\texttt\{([^}]*)\}', r'\1'),      # \texttt{text} -> text
+        (r'\{\\it\s+([^}]*)\}', r'\1'),       # {\it text} -> text
+        (r'\{\\bf\s+([^}]*)\}', r'\1'),       # {\bf text} -> text
+        (r'\{\\em\s+([^}]*)\}', r'\1'),       # {\em text} -> text
+        (r'\{\\tt\s+([^}]*)\}', r'\1'),       # {\tt text} -> text
+        (r'\\cite\{[^}]*\}', ''),             # \cite{...} -> remove
+        (r'\\ref\{[^}]*\}', ''),              # \ref{...} -> remove
+        (r'\\label\{[^}]*\}', ''),            # \label{...} -> remove
+        (r'\\\\', ' '),                        # \\ -> space
+        (r'\\newline', ' '),                  # \newline -> space
+        (r'\\-', ''),                         # \- (hyphenation hint) -> remove
+        (r'~', ' '),                          # ~ (non-breaking space) -> space
+        (r'\\ ', ' '),                        # "\ " (escaped space) -> space
+        (r'\\%', '%'),                        # \% -> %
+        (r'\\&', '&'),                        # \& -> &
+        (r'\\\$', '$'),                       # \$ -> $
+        (r'\\#', '#'),                        # \# -> #
+        (r'\\_', '_'),                        # \_ -> _
+        (r'\\{', '{'),                        # \{ -> {
+        (r'\\}', '}'),                        # \} -> }
+        (r'``', '"'),                         # `` -> "
+        (r"''", '"'),                         # '' -> "
+        (r'`', "'"),                          # ` -> '
+    ]
+
+    for pattern, replacement in replacements:
+        text = re.sub(pattern, replacement, text)
+
+    # Clean up multiple spaces
+    text = re.sub(r'  +', ' ', text)
+
+    return text.strip()
+
+
+def main():
+    # Load publications
+    with open('publications.json', 'r') as f:
+        pubs = json.load(f)
+
+    html_fixed = 0
+    latex_fixed = 0
+    cleaned_count = 0
+    manual_added = 0
+    missing_ids = []
+
+    for pub in pubs:
+        pub_id = pub.get('id')
+        title = pub.get('title', '')
+        abstract = pub.get('full_content', '')
+        original = abstract
+
+        # Fix HTML entities
+        if abstract and re.search(r'&[a-z]+;|&#\d+;', abstract):
+            abstract = fix_html_entities(abstract)
+            if abstract != original:
+                html_fixed += 1
+                print(f"Fixed HTML entities in ID {pub_id}: {title[:50]}...")
+
+        # Fix LaTeX formatting
+        if abstract and re.search(r'\\[a-z]+\{|\\\\|``|\'\'', abstract):
+            before = abstract
+            abstract = fix_latex_formatting(abstract)
+            if abstract != before:
+                latex_fixed += 1
+                print(f"Fixed LaTeX in ID {pub_id}: {title[:50]}...")
+
+        # Clean "abstract" prefix/suffix
+        if abstract:
+            cleaned = clean_abstract(abstract)
+            if cleaned != abstract:
+                print(f"Cleaned ID {pub_id}: {title[:50]}...")
+                abstract = cleaned
+                cleaned_count += 1
+
+        # Update if changed
+        if abstract != original:
+            pub['full_content'] = abstract
+
+        # Track missing abstracts
+        if not abstract:
+            # Check if we have a manual abstract
+            if pub_id in MANUAL_ABSTRACTS:
+                pub['full_content'] = MANUAL_ABSTRACTS[pub_id]
+                manual_added += 1
+                print(f"Added manual abstract for ID {pub_id}: {title[:50]}...")
+            else:
+                missing_ids.append(pub_id)
+
+    print(f"\nSummary:")
+    print(f"  Fixed HTML entities: {html_fixed}")
+    print(f"  Fixed LaTeX formatting: {latex_fixed}")
+    print(f"  Cleaned 'abstract' prefix/suffix: {cleaned_count}")
+    print(f"  Added manual abstracts: {manual_added}")
+    print(f"  Still missing: {len(missing_ids)} publications")
+
+    if missing_ids:
+        print(f"\nMissing abstract IDs: {missing_ids}")
+
+    # Save updated version
+    with open('publications.json', 'w') as f:
+        json.dump(pubs, f, indent=2)
+    print("\nSaved publications.json")
+
+
+if __name__ == '__main__':
+    main()
