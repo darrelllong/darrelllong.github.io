@@ -1,6 +1,7 @@
 // Dependencies
 import React from "react";
 import PropTypes from "prop-types";
+import { sortByDateDesc } from "./utils/dateUtils";
 
 export const Context = React.createContext();
 
@@ -24,44 +25,14 @@ export const ContextProvider = ({ children }) => {
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
-    // Month abbreviation to number (0-11)
-    const monthToNum = {
-      jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5,
-      jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11
-    };
-
     const pubPromise = fetch("/publications.json")
       .then((response) => response.json())
-      .then((data) => {
-        // Sort publications by year and month, newest first
-        const sorted = data.sort((a, b) => {
-          const yearA = a.bibTeX?.year || 0;
-          const yearB = b.bibTeX?.year || 0;
-          if (yearB !== yearA) return yearB - yearA;
-          // Same year, sort by month
-          const monthA = monthToNum[a.bibTeX?.month?.toLowerCase()] ?? 0;
-          const monthB = monthToNum[b.bibTeX?.month?.toLowerCase()] ?? 0;
-          return monthB - monthA;
-        });
-        setPublications(sorted);
-      })
+      .then((data) => setPublications(sortByDateDesc(data)))
       .catch((error) => console.error("Error fetching publications:", error));
 
     const patPromise = fetch("/patents.json")
       .then((response) => response.json())
-      .then((data) => {
-        // Sort patents by year and month, newest first
-        const sorted = data.sort((a, b) => {
-          const yearA = a.bibTeX?.year || 0;
-          const yearB = b.bibTeX?.year || 0;
-          if (yearB !== yearA) return yearB - yearA;
-          // Same year, sort by month
-          const monthA = monthToNum[a.bibTeX?.month?.toLowerCase()] ?? 0;
-          const monthB = monthToNum[b.bibTeX?.month?.toLowerCase()] ?? 0;
-          return monthB - monthA;
-        });
-        setPatents(sorted);
-      })
+      .then((data) => setPatents(sortByDateDesc(data)))
       .catch((error) => console.error("Error fetching patents:", error));
 
     Promise.all([pubPromise, patPromise]).then(() => setLoading(false));

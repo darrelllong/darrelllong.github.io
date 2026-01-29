@@ -12,6 +12,8 @@ import {
   faCaretRight,
   faCertificate,
 } from "@fortawesome/free-solid-svg-icons";
+// Utilities
+import { formatDate } from "../utils/dateUtils";
 // Styles
 import "../assets/css/publication.scss";
 
@@ -44,19 +46,6 @@ const BibTeX = ({ bibTeX }) => {
 
 BibTeX.propTypes = {
   bibTeX: PropTypes.object,
-};
-
-// Format month abbreviation to full name
-const monthNames = {
-  jan: "January", feb: "February", mar: "March", apr: "April",
-  may: "May", jun: "June", jul: "July", aug: "August",
-  sep: "September", oct: "October", nov: "November", dec: "December"
-};
-
-const formatDate = (bibTeX) => {
-  if (!bibTeX?.year) return null;
-  const month = bibTeX.month ? monthNames[bibTeX.month.toLowerCase()] : null;
-  return month ? `${month} ${bibTeX.year}` : `${bibTeX.year}`;
 };
 
 const Header = ({ title, author, bibTeX, patent_number, url, search }) => {

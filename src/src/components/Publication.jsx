@@ -11,6 +11,8 @@ import {
   faCaretLeft,
   faCaretRight,
 } from "@fortawesome/free-solid-svg-icons";
+// Utilities
+import { formatDate } from "../utils/dateUtils";
 // Styles
 import "../assets/css/publication.scss";
 
@@ -80,19 +82,6 @@ const Abstract = ({ paragraphs }) => {
 
 Abstract.propTypes = {
   paragraphs: PropTypes.array,
-};
-
-// Format month abbreviation to full name
-const monthNames = {
-  jan: "January", feb: "February", mar: "March", apr: "April",
-  may: "May", jun: "June", jul: "July", aug: "August",
-  sep: "September", oct: "October", nov: "November", dec: "December"
-};
-
-const formatDate = (bibTeX) => {
-  if (!bibTeX?.year) return null;
-  const month = bibTeX.month ? monthNames[bibTeX.month.toLowerCase()] : null;
-  return month ? `${month} ${bibTeX.year}` : `${bibTeX.year}`;
 };
 
 const Header = ({ title, author, bibTeX, url, search }) => {

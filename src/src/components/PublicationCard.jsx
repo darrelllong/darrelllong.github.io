@@ -1,5 +1,4 @@
 // Dependencies
-import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,19 +7,8 @@ import {
   faFileArrowDown,
   faSquareCaretRight,
 } from "@fortawesome/free-solid-svg-icons";
-
-// Format month abbreviation to full name
-const monthNames = {
-  jan: "January", feb: "February", mar: "March", apr: "April",
-  may: "May", jun: "June", jul: "July", aug: "August",
-  sep: "September", oct: "October", nov: "November", dec: "December"
-};
-
-const formatDate = (bibTeX) => {
-  if (!bibTeX?.year) return null;
-  const month = bibTeX.month ? monthNames[bibTeX.month.toLowerCase()] : null;
-  return month ? `${month} ${bibTeX.year}` : `${bibTeX.year}`;
-};
+// Utilities
+import { formatDate } from "../utils/dateUtils";
 
 export default function PublicationCard({ publication, search }) {
   const path = `${publication.id}`;

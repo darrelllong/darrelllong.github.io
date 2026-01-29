@@ -26,21 +26,16 @@ export default function Main() {
   const { pathClass, publications, patents, showMenu, setShowMenu } =
     React.useContext(Context);
 
-  const disableMenu = () => {
-    if (location.pathname === "/") {
-      setShowMenu(false);
-    }
-    if (window.innerWidth > 968) {
-      setShowMenu(false);
-    }
-  };
-
   React.useEffect(() => {
+    const disableMenu = () => {
+      if (location.pathname === "/" || window.innerWidth > 968) {
+        setShowMenu(false);
+      }
+    };
     disableMenu();
-    const handleResize = () => disableMenu();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    window.addEventListener("resize", disableMenu);
+    return () => window.removeEventListener("resize", disableMenu);
+  }, [location.pathname, setShowMenu]);
 
   React.useEffect(() => {
     const params = new URLSearchParams(location.search);
