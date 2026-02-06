@@ -62,9 +62,9 @@ export default function Patents({ searchTerm, search }) {
               currentPage * patentsPerPage,
               (currentPage + 1) * patentsPerPage,
             )
-            .map((patent, index) => (
+            .map((patent) => (
               <PatentCard
-                key={index}
+                key={patent.id}
                 patent={patent}
                 search={search}
               />

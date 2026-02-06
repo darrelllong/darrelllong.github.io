@@ -212,7 +212,7 @@ export default function Consultancy() {
         <h2>Consultancy</h2>
         <p>
           Dr. Darrell D. E. Long provides consultancy services and owns the{" "}
-          <a href="http://pentexoire.com/" target="_blank" rel="noreferrer">
+          <a href="https://pentexoire.com/" target="_blank" rel="noreferrer">
             Pentexoire Consulting
           </a>{" "}
           agency.

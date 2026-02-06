@@ -40,7 +40,8 @@ export default function Main() {
   React.useEffect(() => {
     const params = new URLSearchParams(location.search);
     const redirectPath = params.get("redirect");
-    if (redirectPath) {
+    const validRoutes = ["/about", "/publications", "/patents", "/consultancy"];
+    if (redirectPath && (validRoutes.includes(redirectPath) || /^\/(?:publications|patents)\/\d+\/?$/.test(redirectPath))) {
       navigate(redirectPath, { replace: true });
     }
   }, [location, navigate]);
@@ -81,7 +82,7 @@ export default function Main() {
               publication={publications.find(
                 (pub) => pub.id === publicationId,
               )}
-              total={publications.length}
+              publications={publications}
               search={setSearchTerm}
             />
           }
@@ -93,7 +94,7 @@ export default function Main() {
               patent={patents.find(
                 (pat) => pat.id === patentId,
               )}
-              total={patents.length}
+              patents={patents}
               search={setSearchTerm}
             />
           }
