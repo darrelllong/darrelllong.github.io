@@ -39,22 +39,25 @@ def create_form(window):
     submit.pack(pady=6)
 
 def add_pub():
-    pubid = f"\'{entries['pubid'].get()}\'"
-    title = f"\'{entries['title'].get()}\'"
-    booktitle = f"\'{entries['booktitle'].get()}\'"
-    authors = f"\'{entries['authors'].get()}\'"
-    date = f"\'{entries['date'].get()}\'"
-    file = f"\'{entries['file'].get()}\'"
-    abstract = f"\'{entries['abstract'].get('1.0', tkinter.END)[:-1]}\'"
-    bibtex = f"\'{entries['bibtex'].get('1.0', tkinter.END)[:-1]}\'"
-    type = f"\'{entries['type'].get()}\'"
+    pubid = entries['pubid'].get()
+    title = entries['title'].get()
+    booktitle = entries['booktitle'].get()
+    authors = entries['authors'].get()
+    date = entries['date'].get()
+    file = entries['file'].get()
+    abstract = entries['abstract'].get('1.0', tkinter.END)[:-1]
+    bibtex = entries['bibtex'].get('1.0', tkinter.END)[:-1]
+    type = entries['type'].get()
 
     query = (
         "INSERT INTO "
         "publications(pubid, title, booktitle, authors, date, file, abstract, bibtex, type) "
-        f"VALUES ({pubid}, {title}, {booktitle}, {authors}, {date}, {file}, {abstract}, {bibtex}, {type});"
+        "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s);"
     )
+    values = (pubid, title, booktitle, authors, date, file, abstract, bibtex, type)
 
+    conn = None
+    cursor = None
     try:
         conn = psycopg2.connect(
             user = "darrell",
@@ -65,14 +68,15 @@ def add_pub():
 
         with conn:
             cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
-            cursor.execute(query)
+            cursor.execute(query, values)
 
     except (Exception, psycopg2.Error) as error:
         print("Error connecting PostgreSQL:", error)
 
     finally:
-        if conn:
+        if cursor:
             cursor.close()
+        if conn:
             conn.close()
 
     sys.exit(0)

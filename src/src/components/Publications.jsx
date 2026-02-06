@@ -60,9 +60,9 @@ export default function Publications({ searchTerm, search }) {
               currentPage * publicationsPerPage,
               (currentPage + 1) * publicationsPerPage,
             )
-            .map((publication, index) => (
+            .map((publication) => (
               <PublicationCard
-                key={index}
+                key={publication.id}
                 publication={publication}
                 search={search}
               />

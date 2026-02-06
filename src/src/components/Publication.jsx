@@ -139,7 +139,7 @@ Header.propTypes = {
   search: PropTypes.func,
 };
 
-const Publication = ({ publication, total, search }) => {
+const Publication = ({ publication, publications, search }) => {
   // Always render same structure for consistent layout
   if (!publication) {
     return (
@@ -161,15 +161,11 @@ const Publication = ({ publication, total, search }) => {
     lines.push(...publication.full_content.split("\n"));
   }
 
-  const prev =
-    publication.id > 1
-      ? `/publications/${publication.id - 1}`
-      : `/publications/${total}`;
-
-  const next =
-    publication.id < total
-      ? `/publications/${publication.id + 1}`
-      : "/publications/1";
+  const currentIndex = publications.findIndex((p) => p.id === publication.id);
+  const prevPub = publications[(currentIndex - 1 + publications.length) % publications.length];
+  const nextPub = publications[(currentIndex + 1) % publications.length];
+  const prev = `/publications/${prevPub.id}`;
+  const next = `/publications/${nextPub.id}`;
 
   return (
     <>
@@ -202,7 +198,7 @@ const Publication = ({ publication, total, search }) => {
 
 Publication.propTypes = {
   publication: PropTypes.object,
-  total: PropTypes.number,
+  publications: PropTypes.array,
   search: PropTypes.func,
 };
 

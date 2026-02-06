@@ -127,7 +127,7 @@ Description.propTypes = {
   text: PropTypes.string,
 };
 
-const Patent = ({ patent, total, search }) => {
+const Patent = ({ patent, patents, search }) => {
   // Always render same structure for consistent layout
   if (!patent) {
     return (
@@ -144,15 +144,11 @@ const Patent = ({ patent, total, search }) => {
     );
   }
 
-  const prev =
-    patent.id > 1
-      ? `/patents/${patent.id - 1}`
-      : `/patents/${total}`;
-
-  const next =
-    patent.id < total
-      ? `/patents/${patent.id + 1}`
-      : "/patents/1";
+  const currentIndex = patents.findIndex((p) => p.id === patent.id);
+  const prevPat = patents[(currentIndex - 1 + patents.length) % patents.length];
+  const nextPat = patents[(currentIndex + 1) % patents.length];
+  const prev = `/patents/${prevPat.id}`;
+  const next = `/patents/${nextPat.id}`;
 
   return (
     <>
@@ -185,7 +181,7 @@ const Patent = ({ patent, total, search }) => {
 
 Patent.propTypes = {
   patent: PropTypes.object,
-  total: PropTypes.number,
+  patents: PropTypes.array,
   search: PropTypes.func,
 };
 

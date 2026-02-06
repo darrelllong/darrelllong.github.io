@@ -25,17 +25,23 @@ export const ContextProvider = ({ children }) => {
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
-    const pubPromise = fetch("/publications.json")
-      .then((response) => response.json())
+    const fetchJson = (url) =>
+      fetch(url).then((response) => {
+        if (!response.ok) {
+          throw new Error(`Failed to fetch ${url}: ${response.status}`);
+        }
+        return response.json();
+      });
+
+    const pubPromise = fetchJson("/publications.json")
       .then((data) => setPublications(sortByDateDesc(data)))
       .catch((error) => console.error("Error fetching publications:", error));
 
-    const patPromise = fetch("/patents.json")
-      .then((response) => response.json())
+    const patPromise = fetchJson("/patents.json")
       .then((data) => setPatents(sortByDateDesc(data)))
       .catch((error) => console.error("Error fetching patents:", error));
 
-    Promise.all([pubPromise, patPromise]).then(() => setLoading(false));
+    Promise.all([pubPromise, patPromise]).finally(() => setLoading(false));
   }, []);
 
   return (

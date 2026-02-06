@@ -6,6 +6,13 @@ import re
 #
 # Creates markdown file for a row in the database.
 #
+def yaml_escape(value):
+    """Escape a string for safe use as a YAML value."""
+    value = str(value)
+    if any(c in value for c in ':{}[]&*?|>!%#`@,') or value.startswith(("'", '"', '-', ' ')):
+        return '"' + value.replace('\\', '\\\\').replace('"', '\\"') + '"'
+    return value
+
 def create_md(row):
     with open(f"_publications/{row['date']}-{row['pubid']}.md", "w") as file:
         # Frontmatter prelude.
@@ -15,22 +22,22 @@ def create_md(row):
         file.write("layout: publication\n")
 
         # Title.
-        file.write(f"title: Darrell Long | {row['title']}\n")
+        file.write(f"title: {yaml_escape('Darrell Long | ' + row['title'])}\n")
 
         # Header (same as title but without the name).
-        file.write(f"header: {row['title']}\n")
+        file.write(f"header: {yaml_escape(row['title'])}\n")
 
         # Permalink.
         file.write(f"permalink: /publications/{row['pubid']}/\n")
 
         # Authors.
-        file.write(f"authors: {row['authors']}\n")
+        file.write(f"authors: {yaml_escape(row['authors'])}\n")
 
         # Date.
         file.write(f"date: {row['date']}\n")
 
         # File source.
-        file.write(f"file: {row['file']}\n")
+        file.write(f"file: {yaml_escape(row['file'])}\n")
 
         # Excerpt (first two sentences of abstract).
         excerpt = ' '.join(re.split(r'(?<=[.:;])\s', row['abstract'])[:2])
@@ -48,6 +55,8 @@ def create_md(row):
         file.write(f"```latex\n{row['bibtex']}\n```\n")
 
 def main():
+    conn = None
+    cursor = None
     try:
         conn = psycopg2.connect(
             user = "darrell",
@@ -67,8 +76,9 @@ def main():
         print("Error connecting PostgreSQL:", error)
 
     finally:
-        if conn:
+        if cursor:
             cursor.close()
+        if conn:
             conn.close()
 
 if __name__ == "__main__":
