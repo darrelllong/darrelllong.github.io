@@ -14,6 +14,7 @@ export default function Menu() {
     { label: "About", page: "about" },
     { label: "Publications", page: "publications" },
     { label: "Patents", page: "patents" },
+    { label: "Blog", page: "blog" },
     { label: "Consultancy", page: "consultancy" },
     { label: "CV", link: "/cv.pdf", icon: faFileArrowDown },
     {

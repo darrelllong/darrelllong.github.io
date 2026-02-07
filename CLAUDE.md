@@ -4,18 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal academic website for Dr. Darrell D.E. Long (Distinguished Professor Emeritus, UC Santa Cruz). Uses a **hybrid Jekyll + React SPA architecture**.
+Personal academic website for Dr. Darrell D.E. Long (Distinguished Professor Emeritus, UC Santa Cruz). **Pure React SPA** served on GitHub Pages with `.nojekyll`.
 
 ## Prerequisites
 
-- **Node.js** - ES modules required (Node 14+), Vite 5.2 used
-- **Ruby** - For Jekyll; uses `github-pages` gem
-- **Python 3** - For publication scripts (requires `tkinter`, `psycopg2`)
-- **PostgreSQL access** - Only needed for `add_publication.py` and `update_publications.py` (requires campus network/VPN to reach `darrell.soe.ucsc.edu`)
+- **Node.js** - ES modules required (Node 14+), Vite used
+- **Python 3** - For publication helper scripts (`add_abstracts.py`, `fix_abstracts.py`)
 
 ## Build Commands
 
-### React SPA (primary development)
 ```bash
 cd src
 npm install          # Install dependencies
@@ -24,13 +21,6 @@ npm run build        # Production build (outputs to dist/)
 npm run lint         # ESLint checking
 npm run preview      # Preview production build
 npm run deploy       # Build and copy to repo root
-```
-
-### Jekyll (legacy pages)
-```bash
-bundle install       # Install Ruby dependencies
-jekyll serve         # Local development server
-jekyll build         # Build static site
 ```
 
 ## Linting
@@ -45,7 +35,6 @@ ESLint configured in `src/.eslintrc.cjs`:
 
 **No CI/CD pipeline** - deployment is manual. Site is served from master branch root.
 
-React SPA deployment:
 ```bash
 cd src
 npm run deploy    # Builds and copies dist/* to repo root
@@ -53,43 +42,48 @@ cd ..
 git add -A && git commit -m "Deploy" && git push
 ```
 
-The build outputs to `src/dist/`, then gets copied to the repo root. Pushing to master deploys the site.
-
-## Local Development Without Database
-
-The React app fetches publications from `/publications.json` at runtime. For local development:
-1. The existing `publications.json` in the repo root contains all publication data
-2. Run `cd src && npm run dev` - works without any database connection
-3. Database access is only needed when adding/updating publications via Python scripts
+The build outputs to `src/dist/`, then gets copied to the repo root. Pushing to master deploys the site. The `.nojekyll` file tells GitHub Pages to skip Jekyll processing.
 
 ## Architecture
 
-### Two-Layer System
+### React SPA (`src/` directory)
 
-1. **React SPA** (`src/` directory) - Modern interactive frontend
-   - Vite build system
-   - React 18 + React Router
-   - Outputs compiled assets to `assets/` directory
-   - Main entry: `index.html` at root serves the React app
-
-2. **Jekyll Static Site** (root directory) - Legacy pages
-   - Publications at `/old/*` paths
-   - Templates in `_layouts/`, includes in `_includes/`
-   - SASS in `_sass/`
+- Vite build system
+- React 18 + React Router
+- Outputs compiled assets to `assets/` directory
+- Main entry: `index.html` at root serves the React app
 
 ### Publications Data Flow
 
 ```
-PostgreSQL Database (darrell.soe.ucsc.edu/website)
-         ↓
-update_publications.py  →  _publications/*.md (Jekyll)
-         ↓
-publications.json  →  React components fetch this
+publications.json  →  React components fetch this at runtime
 ```
 
-**Python scripts require database access:**
-- `add_publication.py` - GUI form for adding publications to database
-- `update_publications.py` - Syncs database to markdown files and JSON
+**Python helper scripts** (edit `publications.json` directly):
+- `add_abstracts.py` - Add abstracts to publications
+- `fix_abstracts.py` - Fix abstract formatting
+
+### Blog System
+
+Blog posts are markdown files in `src/src/posts/` with YAML frontmatter:
+
+```markdown
+---
+title: "Post Title"
+date: "2026-02-06"
+tags: ["research", "storage"]
+excerpt: "Short description for listing page."
+---
+
+Markdown content here.
+```
+
+Posts are loaded at build time via `import.meta.glob` and parsed with the `front-matter` package. The slug is derived from the filename (e.g., `2026-02-06-my-post.md` → slug `2026-02-06-my-post`).
+
+To add a new blog post:
+1. Create a `.md` file in `src/src/posts/` with date-prefixed filename
+2. Add frontmatter (title, date required; tags, excerpt optional)
+3. Build and deploy
 
 ### React Component Hierarchy
 
@@ -101,6 +95,10 @@ App.jsx
 │   ├── About.jsx
 │   ├── Publications.jsx (list with search/pagination)
 │   ├── Publication.jsx (detail view with BibTeX)
+│   ├── Patents.jsx (list with search/pagination)
+│   ├── Patent.jsx (detail view)
+│   ├── Blog.jsx (list with search/tags/pagination)
+│   ├── BlogPost.jsx (markdown rendering)
 │   └── Consultancy.jsx
 └── Footer.jsx
 ```
@@ -110,24 +108,24 @@ App.jsx
 - `/about` - About page
 - `/publications` - Publications list (search, pagination)
 - `/publications/:id` - Publication detail
+- `/patents` - Patents list (search, pagination)
+- `/patents/:id` - Patent detail
+- `/blog` - Blog listing (search, tag filtering, pagination)
+- `/blog/:slug` - Individual blog post
 - `/consultancy` - Consulting services
 
 ## Key Files
 
-- `_config.yml` - Jekyll configuration, navigation, site metadata
 - `src/package.json` - React dependencies and scripts
 - `publications.json` - Publication data consumed by React
+- `patents.json` - Patent data consumed by React
 - `pentexoire.json` - Consultancy team data
-
-## Adding Publications
-
-1. Add to PostgreSQL database via `add_publication.py`
-2. Run `update_publications.py` to sync to markdown/JSON
-3. React app automatically picks up changes from `publications.json`
+- `.nojekyll` - Tells GitHub Pages to skip Jekyll
+- `src/src/utils/blogLoader.js` - Blog post loading and parsing
+- `src/scripts/generate-routes.js` - Generates route directories for GitHub Pages SPA
 
 ## Styling
 
-- React styles: `src/src/assets/css/` (SCSS files per component)
-- Jekyll styles: `_sass/` (uses Solarized themes)
+- Styles: `src/src/assets/css/` (SCSS files per component)
 - CSS variables defined in `src/src/assets/css/variables.scss`
 - Responsive breakpoint at 968px

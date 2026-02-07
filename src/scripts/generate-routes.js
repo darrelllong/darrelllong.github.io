@@ -1,4 +1,4 @@
-import { cpSync, mkdirSync, readFileSync } from 'fs';
+import { cpSync, mkdirSync, readFileSync, readdirSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -8,7 +8,7 @@ const distDir = join(__dirname, '..', 'dist');
 const indexHtml = join(distDir, 'index.html');
 
 // Static routes
-const routes = ['about', 'consultancy', 'publications', 'patents'];
+const routes = ['about', 'consultancy', 'publications', 'patents', 'blog'];
 
 for (const route of routes) {
   const routeDir = join(repoRoot, route);
@@ -36,4 +36,15 @@ for (const pat of patents) {
   cpSync(indexHtml, join(routeDir, 'index.html'));
 }
 
-console.log(`Generated ${routes.length} static routes, ${publications.length} publication routes, and ${patents.length} patent routes`);
+// Generate routes for individual blog posts
+const postsDir = join(__dirname, '..', 'src', 'posts');
+const postFiles = readdirSync(postsDir).filter(f => f.endsWith('.md'));
+const postSlugs = postFiles.map(f => f.replace(/\.md$/, ''));
+
+for (const slug of postSlugs) {
+  const routeDir = join(repoRoot, 'blog', slug);
+  mkdirSync(routeDir, { recursive: true });
+  cpSync(indexHtml, join(routeDir, 'index.html'));
+}
+
+console.log(`Generated ${routes.length} static routes, ${publications.length} publication routes, ${patents.length} patent routes, and ${postSlugs.length} blog routes`);
