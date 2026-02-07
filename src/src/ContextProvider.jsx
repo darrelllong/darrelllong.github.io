@@ -16,6 +16,9 @@ export const ContextProvider = ({ children }) => {
     if (/^\/publications\/\d+\/?$/.test(path)) {
       return "publication";
     }
+    if (/^\/blog\/[\w-]+\/?$/.test(path)) {
+      return "blogpost";
+    }
     return path.replace(/\//g, "");
   };
   const [showMenu, setShowMenu] = React.useState(false);

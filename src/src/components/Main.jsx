@@ -15,6 +15,8 @@ import Publication from "./Publication";
 import Patents from "./Patents";
 import Patent from "./Patent";
 import Consultancy from "./Consultancy";
+import Blog from "./Blog";
+import BlogPost from "./BlogPost";
 import Menu from "./Menu";
 // Styles
 import "../assets/css/home.scss";
@@ -40,8 +42,8 @@ export default function Main() {
   React.useEffect(() => {
     const params = new URLSearchParams(location.search);
     const redirectPath = params.get("redirect");
-    const validRoutes = ["/about", "/publications", "/patents", "/consultancy"];
-    if (redirectPath && (validRoutes.includes(redirectPath) || /^\/(?:publications|patents)\/\d+\/?$/.test(redirectPath))) {
+    const validRoutes = ["/about", "/publications", "/patents", "/consultancy", "/blog"];
+    if (redirectPath && (validRoutes.includes(redirectPath) || /^\/(?:publications|patents)\/\d+\/?$/.test(redirectPath) || /^\/blog\/[\w-]+\/?$/.test(redirectPath))) {
       navigate(redirectPath, { replace: true });
     }
   }, [location, navigate]);
@@ -69,6 +71,16 @@ export default function Main() {
           }
         />
         <Route path="/consultancy" element={<Consultancy />} />
+        <Route
+          path="/blog"
+          element={
+            <Blog searchTerm={searchTerm} search={setSearchTerm} />
+          }
+        />
+        <Route
+          path="/blog/:slug"
+          element={<BlogPost search={setSearchTerm} />}
+        />
         <Route
           path="/patents"
           element={
