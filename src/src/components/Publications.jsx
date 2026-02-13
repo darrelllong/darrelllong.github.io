@@ -1,13 +1,11 @@
 // Dependencies
 import React from "react";
 import PropTypes from "prop-types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Context } from "../ContextProvider";
 // Components
 import Pagination from "./Pagination";
 import PublicationCard from "./PublicationCard";
-// Assets
-import { faCircleXmark, faSearch } from "@fortawesome/free-solid-svg-icons";
+import SearchBar from "./SearchBar";
 // Styles
 import "../assets/css/publications.scss";
 
@@ -31,28 +29,13 @@ export default function Publications({ searchTerm, search }) {
   return (
     <>
       <h2>Publications</h2>
-      <form
-        className="search-bar dottedBorder"
-        onSubmit={(e) => e.preventDefault()}
-      >
-        <input
-          type="text"
-          placeholder="Search"
-          value={searchTerm}
-          onChange={(e) => {
-            search(e.target.value);
-            setCurrentPage(0);
-          }}
-        />
-        <FontAwesomeIcon
-          icon={searchTerm !== "" ? faCircleXmark : faSearch}
-          flip="horizontal"
-          onClick={() => {
-            search("");
-            setCurrentPage(0);
-          }}
-        />
-      </form>
+      <SearchBar
+        searchTerm={searchTerm}
+        onchange={(value) => {
+          search(value);
+          setCurrentPage(0);
+        }}
+      />
       {filteredPublications.length > 0 ? (
         <section className="publications">
           {filteredPublications
