@@ -851,7 +851,7 @@
     "id": 37,
     "title": "Efficient Metadata Management in a Large Distributed Storage System",
     "short_description": "",
-    "full_content": "Existing file access predictors keep track of previous file access patterns and rely on a single heuristic to predict which of the previous successors to the file being currently accessed is the most likely to be accessed next. We present here a novel composite predictor that applies multiple heuristics to this selection problem. As a result, it can make use of specialized heuristics that can make very accurate predictions when access patterns are observed to meet their particular criteria. Simulation results involving a total of seven file access traces indicate that our predictor delivers more correct predictions and less inaccurate guesses than predictors relying on a single heuristic for selecting a successor.",
+    "full_content": "Efficient metadata management is a critical aspect of overall system performance in large distributed storage systems. Directory subtree partitioning and pure hashing are two common techniques used for managing metadata in such systems, but both suffer from bottlenecks at very high concurrent access rates. We present a new approach called Lazy Hybrid (LH) metadata management that combines the best aspects of these two approaches while avoiding their shortcomings.",
     "author": [
       "Scott A. Brandt",
       "Ethan L. Miller",
@@ -1002,7 +1002,7 @@
     "id": 43,
     "title": "Identifying Stable File Access Patterns",
     "short_description": "",
-    "full_content": "Parallel scientific applications require high-performance I/O support from underlying file systems. A comprehensive understanding of the expected workload is therefore essential for the design of high-performance parallel file systems. We re-examine the workload characteristics in parallel computing environments in the light of recent technology advances and new applications. We analyze application traces from a cluster with hundreds of nodes. On average, each application has only one or two typical request sizes. Large requests from several hundred kilobytes to several megabytes are very common. Although in some applications, small requests account for more than 90 are transferred by large requests. All of these applications show bursty access patterns. More than 65 within one millisecond in most applications. By running the same benchmark on different file models, we also find that the write throughput of using an individual output file for each node exceeds that of using a shared file for all nodes by a factor of 5. This indicates that current file systems are not well optimized for file sharing.",
+    "full_content": "",
     "author": [
       "Purvi Shah",
       "Jehan-François Pâris",
@@ -1027,7 +1027,7 @@
     "id": 44,
     "title": "File System Workload Analysis For Large Scientific Computing Applications",
     "short_description": "",
-    "full_content": "The object-based storage model, in which files are made up of one or more data objects stored on self-contained Object-Based Storage Devices (OBSDs), is emerging as an architecture for distributed storage systems. The workload presented to the OBSDs will be quite different from that of general-purpose file systems, yet many distributed file systems employ general-purpose file systems as their underlying file system. We present OBFS, a small and highly efficient file system designed for use in OBSDs. Our experiments show that our user-level implementation of OBFS outperforms Linux Ext2 and Ext3 by a factor of two or three, and while OBFS is 1/25 the size of XFS, it provides only slightly lower read performance and up to 40 write performance.",
+    "full_content": "Parallel scientific applications require high-performance I/O support from underlying file systems. A comprehensive understanding of the expected workload is therefore essential for the design of high-performance parallel file systems. We re-examine the workload characteristics in parallel computing environments in the light of recent technology advances and new applications. We analyze application traces from a cluster with hundreds of nodes. On average, each application has only one or two typical request sizes. Large requests from several hundred kilobytes to several megabytes are very common. Although in some applications, small requests account for more than 90 are transferred by large requests. All of these applications show bursty access patterns. More than 65 within one millisecond in most applications. By running the same benchmark on different file models, we also find that the write throughput of using an individual output file for each node exceeds that of using a shared file for all nodes by a factor of 5. This indicates that current file systems are not well optimized for file sharing.",
     "author": [
       "Feng Wang",
       "Qin Xin",
@@ -1838,7 +1838,7 @@
     "id": 79,
     "title": "Using Storage Class Memories to Increase the Reliability of Two-Dimensional RAID Arrays",
     "short_description": "",
-    "full_content": "Digital archives are growing rapidly, necessitating stronger reliability measures than RAID to avoid data loss from device failure. Mirroring, a popular solution, is too expensive over time. We present a compromise solution that uses multi-level redundancy coding to reduce the probability of data loss from multiple simultaneous device failures. This approach handles small-scale failures of one or two devices efficiently while still allowing the system to survive rare-event, larger-scale failures of four or more devices. In our approach, each disk is split into a set of fixed size disklets which are used to construct reliability stripes. To protect against rare event failures, reliability stripes are grouped into larger super-groups, each of which has a corresponding super-parity; super-parity is only used to recover data when disk failures overwhelm the redundancy in a single reliability stripe. Super-parity can be stored on a variety of devices such as NV-RAM and always-on disks to offset write bottlenecks while still keeping the number of active devices low. Our calculations of failure probabilities show that adding super-parity allows our system to absorb many more disk failures without data loss. Through discrete event simulation, we found that adding super-groups has a significant impact on mean time to data loss and that rebuilds are slow but not unmanageable. Finally, we showed that robustness against rare events can be achieved for a fraction of total system cost.",
+    "full_content": "Two-dimensional RAID arrays maintain separate row and column parities for all their disks. Depending on their organization, they can tolerate between two and three concurrent disk failures without losing any data. We propose to enhance the robustness of these arrays by replacing a small fraction of these drives with storage class memory devices, and demonstrate how such a pairing is several times more reliable than relying on conventional disks alone, or simply augmenting popular redundant layouts. Depending on the ratio of the failure rates of these two devices, the substitution can double or even triple the mean time to data loss (MTTDL) of each array.",
     "author": [
       "Jehan-François Pâris",
       "Ahmed Amer",
@@ -2155,7 +2155,7 @@
     "id": 94,
     "title": "Los Alamos National Laboratory Interviews",
     "short_description": "",
-    "full_content": "Efficient metadata management is a critical aspect of overall system performance in large distributed storage systems. Directory subtree partitioning and pure hashing are two common techniques used for managing metadata in such systems, but both suffer from bottlenecks at very high concurrent access rates. We present a new approach called Lazy Hybrid (LH) metadata management that combines the best aspects of these two approaches while avoiding their shortcomings.",
+    "full_content": "",
     "author": [
       "Darrell D. E. Long"
     ],
@@ -3108,7 +3108,7 @@
     "id": 133,
     "title": "Pagoda: A Hybrid Approach to Enable Efficient Real-time Provenance Based Intrusion Detection in Big Data Environments",
     "short_description": "",
-    "full_content": "Efficient provenance storage is an essential step towards the adoption of provenance. In this paper, we analyze the provenance collected from multiple workloads with a view towards efficient storage. Based on our analysis, we characterize the properties of provenance with respect to long term storage. We then propose a hybrid scheme that takes advantage of the graph structure of provenance data and the inherent duplication in provenance data. Our evaluation indicates that our hybrid scheme, a combination of web graph compression (adapted for provenance) and dictionary encoding, provides the best tradeoff in terms of compression ratio, compression time and query performance when compared to other compression schemes. Categories and Subject Descriptors E.4[Coding and Information Theory]: Data compaction and compression; H.3.2[Information Storage and Retrieval]: Information Storage - File organization",
+    "full_content": "",
     "author": [
       "Yulai Xie",
       "Dan Feng",
@@ -3650,7 +3650,7 @@
     "id": 155,
     "title": "Using Simulation to Evaluate Consistency Protocols for Replicated Data",
     "short_description": "",
-    "full_content": "The need for reliable and cost-effective data storage grows as digital information becomes increasingly ubiquitous. Archival systems must store valuable data for years while adapting to changing user needs, capacity, and performance requirements. Storage devices differ in terms of performance, capacity, reliability, acquisition cost, power consumption, and the rates at which their features change over time. Today, numerous alternative and emerging storage technologies may become viable for use in archival storage systems as their cost, performance, and reliability change. Differences between storage devices also complicate the choice of the best storage technology to use for an archival system. We have designed a simulator that models the capacity, performance, acquisition cost, and power cost of archival systems. Our simulator compares four storage technologies that exhibit different cost and performance characteristics: tape, optical disc, hard disk, and NAND flash SSD. We evaluate the total cost of ownership for each storage technology within an archival system, and we explore the effect that prospective technological advancements and growth rates over time may have on the relative cost and viability of each storage technology. We show that, in order for each storage technology to remain cost-effective in archival systems over time, it must increase in capacity at least as quickly as the demand for storage overall. We compare trends in storage technologies to suggest developments that could minimize the long-term total cost of ownership for archival systems. We show that hard disks and flash could become cost-competitive with tape-based archives by adopting new designs to minimize infrastructure and electricity costs.",
+    "full_content": "",
     "author": [
       "Darrell D. E. Long",
       "John L. Carroll"
@@ -3918,7 +3918,7 @@
     "id": 166,
     "title": "A Technique for Managing Mirrored Disks",
     "short_description": "",
-    "full_content": "When data is replicated, an access protocol must be chosen to insure the presentation of a consistent view of the data. Protocols based on quorum consensus provide good availability with the added benefit of mutual exclusion. Of the protocols based on quorum consensus, the dynamic voting protocols provide the highest known availability. We describe a dynamic voting protocol that does not need the instantaneous state information required by the same performance as the original dynamic voting in the asymptotic case, and quickly converges to it for realistic access rates. Our protocol does this at a cost in network similar to that of statistic majority consensus voting. The first realistic analysis of the availability afforded by dynamic voting protocols is presented, taking the access frequency into account. The analysis confirms our hypothesis that delaying state information does not appreciably affect availability. Discrete event simulation is used to confirm and to extend the results we obtain using analytic models.",
+    "full_content": "",
     "author": [
       "Darrell D. E. Long"
     ],
@@ -4818,7 +4818,7 @@
     "id": 208,
     "title": "A Low Bandwidth Broadcasting Protocol for Video on Demand",
     "short_description": "",
-    "full_content": "Broadcasting protocols can improve the efficiency of video on demand services by reducing the bandwidth required to transmit videos that are simultaneously watched by many viewers. We present a polyharmonic broadcasting protocol that requires less bandwidth than the best extant protocols to achieve the same low maximum waiting time. We also show how to modify the protocol to accommodate very long videos without increasing the buffering capacity of the set-top box.",
+    "full_content": "",
     "author": [
       "Jehan-François Pâris",
       "Steven W. Carter",
@@ -4840,7 +4840,7 @@
     "id": 209,
     "title": "Efficient Broadcasting Protocols for Video on Demand",
     "short_description": "",
-    "full_content": "Broadcasting protocols can improve the efficiency of video on demand services by reducing the bandwidth required to transmit videos that are simultaneously watched by many viewers. We present here two broadcasting protocols that achieve nearly the same low bandwidth as the best extant broadcasting protocol while guaranteeing a lower maximum access time. Our first protocol, cautious harmonic broadcasting, requires somewhat more bandwidth than our second protocol, quasi-harmonic broadcasting, but is also much simpler to implement. : video on demand, video broadcasting.",
+    "full_content": "",
     "author": [
       "Jehan-François Pâris",
       "Steven W. Carter",
@@ -5273,7 +5273,7 @@
     "id": 229,
     "title": "The Effect of Failure and Repair Distributions on Consistency Protocols for Replicated Data Objects",
     "short_description": "",
-    "full_content": "The accessibility of vital information can be enhanced by replicating the data on several sites, and employing a consistency control protocol to manage the copies. Various protocols have been proposed to ensure that only current copies of the data can be accessed. The effect these protocols have on the accessibility of the replicated data is investigated by simulating the operation of the network and measuring the performance. Several strategies for replica maintenance are considered, and the benefits of each are analyzed. The details of the simulations are discussed. Measurements of the reliability and the availability of the replicated data are compared and contrasted. The sensitivity of the Available Copy and Dynamic-linear Voting protocols to common patterns of site failures and repairs is studied in detail. Exponential, Erlang, uniform, and hyperexponential distributions are considered, and the effect the second moments have on the results is analyzed. The relative performance of competing protocols is shown to be only marginally affected by non-exponential distributions, validating the robustness of the exponential approximations.",
+    "full_content": "",
     "author": [
       "John L. Carroll",
       "Darrell D. E. Long"
@@ -5643,7 +5643,7 @@
     "id": 246,
     "title": "Caching Files with a Program-based Last $n$ Successors Model",
     "short_description": "",
-    "full_content": "Recent increases in CPU performance have outpaced increases in hard drive performance. As a result, disk operations have become more expensive in terms of CPU cycles spent waiting for disk operations to complete. File prediction can mitigate this problem by prefetching files into cache before they are accessed. However, incorrect prediction is to a certain degree both unavoidable and costly. We present the Program-based Last N Successors (PLNS) file prediction model that identifies relationships between files through the names of the programs accessing them. Our simulation results show that PLNS makes at least 21.11",
+    "full_content": "",
     "author": [
       "Tsozen Yeh",
       "Darrell D. E. Long",
@@ -5772,7 +5772,7 @@
     "id": 252,
     "title": "A Replicated Monitoring Tool",
     "short_description": "",
-    "full_content": "Modeling the reliability of distributed systems requires a good understanding of the reliability of the components. Careful modeling allows highly fault-tolerant distributed applications to be constructed at the least cost. Realistic estimates can be found by measuring the performance of actual systems. An enormous amount of information about system performance can be acquired with no special privileges via the Internet. A distributed monitoring tool called a tattler is described. The system is composed of a group of tattler processes that monitor a set of selected hosts. The tattlers cooperate to provide a fault-tolerant distributed data base of information about the hosts they monitor. They use weak-consistency replication techniques to ensure their own fault-tolerance and the eventual consistency of the data base that they maintain.",
+    "full_content": "",
     "author": [
       "Darrell D. E. Long"
     ],
@@ -5812,7 +5812,7 @@
     "id": 254,
     "title": "The Management of Consistency in Fault-Tolerant File Systems",
     "short_description": "",
-    "full_content": "Available copy protocols guarantee the consistency of replicated data objects against any combination of non-Byzantine failures that do not result in partial communication failures. While the original available copy protocol assumed instantaneous detection of failures and instantaneous propagation of this information, more realistic protocols that do not rely on these assumptions have been devised. Two such protocols are investigated in this paper: a naive available copy (NAC) protocol that does not maintain any state information, and an optimistic available copy (OAC) protocol that only maintains state information at write and recovery times. Markov models are used to compare the performance of these two protocols with that of the original available copy protocol. These protocols are shown to perform nearly as well as the original available copy protocol, which is shown to perform much better than quorum consensus protocols.",
+    "full_content": "",
     "author": [
       "Jehan-François Pâris",
       "Darrell D. E. Long",
