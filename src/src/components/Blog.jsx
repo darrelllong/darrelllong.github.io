@@ -2,11 +2,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Components
 import Pagination from "./Pagination";
-// Assets
-import { faCircleXmark, faSearch } from "@fortawesome/free-solid-svg-icons";
+import SearchBar from "./SearchBar";
 // Utilities
 import { getAllPosts, getAllTags } from "../utils/blogLoader";
 // Styles
@@ -33,28 +31,13 @@ export default function Blog({ searchTerm, search }) {
   return (
     <>
       <h2>Blog</h2>
-      <form
-        className="search-bar dottedBorder"
-        onSubmit={(e) => e.preventDefault()}
-      >
-        <input
-          type="text"
-          placeholder="Search"
-          value={searchTerm}
-          onChange={(e) => {
-            search(e.target.value);
-            setCurrentPage(0);
-          }}
-        />
-        <FontAwesomeIcon
-          icon={searchTerm !== "" ? faCircleXmark : faSearch}
-          flip="horizontal"
-          onClick={() => {
-            search("");
-            setCurrentPage(0);
-          }}
-        />
-      </form>
+      <SearchBar
+        searchTerm={searchTerm}
+        onchange={(value) => {
+          search(value);
+          setCurrentPage(0);
+        }}
+      />
       {tags.length > 0 && (
         <div className="tag-filters">
           <button

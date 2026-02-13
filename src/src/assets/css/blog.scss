@@ -1,81 +1,6 @@
 @import "variables";
 
-main.blog,
-main.blogpost {
-  margin-bottom: 58px;
-
-  h2 {
-    margin-bottom: 18px;
-  }
-
-  .search-bar {
-    padding-bottom: 12px;
-    border-radius: 3px 3px 0 0;
-    margin-bottom: 30px;
-
-    &:after {
-      height: 12px;
-      background: repeating-linear-gradient(to right,
-          $dark,
-          $dark 5px,
-          transparent 5px,
-          transparent 9px);
-      transform: translateX(-1px);
-    }
-
-    input {
-      font-size: 18px;
-      width: 100%;
-      padding: 15px 32px 15px 13px;
-      color: $dark;
-      border: none;
-      box-shadow: $layer-shadow;
-
-      &::placeholder {
-        color: $dark;
-        opacity: 0.7;
-        font-weight: 300;
-      }
-
-      &:focus {
-        outline: none;
-      }
-    }
-
-    svg {
-      font-size: 16px;
-      position: absolute;
-      top: 21px;
-      right: 13px;
-      cursor: pointer;
-      transition: color 0.15s ease-in-out;
-
-      &:hover {
-        color: $link;
-      }
-    }
-  }
-
-  @media screen and (min-width: 968px) {
-    h2 {
-      margin-bottom: 60px;
-    }
-
-    .search-bar {
-      display: inline-block;
-      width: 388px;
-      position: absolute;
-      border-radius: 3px;
-      padding-bottom: 0;
-      right: 20px;
-      top: 0;
-
-      &:after {
-        display: none;
-      }
-    }
-  }
-
+main.blog {
   .tag-filters {
     display: flex;
     flex-wrap: wrap;
@@ -171,42 +96,10 @@ main.blogpost {
       }
     }
   }
+}
 
-  nav.pagination {
-    max-width: 390px;
-    display: flex;
-    justify-content: space-between;
-    margin: 48px auto;
-
-    button {
-      width: 35px;
-      height: 35px;
-      border-radius: 2px;
-      border: none;
-      background: $layer;
-      cursor: pointer;
-      display: grid;
-      place-items: center;
-
-      &:disabled {
-        color: inherit;
-      }
-
-      &:hover {
-        background: darken($layer, 5%);
-      }
-
-      &.active {
-        font-weight: 600;
-        border-top: 2.5px solid $dark;
-        border-bottom: 2.5px solid $dark;
-      }
-
-      svg {
-        font-size: 24px;
-      }
-    }
-  }
+main.blogpost {
+  margin-bottom: 58px;
 
   // BlogPost styles
   .blog-article {
