@@ -115,7 +115,6 @@ export default function Main() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       {showMenu && location.pathname !== "/" && <Menu />}
-      <div className="decorativeBar" />
     </main>
   );
 }
