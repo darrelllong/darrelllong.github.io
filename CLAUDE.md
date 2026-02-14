@@ -65,7 +65,7 @@ publications.json  →  React components fetch this at runtime
 
 ### Blog System
 
-Blog posts are markdown files in `src/src/posts/` with YAML frontmatter:
+Blog posts are markdown files in `posts/` (repo root) with YAML frontmatter:
 
 ```markdown
 ---
@@ -78,12 +78,12 @@ excerpt: "Short description for listing page."
 Markdown content here.
 ```
 
-Posts are loaded at build time via `import.meta.glob` and parsed with the `front-matter` package. The slug is derived from the filename (e.g., `2026-02-06-my-post.md` → slug `2026-02-06-my-post`).
+Posts are fetched at runtime (not bundled). The manifest `posts/index.json` lists all posts with their metadata. The slug is the filename without `.md` (e.g., `2026-02-06-my-post.md` → slug `2026-02-06-my-post`).
 
 To add a new blog post:
-1. Create a `.md` file in `src/src/posts/` with date-prefixed filename
-2. Add frontmatter (title, date required; tags, excerpt optional)
-3. Build and deploy
+1. Create a `.md` file in `posts/` with date-prefixed filename and frontmatter
+2. Add an entry to `posts/index.json` (slug, title, date, tags, excerpt)
+3. `git add && git commit && git push` — no build step needed
 
 ### React Component Hierarchy
 
@@ -121,7 +121,9 @@ App.jsx
 - `patents.json` - Patent data consumed by React
 - `pentexoire.json` - Consultancy team data
 - `.nojekyll` - Tells GitHub Pages to skip Jekyll
-- `src/src/utils/blogLoader.js` - Blog post loading and parsing
+- `posts/index.json` - Blog post manifest (add entries here for new posts)
+- `posts/*.md` - Blog post markdown files
+- `src/src/utils/blogLoader.js` - Blog post loading (fetches at runtime)
 - `src/scripts/generate-routes.js` - Generates route directories for GitHub Pages SPA
 
 ## Styling

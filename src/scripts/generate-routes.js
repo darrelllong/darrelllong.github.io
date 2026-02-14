@@ -1,4 +1,4 @@
-import { cpSync, mkdirSync, readFileSync, readdirSync } from 'fs';
+import { cpSync, mkdirSync, readFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -37,9 +37,9 @@ for (const pat of patents) {
 }
 
 // Generate routes for individual blog posts
-const postsDir = join(__dirname, '..', 'src', 'posts');
-const postFiles = readdirSync(postsDir).filter(f => f.endsWith('.md'));
-const postSlugs = postFiles.map(f => f.replace(/\.md$/, ''));
+const postsJson = join(repoRoot, 'posts', 'index.json');
+const blogPosts = JSON.parse(readFileSync(postsJson, 'utf-8'));
+const postSlugs = blogPosts.map(p => p.slug);
 
 for (const slug of postSlugs) {
   const routeDir = join(repoRoot, 'blog', slug);

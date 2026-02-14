@@ -14,8 +14,20 @@ import "../assets/css/blog.scss";
 
 export default function BlogPost({ search }) {
   const { slug } = useParams();
-  const post = getPostBySlug(slug);
-  const posts = getAllPosts();
+  const [post, setPost] = React.useState(null);
+  const [posts, setPosts] = React.useState([]);
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    setLoading(true);
+    Promise.all([getPostBySlug(slug), getAllPosts()]).then(([p, all]) => {
+      setPost(p);
+      setPosts(all);
+      setLoading(false);
+    });
+  }, [slug]);
+
+  if (loading) return null;
 
   if (!post) {
     return (
