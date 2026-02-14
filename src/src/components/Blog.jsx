@@ -13,9 +13,18 @@ import "../assets/css/blog.scss";
 export default function Blog({ searchTerm, search }) {
   const [currentPage, setCurrentPage] = React.useState(0);
   const [activeTag, setActiveTag] = React.useState(null);
+  const [posts, setPosts] = React.useState([]);
+  const [tags, setTags] = React.useState([]);
+  const [loading, setLoading] = React.useState(true);
   const postsPerPage = 6;
-  const posts = getAllPosts();
-  const tags = getAllTags();
+
+  React.useEffect(() => {
+    Promise.all([getAllPosts(), getAllTags()]).then(([p, t]) => {
+      setPosts(p);
+      setTags(t);
+      setLoading(false);
+    });
+  }, []);
 
   const filteredPosts = posts.filter((post) => {
     const matchesTag = !activeTag || post.tags.includes(activeTag);
@@ -27,6 +36,8 @@ export default function Blog({ searchTerm, search }) {
       post.tags.some((tag) => tag.toLowerCase().includes(searchString));
     return matchesTag && matchesSearch;
   });
+
+  if (loading) return <h2>Blog</h2>;
 
   return (
     <>

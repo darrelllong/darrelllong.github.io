@@ -1,53 +1,52 @@
 import fm from "front-matter";
 
-const modules = import.meta.glob("../posts/*.md", {
-  query: "?raw",
-  eager: true,
-});
+let postsCache = null;
+let postsPromise = null;
 
-function slugFromFilename(filename) {
-  // "2026-02-06-welcome.md" -> "2026-02-06-welcome"
-  return filename.replace(/\.md$/, "");
+async function loadPosts() {
+  if (postsCache) return postsCache;
+  if (postsPromise) return postsPromise;
+
+  postsPromise = (async () => {
+    const res = await fetch("/posts/index.json");
+    const index = await res.json();
+    postsCache = index.sort((a, b) => b.date.localeCompare(a.date));
+    return postsCache;
+  })();
+
+  return postsPromise;
 }
 
-function parsePost(filepath, raw) {
-  const filename = filepath.split("/").pop();
-  const { attributes, body } = fm(raw);
-  const slug = slugFromFilename(filename);
-
-  return {
-    slug,
-    title: attributes.title || "Untitled",
-    date: attributes.date || "",
-    tags: attributes.tags || [],
-    excerpt:
-      attributes.excerpt || body.replace(/[#*_`>[\]]/g, "").slice(0, 150).trim() + "...",
-    body,
-  };
+export async function getAllPosts() {
+  return loadPosts();
 }
 
-const posts = Object.entries(modules)
-  .map(([filepath, mod]) => parsePost(filepath, mod.default))
-  .sort((a, b) => b.date.localeCompare(a.date));
+export async function getPostBySlug(slug) {
+  const posts = await loadPosts();
+  const meta = posts.find((p) => p.slug === slug);
+  if (!meta) return null;
 
-export function getAllPosts() {
-  return posts;
+  const res = await fetch(`/posts/${slug}.md`);
+  if (!res.ok) return null;
+
+  const raw = await res.text();
+  const { body } = fm(raw);
+
+  return { ...meta, body };
 }
 
-export function getPostBySlug(slug) {
-  return posts.find((p) => p.slug === slug) || null;
-}
-
-export function getAllTags() {
+export async function getAllTags() {
+  const posts = await loadPosts();
   const tagSet = new Set();
   for (const post of posts) {
-    for (const tag of post.tags) {
+    for (const tag of post.tags || []) {
       tagSet.add(tag);
     }
   }
   return [...tagSet].sort();
 }
 
-export function getPostSlugs() {
+export async function getPostSlugs() {
+  const posts = await loadPosts();
   return posts.map((p) => p.slug);
 }
