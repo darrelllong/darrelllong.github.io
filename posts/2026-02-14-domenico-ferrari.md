@@ -19,7 +19,7 @@ In 1987, he received the A.A. Michelson Award for outstanding contributions to c
 
 ## Berkeley Unix
 
-When Bob Fabry stepped aside from the Computer Systems Research Group in the mid-1980s, Ferrari and Susan Graham took over administration of CSRG and the development of Berkeley Unix. Under their watch, the BSD project released 4.2BSD and 4.3BSD, which introduced the Berkeley Fast File System and early implementations of the TCP/IP stack. The BSD releases became the standard research platform for networking and distributed computing, and the open dissemination of the code fed directly into FreeBSD, OpenBSD, NeXTSTEP, and eventually macOS. The Berkeley socket API and networking code from this period are still with us — every time you open a network connection on practically any operating system, you're using abstractions that passed through Ferrari's shop.
+When Bob Fabry stepped aside from the Computer Systems Research Group in the mid-1980s, Ferrari and Susan Graham took over administration of CSRG and the development of Berkeley Unix. Under their watch, the BSD project released 4.3BSD, which refined the TCP/IP stack and the Berkeley Fast File System that had been introduced in 4.2BSD. The BSD releases became the standard research platform for networking and distributed computing, and the open dissemination of the code fed directly into FreeBSD, OpenBSD, NeXTSTEP, and eventually macOS. The Berkeley socket API and networking code from this period are still with us — every time you open a network connection on practically any operating system, you're using abstractions that passed through Ferrari's shop.
 
 ## The Tenet Group
 
