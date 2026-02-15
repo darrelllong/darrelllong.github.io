@@ -5,6 +5,9 @@ tags: ["biography"]
 excerpt: "An electrical engineer from Novi Ligure who helped build Northern Italy's power infrastructure and trained the generation that built its computing infrastructure."
 ---
 
+![Angelo Barbagelata](/images/Angelo-Barbagelata.jpg)
+
+
 Angelo Barbagelata was born in Novi Ligure, in the province of Alessandria, in 1875. He earned his *laurea* in Electrical Engineering in 1898 and went to work at the National Electrotechnical Workshops of Eng. Monti in Pavia. By 1899 he was a volunteer assistant to Prof. Zunini at the IEICE Laboratory. In 1910 he qualified as *libero docente* in Electrical Measurements.
 
 He belonged to the second generation of Italian electrical engineers, the generation after Galileo Ferraris. He played a decisive role in the development of modern electric traction and made fundamental contributions to AC measurement. Most of the electrical installations in Northern Italy passed through his hands as designer and tester. From 1916 to 1925 he served as technical consultant to Società Breda, designing and testing power station machinery across the north of the country.
