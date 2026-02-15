@@ -17,7 +17,7 @@ Then the digital came calling. In 1953, Dadda was offered a National Science Fou
 
 ## Building a Computing Culture
 
-At Politecnico, Dadda did more than install the CRC 102A. He trained students and faculty on it, organized Italy's first university courses in electronic data processing, and ran the Centro di Calcolo as a computing hub open to both academic research and industry. He saw computing as infrastructure for the economy, not a curiosity for specialists.
+At Politecnico, Dadda did more than install the CRC 102A. He trained students and faculty on it, organized Italy's first university courses in electronic data processing, and ran the Centro di Calcolo as a computing hub open to both academic research and industry. He saw computing as infrastructure, something the whole economy would need.
 
 The CRC 102A lacked hardware for certain arithmetic operations. Dadda designed and built a floating-point arithmetic unit for it, effectively doubling its computing power. What started as a practical fix became a lifelong engagement with computer arithmetic.
 
