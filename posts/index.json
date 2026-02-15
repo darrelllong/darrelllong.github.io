@@ -33,5 +33,12 @@
     "date": "2026-02-14",
     "tags": ["biography"],
     "excerpt": "An electrical engineer from Novi Ligure who helped build Northern Italy's power infrastructure and trained the generation that built its computing infrastructure."
+  },
+  {
+    "slug": "2026-02-14-jehan-francois-paris",
+    "title": "Jehan-François Pâris",
+    "date": "2026-02-14",
+    "tags": ["biography"],
+    "excerpt": "From Belgium to Berkeley to Houston, with stops at Purdue and UC San Diego — my doctoral advisor."
   }
 ]
