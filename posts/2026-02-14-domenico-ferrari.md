@@ -2,7 +2,7 @@
 title: "Domenico Ferrari"
 date: "2026-02-14"
 tags: ["biography"]
-excerpt: "From Politecnico di Milano to Berkeley, shaping performance evaluation, BSD Unix, and Internet QoS."
+excerpt: "From Politecnico di Milano to Berkeley — performance evaluation, BSD Unix, and Internet QoS."
 ---
 
 Domenico Ferrari came from Piacenza and earned his Dottore in Ingegneria Elettronica from the Politecnico di Milano in 1963, studying under [Luigi Dadda](/blog/2026-02-14-luigi-dadda). He stayed briefly as an assistant professor, then left for the United States. In 1970, he joined the faculty at UC Berkeley in the Department of Electrical Engineering and Computer Sciences, where he would spend twenty-five years.
