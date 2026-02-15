@@ -17,4 +17,4 @@ In later years, Pâris's research moved toward storage reliability at scale: era
 
 He also worked on video-on-demand broadcasting protocols in the late 1990s and early 2000s, devising schemes for efficient delivery of popular video content to many users simultaneously, and on scalable reliable multicast.
 
-Pâris is a Senior Member of both the IEEE and the ACM. He supervised Ph.D. students at both UCSD and Houston across more than three decades. The academic line runs from [Barbagelata](/blog/2026-02-14-angelo-barbagelata) to [Bottani](/blog/2026-02-06-welcome) to [Dadda](/blog/2026-02-14-luigi-dadda) to Ferrari to Pâris to me. He is my advisor, and this is where my part of the story begins.
+Pâris is a Senior Member of both the IEEE and the ACM. He supervised Ph.D. students at both UCSD and Houston across more than three decades. The academic line runs from [Barbagelata](/blog/2026-02-14-angelo-barbagelata) to [Bottani](/blog/2026-02-06-ercole-bottani) to [Dadda](/blog/2026-02-14-luigi-dadda) to Ferrari to Pâris to me. He is my advisor.
