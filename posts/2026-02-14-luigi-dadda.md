@@ -21,7 +21,7 @@ At Politecnico, Dadda did more than install the CRC 102A. He trained students an
 
 The CRC 102A lacked hardware for certain arithmetic operations. Dadda designed and built a floating-point arithmetic unit for it, effectively doubling its computing power. What started as a practical fix became a lifelong engagement with computer arithmetic.
 
-By the late 1950s, Dadda had been instrumental in creating a new degree program in Electronic Engineering at Politecnico. He is widely regarded as Italy's first computer engineer and one of its first computer architects.
+By the late 1950s, Dadda had been instrumental in creating a new degree program in Electronic Engineering at Politecnico. He was, by any reasonable measure, Italy's first computer engineer.
 
 ## The Dadda Multiplier
 

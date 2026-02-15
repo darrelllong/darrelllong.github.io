@@ -11,25 +11,24 @@ He rose through the ranks to full professor, chaired the Computer Science Divisi
 
 ## Performance Evaluation
 
-Ferrari's early work at Berkeley was in computer systems performance. He brought rigorous statistical and analytical methods — queueing theory, workload characterization — to the measurement and modeling of time-sharing systems and virtual memory. His 1978 book *Computer Systems Performance Evaluation* became a standard reference, the kind of book that graduate students actually read rather than just cited.
+Ferrari's early work at Berkeley was in computer systems performance. He brought rigorous statistical and analytical methods — queueing theory, workload characterization — to the measurement and modeling of time-sharing systems and virtual memory. His 1978 book *Computer Systems Performance Evaluation* became a standard reference.
 
-In 1984, he wrote a pointed technical report arguing that performance evaluation had developed too much in isolation and needed to be woven into mainstream computer architecture and software design, not treated as an afterthought. He was right, and the field moved that way.
-
+In 1984, he wrote a pointed technical report arguing that performance evaluation had developed too much in isolation and needed to be woven into mainstream computer architecture and software design, not treated as an afterthought. 
 In 1987, he received the A.A. Michelson Award for outstanding contributions to computer metrics and was named an IEEE Fellow.
 
 ## Berkeley Unix
 
-When Bob Fabry stepped aside from the Computer Systems Research Group in the mid-1980s, Ferrari and Susan Graham took over administration of CSRG and the development of Berkeley Unix. Under their watch, the BSD project released 4.3BSD, which refined the TCP/IP stack and the Berkeley Fast File System that had been introduced in 4.2BSD. The BSD releases became the standard research platform for networking and distributed computing, and the open dissemination of the code fed directly into FreeBSD, OpenBSD, NeXTSTEP, and eventually macOS. The Berkeley socket API and networking code from this period are still with us — every time you open a network connection on practically any operating system, you're using abstractions that passed through Ferrari's shop.
+When Bob Fabry stepped aside from the Computer Systems Research Group in the mid-1980s, Ferrari and Susan Graham took over administration of CSRG and the development of Berkeley Unix. Under their watch, the BSD project released 4.3BSD, which refined the TCP/IP stack and the Berkeley Fast File System that had been introduced in 4.2BSD. The BSD releases became the standard research platform for networking and distributed computing, and the open dissemination of the code fed directly into FreeBSD, OpenBSD, NeXTSTEP, and eventually macOS. The Berkeley socket API and networking code from this period are still with us.
 
 ## The Tenet Group
 
-In 1989, Ferrari founded the Tenet Group at Berkeley and the International Computer Science Institute, turning his attention to a problem most people hadn't worried about yet: how to provide quality-of-service guarantees for real-time multimedia over packet-switched networks. The Internet at that point was best-effort only, and the idea of bounded delay and reserved bandwidth over IP was, to put it mildly, ahead of its time.
+In 1989, Ferrari founded the Tenet Group at Berkeley and the International Computer Science Institute, focusing on quality-of-service guarantees for real-time multimedia over packet-switched networks. The Internet at that point was best-effort only.
 
 The group designed and built two real-time protocol suites, Tenet I and II, and showed that you could carry video and audio with strict timing guarantees over wide-area networks if you got the scheduling and admission control right. They published extensively on delay jitter control, traffic specification, admission control, and rate-controlled scheduling. Many of the ideas — per-flow resource reservation, real-time transport protocols — anticipated later standards like Integrated Services and RSVP. Ferrari directed the Tenet Group until his retirement in 1995.
 
 ## Students
 
-Ferrari supervised over three dozen Ph.D. students at Berkeley between the early 1970s and 2000. The Mathematics Genealogy Project lists them, and the names read like a who's who of systems and networking research. His students went on to faculty positions at Bologna, Carnegie Mellon, Cornell, Rice, UC San Diego, Waterloo, and Berkeley itself, and to research labs at IBM and beyond. Some of them advised students who became major figures in their own right — the tree keeps branching.
+Ferrari supervised over three dozen Ph.D. students at Berkeley between the early 1970s and 2000. The Mathematics Genealogy Project lists them. His students went on to faculty positions at Bologna, Carnegie Mellon, Cornell, Rice, UC San Diego, Waterloo, and Berkeley itself, and to research labs at IBM and beyond. Some of them advised students who became major figures in their own right — the tree keeps branching.
 
 One of those students was Jehan-François Pâris, who became my own doctoral advisor. So the line runs from [Bottani](/blog/2026-02-06-welcome) to Dadda to Ferrari to Pâris to me — engineers and system builders, all the way down.
 
