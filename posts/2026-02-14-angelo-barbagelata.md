@@ -2,7 +2,7 @@
 title: "Angelo Barbagelata (1875–1960)"
 date: "2026-02-14"
 tags: ["biography"]
-excerpt: "An electrical engineer from Novi Ligure who helped build Northern Italy's power infrastructure and trained the generation that built its computing infrastructure."
+excerpt: "An electrical engineer from Novi Ligure who designed and tested most of the electrical installations in Northern Italy."
 ---
 
 ![Angelo Barbagelata](/images/Angelo-Barbagelata.jpg)
