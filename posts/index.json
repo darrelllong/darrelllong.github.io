@@ -5,5 +5,12 @@
     "date": "2026-02-06",
     "tags": ["biography"],
     "excerpt": "A pioneer in electrical engineering and computing."
+  },
+  {
+    "slug": "2026-02-14-luigi-dadda",
+    "title": "Luigi Dadda",
+    "date": "2026-02-14",
+    "tags": ["biography"],
+    "excerpt": "The father of Italian computer engineering, from analog circuits to the Dadda multiplier."
   }
 ]
