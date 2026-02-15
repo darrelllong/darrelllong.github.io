@@ -13,7 +13,7 @@ He enrolled in electrical engineering at the Politecnico di Milano and completed
 
 Dadda's early research was in analog computing: electrical network models applied to physics and engineering problems, solving Laplace's equations for studying magnetic fields and other phenomena. He worked with Bottani at the National Research Council on developing these analog computing models, simulating large power networks and physical systems. The work was concrete and applied, in the spirit of Bottani's insistence that engineering problems come first and theory follows.
 
-Then the digital came calling. In 1953, Dadda was offered a National Science Foundation scholarship to study at Caltech. He turned it down to join an initiative to build Italy's first digital computer. Under the Marshall Plan, the Politecnico secured funding for a state-of-the-art machine, and Dadda was sent to San Diego to collaborate with the Computer Research Corporation on the design of the CRC 102A. He worked on finalizing the computer and escorted it by ship to Italy in 1954, the machine packed carefully to protect its fragile vacuum tubes. It arrived in Milan to become the first working digital computer in Italy and, indeed, in continental Europe.
+Then the digital came calling. In 1953, Dadda was offered a National Science Foundation scholarship to study at Caltech. He turned it down to join an initiative to build Italy's first digital computer. Under the Marshall Plan, the Politecnico secured funding for a state-of-the-art machine, and Dadda was sent to San Diego to collaborate with the Computer Research Corporation on the design of the CRC 102A. He worked on finalizing the computer and escorted it by ship to Italy in 1954, the machine packed carefully to protect its fragile vacuum tubes. It arrived in Milan to become the first working digital computer in Italy.
 
 ## Building a Computing Culture
 
@@ -27,7 +27,7 @@ By the late 1950s, Dadda had been instrumental in creating a new degree program 
 
 In 1965, Dadda proposed an optimized scheme for high-speed parallel binary multiplication. The design featured a reduced-height tree of partial-sum adders to minimize the addition stages needed, improving both performance and cost-efficiency of arithmetic logic units. The Dadda multiplier, as it came to be known, remains a reference design for efficient hardware multipliers.
 
-Decades later, the IEEE recognized the Dadda multiplier as a Milestone achievement in electrical engineering. The only prior Italian recipients of an IEEE Milestone were Alessandro Volta, Guglielmo Marconi, and Enrico Fermi.
+In 2016, the IEEE recognized the Dadda multiplier as a Milestone achievement in electrical engineering. The prior Italian recipients of an IEEE Milestone included Alessandro Volta, Guglielmo Marconi, Antonio Pacinotti, and Enrico Fermi.
 
 His work in computer arithmetic continued throughout his career. He introduced new architectures for fast convolution in signal processing, developed specialized arithmetic units for the FERMI particle accelerator project at CERN, and worked on cryptographic applications. Even in his later years, he contributed to research on decimal arithmetic units.
 
