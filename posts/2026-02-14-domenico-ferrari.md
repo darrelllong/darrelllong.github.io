@@ -31,7 +31,7 @@ The group designed and built two real-time protocol suites, Tenet I and II, and 
 
 Ferrari supervised over three dozen Ph.D. students at Berkeley between the early 1970s and 2000. The Mathematics Genealogy Project lists them, and the names read like a who's who of systems and networking research. His students went on to faculty positions at Bologna, Carnegie Mellon, Cornell, Rice, UC San Diego, Waterloo, and Berkeley itself, and to research labs at IBM and beyond. Some of them advised students who became major figures in their own right — the tree keeps branching.
 
-One of those students was Jehan-François Pâris, who became my own doctoral advisor. So the line runs from [Bottani](/blog/2026-02-06-welcome) to Dadda to Ferrari to Pâris to me. I did not choose this lineage, but I am glad to have it. It is a lineage of people who built things — computing centers, operating systems, network protocols, academic programs — and who believed that good engineering and good science are not separate endeavors.
+One of those students was Jehan-François Pâris, who became my own doctoral advisor. So the line runs from [Bottani](/blog/2026-02-06-welcome) to Dadda to Ferrari to Pâris to me — engineers and system builders, all the way down.
 
 ## Return to Italy
 
@@ -41,4 +41,4 @@ After retiring from Berkeley in 1995, Ferrari went home. He founded the Center f
 
 Ferrari was named an IEEE Fellow in 1987 and an ACM Fellow in 2001. In 2006, he became the first Italian to receive the ACM SIGCOMM Award, one of the highest honors in computer networking. The citation recognized his contributions to Internet QoS architecture, his leadership of ICSI as a networking research center, his management of the Berkeley Unix project, and his mentorship of future leaders in the field.
 
-He is my academic grandfather. I never studied with him directly, but his influence reached me through Pâris, and through the systems and ideas he helped build. That is how academic lineage works when it works well — not as a credential, but as a way of thinking that gets passed along.
+He is my academic grandfather. I never studied with him directly, but his influence reached me through Pâris, and through the systems and ideas he helped build.
