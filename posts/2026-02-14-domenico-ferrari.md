@@ -17,7 +17,7 @@ In 1989, Ferrari founded the Tenet Group at Berkeley and the International Compu
 
 Ferrari supervised over three dozen Ph.D. students at Berkeley between the early 1970s and 2000. The Mathematics Genealogy Project lists them. His students went on to faculty positions at Bologna, Carnegie Mellon, Cornell, Rice, UC San Diego, Waterloo, and Berkeley itself, and to research labs at IBM and beyond.
 
-One of those students was [Jehan-François Pâris](/blog/2026-02-14-jehan-francois-paris), who became my own doctoral advisor. The line runs from [Bottani](/blog/2026-02-06-ercole-bottani) to [Dadda](/blog/2026-02-14-luigi-dadda) to Ferrari to Pâris to me — engineers and system builders, all the way down.
+One of those students was [Jehan-François Pâris](/blog/2026-02-14-jehan-francois-paris), who became my own doctoral advisor. The line runs from [Bottani](/blog/2026-02-06-ercole-bottani) to [Dadda](/blog/2026-02-14-luigi-dadda) to Ferrari to [Pâris](/blog/2026-02-14-jehan-francois-paris) to me — engineers and system builders, all the way down.
 
 After retiring from Berkeley in 1995, Ferrari went home. He founded the Center for Research on the Applications of Telematics to Organizations and Society (CRATOS) at the Universita Cattolica del Sacro Cuore in Piacenza, applying networking research to telemedicine, e-government, and the emerging internet economy. In 2000, he was appointed Professore Ordinario per Chiara Fama — full professor "by clear renown" — in Computer Science, and he launched a Master's program in Management in the Network Economy.
 
