@@ -12,5 +12,12 @@
     "date": "2026-02-14",
     "tags": ["biography"],
     "excerpt": "The father of Italian computer engineering, from analog circuits to the Dadda multiplier."
+  },
+  {
+    "slug": "2026-02-14-domenico-ferrari",
+    "title": "Domenico Ferrari",
+    "date": "2026-02-14",
+    "tags": ["biography"],
+    "excerpt": "From Politecnico di Milano to Berkeley, shaping performance evaluation, BSD Unix, and Internet QoS."
   }
 ]
