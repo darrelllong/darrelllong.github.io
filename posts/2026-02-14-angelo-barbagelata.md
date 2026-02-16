@@ -10,7 +10,7 @@ excerpt: "An electrical engineer from Novi Ligure who designed and tested most o
 
 Angelo Barbagelata was born in Novi Ligure, in the province of Alessandria, in 1875. He earned his *laurea* in Electrical Engineering in 1898 and went to work at the National Electrotechnical Workshops of Eng. Monti in Pavia. By 1899 he was a volunteer assistant to Prof. Zunini at the IEICE Laboratory. In 1910 he qualified as *libero docente* in Electrical Measurements.
 
-He belonged to the second generation of Italian electrical engineers, after Galileo Ferraris. He worked on electric traction and AC measurement. Most of the electrical installations in Northern Italy passed through his hands as designer and tester. From 1916 to 1925 he served as technical consultant to Società Breda, designing and testing power station machinery across the north of the country.
+He belonged to the generation of Italian electrical engineers after Galileo Ferraris. He worked on electric traction and AC measurement. Most of the electrical installations in Northern Italy passed through his hands as designer and tester. From 1916 to 1925 he served as technical consultant to Società Breda, designing and testing power station machinery across the north of the country.
 
 At the Politecnico di Milano, he rose through the chairs: professor of Electrical Machines in 1914, extraordinary professor of Electrical Machine Construction in 1923, ordinary professor of Electrical Technologies and then Electrical Systems in 1926. From 1931 to 1948 he taught Electrical Measurements and directed the Carlo Erba Institution at the Politecnico. In 1950 he became Professor Emeritus. He also taught at ITIS Feltrinelli in Milan and directed the Politecnico's School for Welding Workers.
 
