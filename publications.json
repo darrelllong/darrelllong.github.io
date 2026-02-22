@@ -622,7 +622,7 @@
     "id": 28,
     "title": "Data Placement Based on Seek Time Analysis of a MEMS-based Storage Device",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Reducing access times to secondary I/O devices has long been the focus of many systems researchers. With traditional disk drives, access time is the composition of transfer time, seek time and rotational latency, so many techniques as to minimize these factors, such as ordering I/O requests or intelligently placing data, have been developed. MEMS-based storage devices are seen by many as a replacement or an augmentation for modern disk drives, but algorithms for reducing access time for MEMS-based storage are still poorly understood. These devices, based on MicroElectroMechanical systems (MEMS), use thousands of active read/write heads working in parallel on a non-rotating magnetic substrate, eliminating rotational latency from the access time equation. This leaves seek time as the dominant variable. Therefore, new data layout techniques based on minimizing the unique seek time characteristics of a MEMS-based storage device can be developed. This paper begins to examine the access qualities of a MEMS-based storage device, and based on experimental simulation, develops an understanding of the seek time characteristics of such a device. These characteristics then allow us to identify equivalent regions in which to place data for improved access.",
     "author": [
       "Euiseong Seo",
       "Seon-Yeong Park",
@@ -1002,7 +1002,7 @@
     "id": 43,
     "title": "Identifying Stable File Access Patterns",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Disk access times have not kept pace with the evolution of disk capacities, CPU speeds and main memory sizes. They have only improved by a factor of 3 to 4 in the last 25 years whereas other system components have almost",
     "author": [
       "Purvi Shah",
       "Jehan-François Pâris",
@@ -1767,7 +1767,7 @@
     "id": 76,
     "title": "Reliability Modelling of Disk Subsystems with Probabilistic Model Checking",
     "short_description": "",
-    "full_content": "",
+    "full_content": "We discuss how probabilistic model checking, a variant of model checking, can be useful in modelling multiple failures in disk subsystems, as it allows specification of probabilities or rates of transitions also. Probabilistic model checking can be used to not only check the correctness of formulae that are augmented with a probability operator, but also to compute, as a side effect, probabilities and Markov rewards in response to queries expressed in an expressive logic. With exponential distributions for failures, it is possible to accurately compute the reliability of many non-trivial disk systems. Exploiting the technique of symmetry reduction, it is possible to handle even larger fully symmetric systems.",
     "author": [
       "K. Gopinath",
       "Jon Elerath",
@@ -2031,7 +2031,7 @@
     "id": 89,
     "title": "Provenance Based Rebuild: Using Data Provenance to Improve Rebuild",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Traditionally, data preservation and reliability have used error correcting codes (ECCs) to ensure data safety. The development of general data provenance tracking systems provides a new opportunity for data reliability. We present a method that utilizes provenance to determine a datum’s generating process and inputs, and then uses this information to recompute lost data. This method, called Provenance Based Rebuild (PBR) provides a new, complimentary reliability mechanism that integrates with traditional systems to offer a variety of benefits including fine grained prioritized rebuild and parallel rebuild. While PBR offers benefits that address weaknesses in current techniques, it also faces a number of challenges such as data placement, and infrastructure provisioning.",
     "author": [
       "Kiran-Kumar Muniswamy-Reddy",
       "Darrell D. E. Long"
@@ -2106,7 +2106,7 @@
     "id": 92,
     "title": "Tracking Emigrant File Data via Transient Provenance",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Information leaks are a constant worry for companies and government organizations. After a leak occurs it is very important for the data owner to not only determine the extent of the leak, but who originally leaked the information. We propose a technique to extend data provenance to aid in determining potential sources of information leaks. While data provenance is commonly defined as the ancestry of a file, the ancestry recorded depends on the provenance collector. Instead of only recording where a file came from, we propose to also track when and where a file leaves the system. To track these departures, we suggest the use of ghost objects when a file is either written to a mounted external storage device or copied to a client machine via NFS or any other network interface such as SSH or FTP. We present our solution for tracking emigrant data and explain the minor changes to current provenance-aware storage systems required to enable our solution.",
     "author": [
       "Stephanie N. Jones",
       "Christina R. Strong",
@@ -2155,7 +2155,7 @@
     "id": 94,
     "title": "Los Alamos National Laboratory Interviews",
     "short_description": "",
-    "full_content": "",
+    "full_content": "This technical report contains the compilation of notes from a series of interviews conducted at Los Alamos National Laboratory (LANL). The interviews were focused on the scientists who used the supercomputers at LANL and the code developers who wrote code for use on the supercomputers. Interviewee data has been anonymized.",
     "author": [
       "Darrell D. E. Long"
     ],
@@ -2271,7 +2271,7 @@
     "id": 99,
     "title": "Making Sense of File Systems Through Provenance and Rich Metadata",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Modern high end computing systems store hundreds of petabytes of data and have billions of files, as many files as the internet of only a few years ago. Even modern personal computers store numbers of files that would be massive for the largest mainframe computers of 40 years ago. The quantities of data in modern computing have long since overwhelmed anyone’s ability to manage it manually, and the 40 year old tools currently in use for file finding and management are reaching the limits of scale. In an environment like this, secure, effective, and efficient search algorithms and automatic file management become a necessity, not a nicety. Our proposal addresses the question of how users can quickly find and manage files, without burdening the file system with expensive brute force searches, or requiring the user to become an expert in query languages. We propose a number of algorithms to improve file management in a large scale scientific computing environment. By collecting new metadata, including file system provenance, we propose to provide new ranking algorithms which are efficient and effective on large multi-user file systems. We intend to reduce the burden of file naming, allowing the system to generate expressive, unique file names on the fly; we have identified a statistical property of data that is likely to select meaningful attributes for file names. And since security is a concern on many large scientific computing systems, we intend to analyze the security properties of the proposed ranking algorithms, and demonstrate how our ranking algorithm degrades gracefully from the ideal ranking when applied in a setting with restrictive security permissions. We will validate our results using real world scientific data, and provide statistical analyses of rich metadata and provenance from this data. And we will validate our ranking and naming algorithms through a series of in situ user studies. Modern data management must be automatic and scalable, allowing users and file systems to focus on what each does best. By exploiting patterns of human behavior, the system can provide faster searches and more interpretable interfaces to the file system. Data growth is not expected to level off anytime soon, and file systems must be ready to handle the load.",
     "author": [
       "Aleatha Parker-Wood",
       "Stephanie N. Jones",
@@ -2294,7 +2294,7 @@
     "id": 100,
     "title": "Computer Hard Drive Geolocation by HTTP Feature Extraction",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Geolocation data have high value to forensic investigators because computer activities may be associated with physical locations in the past. However, locating and extracting useful location information from an off-line disk image is a difficult problem. Most forensic investigations employ tools that focus on extracting content, such as emails, databases, and hidden or deleted data, and then manually investigate the results with practices like keyword searches. While this can work on a drive-by-drive basis, without a uniform approach to the location question, it is easy for an investigator to miss an answer that could be found from an evaluated technique known to other investigators. To determine drive location, we develop a two-step approach that analyzes a drive image for geolocation purposes, finding substantial location information in HTTP headers from common and default sources. First, we extract HTTP headers from the memory page (swap) files that reside on the hard drive. Second, we apply a weight based algorithm that parses those headers to determine the past geographical locations of the drive. We apply our method to drive images from the publicly available M57 Patents corpus and identify the hard drives’ location with low recall but high precision.",
     "author": [
       "Austin Hendricks",
       "Joel Coffman",
@@ -2340,7 +2340,7 @@
     "id": 102,
     "title": "Exploring Trusted Networking for Protected Applications",
     "short_description": "",
-    "full_content": "",
+    "full_content": "In modern computing systems, networking is critical. In the context of trusted application environments, building a trusted networking interface remains an open question. In this paper, we categorize the networking needs of trusted applications into three modes: Local Equivalent, Trusted Local Networks and Internet-Wide Trusted Networking. Collectively these modes enable trusted applications to do everything from securely accessing the network to establishing a valid identity on the local network, or even the Internet. We explore the hardware mechanisms available in currently shipping products which can be used to implement our interfaces. We discuss our plans to prototype these networking interfaces in our lab’s trusted platform called LockBox. We conclude that our trusted networking design is feasible using existing hardware and is ready for implementation.",
     "author": [
       "Darrell D. E. Long",
       "Thomas J. E. Schwarz",
@@ -2640,7 +2640,7 @@
     "id": 114,
     "title": "Building JACK: Developing Metrics for Use in Multi-Objective Optimal Data Allocation Strategies",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Current file systems optimize for a single objective, often to the detriment of other objectives. This can result in an unbalanced system that does not reflect the needs of the system or its users. We suggest addressing the data allocation problem as a multi-objective optimization problem, usingourgeneraldataplacementframework, JACK. This provides us with a means of finding an optimal data allocation, tailored to the requirements of individual systems, requiring at most the specification of the relative importance of competing performance goals. For such an approach to be feasible, we need to define meaningful, yet observable, metrics for such a multiobjective optimization problem. We introduce the objectives we intend to optimize for and example metrics which can be used to gauge them. We provide a detailed description of how each metric was developed, using a data set provided by Los Alamos National Laboratory for evaluation. We also explain how the metrics enable the development of JACK, with the intent that others can make use of our metrics and develop their own metrics for additional performance goals.",
     "author": [
       "Christina Strong",
       "Ahmed Amer",
@@ -2662,7 +2662,7 @@
     "id": 115,
     "title": "A File By Any Other Name: Managing File Names with Metadata",
     "short_description": "",
-    "full_content": "",
+    "full_content": "File names are one of the earliest computing abstractions, a string of characters to uniquely identify a file for the system, and to help users remember the contents when they look for it later. They are also a rich source of semantic metadata about files. However, this metadata is unstructured and opaque to the rest of the system. As a result, metadata in file names is often error-prone, and hard to search for. File names can and should be more meaningful and reliable, while simplifying application design and encouraging users and applications to provide more metadata for search. We describe a POSIX compliant prototype file system, TrueNames, which demonstrates an alternate approach to naming and metadata, called metadata aware naming. TrueNames separates the task of uniquely identifying a file from the task of helping the user remember its contents. It captures metadata in a structured format for later indexing, and uses it to generate file names which are correct, regenerable, and disambiguatable by design. TrueNames simplifies application design by providing a consistent interface for metadata aware naming, incurs a low overhead of approximately 15% under realistic workloads, and can simplify a wide variety of data management tasks for both applications and users.",
     "author": [
       "Aleatha Parker-Wood",
       "Darrell D. E. Long",
@@ -3108,7 +3108,7 @@
     "id": 133,
     "title": "Pagoda: A Hybrid Approach to Enable Efficient Real-time Provenance Based Intrusion Detection in Big Data Environments",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Efficient intrusion detection and analysis of the security landscape in big data environments present challenge for today’s users. Intrusion behavior can be described by provenance graphs that record the dependency relationships between intrusion processes and the infected files. Existing intrusion detection methods typically analyze and identify the anomaly either in a single provenance path or the whole provenance graph, neither of which can achieve the benefit on both detection accuracy and detection time. We propose Pagoda, a hybrid approach that takes into account the anomaly degree of both a single provenance path and the whole provenance graph. It can identify intrusion quickly if a serious compromise has been found on one path, and can further improve the detection rate by considering the behavior representation in the whole provenance graph. Pagoda uses a persistent memory database to store provenance and aggregates multiple similar items into one provenance record to maximumly reduce unnecessary I/O during the detection analysis. In addition, it encodes duplicate items in the rule database and filters noise that does not contain intrusion information. The experimental results on a wide variety of real-world applications demonstrate its performance and efficiency.",
     "author": [
       "Yulai Xie",
       "Dan Feng",
@@ -3231,7 +3231,7 @@
     "id": 138,
     "title": "The Flipside: A Bit Flip Saved is Power and Lifetime Earned",
     "short_description": "",
-    "full_content": "",
+    "full_content": "We have an opportunity to rethink, from scratch, the design of our data structures. New byte-addressable non-volatile memory (BNVM) technologies promise the construction of systems with large persistent memories, potentially improving reliability and performance. With these technologies come new characteristics that deviate from those of flash and spinning disk—and with new characteristics come new optimization goals. In particular, the read/write cost disparity and fine granularity of updates allows us to save power and wear by reducing the bits flipped during writes to memory. Targeting these optimizations by formulating new data structure design and implementation strategies instead of relying on existing ideas will be vital for BNVM technology to reach its full potential. We modified a full-system simulator to count bit flips during program operation, opening the door for future research to design, construct, and evaluate data structures for these new goals. New Optimization Targets As byte-addressable non-volatile memories (BNVMs) become common, it is increasingly important that systems are optimized to leverage their strengths and avoid stressing their weaknesses. Historically, such optimizations have included reducing the number of writes performed, either by designing data structures that require fewer writes or by using hardware techniques such as caching to reduce writes. While still worthwhile, write-reduction fails to take advantage of a key optimization made by the memory controller in those nonvolatile memories. Some technologies, including phase-change memory (PCM), have a significant disparity between the cost—be it power, time, or wear—of reading a cell and writing a cell. When these technologies also support fine granularity updates, they can make use of a clever optimization: checking if a cell already contains the new, target value [10] instead of blindly overwriting it. Such an optimization yields a change in perspective on what is costly when operating on BNVM; it is not the writes themselves so much as bits flipped during the writes. In PCM, for example, changing a cell consumes 15.7−22.5x more power than reading a cell [5, 6] in addition to causing wear-out (a significant problem for PCM as it has limited endurance). Therefore, system designers ought to consider the effects of bit flips when building systems for BNVM, both when considering the target use-case for the hardware and picking an appropriate combination of BNVM and DRAM, but also when considering the design of the software that issues the writes in the first place. To get a sense of how write patterns might affect power consumption, Figure 1 shows a model of power consumption of DRAM and PCM under a varying number of bit flips per second. The power consumption of PCM depends heavily on the bit flips per second, while DRAM’s power consumption is relatively independent. We also see that DRAM requires a high “maintenance” power (due to the need to refresh), whereas PCM does not. The choice to use a particular technology could depend,",
     "author": [
       "Daniel Bittman",
       "Peter Alvaro",
@@ -3426,7 +3426,7 @@
     "id": 146,
     "title": "Measuring the Cost of Reliability in Archival Systems",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Archival systems provide reliable and cost-effective data storage over a long period of time. Existing technologies offer familiar and well-defined features, but uncertainties about future developments complicate decisions about selecting the best storage technology that will continue to scale in the future. Furthermore, inaccurate assumptions about the long-term reliability of each storage technology can result in the use of suboptimal storage technologies for an archival system or the unwanted loss of data. Prospective storage technologies like archival glass and synthetic DNA may deliver much greater capacity and reliability than do existing technologies, yet their availability and exact features remain uncertain. As each storage technology develops and changes over time, its reliability may also change and give rise to further uncertainties about the long-term cost of highly reliable archival systems. We present results of simulations that explore the effects of various technology developments upon the cost of constructing archival systems that meet various levels of reliability against data loss. We show that storage density more than device reliability dominates the cost of constructing and maintaining reliable archival storage systems, and innovations to increase storage density—even at the expense of individual device reliability—can reduce total archival system cost. We also explore the advantages of prospective over existing archival storage technologies, and we present estimates of the extent to which their availability will affect the cost of long-term data storage.",
     "author": [
       "James Byron",
       "Ethan L. Miller",
@@ -3548,7 +3548,7 @@
     "id": 151,
     "title": "Avoiding Surprise in an Era of Global Technology Advances",
     "short_description": "",
-    "full_content": "",
+    "full_content": "A National Research Council committee report examining global technology trends and their implications for national competitiveness and security. Published by the National Academies Press, 2005. Darrell D.E. Long served as a contributor alongside experts from across science, engineering, and policy.",
     "author": [
       "Ruth A. David",
       "Steven R.J. Brueck",
@@ -3585,7 +3585,7 @@
     "id": 152,
     "title": "Theory of Finite Automata",
     "short_description": "",
-    "full_content": "",
+    "full_content": "A textbook covering the theory of finite automata, formal languages, and related topics in theoretical computer science. Co-authored by John L. Carroll and Darrell D.E. Long. Published by Prentice-Hall, Englewood Cliffs, New Jersey, 1989.",
     "author": [
       "John L. Carroll",
       "Darrell D. E. Long"
@@ -3918,7 +3918,7 @@
     "id": 166,
     "title": "A Technique for Managing Mirrored Disks",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Disk mirroring is a highly effective technique for improving the fault tolerance and performance of storage systems. Mirroring requires that those disks holding the current data must be determined when recovering from total system failure. In a two disk system, this is only a minor problem since the operator can indicate which disk is current. The complexity increases when more disks are introduced, and requiring human intervention is impractical when the target environment is the consumer market. In these situations, automatic recovery must be used when possible. We describe an efficient algorithm for managing the consistency of mirrored storage. Our algorithm requires only n+log n bits of state per disk and does not require logging or quorum collection.",
     "author": [
       "Darrell D. E. Long"
     ],
@@ -4011,7 +4011,7 @@
     "id": 170,
     "title": "A Note On Bit-Mapped Free Sector Management",
     "short_description": "",
-    "full_content": "",
+    "full_content": "The most common methods for maintaining a list of free sectors on disk are to use either a linked list or a bit map [1]. Using a linked list has the advantage that requires no extra storage since the links are stored in the free sectors. It also provides quick allocation and deallocation, requiring only that a free sector be removed from the head of the list, or a freed sector be added to the head of the list,",
     "author": [
       "Darrell D. E. Long"
     ],
@@ -4245,7 +4245,7 @@
     "id": 181,
     "title": "Pirogue: A lighter dynamic version of the Raft distributed consensus algorithm",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Raft is a new distributed consensus algorithm that is easier to understand than the older Paxos algorithm. Raft's major drawback is its high energy footprint: as it relies on static quorums for deciding when it can commit updates, it requires five participants to protect against two simultaneous failures. We propose to reduce this footprint by replacing the static quorums that Raft currently uses by quorums that vary according to the number of currently available participants. We present first a modified dynamic-linear voting protocol that disables single-server updates and show that a Raft cluster with four participants managed by this protocol would be almost as available as a conventional Raft cluster with five participants and always tolerate the irrecoverable failure of any single participant without any data loss. In addition, we show a Raft cluster with three participants and a witness managed by an unmodified dynamic-linear voting protocol would be more available than a conventional Raft cluster with five participants and could still tolerate most irrecoverable failures of any single participant while maintaining recoverability.",
     "author": [
       "Jehan-François Pâris",
       "Darrell D. E. Long"
@@ -4331,7 +4331,7 @@
     "id": 185,
     "title": "DBaaS-Expert: A Recommender for the Selection of the Right Cloud Database",
     "short_description": "",
-    "full_content": "",
+    "full_content": "The most important benefit of Cloud Computing is that organizations no longer need to expend capital up-front for hardware and software purchases. Indeed, all services are provided on a pay-per-use basis. The cloud services market is forecast to grow, and numerous providers offer database as a service (DBaaS). Nevertheless, as the number of DBaaS offerings increases, it becomes difficult to compare various offerings through checking of documentation that is ads-oriented. In this paper, we propose and describe DBaaS-Expert — a framework which helps a user to choose the right DBaaS Cloud Provider among DBaaS offerings. The core components of DBaaS-Expert are first an ontology which captures cloud data management systems services concepts, and second a ranking core which scores each DBaaS offer in terms of criteria.",
     "author": [
       "Soror Sahri",
       "Rim Moussa",
@@ -4818,7 +4818,7 @@
     "id": 208,
     "title": "A Low Bandwidth Broadcasting Protocol for Video on Demand",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Broadcasting protocols can improve the efficiency of video on demand services by reducing the bandwidth required to transmit videos that are simultaneously watched by many viewers. We present a polyharmonic broadcasting protocol that requires less bandwidth than the best extant protocols to achieve the same low maximum waiting time. We also show how to modify the protocol to accommodate very long videos without increasing the buffering capacity of the set-top box.",
     "author": [
       "Jehan-François Pâris",
       "Steven W. Carter",
@@ -4840,7 +4840,7 @@
     "id": 209,
     "title": "Efficient Broadcasting Protocols for Video on Demand",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Broadcasting protocols can improve the efficiency of video on demand services by reducing the bandwidth required to transmit videos that are simultaneously watched by many viewers. We present two broadcasting protocols that achieve nearly the same low bandwidth as the best extant broadcasting protocol while guaranteeing a lower maximum access time. Our first protocol, cautious harmonic broadcasting, requires somewhat more bandwidth than our second protocol, quasi-harmonic broadcasting, but is also much simpler to implement.",
     "author": [
       "Jehan-François Pâris",
       "Steven W. Carter",
@@ -5273,7 +5273,7 @@
     "id": 229,
     "title": "The Effect of Failure and Repair Distributions on Consistency Protocols for Replicated Data Objects",
     "short_description": "",
-    "full_content": "",
+    "full_content": "The accessibility of vital information can be enhanced by replicating the data on several sites, and employing a consistency control protocol to manage the copies.Various protocols have been proposed to ensure that only current copies of the data can be accessed. The effect these protocols have on the accessibility of the replicated data is investigated by simulating the operation of the network and measuring the performance. Several strategies for replica maintenance are considered, and the benefits of each are analyzed. The details of the simulations are discussed. Measurements of the reliability and the availability of the replicated data are compared and contrasted.The sensitivity of the Available Copy and Dynamic-linear Voting protocols to common patterns of site failures and repairs is studied in detail. Exponential, Erlang, uniform, and hyperexponential distributions are considered, and the effect the second moments have on the results is analyzed. The relative performance of competing protocols is shown to be only marginally affected by non-exponential distributions, validating the robustness of the exponential approximations.",
     "author": [
       "John L. Carroll",
       "Darrell D. E. Long"
@@ -5557,7 +5557,7 @@
     "id": 242,
     "title": "Ensuring Data Survival in Solid-State Storage Devices",
     "short_description": "",
-    "full_content": "",
+    "full_content": "The emergence of more reliable, often much faster solid-state storage devices is revolutionizing most aspects of data storage technology. Here we address the impact of these new storage devices on the techniques used to ensure data survival. In particular, we show that the higher bandwidth-to-capacity ratios of the new Storage Class Memory devices will make self-adaptive storage solutions much more attractive.",
     "author": [
       "Jehan-François Pâris",
       "Darrell D. E. Long",
@@ -5643,7 +5643,7 @@
     "id": 246,
     "title": "Caching Files with a Program-based Last $n$ Successors Model",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Recent increases in CPU performance have outpaced increases in hard drive performance. As a result, disk operations have become more expensive in terms of CPU cycles spent waiting for disk operations to complete. File prediction can mitigate this problem by prefetching files into cache before they are accessed. However, incorrect prediction is to a certain degree both unavoidable and costly. We present the Program-based Last N Successors (PLNS) file prediction model that identifies relationships between files through the names of the programs accessing them. Our simulation results show that PLNS makes at least 21.11% fewer incorrect predictions and roughly the same number of correct predictions as the last-successor model. We also examine the cache hit ratio of applying PLNS to the Least Recently Used (LRU) caching algorithm and show that a cache using PLNS and LRU together can perform as well as a cache up to 40 times larger using LRU alone.",
     "author": [
       "Tsozen Yeh",
       "Darrell D. E. Long",
@@ -5750,7 +5750,7 @@
     "id": 251,
     "title": "Bandwidth Allocation Issues in Near Video on Demand Services",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Near video on demand (NVOD) services broadcast popular videos repeatedly to reduce the bandwidth required to serve many simultaneous viewers. One of the most important decisions a NVOD provider must make is how frequently to rebroadcast each video: very frequent rebroadcasts minimize customer waiting time but increase bandwidth cost, while less frequent rebroadcasts risk losing viewers unwilling to wait. This paper addresses the problem of selecting the optimal rebroadcasting frequency for each video by choosing the frequencies that maximize the expected number of viewers per unit of bandwidth. We present two strategies tailored to step and three-level staircase customer tolerance functions, and show that outcomes depend strongly on the relative popularity of the videos broadcast.",
     "author": [
       "Jehan-François Pâris",
       "Steven W. Carter",
@@ -5772,7 +5772,7 @@
     "id": 252,
     "title": "A Replicated Monitoring Tool",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Modeling the reliability of distributed systems requires a good understanding of the reliability of the components. Careful modeling allows highly fault-tolerant distributed applications to be constructed at the least cost. Realistic estimates can be found by measuring the performance of actual systems. An enormous amount of information about system performance can be acquired with no special privileges via the Internet. A distributed monitoring tool called a tattler is described. The system is composed of a group of tattler processes that monitor a set of selected hosts. The tattlers cooperate to provide a fault-tolerant distributed data base of information about the hosts they monitor. They use weak-consistency replication techniques to ensure their own fault-tolerance and the eventual consistency of the data base that they maintain.< <ETX xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">&gt;</ETX>",
     "author": [
       "Darrell D. E. Long"
     ],
@@ -5812,7 +5812,7 @@
     "id": 254,
     "title": "The Management of Consistency in Fault-Tolerant File Systems",
     "short_description": "",
-    "full_content": "",
+    "full_content": "Critical data are often replicated in distributed systems to protect them against site failures and network partitions or to allow higher access rates. This trend benefits from recent advances in computer network technology and reductions in the cost of storage media, which have made the replication of important files on several sites a cost-effective proposition. The existence of several copies of the same file raises the issue of file consistency. Distributed file systems implementing file replication need to enforce an access policy isolating their users from that issue and maintaining a consistent view of all replicated data under all possible circumstances. Several consistency protocols have been discussed in the literature, including token-based schemes, active copy schemes and schemes based on quorum consensus. We present the tools used to evaluate their performance with respect to other consistency schemes, focusing on two key issues: copy locations and network topology play a primary role in the selection of a consistency protocol, and there is no need to compromise between file availability and network traffic overhead as all protocols can be efficiently implemented using possibly out-of-date information.",
     "author": [
       "Jehan-François Pâris",
       "Darrell D. E. Long",
@@ -5834,7 +5834,7 @@
     "id": 255,
     "title": "Optimistic Algorithms for Replicated Data Management",
     "short_description": "",
-    "full_content": "",
+    "full_content": "In a distributed system, data are often replicated for protection against site failures and network partitions. Through the use of replication, increased availability of data and reliability of access can be obtained. When data are replicated at several sites, an access policy must be chosen to ensure a consistent view of the data as though there were only a single replica. The simplest consensus algorithm, static majority consensus voting, provides consistency control and mutual exclusion, but does not achieve the highest possible availability since it requires a majority of sites to be reachable for any access request. We propose Optimistic Dynamic Voting, which operates on possibly out-of-date information about system state. We show that the scheme preserves mutual exclusion and data consistency while offering benefits in efficiency and ease of implementation.",
     "author": [
       "Darrell D. E. Long"
     ],
