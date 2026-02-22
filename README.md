@@ -1,32 +1,45 @@
-# Darrell's GitHub Page
+# Darrell Long — Academic Website
 
-## Publications
+Personal academic website for [Darrell D.E. Long](https://www.soe.ucsc.edu/people/darrell),
+Distinguished Professor Emeritus, UC Santa Cruz.
 
-Publications go in ```_publications```. See any publication inside for a general
-template. Each publication is given its own markdown post for formatting.
+**Live site:** https://darrelllong.github.io
 
-## Assets
+## Stack
 
-Assets, or static files, for the page go in ```assets```. This includes images,
-PDFs, etc., each of which should be stored under its own subdirectory (e.g.
-```assets/pdfs```, ```assets/images```).
+React 18 + Vite + React Router, served as a static SPA on GitHub Pages (no Jekyll).
 
-## Layouts
+## Development
 
-There are a couple layouts of note, each with its own purpose:
-  - ```frontmatter.html```: for the side profile
-  - ```page.html```: for displaying just the content of a markdown file,
-  - ```pdf.html```: for displaying embedded PDFs
-  - ```publication.html```: for displaying a publication
-  - ```publications.html```: for formatting the display of all publications
+```bash
+cd src
+npm install
+npm run dev      # development server with HMR
+npm run build    # production build → src/dist/
+npm run deploy   # build + copy to repo root (required before pushing)
+```
 
-## Navigation
+## Deployment
 
-Adding additional pages requires changing ```_config.yml```, under the
-```navigation``` list, which should be self-explanatory. If the additional page
-is to be on the same domain, a markdown or HTML file in the root directory
-should be added as well (like with ```cv.md```).
+Manual. The site is served from the repo root on the `master` branch.
 
-## Credits
+```bash
+cd src && npm run deploy
+cd ..
+git add -A && git commit -m "Deploy" && git push
+```
 
-Credits to the ```plainwhite-jekyll``` gem for the base HTML/CSS.
+## Content
+
+| File | Purpose |
+|------|---------|
+| `publications.json` | All publications (title, authors, BibTeX, abstract) |
+| `patents.json` | Patent records |
+| `posts/*.md` | Blog posts (Markdown with YAML frontmatter) |
+| `posts/index.json` | Blog post manifest — add entries here for new posts |
+| `pentexoire.json` | Consultancy team data |
+
+## Blog posts
+
+Create `posts/YYYY-MM-DD-slug.md` with frontmatter, add an entry to `posts/index.json`,
+then commit and push — no build step needed for blog content.
