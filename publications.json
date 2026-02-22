@@ -3895,7 +3895,7 @@
     "id": 165,
     "title": "Experimentally Evaluating In-Place Delta Reconstruction",
     "short_description": "",
-    "full_content": "",
+    "full_content": "In-place reconstruction of delta compressed data allows information on devices with limited storage capability to be updated efficiently over low-bandwidth channels. Delta compression encodes a version of data compactly as a small set of changes from a previous version. Transmitting updates to data as delta versions saves both time and bandwidth. In-place reconstruction rebuilds the new version of the data in the storage or memory space the current version occupies — no additional scratch space is needed. By combining these technologies, we support large-scale, highly-mobile applications on inexpensive hardware. We present an experimental study of in-place reconstruction algorithms. We take a data-driven approach to determine important performance features, classifying files distributed on the Internet based on their in-place properties, and exploring the scaling relationship between files and data structures used by in-place algorithms. We conclude that in-place algorithms are I/O bound and that the performance of algorithms is most sensitive to the size of inputs and outputs, rather than asymptotic bounds.",
     "author": [
       "Randal Burns",
       "Larry Stockmeyer",
