@@ -4989,7 +4989,7 @@
     "id": 216,
     "title": "A Longitudinal Study of Internet Host Reliability",
     "short_description": "",
-    "full_content": "",
+    "full_content": "An accurate estimate of host reliability is important for correct analysis of many fault-tolerance and replication mechanisms. In a previous study, we estimated host system reliability by querying a large number of hosts to find how long they had been functioning, estimating the mean time-to-failure (MTTF) and availability from those measures, and in turn deriving an estimate of the mean time-to-repair (MTTR). However, this approach had a bias towards more reliable hosts that could result in overestimating MTTR and underestimating availability. To address this bias we have conducted a second experiment, using a fault-tolerant replicated monitoring tool. This tool directly measures TTF, TTR, and availability by polling many sites frequently from several locations. We find that these more accurate results generally confirm and improve our earlier estimates, particularly for TTR. We also find that failure and repair are unlikely to follow Poisson processes.",
     "author": [
       "Darrell Long",
       "Andrew Muir",
