@@ -1,6 +1,7 @@
 // Dependencies
 import React from "react";
 import PropTypes from "prop-types";
+import { Helmet } from "react-helmet-async";
 import { Link, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -50,6 +51,10 @@ export default function BlogPost({ search }) {
 
   return (
     <>
+      <Helmet>
+        <title>{post.title} | Darrell Long</title>
+        <meta name="description" content={post.excerpt || ""} />
+      </Helmet>
       <article className="blog-article">
         <header>
           <h2>{post.title}</h2>

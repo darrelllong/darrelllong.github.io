@@ -1,6 +1,7 @@
 // Dependencies
 import React from "react";
 import PropTypes from "prop-types";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Assets
@@ -156,6 +157,8 @@ const Publication = ({ publication, publications, search }) => {
     );
   }
 
+  const description = (publication.short_description || publication.full_content?.split("\n")[0] || "").slice(0, 160);
+
   const lines = [];
   if (publication.full_content) {
     lines.push(...publication.full_content.split("\n"));
@@ -169,6 +172,10 @@ const Publication = ({ publication, publications, search }) => {
 
   return (
     <>
+      <Helmet>
+        <title>{publication.title} | Darrell Long</title>
+        <meta name="description" content={description} />
+      </Helmet>
       <article>
         <Header {...publication} search={search} />
         <Abstract paragraphs={lines} />

@@ -1,6 +1,7 @@
 // Dependencies
 import React from "react";
 import PropTypes from "prop-types";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Assets
@@ -152,6 +153,10 @@ const Patent = ({ patent, patents, search }) => {
 
   return (
     <>
+      <Helmet>
+        <title>{patent.title} | Darrell Long</title>
+        <meta name="description" content={(patent.short_description || "").slice(0, 160)} />
+      </Helmet>
       <article>
         <Header {...patent} search={search} />
         <Description text={patent.short_description} />
