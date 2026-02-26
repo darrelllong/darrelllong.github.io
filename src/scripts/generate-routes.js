@@ -76,7 +76,7 @@ const staticRoutes = [
 ];
 
 for (const r of staticRoutes) {
-  const url = `${BASE_URL}/${r.path}`;
+  const url = `${BASE_URL}/${r.path}/`;
   writeRoute(r.path, { title: r.title, description: r.description, canonicalUrl: url });
   allUrls.push(url);
 }
@@ -84,7 +84,7 @@ for (const r of staticRoutes) {
 // Publications
 const publications = JSON.parse(readFileSync(join(repoRoot, 'publications.json'), 'utf-8'));
 for (const pub of publications) {
-  const url = `${BASE_URL}/publications/${pub.id}`;
+  const url = `${BASE_URL}/publications/${pub.id}/`;
   writeRoute(`publications/${pub.id}`, {
     title: pub.title,
     description: pub.short_description || pub.full_content?.split('\n')[0] || pub.title,
@@ -96,7 +96,7 @@ for (const pub of publications) {
 // Patents
 const patents = JSON.parse(readFileSync(join(repoRoot, 'patents.json'), 'utf-8'));
 for (const pat of patents) {
-  const url = `${BASE_URL}/patents/${pat.id}`;
+  const url = `${BASE_URL}/patents/${pat.id}/`;
   writeRoute(`patents/${pat.id}`, {
     title: pat.title,
     description: pat.short_description || pat.title,
@@ -108,7 +108,7 @@ for (const pat of patents) {
 // Blog posts
 const blogPosts = JSON.parse(readFileSync(join(repoRoot, 'posts', 'index.json'), 'utf-8'));
 for (const post of blogPosts) {
-  const url = `${BASE_URL}/blog/${post.slug}`;
+  const url = `${BASE_URL}/blog/${post.slug}/`;
   writeRoute(`blog/${post.slug}`, {
     title: post.title,
     description: post.excerpt || post.title,
