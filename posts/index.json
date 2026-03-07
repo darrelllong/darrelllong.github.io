@@ -1,5 +1,12 @@
 [
   {
+    "slug": "2026-03-06-performance-evaluation",
+    "title": "Performance Evaluation: Do It Right or Don't Do It",
+    "date": "2026-03-06",
+    "tags": ["research", "systems", "performance"],
+    "excerpt": "Bad performance evaluation is endemic in systems research. It is not hard to do it correctly — so why don't we?"
+  },
+  {
     "slug": "2026-02-06-ercole-bottani",
     "title": "Ercole Bottani",
     "date": "2026-02-06",
