@@ -134,7 +134,7 @@ const ContactForm = () => {
       <p className="success">
         Thank you for considering Pentexoire Consulting, your message was sent.
         <br />
-        <Link to="/consultancy" onClick={reset}>
+        <Link to="/consultancy/" onClick={reset}>
           Send another message
         </Link>
       </p>

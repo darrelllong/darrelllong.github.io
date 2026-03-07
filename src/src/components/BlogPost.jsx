@@ -39,7 +39,7 @@ export default function BlogPost({ search }) {
           </header>
         </article>
         <nav className="main-nav">
-          <Link to="/blog">Back to all posts</Link>
+          <Link to="/blog/">Back to all posts</Link>
         </nav>
       </>
     );
@@ -64,7 +64,7 @@ export default function BlogPost({ search }) {
               {post.tags.map((tag) => (
                 <Link
                   key={tag}
-                  to="/blog"
+                  to="/blog/"
                   className="tag"
                   onClick={() => search && search(tag)}
                 >
@@ -92,12 +92,12 @@ export default function BlogPost({ search }) {
       </article>
       {posts.length > 1 && (
         <nav className="main-nav">
-          <Link to={`/blog/${prevPost.slug}`}>
+          <Link to={`/blog/${prevPost.slug}/`}>
             <FontAwesomeIcon icon={faCaretLeft} />
             Previous post
           </Link>
-          <Link to="/blog">Back to all posts</Link>
-          <Link to={`/blog/${nextPost.slug}`}>
+          <Link to="/blog/">Back to all posts</Link>
+          <Link to={`/blog/${nextPost.slug}/`}>
             Next post
             <FontAwesomeIcon icon={faCaretRight} />
           </Link>
