@@ -98,7 +98,7 @@ const Header = ({ title, author, bibTeX, url, search }) => {
             {author.map((name, index) => (
               <li key={index}>
                 <Link
-                  to="/publications"
+                  to="/publications/"
                   onClick={() => {
                     search(name);
                   }}
@@ -113,7 +113,7 @@ const Header = ({ title, author, bibTeX, url, search }) => {
       )}
       {displayDate && (
         <Link
-          to="/publications"
+          to="/publications/"
           onClick={() => {
             search(String(bibTeX?.year || ""));
           }}
@@ -151,7 +151,7 @@ const Publication = ({ publication, publications, search }) => {
           </header>
         </article>
         <nav className="main-nav">
-          <Link to="/publications">Back to all publications</Link>
+          <Link to="/publications/">Back to all publications</Link>
         </nav>
       </>
     );
@@ -167,8 +167,8 @@ const Publication = ({ publication, publications, search }) => {
   const currentIndex = publications.findIndex((p) => p.id === publication.id);
   const prevPub = publications[(currentIndex - 1 + publications.length) % publications.length];
   const nextPub = publications[(currentIndex + 1) % publications.length];
-  const prev = `/publications/${prevPub.id}`;
-  const next = `/publications/${nextPub.id}`;
+  const prev = `/publications/${prevPub.id}/`;
+  const next = `/publications/${nextPub.id}/`;
 
   return (
     <>
@@ -193,7 +193,7 @@ const Publication = ({ publication, publications, search }) => {
           <FontAwesomeIcon icon={faCaretLeft} />
           Previous publication
         </Link>
-        <Link to="/publications">Back to all publications</Link>
+        <Link to="/publications/">Back to all publications</Link>
         <Link to={next}>
           Next publication
           <FontAwesomeIcon icon={faCaretRight} />

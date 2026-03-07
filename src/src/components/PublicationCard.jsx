@@ -11,7 +11,7 @@ import {
 import { formatDate } from "../utils/dateUtils";
 
 export default function PublicationCard({ publication, search }) {
-  const path = `${publication.id}`;
+  const path = `${publication.id}/`;
   const displayDate = formatDate(publication.bibTeX);
 
   return (
@@ -24,7 +24,7 @@ export default function PublicationCard({ publication, search }) {
           <ul className="authors">
             {publication.author.map((author, index, authors) => (
               <li key={index}>
-                <Link to="/publications" onClick={() => search(author)}>
+                <Link to="/publications/" onClick={() => search(author)}>
                   {author}
                   {index === authors.length - 1 ? "" : ","}
                 </Link>
@@ -33,7 +33,7 @@ export default function PublicationCard({ publication, search }) {
           </ul>
         )}
         {displayDate && (
-          <Link to="/publications" onClick={() => search(String(publication.bibTeX?.year || ""))}>
+          <Link to="/publications/" onClick={() => search(String(publication.bibTeX?.year || ""))}>
             {displayDate}
           </Link>
         )}

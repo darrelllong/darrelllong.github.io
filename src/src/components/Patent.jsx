@@ -62,7 +62,7 @@ const Header = ({ title, author, bibTeX, patent_number, url, search }) => {
             {author.map((name, index) => (
               <li key={index}>
                 <Link
-                  to="/patents"
+                  to="/patents/"
                   onClick={() => {
                     search(name);
                   }}
@@ -83,7 +83,7 @@ const Header = ({ title, author, bibTeX, patent_number, url, search }) => {
       )}
       {displayDate && (
         <Link
-          to="/patents"
+          to="/patents/"
           onClick={() => {
             search(String(bibTeX?.year || ""));
           }}
@@ -139,7 +139,7 @@ const Patent = ({ patent, patents, search }) => {
           </header>
         </article>
         <nav className="main-nav">
-          <Link to="/patents">Back to all patents</Link>
+          <Link to="/patents/">Back to all patents</Link>
         </nav>
       </>
     );
@@ -148,8 +148,8 @@ const Patent = ({ patent, patents, search }) => {
   const currentIndex = patents.findIndex((p) => p.id === patent.id);
   const prevPat = patents[(currentIndex - 1 + patents.length) % patents.length];
   const nextPat = patents[(currentIndex + 1) % patents.length];
-  const prev = `/patents/${prevPat.id}`;
-  const next = `/patents/${nextPat.id}`;
+  const prev = `/patents/${prevPat.id}/`;
+  const next = `/patents/${nextPat.id}/`;
 
   return (
     <>
@@ -174,7 +174,7 @@ const Patent = ({ patent, patents, search }) => {
           <FontAwesomeIcon icon={faCaretLeft} />
           Previous patent
         </Link>
-        <Link to="/patents">Back to all patents</Link>
+        <Link to="/patents/">Back to all patents</Link>
         <Link to={next}>
           Next patent
           <FontAwesomeIcon icon={faCaretRight} />

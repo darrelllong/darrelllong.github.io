@@ -50,7 +50,7 @@ export default function Menu() {
                 <FontAwesomeIcon icon={item.icon} />
               </a>
             ) : (
-              <Link to={`/${item.page}`}>{item.label}</Link>
+              <Link to={`/${item.page}/`}>{item.label}</Link>
             )}
           </li>
         ))}

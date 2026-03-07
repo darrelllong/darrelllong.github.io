@@ -11,7 +11,7 @@ import {
 import { formatDate } from "../utils/dateUtils";
 
 export default function PatentCard({ patent, search }) {
-  const path = `/patents/${patent.id}`;
+  const path = `/patents/${patent.id}/`;
   const displayDate = formatDate(patent.bibTeX);
 
   return (
@@ -24,7 +24,7 @@ export default function PatentCard({ patent, search }) {
           <ul className="authors">
             {patent.author.map((author, index, authors) => (
               <li key={index}>
-                <Link to="/patents" onClick={() => search(author)}>
+                <Link to="/patents/" onClick={() => search(author)}>
                   {author}
                   {index === authors.length - 1 ? "" : ","}
                 </Link>
@@ -36,7 +36,7 @@ export default function PatentCard({ patent, search }) {
           <span className="patent-number">U.S. Patent {patent.patent_number}</span>
         )}
         {displayDate && (
-          <Link to="/patents" onClick={() => search(String(patent.bibTeX?.year || ""))}>
+          <Link to="/patents/" onClick={() => search(String(patent.bibTeX?.year || ""))}>
             {displayDate}
           </Link>
         )}
