@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
 Sitemap: https://darrelllong.github.io/sitemap.xml
+Sitemap: https://darrelllong.github.io/sitemap2.xml
+Sitemap: https://darrelllong.github.io/sitemap.txt
