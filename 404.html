@@ -3,6 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>404 Not Found</title>
+  <script>
+    // Redirect known SPA routes back to the app via ?redirect= query param.
+    // Main.jsx reads this and navigates client-side.
+    // Unknown paths fall through and show this 404 page.
+    var path = window.location.pathname;
+    var isSpaRoute =
+      /^\/blog(\/[\w-]+)?\/?$/.test(path) ||
+      /^\/publications(\/\d+)?\/?$/.test(path) ||
+      /^\/patents(\/\d+)?\/?$/.test(path) ||
+      /^\/(about|consultancy)\/?$/.test(path);
+    if (isSpaRoute) {
+      window.location.replace('/?redirect=' + encodeURIComponent(path));
+    }
+  </script>
   <style>
     html, body {
       margin: 0;

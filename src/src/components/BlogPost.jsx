@@ -75,7 +75,17 @@ export default function BlogPost({ search }) {
           )}
         </header>
         <div className="blog-content">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            components={{
+              a({ href, children, ...props }) {
+                if (href && href.startsWith('/')) {
+                  return <Link to={href}>{children}</Link>;
+                }
+                return <a href={href} {...props}>{children}</a>;
+              },
+            }}
+          >
             {post.body}
           </ReactMarkdown>
         </div>
