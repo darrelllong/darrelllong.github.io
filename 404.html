@@ -10,8 +10,8 @@
     var path = window.location.pathname;
     var isSpaRoute =
       /^\/blog(\/[\w-]+)?\/?$/.test(path) ||
-      /^\/publications(\/[\w-]+)?\/?$/.test(path) ||
-      /^\/patents(\/[\w-]+)?\/?$/.test(path) ||
+      /^\/publications(\/\d+)?\/?$/.test(path) ||
+      /^\/patents(\/\d+)?\/?$/.test(path) ||
       /^\/(about|consultancy)\/?$/.test(path);
     if (isSpaRoute) {
       window.location.replace('/?redirect=' + encodeURIComponent(path));
