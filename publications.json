@@ -3799,7 +3799,7 @@
     "id": 161,
     "title": "Accurate Generation of I/O Workloads Using Generative Adversarial Networks",
     "short_description": "",
-    "full_content": "It is essential to utilize a large number of I/O workloads to analyze commodity system performance or simulate scientific phenomena in high-performance scientific computing. I/O traces are often unavailable at scale due to trace storage overhead, privacy concerns, and the performance impact of trace instrumentation. We study how to generate sufficiently representative I/O workloads using Generative Adversarial Networks (GANs). The best GAN architecture can generate I/O workloads with maximum mean discrepancy (MMD) as low as 0.015-0.05, which implies the synthetic I/O workloads have successfully learned the potential distribution of real I/O traces. We demonstrate that the performance similarity between the original I/O trace and the generated I/O workload through trace replay can be 90.36",
+    "full_content": "It is essential to utilize a large number of I/O workloads to analyze commodity system performance or simulate scientific phenomena in high-performance scientific computing. I/O traces are often unavailable at scale due to trace storage overhead, privacy concerns, and the performance impact of trace instrumentation. We study how to generate sufficiently representative I/O workloads using Generative Adversarial Networks (GANs). The best GAN architecture can generate I/O workloads with maximum mean discrepancy (MMD) as low as 0.015-0.05, which implies the synthetic I/O workloads have successfully learned the potential distribution of real I/O traces. We demonstrate that the performance similarity between the original I/O trace and the generated I/O workload through trace replay can be 90.36%-97.32%.",
     "author": [
       "Heyu Zhang",
       "Zhen Yang",
@@ -3811,7 +3811,7 @@
       "Darrell Long"
     ],
     "date": "November 2024",
-    "url": "https://scholar.google.com/scholar?q=Accurate%20Generation%20of%20I%2FO%20Workloads%20Using%20Generative%20Adversarial%20Networks",
+    "url": "/pdfs/zhang-nas24.pdf",
     "bibTeX": {
       "@inproceedings": "zhang-nas24",
       "author": "Heyu Zhang and Zhen Yang and Yulai Xie and Yafeng Wu and Jiakun Li and Dan Feng and Avani Wildani and Darrell Long",
