@@ -1,5 +1,12 @@
 [
   {
+    "slug": "2026-05-05-cryptography-from-the-specifications",
+    "title": "Cryptography From the Specifications",
+    "date": "2026-05-05",
+    "tags": ["research", "cryptography", "rust"],
+    "excerpt": "A pure-Rust crate that implements classical and modern cryptographic primitives directly from their published specifications — auditable, portable, and written so you can read it."
+  },
+  {
     "slug": "2026-03-16-on-time",
     "title": "On Time",
     "date": "2026-03-16",
