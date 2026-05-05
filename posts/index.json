@@ -1,14 +1,14 @@
 [
   {
-    "slug": "2026-05-05-the-secret-sharing-cabinet",
-    "title": "The Secret-Sharing Cabinet",
+    "slug": "2026-05-05-threshold-secret-sharing",
+    "title": "Threshold Secret Sharing in Pure Rust",
     "date": "2026-05-05",
     "tags": ["research", "cryptography", "rust", "secret-sharing"],
     "excerpt": "Pure-Rust implementations of every constructive secret-sharing scheme from the foundational papers — Shamir, Blakley, McEliece-Sarwate, Asmuth-Bloom, Brickell, Karchmer-Wigderson, Naor-Shamir visual cryptography, and the rest."
   },
   {
-    "slug": "2026-05-05-testing-the-untestable",
-    "title": "Testing the Untestable: A Statistical Audit Suite for RNGs",
+    "slug": "2026-05-05-auditing-random-number-generators",
+    "title": "Auditing Random Number Generators",
     "date": "2026-05-05",
     "tags": ["research", "cryptography", "rust", "randomness"],
     "excerpt": "A pure-Rust harness that runs NIST SP 800-22, DIEHARD, and DIEHARDER against 43 generators — from deliberately broken historical PRNGs to ChaCha20 and the known-backdoored Dual_EC_DRBG."

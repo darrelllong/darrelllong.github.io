@@ -5,13 +5,13 @@ tags: ["research", "cryptography", "rust"]
 excerpt: "A pure-Rust crate that implements classical and modern cryptographic primitives directly from their published specifications — auditable, portable, and written so you can read it."
 ---
 
-I have been quietly building a [cryptography library](https://github.com/darrelllong/cryptography) in Rust for some time. It is now broad enough that it is worth describing what is in it and what it is for.
+I have been building a [cryptography library](https://github.com/darrelllong/cryptography) in Rust. It is now broad enough that it is worth describing what is in it and what it is for.
 
-The premise is simple: take the published specifications — FIPS, NIST SP 800, IETF RFCs, the original design papers — and turn each of them into safe, idiomatic Rust. No C/FFI escape hatches. No architecture intrinsics in the cipher cores. Minimal dependencies. One language, top to bottom, that you can read.
+The premise is simple. Take the published specifications — FIPS, NIST SP 800, IETF RFCs, the original design papers — and turn each of them into safe, idiomatic Rust. No C/FFI escape hatches. No architecture intrinsics in the cipher cores. Minimal dependencies. One language, top to bottom, that you can read.
 
-That is an unusual posture. Most production cryptography in the wild is a thin wrapper over OpenSSL, BoringSSL, or a vendor's hand-tuned assembly. Those are the right choice if your only metric is throughput on a known platform. They are the wrong choice if you want to *understand* what is happening, audit it, port it, or teach from it. The standard libraries are large, multi-language, and dense with platform-specific paths. They were not written to be read; they were written to be fast.
+Most production cryptography in the wild is a thin wrapper over OpenSSL, BoringSSL, or a vendor's hand-tuned assembly. Those are the right choice when the only metric is throughput on a known platform. They are the wrong choice when the goal is to understand what is happening, audit it, port it, or teach from it. The standard libraries are large, multi-language, and dense with platform-specific paths; they were written to be fast, not to be read.
 
-This crate was written to be read. Speed is a secondary objective.
+This crate is written to be read. Speed is a secondary objective, and Pilot-measured benchmarks confirm it remains a competitive one.
 
 ## What Is in It
 
@@ -39,26 +39,22 @@ Public-key operations in this crate are variable-time by policy, and that is dec
 
 The symmetric side is the inverse: the bare-named types like `Aes128` are the fast table-driven path, and the `Ct` suffix marks the constant-time variant. AEAD wrappers `Gcm`, `Gmac`, `GcmVt`, and `GmacVt` make the choice explicit per construction. There is no hidden default that "tries to do the right thing." You picked it.
 
-## Why Bother
+## What This Buys You
 
-The obvious question is: there are existing Rust cryptography crates — `ring`, RustCrypto, `rustls` — and there is OpenSSL and there is BoringSSL. Why write another one?
+There are several existing Rust cryptography crates — `ring`, RustCrypto, `rustls` — and OpenSSL and BoringSSL on the C side. This one is built around four properties the others largely do not provide.
 
-A few reasons.
+*Coverage.* The mainstream crates implement what is in current production use. They do not include Cocks's 1973 paper, Paillier with its homomorphism exposed, SNOW 3G, ZUC, PRESENT, all ten SIMON and SPECK variants, or Magma and Grasshopper. There is research and pedagogical value in having those, in one place, to one consistent style, written from the original sources.
 
-First, *coverage*. The mainstream Rust crates do not implement Cocks's 1973 paper, or Paillier with its homomorphism still visible, or SNOW 3G, or ZUC, or PRESENT, or all ten SIMON and SPECK variants, or Magma and Grasshopper. They implement what is in current production use. There is genuine research and pedagogical value in having the rest, in one place, to one consistent style, written from the original sources rather than the Wikipedia summary.
+*Auditability.* Every cipher core, every mode, every bigint operation is in the same crate, in the same language, with no FFI boundary. The full encryption path from `encrypt_block` down to the integer multiplication primitive reads in one tool, without dropping into hand-tuned assembly. That matters for teaching, for reviewing, for porting to unusual targets, and for understanding what a cryptographic library is actually doing on your machine.
 
-Second, *auditability*. Every cipher core, every mode, every bigint operation is in the same crate, in the same language, with no FFI boundary. You can read the entire encryption path from `encrypt_block` down to the integer multiplication primitive without changing tools or jumping into hand-tuned assembly. That has value if you are teaching, if you are reviewing, if you are porting to an unusual target, or if you simply want to understand what your cryptographic library is doing.
+*Post-quantum.* ML-KEM and ML-DSA are not optional going forward. Pure-Rust implementations of FIPS 203 and FIPS 204, written from the standard rather than wrapped over a reference C tree, make the math directly accessible.
 
-Third, *post-quantum*. ML-KEM and ML-DSA are not optional going forward. The shift is happening. Having pure-Rust implementations of FIPS 203 and FIPS 204, written from the standard rather than wrapped over a reference C tree, makes the math accessible.
+*Honest measurement.* All publication-facing benchmarks use [Pilot](/blog/2026-03-06-performance-evaluation), the adaptive benchmarking framework. No hand-picked loop counts, no cherry-picked best runs, no graphs without confidence intervals. The `pilot_cipher` and `pilot_pk` workload binaries ship with the crate, and the scripts that drive them are in `scripts/`. Anyone can re-run the numbers on their own hardware, and they come with `±` and a sample size.
 
-Fourth, *honest measurement*. All publication-facing benchmarks use [Pilot](/blog/2026-03-06-performance-evaluation), the adaptive benchmarking framework I described earlier. There are no hand-picked loop counts, no cherry-picked best runs, no graphs without confidence intervals. The `pilot_cipher` and `pilot_pk` workload binaries are part of the crate, and the scripts that drive them are in `scripts/`. Anyone can re-run them on their own hardware. The numbers come with `±` and a sample size.
+## Where It Fits
 
-## What It Is Not
+This is a portable, readable, dependency-light cryptographic toolbox in one language, built from primary sources, with the variable-time and constant-time trade-offs declared at the type level and the post-quantum standards already implemented. The optional `fast/` sibling crates provide Apple Silicon AES/GHASH/SHA-256 and x86 PCLMULQDQ kernels behind explicit `is_supported()` capability checks, kept outside the root crate's perimeter and tested separately.
 
-This is not a drop-in replacement for OpenSSL in your TLS stack. It is not a hardened production library backed by a vendor's security team. It does not chase microarchitectural records — the optional `fast/` sibling crates exist for callers who want Apple Silicon AES/GHASH/SHA-256 or x86 PCLMULQDQ kernels with explicit `is_supported()` capability checks, but those are out of the root crate's perimeter and tested separately.
+A companion repository, [`entropy`](https://github.com/darrelllong/entropy), depends on this crate and provides everything around the cryptographic core: non-cryptographic generators (LCG, MT19937, PCG, xoshiro, SFC, WyRand), stream-cipher and block-cipher CTR-mode RNGs wrapping ciphers from this crate, deliberately broken historical generators retained for comparison (including Dual_EC_DRBG, because the lesson is worth keeping), and the NIST SP 800-22, DIEHARD, and DIEHARDER statistical test batteries. The two repositories are designed to be read together.
 
-What it *is* is a complete, portable, readable, dependency-light cryptographic toolbox in one language, built from primary sources, with the variable-time and constant-time trade-offs declared at the type level and the post-quantum standards already implemented. That is something I have wanted on my own bookshelf for a long time, and now it exists.
-
-There is a companion repository, [`entropy`](https://github.com/darrelllong/entropy), that depends on this crate and provides everything around the cryptographic core: non-cryptographic generators (LCG, MT19937, PCG, xoshiro, SFC, WyRand), stream-cipher and block-cipher CTR-mode RNGs wrapping ciphers from this crate, deliberately broken historical generators kept for comparison (including Dual_EC_DRBG, because the lesson is worth keeping), and the NIST SP 800-22, DIEHARD, and DIEHARDER statistical test batteries. The two repositories are designed to be read together.
-
-The code is at [github.com/darrelllong/cryptography](https://github.com/darrelllong/cryptography). It is BSD-licensed. Read it, run the tests, run the benchmarks, file issues. That is what it is for.
+The code is at [github.com/darrelllong/cryptography](https://github.com/darrelllong/cryptography). It is BSD-licensed. Read it, run the tests, run the benchmarks, file issues.
