@@ -1,5 +1,12 @@
 [
   {
+    "slug": "2026-05-05-the-secret-sharing-cabinet",
+    "title": "The Secret-Sharing Cabinet",
+    "date": "2026-05-05",
+    "tags": ["research", "cryptography", "rust", "secret-sharing"],
+    "excerpt": "Pure-Rust implementations of every constructive secret-sharing scheme from the foundational papers — Shamir, Blakley, McEliece-Sarwate, Asmuth-Bloom, Brickell, Karchmer-Wigderson, Naor-Shamir visual cryptography, and the rest."
+  },
+  {
     "slug": "2026-05-05-testing-the-untestable",
     "title": "Testing the Untestable: A Statistical Audit Suite for RNGs",
     "date": "2026-05-05",

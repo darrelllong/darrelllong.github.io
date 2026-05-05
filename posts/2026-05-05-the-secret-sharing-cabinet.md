@@ -1,0 +1,89 @@
+---
+title: "The Secret-Sharing Cabinet"
+date: "2026-05-05"
+tags: ["research", "cryptography", "rust", "secret-sharing"]
+excerpt: "Pure-Rust implementations of every constructive secret-sharing scheme from the foundational papers — Shamir, Blakley, McEliece-Sarwate, Asmuth-Bloom, Brickell, Karchmer-Wigderson, Naor-Shamir visual cryptography, and the rest."
+---
+
+The third repository in the trio I've been describing is [`secret-sharing`](https://github.com/darrelllong/secret-sharing). Where the [cryptography crate](/blog/2026-05-05-cryptography-from-the-specifications) covers ciphers, hashes, and public-key primitives, and the [entropy harness](/blog/2026-05-05-testing-the-untestable) audits the random sources those primitives depend on, this one fills a different gap entirely. It is a complete, in-tree, pure-Rust implementation of every constructive *threshold secret-sharing* scheme from the foundational literature — and a few that are usually skipped.
+
+Secret sharing is one of the more elegant ideas in cryptography, and one of the most under-used. The setup is simple to state. You have a secret $s$ — a key, a passphrase, the combination to a vault. You want to split it into $n$ pieces such that any $k$ of them recover $s$, but any $k - 1$ reveal *nothing whatsoever* about it. Not "computationally nothing." Information-theoretically nothing. Every candidate value of $s$ remains exactly as likely as it was before.
+
+That is a remarkable property. Most cryptographic constructions hide a secret behind a hardness assumption — factoring, discrete log, lattice problems — and would crumble in front of an attacker with unbounded computation. A perfect threshold scheme would not. The hardness is replaced by *algebra*, and the algebra is unconditional.
+
+## What's in the Cabinet
+
+Most software libraries that touch secret sharing implement Shamir 1979 and stop there. There is a reason — Shamir is the right default — but the literature is much richer than that, and the alternatives illuminate the design space in ways the canonical scheme alone cannot. This crate implements them all.
+
+**Shamir, *How to Share a Secret*, 1979.** The classical $(k, n)$ polynomial threshold scheme. Pick a random degree-$(k - 1)$ polynomial $q(x)$ with $q(0) = s$, hand share $i$ the value $q(i)$, recover via Lagrange interpolation. The crate also implements the Karnin-Greene-Hellman 1983 multi-secret extension: pack $\ell \le k$ secrets into the low coefficients and recover all of them in one round.
+
+**Blakley, *Safeguarding Cryptographic Keys*, 1979.** Same year as Shamir, completely different idea. The secret is the first coordinate of a point $P \in \mathrm{GF}(p)^k$, and each share is a random hyperplane through $P$. Any $k$ hyperplanes intersect at a unique point; fewer leave a positive-dimensional affine subspace of candidates. Geometric where Shamir is algebraic.
+
+**McEliece and Sarwate, *On Sharing Secrets and Reed-Solomon Codes*, 1981.** A profound observation: Shamir's scheme *is* a Reed-Solomon code. That means the entire machinery of error-correcting codes — and in particular Berlekamp-Welch decoding — applies to secret sharing. The crate implements robust reconstruction: given $m$ shares of which up to $t$ may have been *tampered with*, the secret is recoverable whenever $m - 2t \ge k$. This is the property that makes secret sharing usable in adversarial environments where some shareholders may lie.
+
+**Mignotte 1983 and Asmuth-Bloom 1983.** Both build $(k, n)$ schemes from the Chinese Remainder Theorem rather than from polynomial interpolation. Mignotte gives reconstruction-uniqueness without perfect secrecy; Asmuth-Bloom adds a public masking modulus to recover statistical secrecy. Useful illustrations that the threshold property is not specific to Shamir's algebra — it is a structural property that several different mathematical surfaces support.
+
+**Karnin, Greene, Hellman, *On Secret Sharing Systems*, 1983.** The trivial $n$-of-$n$ additive split, the multi-secret extension, and the matrix scheme $v_i = u \cdot A_i$ for vector secrets. The matrix formulation generalizes neatly into Kothari's 1984 linear scheme, which in turn specializes back to Shamir (Vandermonde matrix), Blakley (random hyperplane matrix), or KGH (block-diagonal matrix) depending on what you choose.
+
+**Yamamoto, 1986, $(k, L, n)$ ramp schemes.** Trade some secrecy for some bandwidth. Place $L$ secrets in a single polynomial; any $k$ shares recover all $L$, any $k - L$ shares reveal nothing, intermediate counts leak proportionally. $L = 1$ is exactly Shamir; $L = k$ is the McEliece-Sarwate ramp; the parameter $L$ interpolates between them. Important when the secret is large and per-share storage matters.
+
+**Ito-Saito-Nishizeki, 1989.** Realize *any monotone access structure* — not just $k$-of-$n$, but arbitrary "this committee, or that committee, or any director plus any two managers" rules. The construction is a cumulative-array realization indexed by the maximal forbidden coalitions. Per-player share size can be exponential in the worst case, but for many practical structures it is reasonable.
+
+**Benaloh-Leichter, 1988.** A second route to general access structures, this one walking a monotone Boolean formula tree: AND nodes additively split, OR nodes replicate, leaves go to the named party. Simpler than ITO when the access predicate is short to write down.
+
+**Brickell, 1989.** *Ideal* vector-space secret sharing — one field element per player regardless of structure. Sample uniform $u$ with $\langle u, e_1 \rangle = s$; player $j$ holds $\langle v_j, u \rangle$ for a public vector $v_j$. The "ideal" property — share size equal to secret size — is the gold standard for efficiency.
+
+**Karchmer and Wigderson, *On Span Programs*, 1993.** The most general linear secret-sharing framework. A labeled matrix $(M, \rho)$ over $\mathrm{GF}(p)$ and a target vector $e_1$; a coalition is qualified if $e_1$ lies in the row span of its labeled rows. Subsumes every other linear SSS in the literature. Brickell and Massey are special cases.
+
+**Massey, *Minimal Codewords and Secret Sharing*, 1993.** A linear-code formulation that ties secret sharing directly to the dual code structure. The minimal qualified coalitions correspond to the minimal codewords of a dual code. A perspective from coding theory rather than algebra.
+
+**Naor and Shamir, *Visual Cryptography*, 1994.** This one is wonderful. The secret is a black-and-white image. Each share is also an image — printable on transparency film. *Stack* any $n$ shares physically and the original image becomes visible to the human eye, by literal optical superposition. Stack fewer and you see noise. There is no decryption algorithm. The eye is the decryption algorithm. The crate implements the basis-matrix construction so you can produce shares of an actual image and verify reconstruction by overlaying the bit patterns.
+
+**Blakley-Meadows, 1984.** A $(k, L, n)$ ramp generalization of the Blakley hyperplane scheme — the geometric counterpart to Yamamoto.
+
+**Rabin, *Efficient Dispersal of Information*, 1989.** Not a secret-sharing scheme but in the same family. Reed-Solomon-based information dispersal: per-share storage of $|F|/k$ bytes, any $k$ shares reconstruct the file, no secrecy. Use when the goal is erasure tolerance and load balancing rather than confidentiality.
+
+**Rabin-Ben-Or, 1989.** Information-theoretic *verifiable* secret sharing via bivariate polynomials. Honest players catch a cheating dealer with probability 1 through pairwise cross-checks. The honest-majority bound $2(k - 1) < n$ is enforced at construction time.
+
+**Chor-Goldwasser-Micali-Awerbuch, *Verifiable Secret Sharing*, 1985.** Computational VSS via Feldman-style discrete-log commitments. Each polynomial coefficient is committed as $c_i = g^{a_i} \bmod p$, and each share is verified by checking $g^{f(j)} = \prod c_i^{j^i}$. The crate validates the Schnorr-group parameters with Miller-Rabin and checks every commitment in the prime-order subgroup.
+
+**Herzberg, Jarecki, Krawczyk, Yung, *Proactive Secret Sharing*, 1995.** Periodic share refresh: each player contributes a degree-$(k - 1)$ polynomial $r_i$ with $r_i(0) = 0$, and shares are updated by adding $\sum_i r_i(j)$ at player $j$. Old shares no longer combine with new ones, so an attacker who slowly compromises players over time gets nothing usable as long as no $k$-subset is compromised in the same epoch. Lost shares can also be reconstructed via Lagrange evaluation. This is what makes secret sharing survive in the real world, where compromises are not instantaneous events.
+
+That is a lot of schemes. The point of having all of them in one place, in one language, written from the same algebraic primitives, is that you can finally *compare* them — read the constructions side by side, see how Brickell is a one-row Karchmer-Wigderson, see how Yamamoto generalizes both Shamir and McEliece-Sarwate, see how Ito and Benaloh-Leichter solve the same problem from opposite directions. The literature is opaque when it is scattered across thirty-odd papers in different notations. It becomes pedagogical when it is one crate.
+
+## Pure Rust, No Dependencies
+
+The `Cargo.toml` `[dependencies]` section is empty. Not "small," not "minimal" — *empty*. The big-integer arithmetic is in-tree. The Miller-Rabin primality testing is in-tree. The CSPRNG is in-tree (a ChaCha20 RFC 7539 implementation, scrubbed on drop, with the counter-and-nonce treated as a single 128-bit block index). The OS entropy source reads `/dev/urandom` directly. The `Cargo.lock` lists exactly one crate: this one.
+
+That posture is unusual. Most Rust cryptographic crates pull in `num-bigint`, `rand`, `rand_chacha`, `subtle`, `zeroize`, and a long tail of supporting libraries. There is nothing wrong with those crates — several are excellent — but the price is a transitive dependency surface that nobody reads end-to-end. The price of doing without them is writing the bigint and the CSPRNG yourself, which is exactly what this repository does.
+
+## Defensive Hygiene
+
+The crate is pure Rust and has no `unsafe` outside the volatile-zeroize primitive. Every secret-bearing intermediate buffer — polynomial coefficient vectors, bivariate matrices, refresh contributions, RNG keystream buffers — is wrapped in `Zeroizing<T>` so its contents are volatile-zeroed on every exit path, including panic unwind. `BigUint::Drop` zeros the entire allocated capacity, not just the live limbs. Equality of secret-derived values uses constant-time helpers (`ct_eq_biguint`, `ct_eq_biguint_padded`) — no short-circuit, no early return. `BigUint`'s `Debug` prints `BigUint(<elided>)` so panic backtraces and `dbg!` calls cannot leak secret limbs.
+
+What is *not* claimed: side-channel resistance against a co-located timing observer. The bigint arithmetic — `mul`, `add`, `sub`, `inv` — is variable-time, and that is documented. Constant-time bigint code at this scale is a research project; pretending otherwise would be dishonest. The crate's threat model is a remote adversary who never gets to share a CPU with the dealer or the trustees.
+
+## A C++ Port for Cross-Validation
+
+There is also a C++23 port of the foundational layer in `cpp/`: `BigUint`, the ChaCha20 RNG, the prime field with the Mersenne-127 fast path, polynomial Horner and Lagrange, and Shamir split/reconstruct. The cross-language contract is exercised in `test/test_compat.cpp` against vectors emitted by `cargo run --release --example dump_compat_vectors`. Same wire format, same byte stream from the CSPRNG, same Lagrange round-trip. This is a discipline I recommend to anyone implementing cryptographic primitives: write it twice, in two different languages, and make the two implementations agree byte-for-byte on the test vectors. Bugs that look invisible in one tree show up immediately when the other tree disagrees.
+
+## Performance
+
+All numbers are measured with [Pilot](/blog/2026-03-06-performance-evaluation), with confidence intervals reported alongside the means. On Apple Silicon, $(k=3, n=5)$ Shamir over $\mathrm{GF}(2^{127} - 1)$ runs in ~5 µs to split and ~7 µs to reconstruct. Brickell, Massey, Kothari, and Karchmer-Wigderson all sit in the same range — the linear schemes cluster together because they all reduce to a single Lagrange-style interpolation over a Mersenne field element. Blakley is the outlier on reconstruction (~64 µs) because it solves a $k \times k$ linear system end-to-end where Shamir just evaluates a single denominator product.
+
+The Mersenne-127 fast path matters: $p = 2^{127} - 1$ has a closed-form fold $(a \cdot b) \bmod p$ that avoids Montgomery setup entirely, and the speedup over the previous Montgomery path is roughly an order of magnitude.
+
+## Why Bother
+
+The stated answer is what I said at the top: secret sharing is under-used. The honest answer is that I find it beautiful, and that the literature deserves a clean, readable, dependency-light, mathematically-correct implementation that students and practitioners can both read end-to-end. Visual cryptography in particular almost never appears in mainstream libraries, and it should — it is one of the most striking ideas in the subject and it works.
+
+A few practical use cases that are worth more attention than they get:
+
+- **Key splitting for high-value cryptographic keys.** Master signing keys, root CA keys, cold-storage Bitcoin keys. Single-machine custody is a single point of failure; threshold custody removes it.
+- **Information-theoretically secure cloud storage.** Distribute Asmuth-Bloom or Shamir shares across providers, restore from any $k$, lose access from any $k - 1$.
+- **Multi-party authorization.** "Two officers must agree" — Benaloh-Leichter or Ito implements arbitrary authorization predicates exactly.
+- **Survivability under partial compromise.** Proactive refresh from Herzberg et al. lets the system survive a slow attacker who eventually compromises every machine, as long as they never compromise enough simultaneously.
+
+The code is at [github.com/darrelllong/secret-sharing](https://github.com/darrelllong/secret-sharing). It is BSD-licensed. The papers are in `pubs/` for cross-checking. Clone, run `cargo test`, run `bash scripts/bench_pilot.sh`, and read the algebra.
+
+That is what it's for.
