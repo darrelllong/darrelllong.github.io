@@ -5,12 +5,15 @@ import { Helmet } from "react-helmet-async";
 import { Link, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Assets
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 // Utilities
 import { getAllPosts, getPostBySlug } from "../utils/blogLoader";
 // Styles
+import "katex/dist/katex.min.css";
 import "../assets/css/blog.scss";
 
 export default function BlogPost({ search }) {
@@ -76,7 +79,8 @@ export default function BlogPost({ search }) {
         </header>
         <div className="blog-content">
           <ReactMarkdown
-            remarkPlugins={[remarkGfm]}
+            remarkPlugins={[remarkGfm, remarkMath]}
+            rehypePlugins={[rehypeKatex]}
             components={{
               a({ href, children, ...props }) {
                 if (href && href.startsWith('/')) {
