@@ -74,3 +74,12 @@ For research-grade work on small-state generators, TestU01's BigCrush and PractR
 The cryptography crate provides the primitives. The entropy harness examines the quality of the randomness those primitives consume. The cipher is rarely the weakest link in a deployed system. The randomness almost always is. These two repositories are designed to be read together so that the second fact is hard to ignore.
 
 The code is at [github.com/darrelllong/entropy](https://github.com/darrelllong/entropy). It is BSD-licensed.
+
+The crate is also published on [crates.io](https://crates.io/crates/rng-entropy):
+
+```toml
+[dependencies]
+rng-entropy = "0.5"
+```
+
+The package name is `rng-entropy` (the bare `entropy` and `entropy-rs` are held by unrelated existing crates); the library import name remains `entropy`, so downstream code keeps writing `use entropy::...`. The published tarball includes the pure-Rust generators and the test batteries; the optional Apple-Silicon and x86 SIMD acceleration paths from the local build are excluded — they live in the GitHub source tree behind path dependencies. Documentation is auto-built at [docs.rs/rng-entropy](https://docs.rs/rng-entropy).

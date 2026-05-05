@@ -85,3 +85,12 @@ The practical applications that deserve more attention:
 - **Survivability under partial compromise.** Herzberg-Jarecki-Krawczyk-Yung proactive refresh lets the system survive a slow attacker who eventually compromises every machine, provided they never compromise enough at once.
 
 The code is at [github.com/darrelllong/secret-sharing](https://github.com/darrelllong/secret-sharing). It is BSD-licensed. The papers are in `pubs/` for cross-checking. Clone the crate, run `cargo test`, run `bash scripts/bench_pilot.sh`, and read the algebra.
+
+The crate is also published on [crates.io](https://crates.io/crates/secret-sharing-rs):
+
+```toml
+[dependencies]
+secret-sharing-rs = "0.5"
+```
+
+The package name is `secret-sharing-rs` (the bare `secret-sharing` is held by an unrelated dormant 2019 crate); the library import name remains `secret_sharing`, so downstream code keeps writing `use secret_sharing::shamir;` and so on. Documentation is auto-built at [docs.rs/secret-sharing-rs](https://docs.rs/secret-sharing-rs).

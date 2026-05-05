@@ -58,3 +58,12 @@ This is a portable, readable, dependency-light cryptographic toolbox in one lang
 A companion repository, [`entropy`](https://github.com/darrelllong/entropy), depends on this crate and provides everything around the cryptographic core: non-cryptographic generators (LCG, MT19937, PCG, xoshiro, SFC, WyRand), stream-cipher and block-cipher CTR-mode RNGs wrapping ciphers from this crate, deliberately broken historical generators retained for comparison (including Dual_EC_DRBG, because the lesson is worth keeping), and the NIST SP 800-22, DIEHARD, and DIEHARDER statistical test batteries. The two repositories are designed to be read together.
 
 The code is at [github.com/darrelllong/cryptography](https://github.com/darrelllong/cryptography). It is BSD-licensed. Read it, run the tests, run the benchmarks, file issues.
+
+The crate is also published on [crates.io](https://crates.io/crates/cryptography-rs):
+
+```toml
+[dependencies]
+cryptography-rs = "0.5"
+```
+
+The package name is `cryptography-rs` (the bare `cryptography` namespace is reserved on crates.io); the library import name remains `cryptography`, so downstream code keeps writing `use cryptography::{Sha256, Aes128, ...};` and so on. The optional `fast/` SIMD sibling crates are not part of the published tarball — install them by cloning the repo and using a path dependency. Documentation is auto-built at [docs.rs/cryptography-rs](https://docs.rs/cryptography-rs).
