@@ -1,5 +1,12 @@
 [
   {
+    "slug": "2026-05-05-testing-the-untestable",
+    "title": "Testing the Untestable: A Statistical Audit Suite for RNGs",
+    "date": "2026-05-05",
+    "tags": ["research", "cryptography", "rust", "randomness"],
+    "excerpt": "A pure-Rust harness that runs NIST SP 800-22, DIEHARD, and DIEHARDER against 43 generators — from deliberately broken historical PRNGs to ChaCha20 and the known-backdoored Dual_EC_DRBG."
+  },
+  {
     "slug": "2026-05-05-cryptography-from-the-specifications",
     "title": "Cryptography From the Specifications",
     "date": "2026-05-05",
