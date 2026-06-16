@@ -105,6 +105,35 @@ for (const pat of patents) {
   allUrls.push(url);
 }
 
+// Legacy slug-based publication URLs (pre-React/Jekyll era) that Google still
+// has indexed. Redirect each to its current numeric publication page so old
+// links resolve instead of 404ing. Map: old slug -> current numeric id.
+const legacyPublicationRedirects = {
+  'ICDCS-1987-Long': 235,
+  'CMU-1987-Long': 255,
+  'CC-Burns-2001': 24,
+  'ICJS-Golding-1991': 178,
+};
+for (const [slug, id] of Object.entries(legacyPublicationRedirects)) {
+  const target = `${BASE_URL}/publications/${id}/`;
+  const dir = join(repoRoot, 'publications', slug);
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, 'index.html'), `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <link rel="canonical" href="${target}">
+  <meta http-equiv="refresh" content="0; url=${target}">
+  <script>window.location.replace('${target}');</script>
+</head>
+<body>
+  <p>Redirecting to <a href="${target}">the publication page</a>...</p>
+</body>
+</html>
+`);
+}
+
 // Blog posts
 const blogPosts = JSON.parse(readFileSync(join(repoRoot, 'posts', 'index.json'), 'utf-8'));
 for (const post of blogPosts) {
