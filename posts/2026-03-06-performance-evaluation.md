@@ -19,7 +19,7 @@ The statistical machinery for doing this correctly has existed for a long time. 
 
 ## Pilot
 
-In 2016, my student Elliot (Yan) Li and I, along with Ethan Miller and Yash Gupta, published [Pilot](/publications/127) to determine how much measurement a benchmark needs. Pilot is a benchmarking framework that instruments your workload, monitors measurements as they accumulate, and uses configured statistical checks and precision requirements to decide when to stop. It analyzes autocorrelation, a common problem when successive measurements share cache or queue state, and includes methods for detecting warm-up behavior. These checks help estimate steady-state performance; they do not establish that a workload is representative or that every assumption of the statistical model holds.
+In 2016, my student Dr. Elliot (Yan) Li and I, along with Dr. Ethan Miller and Yash Gupta, published [Pilot](/publications/127) to determine how much measurement a benchmark needs. Pilot is a benchmarking framework that instruments your workload, monitors measurements as they accumulate, and uses configured statistical checks and precision requirements to decide when to stop. It analyzes autocorrelation, a common problem when successive measurements share cache or queue state, and includes methods for detecting warm-up behavior. These checks help estimate steady-state performance; they do not establish that a workload is representative or that every assumption of the statistical model holds.
 
 Pilot reports an estimate and its uncertainty under its statistical model, with a stopping rule specified before inspecting a favorable result. The source is at [github.com/darrelllong/pilot-bench](https://github.com/darrelllong/pilot-bench).
 

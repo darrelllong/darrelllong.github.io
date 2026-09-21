@@ -49,7 +49,7 @@ export default function BlogPost({ search }) {
   if (!post) {
     return (
       <>
-        <PageMetadata title="Post not found | Darrell Long" noIndex />
+        <PageMetadata title="Post not found | Dr. Darrell Long" noIndex />
         <article className="blog-article">
           <header>
             <h1>Post not found</h1>
@@ -69,7 +69,7 @@ export default function BlogPost({ search }) {
   return (
     <>
       <PageMetadata
-        title={`${post.title} | Darrell Long`}
+        title={`${post.title} | Dr. Darrell Long`}
         description={post.excerpt || ""}
       />
       <article className="blog-article">

@@ -35,8 +35,8 @@ function escapeAttr(str) {
 
 function injectMeta(html, { title, description, canonicalUrl }) {
   const fullTitle = title
-    ? `${title} | Darrell Long`
-    : "Darrell Long | UC Santa Cruz";
+    ? `${title} | Dr. Darrell Long`
+    : "Dr. Darrell Long | UC Santa Cruz";
   const desc = truncate(description);
   const injection = [
     `<title>${escapeAttr(fullTitle)}</title>`,
@@ -57,7 +57,7 @@ function injectMeta(html, { title, description, canonicalUrl }) {
     `  <meta name="twitter:image" content="${previewImageUrl}">`,
     `  <meta name="twitter:image:alt" content="${escapeAttr(portrait.alt)}">`,
   ].join("\n  ");
-  return html.replace("<title>Darrell Long</title>", injection);
+  return html.replace("<title>Dr. Darrell Long</title>", injection);
 }
 
 function writeRoute(routePath, meta) {
@@ -74,31 +74,31 @@ const staticRoutes = [
     path: "about",
     title: "About",
     description:
-      "Biography of Darrell Long: education, storage research, SSRC and CRSS, teaching, doctoral students, and national service.",
+      "Biography of Dr. Darrell Long: education, storage research, SSRC and CRSS, teaching, doctoral students, and national service.",
   },
   {
     path: "publications",
     title: "Publications",
     description:
-      "Research publications by Professor Darrell Long covering storage systems, distributed systems, and computer architecture.",
+      "Research publications by Dr. Darrell Long covering storage systems, distributed systems, and computer architecture.",
   },
   {
     path: "patents",
     title: "Patents",
     description:
-      "U.S. Patents by Professor Darrell Long and colleagues in storage, networking, and systems research.",
+      "U.S. Patents by Dr. Darrell Long and colleagues in storage, networking, and systems research.",
   },
   {
     path: "blog",
     title: "Blog",
     description:
-      "Blog posts by Professor Darrell Long on computer science, research, and academic history.",
+      "Blog posts by Dr. Darrell Long on computer science, research, and academic history.",
   },
   {
     path: "consultancy",
     title: "Consultancy",
     description:
-      "Technical consulting and expert witness services in computer science from Darrell Long and Pentexoire Consulting.",
+      "Technical consulting and expert witness services in computer science from Dr. Darrell Long and Pentexoire Consulting.",
   },
 ];
 
@@ -164,7 +164,7 @@ for (const [id, destination] of Object.entries(publicationRedirects)) {
   mkdirSync(directory, { recursive: true });
   writeFileSync(join(directory, "index.html"), `<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8">
-<title>Publication moved | Darrell Long</title>
+<title>Publication moved | Dr. Darrell Long</title>
 <link rel="canonical" href="${escapeAttr(target)}">
 <meta http-equiv="refresh" content="0; url=${escapeAttr(target)}">
 </head><body><p>This record has moved. <a href="${escapeAttr(target)}">View the publication</a>.</p></body></html>\n`);
@@ -268,7 +268,7 @@ writeFileSync(
   injectMeta(baseHtml, {
     title: "",
     description:
-      "Darrell D. E. Long, Distinguished Professor of Engineering, emeritus, at UC Santa Cruz. Research in storage, distributed systems, reliability, and security.",
+      "Dr. Darrell D. E. Long, Distinguished Professor of Engineering, emeritus, at UC Santa Cruz. Research in storage, distributed systems, reliability, and security.",
     canonicalUrl: BASE_URL + "/",
   }),
 );

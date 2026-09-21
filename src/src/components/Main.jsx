@@ -78,14 +78,14 @@ export default function Main() {
         <PageMetadata
           title={
             location.pathname === "/"
-              ? "Darrell Long | UC Santa Cruz"
-              : `${{ about: "About", publications: "Publications", patents: "Patents", blog: "Blog", consultancy: "Consultancy" }[collection] || "Darrell Long"} | Darrell Long`
+              ? "Dr. Darrell Long | UC Santa Cruz"
+              : `${{ about: "About", publications: "Publications", patents: "Patents", blog: "Blog", consultancy: "Consultancy" }[collection] || "Dr. Darrell Long"} | Dr. Darrell Long`
           }
           description={
             collection === "about"
-              ? "Biography of Darrell Long: education, storage research, SSRC and CRSS, teaching, doctoral students, and national service."
+              ? "Biography of Dr. Darrell Long: education, storage research, SSRC and CRSS, teaching, doctoral students, and national service."
               : collection === "consultancy"
-              ? "Technical consulting and expert witness services in computer science from Darrell Long and Pentexoire Consulting."
+              ? "Technical consulting and expert witness services in computer science from Dr. Darrell Long and Pentexoire Consulting."
               : undefined
           }
         />

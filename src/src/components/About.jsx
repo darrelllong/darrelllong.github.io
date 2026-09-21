@@ -8,9 +8,9 @@ export default function About() {
       <section className="about-introduction" aria-labelledby="about-title">
         <div>
           <p className="eyebrow">Biography</p>
-          <h1 id="about-title">Darrell D. E. Long</h1>
+          <h1 id="about-title">Dr. Darrell D. E. Long</h1>
           <p>
-            Darrell Long is Distinguished Professor of Engineering, emeritus,
+            Dr. Darrell Long is Distinguished Professor of Engineering, emeritus,
             at the University of California, Santa Cruz, and a Distinguished
             Visiting Scholar at Santa Clara University. His research concerns
             storage systems, reliability, and computer security. He has also
@@ -28,7 +28,7 @@ export default function About() {
         <section aria-labelledby="education-title">
           <h2 id="education-title">Education and early career</h2>
           <p>
-            Long earned his B.S. in computer science from San Diego
+            Dr. Long earned his B.S. in computer science from San Diego
             State University in 1984 and began working there as a lecturer
             in mathematics immediately after graduation. He had already
             worked as a systems programmer at the university while an
@@ -39,20 +39,20 @@ export default function About() {
             computer science as a lecturer, taking responsibility for
             university courses while still a graduate student. He received his M.S.
             in 1986 and his Ph.D. in 1988, under the supervision of <Link
-            to="/blog/2026-02-14-jehan-francois-paris/">Jehan-François Pâris</Link>.
+            to="/blog/2026-02-14-jehan-francois-paris/">Dr. Jehan-François Pâris</Link>.
           </p>
         </section>
         <section aria-labelledby="ucsc-title">
           <h2 id="ucsc-title">Research at UC Santa Cruz</h2>
           <p>
-            Long joined UC Santa Cruz in 1988. He built a laboratory with
+            Dr. Long joined UC Santa Cruz in 1988. He built a laboratory with
             dozens of master&rsquo;s and doctoral students, supporting the
             research of several faculty members. Undergraduate researchers
             also worked in the laboratory, gaining experience in systems
             research.
           </p>
           <p>
-            In 1991, his work with Luis-Felipe
+            In 1991, his work with Dr. Luis-Felipe
             Cabrera on <Link to="/publications/227/">Swift</Link> explored
             an architecture that separated metadata management from data
             transfers. His work has also addressed data deduplication,
@@ -61,7 +61,7 @@ export default function About() {
           <p>
             He directed the <a href="https://www.ssrc.us/about.html">Storage
             Systems Research Center (SSRC)</a> from its establishment in
-            2001 until 2019, building the center with Ethan Miller and their
+            2001 until 2019, building the center with Dr. Ethan Miller and their
             colleagues. In 2005, he became the first holder of the Kumar
             Malavalli Endowed Chair in Storage Systems Research. The
             SSRC&rsquo;s work on distributed storage included <Link
@@ -72,8 +72,8 @@ export default function About() {
             Center for Research in Systems and Storage (CRSS)</a> built on
             the SSRC&rsquo;s research and industry partnerships. CRSS is the
             only NSF Industry/University Cooperative Research Center (I/UCRC)
-            on the Santa Cruz campus. Long worked with its founding director,
-            Ethan Miller, to develop the center and directed it from 2019
+            on the Santa Cruz campus. Dr. Long worked with its founding director,
+            Dr. Ethan Miller, to develop the center and directed it from 2019
             to 2023.
           </p>
         </section>
@@ -81,13 +81,13 @@ export default function About() {
         <section aria-labelledby="mentoring-title">
           <h2 id="mentoring-title">Teaching and mentoring</h2>
           <p>
-            At Santa Cruz, Long taught introductory programming and data
+            At Santa Cruz, Dr. Long taught introductory programming and data
             structures, as well as graduate courses in operating systems
             and cryptography. He supervised undergraduate research and
             encouraged students to continue to graduate study. <a
-            href="https://news.ucsc.edu/2016/03/women-computer-science/">Alexandra
-            Holloway and Aleatha Parker-Wood</a> were among his undergraduate
-            students who later completed Ph.D.s under his supervision. Holloway
+            href="https://news.ucsc.edu/2016/03/women-computer-science/">Dr. Alexandra
+            Holloway and Dr. Aleatha Parker-Wood</a> were among his undergraduate
+            students who later completed Ph.D.s under his supervision. Dr. Holloway
             has since led the flight software team for NASA&rsquo;s <a
             href="https://www-robotics.jpl.nasa.gov/media/documents/Wheels_Made_for_Arcing.pdf#page=12">
             Curiosity Mars rover</a> at the Jet Propulsion Laboratory.
@@ -100,27 +100,27 @@ export default function About() {
             Chancellor&rsquo;s Achievement Award for Diversity</a>.
           </p>
           <p>
-            Long has supervised 24 doctoral students to completion. Three
+            Dr. Long has supervised 24 doctoral students to completion. Three
             have become tenured faculty: <a
-            href="https://researchinfo.fju.edu.tw/professors/1632">Tsozen
+            href="https://researchinfo.fju.edu.tw/professors/1632">Dr. Tsozen
             Yeh</a> at Fu Jen Catholic University, <a
-            href="https://www.scu.edu/engineering/faculty/amer-ahmed/">Ahmed
+            href="https://www.scu.edu/engineering/faculty/amer-ahmed/">Dr. Ahmed
             Amer</a> at Santa Clara University, and <a
-            href="https://www.cs.jhu.edu/faculty/randal-burns/">Randal
-            Burns</a> at Johns Hopkins. Burns now holds the Bill and Lisa
+            href="https://www.cs.jhu.edu/faculty/randal-burns/">Dr. Randal
+            Burns</a> at Johns Hopkins. Dr. Burns now holds the Bill and Lisa
             Stromberg endowed headship of Hopkins&rsquo;s Department of
             Computer Science. Other graduates have led research in
             industry. The <a
             href="https://www.mathgenealogy.org/id.php?id=10794">Mathematics
             Genealogy Project</a> records a further generation of doctoral
-            students advised by Long&rsquo;s graduates.
+            students advised by Dr. Long&rsquo;s graduates.
           </p>
         </section>
 
         <section aria-labelledby="national-service-title">
           <h2 id="national-service-title">National service and research policy</h2>
           <p>
-            Long joined <a href="https://news.ucsc.edu/2019/01/long-appointment/">
+            Dr. Long joined <a href="https://news.ucsc.edu/2019/01/long-appointment/">
             JASON</a>, a scientific advisory group to the U.S. government,
             in 2002. He has served on National Research Council committees
             on technology assessment and defense warning, and on the
@@ -150,7 +150,7 @@ export default function About() {
         <section aria-labelledby="professional-title">
           <h2 id="professional-title">Professional service and later career</h2>
           <p>
-            Long was a founding member of the <a
+            Dr. Long was a founding member of the <a
             href="https://sites.google.com/view/mascots-2019/organizers">MASCOTS
             steering committee</a> and served on it for decades, including
             as chair. He also served as the conference&rsquo;s general chair
@@ -184,7 +184,7 @@ export default function About() {
             Associate Membership of CERN from 2016 to 2019.
           </p>
           <p>
-            Long retired from UC Santa Cruz in 2023, after 35 years on the
+            Dr. Long retired from UC Santa Cruz in 2023, after 35 years on the
             faculty and eighteen years in the Malavalli chair. He remains
             Director, emeritus, of SSRC and CRSS.
           </p>

@@ -8,7 +8,7 @@ excerpt: "Bottani's work in electrical engineering and computing at the Politecn
 ![Ercole Bottani](https://upload.wikimedia.org/wikipedia/commons/b/b3/Ercole_Bottani.png)
 *Ercole Bottani (1897–1978)*
 
-Ercole Bottani helped establish electronic computing at the Politecnico di Milano. His student [Luigi Dadda](/blog/2026-02-14-luigi-dadda) taught [Domenico Ferrari](/blog/2026-02-14-domenico-ferrari), who supervised my doctoral advisor, [Jehan-François Pâris](/blog/2026-02-14-jehan-francois-paris). That line of engineers and system builders is my academic ancestry.
+Ercole Bottani helped establish electronic computing at the Politecnico di Milano. His student [Luigi Dadda](/blog/2026-02-14-luigi-dadda) taught [Domenico Ferrari](/blog/2026-02-14-domenico-ferrari), who supervised my doctoral advisor, [Dr. Jehan-François Pâris](/blog/2026-02-14-jehan-francois-paris). That line of engineers and system builders is my academic ancestry.
 
 Bottani was born in Volpago del Montello, in the province of Treviso, in 1897. After the First World War, he studied general electrical engineering at the Politecnico, graduating with top honors under [Angelo Barbagelata](/blog/2026-02-14-angelo-barbagelata). He later held the chair in electrical measurements.
 

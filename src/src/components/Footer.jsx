@@ -14,7 +14,7 @@ export default function Footer() {
     <footer id="page-footer">
       <div>
         <a className="footer-name" href="/">
-          Darrell D. E. Long
+          Dr. Darrell D. E. Long
         </a>
       </div>
       <nav aria-label="Elsewhere on the web">

@@ -138,7 +138,7 @@ const Patent = ({ patent, patents, search }) => {
       <>
         <PageMetadata
           noIndex={!loading}
-          title={`${loading ? "Loading" : "Patent not found"} | Darrell Long`}
+          title={`${loading ? "Loading" : "Patent not found"} | Dr. Darrell Long`}
         />
         <article>
           <header>
@@ -167,7 +167,7 @@ const Patent = ({ patent, patents, search }) => {
   return (
     <>
       <PageMetadata
-        title={`${patent.title} | Darrell Long`}
+        title={`${patent.title} | Dr. Darrell Long`}
         description={(patent.short_description || "").slice(0, 160)}
       />
       <article>

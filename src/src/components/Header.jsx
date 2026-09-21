@@ -23,10 +23,10 @@ export default function Header() {
         to="/"
         className="brand"
         onClick={() => setOpenPath(null)}
-        aria-label="Darrell Long — home"
+        aria-label="Dr. Darrell Long — home"
       >
         <img src="/logo.avif" alt="" width="42" height="42" />
-        <span>Darrell Long</span>
+        <span>Dr. Darrell Long</span>
       </Link>
       <button
         ref={toggle}

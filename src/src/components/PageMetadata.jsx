@@ -6,7 +6,7 @@ import portrait from "../portrait.json";
 export default function PageMetadata({
   title,
   noIndex = false,
-  description = "Research, writing, and academic work by Darrell D. E. Long.",
+  description = "Research, writing, and academic work by Dr. Darrell D. E. Long.",
 }) {
   const { pathname } = useLocation();
   useEffect(() => {

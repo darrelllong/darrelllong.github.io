@@ -26,7 +26,7 @@ export default function Home() {
       <section className="home-intro" aria-labelledby="home-title">
         <div className="intro-copy">
           <h1 id="home-title">
-            Darrell D. E. Long
+            Dr. Darrell D. E. Long
             <span className="name-rule" />
           </h1>
           <p className="intro-role">

@@ -99,3 +99,16 @@ award remain factual parts of the biography.
 
 Status: complete. The revised biography uses direct academic prose. Lint,
 content validation, the production build, and rendered-page checks passed.
+
+## Academic courtesy titles
+
+Use “Dr. Long,” not the bare surname, in narrative references to the owner.
+Use “Dr.” for other people with earned doctorates as well, including full
+names, subsequent surname references, captions, and descriptions. This is
+the owner's explicit preference, recorded September 21, 2026. Do not remove
+these titles in later style edits. Preserve bibliographic author lists,
+verbatim quotations, algorithm names, and formal names of endowments. Do
+not infer a Ph.D. from a historical Italian laurea.
+
+Status: applied to the biography, site identity and metadata, and narrative
+references to doctorate holders in the blog.

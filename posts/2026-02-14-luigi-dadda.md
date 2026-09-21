@@ -7,7 +7,7 @@ excerpt: "Dadda helped establish computing in Italy and developed the multiplier
 
 ![Luigi Dadda](/posts/images/Luigi-Dadda.jpg)
 
-Luigi Dadda spent more than half a century at the Politecnico di Milano, researching computer arithmetic, building its computing facilities, and teaching engineering. His student [Domenico Ferrari](/blog/2026-02-14-domenico-ferrari) was the doctoral advisor of my own advisor, [Jehan-François Pâris](/blog/2026-02-14-jehan-francois-paris).
+Luigi Dadda spent more than half a century at the Politecnico di Milano, researching computer arithmetic, building its computing facilities, and teaching engineering. His student [Domenico Ferrari](/blog/2026-02-14-domenico-ferrari) was the doctoral advisor of my own advisor, [Dr. Jehan-François Pâris](/blog/2026-02-14-jehan-francois-paris).
 
 Dadda was born into a farming family in Lodi on April 29, 1923. During the Second World War, he bicycled fifty kilometers to retrieve textbooks after a science bookstore in Milan was bombed. He studied electrical engineering at the Politecnico and completed his *laurea* in 1947. He remained as an assistant professor under the mentorship of [Ercole Bottani](/blog/2026-02-06-ercole-bottani).
 
@@ -29,6 +29,6 @@ He also helped establish the Università della Svizzera italiana in Lugano, wher
 
 Dadda was an IEEE Fellow and later a Life Fellow for his contributions to computer arithmetic and digital signal processing. In 1976, he was named [Cavaliere di Gran Croce dell'Ordine al Merito della Repubblica Italiana](https://www.quirinale.it/onorificenze/insigniti/35611).
 
-His work in California was the first of several California connections in this academic line. Ferrari spent twenty-five years at Berkeley; Pâris taught at UC San Diego, where I studied with him; and I went on to UC Santa Cruz. The connection between the Politecnico and the University of California extends across four generations.
+His work in California was the first of several California connections in this academic line. Ferrari spent twenty-five years at Berkeley; Dr. Pâris taught at UC San Diego, where I studied with him; and I went on to UC Santa Cruz. The connection between the Politecnico and the University of California extends across four generations.
 
 Luigi Dadda died in Milan on October 26, 2012, at eighty-nine.
