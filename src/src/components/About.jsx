@@ -14,6 +14,16 @@ const accordionData = [
     ],
   },
   {
+    title: "Storage Systems and Ceph",
+    body: [
+      'The Ceph distributed file system grew out of the <a href="https://www.ssrc.us/proj/exscale.html" target="_blank" rel="noreferrer">Storage Systems Research Center (SSRC)</a> at UC Santa Cruz. Long coauthored the <a href="/publications/59/">2006 Ceph paper</a> with Sage Weil, Scott Brandt, Ethan Miller, and Carlos Maltzahn.',
+      'Ceph was sponsored as part of the Department of Energy’s Accelerated Strategic Computing Initiative (ASCI), through Gary Grider at Los Alamos National Laboratory (LANL), Steve Louis at Lawrence Livermore National Laboratory (LLNL), and Lee Ward at Sandia National Laboratories.',
+      'An architectural foundation was the separation of metadata management from data storage, using separate servers. Long and Luis-Felipe Cabrera developed this approach in <a href="https://www.usenix.org/publications/compsystems/1991/fall_cabrera.pdf" target="_blank" rel="noreferrer">Swift</a>, beginning in 1989 and presenting the work at the <a href="/publications/227/">1991 Summer USENIX conference</a>. Clients could transfer data directly to and from storage servers, independently of the metadata service. The same separation later appeared in <a href="https://www.usenix.org/legacy/events/fast02/wips/pease.pdf" target="_blank" rel="noreferrer">IBM’s Storage Tank</a>, commercialized as IBM TotalStorage SAN File System.',
+      'Ceph’s use of hashing for distributed data placement has its roots in Ethan Miller’s Ph.D. work on <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/1995/5206.html" target="_blank" rel="noreferrer">RAMA</a> at UC Berkeley. RAMA used hashing to spread data across storage devices. Miller and his collaborators subsequently developed this line of research into <a href="https://www.ethanmiller.org/research/" target="_blank" rel="noreferrer">RUSH and CRUSH</a>, the latter becoming Ceph’s data placement algorithm.',
+      'Weil made substantial original contributions in his doctoral work on Ceph, including scalable metadata management and CRUSH. He then led its development from a research file system into production storage software now used in some of the world’s <a href="https://ceph.io/en/discover/vision/" target="_blank" rel="noreferrer">largest research and cloud installations</a>. He cofounded <a href="https://news.ucsc.edu/2018/01/year-of-alumni-weil-sage/" target="_blank" rel="noreferrer">Inktank</a> to develop and support Ceph commercially; Red Hat acquired the company in 2014.',
+    ],
+  },
+  {
     title: "Conferences and Journals",
     body: [
       'He founded the <a href="https://www.usenix.org/legacy/events/fast02/" target="_blank" rel="noreferrer">USENIX Conference on File and Storage Technologies (FAST)</a> and chaired the program for its first meeting, held in Monterey in January 2002. He was also the founding general chair of the Workshop on Mobile Computing Systems and Applications (WMCSA) in 1994.',
