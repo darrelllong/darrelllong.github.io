@@ -14,6 +14,8 @@ The [editorial queue](editorial-queue.md) is complete.
 The subsequent [academic genealogy audit](academic-genealogy-audit.md) documents
 23 MGP-listed doctoral students and 41 total academic descendants, the new
 mentoring paragraph, and stale advising entries found in the CV PDF.
+The biography audit also records the owner's further correction of the page's
+structure and the missing early lecturing and laboratory mentoring history.
 
 The [field-by-field change ledger](correctness-changes.json) records the
 previous and corrected values, source destinations, and hashes of the five

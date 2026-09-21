@@ -17,13 +17,14 @@ Queued and completed September 21, 2026, at the owner's request.
   biography readable rather than expanding it into a list of CV appointments.
 
 Completed in `src/src/components/About.jsx`, its stylesheet, and the generated
-and client-rendered About metadata. The biography now has six visible sections
+and client-rendered About metadata. That revision introduced six visible sections
 with substantive SSRC and CRSS coverage, verified directorship dates and the
 campus NSF I/UCRC distinction, concrete research examples, teaching, and
 proportionate professional service. The [biography audit](biography-audit.md)
 records the evidence, checks, and the omissions in the earlier review.
 
-Status: complete. No editorial queue items remain open.
+Status: these initial items were completed; the later structural correction
+is recorded below.
 
 ## Doctoral students and academic descendants
 
@@ -33,3 +34,19 @@ students absent from the CV's completed-doctorate table, and added a concise
 mentoring paragraph with attributed, dated counts. See the
 [academic genealogy audit](academic-genealogy-audit.md) for the names, sources,
 count interpretation, and the separate stale-CV finding.
+
+## Education-first biography and the laboratory community
+
+Reopened September 21, 2026 after the owner found the biography's structure
+and substance inadequate. Rewrite the opening around the 1984 B.S. and
+immediate mathematics lectureship, followed by UCSD lecturing during doctoral
+study. Give the lab's dozens of graduate students, participating faculty,
+undergraduate researchers, and women Ph.D. graduates substantive coverage.
+Use the owner's firsthand corrections and the university's 2011 award notice
+and 2016 mentoring profile. See the [biography audit](biography-audit.md).
+
+Status: complete. The biography now begins with education and early lecturing,
+describes the laboratory community and mentoring in concrete terms, and ends
+with later career and current affiliations. Lint, content validation, the
+production build, and desktop/mobile browser checks passed. No editorial
+queue items remain open.

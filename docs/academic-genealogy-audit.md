@@ -98,5 +98,6 @@ build. Its student count, descendant count, date, and MGP destination are
 checked against the source above. The existing catalog and route counts
 remain unchanged. The revised section was inspected in the rendered page
 at desktop and 320-pixel mobile widths; the mobile page had no horizontal
-overflow. The complete biography contains 685 words. See the [biography audit](biography-audit.md) for layout,
+overflow. The biography at commit `14f736f4` contained 685 words; its subsequent
+education-first rewrite is documented in the [biography audit](biography-audit.md), along with layout,
 navigation, metadata checks, and the wider report's limitations.
