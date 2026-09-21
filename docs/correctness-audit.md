@@ -124,3 +124,19 @@ paragraph previously removed.
 * Record 119 remains citation-only. No substitute paper or invented download
   was attached. Third-party sources and software repositories can change after
   the audit; dated checks and pinned revisions make that boundary explicit.
+
+## Dependency follow-up
+
+GitHub reported dependency alerts when the content corrections were published.
+A fresh `npm audit` confirmed ten affected packages. Compatible lockfile
+remediation cleared those findings, including React Router 7.18.4, JS-YAML
+3.15.2/4.3.2, and PostCSS 8.5.28. Within Vite's existing dependency range, npm
+selected the unaffected esbuild 0.27.2 instead of vulnerable 0.27.7. No forced
+major-version upgrade was used. React Router's declared minimum was also raised
+to the installed patched version.
+
+Lint, content validation, and the production build passed after these changes.
+The final npm advisory check reported zero known vulnerabilities. This is the
+registry's result on the audit date, not a guarantee of absence of security
+defects. The dependency evidence is recorded in
+[dependency-check.json](dependency-check.json).
