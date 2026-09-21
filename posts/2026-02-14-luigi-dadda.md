@@ -7,7 +7,7 @@ excerpt: "Dadda helped establish computing in Italy and developed the multiplier
 
 ![Luigi Dadda](/posts/images/Luigi-Dadda.jpg)
 
-Luigi Dadda spent more than half a century at the Politecnico di Milano, working in computer arithmetic, building its computing facilities, and educating a generation of engineers. His student [Domenico Ferrari](/blog/2026-02-14-domenico-ferrari) was the doctoral advisor of my own advisor, [Jehan-François Pâris](/blog/2026-02-14-jehan-francois-paris).
+Luigi Dadda spent more than half a century at the Politecnico di Milano, researching computer arithmetic, building its computing facilities, and teaching engineering. His student [Domenico Ferrari](/blog/2026-02-14-domenico-ferrari) was the doctoral advisor of my own advisor, [Jehan-François Pâris](/blog/2026-02-14-jehan-francois-paris).
 
 Dadda was born into a farming family in Lodi on April 29, 1923. During the Second World War, he bicycled fifty kilometers to retrieve textbooks after a science bookstore in Milan was bombed. He studied electrical engineering at the Politecnico and completed his *laurea* in 1947. He remained as an assistant professor under the mentorship of [Ercole Bottani](/blog/2026-02-06-ercole-bottani).
 
@@ -17,7 +17,7 @@ Marshall Plan funding supported the Politecnico's acquisition of a CRC 102A. In 
 
 Dadda trained students and faculty to use the CRC 102A, taught the Politecnico's first institutional course on electronic computers in 1955, and directed the Centro di Calcolo, which served academic and industrial users. With Emanuele Biondi, he designed a floating-point arithmetic unit for the machine. By the late 1950s, he had established a degree program in electronic engineering at the Politecnico.
 
-His best-known contribution to computer arithmetic came in 1965. The Dadda multiplier uses a carefully arranged tree of partial-sum adders to reduce the stages required for parallel binary multiplication. It remains an influential design for hardware multipliers. In 2016, the IEEE recognized it as a Milestone in electrical engineering.
+His best-known contribution to computer arithmetic came in 1965. The Dadda multiplier uses a carefully arranged tree of partial-sum adders to reduce the stages required for parallel binary multiplication. In 2016, the IEEE recognized it as a Milestone in electrical engineering.
 
 His later research included architectures for fast convolution, specialized arithmetic units for CERN's Large Hadron Collider, cryptographic applications, and decimal arithmetic. He studied Petri nets for control-system design, while the Politecnico's computer laboratories expanded into programming languages, databases, and networks.
 

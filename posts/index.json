@@ -75,7 +75,7 @@
       "systems",
       "performance"
     ],
-    "excerpt": "Bad performance evaluation is endemic in systems research. It is not hard to do it correctly — so why don't we?"
+    "excerpt": "Bad performance evaluation is endemic in systems research. We have the methods and tools to do it correctly."
   },
   {
     "slug": "2026-02-06-ercole-bottani",
@@ -102,7 +102,7 @@
     "tags": [
       "biography"
     ],
-    "excerpt": "Ferrari's work on performance evaluation, Berkeley Unix, and network quality of service shaped generations of systems researchers, including my own advisor."
+    "excerpt": "My academic grandfather's work on performance evaluation, Berkeley Unix, and network quality of service."
   },
   {
     "slug": "2026-02-14-angelo-barbagelata",

@@ -2,12 +2,12 @@
 title: "Domenico Ferrari"
 date: "2026-02-14"
 tags: ["biography"]
-excerpt: "Ferrari's work on performance evaluation, Berkeley Unix, and network quality of service shaped generations of systems researchers, including my own advisor."
+excerpt: "My academic grandfather's work on performance evaluation, Berkeley Unix, and network quality of service."
 ---
 
 ![Domenico Ferrari](/posts/images/Domenico-Ferrari.jpg)
 
-Domenico Ferrari is my academic grandfather. I did not study with him directly, but his work and teaching reached me through my doctoral advisor, [Jehan-François Pâris](/blog/2026-02-14-jehan-francois-paris). His career joined computer systems performance, the development of Berkeley Unix, and research on quality of service in computer networks.
+Domenico Ferrari is my academic grandfather. I did not study with him directly, but his work and teaching reached me through my doctoral advisor, [Jehan-François Pâris](/blog/2026-02-14-jehan-francois-paris). He worked on computer systems performance, the development of Berkeley Unix, and quality of service in computer networks.
 
 Ferrari came from Piacenza. He earned his *Dottore in Ingegneria Elettronica* at the Politecnico di Milano in 1963 under [Luigi Dadda](/blog/2026-02-14-luigi-dadda), whose mentor was [Ercole Bottani](/blog/2026-02-06-ercole-bottani). He joined Berkeley's Department of Electrical Engineering and Computer Sciences in 1970 and remained there for twenty-five years.
 

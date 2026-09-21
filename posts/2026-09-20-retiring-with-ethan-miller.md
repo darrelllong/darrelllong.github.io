@@ -19,4 +19,4 @@ COVID ruined collaborative laboratory research as I had known it. Being together
 
 The undergraduates seemed to have changed as well. These were among my reasons for retiring, though they were not the whole explanation.
 
-Ultimately, it was time.
+It was time.
