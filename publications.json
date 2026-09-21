@@ -3214,7 +3214,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Mar 25, 2019",
-    "url": "",
+    "url": "/pdfs/hu-provenance-clustering.pdf",
     "bibTeX": {
       "@article": "hu-tbd20",
       "author": "Die Hu and Dan Feng and Yulai Xie and Gongming Xu and Xinrui Gu and Darrell Long",
@@ -3337,7 +3337,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Dec 17, 2019",
-    "url": "",
+    "url": "/pdfs/xie-p-gaussian.pdf",
     "bibTeX": {
       "@article": "xie-tdsc19",
       "author": "Yulai Xie and Yafeng Wu and Dan Feng and Darrell Long",
@@ -3362,7 +3362,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Apr 22, 2020",
-    "url": "",
+    "url": "/pdfs/xie-docker-load-prediction.pdf",
     "bibTeX": {
       "@article": "xie-tcc20",
       "author": "Yulai Xie and Minpeng Jin and Zhuping Zou and Gongming Xu and Dan Feng and Wenmao Liu and Darrell Long",
@@ -3571,7 +3571,8 @@
       "Diane Wiley"
     ],
     "date": "2005",
-    "url": "https://scholar.google.com/scholar?q=Avoiding%20Surprise%20in%20an%20Era%20of%20Global%20Technology%20Advances",
+    "url": "https://www.nationalacademies.org/read/11286",
+    "urlLabel": "Read report",
     "bibTeX": {
       "@book": "david-nrc05",
       "author": "Ruth A. David and Steven R.J. Brueck and Stephen W. Drew and Alan H. Epstein and Robert A. Furman and Sharon Glotzer and Christopher C. Green and Diane E. Griffin and J. Jerome Holton and Michael R. Ladisch and Darrell Long and Frederick R. Lopez and Richard M. Osgood and Stewart D. Personick and Alton D. Romig and S. Shankar Sasrty and James B. Smith and Camillo J. Taylor and Diane Wiley",
@@ -3591,7 +3592,8 @@
       "Darrell D. E. Long"
     ],
     "date": "1989",
-    "url": "https://scholar.google.com/scholar?q=Theory%20of%20Finite%20Automata",
+    "url": "https://books.google.com/books?id=U-1QAAAAMAAJ",
+    "urlLabel": "Book details",
     "bibTeX": {
       "@book": "carroll-prentice89",
       "author": "John L. Carroll and Darrell D. E. Long",
@@ -3612,7 +3614,7 @@
       "Jehan-François Pâris"
     ],
     "date": "2000",
-    "url": "https://scholar.google.com/scholar?q=Video-on-Demand%20Broadcasting%20Protocols",
+    "url": "https://www.ssrc.us/media/pubs/ea3dd9c70b5e2c203941b1ca923775fefadf71da.pdf",
     "bibTeX": {
       "@incollection": "carter-academic00",
       "author": "Steven W. Carter and Darrell D. E. Long and Jehan-Fran\\c{c}ois P\\^aris",
@@ -3634,7 +3636,7 @@
       "Darrell D. E. Long"
     ],
     "date": "1999",
-    "url": "https://scholar.google.com/scholar?q=Simulation%20Modeling%20of%20Weak-Consistency%20Protocols",
+    "url": "https://www.ssrc.us/media/pubs/f5a34aff4b66d74800778f2a94122508243bfd01.pdf",
     "bibTeX": {
       "@incollection": "golding-gordon99",
       "author": "Richard A. Golding and Darrell D. E. Long",
@@ -3656,7 +3658,7 @@
       "John L. Carroll"
     ],
     "date": "1995",
-    "url": "https://scholar.google.com/scholar?q=Using%20Simulation%20to%20Evaluate%20Consistency%20Protocols%20for%20Replicated%20Data",
+    "url": "https://www.ssrc.us/media/pubs/2a7ff2da0ca091ed0ded1c3e7861ad54cd0c1dd8.pdf",
     "bibTeX": {
       "@incollection": "long-ablex95",
       "author": "Darrell D. E. Long and John L. Carroll",
@@ -3683,7 +3685,7 @@
       "Darrell Long"
     ],
     "date": "February 2023",
-    "url": "https://ieeexplore.ieee.org/document/10052731",
+    "url": "/pdfs/zhang-docker-workload-prediction.pdf",
     "bibTeX": {
       "@article": "zhang-tnsm",
       "author": "Liangkang Zhang and Yulai Xie and Minpeng Jin and Pan Zhou and Gongming Xu and Yafeng Wu and Dan Feng and Darrell Long",
@@ -3711,7 +3713,7 @@
       "Avani Wildani",
       "Darrell Long"
     ],
-    "url": "https://ieeexplore.ieee.org/document/9739913",
+    "url": "/pdfs/wu-paradise.pdf",
     "bibTeX": {
       "@article": "wu-tdsc",
       "author": "Yafeng Wu and Yulai Xie and Xuelong Liao and Pan Zhou and Dan Feng and Lin Wu and Xuan Li and Avani Wildani and Darrell Long",
@@ -3736,7 +3738,7 @@
       "Darrell D. E. Long"
     ],
     "date": "May 27, 2021",
-    "url": "https://scholar.google.com/scholar?q=Rethinking%20the%20Adversary%20and%20Operational%20Characteristics%20of%20Deniable%20Storage",
+    "url": "/pdfs/barker-jsss21.pdf",
     "bibTeX": {
       "@article": "barker-jsss21",
       "author": "Austen Barker and Yash Gupta and James Hughes and Ethan L. Miller and Darrell D. E. Long",
@@ -3760,7 +3762,7 @@
       "Ethan L. Miller"
     ],
     "date": "November 2025",
-    "url": "https://scholar.google.com/scholar?q=Valet%3A%20Efficient%20Data%20Placement%20on%20Modern%20SSDs",
+    "url": "/pdfs/purandare-socc25.pdf",
     "bibTeX": {
       "@inproceedings": "purandare-socc25",
       "author": "Devashish R. Purandare and Peter Alvaro and Avani Wildani and Darrell D. E. Long and Ethan L. Miller",
@@ -3783,7 +3785,7 @@
       "Darrell D. E. Long"
     ],
     "date": "May 2025",
-    "url": "https://scholar.google.com/scholar?q=Sparta%3A%20Practical%20Anonymity%20with%20Long-Term%20Resistance%20to%20Traffic%20Analysis",
+    "url": "/pdfs/fredrickson-sp25.pdf",
     "bibTeX": {
       "@inproceedings": "fredrickson-sp25",
       "author": "Kyle Fredrickson and Ioannis Demertzis and James P. Hughes and Darrell D. E. Long",
@@ -3836,7 +3838,8 @@
       "Darrell Long"
     ],
     "date": "December 2021",
-    "url": "https://scholar.google.com/scholar?q=WinnowML%3A%20Stable%20Feature%20Selection%20for%20Maximizing%20Prediction%20Accuracy%20of%20Time-based%20System%20Modeling",
+    "url": "https://www.pnnl.gov/publications/winnowml-stable-feature-selection-maximizing-prediction-accuracy-time-based-system",
+    "urlLabel": "Publication details",
     "bibTeX": {
       "@inproceedings": "bel-bigdata21",
       "author": "Oceane Bel and Sinjoni Mukhopadhyay and Nathan Tallent and Faisal Nawab and Darrell Long",
@@ -3858,7 +3861,7 @@
       "Darrell Long"
     ],
     "date": "May 2014",
-    "url": "https://scholar.google.com/scholar?q=Introducing%20SeaOS",
+    "url": "https://www.ssrc.us/media/pubs/437b21d97b6970824c20c308ec4a8d9783134969.pdf",
     "bibTeX": {
       "@inproceedings": "bittman-icisa14",
       "author": "Daniel Bittman and D.J. Capelis and Darrell Long",
@@ -3881,7 +3884,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Sep 1, 2008",
-    "url": "https://scholar.google.com/scholar?q=Future%20File%20Systems",
+    "url": "https://www.ssrc.us/media/pubs/0314083b1f215be3ee399f2a974c81949ed07c96.pdf",
     "bibTeX": {
       "@techreport": "pease-tr08",
       "author": "David Pease and Darrell D. E. Long",
@@ -3901,16 +3904,15 @@
       "Larry Stockmeyer",
       "Darrell D. E. Long"
     ],
-    "date": "Mar 1, 1999",
-    "url": "https://scholar.google.com/scholar?q=Experimentally%20Evaluating%20In-Place%20Delta%20Reconstruction",
+    "date": "April 2002",
+    "url": "https://www.ssrc.us/media/pubs/2cee83604103fd04000a45647ca5050c174e24db.pdf",
     "bibTeX": {
-      "@inproceedings": "kulkarni-dcc99",
+      "@inproceedings": "burns-msst02",
       "author": "Randal Burns and Larry Stockmeyer and Darrell D. E. Long",
       "title": "Experimentally Evaluating In-Place Delta Reconstruction",
-      "booktitle": "Proceedings of the Data Compression Conference (DCC)",
-      "year": 1999,
-      "month": "mar",
-      "address": "Snowbird",
+      "booktitle": "Proceedings of the NASA and IEEE Mass Storage Conference",
+      "year": 2002,
+      "month": "apr",
       "organization": "IEEE"
     }
   },
@@ -3922,16 +3924,15 @@
     "author": [
       "Darrell D. E. Long"
     ],
-    "date": "Oct 1, 1988",
-    "url": "https://scholar.google.com/scholar?q=A%20Technique%20for%20Managing%20Mirrored%20Disks",
+    "date": "April 2001",
+    "url": "https://www.ssrc.us/media/pubs/08f94cea0e90203271b7f05670124c1195d61c28.pdf",
     "bibTeX": {
-      "@inproceedings": "long-srdsds88",
+      "@inproceedings": "long-ipccc01",
       "author": "Darrell D. E. Long",
       "title": "A Technique for Managing Mirrored Disks",
-      "booktitle": "Proceedings of the Symposium on Reliability in Distributed Software and Database Systems (SRDSDS)",
-      "year": 1988,
-      "month": "oct",
-      "address": "Los Angeles",
+      "booktitle": "Proceedings of the International Performance Conference on Computers and Communication",
+      "year": 2001,
+      "month": "apr",
       "organization": "IEEE"
     }
   },
@@ -3948,7 +3949,7 @@
       "Bruce R. Montague"
     ],
     "date": "Mar 1, 1995",
-    "url": "https://scholar.google.com/scholar?q=REINAS%3A%20the%20Real-Time%20Environmental%20Information%20Network%20and%20Analysis%20System",
+    "url": "https://www.ssrc.us/media/pubs/dcc1381f005c1f3a9d381cba3a26eee27324edad.pdf",
     "bibTeX": {
       "@inproceedings": "long-compass95",
       "author": "Darrell D. E. Long and Patrick E. Mantey and Craig M. Wittenbrink and Theodore R. Haining and Bruce R. Montague",
@@ -3970,7 +3971,7 @@
       "Darrell D. E. Long"
     ],
     "date": "July 1996",
-    "url": "https://scholar.google.com/scholar?q=Analysis%20of%20Caching%20Algorithms%20for%20Distributed%20File%20Systems",
+    "url": "https://www.ssrc.us/media/pubs/0d1513bee738f821b18998853d5984a7cca5e4f5.pdf",
     "bibTeX": {
       "@article": "reed-osr96",
       "author": "Benjamin Reed and Darrell D. E. Long",
@@ -3987,7 +3988,7 @@
     "id": 169,
     "title": "REINAS: Real-Time Environmental Information Network",
     "short_description": "",
-    "full_content": "*Abstract The Real-Time Environmental Information Network and Analysis System (REINAS) is a continuing engineering research and development program with the goal of designing, developing and testing an operational prototype system for data acquisition, data management, and visualization. This system is to support the real-time utilization of advanced instrumentation in environmental science. Current applications are in meteorology and oceanography; others envisioned include geophysics, hydrology, air pollution, etc. The REINAS project has been funded by a Department of Defense University Research Initiative through the Office of Naval Research. Participating institutions include the Naval Postgraduate School (NPS), the Monterey Bay Aquarium Research Institute (MBARI) and the Baskin Center for Computer Engineering and Information Sciences of the University of California, Santa Cruz (UCSC). The REINAS system has been designed for regional real-time environmental monitoring and analysis. It is a modern system, integrated into the Internet, for conducting interactive real-time coastal air/ocean science. The database design of REINAS is independent of specific database technology and is designed to support operational scientific needs throughput the entire scientific data life-cycle. During the previous phases a survey of available technologies was made, selections of the those to be used in the prototype system were made, and detailed architecture of REINAS and experimentation with subsystems for data collection, data management, processing, and visualization were started. This report documents the status of REINAS in Phase IV -- the Experimentation and System Verification Phase. *Acknowledgements We wish to acknowledge the dedicated work of all the UCSC faculty, students and staff, and especially our partners from MBARI, NPS and other interested groups. It is difficult to name all those who participated in the REINAS project, but the following contributed directly to the work of Phase IV in 1994 and 1995: .2in itemize UCSC Faculty and Staff: Patrick E. Mantey, Daniel M. Fernandez, Harwood G. Kolsky, Glen G. Langdon, Suresh Lodha, J.J. Garcia-Luna, Darrell D. E. Long, Andrew Muir, Alex T. Pang, Stephen Petersen, Craig M. Wittenbrink. .1in NPS Faculty and Staff: Richard Lind, Paul Hirshberg, Wendell A. Nuss, Jeffrey Paduan. .1in MBARI Staff: Bruce R. Gritton, Francisco Chavez. itemize *.2in Students who worked on the REINAS Project during Phase IV: *.2in itemize System and DBMS Architecture: Bruce R. Montague, Eric C. Rosen, Linda Begley, Jose Mendoza, Theodore R. Haining, Carles Pi-Sunyer. .1in Instrumentation: Eric C. Rosen, Catherine Tornabene, Robert Sheehan, John Wiederhold, Sume Biak, Amelia Graf, Ted Goodman, Dan Harris, Mike Allen, Suzana Djurcilov. .1in Instrument Interfaces: Michelle D. Abram, Jimmy Chan, Ted Dunn, Scott Lin, Chris Thomas, David K. Schreiber. .1in Networking Research: Chane L. Fullmer, Jochen Behrens, Hans-Peter Dommel, Brian Levine, Dean Long, Shree Murthy, Clay Shields. .1in Visualization System: Naim Alper, Jeffrey J. Furman, Tom H. Goodman, Elijah C. Saxon. .1in Modeling: Cheng Tang. .1in Data Compression: William W. Macy, Robert J. Antonucci, David Kulp, James Spring, Yi Zhou. itemize",
+    "full_content": "",
     "author": [
       "Daniel M. Fernandez",
       "Patrick E. Mantey",
@@ -3996,15 +3997,18 @@
       "Craig M. Wittenbrink"
     ],
     "date": "May 1, 1996",
-    "url": "https://scholar.google.com/scholar?q=REINAS%3A%20Real-Time%20Environmental%20Information%20Network",
+    "url": "https://reinas.soe.ucsc.edu/publications.html#science",
+    "urlLabel": "Publication details",
     "bibTeX": {
-      "@inproceedings": "fernandez-cps96",
       "author": "Daniel M. Fernandez and Patrick E. Mantey and Darrell D. E. Long and Eric Rosen and Craig M. Wittenbrink",
       "title": "REINAS: Real-Time Environmental Information Network",
-      "booktitle": "Proceedings of the International Symposium on Computer-Aided Control System Design",
       "year": 1996,
       "month": "may",
-      "publisher": "IEEE"
+      "@article": "fernandez-cps96",
+      "journal": "Sea Technology",
+      "volume": 37,
+      "number": 5,
+      "pages": "47--53"
     }
   },
   {
@@ -4016,7 +4020,7 @@
       "Darrell D. E. Long"
     ],
     "date": "April 1993",
-    "url": "https://scholar.google.com/scholar?q=A%20Note%20On%20Bit-Mapped%20Free%20Sector%20Management",
+    "url": "https://www.ssrc.us/media/pubs/1b0c16bbf94d8d70f7c445fdfec012d393b5e76b.pdf",
     "bibTeX": {
       "@article": "long-osr93",
       "author": "Darrell D. E. Long",
@@ -4339,7 +4343,7 @@
       "Darrell Long"
     ],
     "date": "Jun 1, 2014",
-    "url": "https://scholar.google.com/scholar?q=DBaaS-Expert%3A%20A%20Recommender%20for%20the%20Selection%20of%20the%20Right%20Cloud%20Database",
+    "url": "https://www.ssrc.us/media/pubs/168b1ad151c63397865abec68032ece021d8faad.pdf",
     "bibTeX": {
       "@inproceedings": "sahri-procee14",
       "author": "Soror Sahri and Rim Moussa and Salima Benbernou and Darrell Long",
@@ -4515,7 +4519,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Apr 1, 2003",
-    "url": "https://scholar.google.com/scholar?q=A%20Proactive%20Implementation%20of%20Interactive%20Video-on-Demand",
+    "url": "https://www.ssrc.us/media/pubs/477be1618b4157e5921180d3f13d12141d65077d.pdf",
     "bibTeX": {
       "@inproceedings": "pris-ipccc03",
       "author": "Jehan-Fran\\c{c}ois P\\^aris and Darrell D. E. Long",
@@ -4537,7 +4541,7 @@
       "Scott A. Brandt"
     ],
     "date": "Jun 1, 2002",
-    "url": "https://scholar.google.com/scholar?q=Increasing%20Predictive%20Accuracy%20by%20Prefetching%20Multiple%20Program%20and%20User%20Specific%20Files",
+    "url": "https://www.ssrc.us/media/pubs/80f34f2e1ef3d109851049a76b58c6e8bd34f534.pdf",
     "bibTeX": {
       "@inproceedings": "yeh-procee02",
       "author": "Tsozen Yeh and Darrell D. E. Long and Scott A. Brandt",
@@ -4561,7 +4565,7 @@
       "Alex Pang"
     ],
     "date": "Jun 1, 2002",
-    "url": "https://scholar.google.com/scholar?q=Visualizing%20I/O%20Predictability",
+    "url": "https://www.ssrc.us/media/pubs/efe3d9c8f8875265dc7713a8e6750df84183bfab.pdf",
     "bibTeX": {
       "@inproceedings": "luo-procee02",
       "author": "Alison Luo and Ahmed Amer and Scott Speidel and Darrell D. E. Long and Alex Pang",
@@ -4584,7 +4588,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Apr 1, 2001",
-    "url": "https://scholar.google.com/scholar?q=A%20Dynamic%20Heuristic%20Broadcasting%20Protocol%20for%20Video-on-Demand",
+    "url": "https://www.ssrc.us/media/pubs/7f0094ffa91cf8605039580d1ba40deaeee1af7a.pdf",
     "bibTeX": {
       "@inproceedings": "carter-procee01",
       "author": "Scott R. Carter and Jehan-Fran\\c{c}ois P\\^aris and Saurabh Mohan and Darrell D. E. Long",
@@ -4606,7 +4610,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Apr 1, 2001",
-    "url": "https://scholar.google.com/scholar?q=An%20Analytical%20Study%20of%20Opportunistic%20Lease%20Renewal",
+    "url": "https://www.ssrc.us/media/pubs/8e469a3e3ff3c0b024ad768e660b345fd966b61e.pdf",
     "bibTeX": {
       "@inproceedings": "burns-procee01",
       "author": "Randal C. Burns and Robert M. Rees and Darrell D. E. Long",
@@ -4628,7 +4632,7 @@
       "Jehan-François Pâris"
     ],
     "date": "Aug 1, 2000",
-    "url": "https://scholar.google.com/scholar?q=Efficient%20Implementation%20of%20Interactive%20Video-on-Demand",
+    "url": "https://www.ssrc.us/media/pubs/0afc2f0dd936d6330a9f34d820633796154755c7.pdf",
     "bibTeX": {
       "@inproceedings": "carter-sim00",
       "author": "Steven W. Carter and Darrell D. E. Long and Jehan-Fran\\c{c}ois P\\^aris",
@@ -4650,7 +4654,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Jun 1, 2000",
-    "url": "https://scholar.google.com/scholar?q=Consistency%20and%20Locking%20for%20Distributing%20Updates%20to%20Web%20Servers%20Using%20a%20File%20System",
+    "url": "https://www.ssrc.us/media/pubs/f7ca9c887715c5f0d534520a28f8fa19db847a44.pdf",
     "bibTeX": {
       "@inproceedings": "burns-procee00",
       "author": "Randal C. Burns and Robert M. Rees and Darrell D. E. Long",
@@ -4672,7 +4676,7 @@
       "Darrell D. E. Long"
     ],
     "date": "May 1, 2000",
-    "url": "https://scholar.google.com/scholar?q=Safe%20Caching%20in%20a%20Distributed%20File%20System%20for%20Network%20Attached%20Storage",
+    "url": "https://www.ssrc.us/media/pubs/88b044bd9880514ae4ff1b2d51725afe230aed6f.pdf",
     "bibTeX": {
       "@inproceedings": "burns-procee00",
       "author": "Randal C. Burns and Robert M. Rees and Darrell D. E. Long",
@@ -4694,7 +4698,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Mar 1, 2000",
-    "url": "https://scholar.google.com/scholar?q=A%20Stack%20Model%20Based%20Replacement%20Policy%20for%20a%20Non-Volatile%20Write%20Cache",
+    "url": "https://www.ssrc.us/media/pubs/a59e5fc5c07f844952d1e6f262b3be6bbe947b50.pdf",
     "bibTeX": {
       "@inproceedings": "paris-msst00",
       "author": "Jehan-Fran\\c{c}ois P\\^aris and Theodore R. Haining and Darrell D. E. Long",
@@ -4716,7 +4720,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Jan 1, 2000",
-    "url": "https://scholar.google.com/scholar?q=A%20Reactive%20Broadcasting%20Protocol%20for%20Video%20on%20Demand",
+    "url": "https://www.ssrc.us/media/pubs/ded56db00b82c8e33554cc1ea02dfb3393bf8e24.pdf",
     "bibTeX": {
       "@inproceedings": "pris-icme00",
       "author": "Jehan-Fran\\c{c}ois P\\^aris and Steven W. Carter and Darrell D. E. Long",
@@ -4738,7 +4742,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Oct 1, 1999",
-    "url": "https://scholar.google.com/scholar?q=Combining%20Pay-per-View%20and%20Video-on-Demand%20Services",
+    "url": "https://www.ssrc.us/media/pubs/c8b8409dc584343e7459f173690cb1ea8f66132a.pdf",
     "bibTeX": {
       "@inproceedings": "pris-sim99",
       "author": "Jehan-Fran\\c{c}ois P\\^aris and Steven W. Carter and Darrell D. E. Long",
@@ -4759,7 +4763,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Feb 1, 1999",
-    "url": "https://scholar.google.com/scholar?q=Management%20Policies%20for%20Non-volatile%20Write%20Caches",
+    "url": "https://www.ssrc.us/media/pubs/9082d214fc8d64dcccd70f4242b37755c306a312.pdf",
     "bibTeX": {
       "@inproceedings": "haining-ipccc99",
       "author": "Theodore R. Haining and Darrell D. E. Long",
@@ -4781,7 +4785,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Jan 1, 1999",
-    "url": "https://scholar.google.com/scholar?q=A%20Hybrid%20Broadcasting%20Protocol%20for%20Video%20on%20Demand",
+    "url": "https://www.ssrc.us/media/pubs/76769bbd64ad4cedfd209ac52a0e75485b98715a.pdf",
     "bibTeX": {
       "@inproceedings": "pris-icme99",
       "author": "Jehan-Fran\\c{c}ois P\\^aris and Steven W. Carter and Darrell D. E. Long",
@@ -4803,7 +4807,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Dec 1, 1998",
-    "url": "https://scholar.google.com/scholar?q=Long-term%20File%20Activity%20and%20Inter-reference%20Patterns",
+    "url": "https://www.ssrc.us/media/pubs/26a2bd512620f722efeda90fe0ba1d58191bad9b.pdf",
     "bibTeX": {
       "@inproceedings": "gibson-procee98",
       "author": "Timothy Gibson and Ethan L. Miller and Darrell D. E. Long",
@@ -4825,7 +4829,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Oct 1, 1998",
-    "url": "https://scholar.google.com/scholar?q=A%20Low%20Bandwidth%20Broadcasting%20Protocol%20for%20Video%20on%20Demand",
+    "url": "https://www.ssrc.us/media/pubs/b7423bbb6ad378e839d5f3de51af7a017deeefc8.pdf",
     "bibTeX": {
       "@inproceedings": "pris-procee98",
       "author": "Jehan-Fran\\c{c}ois P\\^aris and Steven W. Carter and Darrell D. E. Long",
@@ -4847,7 +4851,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Jul 1, 1998",
-    "url": "https://scholar.google.com/scholar?q=Efficient%20Broadcasting%20Protocols%20for%20Video%20on%20Demand",
+    "url": "https://www.ssrc.us/media/pubs/69f935f0cbb4e06b04d705d0ae9b07c6940b5c1c.pdf",
     "bibTeX": {
       "@inproceedings": "pris-sim98",
       "author": "Jehan-Fran\\c{c}ois P\\^aris and Steven W. Carter and Darrell D. E. Long",
@@ -4910,7 +4914,7 @@
       "Jehan-François Pâris"
     ],
     "date": "Feb 1, 1997",
-    "url": "https://scholar.google.com/scholar?q=Voting%20Without%20Version%20Numbers",
+    "url": "https://www.ssrc.us/media/pubs/0b2aa13a1d8a8a149f077e9cada525779c737c6b.pdf",
     "bibTeX": {
       "@inproceedings": "long-ipccc97",
       "author": "Darrell D. E. Long and Jehan-Fran\\c{c}ois P\\^aris",
@@ -4974,7 +4978,7 @@
       "Jehan-François Pâris"
     ],
     "date": "Oct 1, 1996",
-    "url": "https://scholar.google.com/scholar?q=A%20Leaner%2C%20More%20Efficient%2C%20Available%20Copy%20Protocol",
+    "url": "https://www.ssrc.us/media/pubs/50ef4270d6cddb2a0b9f75f5329592d75c32a330.pdf",
     "bibTeX": {
       "@inproceedings": "long-procee96",
       "author": "Darrell D. E. Long and Jehan-Fran\\c{c}ois P\\^aris",
@@ -5018,7 +5022,7 @@
       "Luis-Felipe Cabrera"
     ],
     "date": "Mar 1, 1995",
-    "url": "https://scholar.google.com/scholar?q=Adding%20Adaptive%20Flow%20Control%20to%20Swift/RAID",
+    "url": "https://www.ssrc.us/media/pubs/9b4d80c04c9a16fe1276ddcc1a21c6857754c799.pdf",
     "bibTeX": {
       "@inproceedings": "fullmer-ipccc95",
       "author": "Chane L. Fullmer and Darrell D. E. Long and Luis-Felipe Cabrera",
@@ -5042,7 +5046,7 @@
       "Eric C. Rosen"
     ],
     "date": "Jun 1, 1994",
-    "url": "https://scholar.google.com/scholar?q=An%20Architecture%20Supporting%20Real-Time%20and%20Retrospective%20Environmental%20Data%20Management",
+    "url": "https://www.ssrc.us/media/pubs/c5b3d0c17f017e91643951ccfa834ce36bff8e3c.pdf",
     "bibTeX": {
       "@inproceedings": "long-adb94",
       "author": "Darrell D. E. Long and Patrick E. Mantey and Theodore R. Haining and Bruce R. Montague and Eric C. Rosen",
@@ -5064,7 +5068,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Apr 1, 1994",
-    "url": "https://scholar.google.com/scholar?q=Performance%20Guarantees%20on%20ATM%20Networks",
+    "url": "https://www.ssrc.us/media/pubs/59dca611be092d3669d6923409799812ff2ba662.pdf",
     "bibTeX": {
       "@inproceedings": "tang-ipccc94",
       "author": "Cheng Tang and Shree Murthy and Darrell D. E. Long",
@@ -5086,7 +5090,7 @@
       "John Wilkes"
     ],
     "date": "Jan 1, 1994",
-    "url": "https://scholar.google.com/scholar?q=The%20refdbms%20Distributed%20Bibliographic%20Database%20System",
+    "url": "https://www.ssrc.us/media/pubs/cc49648567e2f3ba075fa513d0b4d54fc5a158d0.pdf",
     "bibTeX": {
       "@inproceedings": "golding-usenix94",
       "author": "Richard A. Golding and Darrell D. E. Long and John Wilkes",
@@ -5108,7 +5112,7 @@
       "Luis-Felipe Cabrera"
     ],
     "date": "May 1, 1993",
-    "url": "https://scholar.google.com/scholar?q=Providing%20Performance%20Guarantees%20in%20an%20FDDI%20Network",
+    "url": "https://www.ssrc.us/media/pubs/5922ba3d0f2abc9a34a7bae95dabbd3d5a2e123a.pdf",
     "bibTeX": {
       "@inproceedings": "long-procee93",
       "author": "Darrell D. E. Long and Carol Osterbrock and Luis-Felipe Cabrera",
@@ -5151,7 +5155,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Apr 1, 1992",
-    "url": "https://scholar.google.com/scholar?q=A%20Simulation%20Study%20of%20Replication%20Control%20Protocols%20Using%20Volatile%20Witnesses",
+    "url": "https://www.ssrc.us/media/pubs/b729ccf4638f72d714e571c29529c2ca75a6ba8e.pdf",
     "bibTeX": {
       "@inproceedings": "sloope-sim92",
       "author": "Perry K. Sloope and Jehan-Fran\\c{c}ois P\\^aris and Darrell D. E. Long",
@@ -5172,7 +5176,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Feb 1, 1992",
-    "url": "https://scholar.google.com/scholar?q=Protecting%20Replicated%20Objects%20Against%20Media%20Failures",
+    "url": "https://www.ssrc.us/media/pubs/16dcd7844fb9232701b30d75f8cbbe0d0c809345.pdf",
     "bibTeX": {
       "@inproceedings": "pris-procee92",
       "author": "Jehan-Fran\\c{c}ois P\\^aris and Darrell D. E. Long",
@@ -5193,7 +5197,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Feb 1, 1992",
-    "url": "https://scholar.google.com/scholar?q=Quorum-oriented%20Multicast%20Protocols%20for%20Data%20Replication",
+    "url": "https://www.ssrc.us/media/pubs/5b11537283e5fc331273f91360e8c1c62c03e87b.pdf",
     "bibTeX": {
       "@inproceedings": "golding-procee92",
       "author": "Richard A. Golding and Darrell D. E. Long",
@@ -5215,7 +5219,7 @@
       "C. J. Park"
     ],
     "date": "Sep 1, 1991",
-    "url": "https://scholar.google.com/scholar?q=A%20Study%20of%20the%20Reliability%20of%20Internet%20Sites",
+    "url": "https://www.ssrc.us/media/pubs/3b54c9e903cdec548902613be858f188486fd09b.pdf",
     "bibTeX": {
       "@inproceedings": "long-procee91",
       "author": "Darrell D. E. Long and John L. Carroll and C. J. Park",
@@ -5236,7 +5240,7 @@
       "Luis-Felipe Cabrera"
     ],
     "date": "Jun 1, 1991",
-    "url": "https://scholar.google.com/scholar?q=Exploiting%20Multiple%20I/O%20Streams%20to%20Provide%20High%20Data-Rates",
+    "url": "https://www.ssrc.us/media/pubs/331d0e9136d55414a69ff487a6f8b784463ea444.pdf",
     "bibTeX": {
       "@inproceedings": "long-usenix91",
       "author": "Darrell D. E. Long and Luis-Felipe Cabrera",
@@ -5258,7 +5262,7 @@
       "Kris Stewart"
     ],
     "date": "Jun 1, 1989",
-    "url": "https://scholar.google.com/scholar?q=The%20Reliability%20of%20Regeneration-Based%20Replica%20Control%20Protocols",
+    "url": "https://www.ssrc.us/media/pubs/60b3375fe1a56dc9ff6e8d968854e0c88a092ed1.pdf",
     "bibTeX": {
       "@inproceedings": "long-procee89",
       "author": "Darrell D. E. Long and John L. Carroll and Kris Stewart",
@@ -5279,7 +5283,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Mar 1, 1989",
-    "url": "https://scholar.google.com/scholar?q=The%20Effect%20of%20Failure%20and%20Repair%20Distributions%20on%20Consistency%20Protocols%20for%20Replicated%20Data%20Objects",
+    "url": "https://www.ssrc.us/media/pubs/2356893ed2905ec6e7b4ad95bc6ccc7960af18da.pdf",
     "bibTeX": {
       "@inproceedings": "carroll-sim89",
       "author": "John L. Carroll and Darrell D. E. Long",
@@ -5301,7 +5305,7 @@
       "John L. Carroll"
     ],
     "date": "Mar 1, 1989",
-    "url": "https://scholar.google.com/scholar?q=Reliability%20of%20Replicated%20Data%20Objects",
+    "url": "https://www.ssrc.us/media/pubs/9ba3338baad03cd50df546f1cee7492eace445ea.pdf",
     "bibTeX": {
       "@inproceedings": "long-ipccc89",
       "author": "Darrell D. E. Long and Jehan-Fran\\c{c}ois P\\^aris and John L. Carroll",
@@ -5322,7 +5326,7 @@
       "Jehan-François Pâris"
     ],
     "date": "Feb 1, 1989",
-    "url": "https://scholar.google.com/scholar?q=Regeneration%20Protocols%20for%20Replicated%20Objects",
+    "url": "https://www.ssrc.us/media/pubs/b4e55f91389890adbde20fd886e017cb13e7e7b9.pdf",
     "bibTeX": {
       "@inproceedings": "long-procee89",
       "author": "Darrell D. E. Long and Jehan-Fran\\c{c}ois P\\^aris",
@@ -5343,7 +5347,7 @@
       "Jehan-François Pâris"
     ],
     "date": "Oct 1, 1988",
-    "url": "https://scholar.google.com/scholar?q=A%20Realistic%20Evaluation%20of%20Optimistic%20Dynamic%20Voting",
+    "url": "https://www.ssrc.us/media/pubs/7629d31325f8a05f1202c623a7ca649f83fdc74a.pdf",
     "bibTeX": {
       "@inproceedings": "long-procee88",
       "author": "Darrell D. E. Long and Jehan-Fran\\c{c}ois P\\^aris",
@@ -5365,7 +5369,7 @@
       "Alexander Glockner"
     ],
     "date": "Mar 1, 1988",
-    "url": "https://scholar.google.com/scholar?q=A%20Realistic%20Evaluation%20of%20Consistency%20Algorithms%20for%20Replicated%20Files",
+    "url": "https://www.ssrc.us/media/pubs/646c5292c73365bcfdf013fdfb79ab9e4f27741b.pdf",
     "bibTeX": {
       "@inproceedings": "pris-sim88",
       "author": "Jehan-Fran\\c{c}ois P\\^aris and Darrell D. E. Long and Alexander Glockner",
@@ -5386,7 +5390,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Feb 1, 1988",
-    "url": "https://scholar.google.com/scholar?q=Efficient%20Dynamic%20Voting%20Algorithms",
+    "url": "https://www.ssrc.us/media/pubs/d7facb781c6a065c08a6c119ba524e8a93281ccb.pdf",
     "bibTeX": {
       "@inproceedings": "pris-procee88",
       "author": "Jehan-Fran\\c{c}ois P\\^aris and Darrell D. E. Long",
@@ -5408,7 +5412,7 @@
       "Jehan-François Pâris"
     ],
     "date": "Sep 1, 1987",
-    "url": "https://scholar.google.com/scholar?q=Block-Level%20Consistency%20of%20Replicated%20Files",
+    "url": "https://www.ssrc.us/media/pubs/eef1b5ca2c33985a8c442456bd91d34b251416de.pdf",
     "bibTeX": {
       "@inproceedings": "carroll-procee87",
       "author": "John L. Carroll and Darrell D. E. Long and Jehan-Fran\\c{c}ois P\\^aris",
@@ -5429,7 +5433,7 @@
       "Jehan-François Pâris"
     ],
     "date": "Mar 1, 1987",
-    "url": "https://scholar.google.com/scholar?q=On%20Improving%20the%20Availability%20of%20Replicated%20Files",
+    "url": "https://www.ssrc.us/media/pubs/6fc943db9abd9495184d01152cf64f999b3d6d30.pdf",
     "bibTeX": {
       "@inproceedings": "long-procee87",
       "author": "Darrell D. E. Long and Jehan-Fran\\c{c}ois P\\^aris",
@@ -5497,7 +5501,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Nov 1, 2010",
-    "url": "https://scholar.google.com/scholar?q=Using%20a%20Shared%20Storage%20Class%20Memory%20Device%20to%20Improve%20the%20Reliability%20of%20RAID%20Arrays",
+    "url": "https://www.ssrc.us/media/pubs/949460ded8f27ebf93eed6e8b189ccf7897e749c.pdf",
     "bibTeX": {
       "@inproceedings": "chaarawi-pdsw10",
       "author": "Sara Chaarawi and Jehan-Fran\\c{c}ois P\\^aris and Ahmed Amer and Thomas Schwarz and Darrell D. E. Long",
@@ -5518,7 +5522,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Sep 1, 2010",
-    "url": "https://scholar.google.com/scholar?q=Fived%3A%20A%20Service-Based%20Architecture%20Implementation%20to%20Innovate%20at%20the%20Endpoints",
+    "url": "https://www.ssrc.us/media/pubs/44fbc56314ce67d804898a27fa2c7dc5f4239f86.pdf",
     "bibTeX": {
       "@inproceedings": "capelis-sigcomm10",
       "author": "D. J. Capelis and Darrell D. E. Long",
@@ -5542,7 +5546,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Jun 1, 2008",
-    "url": "https://scholar.google.com/scholar?q=Energy-Reliability%20Tradeoffs%20in%20Sensor%20Network%20Storage",
+    "url": "https://www.ssrc.us/media/pubs/ed3909032135f1d1d500725bac4854f0b9687826.pdf",
     "bibTeX": {
       "@inproceedings": "bhatnagar-procee08",
       "author": "Neerja Bhatnagar and Kevin M. Greenan and Rosie Wacha and Ethan L. Miller and Darrell D. E. Long",
@@ -5564,7 +5568,7 @@
       "Thomas J. E. Schwarz"
     ],
     "date": "Feb 1, 2008",
-    "url": "https://scholar.google.com/scholar?q=Ensuring%20Data%20Survival%20in%20Solid-State%20Storage%20Devices",
+    "url": "https://www.ssrc.us/media/pubs/5177d775770337e41f3815753f0d2b42816ffe9a.pdf",
     "bibTeX": {
       "@inproceedings": "pris-procee08",
       "author": "Jehan-Fran\\c{c}ois P\\^aris and Darrell D. E. Long and Thomas J. E. Schwarz",
@@ -5585,7 +5589,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Jul 1, 2006",
-    "url": "https://scholar.google.com/scholar?q=An%20Analytic%20Study%20of%20Stream%20Tapping%20Protocols",
+    "url": "https://www.ssrc.us/media/pubs/7176f55f3b9171a655c5e41e96cd5e95023d4a89.pdf",
     "bibTeX": {
       "@inproceedings": "pris-icme06",
       "author": "Jehan-Fran\\c{c}ois P\\^aris and Darrell D. E. Long",
@@ -5607,7 +5611,7 @@
       "Ahmed Amer"
     ],
     "date": "Nov 1, 2005",
-    "url": "https://scholar.google.com/scholar?q=Expecting%20the%20Unexpected%3A%20Adaptation%20for%20Predictive%20Energy%20Conservation",
+    "url": "https://www.ssrc.us/media/pubs/2e264ffc63fa7e45fa1892549026840fcb27165b.pdf",
     "bibTeX": {
       "@inproceedings": "rybczynski-procee05",
       "author": "Jeffrey P. Rybczynski and Darrell D. E. Long and Ahmed Amer",
@@ -5628,7 +5632,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Aug 1, 2001",
-    "url": "https://scholar.google.com/scholar?q=The%20Case%20for%20Aggressive%20Partial%20Preloading%20in%20Video-on-Demand%20Broadcasting%20Protocols",
+    "url": "https://www.ssrc.us/media/pubs/497f2f7a82e12d8d1af8326e1473833f51a4ffc2.pdf",
     "bibTeX": {
       "@inproceedings": "pris-icme01",
       "author": "Jehan-Fran\\c{c}ois P\\^aris and Darrell D. E. Long",
@@ -5650,7 +5654,7 @@
       "Scott A. Brandt"
     ],
     "date": "Jun 1, 2001",
-    "url": "https://scholar.google.com/scholar?q=Caching%20Files%20with%20a%20Program-based%20Last%20%24n%24%20Successors%20Model",
+    "url": "https://www.ssrc.us/media/pubs/fac624b8c7071c8e67a6231b2c0dfc5ff6ec48a6.pdf",
     "bibTeX": {
       "@inproceedings": "yeh-procee01",
       "author": "Tsozen Yeh and Darrell D. E. Long and Scott A. Brandt",
@@ -5671,7 +5675,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Jun 1, 2001",
-    "url": "https://scholar.google.com/scholar?q=Adverse%20Filtering%20Effects%20and%20the%20Resilience%20of%20Aggregating%20Caches",
+    "url": "https://www.ssrc.us/media/pubs/e17d1ad673d35fab147f08c3aa062b571a6965b2.pdf",
     "bibTeX": {
       "@inproceedings": "amer-procee01",
       "author": "Ahmed Amer and Darrell D. E. Long",
@@ -5692,7 +5696,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Apr 1, 2001",
-    "url": "https://scholar.google.com/scholar?q=Dynamic%20Relationships%20and%20the%20Persistence%20of%20Pairings",
+    "url": "https://www.ssrc.us/media/pubs/8857389602db1e8b12ff8c7d48ed91fbf18adc3b.pdf",
     "bibTeX": {
       "@inproceedings": "amer-procee01",
       "author": "Ahmed Amer and Darrell D. E. Long",
@@ -5714,7 +5718,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Jul 1, 2000",
-    "url": "https://scholar.google.com/scholar?q=A%20Universal%20Distribution%20Protocol%20for%20Video-on-Demand",
+    "url": "https://www.ssrc.us/media/pubs/3d888d6c66c258101627a36c65a0284a409718a4.pdf",
     "bibTeX": {
       "@inproceedings": "pris-icme00",
       "author": "Jehan-Fran\\c{c}ois P\\^aris and Steven W. Carter and Darrell D. E. Long",
@@ -5735,7 +5739,7 @@
       "Darrell D. E. Long"
     ],
     "date": "May 1, 2000",
-    "url": "https://scholar.google.com/scholar?q=Limiting%20the%20Client%20Bandwidth%20of%20Broadcasting%20Protocols%20for%20Videos%20on%20Demand",
+    "url": "https://www.ssrc.us/media/pubs/7f266473709a86f723eabc3ee1a8e766211aafdc.pdf",
     "bibTeX": {
       "@inproceedings": "pris-euromedia00",
       "author": "Jehan-Fran\\c{c}ois P\\^aris and Darrell D. E. Long",
@@ -5757,7 +5761,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Sep 1, 1998",
-    "url": "https://scholar.google.com/scholar?q=Bandwidth%20Allocation%20Issues%20in%20Near%20Video%20on%20Demand%20Services",
+    "url": "https://www.ssrc.us/media/pubs/6f92d26497bce705f8dc10b5c1005ea94628a1e5.pdf",
     "bibTeX": {
       "@inproceedings": "pris-icme98",
       "author": "Jehan-Fran\\c{c}ois P\\^aris and Steven W. Carter and Darrell D. E. Long",
@@ -5777,7 +5781,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Nov 1, 1992",
-    "url": "https://scholar.google.com/scholar?q=A%20Replicated%20Monitoring%20Tool",
+    "url": "https://www.ssrc.us/media/pubs/bcac96793124916f12b3da5c7c869be4f8329619.pdf",
     "bibTeX": {
       "@inproceedings": "long-wmrd92",
       "author": "Darrell D. E. Long",
@@ -5797,7 +5801,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Nov 1, 1990",
-    "url": "https://scholar.google.com/scholar?q=Analysis%20of%20Replication%20Control%20Protocols",
+    "url": "https://www.ssrc.us/media/pubs/5521877244039bbad828b82d3766fa5e95f014e1.pdf",
     "bibTeX": {
       "@inproceedings": "long-wmrd90",
       "author": "Darrell D. E. Long",
@@ -5819,7 +5823,7 @@
       "Walter A. Burkhard"
     ],
     "date": "Dec 1, 1987",
-    "url": "https://scholar.google.com/scholar?q=The%20Management%20of%20Consistency%20in%20Fault-Tolerant%20File%20Systems",
+    "url": "https://www.ssrc.us/media/pubs/8e229bb70a3739243892f8db51d0f253a8d6efb4.pdf",
     "bibTeX": {
       "@inproceedings": "pris-procee87",
       "author": "Jehan-Fran\\c{c}ois P\\^aris and Darrell D. E. Long and Walter A. Burkhard",
@@ -5839,7 +5843,7 @@
       "Darrell D. E. Long"
     ],
     "date": "Nov 1, 1987",
-    "url": "https://scholar.google.com/scholar?q=Optimistic%20Algorithms%20for%20Replicated%20Data%20Management",
+    "url": "https://www.ssrc.us/media/pubs/ef91a006a7b55dc23ad81232537f423f1ecaeb76.pdf#page=3",
     "bibTeX": {
       "@inproceedings": "long-procee87",
       "author": "Darrell D. E. Long",
@@ -5876,7 +5880,7 @@
       "Anna Farrenkopf"
     ],
     "date": "Nov 1, 1998",
-    "url": "https://scholar.google.com/scholar?q=Towards%20a%20Multipurpose%20Forecast%20Systems%20for%20the%20Columbia%20River%20Estuary",
+    "url": "https://www.ssrc.us/media/pubs/6a6f19ecd17a5fa965f28ef0d732007bf45e099f.pdf",
     "bibTeX": {
       "@inproceedings": "baptista-procee98",
       "author": "António M. Baptista and Michael Wilkin and Phillip Pearson and Paul Turner and Cole McCandlish and Phillip Barrett and Salil Das and Wendy Sommerfield and Ming Qi and Neetu Nangia and David Jay and Darrell Long and Calton Pu and John Hunt and Zhaoqing Yang and Edward Myers and Jeff Darland and Anna Farrenkopf",
@@ -5898,7 +5902,7 @@
       "Thomas Schwarz"
     ],
     "date": "Jan 1, 2012",
-    "url": "https://scholar.google.com/scholar?q=Combining%20Chunk%20Boundary%20and%20Chunk%20Signature%20Calculations%20for%20Deduplication%20%28Combinar%20la%20calculacion%20de%20limites%20de%20trozos%20y%20de%20firmas%20de%20trozos%20para%20deduplicacion%29",
+    "url": "/pdfs/litwin-latam12.pdf",
     "bibTeX": {
       "@article": "litwin-latam12",
       "author": "Witold Litwin and Darrell Long and Thomas Schwarz",

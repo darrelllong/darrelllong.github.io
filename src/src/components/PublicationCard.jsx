@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Assets
 import {
   faFileArrowDown,
+  faArrowUpRightFromSquare,
   faSquareCaretRight,
 } from "@fortawesome/free-solid-svg-icons";
 // Utilities
@@ -49,8 +50,10 @@ export default function PublicationCard({ publication, search }) {
       <footer>
         {publication.url && (
           <a href={publication.url} target="_blank" rel="noreferrer">
-            View paper
-            <FontAwesomeIcon icon={faFileArrowDown} />
+            {publication.urlLabel || "View paper"}
+            <FontAwesomeIcon
+              icon={publication.urlLabel ? faArrowUpRightFromSquare : faFileArrowDown}
+            />
           </a>
         )}
         <Link to={path}>

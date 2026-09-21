@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Assets
 import {
   faFileArrowDown,
+  faArrowUpRightFromSquare,
   faUsers,
   faCalendar,
   faCaretLeft,
@@ -91,7 +92,7 @@ BibTeX.propTypes = {
 };
 
 const Abstract = ({ paragraphs }) => {
-  if (!paragraphs) {
+  if (!paragraphs?.length) {
     return null;
   }
 
@@ -109,7 +110,7 @@ Abstract.propTypes = {
   paragraphs: PropTypes.array,
 };
 
-const Header = ({ title, author, bibTeX, url, search }) => {
+const Header = ({ title, author, bibTeX, url, urlLabel, search }) => {
   const displayDate = formatDate(bibTeX);
 
   return (
@@ -148,8 +149,11 @@ const Header = ({ title, author, bibTeX, url, search }) => {
       )}
       {url && (
         <a href={url} target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faFileArrowDown} fixedWidth />
-          View full paper
+          <FontAwesomeIcon
+            icon={urlLabel ? faArrowUpRightFromSquare : faFileArrowDown}
+            fixedWidth
+          />
+          {urlLabel || "View full paper"}
         </a>
       )}
     </header>
@@ -161,6 +165,7 @@ Header.propTypes = {
   author: PropTypes.array,
   bibTeX: PropTypes.object,
   url: PropTypes.string,
+  urlLabel: PropTypes.string,
   search: PropTypes.func,
 };
 
@@ -226,7 +231,10 @@ const Publication = ({ publication, publications, search }) => {
           <BibTeX bibTeX={publication.bibTeX} />
           {publication.url && (
             <a href={publication.url} target="_blank" rel="noreferrer">
-              View full paper <FontAwesomeIcon icon={faFileArrowDown} />
+              {publication.urlLabel || "View full paper"}{" "}
+              <FontAwesomeIcon
+                icon={publication.urlLabel ? faArrowUpRightFromSquare : faFileArrowDown}
+              />
             </a>
           )}
         </footer>
