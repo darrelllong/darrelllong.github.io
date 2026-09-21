@@ -1,7 +1,8 @@
 // Dependencies
 import React from "react";
+import { Context } from "../ContextProvider";
 import PropTypes from "prop-types";
-import { Helmet } from "react-helmet-async";
+import PageMetadata from "./PageMetadata";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Assets
@@ -54,7 +55,7 @@ const Header = ({ title, author, bibTeX, patent_number, url, search }) => {
 
   return (
     <header>
-      {title && <h2>{title}</h2>}
+      {title && <h1>{title}</h1>}
       {author && (
         <section>
           <FontAwesomeIcon icon={faUsers} fixedWidth />
@@ -117,10 +118,10 @@ const Description = ({ text }) => {
   }
 
   return (
-    <main>
+    <section className="abstract">
       <h3>Description</h3>
       <p>{text}</p>
-    </main>
+    </section>
   );
 };
 
@@ -129,13 +130,25 @@ Description.propTypes = {
 };
 
 const Patent = ({ patent, patents, search }) => {
+  const { loading, errors } = React.useContext(Context);
+  const error = errors.patents;
   // Always render same structure for consistent layout
   if (!patent) {
     return (
       <>
+        <PageMetadata
+          noIndex={!loading}
+          title={`${loading ? "Loading" : "Patent not found"} | Darrell Long`}
+        />
         <article>
           <header>
-            <h2>Loading...</h2>
+            <h1>
+              {loading
+                ? "Loading…"
+                : error
+                  ? "Archive unavailable"
+                  : "Patent not found"}
+            </h1>
           </header>
         </article>
         <nav className="main-nav">
@@ -153,10 +166,10 @@ const Patent = ({ patent, patents, search }) => {
 
   return (
     <>
-      <Helmet>
-        <title>{patent.title} | Darrell Long</title>
-        <meta name="description" content={(patent.short_description || "").slice(0, 160)} />
-      </Helmet>
+      <PageMetadata
+        title={`${patent.title} | Darrell Long`}
+        description={(patent.short_description || "").slice(0, 160)}
+      />
       <article>
         <Header {...patent} search={search} />
         <Description text={patent.short_description} />
@@ -164,7 +177,8 @@ const Patent = ({ patent, patents, search }) => {
           <BibTeX bibTeX={patent.bibTeX} />
           {patent.url && (
             <a href={patent.url} target="_blank" rel="noreferrer">
-              Download PDF from Google Patents <FontAwesomeIcon icon={faFileArrowDown} />
+              Download PDF from Google Patents{" "}
+              <FontAwesomeIcon icon={faFileArrowDown} />
             </a>
           )}
         </footer>

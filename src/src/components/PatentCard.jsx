@@ -17,9 +17,9 @@ export default function PatentCard({ patent, search }) {
   return (
     <article>
       <header>
-        <h3>
+        <h2>
           <Link to={path}>{patent.title}</Link>
-        </h3>
+        </h2>
         {patent.author && (
           <ul className="authors">
             {patent.author.map((author, index, authors) => (
@@ -33,19 +33,22 @@ export default function PatentCard({ patent, search }) {
           </ul>
         )}
         {patent.patent_number && (
-          <span className="patent-number">U.S. Patent {patent.patent_number}</span>
+          <span className="patent-number">
+            U.S. Patent {patent.patent_number}
+          </span>
         )}
         {displayDate && (
-          <Link to="/patents/" onClick={() => search(String(patent.bibTeX?.year || ""))}>
+          <Link
+            to="/patents/"
+            onClick={() => search(String(patent.bibTeX?.year || ""))}
+          >
             {displayDate}
           </Link>
         )}
       </header>
-      <main>
-        {patent.short_description && (
-          <p>{patent.short_description}</p>
-        )}
-      </main>
+      <section className="abstract">
+        {patent.short_description && <p>{patent.short_description}</p>}
+      </section>
       <footer>
         {patent.url && (
           <a href={patent.url} target="_blank" rel="noreferrer">

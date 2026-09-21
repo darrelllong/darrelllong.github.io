@@ -14,13 +14,6 @@
     "excerpt": "A pure-Rust harness that runs NIST SP 800-22, DIEHARD, and DIEHARDER against 43 generators — from deliberately broken historical PRNGs to ChaCha20 and the known-backdoored Dual_EC_DRBG."
   },
   {
-    "slug": "2026-05-05-cryptography-from-the-specifications",
-    "title": "Cryptography From the Specifications",
-    "date": "2026-05-05",
-    "tags": ["research", "cryptography", "rust"],
-    "excerpt": "A pure-Rust crate that implements classical and modern cryptographic primitives directly from their published specifications — auditable, portable, and written so you can read it."
-  },
-  {
     "slug": "2026-03-16-on-time",
     "title": "On Time",
     "date": "2026-03-16",
@@ -39,34 +32,34 @@
     "title": "Ercole Bottani",
     "date": "2026-02-06",
     "tags": ["biography"],
-    "excerpt": "An electrical engineer from Volpago del Montello, and the start of my academic lineage."
+    "excerpt": "Bottani's work in electrical engineering and computing at the Politecnico di Milano, and his place in my academic lineage."
   },
   {
     "slug": "2026-02-14-luigi-dadda",
     "title": "Luigi Dadda",
     "date": "2026-02-14",
     "tags": ["biography"],
-    "excerpt": "From analog circuits to the Dadda multiplier, and Italy's first digital computer."
+    "excerpt": "Dadda helped establish computing in Italy and developed the multiplier that bears his name during a long career at the Politecnico di Milano."
   },
   {
     "slug": "2026-02-14-domenico-ferrari",
     "title": "Domenico Ferrari",
     "date": "2026-02-14",
     "tags": ["biography"],
-    "excerpt": "From Politecnico di Milano to Berkeley — performance evaluation, BSD Unix, and Internet QoS."
+    "excerpt": "Ferrari's work on performance evaluation, Berkeley Unix, and network quality of service shaped generations of systems researchers, including my own advisor."
   },
   {
     "slug": "2026-02-14-angelo-barbagelata",
     "title": "Angelo Barbagelata",
     "date": "2026-02-14",
     "tags": ["biography"],
-    "excerpt": "An electrical engineer from Novi Ligure who designed and tested most of the electrical installations in Northern Italy."
+    "excerpt": "Barbagelata's career in electrical measurement, engineering practice, and teaching at the Politecnico di Milano."
   },
   {
     "slug": "2026-02-14-jehan-francois-paris",
     "title": "Jehan-François Pâris",
     "date": "2026-02-14",
     "tags": ["biography"],
-    "excerpt": "From Belgium to Berkeley to Houston, with stops at Purdue and UC San Diego — my doctoral advisor."
+    "excerpt": "My doctoral advisor at UC San Diego and a longtime collaborator in replication, distributed systems, and storage reliability."
   }
 ]

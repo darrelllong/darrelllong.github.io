@@ -1,125 +1,86 @@
-@import "variables";
-
+@use "variables" as *;
 main.publication,
 main.patent {
-  article {
-    header {
-      padding-bottom: 56px;
-      margin-bottom: 44px;
-
-      h2 {
-        margin-bottom: 24px;
-      }
-
-      svg {
-        margin-right: 10px;
-      }
-
-      section,
-      >a {
-        display: flex;
-        place-items: center;
-        margin-bottom: 12px;
-      }
-
-      section {
-        color: $link;
-
-        ul li {
-          display: inline-block;
-          margin-right: 6px;
-        }
-      }
-
-      a:hover,
-      a:active,
-      a:link,
-      a:visited {
-        svg {
-          color: $link !important;
-        }
-      }
-    }
-  }
-
-  svg {
-    font-size: 20px;
-  }
-
-  main {
-    padding-bottom: 44px;
-
-    @media (min-width: 900px) {
-      padding-bottom: 0;
-
-      &:after {
-        display: none;
-      }
-    }
-
-    h3,
-    p {
-      margin-bottom: 16px;
-    }
-
-    p {
-      max-width: 900px;
-      line-height: 1.65;
-    }
-  }
-
-  footer {
-    margin: 44px 0 88px;
-    max-width: 900px;
-
-    h3 {
-      margin-bottom: 20px;
-    }
-
-    div {
-      background: $layer;
-      box-shadow: $layer-shadow;
-      padding: 17px 19px 12px;
-      margin-bottom: 32px;
-
-      pre {
-        overflow: auto;
-        padding-bottom: 10px;
-        font-size: 14px;
-      }
-    }
-
-    >a {
-      display: flex;
-      place-items: center;
-
-      svg {
-        margin-left: 12px;
-      }
-    }
-  }
-
-  nav.main-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 22px;
-
-    a {
-      display: flex;
-      align-items: center;
-      text-align: center;
-
-      svg {
-        margin-left: 0;
-        margin-right: 7px;
-      }
-
-      &:last-of-type {
-        svg {
-          margin-left: 7px;
-          margin-right: 0;
-        }
-      }
-    }
+  max-width: 900px;
+  align-self: center;
+}
+main.publication article > header,
+main.patent article > header {
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid $line;
+}
+main.publication h1,
+main.patent h1 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin-bottom: 25px;
+}
+main.publication article > header > section,
+main.patent article > header > section,
+main.publication article > header > a,
+main.patent article > header > a {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: 12px;
+  font-size: 14px;
+}
+main.publication header svg,
+main.patent header svg {
+  flex-shrink: 0;
+  width: 15px;
+}
+main.publication header ul li,
+main.patent header ul li {
+  display: inline;
+  margin-right: 5px;
+}
+.abstract h3 {
+  margin-bottom: 18px;
+}
+.abstract p {
+  margin-bottom: 18px;
+  color: $muted;
+}
+main.publication article > footer,
+main.patent article > footer {
+  margin-top: 36px;
+}
+main.publication footer h3,
+main.patent footer h3 {
+  margin-bottom: 18px;
+}
+main.publication pre,
+main.patent pre {
+  padding: 24px;
+  background: $layer;
+  overflow: auto;
+  font-size: 13px;
+  line-height: 1.65;
+  margin-bottom: 22px;
+  border-left: 2px solid $line;
+}
+main.publication footer > a,
+main.patent footer > a {
+  font-size: 14px;
+}
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 22px;
+  border-top: 1px solid $line;
+  padding-top: 26px;
+  margin-top: 48px;
+  font-size: 12px;
+}
+.main-nav a {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .main-nav {
+    justify-content: center;
   }
 }

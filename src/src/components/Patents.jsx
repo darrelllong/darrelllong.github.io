@@ -12,7 +12,8 @@ import "../assets/css/publications.scss";
 export default function Patents({ searchTerm, search }) {
   const [currentPage, setCurrentPage] = React.useState(0);
   const patentsPerPage = 6;
-  const { patents } = React.useContext(Context);
+  const { patents, loading, errors } = React.useContext(Context);
+  const error = errors.patents;
 
   const filteredPatents = patents.filter((patent) => {
     const searchString = searchTerm.toLowerCase();
@@ -28,9 +29,17 @@ export default function Patents({ searchTerm, search }) {
     );
   });
 
+  React.useEffect(() => {
+    setCurrentPage(0);
+  }, [searchTerm]);
+
   return (
     <>
-      <h2>Patents</h2>
+      <header className="collection-heading">
+        <p className="eyebrow">Research archive</p>
+        <h1>Patents</h1>
+        <p>Inventions in storage, networking, and computer systems.</p>
+      </header>
       <SearchBar
         searchTerm={searchTerm}
         onchange={(value) => {
@@ -38,6 +47,13 @@ export default function Patents({ searchTerm, search }) {
           setCurrentPage(0);
         }}
       />
+      <p className="results-count" role="status">
+        {loading
+          ? "Loading archive…"
+          : error
+            ? error
+            : `${filteredPatents.length} patent${filteredPatents.length === 1 ? "" : "s"}`}
+      </p>
       {filteredPatents.length > 0 ? (
         <section className="publications">
           {filteredPatents
@@ -46,16 +62,16 @@ export default function Patents({ searchTerm, search }) {
               (currentPage + 1) * patentsPerPage,
             )
             .map((patent) => (
-              <PatentCard
-                key={patent.id}
-                patent={patent}
-                search={search}
-              />
+              <PatentCard key={patent.id} patent={patent} search={search} />
             ))}
         </section>
       ) : (
         <h3>
-          No patents found, please refine your search or try again later
+          {loading
+            ? "Loading…"
+            : error
+              ? "Please reload the page to try again."
+              : "No patents match your search."}
         </h3>
       )}
       <Pagination

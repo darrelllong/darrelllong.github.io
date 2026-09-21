@@ -1,54 +1,43 @@
-@import "variables";
-
+@use "variables" as *;
 main.about {
-  &:after {
-    display: none;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.2fr);
+  gap: 80px;
+}
+.aboutSection h1 {
+  margin-bottom: 28px;
+}
+.aboutSection img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin-bottom: 26px;
+}
+.aboutSection p {
+  color: $muted;
+  font-size: 15px;
+}
+.aboutSection .eyebrow {
+  color: $accent;
+  font-size: 11px;
+}
+.accordions {
+  padding-top: 39px;
+}
+@media (max-width: 900px) {
+  main.about {
+    gap: 40px;
   }
-
-  .aboutSection {
-    padding-bottom: 84px;
-
-    @media screen and (min-width: 968px) {
-      max-width: 430px;
-    }
-
-    h2 {
-      margin-bottom: 16px;
-    }
-
-    img {
-      width: 100%;
-      max-width: 430px;
-      max-height: 430px;
-      object-fit: cover;
-      border-radius: 5px;
-      margin-bottom: 24px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-      @media screen and (min-width: 700px) {
-        float: left;
-        margin-right: 20px;
-      }
-
-      @media screen and (min-width: 968px) {
-        float: none;
-        margin-right: 0;
-      }
-    }
-
-    p {
-      clear: right;
-    }
+}
+@media (max-width: 760px) {
+  main.about {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
-
-  @media screen and (min-width: 968px) {
-    display: grid;
-    gap: 0 20px;
-    grid-template-columns: auto 566px;
-    justify-content: space-between;
-
-    .aboutSection::after {
-      display: none;
-    }
+  .aboutSection img {
+    max-width: 430px;
+  }
+  .accordions {
+    padding-top: 0;
   }
 }

@@ -21,11 +21,11 @@ export const ContextProvider = ({ children }) => {
     }
     return path.replace(/\//g, "");
   };
-  const [showMenu, setShowMenu] = React.useState(false);
 
   const [publications, setPublications] = React.useState([]);
   const [patents, setPatents] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
+  const [errors, setErrors] = React.useState({});
 
   React.useEffect(() => {
     const fetchJson = (url) =>
@@ -38,18 +38,35 @@ export const ContextProvider = ({ children }) => {
 
     const pubPromise = fetchJson("/publications.json")
       .then((data) => setPublications(sortByDateDesc(data)))
-      .catch((error) => console.error("Error fetching publications:", error));
+      .catch(() =>
+        setErrors((previous) => ({
+          ...previous,
+          publications: "The publication archive could not be loaded.",
+        })),
+      );
 
     const patPromise = fetchJson("/patents.json")
       .then((data) => setPatents(sortByDateDesc(data)))
-      .catch((error) => console.error("Error fetching patents:", error));
+      .catch(() =>
+        setErrors((previous) => ({
+          ...previous,
+          patents: "The patent archive could not be loaded.",
+        })),
+      );
 
     Promise.all([pubPromise, patPromise]).finally(() => setLoading(false));
   }, []);
 
   return (
     <Context.Provider
-      value={{ pathClass, showMenu, setShowMenu, publications, patents, loading, dataReady: !loading }}
+      value={{
+        pathClass,
+        publications,
+        patents,
+        loading,
+        errors,
+        dataReady: !loading,
+      }}
     >
       {children}
     </Context.Provider>

@@ -5,7 +5,7 @@ tags: ["research", "cryptography", "rust", "randomness"]
 excerpt: "A pure-Rust harness that runs NIST SP 800-22, DIEHARD, and DIEHARDER against 43 generators — from deliberately broken historical PRNGs to ChaCha20 and the known-backdoored Dual_EC_DRBG."
 ---
 
-The companion to the [cryptography library](/blog/2026-05-05-cryptography-from-the-specifications) is a separate repository called [`entropy`](https://github.com/darrelllong/entropy). Its job is to examine the random number generators that cryptographic primitives consume.
+The companion to the [cryptography library](https://github.com/darrelllong/cryptography) is a separate repository called [`entropy`](https://github.com/darrelllong/entropy). Its job is to examine the random number generators that cryptographic primitives consume.
 
 A cipher with a strong implementation and a weak random source is a broken cipher. The history of practical cryptographic failures is largely a history of bad randomness, not a history of bad ciphers. Debian OpenSSL in 2008. The Sony PS3 ECDSA leak in 2010. The Juniper Dual_EC backdoor exposed in 2015. The TLS handshakes James Hughes catalogued in his 2022 dissertation, where low-entropy seeds let the same private key turn up across unrelated certificates. The cipher worked perfectly in every one of those cases. The randomness did not.
 
@@ -35,7 +35,7 @@ The runner ships with 43 built-in generators arranged in six deliberate tiers.
 
 **Quality simulation generators.** MT19937, the xorshift family, PCG32 and PCG64, Xoshiro256, Xoroshiro128, WyRand, SFC64, JSF64. These pass the classic batteries and are appropriate for Monte Carlo work and reproducible scientific simulation. They are also all *invertible* — an adversary who can observe output can reconstruct the internal state and predict everything that follows. None of them belong in any adversarial context, no matter how well they perform on a goodness-of-fit test, and the crate's documentation says so plainly at every relevant constructor.
 
-**Cipher-CTR CSPRNGs.** The cryptography crate's block ciphers run in CTR mode as random sources: AES-128, Camellia-128, Twofish-128, Serpent-128, SM4, Grasshopper, CAST-128, SEED. Plus the stream ciphers as direct keystream sources: Rabbit, Salsa20, SNOW 3G, ZUC-128. This is where the dependency on the [cryptography](/blog/2026-05-05-cryptography-from-the-specifications) crate earns its keep — the test harness is exercising the *same* primitive code that would ship in a real deployment.
+**Cipher-CTR CSPRNGs.** The cryptography crate's block ciphers run in CTR mode as random sources: AES-128, Camellia-128, Twofish-128, Serpent-128, SM4, Grasshopper, CAST-128, SEED. Plus the stream ciphers as direct keystream sources: Rabbit, Salsa20, SNOW 3G, ZUC-128. This is where the dependency on the [cryptography](https://github.com/darrelllong/cryptography) crate earns its keep — the test harness is exercising the *same* primitive code that would ship in a real deployment.
 
 **NIST DRBGs.** SP 800-90A's `HashDrbg` (SHA-256), `HmacDrbg` (HMAC-SHA-256), and `CtrDrbgAes256`, plus a ChaCha20 stream-DRBG and two more for variety: `SpongeBob` (a SHA3-512 chain) and `Squidward` (a SHA-256 chain).
 

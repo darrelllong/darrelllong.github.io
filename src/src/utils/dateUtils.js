@@ -1,14 +1,33 @@
 // Shared date utilities for publications and patents
 
 export const monthNames = {
-  jan: "January", feb: "February", mar: "March", apr: "April",
-  may: "May", jun: "June", jul: "July", aug: "August",
-  sep: "September", oct: "October", nov: "November", dec: "December"
+  jan: "January",
+  feb: "February",
+  mar: "March",
+  apr: "April",
+  may: "May",
+  jun: "June",
+  jul: "July",
+  aug: "August",
+  sep: "September",
+  oct: "October",
+  nov: "November",
+  dec: "December",
 };
 
 export const monthToNum = {
-  jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5,
-  jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11
+  jan: 0,
+  feb: 1,
+  mar: 2,
+  apr: 3,
+  may: 4,
+  jun: 5,
+  jul: 6,
+  aug: 7,
+  sep: 8,
+  oct: 9,
+  nov: 10,
+  dec: 11,
 };
 
 export const formatDate = (bibTeX) => {
@@ -27,3 +46,11 @@ export const sortByDateDesc = (items) => {
     return monthB - monthA;
   });
 };
+
+export const formatPostDate = (date) =>
+  new Intl.DateTimeFormat("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(`${date}T00:00:00Z`));

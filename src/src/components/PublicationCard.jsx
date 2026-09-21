@@ -17,9 +17,9 @@ export default function PublicationCard({ publication, search }) {
   return (
     <article>
       <header>
-        <h3>
+        <h2>
           <Link to={path}>{publication.title}</Link>
-        </h3>
+        </h2>
         {publication.author && (
           <ul className="authors">
             {publication.author.map((author, index, authors) => (
@@ -33,20 +33,23 @@ export default function PublicationCard({ publication, search }) {
           </ul>
         )}
         {displayDate && (
-          <Link to="/publications/" onClick={() => search(String(publication.bibTeX?.year || ""))}>
+          <Link
+            to="/publications/"
+            onClick={() => search(String(publication.bibTeX?.year || ""))}
+          >
             {displayDate}
           </Link>
         )}
       </header>
-      <main>
+      <section className="abstract">
         {publication.short_description && (
           <p>{publication.short_description}</p>
         )}
-      </main>
+      </section>
       <footer>
         {publication.url && (
           <a href={publication.url} target="_blank" rel="noreferrer">
-            Download
+            View paper
             <FontAwesomeIcon icon={faFileArrowDown} />
           </a>
         )}

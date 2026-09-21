@@ -16,52 +16,71 @@ import Patents from "./Patents";
 import Patent from "./Patent";
 import Consultancy from "./Consultancy";
 import Blog from "./Blog";
-import BlogPost from "./BlogPost";
-import Menu from "./Menu";
+const BlogPost = React.lazy(() => import("./BlogPost"));
+import Home from "./Home";
+import PageMetadata from "./PageMetadata";
 // Styles
 import "../assets/css/home.scss";
 
 export default function Main() {
-  const [searchTerm, setSearchTerm] = React.useState("");
+  const [searchTerms, setSearchTerms] = React.useState({});
   const location = useLocation();
+  const collection = location.pathname.split("/")[1];
+  const searchTerm = searchTerms[collection] || "";
+  const setSearchTerm = (value) =>
+    setSearchTerms((previous) => ({ ...previous, [collection]: value }));
   const navigate = useNavigate();
-  const { pathClass, publications, patents, showMenu, setShowMenu } =
-    React.useContext(Context);
+  const { pathClass, publications, patents } = React.useContext(Context);
 
   React.useEffect(() => {
-    const disableMenu = () => {
-      if (location.pathname === "/" || window.innerWidth > 968) {
-        setShowMenu(false);
-      }
-    };
-    disableMenu();
-    window.addEventListener("resize", disableMenu);
-    return () => window.removeEventListener("resize", disableMenu);
-  }, [location.pathname, setShowMenu]);
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   React.useEffect(() => {
     const params = new URLSearchParams(location.search);
     const redirectPath = params.get("redirect");
-    const validRoutes = ["/about", "/publications", "/patents", "/consultancy", "/blog"];
-    if (redirectPath && (validRoutes.includes(redirectPath) || /^\/(?:publications|patents)\/\d+\/?$/.test(redirectPath) || /^\/blog\/[\w-]+\/?$/.test(redirectPath))) {
+    const validRoutes = [
+      "/about",
+      "/publications",
+      "/patents",
+      "/consultancy",
+      "/blog",
+    ];
+    if (
+      redirectPath &&
+      (validRoutes.includes(redirectPath) ||
+        /^\/(?:publications|patents)\/\d+\/?$/.test(redirectPath) ||
+        /^\/blog\/[\w-]+\/?$/.test(redirectPath))
+    ) {
       navigate(redirectPath, { replace: true });
     }
   }, [location, navigate]);
 
-  const matchPublication = location.pathname.match(/^\/publications\/(\d+)\/?$/);
+  const matchPublication = location.pathname.match(
+    /^\/publications\/(\d+)\/?$/,
+  );
   const publicationId = matchPublication
     ? parseInt(matchPublication[1], 10)
     : null;
 
   const matchPatent = location.pathname.match(/^\/patents\/(\d+)\/?$/);
-  const patentId = matchPatent
-    ? parseInt(matchPatent[1], 10)
-    : null;
+  const patentId = matchPatent ? parseInt(matchPatent[1], 10) : null;
 
   return (
     <main
-      className={`${pathClass(location.pathname)} ${showMenu && location.pathname !== "/" ? "menuShown" : ""}`}
+      id="main-content"
+      tabIndex="-1"
+      className={pathClass(location.pathname)}
     >
+      {location.pathname.split("/").filter(Boolean).length <= 1 && (
+        <PageMetadata
+          title={
+            location.pathname === "/"
+              ? "Darrell Long | UC Santa Cruz"
+              : `${{ about: "About", publications: "Publications", patents: "Patents", blog: "Blog", consultancy: "Consultancy" }[collection] || "Darrell Long"} | Darrell Long`
+          }
+        />
+      )}
       <Routes>
         <Route path="/about" element={<About />} />
         <Route
@@ -73,27 +92,25 @@ export default function Main() {
         <Route path="/consultancy" element={<Consultancy />} />
         <Route
           path="/blog"
-          element={
-            <Blog searchTerm={searchTerm} search={setSearchTerm} />
-          }
+          element={<Blog searchTerm={searchTerm} search={setSearchTerm} />}
         />
         <Route
           path="/blog/:slug"
-          element={<BlogPost search={setSearchTerm} />}
+          element={
+            <React.Suspense fallback={<p role="status">Loading post…</p>}>
+              <BlogPost search={setSearchTerm} />
+            </React.Suspense>
+          }
         />
         <Route
           path="/patents"
-          element={
-            <Patents searchTerm={searchTerm} search={setSearchTerm} />
-          }
+          element={<Patents searchTerm={searchTerm} search={setSearchTerm} />}
         />
         <Route
           path="/publications/:id"
           element={
             <Publication
-              publication={publications.find(
-                (pub) => pub.id === publicationId,
-              )}
+              publication={publications.find((pub) => pub.id === publicationId)}
               publications={publications}
               search={setSearchTerm}
             />
@@ -103,18 +120,15 @@ export default function Main() {
           path="/patents/:id"
           element={
             <Patent
-              patent={patents.find(
-                (pat) => pat.id === patentId,
-              )}
+              patent={patents.find((pat) => pat.id === patentId)}
               patents={patents}
               search={setSearchTerm}
             />
           }
         />
-        <Route path="/" element={<Menu />} />
+        <Route path="/" element={<Home />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-      {showMenu && location.pathname !== "/" && <Menu />}
     </main>
   );
 }

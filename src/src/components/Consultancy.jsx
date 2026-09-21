@@ -209,7 +209,8 @@ export default function Consultancy() {
   return (
     <>
       <section className="dottedBorder darrell">
-        <h2>Consultancy</h2>
+        <p className="eyebrow">Pentexoire Consulting</p>
+        <h1>Consultancy</h1>
         <p>
           Dr. Darrell D. E. Long provides consultancy services and owns the{" "}
           <a href="https://pentexoire.com/" target="_blank" rel="noreferrer">

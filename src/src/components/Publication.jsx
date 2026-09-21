@@ -1,7 +1,8 @@
 // Dependencies
 import React from "react";
+import { Context } from "../ContextProvider";
 import PropTypes from "prop-types";
-import { Helmet } from "react-helmet-async";
+import PageMetadata from "./PageMetadata";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Assets
@@ -23,12 +24,32 @@ const BibTeX = ({ bibTeX }) => {
   }
 
   // Find entry type and citation key
-  const entryTypes = ["@article", "@inproceedings", "@book", "@incollection", "@techreport", "@misc"];
+  const entryTypes = [
+    "@article",
+    "@inproceedings",
+    "@book",
+    "@incollection",
+    "@techreport",
+    "@misc",
+  ];
   const entryType = entryTypes.find((t) => bibTeX[t]) || "@article";
   const citationKey = bibTeX[entryType] || "unknown";
 
   // 3-letter month abbreviations are BibTeX macros, don't quote them
-  const threeLetterMonths = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+  const threeLetterMonths = [
+    "jan",
+    "feb",
+    "mar",
+    "apr",
+    "may",
+    "jun",
+    "jul",
+    "aug",
+    "sep",
+    "oct",
+    "nov",
+    "dec",
+  ];
   const formatMonth = (month) => {
     if (!month) return null;
     const m = month.toLowerCase();
@@ -43,13 +64,16 @@ const BibTeX = ({ bibTeX }) => {
   if (bibTeX.booktitle) fields.push(`  booktitle    = {${bibTeX.booktitle}}`);
   if (bibTeX.publisher) fields.push(`  publisher    = {${bibTeX.publisher}}`);
   if (bibTeX.editor) fields.push(`  editor       = {${bibTeX.editor}}`);
-  if (bibTeX.institution) fields.push(`  institution  = {${bibTeX.institution}}`);
-  if (bibTeX.organization) fields.push(`  organization = {${bibTeX.organization}}`);
+  if (bibTeX.institution)
+    fields.push(`  institution  = {${bibTeX.institution}}`);
+  if (bibTeX.organization)
+    fields.push(`  organization = {${bibTeX.organization}}`);
   if (bibTeX.address) fields.push(`  address      = {${bibTeX.address}}`);
   if (bibTeX.volume) fields.push(`  volume       = {${bibTeX.volume}}`);
   if (bibTeX.number) fields.push(`  number       = {${bibTeX.number}}`);
   if (bibTeX.pages) fields.push(`  pages        = {${bibTeX.pages}}`);
-  if (bibTeX.month) fields.push(`  month        = ${formatMonth(bibTeX.month)}`);
+  if (bibTeX.month)
+    fields.push(`  month        = ${formatMonth(bibTeX.month)}`);
   if (bibTeX.year) fields.push(`  year         = {${bibTeX.year}}`);
 
   return (
@@ -72,12 +96,12 @@ const Abstract = ({ paragraphs }) => {
   }
 
   return (
-    <main className="dottedBorder">
+    <section className="abstract">
       <h3>Abstract</h3>
       {paragraphs.map((line, index) => (
         <p key={index}>{line}</p>
       ))}
-    </main>
+    </section>
   );
 };
 
@@ -90,7 +114,7 @@ const Header = ({ title, author, bibTeX, url, search }) => {
 
   return (
     <header>
-      {title && <h2>{title}</h2>}
+      {title && <h1>{title}</h1>}
       {author && (
         <section>
           <FontAwesomeIcon icon={faUsers} fixedWidth />
@@ -125,7 +149,7 @@ const Header = ({ title, author, bibTeX, url, search }) => {
       {url && (
         <a href={url} target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faFileArrowDown} fixedWidth />
-          Download full paper PDF
+          View full paper
         </a>
       )}
     </header>
@@ -141,13 +165,25 @@ Header.propTypes = {
 };
 
 const Publication = ({ publication, publications, search }) => {
+  const { loading, errors } = React.useContext(Context);
+  const error = errors.publications;
   // Always render same structure for consistent layout
   if (!publication) {
     return (
       <>
+        <PageMetadata
+          noIndex={!loading}
+          title={`${loading ? "Loading" : "Publication not found"} | Darrell Long`}
+        />
         <article>
           <header>
-            <h2>Loading...</h2>
+            <h1>
+              {loading
+                ? "Loading…"
+                : error
+                  ? "Archive unavailable"
+                  : "Publication not found"}
+            </h1>
           </header>
         </article>
         <nav className="main-nav">
@@ -157,7 +193,11 @@ const Publication = ({ publication, publications, search }) => {
     );
   }
 
-  const description = (publication.short_description || publication.full_content?.split("\n")[0] || "").slice(0, 160);
+  const description = (
+    publication.short_description ||
+    publication.full_content?.split("\n")[0] ||
+    ""
+  ).slice(0, 160);
 
   const lines = [];
   if (publication.full_content) {
@@ -165,17 +205,20 @@ const Publication = ({ publication, publications, search }) => {
   }
 
   const currentIndex = publications.findIndex((p) => p.id === publication.id);
-  const prevPub = publications[(currentIndex - 1 + publications.length) % publications.length];
+  const prevPub =
+    publications[
+      (currentIndex - 1 + publications.length) % publications.length
+    ];
   const nextPub = publications[(currentIndex + 1) % publications.length];
   const prev = `/publications/${prevPub.id}/`;
   const next = `/publications/${nextPub.id}/`;
 
   return (
     <>
-      <Helmet>
-        <title>{publication.title} | Darrell Long</title>
-        <meta name="description" content={description} />
-      </Helmet>
+      <PageMetadata
+        title={`${publication.title} | Darrell Long`}
+        description={description}
+      />
       <article>
         <Header {...publication} search={search} />
         <Abstract paragraphs={lines} />
@@ -183,7 +226,7 @@ const Publication = ({ publication, publications, search }) => {
           <BibTeX bibTeX={publication.bibTeX} />
           {publication.url && (
             <a href={publication.url} target="_blank" rel="noreferrer">
-              Download full paper PDF <FontAwesomeIcon icon={faFileArrowDown} />
+              View full paper <FontAwesomeIcon icon={faFileArrowDown} />
             </a>
           )}
         </footer>

@@ -9,12 +9,17 @@ async function loadPosts() {
 
   postsPromise = (async () => {
     const res = await fetch("/posts/index.json");
+    if (!res.ok) throw new Error("Unable to load the blog archive.");
     const index = await res.json();
     postsCache = index.sort((a, b) => b.date.localeCompare(a.date));
     return postsCache;
   })();
 
-  return postsPromise;
+  try {
+    return await postsPromise;
+  } finally {
+    postsPromise = null;
+  }
 }
 
 export async function getAllPosts() {

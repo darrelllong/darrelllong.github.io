@@ -1,28 +1,38 @@
 import PropTypes from "prop-types";
+import { useId } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleXmark, faSearch } from "@fortawesome/free-solid-svg-icons";
-
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 export default function SearchBar({ searchTerm, onchange }) {
+  const id = useId();
   return (
     <form
-      className="search-bar dottedBorder"
-      onSubmit={(e) => e.preventDefault()}
+      className="search-bar"
+      role="search"
+      onSubmit={(event) => event.preventDefault()}
     >
+      <label className="sr-only" htmlFor={id}>
+        Search this collection
+      </label>
+      <FontAwesomeIcon icon={faSearch} />
       <input
-        type="text"
-        placeholder="Search"
+        id={id}
+        type="search"
+        placeholder="Search by title, name, or keyword…"
         value={searchTerm}
-        onChange={(e) => onchange(e.target.value)}
+        onChange={(event) => onchange(event.target.value)}
       />
-      <FontAwesomeIcon
-        icon={searchTerm !== "" ? faCircleXmark : faSearch}
-        flip="horizontal"
-        onClick={() => onchange("")}
-      />
+      {searchTerm && (
+        <button
+          type="button"
+          onClick={() => onchange("")}
+          aria-label="Clear search"
+        >
+          ×
+        </button>
+      )}
     </form>
   );
 }
-
 SearchBar.propTypes = {
   searchTerm: PropTypes.string.isRequired,
   onchange: PropTypes.func.isRequired,

@@ -1,30 +1,38 @@
-import { mkdirSync, readFileSync, writeFileSync } from 'fs';
-import { dirname, join } from 'path';
-import { fileURLToPath } from 'url';
+import {
+  cpSync,
+  mkdirSync,
+  readFileSync,
+  readdirSync,
+  writeFileSync,
+} from "fs";
+import { dirname, join } from "path";
+import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const repoRoot = join(__dirname, '..', '..');
-const distDir = join(__dirname, '..', 'dist');
-const baseHtml = readFileSync(join(distDir, 'index.html'), 'utf-8');
+const repoRoot = join(__dirname, "..", "..");
+const distDir = join(__dirname, "..", "dist");
+const baseHtml = readFileSync(join(distDir, "index.html"), "utf-8");
 
-const BASE_URL = 'https://darrelllong.github.io';
+const BASE_URL = "https://darrelllong.github.io";
 
 function truncate(str, max = 160) {
-  if (!str) return '';
-  str = str.replace(/\s+/g, ' ').trim();
-  return str.length <= max ? str : str.slice(0, max - 1) + '\u2026';
+  if (!str) return "";
+  str = str.replace(/\s+/g, " ").trim();
+  return str.length <= max ? str : str.slice(0, max - 1) + "\u2026";
 }
 
 function escapeAttr(str) {
   return str
-    .replace(/&/g, '&amp;')
-    .replace(/"/g, '&quot;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
 }
 
 function injectMeta(html, { title, description, canonicalUrl }) {
-  const fullTitle = `${title} | Darrell Long`;
+  const fullTitle = title
+    ? `${title} | Darrell Long`
+    : "Darrell Long | UC Santa Cruz";
   const desc = truncate(description);
   const injection = [
     `<title>${escapeAttr(fullTitle)}</title>`,
@@ -34,67 +42,108 @@ function injectMeta(html, { title, description, canonicalUrl }) {
     `  <meta property="og:description" content="${escapeAttr(desc)}">`,
     `  <meta property="og:url" content="${canonicalUrl}">`,
     `  <meta property="og:type" content="website">`,
-  ].join('\n  ');
-  return html.replace('<title>Darrell Long</title>', injection);
+  ].join("\n  ");
+  return html.replace("<title>Darrell Long</title>", injection);
 }
 
 function writeRoute(routePath, meta) {
-  const dir = join(repoRoot, routePath);
+  const dir = join(distDir, routePath);
   mkdirSync(dir, { recursive: true });
-  writeFileSync(join(dir, 'index.html'), injectMeta(baseHtml, meta));
+  writeFileSync(join(dir, "index.html"), injectMeta(baseHtml, meta));
 }
 
-const allUrls = [BASE_URL + '/'];
+const allUrls = [BASE_URL + "/"];
 
 // Static routes
 const staticRoutes = [
   {
-    path: 'about',
-    title: 'About',
-    description: 'About Professor Darrell D.E. Long, Distinguished Professor Emeritus of Computer Science and Engineering at UC Santa Cruz.',
+    path: "about",
+    title: "About",
+    description:
+      "About Professor Darrell D.E. Long, Distinguished Professor Emeritus of Computer Science and Engineering at UC Santa Cruz.",
   },
   {
-    path: 'publications',
-    title: 'Publications',
-    description: 'Research publications by Professor Darrell Long covering storage systems, distributed systems, and computer architecture.',
+    path: "publications",
+    title: "Publications",
+    description:
+      "Research publications by Professor Darrell Long covering storage systems, distributed systems, and computer architecture.",
   },
   {
-    path: 'patents',
-    title: 'Patents',
-    description: 'U.S. Patents by Professor Darrell Long and colleagues in storage, networking, and systems research.',
+    path: "patents",
+    title: "Patents",
+    description:
+      "U.S. Patents by Professor Darrell Long and colleagues in storage, networking, and systems research.",
   },
   {
-    path: 'blog',
-    title: 'Blog',
-    description: 'Blog posts by Professor Darrell Long on computer science, research, and academic history.',
+    path: "blog",
+    title: "Blog",
+    description:
+      "Blog posts by Professor Darrell Long on computer science, research, and academic history.",
   },
   {
-    path: 'consultancy',
-    title: 'Consultancy',
-    description: 'Expert consulting services by Professor Darrell Long and the Pentexoire team.',
+    path: "consultancy",
+    title: "Consultancy",
+    description:
+      "Expert consulting services by Professor Darrell Long and the Pentexoire team.",
   },
 ];
 
 for (const r of staticRoutes) {
   const url = `${BASE_URL}/${r.path}/`;
-  writeRoute(r.path, { title: r.title, description: r.description, canonicalUrl: url });
-  allUrls.push(url);
-}
-
-// Publications
-const publications = JSON.parse(readFileSync(join(repoRoot, 'publications.json'), 'utf-8'));
-for (const pub of publications) {
-  const url = `${BASE_URL}/publications/${pub.id}/`;
-  writeRoute(`publications/${pub.id}`, {
-    title: pub.title,
-    description: pub.short_description || pub.full_content?.split('\n')[0] || pub.title,
+  writeRoute(r.path, {
+    title: r.title,
+    description: r.description,
     canonicalUrl: url,
   });
   allUrls.push(url);
 }
 
+// Publications
+const publications = JSON.parse(
+  readFileSync(join(repoRoot, "publications.json"), "utf-8"),
+);
+for (const pub of publications) {
+  const url = `${BASE_URL}/publications/${pub.id}/`;
+  writeRoute(`publications/${pub.id}`, {
+    title: pub.title,
+    description:
+      pub.short_description || pub.full_content?.split("\n")[0] || pub.title,
+    canonicalUrl: url,
+  });
+  allUrls.push(url);
+}
+
+// Keep previously published numeric URLs working even if their catalog record
+// was removed. These shells show the app's not-found state and are not indexed.
+const publicationIds = new Set(
+  publications.map((publication) => String(publication.id)),
+);
+for (const entry of readdirSync(join(repoRoot, "publications"), {
+  withFileTypes: true,
+})) {
+  if (
+    !entry.isDirectory() ||
+    !/^\d+$/.test(entry.name) ||
+    publicationIds.has(entry.name)
+  )
+    continue;
+  const directory = join(distDir, "publications", entry.name);
+  mkdirSync(directory, { recursive: true });
+  writeFileSync(
+    join(directory, "index.html"),
+    injectMeta(baseHtml, {
+      title: "Publication not found",
+      description:
+        "This publication is no longer in the catalog. Browse the publication archive for current records.",
+      canonicalUrl: `${BASE_URL}/publications/${entry.name}/`,
+    }).replace("</head>", '<meta name="robots" content="noindex">\n</head>'),
+  );
+}
+
 // Patents
-const patents = JSON.parse(readFileSync(join(repoRoot, 'patents.json'), 'utf-8'));
+const patents = JSON.parse(
+  readFileSync(join(repoRoot, "patents.json"), "utf-8"),
+);
 for (const pat of patents) {
   const url = `${BASE_URL}/patents/${pat.id}/`;
   writeRoute(`patents/${pat.id}`, {
@@ -109,16 +158,18 @@ for (const pat of patents) {
 // has indexed. Redirect each to its current numeric publication page so old
 // links resolve instead of 404ing. Map: old slug -> current numeric id.
 const legacyPublicationRedirects = {
-  'ICDCS-1987-Long': 235,
-  'CMU-1987-Long': 255,
-  'CC-Burns-2001': 24,
-  'ICJS-Golding-1991': 178,
+  "ICDCS-1987-Long": 235,
+  "CMU-1987-Long": 255,
+  "CC-Burns-2001": 24,
+  "ICJS-Golding-1991": 178,
 };
 for (const [slug, id] of Object.entries(legacyPublicationRedirects)) {
   const target = `${BASE_URL}/publications/${id}/`;
-  const dir = join(repoRoot, 'publications', slug);
+  const dir = join(distDir, "publications", slug);
   mkdirSync(dir, { recursive: true });
-  writeFileSync(join(dir, 'index.html'), `<!DOCTYPE html>
+  writeFileSync(
+    join(dir, "index.html"),
+    `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -131,11 +182,14 @@ for (const [slug, id] of Object.entries(legacyPublicationRedirects)) {
   <p>Redirecting to <a href="${target}">the publication page</a>...</p>
 </body>
 </html>
-`);
+`,
+  );
 }
 
 // Blog posts
-const blogPosts = JSON.parse(readFileSync(join(repoRoot, 'posts', 'index.json'), 'utf-8'));
+const blogPosts = JSON.parse(
+  readFileSync(join(repoRoot, "posts", "index.json"), "utf-8"),
+);
 for (const post of blogPosts) {
   const url = `${BASE_URL}/blog/${post.slug}/`;
   writeRoute(`blog/${post.slug}`, {
@@ -147,17 +201,44 @@ for (const post of blogPosts) {
 }
 
 // sitemap.xml
-const today = new Date().toISOString().split('T')[0];
+const today = new Date().toISOString().split("T")[0];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${allUrls.map(url => `  <url>\n    <loc>${url}</loc>\n    <lastmod>${today}</lastmod>\n  </url>`).join('\n')}
+${allUrls.map((url) => `  <url>\n    <loc>${url}</loc>\n    <lastmod>${today}</lastmod>\n  </url>`).join("\n")}
 </urlset>`;
-writeFileSync(join(repoRoot, 'sitemap.xml'), sitemap);
+writeFileSync(join(distDir, "sitemap.xml"), sitemap);
 
 // robots.txt
 const robotsTxt = `User-agent: *\nAllow: /\nSitemap: ${BASE_URL}/sitemap.xml\n`;
-writeFileSync(join(repoRoot, 'robots.txt'), robotsTxt);
+writeFileSync(join(distDir, "robots.txt"), robotsTxt);
 
-console.log(`Generated ${staticRoutes.length} static routes, ${publications.length} publication routes, ${patents.length} patent routes, ${blogPosts.length} blog routes.`);
+console.log(
+  `Generated ${staticRoutes.length} static routes, ${publications.length} publication routes, ${patents.length} patent routes, ${blogPosts.length} blog routes.`,
+);
 console.log(`Generated sitemap.xml with ${allUrls.length} URLs.`);
 console.log(`Generated robots.txt.`);
+
+// A complete, self-contained preview, including runtime content and downloads.
+for (const path of [
+  "publications.json",
+  "patents.json",
+  "pentexoire.json",
+  "posts",
+  "pdfs",
+  "images",
+  "favicon.ico",
+  "404.html",
+  "not-found.jpg",
+  ".nojekyll",
+]) {
+  cpSync(join(repoRoot, path), join(distDir, path), { recursive: true });
+}
+writeFileSync(
+  join(distDir, "index.html"),
+  injectMeta(baseHtml, {
+    title: "",
+    description:
+      "Darrell D. E. Long, Distinguished Professor of Engineering, emeritus, at UC Santa Cruz. Research in storage, distributed systems, reliability, and security.",
+    canonicalUrl: BASE_URL + "/",
+  }),
+);

@@ -1,6 +1,5 @@
 // Dependencies
 import React from "react";
-import { HelmetProvider } from "react-helmet-async";
 import { ContextProvider } from "./ContextProvider";
 import { BrowserRouter as Router } from "react-router-dom";
 // Components
@@ -10,14 +9,15 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <HelmetProvider>
-      <Router basename="/">
-        <ContextProvider>
-          <Header />
-          <Main />
-          <Footer />
-        </ContextProvider>
-      </Router>
-    </HelmetProvider>
+    <Router basename="/">
+      <ContextProvider>
+        <a className="skip-link" href="#main-content">
+          Skip to content
+        </a>
+        <Header />
+        <Main />
+        <Footer />
+      </ContextProvider>
+    </Router>
   );
 }

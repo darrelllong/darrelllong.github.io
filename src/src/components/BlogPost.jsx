@@ -1,7 +1,7 @@
 // Dependencies
 import React from "react";
 import PropTypes from "prop-types";
-import { Helmet } from "react-helmet-async";
+import PageMetadata from "./PageMetadata";
 import { Link, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Assets
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 // Utilities
+import { formatPostDate } from "../utils/dateUtils";
 import { getAllPosts, getPostBySlug } from "../utils/blogLoader";
 // Styles
 import "katex/dist/katex.min.css";
@@ -23,22 +24,35 @@ export default function BlogPost({ search }) {
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
+    let active = true;
     setLoading(true);
-    Promise.all([getPostBySlug(slug), getAllPosts()]).then(([p, all]) => {
-      setPost(p);
-      setPosts(all);
-      setLoading(false);
-    });
+    Promise.all([getPostBySlug(slug), getAllPosts()])
+      .then(([p, all]) => {
+        if (!active) return;
+        setPost(p);
+        setPosts(all);
+        setLoading(false);
+      })
+      .catch(() => {
+        if (active) {
+          setPost(null);
+          setLoading(false);
+        }
+      });
+    return () => {
+      active = false;
+    };
   }, [slug]);
 
-  if (loading) return null;
+  if (loading) return <p role="status">Loading post…</p>;
 
   if (!post) {
     return (
       <>
+        <PageMetadata title="Post not found | Darrell Long" noIndex />
         <article className="blog-article">
           <header>
-            <h2>Post not found</h2>
+            <h1>Post not found</h1>
           </header>
         </article>
         <nav className="main-nav">
@@ -54,14 +68,14 @@ export default function BlogPost({ search }) {
 
   return (
     <>
-      <Helmet>
-        <title>{post.title} | Darrell Long</title>
-        <meta name="description" content={post.excerpt || ""} />
-      </Helmet>
+      <PageMetadata
+        title={`${post.title} | Darrell Long`}
+        description={post.excerpt || ""}
+      />
       <article className="blog-article">
         <header>
-          <h2>{post.title}</h2>
-          <time dateTime={post.date}>{post.date}</time>
+          <h1>{post.title}</h1>
+          <time dateTime={post.date}>{formatPostDate(post.date)}</time>
           {post.tags.length > 0 && (
             <div className="post-tags">
               {post.tags.map((tag) => (
@@ -83,10 +97,14 @@ export default function BlogPost({ search }) {
             rehypePlugins={[rehypeKatex]}
             components={{
               a({ href, children, ...props }) {
-                if (href && href.startsWith('/')) {
+                if (href && href.startsWith("/")) {
                   return <Link to={href}>{children}</Link>;
                 }
-                return <a href={href} {...props}>{children}</a>;
+                return (
+                  <a href={href} {...props}>
+                    {children}
+                  </a>
+                );
               },
             }}
           >

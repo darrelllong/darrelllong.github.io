@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && node scripts/generate-routes.js",
-    "deploy": "npm run build && cp -r dist/* .. && echo 'Copied to root. Run git add/commit/push from repo root.'",
+    "deploy": "npm run build && node scripts/deploy.js",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -22,7 +22,6 @@
     "prop-types": "^15.8.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-    "react-helmet-async": "^3.0.0",
     "react-markdown": "^10.1.0",
     "react-router-dom": "^7.17.0",
     "rehype-katex": "^7.0.1",

@@ -1,137 +1,125 @@
-@import "variables";
-
+@use "variables" as *;
 #page-header {
-  display: grid;
-  place-items: center;
-  gap: 5px;
-  margin: auto;
-  padding: 25px 20px 0;
-  grid-template-columns: 60px auto 55px;
-
-  .logo,
-  .h1-logo {
-    color: $dark;
-    text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 26px 0;
+  border-bottom: 1px solid $line;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: $dark;
+  text-decoration: none;
+  font-family: $serif;
+  font-size: 24px;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+.brand img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.brand-subtitle {
+  display: block;
+  margin-top: 5px;
+  font:
+    11px/1.4 -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: $muted;
+  letter-spacing: 0.02em;
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+.menu a {
+  font-size: 13px;
+  text-decoration: none;
+  padding: 8px 0;
+}
+.menu a.active {
+  color: $accent;
+  border-bottom: 1px solid $accent;
+}
+.menu .cv-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid $line;
+  padding: 8px 13px;
+}
+.menu-toggle {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .menu ul {
+    gap: 17px;
   }
-
-  .logo {
-    svg {
-      object-fit: cover;
-      grid-column: 1/2;
-      grid-row: 1;
-      width: 60px;
-      height: 60px;
-      border-radius: 5px;
-    }
+  .brand {
+    font-size: 21px;
   }
-
-  .h1-logo {
-    grid-column: 2/3;
-    grid-row: 1;
-    justify-self: baseline;
-
-    h1 {
-      font-weight: 600;
-      line-height: 1em;
-      max-width: 100px;
-      font-size: 28px;
-    }
+  .brand img {
+    display: none;
   }
-
-  button {
-    grid-column: 3/4;
-    grid-row: 1;
+}
+@media (max-width: 760px) {
+  #page-header {
+    flex-wrap: wrap;
+    padding: 22px 0;
+    gap: 0;
   }
-
-  &.home,
-  &.menu {
-    grid-template-columns: 135px 223px;
-    max-width: fit-content;
-    gap: 20px;
-
-    svg {
-      width: 135px;
-      height: 135px;
-    }
-
-    h1 {
-      font-size: 64px;
-      max-width: 223px;
-    }
+  .brand img {
+    display: block;
+    width: 34px;
+    height: 34px;
   }
-
-  @media (min-width: 968px) {
-    grid-template-columns: 60px 100px auto;
-
-    nav {
-      justify-self: end;
-
-      ul {
-        li {
-          display: inline-block;
-          margin-right: 20px;
-          text-transform: uppercase;
-          font-size: 16px;
-
-          &:last-of-type {
-            margin: 0;
-          }
-
-          a {
-            svg {
-              margin-left: 5px;
-            }
-          }
-        }
-      }
-    }
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: transparent;
+    border: 1px solid $line;
+    min-height: 44px;
+    padding: 8px 12px;
+    font-size: 13px;
   }
-
-  @media (max-width: 420px) {
-
-    &.home,
-    &.menu {
-      grid-template-columns: 110px 150px;
-
-      h1 {
-        font-size: 48px;
-        max-width: fit-content;
-      }
-
-      svg {
-        width: 110px;
-        height: 110px;
-      }
-    }
+  .menu-toggle span {
+    font-size: 20px;
   }
-
-  @media screen and (min-width: 1160px) {
-
-    &.home,
-    &.menu {
-      position: absolute;
-      padding: 0;
-      left: 20px;
-      top: 255px;
-      grid-template-columns: 200px auto;
-
-      h1 {
-        font-size: 96px;
-        max-width: 333px;
-      }
-
-      svg {
-        width: 200px;
-        height: 200px;
-      }
-    }
+  .menu {
+    display: none;
+    width: 100%;
   }
-
-  &.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    z-index: 2;
+  .menu.is-open {
+    display: block;
+  }
+  .menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 24px;
+    padding-top: 20px;
+  }
+  .menu a {
+    display: block;
+    padding: 13px 0;
+    border-bottom: 1px solid $line;
+    font-size: 15px;
+  }
+  .menu .cv-link {
+    border: 0;
+    border-bottom: 1px solid $line;
+    padding: 13px 0;
+  }
+}
+@media (max-width: 380px) {
+  .brand img {
+    display: none;
   }
 }

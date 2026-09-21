@@ -12,7 +12,8 @@ import "../assets/css/publications.scss";
 export default function Publications({ searchTerm, search }) {
   const [currentPage, setCurrentPage] = React.useState(0);
   const publicationsPerPage = 6;
-  const { publications } = React.useContext(Context);
+  const { publications, loading, errors } = React.useContext(Context);
+  const error = errors.publications;
 
   const filteredPublications = publications.filter((publication) => {
     const searchString = searchTerm.toLowerCase();
@@ -26,9 +27,20 @@ export default function Publications({ searchTerm, search }) {
     );
   });
 
+  React.useEffect(() => {
+    setCurrentPage(0);
+  }, [searchTerm]);
+
   return (
     <>
-      <h2>Publications</h2>
+      <header className="collection-heading">
+        <p className="eyebrow">Research archive</p>
+        <h1>Publications</h1>
+        <p>
+          Research publications in storage systems, distributed computing, and
+          computer security.
+        </p>
+      </header>
       <SearchBar
         searchTerm={searchTerm}
         onchange={(value) => {
@@ -36,6 +48,13 @@ export default function Publications({ searchTerm, search }) {
           setCurrentPage(0);
         }}
       />
+      <p className="results-count" role="status">
+        {loading
+          ? "Loading archive…"
+          : error
+            ? error
+            : `${filteredPublications.length} publication${filteredPublications.length === 1 ? "" : "s"}`}
+      </p>
       {filteredPublications.length > 0 ? (
         <section className="publications">
           {filteredPublications
@@ -53,7 +72,11 @@ export default function Publications({ searchTerm, search }) {
         </section>
       ) : (
         <h3>
-          No publications found, please refine your search or try again later
+          {loading
+            ? "Loading…"
+            : error
+              ? "Please reload the page to try again."
+              : "No publications match your search."}
         </h3>
       )}
       <Pagination

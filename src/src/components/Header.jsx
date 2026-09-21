@@ -1,48 +1,45 @@
-// Dependencies
-import React from "react";
-import { Context } from "../ContextProvider";
+import { useState, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-// Components
-import Hamburger from "./Hamburger";
 import Menu from "./Menu";
-// Styles
 import "../assets/css/header.scss";
 
 export default function Header() {
-  const { pathClass } = React.useContext(Context);
-  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
-  const { showMenu } = React.useContext(Context);
-
-  React.useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  const path = useLocation().pathname;
-  const isHome = path === "/";
-  const showHamburger = !isHome && windowWidth < 968;
-  const showNav = !isHome && windowWidth >= 968;
+  const { pathname } = useLocation();
+  const [openPath, setOpenPath] = useState(null);
+  const toggle = useRef(null);
+  const isOpen = openPath === pathname;
 
   return (
     <header
-      className={`${pathClass(path)} ${showMenu && !isHome ? "fixed" : ""}`}
       id="page-header"
+      onKeyDown={(event) => {
+        if (event.key === "Escape" && isOpen) {
+          setOpenPath(null);
+          toggle.current?.focus();
+        }
+      }}
     >
-      <Link to="/" className="logo">
-        <img src="/logo.avif" alt="Logo" />
+      <Link
+        to="/"
+        className="brand"
+        onClick={() => setOpenPath(null)}
+        aria-label="Darrell Long — home"
+      >
+        <img src="/logo.avif" alt="" width="42" height="42" />
+        <span>Darrell Long</span>
       </Link>
-      <Link to="/" className="h1-logo">
-        <h1>Darrell Long</h1>
-      </Link>
-      {showHamburger && <Hamburger />}
-      {showNav && <Menu />}
+      <button
+        ref={toggle}
+        type="button"
+        className="menu-toggle"
+        aria-expanded={isOpen}
+        aria-controls="primary-navigation"
+        onClick={() => setOpenPath(isOpen ? null : pathname)}
+      >
+        {isOpen ? "Close" : "Menu"}
+        <span aria-hidden="true">{isOpen ? "−" : "+"}</span>
+      </button>
+      <Menu open={isOpen} onNavigate={() => setOpenPath(null)} />
     </header>
   );
 }

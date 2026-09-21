@@ -21,6 +21,8 @@ export default function Pagination(props) {
         <button
           key={pageNumber}
           onClick={() => changePage(pageNumber)}
+          aria-label={`Page ${pageNumber + 1}`}
+          aria-current={active ? "page" : undefined}
           disabled={active}
           className={active ? "active" : undefined}
         >
@@ -31,7 +33,11 @@ export default function Pagination(props) {
 
     const addEllipsis = (key, page) => {
       pageNumbers.push(
-        <button key={key} onClick={() => changePage(page)}>
+        <button
+          key={key}
+          aria-label={`Jump to page ${page + 1}`}
+          onClick={() => changePage(page)}
+        >
           ...
         </button>,
       );
@@ -80,11 +86,12 @@ export default function Pagination(props) {
   }
 
   return (
-    <nav className="pagination">
+    <nav className="pagination" aria-label="Pagination">
       <button
         onClick={() => changePage(currentPage - 1)}
         disabled={currentPage === 0}
         className="prev"
+        aria-label="Previous page"
       >
         <FontAwesomeIcon icon={faCaretLeft} />
       </button>
@@ -93,6 +100,7 @@ export default function Pagination(props) {
         onClick={() => changePage(currentPage + 1)}
         disabled={currentPage === lastPage}
         className="next"
+        aria-label="Next page"
       >
         <FontAwesomeIcon icon={faCaretRight} />
       </button>

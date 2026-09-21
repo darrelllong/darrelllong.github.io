@@ -1,37 +1,35 @@
-@import "variables";
-
+@use "variables" as *;
 #page-footer {
-  margin: 0 auto 55px;
-  max-width: fit-content;
-
-  ul {
-    display: flex;
-
-    li {
-      text-align: center;
-      margin-right: 34px;
-
-      @media screen and (min-width: 1160px) {
-        margin-right: 64px;
-      }
-
-      &:last-of-type {
-        margin-right: 0;
-      }
-
-      a:link,
-      a:visited {
-        color: $dark;
-
-        &:hover,
-        &:active {
-          color: $link;
-        }
-
-        svg {
-          font-size: 36px;
-        }
-      }
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  padding: 30px 0 36px;
+  border-top: 1px solid $line;
+}
+.footer-name {
+  font-family: $serif;
+  font-size: 21px;
+  color: $dark;
+  text-decoration: none;
+}
+#page-footer p {
+  color: $muted;
+  font-size: 11px;
+  margin-top: 6px;
+}
+#page-footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+}
+#page-footer nav a {
+  font-size: 11px;
+  text-decoration: none;
+}
+@media (max-width: 760px) {
+  #page-footer {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }

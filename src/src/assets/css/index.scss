@@ -1,184 +1,163 @@
-@import "variables";
-@import "resets";
-
+@use "variables" as *;
+@use "resets";
 :root {
-  font-family: Montserrat, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: $dark;
-  background-color: $light;
-
+  background: $light;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
 }
-
+body {
+  min-width: 320px;
+}
 #root {
-  max-width: 1440px;
+  max-width: 1240px;
   margin: 0 auto;
-  position: relative;
-
-  >main {
-    padding: 0 20px;
-
-    &.home,
-    &.menu,
-    &.about {
-      &:after {
-        display: none;
-      }
-    }
-
-    &:after {
-      max-width: calc(100% - 40px);
-      transform: translateX(20px);
-    }
-
-    &.about,
-    &.publications,
-    &.publication,
-    &.patents,
-    &.patent,
-    &.consultancy {
-      margin: 96px auto 58px;
-      padding-bottom: 50px;
-
-      @media screen and (min-width: 968px) {
-        max-width: 100%;
-        margin: 58px 0;
-
-        &:after {
-          display: inherit;
-          max-width: calc(100% - 40px);
-          transform: translateX(20px);
-        }
-
-        nav.menu {
-          display: none;
-        }
-      }
-
-      &.menuShown {
-        padding-top: 83.3px;
-      }
-
-      nav.menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: $layer;
-        height: 100vh;
-        width: 100%;
-        display: grid;
-        place-items: center;
-        opacity: 0.98;
-        z-index: 1;
-        animation: slide-in-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-
-        @keyframes slide-in-left {
-          0% {
-            transform: translateX(-1000px);
-            opacity: 0;
-          }
-
-          100% {
-            transform: translateX(0);
-            opacity: 1;
-          }
-        }
-
-        ul {
-          text-transform: uppercase;
-          font-weight: 300;
-          font-size: 24px;
-
-          li {
-            margin-bottom: 20px;
-
-            &:last-of-type {
-              margin-bottom: 0;
-            }
-
-            a {
-              text-underline-offset: 5px;
-
-              svg {
-                margin-left: 12px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    &.about {
-      margin-bottom: 0;
-
-      @media screen and (min-width: 968px) {
-        margin-bottom: 58px;
-      }
-    }
-  }
+  padding: 0 48px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
+#root > main {
+  flex: 1;
+  width: 100%;
+  margin: 62px 0 80px;
+  min-width: 0;
+  outline: none;
+}
+h1,
 h2,
 h3,
 h4 {
-  font-weight: 500;
+  font-family: $serif;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
 }
-
+h1 {
+  font-size: clamp(38px, 4.3vw, 58px);
+}
 h2 {
-  font-size: 36px;
+  font-size: clamp(29px, 3vw, 36px);
 }
-
 h3 {
-  font-size: 20px;
+  font-size: 24px;
 }
-
-body {
-  min-width: 100vw;
-
-  &::before {
-    content: "";
-    background: $light;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-  }
-
-  &::after {
-    content: "";
-    background: url("../img/bg.jpg");
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
-  }
+p {
+  line-height: 1.75;
 }
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-a:link,
-a:visited {
+a {
   color: $link;
-  transition: color 0.15s ease-in-out;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: color 0.15s;
 }
-
-a:hover,
-a:active {
-  color: $dark;
+a:hover {
+  color: $accent;
 }
-
+button {
+  color: inherit;
+  cursor: pointer;
+}
+button:disabled {
+  cursor: default;
+}
+:focus-visible {
+  outline: 2px solid $accent;
+  outline-offset: 5px;
+}
+svg.svg-inline--fa {
+  display: inline-block;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+.eyebrow {
+  font:
+    600 11px/1.5 -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $accent;
+  margin-bottom: 14px;
+}
+.text-link {
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.button-link {
+  background: $dark;
+  color: $light;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 14px;
+  border: 1px solid $dark;
+}
+.button-link:hover {
+  background: $link;
+  color: white;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 20px;
+  z-index: 10;
+  background: $dark;
+  color: white;
+  padding: 12px 20px;
+}
+.skip-link:focus {
+  top: 12px;
+}
+.collection-heading {
+  margin-bottom: 30px;
+}
+.collection-heading h1 {
+  margin-bottom: 16px;
+}
+.collection-heading > p:last-child {
+  color: $muted;
+}
+.section-note {
+  color: $muted;
+  margin: 20px 0;
+}
+@media (max-width: 760px) {
+  #root {
+    padding: 0 24px;
+  }
+  #root > main {
+    margin: 36px 0 52px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}

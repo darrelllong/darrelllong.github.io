@@ -1,60 +1,34 @@
-// Dependencies
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Context } from "../ContextProvider";
-// Assets
-import {
-  faFileArrowDown,
-  faUpRightFromSquare,
-} from "@fortawesome/free-solid-svg-icons";
+import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 
-export default function Menu() {
-  const menuItems = [
-    { label: "About", page: "about" },
-    { label: "Publications", page: "publications" },
-    { label: "Patents", page: "patents" },
-    { label: "Blog", page: "blog" },
-    { label: "Consultancy", page: "consultancy" },
-    { label: "CV", link: "/cv.pdf", icon: faFileArrowDown },
-    {
-      label: "Laboratory",
-      link: "https://www.crss.us/",
-      icon: faUpRightFromSquare,
-    },
-    {
-      label: "Students",
-      link: "https://www.genealogy.math.ndsu.nodak.edu/id.php?id=10794",
-      icon: faUpRightFromSquare,
-    },
-  ];
-
-  const { setShowMenu } = React.useContext(Context);
-
+export default function Menu({ open, onNavigate }) {
   return (
     <nav
-      className={useLocation().pathname === "/" ? "dottedBorder menu" : "menu"}
+      id="primary-navigation"
+      className={`menu${open ? " is-open" : ""}`}
+      aria-label="Main navigation"
     >
       <ul>
-        {menuItems.map((item, index) => (
-          <li
-            key={index}
-            onClick={() => {
-              setShowMenu(false);
-              window.scrollTo(0, 0);
-            }}
-          >
-            {item.link ? (
-              <a href={item.link} target="_blank" rel="noreferrer">
-                {item.label}
-                <FontAwesomeIcon icon={item.icon} />
-              </a>
-            ) : (
-              <Link to={`/${item.page}/`}>{item.label}</Link>
-            )}
+        {[
+          ["About", "about"],
+          ["Publications", "publications"],
+          ["Patents", "patents"],
+          ["Blog", "blog"],
+          ["Consultancy", "consultancy"],
+        ].map(([label, path]) => (
+          <li key={path}>
+            <NavLink to={`/${path}/`} onClick={onNavigate}>
+              {label}
+            </NavLink>
           </li>
         ))}
+        <li>
+          <a className="cv-link" href="/cv.pdf">
+            CV <span aria-hidden="true">↗</span>
+          </a>
+        </li>
       </ul>
     </nav>
   );
 }
+Menu.propTypes = { open: PropTypes.bool, onNavigate: PropTypes.func };
