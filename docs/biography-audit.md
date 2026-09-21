@@ -3,6 +3,11 @@
 Date: September 21, 2026. Starting commit:
 `5ad843007a9f07b07f170daf5db99c876ef830b7`.
 
+The owner's subsequent request to inspect doctoral students and descendants
+is addressed in the [academic genealogy audit](academic-genealogy-audit.md).
+It adds MGP's dated count of 23 students and 41 total descendants to the
+biography and records stale advising information found in the CV.
+
 ## What the earlier review missed
 
 The previous biography mentioned SSRC and CRSS only in a list of emeritus
@@ -43,7 +48,7 @@ same biography.
 | Research scope and industry partnerships | SSRC and CRSS records, NSF profile, and UCSC's 2014 account. No current sponsor count, funding total, or employment guarantee is asserted. |
 | Swift and Ceph as research examples | Catalog records [227](../publications/227/index.html) and [59](../publications/59/index.html), with original paper links. The text credits Cabrera and identifies Long as a Ceph coauthor rather than sole creator. |
 | Degrees in 1984, 1986, and 1988; Pâris as doctoral advisor; early teaching and systems programming | CV, PDF pages 1–2, and the established Pâris biography. The individual institutions and dates are stated explicitly. |
-| Teaching programming, data structures, operating systems, and cryptography; doctoral supervision | CV's teaching record, PDF pages 39–51, and mentoring record, pages 52–53. No unsupported student count or claim that every center student was Long's advisee is added. |
+| Teaching programming, data structures, operating systems, and cryptography; doctoral supervision | CV's teaching record, PDF pages 39–51, and mentoring record, pages 52–53. The later [academic genealogy audit](academic-genealogy-audit.md) supplies MGP's dated student and descendant counts and identifies stale CV entries. Center membership is not equated with Long's personal advising. |
 | FAST founder and first program chair; inaugural meeting in January 2002 | [USENIX FAST 2002 archive](https://www.usenix.org/legacy/events/fast02/) and CV conference-service record. The CV's 2001 planning/program-chair entry is not used as the meeting date. |
 | WMCSA founding general chair, 1994; journal editorships, 2010–2016 and 2017–2020 | CV conference service and editorial duties, including PDF page 31 for the editorships. |
 | IEEE Fellow, 2006; AAAS Fellow, 2008 | CV honors; [UCSC CITRIS profile](https://citris.ucsc.edu/pi-list/) for the IEEE citation; [UCSC's AAAS announcement](https://news.ucsc.edu/2008/12/three-ucsc-professors-elected-aaas-fellows/). Election in 2008 is distinguished from the AAAS presentation ceremony in 2009. |
@@ -58,7 +63,7 @@ same biography.
   passed after the final wording change. The catalog remains at 247
   publications, eleven patents, twelve posts, three publication redirects,
   and 276 sitemap URLs.
-- The rendered biography contains approximately 650 words in six visible
+- The rendered biography contains approximately 700 words in six visible
   narrative sections. Desktop inspection at 1280 pixels and mobile checks
   at 390 and 320 pixels found no horizontal overflow. Screenshots confirmed
   readable headings, paragraph spacing, and portrait placement; the portrait

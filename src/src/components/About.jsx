@@ -74,7 +74,7 @@ export default function About() {
         </section>
 
         <section aria-labelledby="education-title">
-          <h2 id="education-title">Education and teaching</h2>
+          <h2 id="education-title">Education, teaching, and mentoring</h2>
           <p>
             Long received his B.S. in computer science from San Diego State
             University in 1984, and his M.S. and Ph.D. from UC San Diego in
@@ -88,8 +88,15 @@ export default function About() {
             in programming, data structures, operating systems, and
             cryptography. His doctoral students have investigated file
             systems, replication, caching, archival storage, and security.
-            Research supervision and collaboration with industry have been
-            central parts of his work as a teacher.
+          </p>
+          <p>
+            His students have gone on to supervise doctoral research themselves.
+            In September 2026, the <a href="https://www.mathgenealogy.org/id.php?id=10794">
+            Mathematics Genealogy Project</a> recorded 23 of his doctoral
+            students and 41 academic descendants in total. The recorded
+            lineage extends through his former students Randal Burns,
+            Ahmed Amer, and Richard Golding to the researchers they have
+            advised.
           </p>
         </section>
 

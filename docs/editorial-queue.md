@@ -24,3 +24,12 @@ proportionate professional service. The [biography audit](biography-audit.md)
 records the evidence, checks, and the omissions in the earlier review.
 
 Status: complete. No editorial queue items remain open.
+
+## Doctoral students and academic descendants
+
+Added and completed September 21, 2026. Read Long's Mathematics Genealogy
+Project record and the three descendant branches, checked the four direct
+students absent from the CV's completed-doctorate table, and added a concise
+mentoring paragraph with attributed, dated counts. See the
+[academic genealogy audit](academic-genealogy-audit.md) for the names, sources,
+count interpretation, and the separate stale-CV finding.
