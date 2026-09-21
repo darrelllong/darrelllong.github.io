@@ -1,75 +1,151 @@
-// Dependencies
-import React from "react";
-// Components
-import Accordion from "./Accordion";
+import { Link } from "react-router-dom";
 import Portrait from "./Portrait";
-// Styles
 import "../assets/css/about.scss";
-
-const accordionData = [
-  {
-    title: "Education and Early Career",
-    body: [
-      'He received his B.S. degree in Computer Science from San Diego State University, and his M.S. and Ph.D. from the University of California, San Diego. His dissertation advisor was <a href="https://www2.cs.uh.edu/~paris/" target="_blank" rel="noreferrer">Jehan-François Pâris</a>, now at the <a href="https://www.uh.edu/nsm/computer-science/" target="_blank" rel="noreferrer">University of Houston</a>. While in graduate school and before joining the University of California, Santa Cruz, he was a lecturer in Mathematics at San Diego State University and taught at the University of California, San Diego.',
-    ],
-  },
-  {
-    title: "Conferences and Journals",
-    body: [
-      'He founded the <a href="https://www.usenix.org/legacy/events/fast02/" target="_blank" rel="noreferrer">USENIX Conference on File and Storage Technologies (FAST)</a> and chaired the program for its first meeting, held in Monterey in January 2002. He was also the founding general chair of the Workshop on Mobile Computing Systems and Applications (WMCSA) in 1994.',
-      'He served as editor-in-chief of <em>ACM Transactions on Storage</em> from 2010 to 2016, following service as an associate editor from 2004 to 2010. From 2017 to 2020, he was editor-in-chief of <em>IEEE Letters of the Computer Society</em>. His <a href="/cv.pdf" target="_blank" rel="noreferrer">curriculum vitae</a> includes his other editorial appointments and conference service.',
-    ],
-  },
-  {
-    title: "Fellowships and Visiting Positions",
-    body: [
-      'In 2006 he was elevated to Fellow of the IEEE, the  <a target="_blank" rel="noreferrer" href="https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers">Institute of Electrical and Electronics Engineers</a>, “for contributions to storage systems architecture and performance”.  In 2008 he was inducted a <a target="_blank" rel="noreferrer" href="https://en.wikipedia.org/wiki/Fellow_of_the_American_Association_for_the_Advancement_of_Science">Fellow of the American Association for the Advancement of Science</a>. He is a member of the IEEE Computer Society, the Association for Computing Machinery, the American Society for Engineering Education, the USENIX Association, Upsilon Pi Epsilon, and Sigma Xi.',
-      'He has held visiting faculty positions at <a target="_blank" rel="noreferrer" href="https://dauphine.psl.eu/en/">Université Paris–Dauphine (Paris IX)</a>, the <a target="_blank" rel="noreferrer" href="https://www.cnam.fr/">Conservatoire National des Arts et Métiers</a>, the <a target="_blank" rel="noreferrer" href="https://u-paris.fr/en/">Université Paris–Descartes (Paris V)</a>, <a target="_blank" rel="noreferrer" href="https://www.sorbonne-universite.fr/en">Sorbonne Université (Pierre et Marie Curie, Paris VI)</a>, the <a target="_blank" rel="noreferrer" href="https://www.uts.edu.au">University of Technology, Sydney</a>, the Center for Communications Research, the <a target="_blank" rel="noreferrer" href="https://www.nps.edu">United States Naval Postgraduate School</a>, and is Professor <em>ad Honorem</em> de la <a target="_blank" rel="noreferrer" href="https://ucu.edu.uy/es">Universidad Católica del Uruguay</a>. He was an Associate Member of the European Organization for Nuclear Research (<a target="_blank" rel="noreferrer" href="https://home.cern">CERN</a>).',
-    ],
-  },
-  {
-    title: "Research and Federal Support",
-    body: [
-      "His research interests extend across mathematics and science. His work in computing has included data storage systems, operating systems, distributed computing, reliability and fault tolerance, and computer security.",
-      "His research has been supported by the National Science Foundation (NSF), the Department of Energy (DOE), the Office of Naval Research (ONR), the Defense Advanced Research Projects Agency (DARPA), and NASA.",
-      "These projects include NSF-funded research on reliable archival storage, DOE-funded work on scientific data management and exascale file systems, the ONR-supported Real-time Environmental Information Network and Analysis System (REINAS), and DARPA’s Trust Worthy Information Storage Technology Enhanced Devices (TWISTED) project.",
-    ],
-  },
-  {
-    title: "Service and Committee Engagements",
-    body: [
-      "He served as the Vice-Chair and then Chair of the University of California Committee on Research Policy. He has served on the University of California President’s Council on the National Laboratories, and the Science & Technology, National Security and Intelligence committees for those laboratories. He served on the University of California Academic Council Special Committee on Laboratory Issues (ACSCOLI) in 2011–2016 and 2020–2023. He served for several years on the National Research Council’s Standing Committee on Technology Insight-Gauge, Evaluate and Review (TIGER), on the Committee on Defense Intelligence Agency Technology Forecasts and Reviews and on the National Research Council’s Committee on Science and Technology for Defense Warning. He served on the Intelligence Science and Technology Experts Group (ISTEG) for the National Academies of Sciences, Engineering and Medicine from 2015 to 2020.",
-    ],
-  },
-];
 
 export default function About() {
   return (
     <>
-      <section className="aboutSection dottedBorder">
-        <p className="eyebrow">Biography</p>
-        <h1>Darrell D. E. Long</h1>
+      <section className="about-introduction" aria-labelledby="about-title">
+        <div>
+          <p className="eyebrow">Biography</p>
+          <h1 id="about-title">Darrell D. E. Long</h1>
+          <p>
+            Darrell Long is Distinguished Professor of Engineering, emeritus,
+            at the University of California, Santa Cruz, and a Distinguished
+            Visiting Scholar at Santa Clara University. His research concerns
+            how computer systems store, protect, and provide access to data.
+          </p>
+          <p>
+            He joined UC Santa Cruz in 1988 and held the Kumar Malavalli
+            Endowed Chair in Storage Systems Research from 2005 until his
+            retirement in 2023. He is Director, emeritus, of the Storage
+            Systems Research Center and the Center for Research in Systems
+            and Storage, which he built with Ethan Miller and their colleagues.
+          </p>
+          <a className="text-link" href="/cv.pdf">
+            Curriculum vitae <span aria-hidden="true">↗</span>
+          </a>
+        </div>
         <Portrait />
-        <p>
-          Dr. Darrell D. E. Long is a Distinguished Visiting Scholar at Santa
-          Clara University and is Distinguished Professor of Engineering,
-          emeritus, at the University of California, Santa Cruz. He held the
-          Kumar Malavalli Endowed Chair of Storage Systems Research and is
-          Director, emeritus, of the Storage Systems Research Center and
-          Director, emeritus, of the NSF I/UCRC Center for Research in Systems
-          and Storage.
-        </p>
       </section>
-      <section className="accordions">
-        {accordionData.map((data, index) => (
-          <Accordion
-            key={index}
-            title={data.title}
-            body={data.body}
-            state={index === 0 ? true : false}
-          />
-        ))}
-      </section>
+
+      <div className="biography-narrative">
+        <section aria-labelledby="ssrc-title">
+          <h2 id="ssrc-title">Storage research and the SSRC</h2>
+          <p>
+            The <a href="https://www.ssrc.us/about.html">Storage Systems
+            Research Center (SSRC)</a> began in 2001. Long directed it from
+            2001 to 2019, bringing together faculty, students, and collaborators
+            in industry and the national laboratories. Its research addressed
+            distributed file systems, archival storage, performance,
+            reliability, and security.
+          </p>
+          <p>
+            His work with Luis-Felipe Cabrera on <Link to="/publications/227/">
+            Swift</Link> explored a storage architecture that separated
+            metadata management from data transfers. He was also a coauthor
+            of the <Link to="/publications/59/">2006 Ceph paper</Link>, which
+            grew out of the SSRC&rsquo;s research on large-scale distributed
+            storage. His research has also included data deduplication,
+            storage for nonvolatile memory, and secure file systems.
+          </p>
+        </section>
+
+        <section aria-labelledby="crss-title">
+          <h2 id="crss-title">CRSS and industry collaboration</h2>
+          <p>
+            Established in 2013, the <a href="https://iucrc.nsf.gov/centers/center-for-research-in-storage-systems/">
+            Center for Research in Systems and Storage (CRSS)</a> built on
+            the SSRC&rsquo;s research and industry relationships. It is the
+            only NSF Industry/University Cooperative Research Center
+            (I/UCRC) on the UC Santa Cruz campus. Long worked with founding
+            director Ethan Miller to develop the center and served as its
+            director from 2019 to 2023.
+          </p>
+          <p>
+            CRSS connects university research with problems faced by the
+            storage industry. Its partnerships support student research,
+            collaboration with company engineers, and the transfer of
+            research into practice. The <a href="https://news.ucsc.edu/2014/05/data-storage/">
+            university&rsquo;s account of this work</a> describes how those
+            relationships helped graduate students contribute to products
+            while completing their degrees.
+          </p>
+        </section>
+
+        <section aria-labelledby="education-title">
+          <h2 id="education-title">Education and teaching</h2>
+          <p>
+            Long received his B.S. in computer science from San Diego State
+            University in 1984, and his M.S. and Ph.D. from UC San Diego in
+            1986 and 1988. His doctoral advisor was <Link to="/blog/2026-02-14-jehan-francois-paris/">
+            Jehan-François Pâris</Link>. Before joining UC Santa Cruz, he
+            worked as a systems programmer and taught mathematics at San
+            Diego State and computer science at UC San Diego.
+          </p>
+          <p>
+            At UC Santa Cruz, he taught undergraduate and graduate courses
+            in programming, data structures, operating systems, and
+            cryptography. His doctoral students have investigated file
+            systems, replication, caching, archival storage, and security.
+            Research supervision and collaboration with industry have been
+            central parts of his work as a teacher.
+          </p>
+        </section>
+
+        <section aria-labelledby="professional-title">
+          <h2 id="professional-title">Conferences and journals</h2>
+          <p>
+            Long founded the <a href="https://www.usenix.org/legacy/events/fast02/">
+            USENIX Conference on File and Storage Technologies (FAST)</a>
+            {" "}and chaired the program for its first meeting in Monterey in
+            January 2002. He was also the founding general chair of the
+            Workshop on Mobile Computing Systems and Applications (WMCSA)
+            in 1994.
+          </p>
+          <p>
+            He served as editor-in-chief of <em>ACM Transactions on Storage</em>
+            {" "}from 2010 to 2016 and of <em>IEEE Letters of the Computer
+            Society</em> from 2017 to 2020.
+          </p>
+        </section>
+
+        <section aria-labelledby="honors-title">
+          <h2 id="honors-title">Honors and international work</h2>
+          <p>
+            He became an IEEE Fellow in 2006 for contributions to storage
+            systems architecture and performance, and an <a href="https://news.ucsc.edu/2008/12/three-ucsc-professors-elected-aaas-fellows/">
+            AAAS Fellow in 2008</a> for contributions to computing systems,
+            particularly high-performance storage systems.
+          </p>
+          <p>
+            His visiting appointments have included universities in France
+            and Australia and the U.S. Naval Postgraduate School. He was
+            named Professor <em>ad Honorem</em> at the Universidad Católica
+            del Uruguay in 2010 and was an Associate Member of CERN from
+            2016 to 2019.
+          </p>
+        </section>
+
+        <section aria-labelledby="service-title">
+          <h2 id="service-title">University and scientific service</h2>
+          <p>
+            At the Baskin School of Engineering, Long served as associate
+            dean from 1998 to 2001 and as associate dean for research and
+            graduate studies from 2004 to 2010. He was vice-chair of the
+            University of California Committee on Research Policy in
+            2001–2002 and chair in 2002–2003.
+          </p>
+          <p>
+            His scientific advisory work has included JASON, the University
+            of California President&rsquo;s Council on the National
+            Laboratories, and National Research Council committees concerned
+            with technology and national security. His <a href="/cv.pdf">
+            curriculum vitae</a> documents these appointments and his other
+            research, teaching, and professional service.
+          </p>
+        </section>
+      </div>
     </>
   );
 }

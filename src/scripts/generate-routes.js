@@ -74,7 +74,7 @@ const staticRoutes = [
     path: "about",
     title: "About",
     description:
-      "About Professor Darrell D.E. Long, Distinguished Professor of Engineering, emeritus, at UC Santa Cruz.",
+      "Darrell Long’s biography: storage systems research, the SSRC and CRSS at UC Santa Cruz, teaching, and scientific service.",
   },
   {
     path: "publications",

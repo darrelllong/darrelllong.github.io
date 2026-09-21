@@ -82,7 +82,9 @@ export default function Main() {
               : `${{ about: "About", publications: "Publications", patents: "Patents", blog: "Blog", consultancy: "Consultancy" }[collection] || "Darrell Long"} | Darrell Long`
           }
           description={
-            collection === "consultancy"
+            collection === "about"
+              ? "Darrell Long’s biography: storage systems research, the SSRC and CRSS at UC Santa Cruz, teaching, and scientific service."
+              : collection === "consultancy"
               ? "Technical consulting and expert witness services in computer science from Darrell Long and Pentexoire Consulting."
               : undefined
           }

@@ -1,41 +1,52 @@
 @use "variables" as *;
-main.about {
+
+.about-introduction {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.2fr);
-  gap: 80px;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.8fr);
+  align-items: center;
+  gap: 64px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid $line;
+  margin-bottom: 48px;
 }
-.aboutSection h1 {
-  margin-bottom: 28px;
+.about-introduction h1 {
+  margin-bottom: 24px;
 }
-.aboutSection .portrait-frame {
-  aspect-ratio: 1;
-  margin-bottom: 26px;
-}
-.aboutSection p {
+.about-introduction p:not(.eyebrow) {
   color: $muted;
-  font-size: 15px;
+  margin-bottom: 20px;
 }
-.aboutSection .eyebrow {
-  color: $accent;
-  font-size: 11px;
+.about-introduction .portrait-frame {
+  aspect-ratio: 1;
 }
-.accordions {
-  padding-top: 39px;
+.biography-narrative {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.biography-narrative section + section {
+  margin-top: 40px;
+}
+.biography-narrative h2 {
+  font-size: clamp(27px, 3vw, 32px);
+  margin-bottom: 18px;
+}
+.biography-narrative p + p {
+  margin-top: 16px;
 }
 @media (max-width: 900px) {
-  main.about {
-    gap: 40px;
+  .about-introduction {
+    gap: 36px;
   }
 }
 @media (max-width: 760px) {
-  main.about {
+  .about-introduction {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 28px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
   }
-  .aboutSection .portrait-frame {
-    max-width: 430px;
-  }
-  .accordions {
-    padding-top: 0;
+  .about-introduction .portrait-frame {
+    width: 100%;
+    max-width: 380px;
   }
 }

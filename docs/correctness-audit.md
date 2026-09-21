@@ -6,6 +6,12 @@ patent records. Two duplicate publications and one incorrectly attributed
 proposal were removed from the catalog, leaving 247 publication records.
 Their old URLs remain usable through redirects.
 
+The subsequent [biography audit](biography-audit.md) addresses the owner's
+editorial queue: the uneven biography, missing substantive coverage of SSRC
+and CRSS, and CRSS's distinction as the campus's only NSF I/UCRC. It also
+records what the earlier review missed and the evidence for the revision.
+The [editorial queue](editorial-queue.md) is complete.
+
 The [field-by-field change ledger](correctness-changes.json) records the
 previous and corrected values, source destinations, and hashes of the five
 new local PDFs. The [download check](publication-link-check.json) records
