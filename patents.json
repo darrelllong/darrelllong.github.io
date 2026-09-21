@@ -2,13 +2,16 @@
   {
     "id": 1,
     "title": "Predictive Event Tracking Method",
-    "author": ["Darrell D. E. Long", "Thomas M. Kroeger"],
+    "author": [
+      "Thomas M. Kroeger",
+      "Darrell D. E. Long"
+    ],
     "patent_number": "5,889,993",
     "short_description": "A method for predictive event tracking that enables efficient anticipation and handling of system events.",
     "url": "https://patents.google.com/patent/US5889993",
     "bibTeX": {
       "@misc": "Long1999Predictive",
-      "author": "Darrell D. E. Long and Thomas M. Kroeger",
+      "author": "Thomas M. Kroeger and Darrell D. E. Long",
       "title": "Predictive Event Tracking Method",
       "note": "U.S. Patent no. 5,889,993",
       "month": "mar",
@@ -18,13 +21,16 @@
   {
     "id": 2,
     "title": "Method and Apparatus for Establishing and Maintaining the Status of Membership Sets used in Mirrored Read and Write Input/Output without Logging",
-    "author": ["Luis Felipe Cabrera", "Darrell D. E. Long"],
+    "author": [
+      "Luis Felipe Cabrera",
+      "Darrell Don Earl Long"
+    ],
     "patent_number": "5,917,998",
     "short_description": "A method for managing membership sets in mirrored I/O operations without the overhead of logging.",
     "url": "https://patents.google.com/patent/US5917998",
     "bibTeX": {
       "@misc": "Cabrera1999Membership",
-      "author": "Luis Felipe Cabrera and Darrell D. E. Long",
+      "author": "Luis Felipe Cabrera and Darrell Don Earl Long",
       "title": "Method and Apparatus for Establishing and Maintaining the Status of Membership Sets used in Mirrored Read and Write Input/Output without Logging",
       "note": "U.S. Patent no. 5,917,998",
       "month": "jun",
@@ -34,13 +40,18 @@
   {
     "id": 3,
     "title": "Secure Array of Remotely Encrypted Storage Devices",
-    "author": ["Randal C. Burns", "Edward G. Chron", "Darrell D. E. Long", "Benjamin C. Reed"],
+    "author": [
+      "Randal Chilton Burns",
+      "Edward Gustav Chron",
+      "Darrell Long",
+      "Benjamin Clay Reed"
+    ],
     "patent_number": "5,931,947",
     "short_description": "A secure storage system using an array of remotely encrypted storage devices for data protection.",
     "url": "https://patents.google.com/patent/US5931947",
     "bibTeX": {
       "@misc": "Burns1999Secure",
-      "author": "Randal C. Burns and Edward G. Chron and Darrell D. E. Long and Benjamin C. Reed",
+      "author": "Randal Chilton Burns and Edward Gustav Chron and Darrell Long and Benjamin Clay Reed",
       "title": "Secure Array of Remotely Encrypted Storage Devices",
       "note": "U.S. Patent no. 5,931,947",
       "month": "aug",
@@ -49,15 +60,18 @@
   },
   {
     "id": 4,
-    "title": "A Method for Generating and Reconstructing In-place Delta Files",
-    "author": ["Randal C. Burns", "Darrell D. E. Long"],
+    "title": "Method for Generating and Reconstructing In-place Delta Files",
+    "author": [
+      "Randal Chilton Burns",
+      "Darrell D. E. Long"
+    ],
     "patent_number": "6,018,747",
     "short_description": "An efficient method for generating and reconstructing delta files in-place, reducing storage and bandwidth requirements.",
     "url": "https://patents.google.com/patent/US6018747",
     "bibTeX": {
       "@misc": "Burns2000Delta",
-      "author": "Randal C. Burns and Darrell D. E. Long",
-      "title": "A Method for Generating and Reconstructing In-place Delta Files",
+      "author": "Randal Chilton Burns and Darrell D. E. Long",
+      "title": "Method for Generating and Reconstructing In-place Delta Files",
       "note": "U.S. Patent no. 6,018,747",
       "month": "jan",
       "year": 2000
@@ -66,13 +80,18 @@
   {
     "id": 5,
     "title": "Decentralized Remotely Encrypted File System",
-    "author": ["Edward G. Chron", "Darrell D. E. Long", "Randal C. Burns", "Benjamin Reed"],
+    "author": [
+      "Randal Chilton Burns",
+      "Edward Gustav Chron",
+      "Darrell Long",
+      "Benjamin Clay Reed"
+    ],
     "patent_number": "6,405,315",
     "short_description": "A decentralized file system architecture that provides remote encryption capabilities for secure distributed storage.",
     "url": "https://patents.google.com/patent/US6405315",
     "bibTeX": {
       "@misc": "Chron2002Decentralized",
-      "author": "Edward G. Chron and Darrell D. E. Long and Randal C. Burns and Benjamin Reed",
+      "author": "Randal Chilton Burns and Edward Gustav Chron and Darrell Long and Benjamin Clay Reed",
       "title": "Decentralized Remotely Encrypted File System",
       "note": "U.S. Patent no. 6,405,315",
       "month": "jun",
@@ -82,13 +101,17 @@
   {
     "id": 6,
     "title": "Data Placement and Allocation using Virtual Contiguity",
-    "author": ["Randal C. Burns", "Robert M. Rees", "Darrell D. E. Long"],
+    "author": [
+      "Randal Chilton Burns",
+      "Darrell D. E. Long",
+      "Robert Michael Rees"
+    ],
     "patent_number": "6,651,147",
     "short_description": "A method for optimizing data placement and allocation through virtual contiguity to improve storage system performance.",
     "url": "https://patents.google.com/patent/US6651147",
     "bibTeX": {
       "@misc": "Burns2003Virtual",
-      "author": "Randal C. Burns and Robert M. Rees and Darrell D. E. Long",
+      "author": "Randal Chilton Burns and Darrell D. E. Long and Robert Michael Rees",
       "title": "Data Placement and Allocation using Virtual Contiguity",
       "note": "U.S. Patent no. 6,651,147",
       "month": "nov",
@@ -98,13 +121,18 @@
   {
     "id": 7,
     "title": "Lease-Based Safety Protocol for Distributed System with Multiple Networks",
-    "author": ["Randal C. Burns", "Robert M. Rees", "Darrell D. E. Long", "Atul Goel"],
+    "author": [
+      "Randal Chilton Burns",
+      "Atul Goel",
+      "Darrell D. E. Long",
+      "Robert Michael Rees"
+    ],
     "patent_number": "6,775,703",
     "short_description": "A lease-based protocol ensuring safety and consistency in distributed systems operating across multiple networks.",
     "url": "https://patents.google.com/patent/US6775703",
     "bibTeX": {
       "@misc": "Burns2004Lease",
-      "author": "Randal C. Burns and Robert M. Rees and Darrell D. E. Long and Atul Goel",
+      "author": "Randal Chilton Burns and Atul Goel and Darrell D. E. Long and Robert Michael Rees",
       "title": "Lease-Based Safety Protocol for Distributed System with Multiple Networks",
       "note": "U.S. Patent no. 6,775,703",
       "month": "aug",
@@ -114,13 +142,16 @@
   {
     "id": 8,
     "title": "System and Method for Managing Authentication and Coherency in a Storage Area Network",
-    "author": ["Randal C. Burns", "Darrell D. E. Long"],
+    "author": [
+      "Randal Chilton Burns",
+      "Darrell Long"
+    ],
     "patent_number": "6,792,424",
     "short_description": "A system for managing authentication and maintaining data coherency in storage area networks.",
     "url": "https://patents.google.com/patent/US6792424",
     "bibTeX": {
       "@misc": "Burns2004Authentication",
-      "author": "Randal C. Burns and Darrell D. E. Long",
+      "author": "Randal Chilton Burns and Darrell Long",
       "title": "System and Method for Managing Authentication and Coherency in a Storage Area Network",
       "note": "U.S. Patent no. 6,792,424",
       "month": "sep",
@@ -130,13 +161,17 @@
   {
     "id": 9,
     "title": "System and Method for Restoring a File System from Backups in the Presence of Deletions",
-    "author": ["Randal C. Burns", "Darrell D. E. Long", "Robert M. Rees"],
+    "author": [
+      "Randal Chilton Burns",
+      "Darrell D. E. Long",
+      "Robert Michael Rees"
+    ],
     "patent_number": "6,938,056",
     "short_description": "A method for accurately restoring file systems from backups while properly handling file deletions.",
     "url": "https://patents.google.com/patent/US6938056",
     "bibTeX": {
       "@misc": "Burns2005Restoring",
-      "author": "Randal C. Burns and Darrell D. E. Long and Robert M. Rees",
+      "author": "Randal Chilton Burns and Darrell D. E. Long and Robert Michael Rees",
       "title": "System and Method for Restoring a File System from Backups in the Presence of Deletions",
       "note": "U.S. Patent no. 6,938,056",
       "month": "aug",
@@ -146,13 +181,22 @@
   {
     "id": 10,
     "title": "Method, System and Computer Program Product for Implementing Copy-on-Write of a File",
-    "author": ["Rajagopal Ananthanarayanan", "Ralph Becker-Szendy", "Randal C. Burns", "Darrell D. E. Long", "Jujjuri Venkateswararao", "David M. Wolf", "Jason C. Young"],
+    "author": [
+      "Rajagopal Ananthanarayanan",
+      "Ralph A. Becker-Szendy",
+      "Robert M. Rees",
+      "Randal C. Burns",
+      "Darrell D. E. Long",
+      "Jujjuri Venkateswararao",
+      "David M. Wolfe",
+      "Jason C. Young"
+    ],
     "patent_number": "7,085,909",
     "short_description": "An efficient implementation of copy-on-write semantics for file systems, optimizing storage utilization.",
     "url": "https://patents.google.com/patent/US7085909",
     "bibTeX": {
       "@misc": "Ananthanarayanan2006CopyOnWrite",
-      "author": "Rajagopal Ananthanarayanan and Ralph Becker-Szendy and Randal C. Burns and Darrell D. E. Long and Jujjuri Venkateswararao and David M. Wolf and Jason C. Young",
+      "author": "Rajagopal Ananthanarayanan and Ralph A. Becker-Szendy and Robert M. Rees and Randal C. Burns and Darrell D. E. Long and Jujjuri Venkateswararao and David M. Wolfe and Jason C. Young",
       "title": "Method, System and Computer Program Product for Implementing Copy-on-Write of a File",
       "note": "U.S. Patent no. 7,085,909",
       "month": "aug",
@@ -161,15 +205,24 @@
   },
   {
     "id": 11,
-    "title": "Managing File System Versions",
-    "author": ["Jason C. Young", "Rajagopal Ananthanarayanan", "Randal C. Burns", "Darrell D. E. Long", "Robert M. Rees", "Ralph A. Becker-Szendy", "James J. Seeger", "David M. Wolf"],
+    "title": "Managing Filesystem Versions",
+    "author": [
+      "Jason C. Young",
+      "Rajagopal Ananthanarayanan",
+      "Randal C. Burns",
+      "Darrell D. E. Long",
+      "Robert M. Rees",
+      "Ralph A. Becker-Szendy",
+      "James J. Seeger",
+      "David M. Wolfe"
+    ],
     "patent_number": "7,139,781",
     "short_description": "A comprehensive system for managing multiple versions of files within a file system.",
     "url": "https://patents.google.com/patent/US7139781",
     "bibTeX": {
       "@misc": "Young2006Versions",
-      "author": "Jason C. Young and Rajagopal Ananthanarayanan and Randal C. Burns and Darrell D. E. Long and Robert M. Rees and Ralph A. Becker-Szendy and James J. Seeger and David M. Wolf",
-      "title": "Managing File System Versions",
+      "author": "Jason C. Young and Rajagopal Ananthanarayanan and Randal C. Burns and Darrell D. E. Long and Robert M. Rees and Ralph A. Becker-Szendy and James J. Seeger and David M. Wolfe",
+      "title": "Managing Filesystem Versions",
       "note": "U.S. Patent no. 7,139,781",
       "month": "nov",
       "year": 2006

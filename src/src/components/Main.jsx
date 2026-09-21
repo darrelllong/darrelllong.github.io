@@ -12,6 +12,8 @@ import { Context } from "../ContextProvider";
 import About from "./About";
 import Publications from "./Publications";
 import Publication from "./Publication";
+import PublicationRedirect from "./PublicationRedirect";
+import publicationRedirects from "../publicationRedirects.json";
 import Patents from "./Patents";
 import Patent from "./Patent";
 import Consultancy from "./Consultancy";
@@ -114,11 +116,15 @@ export default function Main() {
         <Route
           path="/publications/:id"
           element={
-            <Publication
-              publication={publications.find((pub) => pub.id === publicationId)}
-              publications={publications}
-              search={setSearchTerm}
-            />
+            publicationRedirects[publicationId] ? (
+              <PublicationRedirect to={publicationRedirects[publicationId]} />
+            ) : (
+              <Publication
+                publication={publications.find((pub) => pub.id === publicationId)}
+                publications={publications}
+                search={setSearchTerm}
+              />
+            )
           }
         />
         <Route

@@ -74,7 +74,7 @@ const staticRoutes = [
     path: "about",
     title: "About",
     description:
-      "About Professor Darrell D.E. Long, Distinguished Professor Emeritus of Computer Science and Engineering at UC Santa Cruz.",
+      "About Professor Darrell D.E. Long, Distinguished Professor of Engineering, emeritus, at UC Santa Cruz.",
   },
   {
     path: "publications",
@@ -132,13 +132,17 @@ for (const pub of publications) {
 const publicationIds = new Set(
   publications.map((publication) => String(publication.id)),
 );
+const publicationRedirects = JSON.parse(
+  readFileSync(join(__dirname, "../src/publicationRedirects.json"), "utf-8"),
+);
 for (const entry of readdirSync(join(repoRoot, "publications"), {
   withFileTypes: true,
 })) {
   if (
     !entry.isDirectory() ||
     !/^\d+$/.test(entry.name) ||
-    publicationIds.has(entry.name)
+    publicationIds.has(entry.name) ||
+    publicationRedirects[entry.name]
   )
     continue;
   const directory = join(distDir, "publications", entry.name);
@@ -152,6 +156,18 @@ for (const entry of readdirSync(join(repoRoot, "publications"), {
       canonicalUrl: `${BASE_URL}/publications/${entry.name}/`,
     }).replace("</head>", '<meta name="robots" content="noindex">\n</head>'),
   );
+}
+
+for (const [id, destination] of Object.entries(publicationRedirects)) {
+  const target = destination.startsWith("/") ? `${BASE_URL}${destination}` : destination;
+  const directory = join(distDir, "publications", id);
+  mkdirSync(directory, { recursive: true });
+  writeFileSync(join(directory, "index.html"), `<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<title>Publication moved | Darrell Long</title>
+<link rel="canonical" href="${escapeAttr(target)}">
+<meta http-equiv="refresh" content="0; url=${escapeAttr(target)}">
+</head><body><p>This record has moved. <a href="${escapeAttr(target)}">View the publication</a>.</p></body></html>\n`);
 }
 
 // Patents

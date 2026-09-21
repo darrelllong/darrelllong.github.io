@@ -14,11 +14,11 @@ Bottani was born in Volpago del Montello, in the province of Treviso, in 1897. A
 
 Students remembered him as tall and eccentric. His reinforced boots had iron heels, and their clatter on the Politecnico's wooden floors announced his arrival before he entered the classroom.
 
-After the Second World War, Bottani served as Commissioner for Electricity in Upper Italy from 1945 to 1950, coordinating the restoration of the electrical grid. In 1955, he helped found the Centro Calcoli Numerici at the Politecnico, the first electronic computing center in Europe open to industry. The following year, he established CESI, the Centro Elettrotecnico Sperimentale Italiano, as a national laboratory for electrical testing and experimentation.
+After the Second World War, Bottani served as Commissioner for Electricity in Upper Italy, contributing to the reconstruction of the electrical industry. In 1955, he helped found the Centro Calcoli Numerici at the Politecnico, which served both university and industrial users. The following year, he established CESI, the Centro Elettrotecnico Sperimentale Italiano, as a national laboratory for electrical testing and experimentation. The Politecnico's [historical account and interview with Vito Amoia](https://www.historicalcollections.deib.polimi.it/en/protagonisti/bottani/) describe this work.
 
-In 1956, he also became chairman of MM SpA, the company responsible for financing and building the Milan Metro. He resigned in 1962 following political conflicts.
+He also chaired MM SpA, the company responsible for financing and building the Milan Metro, and later resigned following political conflicts.
 
-Bottani collaborated with Dadda on teaching material and supported his work in computing. Together with Rector Gino Cassinis, he secured the university's backing for the acquisition of the CRC 102A. Dadda worked on the machine in San Diego and brought it to Milan; Bottani helped provide the institutional support the project required.
+Bottani collaborated with Dadda on teaching material and supported his work in computing. Together with Rector Gino Cassinis, he secured the university's backing for the acquisition of the CRC 102A. Dadda worked on the machine in California and brought it to Milan; Bottani helped provide the institutional support the project required.
 
 Tracing this history as an academic genealogy requires some care. The Italian university system in which Bottani and Dadda worked differed from the American system of doctoral supervision. Its principal degree was the *laurea*: four or five years of study followed by a thesis and an oral examination before a faculty commission. It was a terminal degree, roughly comparable to an American master's degree. Fermi received a *laurea* at Pisa in 1922; Bottani and Dadda received the same kind of qualification at the Politecnico.
 

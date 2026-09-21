@@ -3,84 +3,123 @@
     "slug": "2026-09-20-ceph-and-the-ssrc",
     "title": "Ceph and the SSRC",
     "date": "2026-09-20",
-    "tags": ["research", "storage", "colleagues"],
+    "tags": [
+      "research",
+      "storage",
+      "colleagues"
+    ],
     "excerpt": "Ceph’s origins in the SSRC, the earlier work on Swift and RAMA, and Sage Weil’s research and development of the file system."
   },
   {
     "slug": "2026-09-20-retiring-with-ethan-miller",
     "title": "Retiring with Ethan Miller",
     "date": "2026-09-20",
-    "tags": ["life", "research", "colleagues"],
+    "tags": [
+      "life",
+      "research",
+      "colleagues"
+    ],
     "excerpt": "Retiring from UC Santa Cruz with my closest colleague and friend, after decades of building the SSRC and CRSS together."
   },
   {
     "slug": "2026-09-20-long-professorship-experimental-physics",
     "title": "The Darrell and Elaine Long Professorship in Experimental Physics",
     "date": "2026-09-20",
-    "tags": ["physics", "research", "education"],
+    "tags": [
+      "physics",
+      "research",
+      "education"
+    ],
     "excerpt": "Why Elaine and I endowed a professorship in experimental physics at UC Santa Cruz, and the work of its first holder, Bruce Schumm."
   },
   {
     "slug": "2026-05-05-threshold-secret-sharing",
     "title": "Threshold Secret Sharing in Pure Rust",
     "date": "2026-05-05",
-    "tags": ["research", "cryptography", "rust", "secret-sharing"],
-    "excerpt": "Pure-Rust implementations of every constructive secret-sharing scheme from the foundational papers — Shamir, Blakley, McEliece-Sarwate, Asmuth-Bloom, Brickell, Karchmer-Wigderson, Naor-Shamir visual cryptography, and the rest."
+    "tags": [
+      "research",
+      "cryptography",
+      "rust",
+      "secret-sharing"
+    ],
+    "excerpt": "A Rust library for studying threshold sharing, ramp schemes, general access structures, visual cryptography, and share verification."
   },
   {
     "slug": "2026-05-05-auditing-random-number-generators",
     "title": "Random Number Generators in Rust",
     "date": "2026-05-05",
-    "tags": ["research", "cryptography", "rust", "randomness"],
+    "tags": [
+      "research",
+      "cryptography",
+      "rust",
+      "randomness"
+    ],
     "excerpt": "The entropy library provides PRNGs and CSPRNGs, exact integer sampling, continuous distributions, reproducible parallel streams, and statistical tests."
   },
   {
     "slug": "2026-03-16-on-time",
     "title": "On Time",
     "date": "2026-03-16",
-    "tags": ["philosophy", "life"],
+    "tags": [
+      "philosophy",
+      "life"
+    ],
     "excerpt": "The only thing that you truly have is time. Money is not time — money is what people give you in exchange for your time."
   },
   {
     "slug": "2026-03-06-performance-evaluation",
     "title": "Performance Evaluation: Do It Right or Don't Do It",
     "date": "2026-03-06",
-    "tags": ["research", "systems", "performance"],
+    "tags": [
+      "research",
+      "systems",
+      "performance"
+    ],
     "excerpt": "Bad performance evaluation is endemic in systems research. It is not hard to do it correctly — so why don't we?"
   },
   {
     "slug": "2026-02-06-ercole-bottani",
-    "title": "Ercole Bottani",
+    "title": "Ercole Bottani (1897–1978)",
     "date": "2026-02-06",
-    "tags": ["biography"],
+    "tags": [
+      "biography"
+    ],
     "excerpt": "Bottani's work in electrical engineering and computing at the Politecnico di Milano, and his place in my academic lineage."
   },
   {
     "slug": "2026-02-14-luigi-dadda",
-    "title": "Luigi Dadda",
+    "title": "Luigi Dadda (1923–2012)",
     "date": "2026-02-14",
-    "tags": ["biography"],
+    "tags": [
+      "biography"
+    ],
     "excerpt": "Dadda helped establish computing in Italy and developed the multiplier that bears his name during a long career at the Politecnico di Milano."
   },
   {
     "slug": "2026-02-14-domenico-ferrari",
     "title": "Domenico Ferrari",
     "date": "2026-02-14",
-    "tags": ["biography"],
+    "tags": [
+      "biography"
+    ],
     "excerpt": "Ferrari's work on performance evaluation, Berkeley Unix, and network quality of service shaped generations of systems researchers, including my own advisor."
   },
   {
     "slug": "2026-02-14-angelo-barbagelata",
-    "title": "Angelo Barbagelata",
+    "title": "Angelo Barbagelata (1875–1960)",
     "date": "2026-02-14",
-    "tags": ["biography"],
+    "tags": [
+      "biography"
+    ],
     "excerpt": "Barbagelata's career in electrical measurement, engineering practice, and teaching at the Politecnico di Milano."
   },
   {
     "slug": "2026-02-14-jehan-francois-paris",
     "title": "Jehan-François Pâris",
     "date": "2026-02-14",
-    "tags": ["biography"],
+    "tags": [
+      "biography"
+    ],
     "excerpt": "My doctoral advisor at UC San Diego and a longtime collaborator in replication, distributed systems, and storage reliability."
   }
 ]

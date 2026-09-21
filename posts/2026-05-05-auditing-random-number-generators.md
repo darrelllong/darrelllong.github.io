@@ -71,17 +71,9 @@ The current operating-system entropy backend supports Unix. Applications can als
 
 The repository measures both raw generation and the operations applications perform. Buffered generators have a bulk byte interface, `fill_native`, that avoids extracting output one word at a time. For 64-bit PRNGs it also uses the full word; the statistical runner's `next_u32` interface takes only the high half.
 
-The September 2026 [comparison recorded in the audit](https://github.com/darrelllong/entropy/blob/9f72d34e0785af1ec2a8445cb9fb02643daf028a/AUDIT.md#a4--the-shuffle-trails-rand) measured the following rates on the same Mac, through public APIs. The figures are millions of draws per second, taking the best of seven rounds of five million draws.
+The [generator benchmarks](https://github.com/darrelllong/entropy/blob/9f72d34e0785af1ec2a8445cb9fb02643daf028a/BENCHMARKS.md) use [Pilot](/blog/2026-03-06-performance-evaluation/) and report throughput with confidence intervals across several machines. The report identifies compiler and implementation changes that prevent some columns from being compared directly. Its normal unit is millions of 32-bit words per second; a generator's rate in that interface is different from its bulk-byte rate or the rate of a distribution sampler.
 
-| Operation | entropy | rand 0.10.2 comparison |
-|---|---:|---:|
-| PCG64, 64-bit words | 763 | 763 |
-| Uniform doubles | 760 | 760 |
-| Integers from 1 through 6 | 314 | 317 |
-| Standard normal variates | 270 | 286 |
-| Exponential variates | 243 | 180 |
-
-The exponential sampler is about 35% faster in that measurement. The same comparison places normal sampling about 6% behind and shuffling about 9% behind. The separate [generator benchmarks](https://github.com/darrelllong/entropy/blob/main/BENCHMARKS.md) use [Pilot](/blog/2026-03-06-performance-evaluation/) and report confidence intervals across several machines, with the compiler and implementation changes identified where they affect comparisons.
+The repository also contains best-of-rounds development timings for sampling operations. Those timings do not establish a statistically supported speed advantage over another library, so I do not use them here as comparative performance results.
 
 ## Testing the Generators
 

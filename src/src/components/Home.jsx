@@ -145,7 +145,7 @@ export default function Home() {
         </div>
         <div>
           <a href="https://www.crss.us/">
-            Systems & storage laboratory <span aria-hidden="true">↗</span>
+            Systems & storage research archive <span aria-hidden="true">↗</span>
           </a>
           <a href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=10794">
             Students & academic genealogy <span aria-hidden="true">↗</span>

@@ -30,6 +30,12 @@ main.patent header svg {
   flex-shrink: 0;
   width: 15px;
 }
+.publication-venue,
+.publication-note {
+  color: $muted;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
 main.publication header ul li,
 main.patent header ul li {
   display: inline;

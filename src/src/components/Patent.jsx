@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Assets
 import {
-  faFileArrowDown,
+  faArrowUpRightFromSquare,
   faUsers,
   faCalendar,
   faCaretLeft,
@@ -95,8 +95,8 @@ const Header = ({ title, author, bibTeX, patent_number, url, search }) => {
       )}
       {url && (
         <a href={url} target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faFileArrowDown} fixedWidth />
-          Download PDF from Google Patents
+          <FontAwesomeIcon icon={faArrowUpRightFromSquare} fixedWidth />
+          View at Google Patents
         </a>
       )}
     </header>
@@ -177,8 +177,8 @@ const Patent = ({ patent, patents, search }) => {
           <BibTeX bibTeX={patent.bibTeX} />
           {patent.url && (
             <a href={patent.url} target="_blank" rel="noreferrer">
-              Download PDF from Google Patents{" "}
-              <FontAwesomeIcon icon={faFileArrowDown} />
+              View at Google Patents{" "}
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
             </a>
           )}
         </footer>

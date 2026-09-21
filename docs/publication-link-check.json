@@ -1,0 +1,1949 @@
+{
+  "checked": "2026-09-20/2026-09-21",
+  "records": [
+    {
+      "id": 1,
+      "url": "https://ssrc.us/media/pubs/aa5ffe2d7d9ecc32c3c9a1fa347724599c773956.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/aa5ffe2d7d9ecc32c3c9a1fa347724599c773956.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 2,
+      "url": "https://ssrc.us/media/pubs/a6a7a22b9280c2c99ea13639b7d543113a3493ff.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/a6a7a22b9280c2c99ea13639b7d543113a3493ff.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 3,
+      "url": "https://ssrc.us/media/pubs/65be35ba630fa9ce7ae749368810901343b2f2cf.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/65be35ba630fa9ce7ae749368810901343b2f2cf.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 4,
+      "url": "https://ssrc.us/media/pubs/b05f14d6012bbf31e75e617ef652b57e579edbb0.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/b05f14d6012bbf31e75e617ef652b57e579edbb0.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 5,
+      "url": "/pdfs/fellner-token-ring-report.pdf",
+      "result": "local_pdf",
+      "bytes": 263590
+    },
+    {
+      "id": 6,
+      "url": "https://ssrc.us/media/pubs/35affe3607a3ec1e5cfc9fb38c04d1a6836616ca.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/35affe3607a3ec1e5cfc9fb38c04d1a6836616ca.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 7,
+      "url": "https://ssrc.us/media/pubs/0608a3d38ff69b522073de54ba5f864ded8a240c.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/0608a3d38ff69b522073de54ba5f864ded8a240c.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 8,
+      "url": "https://ssrc.us/media/pubs/507f23acd756883f557ca853b43dd6ffcd2941bd.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/507f23acd756883f557ca853b43dd6ffcd2941bd.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 9,
+      "url": "https://ssrc.us/media/pubs/1e38dfef5b6289881f47ad0cd35bb4c509f6af3e.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/1e38dfef5b6289881f47ad0cd35bb4c509f6af3e.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 10,
+      "url": "https://ssrc.us/media/pubs/7960c010601a7a90f42bb21ba1ea6e52b0626b22.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/7960c010601a7a90f42bb21ba1ea6e52b0626b22.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 11,
+      "url": "https://ssrc.us/media/pubs/01b9fd1a5abb9b55809d73c35d7267f08858303f.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/01b9fd1a5abb9b55809d73c35d7267f08858303f.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 12,
+      "url": "https://ssrc.us/media/pubs/23187ba74b5b5c465fc7c9595be10d6d5ea8a4dc.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/23187ba74b5b5c465fc7c9595be10d6d5ea8a4dc.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 13,
+      "url": "https://ssrc.us/media/pubs/509ccaeb00d3f565746b8af08c6d1e0bb35f353f.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/509ccaeb00d3f565746b8af08c6d1e0bb35f353f.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 14,
+      "url": "https://ssrc.us/media/pubs/f0c51402c600fd60463c6fa175cca43898e98623.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/f0c51402c600fd60463c6fa175cca43898e98623.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 15,
+      "url": "https://ssrc.us/media/pubs/fa6c3750ddb12fe0165bfd014593880513756115.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/fa6c3750ddb12fe0165bfd014593880513756115.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 16,
+      "url": "https://ssrc.us/media/pubs/13e25f6d063b2e30fae817e42387d13ef34de727.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/13e25f6d063b2e30fae817e42387d13ef34de727.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 17,
+      "url": "https://ssrc.us/media/pubs/ce55f8ccfc0ffef56bc5631f7db34eead40a4c59.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/ce55f8ccfc0ffef56bc5631f7db34eead40a4c59.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 18,
+      "url": "https://ssrc.us/media/pubs/1065fdf3a405f4387b0f39afde5446cd98bf9a70.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/1065fdf3a405f4387b0f39afde5446cd98bf9a70.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 19,
+      "url": "https://ssrc.us/media/pubs/e74e2913de61c1f751c4ac15c4d3e69e276ef853.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/e74e2913de61c1f751c4ac15c4d3e69e276ef853.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 21,
+      "url": "https://ssrc.us/media/pubs/facc207da8dea2e441f6c114d02992e99927a0b9.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/facc207da8dea2e441f6c114d02992e99927a0b9.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 22,
+      "url": "https://ssrc.us/media/pubs/47390cbc9be6f85f6b1a746ded73b1c2f0e2a3e9.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/47390cbc9be6f85f6b1a746ded73b1c2f0e2a3e9.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 23,
+      "url": "https://ssrc.us/media/pubs/e1b72bb0c98debd2f681bb45d00c511cf57c7e0b.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/e1b72bb0c98debd2f681bb45d00c511cf57c7e0b.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 24,
+      "url": "https://ssrc.us/media/pubs/c92d2f101cffec31e0f2c60230caa157b5409960.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/c92d2f101cffec31e0f2c60230caa157b5409960.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 25,
+      "url": "https://ssrc.us/media/pubs/7f3a743da8b930fb0ddc8fae0df5dab33cab1b0d.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/7f3a743da8b930fb0ddc8fae0df5dab33cab1b0d.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 26,
+      "url": "https://ssrc.us/media/pubs/5a186979c59835aa8409c8ba9261ae3fb6bdcff1.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/5a186979c59835aa8409c8ba9261ae3fb6bdcff1.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 27,
+      "url": "https://ssrc.us/media/pubs/1c418abf401c2ced804f4ccff2b3c37f9647bd19.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/1c418abf401c2ced804f4ccff2b3c37f9647bd19.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 28,
+      "url": "https://ssrc.us/media/pubs/7b45b4b007e2744803712192a42a3baa4d62adde.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/7b45b4b007e2744803712192a42a3baa4d62adde.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 29,
+      "url": "https://ssrc.us/media/pubs/7f4e71177a2a7078b1848d7a0d6c8e98c4986cf1.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/7f4e71177a2a7078b1848d7a0d6c8e98c4986cf1.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 30,
+      "url": "https://ssrc.us/media/pubs/5cd3b23df47846a9021e668f6637cc4e8675109f.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/5cd3b23df47846a9021e668f6637cc4e8675109f.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 31,
+      "url": "https://ssrc.us/media/pubs/d596362817aa990d06c1c497d4c2a5423ea5829d.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/d596362817aa990d06c1c497d4c2a5423ea5829d.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 32,
+      "url": "https://ssrc.us/media/pubs/6f89379bc0ae69a695406e103aaa488b6c385454.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/6f89379bc0ae69a695406e103aaa488b6c385454.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 33,
+      "url": "https://ssrc.us/media/pubs/96c7ffa6733e50e6fd43f14d4493118f07e369ab.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/96c7ffa6733e50e6fd43f14d4493118f07e369ab.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 34,
+      "url": "https://ssrc.us/media/pubs/18cd2bfc2e22ef31b7c0631b67be9263fdd2ed27.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/18cd2bfc2e22ef31b7c0631b67be9263fdd2ed27.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 35,
+      "url": "https://ssrc.us/media/pubs/a917ac198431394c2b99c74908fe451443399537.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/a917ac198431394c2b99c74908fe451443399537.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 36,
+      "url": "https://ssrc.us/media/pubs/eab92f87efdf3bf336a03603e7b8ba6889d5cb45.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/eab92f87efdf3bf336a03603e7b8ba6889d5cb45.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 37,
+      "url": "https://ssrc.us/media/pubs/a3d8d7cf4deff274fc35948573910760c593c5a9.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/a3d8d7cf4deff274fc35948573910760c593c5a9.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 38,
+      "url": "https://ssrc.us/media/pubs/92ca6e61ab487a1947c85029cedcd02d32dd3f34.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/92ca6e61ab487a1947c85029cedcd02d32dd3f34.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 39,
+      "url": "https://ssrc.us/media/pubs/2f301095bc2a766873f54153eaec6d83e10b142d.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/2f301095bc2a766873f54153eaec6d83e10b142d.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 40,
+      "url": "https://ssrc.us/media/pubs/18d1d1827feea73154044eb088d7b10ab57ed69a.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/18d1d1827feea73154044eb088d7b10ab57ed69a.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 41,
+      "url": "https://ssrc.us/media/pubs/e224295a36adce6779233ef1857f0d11049e19d3.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/e224295a36adce6779233ef1857f0d11049e19d3.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 42,
+      "url": "https://ssrc.us/media/pubs/b6d9fb1b60f68f48bb8f6c32894bd02a135d12a5.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/b6d9fb1b60f68f48bb8f6c32894bd02a135d12a5.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 43,
+      "url": "https://ssrc.us/media/pubs/e021012af63507f472049c007939b842aa2a5f10.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/e021012af63507f472049c007939b842aa2a5f10.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 44,
+      "url": "https://ssrc.us/media/pubs/d0b29be475da4315b7e3e7bb06a579fe3fc30b0e.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/d0b29be475da4315b7e3e7bb06a579fe3fc30b0e.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 45,
+      "url": "https://ssrc.us/media/pubs/791542036f88a466f05945aab74004a9cc7d5b9f.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/791542036f88a466f05945aab74004a9cc7d5b9f.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 46,
+      "url": "https://ssrc.us/media/pubs/57a1adb40306db70c6d52376e389a836f60a29c1.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/57a1adb40306db70c6d52376e389a836f60a29c1.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 47,
+      "url": "https://ssrc.us/media/pubs/25bd1fcf849efacb1591a3f06488113089755cf4.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/25bd1fcf849efacb1591a3f06488113089755cf4.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 48,
+      "url": "https://ssrc.us/media/pubs/d0a1a0161119593cfdb6235492f689bdf8c79b76.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/d0a1a0161119593cfdb6235492f689bdf8c79b76.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 49,
+      "url": "https://ssrc.us/media/pubs/d8c4c91815536f170fc553a933e03f59f21ff7a6.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/d8c4c91815536f170fc553a933e03f59f21ff7a6.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 50,
+      "url": "https://ssrc.us/media/pubs/7015b2eb3c689db69837dddea1af32c8e30709d8.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/7015b2eb3c689db69837dddea1af32c8e30709d8.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 51,
+      "url": "https://ssrc.us/media/pubs/b5ba78d21ddfee517fc4b68648b8a8e0eae4b51c.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/b5ba78d21ddfee517fc4b68648b8a8e0eae4b51c.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 52,
+      "url": "https://ssrc.us/media/pubs/80c09985415c15cb8be9ca91d85730027ad848e4.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/80c09985415c15cb8be9ca91d85730027ad848e4.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 53,
+      "url": "https://ssrc.us/media/pubs/68a8dc82b2cfe3eec329a4f28bcf68b49513499c.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/68a8dc82b2cfe3eec329a4f28bcf68b49513499c.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 54,
+      "url": "https://www.ssrc.us/media/pubs/a0658e22d071314eb4920dadfae263da7b057f55.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/a0658e22d071314eb4920dadfae263da7b057f55.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 55,
+      "url": "https://ssrc.us/media/pubs/1bd42e936db567ec1c9a5d30b8ba7b46d4ad8a26.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/1bd42e936db567ec1c9a5d30b8ba7b46d4ad8a26.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 56,
+      "url": "https://ssrc.us/media/pubs/2a5d4c672e1a534d5bf1c0680837abcd2d7d775f.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/2a5d4c672e1a534d5bf1c0680837abcd2d7d775f.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 58,
+      "url": "https://ssrc.us/media/pubs/31e34accfa6c62bd0d269bf6ca0ad60de631a7e9.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/31e34accfa6c62bd0d269bf6ca0ad60de631a7e9.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 59,
+      "url": "https://ssrc.us/media/pubs/a7a45f7ef6849137936503f5b1cdabf103c5a661.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/a7a45f7ef6849137936503f5b1cdabf103c5a661.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 60,
+      "url": "https://ssrc.us/media/pubs/489b2ce20ab86e8c9e62d4fad4308e653417daea.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/489b2ce20ab86e8c9e62d4fad4308e653417daea.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 61,
+      "url": "https://ssrc.us/media/pubs/417501a9844940233bea34b82988012342606779.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/417501a9844940233bea34b82988012342606779.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 62,
+      "url": "https://ssrc.us/media/pubs/2ecd1bbacf54c7173e461fabfeffbf9e83eb1573.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/2ecd1bbacf54c7173e461fabfeffbf9e83eb1573.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 63,
+      "url": "https://ssrc.us/media/pubs/00bbfdfb354b8db0b4cc92bc9d44e447c48b19e1.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/00bbfdfb354b8db0b4cc92bc9d44e447c48b19e1.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 64,
+      "url": "https://ssrc.us/media/pubs/810538e2f651e7a602c66f683e26baeb0e14f18f.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/810538e2f651e7a602c66f683e26baeb0e14f18f.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 65,
+      "url": "https://ssrc.us/media/pubs/9ecab7b0d63fdb3455318123c3d7cd2e7fc1ca60.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/9ecab7b0d63fdb3455318123c3d7cd2e7fc1ca60.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 68,
+      "url": "https://ssrc.us/media/pubs/83c957e36f53982d7ba0351e0677999b3764b689.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/83c957e36f53982d7ba0351e0677999b3764b689.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 69,
+      "url": "https://ssrc.us/media/pubs/9edc12c724b33d544db123004462843deb173edf.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/9edc12c724b33d544db123004462843deb173edf.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 70,
+      "url": "https://ssrc.us/media/pubs/04fb9e71b120f3b6c53a6c4c69b690350ebc2897.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/04fb9e71b120f3b6c53a6c4c69b690350ebc2897.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 71,
+      "url": "https://ssrc.us/media/pubs/ec4209788a97532b732838320b54ee1e6434ae54.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/ec4209788a97532b732838320b54ee1e6434ae54.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 72,
+      "url": "https://ssrc.us/media/pubs/806db63f21c79d55881f1961f1d2238f1fddb222.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/806db63f21c79d55881f1961f1d2238f1fddb222.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 73,
+      "url": "https://ssrc.us/media/pubs/b51479a2c778381473b9db678a69b70d893685da.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/b51479a2c778381473b9db678a69b70d893685da.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 74,
+      "url": "https://ethanmiller.org/files/pubs/mascots09.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ethanmiller.org/files/pubs/mascots09.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 75,
+      "url": "https://ssrc.us/media/pubs/b5602a4af0428b1c2b2b1b03de68fc94e8aeff84.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/b5602a4af0428b1c2b2b1b03de68fc94e8aeff84.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 76,
+      "url": "https://ssrc.us/media/pubs/b6074d5b97475e65a5c3082d4767797a479d108c.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/b6074d5b97475e65a5c3082d4767797a479d108c.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 77,
+      "url": "https://ssrc.us/media/pubs/148a4703eafdb2b708b144e8e49544d3476c4844.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/148a4703eafdb2b708b144e8e49544d3476c4844.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 78,
+      "url": "https://ssrc.us/media/pubs/85487ca09999d24c4f3d5c7148a8e1686d922147.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/85487ca09999d24c4f3d5c7148a8e1686d922147.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 79,
+      "url": "https://ssrc.us/media/pubs/d4d1aadca8935513f3d409ef9cb5ed63b9087673.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/d4d1aadca8935513f3d409ef9cb5ed63b9087673.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 80,
+      "url": "https://ssrc.us/media/pubs/b53c92a4725d8a656e4e9dcce3a7f03b5349d1e0.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/b53c92a4725d8a656e4e9dcce3a7f03b5349d1e0.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 82,
+      "url": "https://ssrc.us/media/pubs/d88bd54a99747e1c26b31f9501e872a9b9c5bf84.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/d88bd54a99747e1c26b31f9501e872a9b9c5bf84.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 83,
+      "url": "https://ssrc.us/media/pubs/5503961c7ba8d36fed0d9146a9cb9276ad93f459.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/5503961c7ba8d36fed0d9146a9cb9276ad93f459.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 84,
+      "url": "https://ssrc.us/media/pubs/8434c823fcb223a740f2dd59f213c4c5eb4d0960.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/8434c823fcb223a740f2dd59f213c4c5eb4d0960.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 85,
+      "url": "https://ssrc.us/media/pubs/278033b73afed2d3a8fdb01ec46c3b79ce00d57b.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/278033b73afed2d3a8fdb01ec46c3b79ce00d57b.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 87,
+      "url": "https://ssrc.us/media/pubs/6b56720e2d87218a4e0742c3dad7fd24dad83dd4.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/6b56720e2d87218a4e0742c3dad7fd24dad83dd4.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 88,
+      "url": "https://ssrc.us/media/pubs/958ed1d376157c456f37cb2f7ab6a2e1e44b2fa1.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/958ed1d376157c456f37cb2f7ab6a2e1e44b2fa1.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 89,
+      "url": "https://ssrc.us/media/pubs/19130bd472435b4f8473a164f9ff73a964aa0120.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/19130bd472435b4f8473a164f9ff73a964aa0120.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 90,
+      "url": "https://ssrc.us/media/pubs/a46f415ca8f67861f1e87147fd12f6ed5267d2f4.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/a46f415ca8f67861f1e87147fd12f6ed5267d2f4.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 91,
+      "url": "https://ssrc.us/media/pubs/1b0fc490ef2493f79cc67f2409570e75f4f64b3d.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/1b0fc490ef2493f79cc67f2409570e75f4f64b3d.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 92,
+      "url": "https://ssrc.us/media/pubs/5877b5c8b0dd2d70a70a54c4121cdecd283913ff.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/5877b5c8b0dd2d70a70a54c4121cdecd283913ff.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 93,
+      "url": "https://ssrc.us/media/pubs/33ef15dd54e7d4175fe554cff674cb6e386038c6.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/33ef15dd54e7d4175fe554cff674cb6e386038c6.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 94,
+      "url": "https://ssrc.us/media/pubs/cd2f2a372894d912db4bac074535b77a0ebb5c38.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/cd2f2a372894d912db4bac074535b77a0ebb5c38.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 95,
+      "url": "https://ssrc.us/media/pubs/fa661ead680269180527ae691db7e725299eacce.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/fa661ead680269180527ae691db7e725299eacce.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 96,
+      "url": "https://ssrc.us/media/pubs/ab95dce7cd57c2fb7654ca6b0c0e8b920472848a.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/ab95dce7cd57c2fb7654ca6b0c0e8b920472848a.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 97,
+      "url": "https://ssrc.us/media/pubs/8951dfeb2e0dfaa788b496c0be1f1f260137ad7d.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/8951dfeb2e0dfaa788b496c0be1f1f260137ad7d.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 98,
+      "url": "https://ssrc.us/media/pubs/049bda82fad21815ebfdde1f3ca653287009b929.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/049bda82fad21815ebfdde1f3ca653287009b929.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 100,
+      "url": "https://ssrc.us/media/pubs/c81a0bc54a2e58e00660bae349fe59bcfed8a7b2.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/c81a0bc54a2e58e00660bae349fe59bcfed8a7b2.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 101,
+      "url": "https://ssrc.us/media/pubs/41ba07bff60028bf2d1ce5ed11f975340413f4cd.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/41ba07bff60028bf2d1ce5ed11f975340413f4cd.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 102,
+      "url": "https://ssrc.us/media/pubs/74023ead4c4af866237377b17a526f5e61e45ebd.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/74023ead4c4af866237377b17a526f5e61e45ebd.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 103,
+      "url": "https://ssrc.us/media/pubs/8e8dfcab3d23cba2f60a8df9ffdf6c7442fa953b.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/8e8dfcab3d23cba2f60a8df9ffdf6c7442fa953b.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 104,
+      "url": "https://ssrc.us/media/pubs/269379e9c89be1f8ff0d24bf64c6fa30a6e15d47.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/269379e9c89be1f8ff0d24bf64c6fa30a6e15d47.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 105,
+      "url": "https://ssrc.us/media/pubs/1c86fd98ff7b0fe1da0298746532ce56be7914f3.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/1c86fd98ff7b0fe1da0298746532ce56be7914f3.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 106,
+      "url": "https://ssrc.us/media/pubs/797505c7e2d985c98fc071183f30a6234e2f6e76.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/797505c7e2d985c98fc071183f30a6234e2f6e76.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 107,
+      "url": "https://ssrc.us/media/pubs/e5318725a703fca005efbefc1df99c14d9f7a8d2.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/e5318725a703fca005efbefc1df99c14d9f7a8d2.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 108,
+      "url": "https://ssrc.us/media/pubs/dd9e7db2b76fc5e150eb442361114ed7b74cefe7.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/dd9e7db2b76fc5e150eb442361114ed7b74cefe7.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 109,
+      "url": "https://ssrc.us/media/pubs/5c0b6915412ef0437316db7ff08edd464c1ae251.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/5c0b6915412ef0437316db7ff08edd464c1ae251.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 110,
+      "url": "https://ssrc.us/media/pubs/a7e9d6c768fb788a18a01408cd376898681a3b59.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/a7e9d6c768fb788a18a01408cd376898681a3b59.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 111,
+      "url": "https://ssrc.us/media/pubs/c4f125b292178426b9b8c88d9416da160fadc2ae.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/c4f125b292178426b9b8c88d9416da160fadc2ae.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 112,
+      "url": "https://ssrc.us/media/pubs/e7225d7288c8d36124427ea03981d19d12e220e5.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/e7225d7288c8d36124427ea03981d19d12e220e5.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 113,
+      "url": "https://ssrc.us/media/pubs/ad9b5bfc8371836c5499d5525493935d8adda5f9.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/ad9b5bfc8371836c5499d5525493935d8adda5f9.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 114,
+      "url": "https://ssrc.us/media/pubs/49d0443910c8167f38187eebf4ca8c6fd3e81127.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/49d0443910c8167f38187eebf4ca8c6fd3e81127.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 115,
+      "url": "https://ssrc.us/media/pubs/e6a4e47c11c5a468d9b7e33a5210e8fc57ddf159.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/e6a4e47c11c5a468d9b7e33a5210e8fc57ddf159.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 116,
+      "url": "https://ssrc.us/media/pubs/db9e477f8d70c6439364112f4bb7d7a9ca95a617.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/db9e477f8d70c6439364112f4bb7d7a9ca95a617.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 117,
+      "url": "https://ssrc.us/media/pubs/7d16df559585d26c07cea39fb6fe33503007438a.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/7d16df559585d26c07cea39fb6fe33503007438a.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 118,
+      "url": "https://ssrc.us/media/pubs/b7e8714a7341963723c7a64ae40a801cfb8c7187.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/b7e8714a7341963723c7a64ae40a801cfb8c7187.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 119,
+      "url": "",
+      "result": "citation_only"
+    },
+    {
+      "id": 120,
+      "url": "https://ssrc.us/media/pubs/a13df07eff9a3a0add4b629872905bc9b853af7c.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/a13df07eff9a3a0add4b629872905bc9b853af7c.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 121,
+      "url": "https://ssrc.us/media/pubs/35501b12a19824cf2f4cf48eb65ceb1445b28c0e.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/35501b12a19824cf2f4cf48eb65ceb1445b28c0e.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 122,
+      "url": "https://ssrc.us/media/pubs/beab0307cea322529784d702dc70dcbdad9a171c.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/beab0307cea322529784d702dc70dcbdad9a171c.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 123,
+      "url": "https://ssrc.us/media/pubs/b3ecd7f064f22088266ca2a52935d1f840151d0f.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/b3ecd7f064f22088266ca2a52935d1f840151d0f.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 124,
+      "url": "https://ssrc.us/media/pubs/3a6a2a2a5904469af04d266995dc84b0eec89ee2.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/3a6a2a2a5904469af04d266995dc84b0eec89ee2.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 125,
+      "url": "/pdfs/xie-fgcs16.pdf",
+      "result": "local_pdf",
+      "bytes": 773401
+    },
+    {
+      "id": 126,
+      "url": "https://ssrc.us/media/pubs/e6d80e26fce5d8d5ec549c3f0939aadd133e530a.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/e6d80e26fce5d8d5ec549c3f0939aadd133e530a.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 127,
+      "url": "https://ssrc.us/media/pubs/1fc262bbb19b5ff0ec48ec4912d9f75c15917ce7.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/1fc262bbb19b5ff0ec48ec4912d9f75c15917ce7.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 128,
+      "url": "https://ssrc.us/media/pubs/495396c0b29a40d17d4c6e7bc2627abce18ffc1c.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/495396c0b29a40d17d4c6e7bc2627abce18ffc1c.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 129,
+      "url": "https://ssrc.us/media/pubs/ea175a9f07f9f172005c62cf0514051fa08ff0f1.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/ea175a9f07f9f172005c62cf0514051fa08ff0f1.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 130,
+      "url": "https://ssrc.us/media/pubs/39d6b0bee42492871fd9d2a1a41fcc56add986cc.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/39d6b0bee42492871fd9d2a1a41fcc56add986cc.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 131,
+      "url": "https://ssrc.us/media/pubs/63636bdd45dc0eda47f6db142582fefb1dcc3216.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/63636bdd45dc0eda47f6db142582fefb1dcc3216.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 132,
+      "url": "https://ssrc.us/media/pubs/22231b2cf1a7af7c758716f9ed669d47b30228ad.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/22231b2cf1a7af7c758716f9ed669d47b30228ad.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 133,
+      "url": "https://ssrc.us/media/pubs/ada6e507e18591586bcfb4a69a137673505e36cb.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/ada6e507e18591586bcfb4a69a137673505e36cb.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 134,
+      "url": "https://ssrc.us/media/pubs/9b7193806988f1c135c7ce6321bb7359f0b00d84.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/9b7193806988f1c135c7ce6321bb7359f0b00d84.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 135,
+      "url": "https://ssrc.us/media/pubs/5afa96a4fbf610b4d45e9c41d4fca786aa59de32.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/5afa96a4fbf610b4d45e9c41d4fca786aa59de32.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 136,
+      "url": "https://ssrc.us/media/pubs/24b1890968914309db6e6962267747f55c7b7dc9.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/24b1890968914309db6e6962267747f55c7b7dc9.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 137,
+      "url": "/pdfs/hu-provenance-clustering.pdf",
+      "result": "local_pdf",
+      "bytes": 2131238
+    },
+    {
+      "id": 138,
+      "url": "https://ssrc.us/media/pubs/6d9e1139b7972d9484f1f93f463035a1f529333c.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/6d9e1139b7972d9484f1f93f463035a1f529333c.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 139,
+      "url": "https://ssrc.us/media/pubs/fb2174c4c08b9b7cc8ac45f4a97dcb04eecc56be.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/fb2174c4c08b9b7cc8ac45f4a97dcb04eecc56be.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 140,
+      "url": "https://ssrc.us/media/pubs/b24a5e0bae67ea4d648789f05461ab7281e4b44a.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/b24a5e0bae67ea4d648789f05461ab7281e4b44a.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 141,
+      "url": "https://ssrc.us/media/pubs/328563c30a4f38c3860bf200194ba490cba5592f.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/328563c30a4f38c3860bf200194ba490cba5592f.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 142,
+      "url": "/pdfs/xie-p-gaussian.pdf",
+      "result": "local_pdf",
+      "bytes": 1584252
+    },
+    {
+      "id": 143,
+      "url": "/pdfs/xie-docker-load-prediction.pdf",
+      "result": "local_pdf",
+      "bytes": 1887508
+    },
+    {
+      "id": 144,
+      "url": "https://ssrc.us/media/pubs/0e45877f839d4b9e6b6d87de5e97c023b8cbdd9c.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/0e45877f839d4b9e6b6d87de5e97c023b8cbdd9c.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 145,
+      "url": "https://ssrc.us/media/pubs/f9f0f1e811d466113531bbac73f3cab0f2611bf6.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/f9f0f1e811d466113531bbac73f3cab0f2611bf6.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 146,
+      "url": "https://ssrc.us/media/pubs/916f5482d2c0dfd400923bd43a0f6299f3aa4a81.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/916f5482d2c0dfd400923bd43a0f6299f3aa4a81.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 147,
+      "url": "https://ssrc.us/media/pubs/8ae7913294f888870063952e4a4bf25272f43ec8.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/8ae7913294f888870063952e4a4bf25272f43ec8.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 148,
+      "url": "https://ssrc.us/media/pubs/8a6e23e0c8e3ad1d0f2813cb326abd60f2387a35.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/8a6e23e0c8e3ad1d0f2813cb326abd60f2387a35.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 149,
+      "url": "https://ssrc.us/media/pubs/b5d2cdef04702983d608a8f3ca2994db1fc22f2d.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/b5d2cdef04702983d608a8f3ca2994db1fc22f2d.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 150,
+      "url": "https://ssrc.us/media/pubs/ded7bf9486d2d05ce6eb53026b887aa6869b4a0b.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/ded7bf9486d2d05ce6eb53026b887aa6869b4a0b.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 151,
+      "url": "https://www.nationalacademies.org/read/11286",
+      "result": "web_page",
+      "status": 200,
+      "final_url": "https://www.nationalacademies.org/read/11286",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 152,
+      "url": "https://books.google.com/books?id=U-1QAAAAMAAJ",
+      "result": "web_page",
+      "status": 200,
+      "final_url": "https://books.google.com/books?id=U-1QAAAAMAAJ",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 153,
+      "url": "https://www.ssrc.us/media/pubs/ea3dd9c70b5e2c203941b1ca923775fefadf71da.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/ea3dd9c70b5e2c203941b1ca923775fefadf71da.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 154,
+      "url": "/pdfs/golding-nsd99.pdf",
+      "result": "local_pdf",
+      "bytes": 286239
+    },
+    {
+      "id": 155,
+      "url": "https://www.ssrc.us/media/pubs/2a7ff2da0ca091ed0ded1c3e7861ad54cd0c1dd8.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/2a7ff2da0ca091ed0ded1c3e7861ad54cd0c1dd8.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 156,
+      "url": "/pdfs/zhang-docker-workload-prediction.pdf",
+      "result": "local_pdf",
+      "bytes": 2023836
+    },
+    {
+      "id": 157,
+      "url": "/pdfs/wu-paradise.pdf",
+      "result": "local_pdf",
+      "bytes": 1361610
+    },
+    {
+      "id": 158,
+      "url": "/pdfs/barker-jsss21.pdf",
+      "result": "local_pdf",
+      "bytes": 1870263
+    },
+    {
+      "id": 159,
+      "url": "/pdfs/purandare-socc25.pdf",
+      "result": "local_pdf",
+      "bytes": 1081936
+    },
+    {
+      "id": 160,
+      "url": "/pdfs/fredrickson-sp25.pdf",
+      "result": "local_pdf",
+      "bytes": 534660
+    },
+    {
+      "id": 161,
+      "url": "/pdfs/zhang-nas24.pdf",
+      "result": "local_pdf",
+      "bytes": 8666113
+    },
+    {
+      "id": 162,
+      "url": "https://ieeexplore.ieee.org/document/9671602",
+      "result": "access_restricted",
+      "status": 202,
+      "final_url": "https://ieeexplore.ieee.org/document/9671602",
+      "method": "GET, read first 1024 bytes",
+      "detail": "IEEE returned an HTTP 202 interstitial to the automated request; retained the user-supplied publisher record, not counted as a successful full-paper retrieval."
+    },
+    {
+      "id": 163,
+      "url": "https://www.ssrc.us/media/pubs/437b21d97b6970824c20c308ec4a8d9783134969.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/437b21d97b6970824c20c308ec4a8d9783134969.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 164,
+      "url": "https://www.ssrc.us/media/pubs/0314083b1f215be3ee399f2a974c81949ed07c96.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/0314083b1f215be3ee399f2a974c81949ed07c96.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 165,
+      "url": "https://www.ssrc.us/media/pubs/2cee83604103fd04000a45647ca5050c174e24db.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/2cee83604103fd04000a45647ca5050c174e24db.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 166,
+      "url": "https://www.ssrc.us/media/pubs/08f94cea0e90203271b7f05670124c1195d61c28.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/08f94cea0e90203271b7f05670124c1195d61c28.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 167,
+      "url": "https://www.ssrc.us/media/pubs/dcc1381f005c1f3a9d381cba3a26eee27324edad.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/dcc1381f005c1f3a9d381cba3a26eee27324edad.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 168,
+      "url": "https://www.ssrc.us/media/pubs/0d1513bee738f821b18998853d5984a7cca5e4f5.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/0d1513bee738f821b18998853d5984a7cca5e4f5.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 169,
+      "url": "https://reinas.soe.ucsc.edu/publications.html#science",
+      "result": "web_page",
+      "status": 200,
+      "final_url": "https://reinas.soe.ucsc.edu/publications.html#science",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 170,
+      "url": "https://www.ssrc.us/media/pubs/1b0c16bbf94d8d70f7c445fdfec012d393b5e76b.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/1b0c16bbf94d8d70f7c445fdfec012d393b5e76b.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 172,
+      "url": "https://www.ssrc.us/media/pubs/365555de33781c49dd7230ce8146c8993eb751b9.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/365555de33781c49dd7230ce8146c8993eb751b9.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 173,
+      "url": "https://www.ssrc.us/media/pubs/bff8b33ce12f3547424892fe8af647d168ec8a06.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/bff8b33ce12f3547424892fe8af647d168ec8a06.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 174,
+      "url": "/pdfs/carter-cn99.pdf",
+      "result": "local_pdf",
+      "bytes": 398894
+    },
+    {
+      "id": 175,
+      "url": "https://www.ssrc.us/media/pubs/22f0ee2046e5d0b3791b6e86dda459d68be8e16b.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/22f0ee2046e5d0b3791b6e86dda459d68be8e16b.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 176,
+      "url": "https://www.ssrc.us/media/pubs/a43537d75a33efe0420eb716f9132d9e837de8d6.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/a43537d75a33efe0420eb716f9132d9e837de8d6.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 177,
+      "url": "https://www.usenix.org/legacy/publications/compsystems/1991/fall_cabrera.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.usenix.org/legacy/publications/compsystems/1991/fall_cabrera.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 178,
+      "url": "https://crss.us/media/pubs/c92408e66e20a15d78c3888c31c4b90e761320f1.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.crss.us/media/pubs/c92408e66e20a15d78c3888c31c4b90e761320f1.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 179,
+      "url": "https://ssrc.us/media/pubs/91119e35f3253892d6ea5a9edfc12be0e54261c1.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/91119e35f3253892d6ea5a9edfc12be0e54261c1.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 180,
+      "url": "https://www2.cs.uh.edu/~paris/MYPAPERS/Spects17.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www2.cs.uh.edu/~paris/MYPAPERS/Spects17.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 181,
+      "url": "https://www.ssrc.us/media/pubs/b39800a2fea04f58847098f4b5f64ed7bfdc43f5.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/b39800a2fea04f58847098f4b5f64ed7bfdc43f5.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 182,
+      "url": "https://www2.cs.uh.edu/~paris/MYPAPERS/Prdc15b.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www2.cs.uh.edu/~paris/MYPAPERS/Prdc15b.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 183,
+      "url": "https://www.ssrc.us/media/pubs/b33639313ac655a87ffd6ed1c3dadbdad0ae7dbd.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/b33639313ac655a87ffd6ed1c3dadbdad0ae7dbd.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 184,
+      "url": "https://ssrc.us/media/pubs/2588515952e57b36bd2540c8210427ada0ad2dc9.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/2588515952e57b36bd2540c8210427ada0ad2dc9.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 185,
+      "url": "https://www.ssrc.us/media/pubs/168b1ad151c63397865abec68032ece021d8faad.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/168b1ad151c63397865abec68032ece021d8faad.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 186,
+      "url": "/pdfs/amer-icnc14.pdf",
+      "result": "local_pdf",
+      "bytes": 16717705
+    },
+    {
+      "id": 187,
+      "url": "https://www.ssrc.us/media/pubs/07ea7fa5799d4a5366a53a9ee1792b821b9d76cf.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/07ea7fa5799d4a5366a53a9ee1792b821b9d76cf.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 188,
+      "url": "https://www.ssrc.us/media/pubs/6bd404f344835823f746e8839ed2171e118ba3bf.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/6bd404f344835823f746e8839ed2171e118ba3bf.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 189,
+      "url": "https://www.ssrc.us/media/pubs/e2b0677abf76f69a0b69bd46c31c2ca29242ca85.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/e2b0677abf76f69a0b69bd46c31c2ca29242ca85.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 190,
+      "url": "https://www2.cs.uh.edu/~paris/MYPAPERS/Sac11.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www2.cs.uh.edu/~paris/MYPAPERS/Sac11.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 191,
+      "url": "https://ssrc.us/media/pubs/eb0bb6eeade3ea84a23bf30d1b8a1862c458fe8b.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/eb0bb6eeade3ea84a23bf30d1b8a1862c458fe8b.pdf",
+      "method": "GET earlier in this audit"
+    },
+    {
+      "id": 193,
+      "url": "https://www.ssrc.us/media/pubs/f719bd321a08bd6b7e3553ed4038215db4e51836.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/f719bd321a08bd6b7e3553ed4038215db4e51836.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 194,
+      "url": "https://www.ssrc.us/media/pubs/477be1618b4157e5921180d3f13d12141d65077d.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/477be1618b4157e5921180d3f13d12141d65077d.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 195,
+      "url": "https://www.ssrc.us/media/pubs/80f34f2e1ef3d109851049a76b58c6e8bd34f534.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/80f34f2e1ef3d109851049a76b58c6e8bd34f534.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 196,
+      "url": "https://www.ssrc.us/media/pubs/efe3d9c8f8875265dc7713a8e6750df84183bfab.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/efe3d9c8f8875265dc7713a8e6750df84183bfab.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 197,
+      "url": "https://www.ssrc.us/media/pubs/7f0094ffa91cf8605039580d1ba40deaeee1af7a.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/7f0094ffa91cf8605039580d1ba40deaeee1af7a.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 198,
+      "url": "https://www.ssrc.us/media/pubs/8e469a3e3ff3c0b024ad768e660b345fd966b61e.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/8e469a3e3ff3c0b024ad768e660b345fd966b61e.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 199,
+      "url": "https://www.ssrc.us/media/pubs/0afc2f0dd936d6330a9f34d820633796154755c7.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/0afc2f0dd936d6330a9f34d820633796154755c7.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 200,
+      "url": "https://www.ssrc.us/media/pubs/f7ca9c887715c5f0d534520a28f8fa19db847a44.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/f7ca9c887715c5f0d534520a28f8fa19db847a44.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 201,
+      "url": "https://www.ssrc.us/media/pubs/88b044bd9880514ae4ff1b2d51725afe230aed6f.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/88b044bd9880514ae4ff1b2d51725afe230aed6f.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 202,
+      "url": "https://www.ssrc.us/media/pubs/a59e5fc5c07f844952d1e6f262b3be6bbe947b50.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/a59e5fc5c07f844952d1e6f262b3be6bbe947b50.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 203,
+      "url": "https://www.ssrc.us/media/pubs/ded56db00b82c8e33554cc1ea02dfb3393bf8e24.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/ded56db00b82c8e33554cc1ea02dfb3393bf8e24.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 204,
+      "url": "https://www.ssrc.us/media/pubs/c8b8409dc584343e7459f173690cb1ea8f66132a.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/c8b8409dc584343e7459f173690cb1ea8f66132a.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 205,
+      "url": "https://www.ssrc.us/media/pubs/9082d214fc8d64dcccd70f4242b37755c306a312.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/9082d214fc8d64dcccd70f4242b37755c306a312.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 206,
+      "url": "https://www.ssrc.us/media/pubs/76769bbd64ad4cedfd209ac52a0e75485b98715a.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/76769bbd64ad4cedfd209ac52a0e75485b98715a.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 207,
+      "url": "https://www.ssrc.us/media/pubs/26a2bd512620f722efeda90fe0ba1d58191bad9b.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/26a2bd512620f722efeda90fe0ba1d58191bad9b.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 208,
+      "url": "https://www.ssrc.us/media/pubs/b7423bbb6ad378e839d5f3de51af7a017deeefc8.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/b7423bbb6ad378e839d5f3de51af7a017deeefc8.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 209,
+      "url": "https://www.ssrc.us/media/pubs/69f935f0cbb4e06b04d705d0ae9b07c6940b5c1c.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/69f935f0cbb4e06b04d705d0ae9b07c6940b5c1c.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 210,
+      "url": "https://www.ssrc.us/media/pubs/16ebd13a478545ec198444a87aac277282f5d494.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/16ebd13a478545ec198444a87aac277282f5d494.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 211,
+      "url": "https://www.ssrc.us/media/pubs/3be1039fd9a5dc9efef3ee5d9a60a15c61371e5e.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/3be1039fd9a5dc9efef3ee5d9a60a15c61371e5e.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 212,
+      "url": "https://www.ssrc.us/media/pubs/0b2aa13a1d8a8a149f077e9cada525779c737c6b.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/0b2aa13a1d8a8a149f077e9cada525779c737c6b.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 213,
+      "url": "https://www.ssrc.us/media/pubs/f949c08acb0546c9a5b037ef289033f4858004ed.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/f949c08acb0546c9a5b037ef289033f4858004ed.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 214,
+      "url": "https://www.ssrc.us/media/pubs/db9d189b39d00643b49a2730d5a5ce4eddc77ed3.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/db9d189b39d00643b49a2730d5a5ce4eddc77ed3.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 215,
+      "url": "https://www.ssrc.us/media/pubs/50ef4270d6cddb2a0b9f75f5329592d75c32a330.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/50ef4270d6cddb2a0b9f75f5329592d75c32a330.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 216,
+      "url": "https://www.ssrc.us/media/pubs/4a14a8ea50ffa704f1a6efc3c7084e97281a6da6.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/4a14a8ea50ffa704f1a6efc3c7084e97281a6da6.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 217,
+      "url": "https://www.ssrc.us/media/pubs/9b4d80c04c9a16fe1276ddcc1a21c6857754c799.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/9b4d80c04c9a16fe1276ddcc1a21c6857754c799.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 218,
+      "url": "https://www.ssrc.us/media/pubs/c5b3d0c17f017e91643951ccfa834ce36bff8e3c.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/c5b3d0c17f017e91643951ccfa834ce36bff8e3c.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 219,
+      "url": "https://www.ssrc.us/media/pubs/59dca611be092d3669d6923409799812ff2ba662.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/59dca611be092d3669d6923409799812ff2ba662.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 220,
+      "url": "https://www.ssrc.us/media/pubs/cc49648567e2f3ba075fa513d0b4d54fc5a158d0.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/cc49648567e2f3ba075fa513d0b4d54fc5a158d0.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 221,
+      "url": "https://www.ssrc.us/media/pubs/5922ba3d0f2abc9a34a7bae95dabbd3d5a2e123a.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/5922ba3d0f2abc9a34a7bae95dabbd3d5a2e123a.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 222,
+      "url": "https://www.ssrc.us/media/pubs/367f9e47b88a5b31b9ee2a79e291ccd845f2b438.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/367f9e47b88a5b31b9ee2a79e291ccd845f2b438.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 223,
+      "url": "https://www.ssrc.us/media/pubs/b729ccf4638f72d714e571c29529c2ca75a6ba8e.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/b729ccf4638f72d714e571c29529c2ca75a6ba8e.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 224,
+      "url": "https://www.ssrc.us/media/pubs/16dcd7844fb9232701b30d75f8cbbe0d0c809345.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/16dcd7844fb9232701b30d75f8cbbe0d0c809345.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 225,
+      "url": "https://www.ssrc.us/media/pubs/5b11537283e5fc331273f91360e8c1c62c03e87b.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/5b11537283e5fc331273f91360e8c1c62c03e87b.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 226,
+      "url": "https://www.ssrc.us/media/pubs/3b54c9e903cdec548902613be858f188486fd09b.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/3b54c9e903cdec548902613be858f188486fd09b.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 227,
+      "url": "https://www.ssrc.us/media/pubs/331d0e9136d55414a69ff487a6f8b784463ea444.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/331d0e9136d55414a69ff487a6f8b784463ea444.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 228,
+      "url": "https://www.ssrc.us/media/pubs/60b3375fe1a56dc9ff6e8d968854e0c88a092ed1.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/60b3375fe1a56dc9ff6e8d968854e0c88a092ed1.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 229,
+      "url": "https://www.ssrc.us/media/pubs/2356893ed2905ec6e7b4ad95bc6ccc7960af18da.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/2356893ed2905ec6e7b4ad95bc6ccc7960af18da.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 230,
+      "url": "https://www.ssrc.us/media/pubs/9ba3338baad03cd50df546f1cee7492eace445ea.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/9ba3338baad03cd50df546f1cee7492eace445ea.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 231,
+      "url": "https://www.ssrc.us/media/pubs/b4e55f91389890adbde20fd886e017cb13e7e7b9.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/b4e55f91389890adbde20fd886e017cb13e7e7b9.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 232,
+      "url": "https://www.ssrc.us/media/pubs/7629d31325f8a05f1202c623a7ca649f83fdc74a.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/7629d31325f8a05f1202c623a7ca649f83fdc74a.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 233,
+      "url": "https://www.ssrc.us/media/pubs/646c5292c73365bcfdf013fdfb79ab9e4f27741b.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/646c5292c73365bcfdf013fdfb79ab9e4f27741b.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 234,
+      "url": "https://www.ssrc.us/media/pubs/d7facb781c6a065c08a6c119ba524e8a93281ccb.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/d7facb781c6a065c08a6c119ba524e8a93281ccb.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 235,
+      "url": "https://www.ssrc.us/media/pubs/eef1b5ca2c33985a8c442456bd91d34b251416de.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/eef1b5ca2c33985a8c442456bd91d34b251416de.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 236,
+      "url": "https://www.ssrc.us/media/pubs/6fc943db9abd9495184d01152cf64f999b3d6d30.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/6fc943db9abd9495184d01152cf64f999b3d6d30.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 237,
+      "url": "https://www2.cs.uh.edu/~paris/MYPAPERS/Ipccc16B.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www2.cs.uh.edu/~paris/MYPAPERS/Ipccc16B.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 239,
+      "url": "https://www.ssrc.us/media/pubs/949460ded8f27ebf93eed6e8b189ccf7897e749c.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/949460ded8f27ebf93eed6e8b189ccf7897e749c.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 240,
+      "url": "https://www.ssrc.us/media/pubs/44fbc56314ce67d804898a27fa2c7dc5f4239f86.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/44fbc56314ce67d804898a27fa2c7dc5f4239f86.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 241,
+      "url": "https://www.ssrc.us/media/pubs/ed3909032135f1d1d500725bac4854f0b9687826.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/ed3909032135f1d1d500725bac4854f0b9687826.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 242,
+      "url": "https://www.ssrc.us/media/pubs/5177d775770337e41f3815753f0d2b42816ffe9a.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/5177d775770337e41f3815753f0d2b42816ffe9a.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 243,
+      "url": "https://www.ssrc.us/media/pubs/7176f55f3b9171a655c5e41e96cd5e95023d4a89.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/7176f55f3b9171a655c5e41e96cd5e95023d4a89.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 244,
+      "url": "https://www.ssrc.us/media/pubs/2e264ffc63fa7e45fa1892549026840fcb27165b.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/2e264ffc63fa7e45fa1892549026840fcb27165b.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 245,
+      "url": "https://www.ssrc.us/media/pubs/497f2f7a82e12d8d1af8326e1473833f51a4ffc2.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/497f2f7a82e12d8d1af8326e1473833f51a4ffc2.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 246,
+      "url": "https://www.ssrc.us/media/pubs/fac624b8c7071c8e67a6231b2c0dfc5ff6ec48a6.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/fac624b8c7071c8e67a6231b2c0dfc5ff6ec48a6.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 247,
+      "url": "https://www.ssrc.us/media/pubs/e17d1ad673d35fab147f08c3aa062b571a6965b2.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/e17d1ad673d35fab147f08c3aa062b571a6965b2.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 248,
+      "url": "https://www.ssrc.us/media/pubs/8857389602db1e8b12ff8c7d48ed91fbf18adc3b.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/8857389602db1e8b12ff8c7d48ed91fbf18adc3b.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 249,
+      "url": "https://www.ssrc.us/media/pubs/3d888d6c66c258101627a36c65a0284a409718a4.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/3d888d6c66c258101627a36c65a0284a409718a4.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 250,
+      "url": "https://www.ssrc.us/media/pubs/7f266473709a86f723eabc3ee1a8e766211aafdc.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/7f266473709a86f723eabc3ee1a8e766211aafdc.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 251,
+      "url": "https://www.ssrc.us/media/pubs/6f92d26497bce705f8dc10b5c1005ea94628a1e5.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/6f92d26497bce705f8dc10b5c1005ea94628a1e5.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 252,
+      "url": "https://www.ssrc.us/media/pubs/bcac96793124916f12b3da5c7c869be4f8329619.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/bcac96793124916f12b3da5c7c869be4f8329619.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 253,
+      "url": "https://www.ssrc.us/media/pubs/5521877244039bbad828b82d3766fa5e95f014e1.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/5521877244039bbad828b82d3766fa5e95f014e1.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 254,
+      "url": "https://www.ssrc.us/media/pubs/8e229bb70a3739243892f8db51d0f253a8d6efb4.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/8e229bb70a3739243892f8db51d0f253a8d6efb4.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 255,
+      "url": "https://www.ssrc.us/media/pubs/ef91a006a7b55dc23ad81232537f423f1ecaeb76.pdf#page=3",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/ef91a006a7b55dc23ad81232537f423f1ecaeb76.pdf#page=3",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 256,
+      "url": "https://www.ssrc.us/media/pubs/6a6f19ecd17a5fa965f28ef0d732007bf45e099f.pdf",
+      "result": "pdf",
+      "status": 200,
+      "final_url": "https://www.ssrc.us/media/pubs/6a6f19ecd17a5fa965f28ef0d732007bf45e099f.pdf",
+      "method": "GET, read first 1024 bytes"
+    },
+    {
+      "id": 257,
+      "url": "/pdfs/litwin-latam12.pdf",
+      "result": "local_pdf",
+      "bytes": 548359
+    }
+  ]
+}

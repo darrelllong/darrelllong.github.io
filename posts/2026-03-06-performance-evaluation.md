@@ -9,19 +9,19 @@ Performance evaluation is one of the oldest problems in computer systems researc
 
 After a talk, I asked the presenter how many times the experiment had been repeated to produce the graph on their slide. The answer was "ten." Another presenter did not know. In a third case, the presenter admitted, without apparent embarrassment, that the graph showed their best results. Not the average. Not a statistically sound summary. The best run they got.
 
-That is not science. The first two cases reflect ignorance or sloppiness. The third borders on fraud.
+Ten repetitions can be adequate for some experiments; the count alone does not tell us whether the uncertainty is acceptable. What matters is a defensible sampling method and an honest account of the variation. Presenting a selected best run as representative performance is misleading.
 
 ## Why This Matters
 
-Any measurement is a sample from a distribution. A single run — or even ten runs, chosen selectively — tells you almost nothing about the underlying behavior of the system you are studying. Performance is affected by cache state, OS scheduling, memory layout, thermal throttling, I/O queue depth, and dozens of other sources of variance that interact in ways you cannot fully control. If you do not account for this, your numbers are not results. They are anecdotes.
+A single run does not establish how much a measurement varies, and selecting favorable runs can bias the result. Performance is affected by cache state, OS scheduling, memory layout, thermal throttling, I/O queue depth, and dozens of other sources of variance that interact in ways you cannot fully control. Those effects must be considered when designing and reporting an experiment.
 
 The statistical machinery for doing this correctly has existed for a long time. You need enough samples to estimate the distribution, and you need to report a summary that reflects that distribution honestly — a confidence interval, not a cherry-picked run. The question is always: how many samples do I need? The answer depends on the variance of what you are measuring, and you cannot know that in advance. This is why naive approaches fail — you either run too few trials and get garbage, or you run far more than you need and waste time.
 
 ## Pilot
 
-About eight years ago, my student Elliot (Yan) Li and I, along with Ethan Miller and Yash Gupta, built [Pilot](/publications/127) to address exactly this. Pilot is a benchmarking framework that instruments your workload, monitors the variance of measurements as they accumulate, and terminates the experiment when it has collected enough samples to produce a statistically valid result at a confidence level you specify. It uses autocorrelation analysis to detect when samples are not independent — a common problem in systems benchmarking where successive measurements are correlated through shared cache or queue state — and accounts for that in its stopping criterion. It also detects and handles the warm-up phase, during which the system has not yet reached steady state and measurements should not be counted.
+In 2016, my student Elliot (Yan) Li and I, along with Ethan Miller and Yash Gupta, published [Pilot](/publications/127) to address exactly this. Pilot is a benchmarking framework that instruments your workload, monitors measurements as they accumulate, and uses configured statistical checks and precision requirements to decide when to stop. It analyzes autocorrelation, a common problem when successive measurements share cache or queue state, and includes methods for detecting warm-up behavior. These checks help estimate steady-state performance; they do not establish that a workload is representative or that every assumption of the statistical model holds.
 
-Pilot tells you not just the result but how confident you should be in it. It does not let you stop early because you liked what you saw. The source is at [github.com/darrelllong/pilot-bench](https://github.com/darrelllong/pilot-bench).
+Pilot reports an estimate and its uncertainty under its statistical model, with a stopping rule specified before inspecting a favorable result. The source is at [github.com/darrelllong/pilot-bench](https://github.com/darrelllong/pilot-bench).
 
 ## Using Pilot on Real Code
 
@@ -29,7 +29,7 @@ I recently resurrected Pilot and used it to benchmark two of my own projects.
 
 The first is a [cryptography library](https://github.com/darrelllong/cryptography) — implementations of standard cryptographic primitives. This is almost purely CPU-bound work: no I/O, tight loops, predictable memory access patterns. You might think this is easy to measure. It is not, because modern CPUs are not simple. Frequency scaling, branch prediction state, cache warming, and instruction-level parallelism all introduce variance. Pilot handles this cleanly: it detects the warm-up period, waits for measurements to stabilize, and terminates when the confidence interval is tight enough to be meaningful.
 
-The second is a [delta compression library](https://github.com/darrelllong/Delta-Compression) — differential encoding of data, used in backup and storage deduplication pipelines. This is far more I/O-bound. Variance here is dominated by filesystem caching, device queue behavior, and the interaction between the compression algorithm and the data being compressed. The distribution of run times is wider and less symmetric. This is exactly the regime where running ten trials and reporting the mean is most dangerous, and where Pilot's adaptive approach is most valuable.
+The second is a [delta compression library](https://github.com/darrelllong/Delta-Compression) — differential encoding of data, used in backup and storage deduplication pipelines. Its [Pilot benchmark](https://github.com/darrelllong/Delta-Compression/blob/main/src/rust/delta/src/bin/pilot_delta.rs) operates on buffers in memory, with input generation outside the timed region. It measures differencing, reconstruction, and conversion to an in-place delta; it does not measure disk I/O. Algorithm choice, input size, and the pattern of changes between the inputs all matter when interpreting the results.
 
 In both cases, the number of trials Pilot determined to be necessary was not a round number, and it was not the same across different workloads or data sizes. That is the point. There is no magic number — not ten, not a hundred. The right number depends on the measurement, and you have to let the data tell you when you are done.
 

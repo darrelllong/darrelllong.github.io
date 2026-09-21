@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Assets
 import {
-  faFileArrowDown,
+  faArrowUpRightFromSquare,
   faSquareCaretRight,
 } from "@fortawesome/free-solid-svg-icons";
 // Utilities
@@ -52,8 +52,8 @@ export default function PatentCard({ patent, search }) {
       <footer>
         {patent.url && (
           <a href={patent.url} target="_blank" rel="noreferrer">
-            Download
-            <FontAwesomeIcon icon={faFileArrowDown} />
+            View at Google Patents
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
           </a>
         )}
         <Link to={path}>

@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/generate-routes.js",
+    "build": "npm run check:content && vite build && node scripts/generate-routes.js",
+    "check:content": "node scripts/check-content.js",
     "deploy": "npm run build && node scripts/deploy.js",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"

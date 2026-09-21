@@ -16,6 +16,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 // Utilities
 import { formatDate } from "../utils/dateUtils";
+import { formatVenue } from "../utils/publicationUtils";
 // Styles
 import "../assets/css/publication.scss";
 
@@ -76,6 +77,8 @@ const BibTeX = ({ bibTeX }) => {
   if (bibTeX.month)
     fields.push(`  month        = ${formatMonth(bibTeX.month)}`);
   if (bibTeX.year) fields.push(`  year         = {${bibTeX.year}}`);
+  if (bibTeX.doi) fields.push(`  doi          = {${bibTeX.doi}}`);
+  if (bibTeX.note) fields.push(`  note         = {${bibTeX.note}}`);
 
   return (
     <section>
@@ -116,6 +119,8 @@ const Header = ({ title, author, bibTeX, url, urlLabel, search }) => {
   return (
     <header>
       {title && <h1>{title}</h1>}
+      {formatVenue(bibTeX) && <p className="publication-venue">{formatVenue(bibTeX)}</p>}
+      {bibTeX?.note && <p className="publication-note">{bibTeX.note}</p>}
       {author && (
         <section>
           <FontAwesomeIcon icon={faUsers} fixedWidth />

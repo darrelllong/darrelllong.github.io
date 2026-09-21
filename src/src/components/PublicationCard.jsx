@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 // Utilities
 import { formatDate } from "../utils/dateUtils";
+import { formatVenue } from "../utils/publicationUtils";
 
 export default function PublicationCard({ publication, search }) {
   const path = `${publication.id}/`;
@@ -21,6 +22,9 @@ export default function PublicationCard({ publication, search }) {
         <h2>
           <Link to={path}>{publication.title}</Link>
         </h2>
+        {formatVenue(publication.bibTeX) && (
+          <p className="publication-venue">{formatVenue(publication.bibTeX)}</p>
+        )}
         {publication.author && (
           <ul className="authors">
             {publication.author.map((author, index, authors) => (

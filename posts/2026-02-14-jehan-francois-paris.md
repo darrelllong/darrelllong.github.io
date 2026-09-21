@@ -7,7 +7,7 @@ excerpt: "My doctoral advisor at UC San Diego and a longtime collaborator in rep
 
 Jehan-François Pâris was my doctoral advisor at UC San Diego. We worked on replication in distributed systems: how to keep data available, maintain consistency, and understand the reliability of competing approaches. My dissertation, “The Management of Replication in a Distributed System,” grew out of that work. I have worked on storage systems ever since.
 
-Pâris began his education in Belgium, earning an *Ingénieur Civil Chimiste* degree in chemical engineering from the Université Libre de Bruxelles in 1970. He then turned to computer science, completing a *Diplôme d'Études Approfondies* at the Université Pierre et Marie Curie in 1972 and *Licence* and *Maîtrise* degrees at the Facultés Universitaires Notre-Dame de la Paix in Namur in 1975.
+Pâris began his education in Belgium, earning an *Ingénieur Civil Chimiste* degree in chemical engineering from the Université Libre de Bruxelles in 1970. He then turned to computer science, completing a *Diplôme d'Études Approfondies* at the Université Pierre et Marie Curie in 1972 and *Licence* and *Maîtrise* degrees at the Facultés Universitaires Notre-Dame de la Paix in Namur in 1975. His [curriculum vitae](https://www2.cs.uh.edu/~paris/CV_short.pdf) records these degrees and his subsequent appointments.
 
 He came to Berkeley for doctoral study with [Domenico Ferrari](/blog/2026-02-14-domenico-ferrari) and received his Ph.D. in Electrical Engineering and Computer Sciences in 1981. His dissertation examined restructuring techniques for optimizing virtual memory systems.
 

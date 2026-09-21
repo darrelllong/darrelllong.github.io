@@ -1,7 +1,7 @@
 # Local publication PDFs
 
-These are unchanged copies of the authors' papers, checked against their titles
-and author lists when linked from `publications.json` on 2026-09-20.
+These copies were checked against their titles and author lists when linked
+from `publications.json`. Files are unchanged unless noted below.
 
 | File | Source |
 | --- | --- |
@@ -20,3 +20,13 @@ and author lists when linked from `publications.json` on 2026-09-20.
 Prefer a verified SSRC PDF or a local paper over a search-engine URL. If only
 a bibliographic record is available, set `urlLabel` to describe that destination
 instead of presenting it as a full-paper download.
+
+## Additional copies checked during the correctness audit
+
+| File | Source and version |
+| --- | --- |
+| `fellner-token-ring-report.pdf` | [UCSC-CRL-92-55](https://tr.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-CRL-92-55.pdf). The source PDF contains all 12 pages in reverse order. This copy restores their reading order without changing page contents. The link explicitly identifies it as the technical-report version. |
+| `xie-fgcs16.pdf` | `darrelllong/Publications`: `Conferences/FGCS/2016/as-published/FGCS-Yulai-2016-as-published.pdf`, blob `6e9f6a8fade1cecd2fa89bf6bef1fb3ec01904f9`. Despite the directory name, this is an author manuscript, and is labeled accordingly. The final publisher title includes “Object Storage Platform.” |
+| `golding-nsd99.pdf` | `darrelllong/Publications`: `Chapters/NSD/1999/as-published/NSD-Golding-1999-as-published.pdf`, blob `bb020a80d4ebb6ad12cd98ad4b3ef74e1d8d3b59`. The 1999 book chapter, replacing a link to the earlier conference paper. |
+| `carter-cn99.pdf` | `darrelllong/Publications`: `Journals/CN/1999/as-published/CN-Carter-1999-as-published.pdf`, blob `3b0c72df576a6d6f1cffc5597ea461740ab81341`. Published journal article. |
+| `amer-icnc14.pdf` | `darrelllong/Publications`: `Conferences/ICNC/2014/p907-amer.pdf`, blob `89183d624cefa97c7c8e90fc6080ce003adfbc81`. Published conference paper. |
