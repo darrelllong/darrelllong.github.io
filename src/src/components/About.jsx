@@ -12,11 +12,10 @@ export default function About() {
           <p>
             Darrell Long is Distinguished Professor of Engineering, emeritus,
             at the University of California, Santa Cruz, and a Distinguished
-            Visiting Scholar at Santa Clara University. He has built research
-            centers, mentored generations of students, and contributed to
-            reliable and secure storage systems. Alongside his university
-            work, he has advised the federal government and national
-            laboratories on science and technology.
+            Visiting Scholar at Santa Clara University. His research concerns
+            storage systems, reliability, and computer security. He has also
+            served as a scientific adviser to the U.S. government and the
+            national laboratories.
           </p>
           <a className="text-link" href="/cv.pdf">
             Curriculum vitae <span aria-hidden="true">↗</span>
@@ -44,17 +43,16 @@ export default function About() {
           </p>
         </section>
         <section aria-labelledby="ucsc-title">
-          <h2 id="ucsc-title">Research and laboratory life at UC Santa Cruz</h2>
+          <h2 id="ucsc-title">Research at UC Santa Cruz</h2>
           <p>
             Long joined UC Santa Cruz in 1988. He built a laboratory with
             dozens of master&rsquo;s and doctoral students, supporting the
             research of several faculty members. Undergraduate researchers
-            worked alongside them, gaining practical experience in systems
-            research and a path into graduate study.
+            also worked in the laboratory, gaining experience in systems
+            research.
           </p>
           <p>
-            His research focused on how computer systems store, protect,
-            and provide access to data. In 1991, his work with Luis-Felipe
+            In 1991, his work with Luis-Felipe
             Cabrera on <Link to="/publications/227/">Swift</Link> explored
             an architecture that separated metadata management from data
             transfers. His work has also addressed data deduplication,
@@ -76,33 +74,28 @@ export default function About() {
             only NSF Industry/University Cooperative Research Center (I/UCRC)
             on the Santa Cruz campus. Long worked with its founding director,
             Ethan Miller, to develop the center and directed it from 2019
-            to 2023. These partnerships connected faculty and students with
-            engineers in industry and brought research into practice.
+            to 2023.
           </p>
         </section>
 
         <section aria-labelledby="mentoring-title">
           <h2 id="mentoring-title">Teaching and mentoring</h2>
           <p>
-            Teaching remained central to Long&rsquo;s work at Santa Cruz,
-            from introductory programming and data structures to graduate
-            courses in operating systems and cryptography. He encouraged
-            undergraduates to undertake research and continue to advanced
-            degrees. A <a href="https://news.ucsc.edu/2016/03/women-computer-science/">
-            university profile</a> describes that path for Alexandra Holloway
-            and Aleatha Parker-Wood, both of whom he first taught as
-            undergraduates and later advised through their Ph.D.s. Holloway
+            At Santa Cruz, Long taught introductory programming and data
+            structures, as well as graduate courses in operating systems
+            and cryptography. He supervised undergraduate research and
+            encouraged students to continue to graduate study. <a
+            href="https://news.ucsc.edu/2016/03/women-computer-science/">Alexandra
+            Holloway and Aleatha Parker-Wood</a> were among his undergraduate
+            students who later completed Ph.D.s under his supervision. Holloway
             has since led the flight software team for NASA&rsquo;s <a
             href="https://www-robotics.jpl.nasa.gov/media/documents/Wheels_Made_for_Arcing.pdf#page=12">
             Curiosity Mars rover</a> at the Jet Propulsion Laboratory.
           </p>
           <p>
-            He supervised an unusually large number of women to Ph.D.
-            completion, the largest total among faculty in the Baskin
-            School of Engineering at the time. His students described a
-            diverse, supportive laboratory where they could pursue demanding
-            research while navigating the other responsibilities in their
-            lives. In 2011, he received the <a
+            He supervised more women to Ph.D. completion than any other
+            faculty member in the Baskin School of Engineering at the time.
+            In 2011, he received the <a
             href="https://news.ucsc.edu/2011/06/achievement-awards-diversity-recipients/">
             Chancellor&rsquo;s Achievement Award for Diversity</a>.
           </p>
@@ -116,8 +109,8 @@ export default function About() {
             href="https://www.cs.jhu.edu/faculty/randal-burns/">Randal
             Burns</a> at Johns Hopkins. Burns now holds the Bill and Lisa
             Stromberg endowed headship of Hopkins&rsquo;s Department of
-            Computer Science. Other graduates have become leaders in
-            industrial research. The <a
+            Computer Science. Other graduates have led research in
+            industry. The <a
             href="https://www.mathgenealogy.org/id.php?id=10794">Mathematics
             Genealogy Project</a> records a further generation of doctoral
             students advised by Long&rsquo;s graduates.
@@ -127,34 +120,29 @@ export default function About() {
         <section aria-labelledby="national-service-title">
           <h2 id="national-service-title">National service and research policy</h2>
           <p>
-            Long&rsquo;s scientific service has brought his computing
-            expertise to questions of national security and research policy.
-            He joined <a href="https://news.ucsc.edu/2019/01/long-appointment/">
-            JASON</a> in 2002, contributing to its scientific advice to the
-            U.S. government. His work through the National Academies has
-            included National Research Council committees on technology
-            assessment and defense warning, as well as the Intelligence
-            Science and Technology Experts Group.
+            Long joined <a href="https://news.ucsc.edu/2019/01/long-appointment/">
+            JASON</a>, a scientific advisory group to the U.S. government,
+            in 2002. He has served on National Research Council committees
+            on technology assessment and defense warning, and on the
+            National Academies&rsquo; Intelligence Science and Technology
+            Experts Group.
           </p>
           <p>
-            A substantial part of that service has concerned the national
-            laboratories. He served on the University of California
+            He served on the University of California
             President&rsquo;s Council on the National Laboratories and on
             science and technology, national security, and intelligence
             committees for Los Alamos and Lawrence Livermore. He also took
             part in advisory and review work at Sandia and Pacific Northwest
-            national laboratories. His involvement in the university&rsquo;s
-            oversight of the laboratories continued through the Academic
-            Council&rsquo;s <a
+            national laboratories. Through the Academic Council&rsquo;s <a
             href="https://senate.universityofcalifornia.edu/_files/committees/acscoli/acscoli-annual-report-2022-23.pdf">
-            Special Committee on Laboratory Issues</a>.
+            Special Committee on Laboratory Issues</a>, he also took part
+            in the university&rsquo;s oversight of the laboratories.
           </p>
           <p>
             Within the university, he served as vice-chair and then chair
             of the University of California Committee on Research Policy,
             and as associate dean of engineering and associate dean for
-            research and graduate studies at Santa Cruz. His national
-            service continued after retirement: in 2025, he joined the
+            research and graduate studies at Santa Cruz. In 2025, he joined the
             Board of Trustees of the Institute for Defense Analyses.
           </p>
         </section>
@@ -162,13 +150,12 @@ export default function About() {
         <section aria-labelledby="professional-title">
           <h2 id="professional-title">Professional service and later career</h2>
           <p>
-            Long also helped build the systems research community through
-            its conferences and journals. A founding member of the <a
+            Long was a founding member of the <a
             href="https://sites.google.com/view/mascots-2019/organizers">MASCOTS
-            steering committee</a>, he served for decades, including as
-            steering chair, general chair, and program chair. That sustained
-            involvement was part of a broader record of service on dozens
-            of program committees.
+            steering committee</a> and served on it for decades, including
+            as chair. He also served as the conference&rsquo;s general chair
+            and program chair. His other conference work includes dozens
+            of program committee appointments.
           </p>
           <p>
             He was founding general chair of the Workshop on Mobile
@@ -182,7 +169,7 @@ export default function About() {
             where he also serves on the steering committee.
           </p>
           <p>
-            His editorial service includes terms as editor-in-chief of <em>ACM
+            He was editor-in-chief of <em>ACM
             Transactions on Storage</em> from
             2010 to 2016 and <em>IEEE Letters of the Computer Society</em>
             {" "}from 2017 to 2020.

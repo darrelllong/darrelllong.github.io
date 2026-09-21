@@ -83,3 +83,19 @@ service, corrected doctorate count, and student-career examples are in place.
 Source review, lint, content validation, the final production build, and
 desktop/narrow-screen browser checks passed. The [biography audit](biography-audit.md)
 records the evidence and limits of the checks.
+
+## Academic prose
+
+The owner's standing preference is restrained academic prose: precise
+titles, concrete work, and direct statements of achievement. Avoid
+promotional descriptions and institutional slogans. Apply that standard
+to later edits as well as the current biography.
+
+The wording revision removes generic claims about building communities,
+mentoring generations, supportive environments, and bringing research into
+practice. Appointments, research contributions, teaching, graduates'
+achievements, the record of supervising women to doctorates, and the named
+award remain factual parts of the biography.
+
+Status: complete. The revised biography uses direct academic prose. Lint,
+content validation, the production build, and rendered-page checks passed.

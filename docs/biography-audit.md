@@ -172,7 +172,7 @@ revision. Both counts describe historical versions, not the current page.
 
 ## Verification of the summary, national-service, and student-career revision
 
-- The complete rendered biography contains 999 words. A single summary
+- The rendered biography at `e8cd51cf` contains 999 words. A single summary
   paragraph precedes the body. Its five body headings are education and
   early career; UCSC research and laboratory life; teaching and mentoring;
   national service and research policy; and professional service and later
@@ -201,6 +201,23 @@ revision. Both counts describe historical versions, not the current page.
   16-pixel paragraph text; document width equals viewport width, with no
   horizontal overflow. The temporary viewport override was reset.
 
+
+## Academic prose revision
+
+At the owner's request, the biography now uses restrained academic prose.
+Generic language about building communities, mentoring generations,
+supportive environments, and bringing research into practice has been
+removed. The text states appointments, research, teaching, and graduates'
+achievements directly. The comparative record of supervising women to
+doctorates and the actual name of the 2011 award remain factual statements.
+
+The revised page contains 866 words. It retains a summary, education first
+in the body, five body sections, three national-service paragraphs, the
+24-doctorate count, and the student-career examples. Lint, content validation,
+and the production build passed. The complete rendered text was read;
+desktop inspection found no overflow, the portrait loaded, and the browser
+reported no console errors. The route and browser descriptions match.
+No new biographical claims or external destinations were added.
 
 ## Relation to the wider audit
 
