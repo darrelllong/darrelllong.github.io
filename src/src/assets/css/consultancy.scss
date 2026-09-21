@@ -28,21 +28,6 @@ main.consultancy .contact {
   margin: 24px 0;
   max-width: 220px;
 }
-.areas {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 26px;
-  margin-top: 28px;
-}
-.areas h3 {
-  font-size: 21px;
-  margin-bottom: 8px;
-}
-.areas svg {
-  font-size: 14px;
-  margin-right: 8px;
-  color: $accent;
-}
 .people {
   border-top: 1px solid $line;
   padding-top: 30px;
@@ -120,10 +105,5 @@ main.consultancy .contact {
   main.consultancy .contact {
     grid-column: 1;
     grid-row: auto;
-  }
-}
-@media (max-width: 400px) {
-  .areas {
-    grid-template-columns: 1fr;
   }
 }

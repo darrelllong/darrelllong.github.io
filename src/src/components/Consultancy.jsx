@@ -3,63 +3,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { useForm, ValidationError } from "@formspree/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Assets
 import pentexoire from "../assets/img/pentexoire.avif";
-import {
-  faDatabase,
-  faShield,
-  faUserSecret,
-  faLaptopCode,
-  faStore,
-  faFire,
-} from "@fortawesome/free-solid-svg-icons";
 // Styles
 import "../assets/css/consultancy.scss";
-
-const areas = [
-  {
-    title: "Storage",
-    body: "Storage technologies, data management, and related patents.",
-    icon: faDatabase,
-  },
-  {
-    title: "Computer Security",
-    body: "Computer security principles, protocols, and practices.",
-    icon: faShield,
-  },
-  {
-    title: "Cryptography",
-    body: "Cryptographic algorithms, protocols, and applications.",
-    icon: faUserSecret,
-  },
-  {
-    title: "Operating Systems",
-    body: "Operating system architecture and design.",
-    icon: faLaptopCode,
-  },
-  {
-    title: "Electronic Commerce",
-    body: "E-commerce platforms, digital transactions, and online business models.",
-    icon: faStore,
-  },
-];
-
-const Area = ({ title, body, icon = faFire }) => (
-  <li>
-    <h3>
-      <FontAwesomeIcon icon={icon} />
-      {title}
-    </h3>
-    <p>{body}</p>
-  </li>
-);
-
-Area.propTypes = {
-  title: PropTypes.string.isRequired,
-  body: PropTypes.string.isRequired,
-  icon: PropTypes.object,
-};
 
 const Person = ({ name, title, bio, picture }) => (
   <li>
@@ -216,17 +163,11 @@ export default function Consultancy() {
           services through his firm, Pentexoire Consulting.
         </p>
         <img src={pentexoire} alt="Pentexoire Consulting" />
-        <p>His areas of expertise include:</p>
-        <ul className="areas">
-          {areas.map((area, index) => (
-            <Area
-              key={index}
-              title={area.title}
-              body={area.body}
-              icon={area.icon}
-            />
-          ))}
-        </ul>
+        <p>
+          His consulting work covers storage and file systems, operating systems
+          and distributed computing, security and cryptography, and electronic
+          commerce.
+        </p>
       </section>
       <section className="dottedBorder people">
         <h2>People</h2>
