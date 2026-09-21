@@ -14,6 +14,10 @@ const distDir = join(__dirname, "..", "dist");
 const baseHtml = readFileSync(join(distDir, "index.html"), "utf-8");
 
 const BASE_URL = "https://darrelllong.github.io";
+const portrait = JSON.parse(
+  readFileSync(join(__dirname, "../src/portrait.json"), "utf-8"),
+);
+const previewImageUrl = `${BASE_URL}${portrait.src}`;
 
 function truncate(str, max = 160) {
   if (!str) return "";
@@ -42,6 +46,16 @@ function injectMeta(html, { title, description, canonicalUrl }) {
     `  <meta property="og:description" content="${escapeAttr(desc)}">`,
     `  <meta property="og:url" content="${canonicalUrl}">`,
     `  <meta property="og:type" content="website">`,
+    `  <meta property="og:image" content="${previewImageUrl}">`,
+    `  <meta property="og:image:type" content="${portrait.type}">`,
+    `  <meta property="og:image:width" content="${portrait.width}">`,
+    `  <meta property="og:image:height" content="${portrait.height}">`,
+    `  <meta property="og:image:alt" content="${escapeAttr(portrait.alt)}">`,
+    `  <meta name="twitter:card" content="summary">`,
+    `  <meta name="twitter:title" content="${escapeAttr(fullTitle)}">`,
+    `  <meta name="twitter:description" content="${escapeAttr(desc)}">`,
+    `  <meta name="twitter:image" content="${previewImageUrl}">`,
+    `  <meta name="twitter:image:alt" content="${escapeAttr(portrait.alt)}">`,
   ].join("\n  ");
   return html.replace("<title>Darrell Long</title>", injection);
 }

@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 import PropTypes from "prop-types";
 import { useLocation } from "react-router-dom";
+import portrait from "../portrait.json";
 
 export default function PageMetadata({
   title,
   noIndex = false,
-  description = "Research, writing, and academic work by computer scientist Darrell D. E. Long.",
+  description = "Research, writing, and academic work by Darrell D. E. Long.",
 }) {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -25,6 +26,16 @@ export default function PageMetadata({
     updateMeta("property", "og:title", title);
     updateMeta("property", "og:description", description);
     updateMeta("property", "og:url", canonicalUrl);
+    updateMeta("property", "og:image", `https://darrelllong.github.io${portrait.src}`);
+    updateMeta("property", "og:image:type", portrait.type);
+    updateMeta("property", "og:image:width", String(portrait.width));
+    updateMeta("property", "og:image:height", String(portrait.height));
+    updateMeta("property", "og:image:alt", portrait.alt);
+    updateMeta("name", "twitter:card", "summary");
+    updateMeta("name", "twitter:title", title);
+    updateMeta("name", "twitter:description", description);
+    updateMeta("name", "twitter:image", `https://darrelllong.github.io${portrait.src}`);
+    updateMeta("name", "twitter:image:alt", portrait.alt);
     let canonical = document.head.querySelector('link[rel="canonical"]');
     if (!canonical) {
       canonical = document.createElement("link");

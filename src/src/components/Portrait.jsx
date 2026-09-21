@@ -1,13 +1,14 @@
 import "../assets/css/portrait.scss";
+import portrait from "../portrait.json";
 
 export default function Portrait() {
   return (
     <div className="portrait-frame">
       <img
-        src="/darrell-long-2026.jpeg"
-        alt="Darrell Long"
-        width="4284"
-        height="5712"
+        src={portrait.src}
+        alt={portrait.alt}
+        width={portrait.width}
+        height={portrait.height}
         fetchPriority="high"
       />
     </div>
