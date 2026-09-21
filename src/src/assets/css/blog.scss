@@ -150,8 +150,21 @@ main.blogpost {
   background: $layer;
 }
 .blog-content img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 740px;
   height: auto;
   margin: 24px auto;
+}
+.blog-content p:has(> img:only-child) {
+  margin-bottom: 8px;
+}
+.blog-content p:has(> img:only-child) + p:has(> em:only-child) {
+  text-align: center;
+  color: $muted;
+  font-size: 13px;
+  margin-bottom: 32px;
 }
 .blog-content .katex-display {
   overflow-x: auto;

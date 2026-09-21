@@ -1,5 +1,12 @@
 [
   {
+    "slug": "2026-09-20-long-professorship-experimental-physics",
+    "title": "The Darrell and Elaine Long Professorship in Experimental Physics",
+    "date": "2026-09-20",
+    "tags": ["physics", "research", "education"],
+    "excerpt": "Why Elaine and I endowed a professorship in experimental physics at UC Santa Cruz, and the work of its first holder, Bruce Schumm."
+  },
+  {
     "slug": "2026-05-05-threshold-secret-sharing",
     "title": "Threshold Secret Sharing in Pure Rust",
     "date": "2026-05-05",
