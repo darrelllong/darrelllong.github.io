@@ -8,16 +8,16 @@ import "../assets/css/about.scss";
 
 const accordionData = [
   {
+    title: "Education and Early Career",
+    body: [
+      'He received his B.S. degree in Computer Science from San Diego State University, and his M.S. and Ph.D. from the University of California, San Diego. His dissertation advisor was <a href="http://www2.cs.uh.edu/~paris/" target="_blank" rel="noreferrer">Jehan-François Pâris</a>, now at the <a href="http://www.cs.uh.edu" target="_blank" rel="noreferrer">University of Houston</a>. While in graduate school and before joining the University of California, Santa Cruz, he was a lecturer in Mathematics at San Diego State University and taught at the University of California, San Diego.',
+    ],
+  },
+  {
     title: "Conferences and Journals",
     body: [
       'He founded the <a href="https://www.usenix.org/legacy/events/fast02/" target="_blank" rel="noreferrer">USENIX Conference on File and Storage Technologies (FAST)</a> and chaired the program for its first meeting, held in Monterey in January 2002. He was also the founding general chair of the Workshop on Mobile Computing Systems and Applications (WMCSA) in 1994.',
       'He served as editor-in-chief of <em>ACM Transactions on Storage</em> from 2010 to 2016, following service as an associate editor from 2004 to 2010. From 2017 to 2020, he was editor-in-chief of <em>IEEE Letters of the Computer Society</em>. His <a href="/cv.pdf" target="_blank" rel="noreferrer">curriculum vitae</a> includes his other editorial appointments and conference service.',
-    ],
-  },
-  {
-    title: "Education and Early Career",
-    body: [
-      'He received his B.S. degree in Computer Science from San Diego State University, and his M.S. and Ph.D. from the University of California, San Diego. His dissertation advisor was <a href="http://www2.cs.uh.edu/~paris/" target="_blank" rel="noreferrer">Jehan-François Pâris</a>, now at the <a href="http://www.cs.uh.edu" target="_blank" rel="noreferrer">University of Houston</a>. While in graduate school and before joining the University of California, Santa Cruz, he was a lecturer in Mathematics at San Diego State University and taught at the University of California, San Diego.',
     ],
   },
   {
