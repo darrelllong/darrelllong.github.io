@@ -48,5 +48,21 @@ and 2016 mentoring profile. See the [biography audit](biography-audit.md).
 Status: complete. The biography now begins with education and early lecturing,
 describes the laboratory community and mentoring in concrete terms, and ends
 with later career and current affiliations. Lint, content validation, the
-production build, and desktop/mobile browser checks passed. No editorial
-queue items remain open.
+production build, and desktop/mobile browser checks passed.
+
+## Conference leadership and committee service
+
+Reopened September 21, 2026 after the owner identified omitted MSST and
+MASCOTS leadership and inadequate attention to the scale of committee work.
+Read and tally the CV's entire Conference Organization section; verify
+current MSST roles and MASCOTS steering chair service; add founding MASCOTS
+membership and decades of service using the owner's firsthand account.
+Keep the biography concise and preserve its education-first structure.
+See the [conference service audit](conference-service-audit.md).
+
+Status: complete. The biography now includes founding MASCOTS steering
+membership, decades of service including chair roles, and continuing MSST
+general-chair and steering work. Following the owner's clarification, the
+public text is a connected narrative; detailed counts and dates remain in
+the audit report. Lint, content validation, the production build, and
+desktop/narrow-screen browser checks passed.

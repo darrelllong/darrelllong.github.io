@@ -24,6 +24,13 @@ firsthand detail about early lecturing, the scale of the laboratory, its
 undergraduate researchers, and his record of supervising women to doctorates.
 The factual checks did not excuse that editorial failure.
 
+The owner subsequently identified another substantive omission: the page
+named WMCSA and FAST but left out his longstanding MSST leadership and
+founding MASCOTS steering-committee membership, including service as chair.
+The [conference service audit](conference-service-audit.md) records a complete
+tally of the CV's conference-service section, the additional primary sources,
+and the resulting correction to the professional-service section.
+
 ## Revision
 
 The page now begins with education and early career: the 1984 B.S., immediate
@@ -65,6 +72,7 @@ same biography.
 | Teaching programming, data structures, operating systems, and cryptography; doctoral supervision | CV's teaching record, PDF pages 39–51, and mentoring record, pages 52–53. The later [academic genealogy audit](academic-genealogy-audit.md) supplies MGP's dated student and descendant counts and identifies stale CV entries. Center membership is not equated with Long's personal advising. |
 | FAST founder and first program chair; inaugural meeting in January 2002 | [USENIX FAST 2002 archive](https://www.usenix.org/legacy/events/fast02/) and CV conference-service record. The CV's 2001 planning/program-chair entry is not used as the meeting date. |
 | WMCSA founding general chair, 1994; journal editorships, 2010–2016 and 2017–2020 | CV conference service and editorial duties, including PDF page 31 for the editorships. |
+| Breadth of program and steering committee work; founding MASCOTS steering membership and decades of service; MASCOTS and MSST chair roles | [Conference service audit](conference-service-audit.md), including the CV tally, the owner's firsthand corrections, the official MASCOTS 2019 organizers page, and the MSST 2026 call for papers. Annual role entries are distinguished from unique conferences and lifetime totals. |
 | IEEE Fellow, 2006; AAAS Fellow, 2008 | CV honors; [UCSC CITRIS profile](https://citris.ucsc.edu/pi-list/) for the IEEE citation; [UCSC's AAAS announcement](https://news.ucsc.edu/2008/12/three-ucsc-professors-elected-aaas-fellows/). Election in 2008 is distinguished from the AAAS presentation ceremony in 2009. |
 | Visiting appointments; Uruguay honorary professorship in 2010; CERN, 2016–2019 | CV, PDF pages 2–3. These are expressed historically and summarized without implying that all appointments are current. |
 | Associate deanships, 1998–2001 and 2004–2010 | CV, PDF page 1; university's 2005 chair announcement corroborates the latter role. |
@@ -128,6 +136,16 @@ same biography.
   remains attributed to the database and dated September 2026. No exact
   female-graduate count or unconfirmed year of the school-wide distinction
   was inserted.
+
+## Verification of the conference-service follow-up
+
+The latest revision contains 791 words and retains the four-section,
+education-first structure. Conference leadership is described in connected
+prose; the detailed role counts and chronology stay in the separate
+[conference service audit](conference-service-audit.md). Lint, content
+validation, the production build, and desktop/narrow-screen browser
+inspection passed. The earlier 695-word count above describes the preceding
+revision, not the current page.
 
 ## Relation to the wider audit
 

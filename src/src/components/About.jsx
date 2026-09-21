@@ -104,13 +104,31 @@ export default function About() {
         <section aria-labelledby="professional-title">
           <h2 id="professional-title">Professional service and later career</h2>
           <p>
-            Long helped establish venues for systems researchers to share
-            their work. He was founding general chair of the Workshop on
-            Mobile Computing Systems and Applications in 1994 and founded
+            Long&rsquo;s work building a research community extended beyond
+            his own laboratory. He was a founding member of the steering committee
+            for the International Symposium on Modeling, Analysis, and
+            Simulation of Computer and Telecommunication Systems (MASCOTS)
+            and served for decades, including as <a
+            href="https://sites.google.com/view/mascots-2019/organizers">steering
+            committee chair</a>, as well as general chair and program chair.
+            That sustained involvement was part of a broader record of
+            service on dozens of program committees.
+          </p>
+          <p>
+            He also helped create new venues for systems research, as
+            founding general chair of the Workshop on Mobile
+            Computing Systems and Applications in 1994 and founder of
             the <a href="https://www.usenix.org/legacy/events/fast02/">USENIX
             Conference on File and Storage Technologies (FAST)</a>, chairing
-            its first program in January 2002. He later served as
-            editor-in-chief of <em>ACM Transactions on Storage</em> from
+            its first program in January 2002. He has served for several
+            years as general chair of the <a
+            href="https://www.msstconference.org/2026/research-cfp.html">International
+            Conference on Massive Storage Systems and Technology (MSST)</a>,
+            where he also serves on the steering committee.
+          </p>
+          <p>
+            His editorial service includes terms as editor-in-chief of <em>ACM
+            Transactions on Storage</em> from
             2010 to 2016 and <em>IEEE Letters of the Computer Society</em>
             {" "}from 2017 to 2020.
           </p>
