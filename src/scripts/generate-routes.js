@@ -98,7 +98,7 @@ const staticRoutes = [
     path: "consultancy",
     title: "Consultancy",
     description:
-      "Expert consulting services by Professor Darrell Long and the Pentexoire team.",
+      "Technical consulting and expert witness services in computer science from Darrell Long and Pentexoire Consulting.",
   },
 ];
 

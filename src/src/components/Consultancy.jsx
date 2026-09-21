@@ -20,27 +20,27 @@ import "../assets/css/consultancy.scss";
 const areas = [
   {
     title: "Storage",
-    body: "Expertise in storage technologies, data management, and related patents.",
+    body: "Storage technologies, data management, and related patents.",
     icon: faDatabase,
   },
   {
     title: "Computer Security",
-    body: "In-depth knowledge of cybersecurity principles, protocols, and best practices.",
+    body: "Computer security principles, protocols, and practices.",
     icon: faShield,
   },
   {
     title: "Cryptography",
-    body: "Comprehensive understanding of cryptographic algorithms, protocols, and applications.",
+    body: "Cryptographic algorithms, protocols, and applications.",
     icon: faUserSecret,
   },
   {
     title: "Operating Systems",
-    body: "Proficiency in operating system architecture, functionality, and design principles.",
+    body: "Operating system architecture and design.",
     icon: faLaptopCode,
   },
   {
     title: "Electronic Commerce",
-    body: "Experience in e-commerce platforms, digital transactions, and online business models.",
+    body: "E-commerce platforms, digital transactions, and online business models.",
     icon: faStore,
   },
 ];
@@ -132,7 +132,7 @@ const ContactForm = () => {
   if (submit.succeeded) {
     return (
       <p className="success">
-        Thank you for considering Pentexoire Consulting, your message was sent.
+        Your message has been sent to Pentexoire Consulting. Thank you.
         <br />
         <Link to="/consultancy/" onClick={reset}>
           Send another message
@@ -180,7 +180,7 @@ const ContactForm = () => {
         <textarea
           name="message"
           onChange={handleChange}
-          placeholder="Please enter your message here"
+          placeholder="Describe your consulting inquiry"
         />
         {errors.message && <span>{errors.message}</span>}
       </label>
@@ -212,18 +212,11 @@ export default function Consultancy() {
         <p className="eyebrow">Pentexoire Consulting</p>
         <h1>Consultancy</h1>
         <p>
-          Dr. Darrell D. E. Long provides consultancy services and owns the{" "}
-          <a href="https://pentexoire.com/" target="_blank" rel="noreferrer">
-            Pentexoire Consulting
-          </a>{" "}
-          agency.
+          Dr. Darrell D. E. Long provides technical consulting and expert witness
+          services through his firm, Pentexoire Consulting.
         </p>
         <img src={pentexoire} alt="Pentexoire Consulting" />
-        <p>
-          With dozens of cases under his belt, Dr. Long specializes in providing
-          expert witness services across a range of industries and disciplines,
-          including but not limited to:
-        </p>
+        <p>His areas of expertise include:</p>
         <ul className="areas">
           {areas.map((area, index) => (
             <Area
@@ -238,11 +231,8 @@ export default function Consultancy() {
       <section className="dottedBorder people">
         <h2>People</h2>
         <p>
-          Pentexoire Consulting team is composed of highly experienced and
-          knowledgeable professionals who provide a wide range of consultancy
-          services. They offer expert witness services and insights across
-          multiple industries and technical disciplines. Here are some of the
-          key members of the team:
+          Pentexoire Consulting provides technical analysis and expert witness
+          services in computer science.
         </p>
         <ul>
           {people.map((person, index) => (
@@ -259,9 +249,8 @@ export default function Consultancy() {
       <section className="contact">
         <h2>Contact</h2>
         <p>
-          If you have questions about Dr. Long’s services, want to discuss a
-          potential case, or simply want to connect, feel free to reach out on
-          social media or fill out the form below.
+          To inquire about consulting or expert witness services, or to discuss a
+          potential case, please use the form below.
         </p>
         <ContactForm />
       </section>

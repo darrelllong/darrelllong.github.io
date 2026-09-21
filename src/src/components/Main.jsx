@@ -79,6 +79,11 @@ export default function Main() {
               ? "Darrell Long | UC Santa Cruz"
               : `${{ about: "About", publications: "Publications", patents: "Patents", blog: "Blog", consultancy: "Consultancy" }[collection] || "Darrell Long"} | Darrell Long`
           }
+          description={
+            collection === "consultancy"
+              ? "Technical consulting and expert witness services in computer science from Darrell Long and Pentexoire Consulting."
+              : undefined
+          }
         />
       )}
       <Routes>
