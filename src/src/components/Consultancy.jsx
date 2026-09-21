@@ -163,11 +163,17 @@ export default function Consultancy() {
           services through his firm, Pentexoire Consulting.
         </p>
         <img src={pentexoire} alt="Pentexoire Consulting" />
-        <p>
-          His consulting work covers storage and file systems, operating systems
-          and distributed computing, security and cryptography, and electronic
-          commerce.
-        </p>
+        <h2>Areas of experience</h2>
+        <ul className="experience-areas">
+          <li>Storage systems and data protection</li>
+          <li>Operating systems and virtualization</li>
+          <li>Cloud and high-performance computing</li>
+          <li>Communications and networking</li>
+          <li>Security, cryptography, and privacy</li>
+          <li>Database systems</li>
+          <li>Streaming media and content delivery</li>
+          <li>Electronic commerce</li>
+        </ul>
       </section>
       <section className="dottedBorder people">
         <h2>People</h2>

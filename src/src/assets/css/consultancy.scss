@@ -28,6 +28,15 @@ main.consultancy .contact {
   margin: 24px 0;
   max-width: 220px;
 }
+.experience-areas {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 14px;
+  color: $muted;
+}
+.experience-areas li + li {
+  margin-top: 8px;
+}
 .people {
   border-top: 1px solid $line;
   padding-top: 30px;
