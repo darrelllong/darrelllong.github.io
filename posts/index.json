@@ -1,5 +1,12 @@
 [
   {
+    "slug": "2026-09-20-ceph-and-the-ssrc",
+    "title": "Ceph and the SSRC",
+    "date": "2026-09-20",
+    "tags": ["research", "storage", "colleagues"],
+    "excerpt": "Ceph’s origins in the SSRC, the earlier work on Swift and RAMA, and Sage Weil’s research and development of the file system."
+  },
+  {
     "slug": "2026-09-20-retiring-with-ethan-miller",
     "title": "Retiring with Ethan Miller",
     "date": "2026-09-20",
