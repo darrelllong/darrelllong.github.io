@@ -1,85 +1,98 @@
 ---
-title: "Auditing Random Number Generators"
+title: "Random Number Generators in Rust"
 date: "2026-05-05"
 tags: ["research", "cryptography", "rust", "randomness"]
-excerpt: "A pure-Rust harness that runs NIST SP 800-22, DIEHARD, and DIEHARDER against 43 generators — from deliberately broken historical PRNGs to ChaCha20 and the known-backdoored Dual_EC_DRBG."
+excerpt: "The entropy library provides PRNGs and CSPRNGs, exact integer sampling, continuous distributions, reproducible parallel streams, and statistical tests."
 ---
 
-The companion to the [cryptography library](https://github.com/darrelllong/cryptography) is a separate repository called [`entropy`](https://github.com/darrelllong/entropy). Its job is to examine the random number generators that cryptographic primitives consume.
+[`entropy`](https://github.com/darrelllong/entropy) provides random number generators for simulation, randomized algorithms, and cryptographic applications. It implements modern PRNGs and CSPRNGs in Rust, with a common interface for seeding, drawing values, sampling distributions, and filling byte buffers. The repository also contains statistical test batteries and performance measurements for the generators.
 
-A cipher with a strong implementation and a weak random source is a broken cipher. The history of practical cryptographic failures is largely a history of bad randomness, not a history of bad ciphers. Debian OpenSSL in 2008. The Sony PS3 ECDSA leak in 2010. The Juniper Dual_EC backdoor exposed in 2015. The TLS handshakes James Hughes catalogued in his 2022 dissertation, where low-entropy seeds let the same private key turn up across unrelated certificates. The cipher worked perfectly in every one of those cases. The randomness did not.
+The library handles details that affect the results of a computation: bias when mapping words into an integer range, precision near zero when drawing floating-point values, reproducibility across parallel workers, and the lifetime of a cryptographic generator's key. These are part of the implementation, with derivations, reference vectors, and tests alongside the code.
 
-`entropy` is a pure-Rust statistical test harness for that exact problem.
+## PRNGs and Reproducibility
 
-## What Is in It
+The simulation generators include PCG32 and PCG64, xoshiro256\*\* and xoroshiro128\*\*, SFC64, JSF64, and MT19937. They implement the same `Rng` interface. The `Seedable` trait supplies construction from explicit seed bytes, expansion of a 64-bit seed with SplitMix64, and seeding from the operating system.
 
-The harness implements three of the canonical batteries:
+A fixed seed makes an experiment reproducible:
 
-- **NIST SP 800-22 Rev. 1a** — the federal recommendation: frequency, block frequency, runs, longest run, matrix rank, spectral, non-overlapping templates (all 148 aperiodic 9-bit templates), serial, approximate entropy, cumulative sums, universal, linear complexity, random excursions, random excursions variant.
-- **DIEHARD** — Marsaglia's 1995 battery: birthday spacings, binary rank, bitstream, the various monkey tests, count-the-ones, craps.
-- **DIEHARDER** — Brown's modernization: `fill_tree`, `gcd`, `bit_distribution`, and the others that survived the cull.
+```rust
+use entropy::rng::{Pcg64, Sample, Seedable};
 
-Each test is implemented in pure Rust, written from the published reference rather than wrapped over Brown's C tree. Most are line-for-line faithful; the rest are close ports of the Dieharder source, and the README is explicit about which is which. A statistical test you trust without understanding it is almost as dangerous as the bad RNG it is supposed to catch.
+fn main() {
+    let mut rng = Pcg64::seed_from_u64(42);
+    let die = rng.range(1, 7);       // Integers 1 through 6.
+    let event = rng.ratio(1, 3);     // Probability exactly 1/3.
+    let normal = rng.normal();      // Standard normal variate.
 
-On top of the three classic batteries there are five auxiliary research probes: Knuth's permutation, gap, and runs-above/below-median tests from TAOCP Vol. 2 §3.3.2 swept against approximate entropy at multiple embedding dimensions; the TestU01 Lempel-Ziv compression statistic with the empirical calibration table; the TestU01 `HammingCorr` and `HammingIndep` statistics; the PractRand `FPF(4,14,6)` floating-point bucket test; and an implementation of the Webster-Tavares Strict Avalanche Criterion and Bit Independence Criterion from CRYPTO 1985, applied as a differential probe against seeded PRNG families.
-
-There is also a parametric form of Maurer's 1992 universal test, swept across `L = 6..16` rather than locked to the single value the NIST document fixes. The full parametric family is substantially more sensitive than the NIST setting, and the harness emits every parameter set that fits the available sample.
-
-## What It Tests Against
-
-The runner ships with 43 built-in generators arranged in six deliberate tiers.
-
-**Degenerate.** `ConstantRng` (the same word forever) and `CounterRng` (0, 1, 2, …). These exist as negative controls. They must fail every test the battery is capable of running. If they ever pass anything, the battery is broken, not the generator.
-
-**Historical broken generators.** The unix libc heritage in all its embarrassing variety: System V `rand()`, `mrand48()`, BSD `random()`, glibc `rand()/random()`, FreeBSD `rand_r()`, plus Microsoft's CRT `rand()`, the VB6 `Rnd()`, the .NET `Random` class, and the classic LCGs — ANSI C, MINSTD, Borland C++. These are kept verbatim, with their original constants. They fail the batteries thoroughly and predictably, and that is the point: the failures look the way the literature says they should look.
-
-**Quality simulation generators.** MT19937, the xorshift family, PCG32 and PCG64, Xoshiro256, Xoroshiro128, WyRand, SFC64, JSF64. These pass the classic batteries and are appropriate for Monte Carlo work and reproducible scientific simulation. They are also all *invertible* — an adversary who can observe output can reconstruct the internal state and predict everything that follows. None of them belong in any adversarial context, no matter how well they perform on a goodness-of-fit test, and the crate's documentation says so plainly at every relevant constructor.
-
-**Cipher-CTR CSPRNGs.** The cryptography crate's block ciphers run in CTR mode as random sources: AES-128, Camellia-128, Twofish-128, Serpent-128, SM4, Grasshopper, CAST-128, SEED. Plus the stream ciphers as direct keystream sources: Rabbit, Salsa20, SNOW 3G, ZUC-128. This is where the dependency on the [cryptography](https://github.com/darrelllong/cryptography) crate earns its keep — the test harness is exercising the *same* primitive code that would ship in a real deployment.
-
-**NIST DRBGs.** SP 800-90A's `HashDrbg` (SHA-256), `HmacDrbg` (HMAC-SHA-256), and `CtrDrbgAes256`, plus a ChaCha20 stream-DRBG and two more for variety: `SpongeBob` (a SHA3-512 chain) and `Squidward` (a SHA-256 chain).
-
-**Backdoored.** `Dual_EC_DRBG`, with the standardized NIST P-256 `Q` point. Bernstein, Lange, and Niederhagen showed in 2014, and Checkoway and his coauthors confirmed in detail in 2015, that this generator is backdoored at the standard level: an adversary who knows the discrete log relationship between the standard `P` and `Q` recovers the entire internal state from 32 bytes of output and predicts everything that follows. The Snowden documents made the political dimension public; the math made it inescapable. It is in the harness as a reference implementation of a known-bad design and as direct evidence that "passes statistical tests" is a much weaker claim than "is cryptographically secure." Dual_EC, run honestly, *passes* most of the batteries here. That is the point.
-
-The 43-generator mix means the output is useful in two directions at once: it confirms that the batteries reject the obviously broken constructions, and it confirms that they pass the strong ones. Run them side by side and the contrast is the lesson.
-
-## Why a Test Battery Is Not a Security Proof
-
-There is a recurring claim in vendor marketing that runs roughly: "our generator passed NIST SP 800-22, therefore it is secure." That claim is false, and it is the most consequential category error in applied cryptography.
-
-The classical batteries test *distributional uniformity*. They check that the output looks like a fair coin in increasingly clever ways. They do not, and cannot, test for *unpredictability*. A generator whose state is recoverable from a short output window — every LCG, every xorshift, every PCG, MT19937, and Dual_EC_DRBG — produces output that is statistically indistinguishable from a true random stream and is nonetheless catastrophically broken. The adversary does not care about your chi-square statistic. The adversary cares whether they can predict your next nonce.
-
-The standard runner exercises 738 test slots per generator at 16 Mbit, at α = 0.01. Passing all 738 is a lower bound on quality, not an upper bound. The READMEs, the USAGE document, and the per-generator notes all hammer this point, because the field has shown over and over that one slip in this direction produces a working cipher protecting nothing.
-
-## How It Is Organized
-
-The crate builds and runs as plain Rust, with no C dependencies for any of the test code. The full audit is one shell script:
-
-```text
-tests/run_all.sh
+    let mut order: Vec<usize> = (0..100).collect();
+    rng.shuffle(&mut order);
+    println!("{die} {event} {normal} {order:?}");
+}
 ```
 
-It runs the complete NIST/DIEHARD/DIEHARDER battery plus the five auxiliary probes against every built-in generator, and writes a timestamped log. A Python helper turns that log back into the table that lives in `TESTS.md`. Throughput benchmarks are measured with [Pilot](/blog/2026-03-06-performance-evaluation), so the MW/s numbers come with confidence intervals and a sample size, not a hand-picked best run.
+`Xoshiro256` and `Xoroshiro128` also support jumping ahead and assigning segments of a stream to workers. `Xoshiro256::stream(k)` begins at offset $k\,2^{128}$ from the starting state; the corresponding spacing for `Xoroshiro128` is $2^{64}$. Assigning a fixed segment to each worker makes its sequence independent of scheduling order. The jump polynomial is derived from the generator's state transition using Berlekamp–Massey. The implementation checks jumps against repeated ordinary steps.
 
-The reference shelf is in `pubs/`: NIST SP 800-22, SP 800-90A, SP 800-90B, SP 800-90C, FIPS 140-3, the original Diehard 1995 distribution, the dieharder 3.31 source archive and manual, the L'Ecuyer-Simard TestU01 paper, Maurer's 1992 universal-test paper, Marsaglia and Tsang on difficult-to-pass tests, Webster and Tavares from CRYPTO 1985, and Hughes's 2022 BADRANDOM dissertation. When the code claims fidelity to a published test, the canonical document is right there in the repository for cross-checking. There is no excuse for trusting a summary.
+Known-answer tests pin seeded sequences and sampling results. Changes to those sequences are recorded as breaking changes: the 0.6.0 changelog, for example, identifies the new sequences produced by the normal and exponential samplers.
 
-## Scope
+## Sampling Without Introducing Bias
 
-The harness is for *auditing and comparison* — pick a generator, run the batteries against it, and see what survives. For production use, take an OS entropy source and feed it through one of the standardized DRBGs from the cryptography crate.
+A generator supplies words; an application usually needs something more specific. The [`Sample` implementation](https://github.com/darrelllong/entropy/blob/main/src/rng/sample.rs) supplies bounded integers, Bernoulli trials, floating-point values, normal and exponential variates, shuffles, weighted choices, and sampling without replacement.
 
-For research-grade work on small-state generators, TestU01's BigCrush and PractRand's full streaming analysis are the sharper tools, and the harness implements only the core statistics from each rather than the full suites. The cases the classical batteries already settle are the cases this harness is built for, and that covers the vast majority of practical questions.
+For bounded integers, the library uses Lemire's multiply-and-reject method. Reducing a random word modulo a bound gives some results more preimages than others unless the bound divides the word space. Rejection removes that imbalance. The implementation's test enumerates every 12-bit word for every representable positive bound and checks that all results have the same number of accepted preimages.
 
-## How the Two Repositories Fit Together
+`ratio(a, b)` samples probability $a/b$. `bernoulli(p)` compares random bits with the binary expansion of the supplied double, reading further bits when necessary, so small probabilities are retained. Integer-weighted choices sum their weights in 128 bits. These methods preserve the specified probabilities given independent, uniform generator words.
 
-The cryptography crate provides the primitives. The entropy harness examines the quality of the randomness those primitives consume. The cipher is rarely the weakest link in a deployed system. The randomness almost always is. These two repositories are designed to be read together so that the second fact is hard to ignore.
+There are two useful floating-point interfaces. `unit_f64()` draws uniformly from the $2^{53}$-point grid in $[0,1)$. `unit_f64_dense()` instead models a uniform real rounded down to a double: representable values receive probability according to the interval they represent, including subnormal values near zero. This matters when a transformation such as $-\ln U$ turns small values of $U$ into the tail of a distribution.
 
-The code is at [github.com/darrelllong/entropy](https://github.com/darrelllong/entropy). It is BSD-licensed.
+The normal and exponential samplers use Marsaglia and Tsang's ziggurat method. Their tables are derived once from the equal-area recurrence. Most draws require one generator word and no transcendental function. Separate inverse-transform methods remain available for finely resolved tails. Tests check the table areas, distribution moments, and the tail distribution itself.
 
-The crate is also published on [crates.io](https://crates.io/crates/rng-entropy):
+## Cryptographically Secure Generators
 
-```toml
-[dependencies]
-rng-entropy = "0.5"
+The cryptographic generators include ChaCha20, Hash_DRBG with SHA-256, HMAC_DRBG with HMAC-SHA-256, and CTR_DRBG with AES-256. Their underlying cipher and DRBG mechanisms come from the companion [`cryptography`](https://github.com/darrelllong/cryptography) library. `CryptoRng` provides a marker trait that applications can require where a simulation generator would be inappropriate.
+
+For applications, `thread_rng()` maintains a generator for each thread, seeded from the operating system. It uses ChaCha20 with Bernstein's fast key erasure construction. Each refill produces 512 bytes: the first 32 replace the key, and the remaining 480 supply output. Consumed bytes are erased from the internal buffer. Replacing the key protects earlier output if the current generator state is later exposed, under the security assumption of ChaCha20.
+
+The thread-local generator takes fresh key material after about a GiB of output and when it detects a changed process ID after a fork. Bulk fills split at the reseeding boundary. Fallible methods report operating-system errors to the caller:
+
+```rust
+use entropy::rng::try_thread_rng;
+
+fn main() -> std::io::Result<()> {
+    let mut rng = try_thread_rng()?;
+    let mut bytes = [0u8; 32];
+    rng.try_fill(&mut bytes)?;
+    Ok(())
+}
 ```
 
-The package name is `rng-entropy` (the bare `entropy` and `entropy-rs` are held by unrelated existing crates); the library import name remains `entropy`, so downstream code keeps writing `use entropy::...`. The published tarball includes the pure-Rust generators and the test batteries; the optional Apple-Silicon and x86 SIMD acceleration paths from the local build are excluded — they live in the GitHub source tree behind path dependencies. Documentation is auto-built at [docs.rs/rng-entropy](https://docs.rs/rng-entropy).
+The current operating-system entropy backend supports Unix. Applications can also use explicit keys and seeds through the individual generator interfaces.
+
+## Performance
+
+The repository measures both raw generation and the operations applications perform. Buffered generators have a bulk byte interface, `fill_native`, that avoids extracting output one word at a time. For 64-bit PRNGs it also uses the full word; the statistical runner's `next_u32` interface takes only the high half.
+
+The September 2026 [comparison recorded in the audit](https://github.com/darrelllong/entropy/blob/9f72d34e0785af1ec2a8445cb9fb02643daf028a/AUDIT.md#a4--the-shuffle-trails-rand) measured the following rates on the same Mac, through public APIs. The figures are millions of draws per second, taking the best of seven rounds of five million draws.
+
+| Operation | entropy | rand 0.10.2 comparison |
+|---|---:|---:|
+| PCG64, 64-bit words | 763 | 763 |
+| Uniform doubles | 760 | 760 |
+| Integers from 1 through 6 | 314 | 317 |
+| Standard normal variates | 270 | 286 |
+| Exponential variates | 243 | 180 |
+
+The exponential sampler is about 35% faster in that measurement. The same comparison places normal sampling about 6% behind and shuffling about 9% behind. The separate [generator benchmarks](https://github.com/darrelllong/entropy/blob/main/BENCHMARKS.md) use [Pilot](/blog/2026-03-06-performance-evaluation/) and report confidence intervals across several machines, with the compiler and implementation changes identified where they affect comparisons.
+
+## Testing the Generators
+
+The library includes NIST SP 800-22, DIEHARD, DIEHARDER, and additional research tests. These exercise the generators through several views of their output, including the low and high halves of 64-bit words and bit-reversed output. Historical generators, constant streams, and deliberately introduced defects provide comparison cases. External byte streams can also be tested.
+
+The mathematical work includes deriving null distributions, measuring false-alarm rates, and measuring detection power against specified defects. The repository keeps the [results](https://github.com/darrelllong/entropy/blob/main/TESTS.md), [power measurements](https://github.com/darrelllong/entropy/blob/main/POWER.md), and [remaining calibration work](https://github.com/darrelllong/entropy/blob/main/AUDIT.md) available for examination. Statistical evidence, conformance to published algorithms, sampling correctness, and cryptographic construction answer different questions; the code and reports address each in its own terms.
+
+## Using the Source
+
+The examples above use the [September 17, 2026 source revision](https://github.com/darrelllong/entropy/tree/9f72d34e0785af1ec2a8445cb9fb02643daf028a), whose package version is 0.6.0. At this update, [crates.io](https://crates.io/crates/rng-entropy) carries 0.5.0. The package name is `rng-entropy`; the Rust library name is `entropy`.
+
+In the current source, disabling default features gives an application the PRNGs, sampling methods, seeding interfaces, and probability functions with no external dependencies. The `cryptography` feature adds the cryptographic generators; the `batteries` feature adds the statistical suites and FFT dependency. Both features are enabled by default. The [usage guide](https://github.com/darrelllong/entropy/blob/main/USAGE.md#random-values-in-applications) describes the application interfaces, and the source is available under the BSD two-clause license.
+
+*Updated September 20, 2026.*
