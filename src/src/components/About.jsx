@@ -28,9 +28,11 @@ const accordionData = [
     ],
   },
   {
-    title: "Research Interests and Contributions",
+    title: "Research and Federal Support",
     body: [
-      "He has broad research interests in many areas of mathematics and science, and in the field of computer science include data storage systems, operating systems, distributed computing, reliability & fault tolerance, and computer security. His research has been supported by the National Science Foundation, the Department of Energy (Office of Science and National Nuclear Security Administration), Lawrence Livermore, Los Alamos and Sandia National Laboratories, NASA, the Office of Naval Research, and many industrial sponsors that include Avago, Broadcom, Data Domain, eBay, Exablox, Facebook, Hewlett-Packard Enterprise, Huawei, IBM, Intel, Kioxia, LSI Logic, Microsoft, NetApp, Pure Storage, SK Hynix, Samsung, Sandisk, Scality, Seagate, Symantec, Toshiba, and Veritas.",
+      "His research interests extend across mathematics and science. His work in computing has included data storage systems, operating systems, distributed computing, reliability and fault tolerance, and computer security.",
+      "His research has been supported by the National Science Foundation (NSF), the Department of Energy (DOE), the Office of Naval Research (ONR), the Defense Advanced Research Projects Agency (DARPA), and NASA.",
+      "These projects include NSF-funded research on reliable archival storage, DOE-funded work on scientific data management and exascale file systems, the ONR-supported Real-time Environmental Information Network and Analysis System (REINAS), and DARPA’s Trust Worthy Information Storage Technology Enhanced Devices (TWISTED) project.",
     ],
   },
   {
