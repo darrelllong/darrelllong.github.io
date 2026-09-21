@@ -200,7 +200,7 @@ const ContactForm = () => {
 export default function Consultancy() {
   const [people, setPeople] = React.useState([]);
   React.useEffect(() => {
-    fetch("/pentexoire.json")
+    fetch("/pentexoire.json", { cache: "no-cache" })
       .then((response) => response.json())
       .then((data) => setPeople(data))
       .catch((error) => console.error("Error fetching file:", error));
