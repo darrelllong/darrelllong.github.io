@@ -7,10 +7,8 @@ main.about {
 .aboutSection h1 {
   margin-bottom: 28px;
 }
-.aboutSection img {
-  width: 100%;
+.aboutSection .portrait-frame {
   aspect-ratio: 1;
-  object-fit: cover;
   margin-bottom: 26px;
 }
 .aboutSection p {
@@ -34,7 +32,7 @@ main.about {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  .aboutSection img {
+  .aboutSection .portrait-frame {
     max-width: 430px;
   }
   .accordions {

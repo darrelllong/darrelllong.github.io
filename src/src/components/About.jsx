@@ -2,6 +2,7 @@
 import React from "react";
 // Components
 import Accordion from "./Accordion";
+import Portrait from "./Portrait";
 // Styles
 import "../assets/css/about.scss";
 
@@ -39,7 +40,7 @@ export default function About() {
       <section className="aboutSection dottedBorder">
         <p className="eyebrow">Biography</p>
         <h1>Darrell D. E. Long</h1>
-        <img src="/DLong.avif" alt="Darrell Long" />
+        <Portrait />
         <p>
           Dr. Darrell D. E. Long is a Distinguished Visiting Scholar at Santa
           Clara University and is Distinguished Professor of Engineering,

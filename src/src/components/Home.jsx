@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../ContextProvider";
 import { getAllPosts } from "../utils/blogLoader";
 import { formatPostDate } from "../utils/dateUtils";
+import Portrait from "./Portrait";
 import "../assets/css/home.scss";
 
 export default function Home() {
@@ -52,13 +53,7 @@ export default function Home() {
           </div>
         </div>
         <figure className="intro-portrait">
-          <img
-            src="/DLong.avif"
-            alt="Darrell Long"
-            width="640"
-            height="640"
-            fetchPriority="high"
-          />
+          <Portrait />
           <figcaption>
             <span>Fellow, IEEE</span>
             <span>Fellow, AAAS</span>

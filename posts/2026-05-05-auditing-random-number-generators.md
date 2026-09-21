@@ -11,7 +11,7 @@ The library handles details that affect the results of a computation: bias when 
 
 ## PRNGs and Reproducibility
 
-The simulation generators include PCG32 and PCG64, xoshiro256\*\* and xoroshiro128\*\*, SFC64, JSF64, and MT19937. They implement the same `Rng` interface. The `Seedable` trait supplies construction from explicit seed bytes, expansion of a 64-bit seed with SplitMix64, and seeding from the operating system.
+The simulation generators include PCG32 and PCG64, the star-star variants of xoshiro256 and xoroshiro128, SFC64, JSF64, and MT19937. They implement the same `Rng` interface. The `Seedable` trait supplies construction from explicit seed bytes, expansion of a 64-bit seed with SplitMix64, and seeding from the operating system.
 
 A fixed seed makes an experiment reproducible:
 

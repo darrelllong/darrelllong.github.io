@@ -47,14 +47,6 @@
   align-self: center;
   position: relative;
 }
-.intro-portrait img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 4.5;
-  object-fit: cover;
-  object-position: center 30%;
-  filter: saturate(0.82);
-}
 .intro-portrait figcaption {
   display: flex;
   justify-content: space-between;
@@ -225,9 +217,6 @@
   .intro-portrait {
     width: 100%;
     max-width: 430px;
-  }
-  .intro-portrait img {
-    aspect-ratio: 5 / 4;
   }
   .intro-links {
     gap: 20px;

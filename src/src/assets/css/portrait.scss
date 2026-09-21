@@ -1,0 +1,19 @@
+.portrait-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 8 / 9;
+  overflow: hidden;
+}
+
+.portrait-frame img {
+  // Frame a 960 × 1080 area starting at (160, 300) in the photograph's
+  // oriented 1368 × 1824 proportions. The original pixels stay intact.
+  position: absolute;
+  top: 0;
+  left: -16.6667%;
+  display: block;
+  width: 142.5%;
+  max-width: none;
+  height: auto;
+  transform: translateY(-16.4474%);
+}
