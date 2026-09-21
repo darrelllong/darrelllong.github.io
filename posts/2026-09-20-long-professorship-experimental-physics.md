@@ -15,7 +15,7 @@ Elaine and I endowed the Darrell D. E. Long and Elaine N. Long Family Professors
 
 I wanted to be a scientist as a child. Growing up during Apollo, and watching programs such as *Mr. Wizard*, I was drawn to the possibility of understanding the physical world through experiments. That interest has remained with me throughout my career.
 
-I have also held a visiting position at CERN, served in JASON, and advised on nuclear security and the national laboratories. The [Physics Department's account of the endowment](https://physics.ucsc.edu/give/darrell-and-elaine-long/) describes its connection to our interests in science, education, and mentorship.
+I was an Associate Member of CERN from 2016 to 2019. My scientific advisory work has included JASON, the University of California President’s Council on the National Laboratories, and National Research Council committees concerned with technology and national security. I also served as vice-chair and then chair of the University of California Committee on Research Policy. These appointments are documented in my [curriculum vitae](https://darrelllong.github.io/cv.pdf).
 
 ## What the Support Makes Possible
 
@@ -29,6 +29,6 @@ In the [university's October 2025 announcement](https://news.ucsc.edu/2025/10/lo
 
 ## Elaine and I
 
-Elaine and I met as children in El Cajon. I fell in love with her when I was nine, although I was too shy to tell her. We went on to lead separate lives, found each other again in 2014, and married in 2016. The professorship bears both our names and reflects our shared commitment to science and education.
+Elaine and I [met as children in El Cajon](https://physics.ucsc.edu/give/darrell-and-elaine-long/). I fell in love with her when I was nine, although I was too shy to tell her. We went on to lead separate lives, found each other again in 2014, and married in 2016. The professorship bears both our names and reflects our shared commitment to science and education.
 
-We also support an annual UCSC prize for the best doctoral dissertation in experimental physics, selected by a committee of experimentalists. The prize recognizes completed work; the professorship helps support the work still to be done.
+In 2022, Elaine and I established annual UCSC dissertation prizes in both experimental engineering and experimental physics. The [first engineering prize](https://engineering.ucsc.edu/news/alison-tang-wins-dissertation-prize/) went to Alison Tang for her dissertation on alternative RNA processing in cancers. The [physics prize](https://physics.ucsc.edu/give/student-awards-and-prizes/) recognizes the best doctoral dissertation in experimental physics; its 2022 recipient was Patrick LaBarre, whose dissertation concerned topology and the development of an apparatus for measuring non-local conductivity. The professorship continues our support for experimental research at UCSC.
