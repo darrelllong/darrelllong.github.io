@@ -8,7 +8,9 @@ async function loadPosts() {
   if (postsPromise) return postsPromise;
 
   postsPromise = (async () => {
-    const res = await fetch("/posts/index.json");
+    // Revalidate the archive after a deployment; a cached index can hide
+    // a new post even when its generated page is already available.
+    const res = await fetch("/posts/index.json", { cache: "no-cache" });
     if (!res.ok) throw new Error("Unable to load the blog archive.");
     const index = await res.json();
     postsCache = index.sort((a, b) => b.date.localeCompare(a.date));
@@ -31,7 +33,7 @@ export async function getPostBySlug(slug) {
   const meta = posts.find((p) => p.slug === slug);
   if (!meta) return null;
 
-  const res = await fetch(`/posts/${slug}.md`);
+  const res = await fetch(`/posts/${slug}.md`, { cache: "no-cache" });
   if (!res.ok) return null;
 
   const raw = await res.text();
