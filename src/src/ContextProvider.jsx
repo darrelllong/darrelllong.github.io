@@ -28,8 +28,10 @@ export const ContextProvider = ({ children }) => {
   const [errors, setErrors] = React.useState({});
 
   React.useEffect(() => {
+    // GitHub Pages caches JSON for ten minutes. Revalidate it so a newly
+    // deployed page does not display the previous catalog's content.
     const fetchJson = (url) =>
-      fetch(url).then((response) => {
+      fetch(url, { cache: "no-cache" }).then((response) => {
         if (!response.ok) {
           throw new Error(`Failed to fetch ${url}: ${response.status}`);
         }

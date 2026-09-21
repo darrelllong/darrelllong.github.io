@@ -111,6 +111,10 @@ paragraph previously removed.
 * Publication search correctly distinguishes the two different Horus papers.
   Empty contact-form submission displays field errors. No contact message was
   sent, so end-to-end email delivery was not tested.
+* A live browser check exposed stale publication JSON despite a newly deployed
+  page. Publication and patent fetches now revalidate their HTTP cache, matching
+  the existing blog and consultancy behavior. This prevents GitHub Pages'
+  ten-minute JSON cache lifetime from hiding corrections after a reload.
 * Download results: 227 external PDFs and fifteen local PDFs; three reachable
   non-PDF destinations (National Academies reader, Google Books record, and
   REINAS bibliography); one restricted publisher destination; one citation-only
