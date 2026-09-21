@@ -5,8 +5,10 @@ Date: September 21, 2026. Starting commit:
 
 The owner's subsequent request to inspect doctoral students and descendants
 is addressed in the [academic genealogy audit](academic-genealogy-audit.md).
-It adds MGP's dated count of 23 students and 41 total descendants to the
-biography and records stale advising information found in the CV.
+It records MGP's observed 23 students and 41 total descendants, stale advising
+information in the CV, and the owner's subsequent correction to **24 completed
+Ph.D. students**, including Kyle Fredrickson. The biography uses the corrected
+count, not the incomplete database count.
 
 ## What the earlier review missed
 
@@ -31,16 +33,27 @@ The [conference service audit](conference-service-audit.md) records a complete
 tally of the CV's conference-service section, the additional primary sources,
 and the resulting correction to the professional-service section.
 
+That correction gave conference work disproportionate attention while
+leaving national service compressed into a generic sentence. The next review
+read the employment, consulting, government-service, professional-society,
+university-service, and system-wide-service sections as complete passages
+(CV PDF pages 1–2 and 30–38), rather than treating search matches as the
+evidence. The page now gives national service a substantive section ahead
+of conferences. The owner also requested a summary before the chronological
+body and corrected the completed-doctorate count.
+
 ## Revision
 
-The page now begins with education and early career: the 1984 B.S., immediate
+The page begins with a summary of Long's affiliations, research, mentoring,
+and scientific service. Education and early career begin the body: the 1984 B.S., immediate
 appointment as a lecturer in mathematics at SDSU, lecturing in computer science
 at UCSD during doctoral study, and the 1986 M.S. and 1988 Ph.D. The narrative
 then follows the 1988 UCSC appointment into laboratory building, research,
 SSRC, and CRSS. Teaching and mentoring receive their own substantive section.
-Professional service and later career close the biography, ending with the
-2023 retirement and current affiliations. Four visible sections, including
-the opening education section, replace the previous six-topic arrangement.
+National service and research policy receive a separate section before
+professional service and later career. The body has five visible sections,
+beginning with education. Current affiliations appear in the opening summary;
+the conclusion records the 2023 retirement and emeritus center directorships.
 
 The revision adds the centers' dates and Long's directorships, explains how
 CRSS built on SSRC, includes the campus's sole NSF I/UCRC distinction, and
@@ -70,6 +83,11 @@ same biography.
 | Undergraduate-to-doctorate paths of Alexandra Holloway and Aleatha Parker-Wood; supportive lab environment | [UCSC's March 10, 2016 profile](https://news.ucsc.edu/2016/03/women-computer-science/). The article's seven women graduates over five years were advised by Long **or Miller**. That combined figure is not attributed to Long alone, nor used as his lifetime total. No student's gender is inferred from a name or photograph. |
 | Chancellor's Achievement Award for Diversity, 2011 | [University's June 1, 2011 recipients announcement](https://news.ucsc.edu/2011/06/achievement-awards-diversity-recipients/), corroborated by the 2016 profile. |
 | Teaching programming, data structures, operating systems, and cryptography; doctoral supervision | CV's teaching record, PDF pages 39–51, and mentoring record, pages 52–53. The later [academic genealogy audit](academic-genealogy-audit.md) supplies MGP's dated student and descendant counts and identifies stale CV entries. Center membership is not equated with Long's personal advising. |
+| 24 completed doctoral students; Burns and Amer as examples of the next generation | Owner's explicit correction, including Kyle Fredrickson, supersedes MGP's lagging 23-student count. The MGP link supports the lineage examples, not the number 24. The public paragraph omits Golding as requested and does not assert an updated descendant total. See the [genealogy audit](academic-genealogy-audit.md). |
+| Burns's endowed department headship at Johns Hopkins | [Hopkins's faculty profile](https://www.cs.jhu.edu/faculty/randal-burns/) names him Bill and Lisa Stromberg Head of the Department of Computer Science. The owner identifies the position as endowed. The biography identifies the named headship and institution, rather than describing him only as another advisor in a database. |
+| Three graduates became tenured faculty: Yeh, Amer, and Burns | Owner's firsthand statement supplies tenure status. [Fu Jen's faculty record](https://researchinfo.fju.edu.tw/professors/1632), [Santa Clara's profile](https://www.scu.edu/engineering/faculty/amer-ahmed/), and the Hopkins profile establish their institutions and faculty roles; faculty rank alone is not treated as independent proof of tenure. |
+| Holloway led Curiosity's flight software team at JPL | The biography on PDF page 12 of the JPL-hosted 2023 paper [These Wheels Are Made for Arc-ing](https://www-robotics.jpl.nasa.gov/media/documents/Wheels_Made_for_Arcing.pdf#page=12) explicitly identifies her as flight software team lead for Curiosity. The public wording is “has since led,” without inventing an appointment date or claiming she alone wrote the rover's software. |
+| Other graduates became leaders in industrial research | Owner's firsthand account. The text does not invent employer names, current job titles, or a complete alumni directory. The student-career examples extend the mentoring narrative without replacing the national-service section. |
 | FAST founder and first program chair; inaugural meeting in January 2002 | [USENIX FAST 2002 archive](https://www.usenix.org/legacy/events/fast02/) and CV conference-service record. The CV's 2001 planning/program-chair entry is not used as the meeting date. |
 | WMCSA founding general chair, 1994; journal editorships, 2010–2016 and 2017–2020 | CV conference service and editorial duties, including PDF page 31 for the editorships. |
 | Breadth of program and steering committee work; founding MASCOTS steering membership and decades of service; MASCOTS and MSST chair roles | [Conference service audit](conference-service-audit.md), including the CV tally, the owner's firsthand corrections, the official MASCOTS 2019 organizers page, and the MSST 2026 call for papers. Annual role entries are distinguished from unique conferences and lifetime totals. |
@@ -78,6 +96,11 @@ same biography.
 | Associate deanships, 1998–2001 and 2004–2010 | CV, PDF page 1; university's 2005 chair announcement corroborates the latter role. |
 | UC research-policy vice-chair, 2001–2002, and chair, 2002–2003 | CV, PDF page 38. |
 | JASON, UC President's Council, and National Research Council service | CV consulting, professional-service, and system-wide-service records, including PDF pages 31 and 38. These now appear in the biography's relevant service section. The unrelated paragraph is not restored to the physics essay. |
+| JASON beginning in 2002 | CV, PDF page 31. [UCSC's 2019 appointment announcement](https://news.ucsc.edu/2019/01/long-appointment/) independently confirms JASON service and describes its scientific-advice role. The year comes from the CV, not the announcement. |
+| National Academies work on technology assessment, defense warning, and intelligence | CV's complete Government Service section, PDF pages 34–35, including TIGER, the Defense Intelligence Agency technology-forecast committee, the defense-warning committee, and ISTEG. The [UCSC directory biography](https://directory.ucsc.edu/cd_detail?uid=darrell) corroborates these named roles. The public text describes the work without reproducing every committee name. A National Academies report found during research lists Long as a reviewer; it is not misrepresented as a committee appointment. |
+| Los Alamos and Lawrence Livermore oversight; Sandia and Pacific Northwest advisory/review work | CV, PDF pages 34–35 and 38. The university directory and 2019 announcement corroborate national-laboratory and scientific-advisory work. No claim is made that all roles were simultaneous or remain current. |
+| Academic Council's Special Committee on Laboratory Issues | CV, PDF page 38: 2011–2016 and 2020–2023. The [2022–2023 annual report](https://senate.universityofcalifornia.edu/_files/committees/acscoli/acscoli-annual-report-2022-23.pdf) lists Long among its members. No continuous 2011–2023 term is asserted. |
+| Joined the Institute for Defense Analyses Board of Trustees in 2025 | CV, PDF page 1. The IDA homepage returned HTTP 404 during this review, so no independent current board roster was verified. The page states the documented 2025 appointment and does not link readers to the inaccessible homepage. |
 
 ## Checks recorded for the preceding revision
 
@@ -139,13 +162,45 @@ same biography.
 
 ## Verification of the conference-service follow-up
 
-The latest revision contains 791 words and retains the four-section,
+The revision at `3ab8b7ca` contains 791 words and retains the four-section,
 education-first structure. Conference leadership is described in connected
 prose; the detailed role counts and chronology stay in the separate
 [conference service audit](conference-service-audit.md). Lint, content
 validation, the production build, and desktop/narrow-screen browser
 inspection passed. The earlier 695-word count above describes the preceding
-revision, not the current page.
+revision. Both counts describe historical versions, not the current page.
+
+## Verification of the summary, national-service, and student-career revision
+
+- The complete rendered biography contains 999 words. A single summary
+  paragraph precedes the body. Its five body headings are education and
+  early career; UCSC research and laboratory life; teaching and mentoring;
+  national service and research policy; and professional service and later
+  career. The first body paragraph retains the 1984 mathematics lectureship
+  immediately after the B.S.; UCSD lecturing remains explicit.
+- National service has three paragraphs before the conference material,
+  covering JASON, National Academies advisory work, national-laboratory
+  oversight, UC research policy, and the 2025 IDA trusteeship. Conference
+  leadership remains concise and does not displace that account.
+- The mentoring section states 24 completed doctoral students and includes
+  the graduates' substantive careers. Golding is absent from the rendered
+  biography. Neither 23 students nor 41 descendants is presented as the
+  current total.
+- Lint, content validation, and the final production build passed. Catalog
+  and route totals are unchanged. The generated and browser-rendered About
+  descriptions agree and now include national service.
+- The final source destinations for Burns, Amer, Yeh, and Holloway were
+  read and checked against the rendered links. Holloway's link opens the
+  official JPL PDF at the biography page. The two added national-service
+  sources were also read directly.
+- Desktop inspection at 1280 pixels confirmed the opening summary,
+  portrait, education-first body, mentoring, and national-service sections.
+  The portrait loaded and the browser reported no console errors.
+- At 320 pixels, the summary and the final mentoring and national-service
+  text wrap within the page. Both body sections are 272 pixels wide with
+  16-pixel paragraph text; document width equals viewport width, with no
+  horizontal overflow. The temporary viewport override was reset.
+
 
 ## Relation to the wider audit
 

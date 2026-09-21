@@ -3,7 +3,26 @@
 Checked September 21, 2026, at the owner's request, following biography
 revision `9204f7e01f6abe282ea519158f0d364cb3f68987`.
 
-## Finding and biography change
+## Current biography and owner's correction
+
+The owner subsequently confirmed **24 completed Ph.D. students**, including
+Kyle Fredrickson, whose MGP entry had not yet been added. The biography now
+uses 24, based on that firsthand correction. The MGP link documents academic
+lineage rather than serving as the source for the updated count. The public
+text now connects the count to the graduates' careers, including the three
+tenured faculty identified by the owner: Randal Burns, Ahmed Amer, and
+Tsozen Yeh. It also describes Alexandra Holloway's Curiosity flight-software
+leadership. The career sources are recorded in the [biography audit](biography-audit.md).
+The page does not publish a new total of descendants by
+adding one to an incomplete database count.
+
+The following tables preserve the database's observed state on September 21,
+2026. They are historical evidence, not a claim that the 23 listed names
+constitute the complete advising record. No MGP submission or CV PDF change
+was made. The owner supplies the completion correction for Kyle; no degree
+year is invented from the CV's 2020 entry, which is a year of entry.
+
+## Original finding and biography change
 
 The [Mathematics Genealogy Project record for Darrell Long](https://www.mathgenealogy.org/id.php?id=10794)
 lists **23 doctoral students and 41 academic descendants in total**. The 41
@@ -13,11 +32,11 @@ one of Ahmed Amer, and one of Richard Golding. Thus 23 + 16 + 1 + 1 = 41.
 The three branch pages were read directly, and their counts and names agree
 with Long's record. No third generation is recorded on those branch pages.
 
-The biography now names the database, dates its count to September 2026,
-and explains that Long's students have themselves supervised doctoral
-research. The heading is now “Education, teaching, and mentoring.” This adds
+The first genealogy revision named the database, dated its count to September
+2026, and explained that Long's students have themselves supervised doctoral
+research. Its heading was “Education, teaching, and mentoring.” This added
 substance that the earlier generic description of supervision omitted.
-It reports the database's documented lineage, without presenting MGP as a
+It reported the database's documented lineage, without presenting MGP as a
 complete census of every student or later descendant.
 
 The general web reader could not retrieve the MGP record. The actual pages
@@ -88,8 +107,8 @@ names. MGP adds four names to that table: Bel, Hughes, Barker, and Xie.
 
 The biography does not repeat the stale continuing-student claim. The CV PDF
 itself has not been edited; updating its advising tables remains a separate
-source-document correction. The MGP count is explicitly attributed and dated
-rather than asserted as a verified lifetime total.
+source-document correction. The original MGP count was explicitly attributed
+and dated; the current page uses the owner's corrected total as explained above.
 
 ## Verification
 

@@ -83,7 +83,7 @@ export default function Main() {
           }
           description={
             collection === "about"
-              ? "Darrell Long’s biography: education, early lecturing, storage research at UC Santa Cruz, the SSRC and CRSS, and doctoral mentoring."
+              ? "Darrell Long’s biography: education, storage research, the SSRC and CRSS, doctoral mentoring, national service, and research leadership."
               : collection === "consultancy"
               ? "Technical consulting and expert witness services in computer science from Darrell Long and Pentexoire Consulting."
               : undefined

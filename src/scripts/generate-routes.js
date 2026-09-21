@@ -74,7 +74,7 @@ const staticRoutes = [
     path: "about",
     title: "About",
     description:
-      "Darrell Long’s biography: education, early lecturing, storage research at UC Santa Cruz, the SSRC and CRSS, and doctoral mentoring.",
+      "Darrell Long’s biography: education, storage research, the SSRC and CRSS, doctoral mentoring, national service, and research leadership.",
   },
   {
     path: "publications",

@@ -12,10 +12,12 @@ and CRSS, and CRSS's distinction as the campus's only NSF I/UCRC. It also
 records what the earlier review missed and the evidence for the revision.
 The [editorial queue](editorial-queue.md) is complete.
 The subsequent [academic genealogy audit](academic-genealogy-audit.md) documents
-23 MGP-listed doctoral students and 41 total academic descendants, the new
-mentoring paragraph, and stale advising entries found in the CV PDF.
+23 MGP-listed doctoral students and 41 total academic descendants at the time
+of inspection, the owner's correction to 24 completed doctoral students,
+and stale advising entries found in the CV PDF.
 The biography audit also records the owner's further correction of the page's
-structure and the missing early lecturing and laboratory mentoring history.
+structure, the missing early lecturing and laboratory mentoring history,
+restored national service, and the graduates' academic and research careers.
 
 The [field-by-field change ledger](correctness-changes.json) records the
 previous and corrected values, source destinations, and hashes of the five

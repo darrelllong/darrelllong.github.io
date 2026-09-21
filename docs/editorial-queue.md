@@ -66,3 +66,20 @@ general-chair and steering work. Following the owner's clarification, the
 public text is a connected narrative; detailed counts and dates remain in
 the audit report. Lint, content validation, the production build, and
 desktop/narrow-screen browser checks passed.
+
+## Opening summary, national service, and completed Ph.D. count
+
+Reopened September 21, 2026 at the owner's request. Restore a summary before
+the body, with education first in the body. Give national service its own
+substantive treatment before conference leadership, based on complete CV
+sections and university records. Use the owner's corrected total of 24
+completed doctoral students, including Kyle Fredrickson, and revise the
+named lineage examples. Include the graduates' substantive achievements:
+Burns's endowed department headship, Holloway's Curiosity flight-software
+leadership, three tenured faculty, and careers leading industrial research.
+
+Status: complete. The summary and education-first body, substantive national
+service, corrected doctorate count, and student-career examples are in place.
+Source review, lint, content validation, the final production build, and
+desktop/narrow-screen browser checks passed. The [biography audit](biography-audit.md)
+records the evidence and limits of the checks.
