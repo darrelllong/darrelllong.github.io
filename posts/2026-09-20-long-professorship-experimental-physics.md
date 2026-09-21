@@ -15,8 +15,6 @@ Elaine and I endowed the Darrell D. E. Long and Elaine N. Long Family Professors
 
 I wanted to be a scientist as a child. Growing up during Apollo, and watching programs such as *Mr. Wizard*, I was drawn to the possibility of understanding the physical world through experiments. That interest has remained with me throughout my career.
 
-I was an Associate Member of CERN from 2016 to 2019. My scientific advisory work has included JASON, the University of California President’s Council on the National Laboratories, and National Research Council committees concerned with technology and national security. I also served as vice-chair and then chair of the University of California Committee on Research Policy. These appointments are documented in my [curriculum vitae](https://darrelllong.github.io/cv.pdf).
-
 ## What the Support Makes Possible
 
 I learned the value of flexible research funding as the holder of the Kumar Malavalli chair. It paid for equipment, servers for graduate students, and an administrative assistant who helped several faculty members. That assistance sustained the ordinary work of a research group over many years. Restricted project grants do not cover every need. The professorship gives its holder some of the latitude that made a difference to my own work.
