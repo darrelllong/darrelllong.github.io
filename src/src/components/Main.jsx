@@ -78,7 +78,7 @@ export default function Main() {
         <PageMetadata
           title={
             location.pathname === "/"
-              ? "Dr. Darrell Long | UC Santa Cruz"
+              ? "Dr. Darrell D. E. Long"
               : `${{ about: "About", publications: "Publications", patents: "Patents", blog: "Blog", consultancy: "Consultancy" }[collection] || "Dr. Darrell Long"} | Dr. Darrell Long`
           }
           description={

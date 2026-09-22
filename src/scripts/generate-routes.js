@@ -36,7 +36,7 @@ function escapeAttr(str) {
 function injectMeta(html, { title, description, canonicalUrl }) {
   const fullTitle = title
     ? `${title} | Dr. Darrell Long`
-    : "Dr. Darrell Long | UC Santa Cruz";
+    : "Dr. Darrell D. E. Long";
   const desc = truncate(description);
   const injection = [
     `<title>${escapeAttr(fullTitle)}</title>`,
