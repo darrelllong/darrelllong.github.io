@@ -23,9 +23,13 @@ In 2016, my student Dr. Elliot (Yan) Li and I, along with Dr. Ethan Miller and Y
 
 Pilot reports an estimate and its uncertainty under its statistical model, with a stopping rule specified before inspecting a favorable result. The source is at [github.com/darrelllong/pilot-bench](https://github.com/darrelllong/pilot-bench), a fork of the [original](https://github.com/ascar-io/pilot-bench) that I have brought up to date with current versions of CMake and Boost and that can be built without the text interface for use in scripts.
 
-Pilot contains no new statistics. The methods are in Ferrari's 1978 textbook, *Computer Systems Performance Evaluation*, and in the statistical literature. What Pilot does is apply them in the correct order while the benchmark is running, so that the person running the experiment does not have to remember to. The mathematics follows.
+Pilot contains no new statistics. The methods are in Ferrari's 1978 textbook, *Computer Systems Performance Evaluation*, and in the statistical literature. What Pilot does is apply them in the correct order while the benchmark is running, so that the person running the experiment does not have to remember to.
 
 ## The Mathematics
+
+I show the mathematics so that students who read this post can understand why things are as they are. Being told to use a tool, or being told that ten runs are too few, teaches nothing. A student who knows where the formulas come from can tell when they apply and when they do not. These methods are old: Student's paper was published in 1908, Welch's in 1947, and Ferrari's book in 1978. Our field does not seem to learn from its past, and so it is doomed to reinvent it.
+
+The sections follow the order in which Pilot works: the confidence interval, the effect of autocorrelation and its remedy, the number of samples required, the treatment of rates and proportions, the removal of warm-up and cool-down phases, the regression used when a workload reports only a total, and the comparison of two results.
 
 ### The Confidence Interval
 
@@ -37,7 +41,7 @@ $$
 
 where $t^{*}_{n-1}$ is the $1 - \alpha/2$ quantile of Student's $t$ distribution with $n - 1$ degrees of freedom. The width shrinks as $1/\sqrt{n}$, so halving it costs four times the samples.
 
-A single number such as "100 MB/s" carries no $C$. The reader cannot tell whether the next run would give 99 or 60.
+A single number such as "100 MB/s" carries no $C$. The reader cannot tell whether the mean is known to within 1 MB/s or to within 40.
 
 ### Autocorrelation
 
@@ -53,9 +57,37 @@ $$
 \operatorname{Var}(\bar{x}) = \frac{\sigma^2}{n}\left[\,1 + 2\sum_{k=1}^{n-1}\left(1 - \frac{k}{n}\right)\rho_k\right]
 $$
 
-The bracket equals 1 when the samples are independent, and then we recover $\sigma^2/n$. If the correlation decays geometrically, $\rho_k = \rho^k$, the bracket tends to $(1 + \rho)/(1 - \rho)$ for large $n$. At $\rho = 0.5$ the variance of the mean is three times what the independent formula reports, and the correct interval is $\sqrt{3} \approx 1.7$ times wider than the one you would have published. At $\rho = 0.8$ the interval is three times wider, and a thousand samples carry the information of about $1000 \cdot (1 - \rho)/(1 + \rho) \approx 111$ independent ones. At $\rho = 0.1$ the error in the width is about ten percent. Ferrari treats $\lvert\rho_1\rvert \le 0.1$ as negligible, and Pilot's strictest setting uses that threshold.
+Call the bracket $\gamma_n$. When the samples are uncorrelated, $\gamma_n = 1$ and the variance is $\sigma^2/n$, as the confidence interval assumed. Otherwise the standard deviation of $\bar{x}$ is $\sigma\sqrt{\gamma_n/n}$, and an interval built on $\sigma/\sqrt{n}$ has the wrong width by the factor $\sqrt{\gamma_n}$.
 
-Collecting more correlated samples narrows the computed interval without narrowing the real one by the same amount. The result looks more precise than it is.
+The *effective sample size* is the number $n_{\text{eff}}$ of uncorrelated samples whose mean would have the same variance as the mean of the $n$ correlated ones:
+
+$$
+\frac{\sigma^2}{n_{\text{eff}}} = \operatorname{Var}(\bar{x}) \qquad\Longrightarrow\qquad n_{\text{eff}} = \frac{n}{\gamma_n}
+$$
+
+To obtain numbers we need a model of the correlation. Take the first-order autoregressive process, for which $\rho_k = \rho^k$ with $0 \le \rho < 1$. The sum can be evaluated exactly:
+
+$$
+\gamma_n = 1 + 2\left[\frac{\rho}{1 - \rho} - \frac{\rho\,(1 - \rho^n)}{n\,(1 - \rho)^2}\right] \;\longrightarrow\; \gamma = \frac{1 + \rho}{1 - \rho} \qquad (n \to \infty)
+$$
+
+For $n = 1000$ and $\rho = 0.8$ this gives $\gamma_n = 8.96$ and $n_{\text{eff}} = 1000/8.96 \approx 112$. The mean of those thousand samples has the variance that the mean of 112 uncorrelated samples would have.
+
+The consequence for the confidence interval can be stated as a coverage probability. For large $n$ the mean is approximately normal, and an interval computed at the nominal 95% level from the uncorrelated formula contains the true mean with probability $2\,\Phi\!\left(1.96/\sqrt{\gamma}\right) - 1$, where $\Phi$ is the standard normal distribution function:
+
+| $\rho$ | $\gamma$ | $\sqrt{\gamma}$ | $n_{\text{eff}}/n$ | Coverage of the nominal 95% interval |
+|---|---|---|---|---|
+| 0 | 1 | 1 | 1 | 95.0% |
+| 0.1 | 1.22 | 1.11 | 0.82 | 92.4% |
+| 0.2 | 1.50 | 1.22 | 0.67 | 89.0% |
+| 0.5 | 3.00 | 1.73 | 0.33 | 74.2% |
+| 0.8 | 9.00 | 3.00 | 0.11 | 48.6% |
+
+At $\rho = 0.8$ the interval reported as 95% contains the true mean less than half the time. The factor $\sqrt{\gamma}$ does not depend on $n$: the computed width and the correct width both shrink as $1/\sqrt{n}$, and their ratio stays fixed, so collecting more samples does not correct the error.
+
+These figures take $\sigma$ as known. The sample variance is itself biased when the samples are positively correlated, since $\operatorname{E}[s^2] = \sigma^2\,(n - \gamma_n)/(n - 1) < \sigma^2$, which narrows the computed interval further. The bias is of order $1/n$; for the example above the factor is 0.992.
+
+Ferrari treats $\lvert\rho_1\rvert \le 0.1$ as negligible, and Pilot's strictest setting uses that threshold.
 
 ### Subsession Analysis
 
@@ -65,7 +97,7 @@ $$
 y_j = \frac{1}{q}\sum_{i=(j-1)q+1}^{jq} x_i, \qquad j = 1, \ldots, h
 $$
 
-Each $y_j$ covers a longer span of time, so neighboring batches share less state than neighboring samples do. Pilot estimates the lag-1 autocorrelation of the batches,
+The covariance of two adjacent batch means is $q^{-2}\sum_{k=1}^{2q-1}\min(k,\,2q-k)\,\sigma^2\rho_k$, which is at most $q^{-2}\sigma^2\sum_k k\,\lvert\rho_k\rvert$, while the variance of a batch mean is $\sigma^2\gamma_q/q$. If $\sum_k k\,\lvert\rho_k\rvert$ is finite and $\gamma_q$ is bounded away from zero, the lag-1 autocorrelation of the batch means is therefore of order $1/q$ and can be made as small as required by taking $q$ large enough. For the autoregressive process with $\rho = 0.8$ it is 0.80 at $q = 1$, 0.36 at $q = 8$, and 0.08 at $q = 32$. Pilot estimates the lag-1 autocorrelation of the batches,
 
 $$
 \hat{\rho}_1(q) = \frac{\sum_{j=1}^{h-1}(y_j - \bar{x})(y_{j+1} - \bar{x})}{\sum_{j=1}^{h}(y_j - \bar{x})^2}
@@ -77,7 +109,7 @@ $$
 s_q^2 = \frac{1}{h-1}\sum_{j=1}^{h}(y_j - \bar{x})^2, \qquad C = 2\, t^{*}_{h-1}\, \frac{s_q}{\sqrt{h}}
 $$
 
-The price is a smaller sample, $h$ batches instead of $n$ readings, but the batches can be treated as independent and the readings could not.
+The interval now rests on $h$ batch means in place of $n$ readings. What has been established about those batch means is that their estimated lag-1 autocorrelation is within the limit. That is a weaker condition than independence, which the test does not establish.
 
 ### How Many Samples
 
@@ -93,18 +125,18 @@ $$
 h^{*} = \left\lceil \left(\frac{2\, t^{*} c_v}{p}\right)^{2} \right\rceil
 $$
 
-At 95% confidence, with the large-sample value $t^{*} \approx 1.96$, the required number of independent samples is:
+The quantile depends on $h$, so the requirement is the smallest $h$ for which $h \ge (2\,t^{*}_{h-1}\,c_v/p)^2$. At 95% confidence:
 
 | Coefficient of variation $c_v$ | Width 10% of mean ($\pm 5\%$) | Width 2% of mean ($\pm 1\%$) |
 |---|---|---|
-| 5% | 4 | 97 |
-| 10% | 16 | 385 |
-| 25% | 97 | 2,401 |
-| 50% | 385 | 9,604 |
+| 5% | 7 | 99 |
+| 10% | 18 | 387 |
+| 25% | 99 | 2,404 |
+| 50% | 387 | 9,607 |
 
-The smallest entries are underestimates, because $t^{*}$ is larger when there are few degrees of freedom; the 4 is closer to 7. These are counts of independent samples. If the data are correlated, multiply by $q$.
+The entries count batch means. The number of raw samples is $q$ times greater.
 
-This table is the answer to the question I asked at FAST. Ten runs are enough when the coefficient of variation is 5% and an interval of $\pm 5\%$ will do. With a coefficient of variation of 25%, ten runs are short by a factor of ten. A paper that claims a 2% improvement on a system that noisy needs more than two thousand independent samples, and ten runs cannot support the claim at all.
+This table is the answer to the question I asked at FAST. Ten runs are enough when the coefficient of variation is 5% and an interval of $\pm 5\%$ will do. With a coefficient of variation of 25%, the same interval requires 99. To report the mean of that system to within $\pm 1\%$ requires 2,404.
 
 Both $s_q$ and $q$ are estimated from the data, so Pilot recomputes $h^{*}$ after every round. It also enforces a minimum sample size, so that a few early samples that happen to agree cannot end the session.
 
@@ -121,6 +153,8 @@ Pilot uses the harmonic mean for any quantity declared as a ratio. For a quantit
 $$
 C = 2\, t^{*}_{h-1} \sqrt{\frac{\hat{p}\,(1 - \hat{p})}{h}}
 $$
+
+This is the normal approximation to the binomial distribution. It is inaccurate when $h$ is small or when $\hat{p}$ is near 0 or 1.
 
 ### Warm-up and Cool-down
 
@@ -157,7 +191,7 @@ $$
 \frac{w}{T} = \frac{v}{1 + \alpha v / w}
 $$
 
-which underestimates $v$ whenever $\alpha > 0$ and approaches it only as $w$ grows without bound. That is the reason people are told to run benchmarks for a long time, and the reason they cannot say how long is long enough.
+which underestimates $v$ whenever $\alpha > 0$. The relative error is $\alpha v/(w + \alpha v)$, and holding it below $\varepsilon$ requires $w \ge \alpha v\,(1 - \varepsilon)/\varepsilon$. Running the benchmark longer does reduce the error, but the length required depends on $\alpha$ and $v$, which are the unknowns.
 
 Given $h$ rounds $(w_j, T_j)$, grouped into subsessions first if they are autocorrelated, ordinary least squares gives
 
@@ -177,7 +211,7 @@ $$
 \frac{1}{\hat{\beta} + \delta} \;\le\; v \;\le\; \frac{1}{\hat{\beta} - \delta}
 $$
 
-It is not symmetric about $\hat{v}$. If the relationship between work and time is not linear, or the overhead varies from round to round, the residuals are large and the interval is wide, so a violated assumption shows up in the result.
+This requires $\hat{\beta} - \delta > 0$; otherwise the data do not bound the rate from above. The interval is not symmetric about $\hat{v}$. If the relationship between work and time is not linear, or the overhead varies from round to round, the residuals are large and the interval is wide, so a violated assumption shows up in the result.
 
 The slope is well determined only if the work amounts are spread out, since $\sum_j (w_j - \bar{w})^2$ is in the denominator of the standard error. Pilot spreads them across the permitted range and refines the spacing as rounds accumulate. Rounds too short to contain a stable phase are excluded. To produce a first estimate quickly, Pilot sizes the early rounds so that each is $k$ seconds longer than the one before. If the first round takes $s$ seconds, then $n$ rounds take
 
@@ -209,7 +243,15 @@ $$
 n_B^{*} = \frac{s_B^2}{\left(d / t^{*}\right)^2 - s_A^2 / n_A}
 $$
 
-A small difference $d$ demands a large sample, as it should. If the denominator is not positive, the baseline is too imprecise for any number of new samples to separate the two.
+If the denominator is not positive, no number of new samples is sufficient, because the uncertainty in the baseline alone exceeds what the required $p$ allows.
+
+Consider two systems with the same standard deviation $s$, each measured with $n$ samples. Write $c_v = s/\bar{x}_A$ and $\varepsilon = \lvert d \rvert/\bar{x}_A$. Setting $\lvert t \rvert = t^{*}$ gives
+
+$$
+n = 2\left(\frac{t^{*} c_v}{\varepsilon}\right)^{2}
+$$
+
+For $c_v = 25\%$ and $\varepsilon = 2\%$, with the large-sample value $t^{*} = 1.96$, this is 1,201 samples from each system. That is the sample size at which an observed difference of exactly 2% reaches $p = 0.05$. If the true difference is 2%, the observed difference is smaller than 2% with probability one half, and the test then fails. For the test to succeed with probability $1 - \beta$, replace $t^{*}$ with $t^{*} + z_{\beta}$, where $z_\beta$ is the $1 - \beta$ quantile of the standard normal distribution. For a probability of 80%, $z_\beta = 0.84$ and $n$ is 2,453 from each system. Ten runs of each cannot establish a 2% improvement on such a system.
 
 ### Presets
 
@@ -221,7 +263,7 @@ Pilot packages these requirements as presets. Each can be overridden individuall
 | `normal` | $\pm 0.2$ | 10% of mean | 50 | 10 s |
 | `strict` | $\pm 0.1$ | 10% of mean | 200 | 20 s |
 
-The `quick` preset is for iteration while developing. Its autocorrelation limit is lenient, and by the calculation above it can understate the width of the interval considerably. The `strict` preset follows Ferrari's threshold.
+The `quick` preset is for iteration while developing. If the samples it accepts follow the autoregressive model above with $\rho$ at its limit of 0.8, the interval is too narrow by a factor of three; at the `normal` limit of 0.2, by a factor of 1.22. The `strict` preset follows Ferrari's threshold.
 
 ## Using Pilot on Real Code
 
@@ -258,3 +300,11 @@ The statistical methods are well established, and tools such as Pilot are freely
 Do it right, or do not do it.
 
 *Expanded in September 2026 with the mathematics behind Pilot and an account of its use in my other repositories.*
+
+## References
+
+- Student. "The Probable Error of a Mean." *Biometrika*, 6(1):1–25, 1908.
+- B. L. Welch. "The Generalization of 'Student's' Problem when Several Different Population Variances are Involved." *Biometrika*, 34(1–2):28–35, 1947.
+- Domenico Ferrari. *Computer Systems Performance Evaluation*. Prentice-Hall, Englewood Cliffs, New Jersey, 1978.
+- Nicholas A. James, Arun Kejariwal, and David S. Matteson. "Leveraging Cloud Data to Mitigate User Experience from 'Breaking Bad'." [arXiv:1411.7955](https://arxiv.org/abs/1411.7955), 2014.
+- Yan Li, Yash Gupta, Ethan L. Miller, and Darrell D. E. Long. "[Pilot: A Framework that Understands How to Do Performance Benchmarks the Right Way](/publications/127)." In *Proceedings of the Twenty-fourth International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS 2016)*, London, September 2016. IEEE.
