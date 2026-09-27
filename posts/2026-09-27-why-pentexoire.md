@@ -2,7 +2,7 @@
 title: "Why Pentexoire"
 date: "2026-09-27"
 tags: ["history", "literature", "life"]
-excerpt: "A search for a one-word domain name led to a medieval kingdom, a forged letter, and the hope of an ally beyond the known world."
+excerpt: "A search for a one-word domain name led to Pentexoire, a part of the kingdom of Prester John in the Travels of Sir John Mandeville."
 ---
 
 ![An imagined gathering in Prester John's land: a skiapod shades himself with his enormous foot beside a headless blemmya and a long-eared panotian; a cyclops, unicorn, and gold-guarding ants appear nearby, with a river of stones in the distant valley.](/images/pentexoire.png)
@@ -11,7 +11,7 @@ excerpt: "A search for a one-word domain name led to a medieval kingdom, a forge
 
 I wanted a single-word domain name. That is difficult. Most recognizable words have already been taken, and adding numbers or inventing a spelling rather defeats the purpose. I found mine in the Middle Ages.
 
-*The Travels of Sir John Mandeville* is a splendid read, and Umberto Eco's *Baudolino* is my favorite book. Both take us into the land of Prester John, the Christian priest and king whose kingdom lay somewhere beyond Persia in the medieval imagination. Pentexoire is one part of those extensive dominions. At the end of chapter XXIX, Mandeville introduces the name:
+*The Travels of Sir John Mandeville* is a splendid read, and Umberto Eco's *Baudolino* is my favorite book. Both concern the land of Prester John, the Christian priest and king whose kingdom lay somewhere beyond Persia in the medieval imagination. Pentexoire is one part of those extensive dominions. At the end of chapter XXIX, Mandeville introduces the name:
 
 > And men clepe his realm the isle of Pentexoire.
 
@@ -25,7 +25,7 @@ Mandeville's book belongs to the fourteenth century, but [the legend of Prester 
 
 Around 1165, a letter began circulating in Europe purporting to come from this ruler. It was addressed to the Byzantine emperor Manuel I Komnenos. The *Letter of Prester John* was a forgery. Its author is unknown; its Latin form and political concerns point to a Western European setting, often associated with the German lands. The precise place of composition and the author's purpose remain disputed.
 
-The [letter itself](https://blackcentraleurope.com/sources/1000-1500/a-letter-from-prester-john-ca-1165-1170/) is splendidly immodest. Seventy-two kings pay tribute to its author. His land possesses extraordinary wealth, fabulous animals, and a river that carries stones instead of water. He promises to lead an immense army to the Holy Sepulchre. He also lectures Manuel on his mortality and questions his religious orthodoxy. In the letter, the eastern monarch belittles the emperor in Constantinople.
+The [letter itself](https://blackcentraleurope.com/sources/1000-1500/a-letter-from-prester-john-ca-1165-1170/) is immodest. Seventy-two kings pay tribute to its author. His land possesses extraordinary wealth, fabulous animals, and a river that carries stones instead of water. He promises to lead an immense army to the Holy Sepulchre. He also lectures Manuel on his mortality and questions his religious orthodoxy.
 
 Mandeville gives us plenty to see in those dominions. In [chapter XXX](https://www.gutenberg.org/files/782/782-h/782-h.htm#page178), there is a Gravelly Sea, whose sand and gravel rise and fall in waves without any water. Fish live in it nonetheless. A river carries precious stones and great rocks into that sea, also without water. It runs three days each week, when no one dares enter; on the other days it can be crossed. Nearby, trees emerge from the ground at sunrise, grow and bear fruit before noon, then shrink back into the earth by sunset. His palace at Susa has crystal windows, tables of emerald and amethyst, and gems that light the rooms at night.
 
@@ -35,7 +35,7 @@ Eco puts the medieval bestiary into *Baudolino*. On the journey toward Prester J
 
 The inhabitants have plenty to argue about. Their [different Christian doctrines](https://journals.sagepub.com/doi/10.1177/0096144220910139) matter far more to them than their different bodies: the skiapods are Arians, the blemmyae Adoptionists, and the giants Artotyrites, who use bread and cheese in their Eucharist. The illustration above gathers some of the wonders of these two books, with the river of stones in the distance.
 
-For more on these marvelous peoples, John Block Friedman's [*The Monstrous Races in Medieval Art and Thought*](https://www.jstor.org/stable/j.ctv170x50r) is an excellent source. He traces their place in art, literature, and thought from antiquity through the Middle Ages and into the age of exploration.
+For more on these peoples, John Block Friedman's [*The Monstrous Races in Medieval Art and Thought*](https://www.jstor.org/stable/j.ctv170x50r) is an excellent source. He traces their place in art, literature, and thought from antiquity through the Middle Ages and into the age of exploration.
 
 The wonders help explain why the letter was so widely read. It described a Christian kingdom with fabulous creatures, inexhaustible riches, and an enormous army, and a society without poverty or robbery. A king who read it would think of an ally, a priest of a Christian people beyond the countries he knew, and anyone else of a land where life was better. Beginning in the twelfth century, the story spread through courts and religious houses, and [vernacular versions and romances carried it to a wider lay audience](https://www.jstor.org/stable/jj.18163682), who could hear it told as well as read it.
 
@@ -45,7 +45,7 @@ The central proposition would have comforted a hard-pressed Christian ruler in t
 
 I was recently at Saint-Denis, where the [funerary monuments of Clovis and Charles Martel](https://www.tourisme93.com/basilique/plan-tombeaux-basilique.html) recall the earlier centuries of this history. Clovis, king of the Franks, accepted Catholic Christianity under the influence of his wife Clotilde; his baptism is traditionally dated to 496. [Gregory of Tours tells the story](https://sourcebooks.web.fordham.edu/source/gregory-clovisconv.asp), including Clovis's battlefield promise to convert if Christ granted him victory. Charles Martel—Chuck the Hammer—defeated an invading Umayyad army at the [Battle of Tours in 732](https://en.wikipedia.org/wiki/Battle_of_Tours). The rulers who heard of Prester John in the twelfth century had their own wars to fight.
 
-The Seljuk victory at [Manzikert in 1071](https://en.wikipedia.org/wiki/Battle_of_Manzikert) helped open Byzantine Anatolia to Turkish conquest and settlement. In 1144, Zengi captured Edessa, the first of the crusader states to fall. The expedition launched in response, the [Second Crusade](https://www.worldhistory.org/Second_Crusade/), failed. The prospect of a powerful ally to the east would have been welcome after those defeats.
+The Seljuk victory at [Manzikert in 1071](https://en.wikipedia.org/wiki/Battle_of_Manzikert) helped open Byzantine Anatolia to Turkish conquest and settlement. In 1144, Zengi captured Edessa, the first of the crusader states to fall. The expedition launched in response, the [Second Crusade](https://www.worldhistory.org/Second_Crusade/), failed.
 
 Pecheneg and Cuman horsemen had attacked the Byzantine frontier from the eastern steppe. The [Pechenegs were defeated again in 1122](https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CP%5CE%5CPechenegs.htm), within the lifetime of men who first heard the Prester John story.
 
@@ -54,7 +54,5 @@ On Europe's northern and eastern frontiers, Christian rulers also fought pagan p
 Manuel faced Norman attacks from Sicily as well as rivalry with the German emperor Frederick Barbarossa. His wars and diplomacy also involved Hungary, Serbia, and the crusader principalities. [The record of his reign](https://en.wikipedia.org/wiki/Manuel_I_Komnenos) shows how many frontiers he had to defend.
 
 To borrow the largely invented scripture Samuel L. Jackson recites in *Pulp Fiction*, “[The path of the righteous man is beset on all sides](https://en.wikiquote.org/wiki/Pulp_Fiction#Dialogue).” Those kings were beset on all sides, and here was news of a powerful friend beyond their enemies.
-
-The hostile power on your frontier would have to worry about its own frontier. Beyond it was a king who could afford to help, whose soldiers were numerous, and who shared your faith.
 
 Pentexoire gave me the single-word domain name I wanted, and a connection to two books I love.
