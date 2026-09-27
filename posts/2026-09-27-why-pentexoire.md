@@ -51,7 +51,7 @@ On Europe's northern and eastern frontiers, Christian rulers also fought pagan p
 
 Manuel faced Norman attacks from Sicily as well as rivalry with the German emperor Frederick Barbarossa. His wars and diplomacy also involved Hungary, Serbia, and the crusader principalities. [The record of his reign](https://en.wikipedia.org/wiki/Manuel_I_Komnenos) shows how many frontiers he had to defend.
 
-To borrow the largely invented scripture Samuel L. Jackson recites in *Pulp Fiction*, “[The path of the righteous man is beset on all sides](https://www.avary.com/content/PulpFictionScreenplay.pdf).” Those kings were beset on all sides, and here was news of a powerful friend beyond their enemies.
+To borrow the largely invented scripture Samuel L. Jackson recites in *Pulp Fiction*, “[The path of the righteous man is beset on all sides](https://en.wikiquote.org/wiki/Pulp_Fiction#Dialogue).” Those kings were beset on all sides, and here was news of a powerful friend beyond their enemies.
 
 The hostile power on your frontier would have to worry about its own frontier. Beyond it was a king who could afford to help, whose soldiers were numerous, and who shared your faith.
 
