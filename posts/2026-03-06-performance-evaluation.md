@@ -211,7 +211,7 @@ $$
 \frac{1}{\hat{\beta} + \delta} \;\le\; v \;\le\; \frac{1}{\hat{\beta} - \delta}
 $$
 
-This requires $\hat{\beta} - \delta > 0$; otherwise the data do not bound the rate from above. The interval is not symmetric about $\hat{v}$. If the relationship between work and time is not linear, or the overhead varies from round to round, the residuals are large and the interval is wide, so a violated assumption shows up in the result.
+This requires $\hat{\beta} - \delta > 0$. Otherwise the interval on the slope contains zero and the data do not bound the rate from above; Pilot then reports $\hat{v}$ with no interval and continues to run rounds. The interval is not symmetric about $\hat{v}$. If the relationship between work and time is not linear, or the overhead varies from round to round, the residuals are large and the interval is wide, so a violated assumption shows up in the result.
 
 The slope is well determined only if the work amounts are spread out, since $\sum_j (w_j - \bar{w})^2$ is in the denominator of the standard error. Pilot spreads them across the permitted range and refines the spacing as rounds accumulate. Rounds too short to contain a stable phase are excluded. To produce a first estimate quickly, Pilot sizes the early rounds so that each is $k$ seconds longer than the one before. If the first round takes $s$ seconds, then $n$ rounds take
 
@@ -223,7 +223,7 @@ for a time budget $B$.
 
 ### Comparing Two Results
 
-Most performance claims are comparisons: system A against system B, or this commit against the last. If the two confidence intervals do not overlap, the conclusion is immediate. If they overlap, Pilot uses Welch's test, which does not assume that the two samples have equal variances or equal sizes. With means $\bar{x}_A$ and $\bar{x}_B$, subsession variances $s_A^2$ and $s_B^2$, and subsession sample sizes $n_A$ and $n_B$,
+Most performance claims are comparisons: system A against system B, or this commit against the last. If the two confidence intervals do not overlap, the conclusion is immediate. If they overlap, the test to use is Welch's, which does not assume that the two samples have equal variances or equal sizes, and which Pilot implements. With means $\bar{x}_A$ and $\bar{x}_B$, subsession variances $s_A^2$ and $s_B^2$, and subsession sample sizes $n_A$ and $n_B$,
 
 $$
 t = \frac{\bar{x}_A - \bar{x}_B}{\sqrt{\dfrac{s_A^2}{n_A} + \dfrac{s_B^2}{n_B}}}
@@ -237,7 +237,7 @@ $$
 
 and the two-sided $p$-value is $p = 2\,F_\nu(-\lvert t \rvert)$, where $F_\nu$ is the cumulative distribution function of Student's $t$ with $\nu$ degrees of freedom.
 
-The same expression tells Pilot how long to keep measuring B against a baseline A that has already been measured. Let $d = \bar{x}_A - \bar{x}_B$ and let $t^{*}$ be the critical value for the required $p$. Requiring $\lvert t \rvert \ge t^{*}$ and solving for $n_B$,
+The same expression tells Pilot how long to keep measuring B against a baseline A that has already been measured, which is the form of comparison that the library carries out on its own. Let $d = \bar{x}_A - \bar{x}_B$ and let $t^{*}$ be the critical value for the required $p$. Requiring $\lvert t \rvert \ge t^{*}$ and solving for $n_B$,
 
 $$
 n_B^{*} = \frac{s_B^2}{\left(d / t^{*}\right)^2 - s_A^2 / n_A}
