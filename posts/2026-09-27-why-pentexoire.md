@@ -37,7 +37,7 @@ Islamic expansion and invasion were concrete military realities. The Seljuk vict
 
 The threats also came from other directions. Pecheneg and Cuman horsemen had attacked the Byzantine frontier from the eastern steppe. The [Pechenegs were defeated again in 1122](https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CP%5CE%5CPechenegs.htm), within the lifetime of men who first heard the Prester John story. These were among the peoples whom the settled empires described as barbarians. An eastern frontier could bring a new invading army as readily as a merchant caravan.
 
-Pagan peoples also remained on Europe's northern and eastern frontiers. The [Wendish Crusade of 1147](https://en.wikipedia.org/wiki/Wendish_Crusade), directed against pagan Slavs along the Baltic, belongs to the same period as the first reports of Prester John. These were Slavic peoples, rather than surviving Germanic tribes; the older Germanic kingdoms had largely become Christian.
+On Europe's northern and eastern frontiers, Christian rulers also fought pagan peoples. In the [Wendish Crusade of 1147](https://en.wikipedia.org/wiki/Wendish_Crusade), Saxon and Danish forces attacked the pagan Slavs along the Baltic, while other crusaders marched toward the Holy Land.
 
 Nor did Christian neighbors guarantee security. Manuel faced Norman attacks from Sicily as well as rivalry with the German emperor Frederick Barbarossa. His wars and diplomacy also involved Hungary, Serbia, and the crusader principalities. [The record of his reign](https://en.wikipedia.org/wiki/Manuel_I_Komnenos) makes it clear how many directions an emperor had to watch.
 
