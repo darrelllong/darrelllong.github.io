@@ -158,13 +158,30 @@ This is the normal approximation to the binomial distribution. It is inaccurate 
 
 ### Warm-up and Cool-down
 
-Most systems take time to reach a steady state, and multi-threaded workloads slow down at the end as threads finish. Samples from those phases do not belong in an estimate of steady-state performance. When the workload supplies a reading for each unit of work, Pilot locates the phases with E-Divisive with Medians (EDM), a change-point method due to James, Kejariwal, and Matteson. EDM assumes no particular distribution. For a candidate change-point that separates adjacent segments of lengths $a$ and $b$ with medians $\tilde{x}_L$ and $\tilde{x}_R$, the score is
+Most systems take time to reach a steady state, and multi-threaded workloads slow down at the end as threads finish. Samples from those phases do not belong in an estimate of steady-state performance, so Pilot looks for the places where the level of the readings changes. It does so in two steps.
+
+The first step proposes change-points. For a split of $n$ readings after the first $\tau$, with means $\bar{x}_L$ and $\bar{x}_R$ on the two sides, the split reduces the sum of squared deviations by
 
 $$
-\frac{a\,b}{(a + b)^2}\,\left(\tilde{x}_L - \tilde{x}_R\right)^2
+\frac{\tau\,(n - \tau)}{n}\,\left(\bar{x}_L - \bar{x}_R\right)^2
 $$
 
-Dynamic programming finds the set of change-points with the greatest total score, and an additional change-point is accepted only if it raises the total by a fixed fraction, 25% by default. Medians keep a few outliers from producing a spurious change-point.
+The split with the greatest reduction is a candidate. The same is done to each side, and again, until the sides are too short to split. No segment may be shorter than 30 readings.
+
+The second step keeps a candidate only if the segments on its two sides differ. The readings are merged into subsession means, as for the confidence interval, and the subsession means of the two segments are compared by the rank-sum test of Wilcoxon and of Mann and Whitney. Let the smaller segment have $k$ subsession means and the other $m$. All $k + m$ are ranked together, and $U$ is the sum of the ranks of the $k$ less its least possible value, $k(k+1)/2$. If the segments do not differ, every choice of $k$ ranks among $k + m$ is equally likely, and the number of choices with $U = u$ is the coefficient of $x^u$ in the Gaussian binomial coefficient:
+
+$$
+\binom{k+m}{k}_{\!x} = \prod_{i=1}^{k} \frac{1 - x^{m+i}}{1 - x^{i}}, \qquad
+P(U \le u) = \frac{1}{\binom{k+m}{k}} \sum_{j=0}^{u}\, [x^j] \binom{k+m}{k}_{\!x}
+$$
+
+Pilot computes this probability exactly. When many of the subsession means are equal, as they are when the readings are the 0 and 1 of a success rate, they have no ranks, and Pilot uses Fisher's exact test on the two classes of lower and higher values. The candidate with the largest $p$-value is removed and its neighbors are tested again, until every candidate that remains has $p \le \alpha/n$ with $\alpha = 0.01$. The division by $n$ is there because the candidate was placed where the two sides differ most, which is a choice among about $n$ places.
+
+The exact distribution is necessary. The smallest $p$-value that $k$ values among $k + m$ can produce is $2/\binom{k+m}{k}$, which for 3 among 100 is $1.2 \times 10^{-5}$. Approximations by the normal or the $t$ distribution do not have this limit: for 3 values that are all below 97 others, Welch's test applied to the ranks gives $p = 5 \times 10^{-31}$. Autocorrelated readings wander, and a short excursion amounts to two or three subsession means, so a test that relies on such an approximation reports excursions as changes.
+
+A test of this kind assumes that the subsession means are independent, which is only approximately true, so its error rates have to be measured and cannot be read from $\alpha$. In 1,000 samples each of 100 to 3,000 readings that contain no change, a change-point was reported in at most 0.7% of the samples of independent readings, whether normal, exponential, lognormal, Cauchy, or taking only the values 0 and 1, and in at most 2.0% of the samples of a first-order autoregressive process with $\rho$ of 0.5, 0.8, or 0.9. A session applies the test repeatedly as readings arrive, which gives it more than one opportunity to err: in 1,000 sessions of 1,000 rounds each, a change-point was reported at some round in at most 3.1% of the sessions of independent readings and in 11% to 23% of those of the autoregressive process. Most of these do not last; one was still present at the last round in at most 0.7% of sessions. A warm-up of 50 readings among 500 that is lower by one standard deviation was found in 96% to 97% of the samples with independent noise. With $\rho = 0.8$ a warm-up lower by two standard deviations was found in 15% of the samples. The effective sample size of 50 such readings, as defined above, is $50 \cdot (1 - \rho)/(1 + \rho) \approx 6$.
+
+Until September 2026 Pilot used E-Divisive with Medians, the method of James, Kejariwal, and Matteson that our paper describes. As Pilot applied it, a change-point was accepted if it raised the goodness of fit by 25% of its previous value. The value before the first change-point is zero, so the first change-point was always accepted. In 200 samples each of 60, 100, 300, and 1,000 independent readings that contained no change, it reported a change-point in every sample. Pilot does not use the readings before the last change-point, so a session that needed more than about 60 readings was left with the most recent 30 to 60, and a session under the strictest preset, which requires 200, could not finish. The defect was found by giving the method readings whose answer was known. The numbers above come from a program in Pilot's repository that does the same for the method that replaced it.
 
 Pilot then takes the stable phase to be the longest segment, and requires it to contain more than half of the samples. If no segment qualifies, Pilot discards the unit readings from that round and says so; it does not guess.
 
@@ -304,6 +321,9 @@ Do it right, or do not do it.
 ## References
 
 - Student. "The Probable Error of a Mean." *Biometrika*, 6(1):1–25, 1908.
+- R. A. Fisher. *Statistical Methods for Research Workers*, fifth edition. Oliver and Boyd, Edinburgh, 1934.
+- Frank Wilcoxon. "Individual Comparisons by Ranking Methods." *Biometrics Bulletin*, 1(6):80–83, 1945.
+- H. B. Mann and D. R. Whitney. "On a Test of Whether One of Two Random Variables Is Stochastically Larger than the Other." *Annals of Mathematical Statistics*, 18(1):50–60, 1947.
 - B. L. Welch. "The Generalization of 'Student's' Problem when Several Different Population Variances are Involved." *Biometrika*, 34(1–2):28–35, 1947.
 - Domenico Ferrari. *Computer Systems Performance Evaluation*. Prentice-Hall, Englewood Cliffs, New Jersey, 1978.
 - Nicholas A. James, Arun Kejariwal, and David S. Matteson. "Leveraging Cloud Data to Mitigate User Experience from 'Breaking Bad'." [arXiv:1411.7955](https://arxiv.org/abs/1411.7955), 2014.
