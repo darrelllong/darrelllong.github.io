@@ -7,7 +7,7 @@ excerpt: "A search for a one-word domain name led to a medieval kingdom, a forge
 
 ![An imagined gathering in Prester John's land: a skiapod shades himself with his enormous foot beside a headless blemmya and a long-eared panotian; a cyclops, unicorn, and gold-guarding ants appear nearby, with a river of stones in the distant valley.](/images/pentexoire.png)
 
-*An imagined scene combining creatures from Mandeville and Umberto Eco's Baudolino. AI-generated illustration.*
+*An imagined scene combining creatures from Mandeville and Umberto Eco's Baudolino.*
 
 I wanted a single-word domain name. That is difficult. Most recognizable words have already been taken, and adding numbers or inventing a spelling rather defeats the purpose. I found mine in the Middle Ages.
 
