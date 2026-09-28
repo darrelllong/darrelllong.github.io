@@ -148,7 +148,15 @@ $$
 \bar{x}_H = \frac{n w}{\sum_{i=1}^{n} w/x_i} = \frac{n}{\sum_{i=1}^{n} 1/x_i}
 $$
 
-Pilot uses the harmonic mean for any quantity declared as a ratio. For a quantity that is 0 or 1 on each trial, such as whether a request met its deadline, the mean is a proportion $\hat{p}$ and the width is
+Pilot uses the harmonic mean for any quantity declared as a ratio, and finds its interval from the reciprocals $y_i = 1/x_i$. Their mean $\bar{y} = 1/\bar{x}_H$ is an arithmetic mean, to which everything above applies. If $d$ is the half-width of the interval for $\bar{y}$, the interval for the rate is
+
+$$
+\left[\frac{1}{\bar{y} + d},\ \frac{1}{\bar{y} - d}\right]
+$$
+
+which is not symmetric about $\bar{x}_H$, and which has no upper end when $d \ge \bar{y}$. A rate must therefore be positive. Until September 2026 Pilot did not do this: the function that declares a quantity did not store the method of its mean, so every rate was averaged arithmetically. The arithmetic mean of rates is greater than their harmonic mean unless they are all equal, so every throughput that Pilot reported was overstated. The defect was found when my repositories were run again with the revised Pilot.
+
+For a quantity that is 0 or 1 on each trial, such as whether a request met its deadline, the mean is a proportion $\hat{p}$ and the width is
 
 $$
 C = 2\, t^{*}_{h-1} \sqrt{\frac{\hat{p}\,(1 - \hat{p})}{h}}
