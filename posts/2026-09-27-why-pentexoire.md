@@ -5,7 +5,7 @@ tags: ["history", "literature", "life"]
 excerpt: "A search for a one-word domain name led to Pentexoire, a part of the kingdom of Prester John in the Travels of Sir John Mandeville."
 ---
 
-![An imagined gathering in Prester John's land: a skiapod shades himself with his enormous foot beside a headless blemmya and a long-eared panotian; a cyclops, unicorn, and gold-guarding ants appear nearby, with a river of stones in the distant valley.](/images/pentexoire.png)
+![An imagined gathering in Prester John's land: a skiapod shades himself with his enormous foot beside a headless blemmya and a long-eared panotian; a cyclops, unicorn, and gold-guarding ants appear nearby, with a river of stones in the distant valley.](/images/pentexoire-corrected.png)
 
 *An imagined scene combining creatures from Mandeville and Umberto Eco's Baudolino.*
 
