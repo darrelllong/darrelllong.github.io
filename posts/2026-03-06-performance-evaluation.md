@@ -290,7 +290,7 @@ Pilot packages these requirements as presets. Each can be overridden individuall
 
 The `quick` preset is for iteration while developing. If the samples it accepts follow the autoregressive model above with $\rho$ at its limit of 0.8, the interval is too narrow by a factor of three; at the `normal` limit of 0.2, by a factor of 1.22. The `strict` preset follows Ferrari's threshold.
 
-Until September 2026 the limits of `quick` and `normal`, and a limit given with `--ac`, were not used for the readings: Pilot always chose the subsession size with the limit of `strict`, 0.1, so every preset behaved as `strict` does. The presets now do what the table says.
+Until September 2026 the autocorrelation limits of `quick` and `normal`, and a limit given with `--ac`, were not used for the readings: Pilot always chose their subsession size with the limit of `strict`, 0.1. The other requirements of each preset were in effect. Results obtained then met the stricter limit. The presets now do what the table says.
 
 ## Using Pilot on Real Code
 
