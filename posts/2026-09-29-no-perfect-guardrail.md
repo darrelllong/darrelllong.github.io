@@ -428,3 +428,5 @@ $$
 Undecidability supplies none of those three numbers. A sound guard has $\sigma=0$; the price, for an undecidable policy over the unrestricted domain, is rejecting permitted outputs. The theorem does not force us to admit a dangerous output. It rules out obtaining soundness and full permissiveness together for such a policy.
 
 For any fixed $\alpha\sigma>0$, the lower bound $\alpha\sigma\lambda$ grows without limit as the consequence $\lambda$ grows. If a failure has infinite loss and positive probability, its expected loss is infinite. “Effectively infinite” is a judgment that a consequence is beyond what we are willing or able to accept; we should not turn that judgment into permission for an unexplained small failure probability. This argument also applies to accidental failures: any event with positive probability $\epsilon$ and loss at least $\lambda$ contributes at least $\epsilon\lambda$ to expected loss.
+
+![Alan Turing, Kurt Gödel, and Johnny von Neumann line dancing in party hats, in black and white.](/images/turing-godel-von-neumann-line-dance.png)

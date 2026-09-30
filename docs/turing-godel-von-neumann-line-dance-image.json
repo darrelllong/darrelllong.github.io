@@ -1,0 +1,7 @@
+{
+  "asset": "images/turing-godel-von-neumann-line-dance.png",
+  "created": "2026-09-29",
+  "generator": "Built-in image_gen tool",
+  "description": "Imagined black-and-white photograph of Alan Turing, Kurt Gödel, and John von Neumann line dancing in party hats.",
+  "prompt": "Use case: style-transfer\nAsset type: closing photograph for the blog essay No Perfect Guardrail\nEdit target: the supplied imagined photograph of Alan Turing, Kurt Gödel, and John 'Johnny' von Neumann line dancing in party hats.\nChange only the photographic treatment: convert the entire image to true monochrome black and white, with natural silver-gelatin print tonality, subtle mid-century film grain, gentle highlight rolloff, and the believable contrast of a late-1940s or early-1950s indoor photograph. Neutral gray tones throughout; no color tint and no sepia.\nPreserve the exact three identities and their facial features, expressions, dance poses, full-body framing, clothing, party hats, wooden floor, room, background objects, and composition. Keep all hats, hands, and shoes fully visible. Do not add, remove, or reposition anything. No captions, lettering, borders, watermarks, artificial scratches, or exaggerated aging."
+}
