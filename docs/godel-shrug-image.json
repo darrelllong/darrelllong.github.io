@@ -1,0 +1,7 @@
+{
+  "asset": "images/godel-shrug.png",
+  "created": "2026-09-29",
+  "generator": "Built-in image_gen tool",
+  "description": "Imagined photorealistic portrait, not an archival photograph.",
+  "prompt": "Use case: historical-scene\nAsset type: wide hero illustration for a technical blog essay about the impossibility of perfect LLM guardrails.\nPrimary request: A photorealistic imagined portrait of Kurt Gödel, the Austrian logician, shrugging his shoulders like the shrug emoji: both shoulders visibly raised, both elbows bent, both open hands held palm-up at shoulder height, with a quietly bemused, resigned expression.\nSubject: Gödel in his middle age, recognizable narrow face, high forehead, neatly combed dark hair with receding temples, round wire-rimmed spectacles, clean-shaven, wearing a period-appropriate dark suit, white shirt and tie.\nScene/backdrop: a simple softly out-of-focus mid-century academic study, understated and uncluttered.\nStyle/medium: photorealistic black-and-white editorial portrait with subtle film grain, believable skin and wool fabric texture, natural window light. An imagined scene, not a reproduction of a real archival photograph.\nComposition/framing: landscape 3:2, waist-up, face near the center, leave ample room around both fully visible hands so the shrug silhouette is instantly readable, direct eye contact.\nConstraints: anatomically natural arms and hands with five fingers each; no text, no logos, no watermark, no extra people; avoid caricature and cartoon styling."
+}

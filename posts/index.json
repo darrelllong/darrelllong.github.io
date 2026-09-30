@@ -1,5 +1,17 @@
 [
   {
+    "slug": "2026-09-29-no-perfect-guardrail",
+    "title": "No Perfect Guardrail",
+    "date": "2026-09-29",
+    "tags": [
+      "research",
+      "artificial-intelligence",
+      "security",
+      "computability"
+    ],
+    "excerpt": "The mathematical limits of LLM guardrails, the risks of letting models act, and the people who must answer when safeguards fail."
+  },
+  {
     "slug": "2026-09-27-why-pentexoire",
     "title": "Why Pentexoire",
     "date": "2026-09-27",

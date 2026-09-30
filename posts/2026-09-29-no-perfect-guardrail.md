@@ -1,0 +1,430 @@
+---
+title: "No Perfect Guardrail"
+date: "2026-09-29"
+tags: ["research", "artificial-intelligence", "security", "computability"]
+excerpt: "The mathematical limits of LLM guardrails, the risks of letting models act, and the people who must answer when safeguards fail."
+---
+
+![An imagined photorealistic portrait of Kurt Gödel shrugging, with both shoulders raised and his palms turned upward.](/images/godel-shrug.png)
+
+*Kurt Gödel, imagined with an appropriate response to a promise of perfect guardrails.*
+
+I do not regard “we will add guardrails” as an adequate answer to the risks of giving an LLM authority to act. Some of the desired guarantees are mathematically impossible.
+
+A guardrail for a large language model is usually another piece of software. The model generates an answer, the guardrail checks it, and the answer is either released or blocked. The hope is that a sufficiently capable checker will permit the good answers and prevent the bad ones.
+
+For some definitions of good and bad, a checker can do exactly that. For others, no such checker exists. More training data, a larger model, and another round of reinforcement learning cannot produce an algorithm for an undecidable problem. Nothing can.
+
+By *perfect*, I mean a filter that always finishes, blocks every forbidden output, and passes every permitted output across an unrestricted domain. Blocking everything is easy. The difficulty is deciding, correctly every time, what to let through.
+
+The distinction matters when an LLM is allowed to move money, execute commands, or operate machinery. If the downside of an action is effectively infinite, “the guardrail almost always works” cannot justify granting that authority. The dangerous action has to be prevented, even at the cost of refusing useful work. I do not see another honest option.
+
+There are three cases: rules about an output's form, rules about what it does when executed, and rules about its effects on a person. The Mathematics, at the end, has the proofs, with the notation explained along the way.
+
+## Three Cases
+
+### (i) Explicit Rules
+
+Suppose you forbid a finite list of words or phrases. A program can check an answer against that list and give the correct verdict every time. It can also enforce a prescribed format, check a length limit, or require an answer to match a string or sequence of symbols from a fixed list. A finite list of permitted responses is a regular language: Type 3 in the hierarchy below. These guarantees cover exactly the rules you wrote down.
+
+A rule can be completely precise while being expensive to check. It can be precise and still have no checking procedure that always finishes. Writing down the rules, generating strings that obey them, and deciding whether an arbitrary string obeys them are separate tasks.
+
+The [Chomsky hierarchy](https://www.sciencedirect.com/science/article/pii/S0019995859903626) classifies grammars and the sets of strings they generate. It concerns syntax; by itself, it supplies no account of what those strings mean. Treat the permitted outputs as a formal language: a set of strings. Then ask whether a proposed output belongs to that set.
+
+| Rules describing the language | What the checker must handle | Membership |
+| --- | --- | --- |
+| Type 3: regular | Finite-state patterns, including a finite list of permitted responses or banned phrases | A fixed finite automaton checks an output in linear time. |
+| Type 2: context-free | Recursive structure, such as arbitrarily nested parentheses | Decidable; general parsing has cubic-time algorithms, and important restricted classes can be parsed in linear time. |
+| Type 1: context-sensitive | More general dependencies, such as equal counts in strings of the form $a^n b^n c^n$ | Decidable; an exhaustive check may explore exponentially many computation states. |
+| Type 0: unrestricted | Rules with the expressive power of arbitrary computation | Recognizable: a program can confirm every yes, but may run forever on a no. Undecidable in general. |
+
+These bounds treat the grammar as fixed and measure the length of the output. The cubic parsing algorithms are due to [Younger](https://www.sciencedirect.com/science/article/pii/S001999586780007X) and [Earley](https://dl.acm.org/doi/10.1145/362007.362035); [Knuth](https://www.sciencedirect.com/science/article/pii/S0019995865904262) gives linear-time parsing for an important restricted class. The context-sensitive bound follows by counting the possible states of the linear-bounded machines studied by [Kuroda](https://www.sciencedirect.com/science/article/pii/S0019995864901202). In the third row, $a^n b^n c^n$ means $n$ copies of $a$, followed by $n$ copies of $b$ and then $n$ copies of $c$. That particular language is easy to check; the expense arises elsewhere in the general class.
+
+Type 0 is where “it might take a very long time” becomes “there is no algorithm that always finishes with the correct answer.” You can systematically enumerate the strings generated by an unrestricted grammar. If your string belongs, it will eventually appear. If it does not, the search may continue forever. A deterministic enumeration is still an enumeration. There is no signal that says never.
+
+A perfectly enforced ban on a word guarantees the absence of that word. It says nothing by itself about a paraphrase or an encoded instruction carrying the same meaning. Semantics enters with questions about what an output means, whether a claim is true, or what an instruction does. Formal “context-sensitive” grammars do not supply an understanding of a conversation or its participants. For messages addressed to people, meaning is only part of the problem.
+
+Even the precise rule “reject every false statement of arithmetic and accept every true one” is undecidable when arithmetic includes addition and multiplication. The proof below uses [Gödel's incompleteness theorem](https://link.springer.com/article/10.1007/BF01700692). Requiring a checkable proof can establish truth within a specified sound formal system, but some true statements will remain outside what that system can prove.
+
+### (ii) Programs and Instructions
+
+An LLM can produce source code, a script, or instructions that another system interprets. The question is what they will do when they run. Checking their spelling and grammar will not answer it.
+
+Suppose you have a filter that always decides whether an arbitrary program will ever delete a protected file. Give it the source code below to inspect. This is the program being judged, not the filter:
+
+```text
+run an arbitrary program P on input x in isolation, without external effects
+if P finishes:
+    delete the protected file
+```
+
+I put the deletion there on purpose. Halting is not itself forbidden; deleting the file is. This particular program makes deletion depend on whether $P$ finishes on input $x$. Under the rule “never delete this file,” the filter has to make these decisions:
+
+| What $P$ does on input $x$ | What the submitted program does | Correct filter verdict |
+| --- | --- | --- |
+| Finishes | Reaches the deletion command and deletes the file | Block the program. |
+| Runs forever | Keeps running $P$ without touching the file | Permit the program. |
+
+The filter must decide before allowing the submitted program to run. It might try simulating the program in a test environment, where a deletion cannot affect the actual file. Seeing the deletion would settle the question. Waiting without seeing it would not: the program might reach it later or run forever. In a language where deletion requires an explicit command in the source, blocking every program containing that command would prevent deletion. It would also reject programs that never reach the command. In languages that can construct or fetch commands while running, even that source check is insufficient.
+
+To give the correct verdict in both rows, the filter must decide whether $P$ halts on $x$. Since $P$ and $x$ can be any program and input, this would solve the halting problem. [Turing's result](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf) rules that out.
+
+[Rice's theorem](https://www.ams.org/journals/tran/1953-074-02/S0002-9947-1953-0053041-6/S0002-9947-1953-0053041-6.pdf) gives the broader result for nontrivial properties of what arbitrary programs compute: properties some programs have and others do not. The Mathematics below follows the actions a program performs, including harmful actions by a program that never returns a result.
+
+The same argument applies when prose serves as a program. If a recipient interprets the output as instructions capable of expressing arbitrary computation, changing the notation from Python to English does not remove the computation. The generator need not produce every possible string: it is enough that it can produce the family of programs used in the halting construction. Restrictions on wording that leave that family available do not remove the obstruction to an exact guard.
+
+Writing the specification in English makes matters worse. English is semantically ambiguous: the same sentence can have different meanings, and different readers or models can interpret the same rule differently. The impossibility results already grant a precisely defined policy. An English specification adds uncertainty about what the filter is supposed to enforce in the first place.
+
+This limit on program analysis is familiar from computer security. Fred Cohen's 1987 paper, [*Computer Viruses: Theory and Experiments*](https://www.sciencedirect.com/science/article/pii/0167404887901222), showed that no algorithm can always decide whether an arbitrary program is a virus. [Glukhov and colleagues applied the same underlying limits to semantic censorship of LLM outputs](https://proceedings.mlr.press/v235/glukhov24a.html) (ICML 2024).
+
+Putting a second LLM in charge of judging the first does not establish safety. The judge can hallucinate too. Its approval is another fallible model output. Taking a vote among several models does not prove the verdict correct. These judges are also computations, subject to the same impossibility results. If another LLM checks the judges, its verdict needs checking too.
+
+Randomness does not fix the problem. Suppose the guard finishes its check with probability one on each input. If the policy is undecidable and the generator can emit any finite text, there is some prompt and output on which that guard gives the wrong answer at least half the time. The proof is below.
+
+You cannot build a universal checker for the guards themselves, either. Assume the generator can produce any finite text and the policy forbids infinitely many such texts. Someone hands you the code for a guard that always finishes its checks. Does it block every forbidden output? No algorithm can always answer that question correctly for every guard submitted to it. This holds even when the policy itself has a checker that always finishes with the right answer. The proof is below.
+
+### (iii) Influencing a Person
+
+Now a person reads the answer. They may take it as advice, an instruction, or a joke. Understanding the words and their meaning is only a small part of this case. Human psychology also enters: two people can understand the same message and respond differently because of their beliefs, motives, emotional state, or circumstances absent from the text.
+
+The proof covers an idealized recipient who follows any procedure described to it exactly, with unlimited time and memory. A checker that always decides whether a message makes this recipient do something forbidden would solve the halting problem. Real people get tired, misunderstand instructions, refuse them, and die. The result depends on that assumption about the recipient; it is not a theorem about ordinary persuasion.
+
+A recipient can also be another program. An agent may pass the model's output to a shell or code interpreter. If that interpreter can execute arbitrary programs without resource limits, it is exactly the kind of recipient the proof describes. The second case applies again, without any question about human psychology. Enforced limits on execution change the problem, as discussed below. Calling the recipient an agent does not.
+
+For actual human influence, a safety claim has to specify harm to whom, over what period, and in what circumstances. Safety for a typical reader is different from safety for every possible reader. The same sentence can reassure one person, enrage another, and mean nothing to a third. A guardrail given only the sentence cannot distinguish situations that look identical to it but lead to different outcomes.
+
+A probability of a harmful response, however well estimated, is a different claim from a guarantee covering every person and every future use of the message.
+
+If words could reliably make people think and act exactly as their authors intended, politicians and propagandists would have won a long time ago.
+
+## What Can Still Be Done
+
+You can often prevent an action without predicting it. A program may be impossible to classify in advance, yet easy to stop when it attempts a forbidden operation. A monitor that sees every attempt to write a protected file, and can deny each attempt before it takes effect, can enforce that restriction without deciding whether the program would eventually try it. [Schneider's *Enforceable Security Policies*](https://www.cs.cornell.edu/fbs/publications/EnfSecPols.pdf) explains what this kind of monitoring can guarantee.
+
+That guarantee depends on control. The monitor has to observe the relevant operations, mediate every route to them, and make a decidable check before allowing them. An LLM's promise to respect a file is weaker than denying its tools the authority to write the file. If the action being monitored is “deliver this message,” and the rule asks whether its recipient will eventually do something harmful, the monitor has the original problem back.
+
+You can restrict the programs you accept, require checkable proofs of specified properties, impose resource bounds, or allow only a small set of operations with well-defined effects.
+
+“Just train it to do safe things” is not a safety guarantee. Training changes the model's parameters; random sampling changes which output it produces. Neither establishes that every possible output will be safe. A record of acceptable behavior does not prove that a person can never cause harm, and a model's training and test record supplies no such proof either.
+
+The earlier arithmetic example has a further consequence. A program that always finishes and generates only true statements of that arithmetic must omit infinitely many true ones. Checking every proposed statement correctly was already impossible; training the generator does not let it retain all the truths while excluding every falsehood. The reason is that no program can enumerate all those truths. The same restriction applies whenever a policy's permitted answers cannot all be enumerated, including the policy permitting exactly those programs that never perform a forbidden action. The proof is below.
+
+Suppose the model can produce at most 100 characters. There are finitely many possible answers, and each is either permitted or forbidden. In principle, a table could list them all with the correct label beside each. The length limit does not tell you how to fill in those labels. Suppose a program could build the correct table for any length limit you chose. Given any text, you could set the limit to that text's length and look up its label. That would decide whether any text is forbidden. For an undecidable policy, such a program cannot exist.
+
+Handing the checker a short list instead does not solve this. A checker promised to label every list correctly must also handle a list containing just one text, whatever text you choose. It would then answer every individual safety question correctly. That is the same impossible promise. The proofs are below.
+
+If the generator can produce any finite text and the policy is undecidable, every guard that always finishes gives the wrong verdict on infinitely many outputs. The theorems give no failure rate or practical attack success rate. Safety tests examine the filter's decisions on selected inputs; an adversary can deliberately look elsewhere. Observing few filtering errors in those tests does not establish that forbidden outputs cannot get through.
+
+Where the downside of a forbidden action is effectively infinite, the required guarantee is prevention of that action. In the mathematical terminology below, that is *soundness*. Nobody is obliged to demand *permissiveness*, the ability to accept every harmless request. Rejecting harmless work can preserve safety. Approving the catastrophic action cannot. If the filter cannot guarantee that it will block that action, the system must be prevented from carrying it out.
+
+“Less authority” is not a safety specification. “This tool cannot write outside this directory” identifies a restriction that can be checked and enforced. It does not determine what the contents of an allowed file might cause another program or person to do. If those contents are executed as arbitrary programs, deciding whether they will eventually cause a forbidden action is the same undecidable problem as before. The guarantee has to name the action actually prevented. It cannot be inferred from a shorter list of permissions.
+
+## The Stakes
+
+In [Kenneth Payne's February 2026 study](https://arxiv.org/abs/2602.14740), GPT-5.2, Claude Sonnet 4, and Gemini 3 Flash played 21 games simulating nuclear crises. The paper reports tactical nuclear use in 95% of games and strategic nuclear threats in 76%. Full strategic nuclear war occurred in three games. Gemini chose it deliberately once; in the other two, GPT-5.2 chose a final nuclear warning or an expanded nuclear campaign, and the simulation's accident mechanism escalated further. No model chose accommodation or withdrawal, even under acute pressure. On that record, I would not put a model in control of a medical device, a water system, or a power system, let alone give it nuclear launch authority.
+
+Nuclear weapons already have quantified safety requirements. [Chapter 8 of the *Nuclear Matters Handbook*](https://www.acq.osd.mil/ncbdp/nm/NMHB2020rev/docs/NMHB2020rev_Ch8.pdf) specifies that, in normal environments and before receipt of the enabling and arming signals, the probability of premature nuclear detonation must be no greater than $10^{-9}$ per weapon lifetime: one in a billion.
+
+That number matters because physical models let engineers assess whether a design meets it. They can calculate how components respond to specified conditions, model their failure mechanisms, and quantify uncertainty. [Sandia's verification and validation program](https://www.sandia.gov/asc/advanced-simulation-and-computing/verification-validation/) does this for engineering simulations used in nuclear weapon safety assessments. The requirement is supported by analysis grounded in physics and checked against experiments.
+
+That requirement concerns a weapon detonating when it should not, including while sitting in storage. An accidental launch has much greater consequences: it can be interpreted as an attack and provoke retaliation and nuclear war. Keeping a stored weapon from detonating is a problem of physical safety. Authorizing a launch is a command-and-control decision. Giving an LLM a role in that decision means entrusting it with consequences far beyond the immediate physical failure of a single weapon.
+
+For a stochastic LLM, knowing the probability of the next token does not tell you the probability of a harmful outcome. Random choices lead to different outputs, tool calls, and subsequent interactions. Calculating those possible paths and their consequences is not a tractable safety analysis for a general-purpose LLM. For the unrestricted semantic policies considered here, even classifying every possible output is undecidable. A good result on sampled runs does not supply the kind of physical risk calculation behind the nuclear safety requirement.
+
+One risk rests on a calculation. The other has no comparable calculation to rest on, and giving it a small number does not create one.
+
+## Who Answers When It Fails
+
+People and organizations decide what risk to accept, whether the evidence justifies accepting it, and whether to deploy the system. They must answer for those decisions when the accepted risks become actual harm. Computers have no accountability.
+
+The duties of those who authorize, deploy, and operate the system have to be explicit before a failure. Responsibility cannot be assigned after the event to whichever operator happened to be nearest the screen.
+
+Putting a human in the loop only helps if that person has the information, time, competence, and authority to intervene. A person instructed to approve an opaque recommendation in a few seconds is not an independent safety mechanism. Nor should that person's presence allow the organization that designed and authorized the arrangement to escape accountability.
+
+Where losses are bounded and recoverable, a decision-maker may choose to accept a measured residual risk. Where the downside is effectively infinite, the system needs enforceable restrictions that prevent the catastrophic action, or it must not be given the power to take it. A person or organization that accepts imperfect guardrails must accept ultimate accountability, including the consequences and penalties when those guardrails fail.
+
+---
+
+## The Mathematics
+
+The proofs below state the assumptions behind each result and explain the notation used in the argument.
+
+The notation is introduced where it is used. This table is a reference for the main symbols:
+
+| Symbols | Meaning |
+| --- | --- |
+| $\Sigma$, $\Sigma^*$, $w$, $\varepsilon$ | The alphabet, all finite strings, one such string, and the empty string. |
+| $B$, $\overline B$ | Forbidden strings and permitted strings. A bar means complement. |
+| $G(u,r)$, $\operatorname{Out}_G$ | The output from prompt $u$ and random seed $r$; the set of all possible outputs. |
+| $F(u,w)$, $\pi(w)$ | The guard's verdict; a prompt found by search that can produce $w$. |
+| $D_F$, $E$, $\triangle$ | Strings the guard passes on those prompts; its errors; membership in exactly one of two sets. |
+| $e$ | A string encoding a program. |
+| $M_e$ | The program encoded by $e$. |
+| $M_e(e)$ | That program running with the code string $e$ as its input. |
+| $K$ | The set of encodings $e$ for which $M_e(e)$ halts. |
+| $\le_m$ | A computable translation from one membership question to another. |
+| $f(e)$ | The program code constructed from $e$ in the halting reduction. |
+| $b(u,w)$, $S$ | A randomized guard's blocking probability; a safe generator's output set. |
+| $\mathrm{Sent}$, $T$ | Well-formed arithmetic sentences and those true in the natural numbers. |
+| $A$, $A^*$, $A^\omega$, $H$ | Observable actions, finite action sequences, infinite action sequences, and forbidden actions. |
+| $\operatorname{tr}_p(x)$ | The sequence of observable actions performed by program $p$ on input $x$. |
+| $\mathrm{HARM}_H$ | The set of programs that perform an action in $H$ when run on the fixed input $x_0$. |
+| $\rho(w)$, $\iota(p)$ | The recipient's actions after message $w$; a translation of program $p$ into a message. |
+| $B_H(\rho)$ | Messages that cause recipient $\rho$ to perform an action in $H$. |
+| $s$, $a$, $z$, $\mathrm{Bad}$ | An action history, a proposed next action, a continuation, and the forbidden histories. |
+| $\mu$, $D_\mu$ | A monitor's verdict procedure and the histories it allows in full. |
+| $\mathsf{send}$ | The action that delivers the characters written since the preceding delivery or the start. |
+| $\mathrm{Bad}_B$ | Histories containing delivery of a string forbidden by $B$. |
+| $n$, $B_n$ | An output-length bound and the forbidden strings within that bound. |
+| $P$, $U$, $\delta$ | An output distribution, a finite set carrying most of its probability, and an error tolerance. |
+| $\alpha$, $\sigma$, $\lambda$ | Probability of adversarial use, conditional attack success probability, and loss per success. |
+
+### What a Guard Has to Decide
+
+We first grant agreement on which answers are forbidden. The question is whether a terminating computation can enforce that distinction exactly.
+
+Let $\Sigma$ be a finite alphabet, and let $\Sigma^*$ mean all finite strings made from that alphabet. A policy is a fixed set $B \subseteq \Sigma^*$ of forbidden strings. Its complement, $\overline B$, contains the permitted strings.
+
+Represent generation as $G(u,r)$, where $u$ is a prompt and $r$ supplies the random choices. Once those choices are fixed, generation is a computation. Assume it terminates. The possible outputs are
+
+$$
+\operatorname{Out}_G
+= \{G(u,r):u,r\in\Sigma^*\}.
+$$
+
+Call the generator *full* if $\operatorname{Out}_G=\Sigma^*$: every finite string is possible for some prompt and some choices. This is the assumption behind the general theorem.
+
+A guard is a terminating computation $F(u,w)$ that examines prompt $u$ and proposed output $w$. Write $1$ for block and $0$ for pass. We need three terms:
+
+- **Sound:** it blocks every forbidden output on every prompt that can produce it.
+- **Permissive:** it passes every permitted output on every prompt that can produce it.
+- **Exact:** it is both sound and permissive.
+
+An exact guard therefore satisfies, on every possible prompt-output pair:
+
+$$
+F(u,w)=
+\begin{cases}
+1,&w\in B,\\
+0,&w\notin B.
+\end{cases}
+$$
+
+A set is *decidable* when a program can always terminate and correctly answer whether an input belongs to it. It is *recognizable* (also called *recursively enumerable*) when a program can confirm membership by eventually accepting, but may run forever on a nonmember. We use *recognizable* throughout. A set is decidable if both it and its complement are recognizable: run the two recognizers in alternation, and one must eventually accept.
+
+**For a full generator, an exact guard exists if and only if $B$ is decidable.** To turn a guard into a policy decider, we must supply it with a prompt that can produce the string being checked. Given any string $w$, enumerate all prompt-seed pairs $(u,r)$ and compute their outputs until one produces $w$. Fullness guarantees that the search succeeds. Let $\pi(w)$ be the prompt found this way. Then:
+
+$$
+w\in B \quad\Longleftrightarrow\quad F(\pi(w),w)=1.
+$$
+
+An exact guard would give us a decider for $B$. Conversely, if $B$ has a decider, the guard can run it on $w$ and ignore the prompt. That proves both directions.
+
+Fullness is sufficient, but the program examples need less. To rule out an exact guard, it is enough that the generator can emit every output used in an effective encoding of the halting problem. A model can have a restricted range and still include that entire family of programs.
+
+### How Much Must an Imperfect Guard Get Wrong?
+
+Use the prompt $\pi(w)$ found by that search for each string $w$. For any guard, define the set of strings it passes on these prompts:
+
+$$
+D_F=\{w:F(\pi(w),w)=0\}.
+$$
+
+This set is decidable because the search for $\pi(w)$ and the guard both terminate. Its errors form the set:
+
+$$
+E=D_F\mathbin{\triangle}\overline B,
+$$
+
+where $\triangle$, the *symmetric difference*, means the strings belonging to exactly one of the two sets. Those are precisely the strings where the guard's decision and the policy disagree.
+
+**For a full generator, if $B$ is undecidable, $E$ must be infinite.** Suppose instead that there were only finitely many mistakes. A finite list is decidable by lookup. We could run the guard and reverse its verdict on that list, obtaining a decider for $B$. That contradicts undecidability. We do not need an algorithm for discovering the list; its existence alone would imply the existence of the corrected decider.
+
+For a sound guard, all these errors are refusals of permitted strings. For a permissive guard, all are admissions of forbidden strings. Thus a sound guard must reject infinitely many permitted outputs, and a permissive guard must admit infinitely many forbidden ones, under these assumptions. This counts strings; it does not tell us how often users encounter them.
+
+There is also a limit on certifying guards. **For a full generator and any infinite forbidden set $B$, no algorithm can take the code of an arbitrary terminating guard and always correctly decide whether that guard is sound.** This does not even require $B$ to be undecidable.
+
+To see why, let $e$ be a string encoding a program, and let $M_e$ denote that program. In $M_e(e)$, the subscript selects the program encoded by $e$, while the argument supplies the same code string $e$ as its input. The encoding and the program are distinct. This is the self-input form of [Turing's halting problem](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf), equivalent to asking whether an arbitrary program $P$ halts on input $x$: we can put $P$ and $x$ inside a new program that ignores its supplied input and simply runs $P$ on $x$.
+
+Given $e$, construct a guard that blocks everything unless this hidden computation finishes quickly enough: it passes $w$ exactly when $M_e(e)$ halts within $|w|$ steps, where $|w|$ is the length of $w$. This guard always terminates because it only performs a bounded simulation. If $M_e(e)$ never halts, the guard blocks everything and is sound. If it halts after $t$ steps, the guard passes every string of length at least $t$. An infinite set of strings over a finite alphabet has arbitrarily long members, so some forbidden string gets through. The guard is then unsound. A universal soundness checker would decide whether $M_e(e)$ halts.
+
+That does not prevent us from proving a particular guard sound. The block-everything guard is an immediate example. It prevents a general procedure that correctly settles soundness for every terminating guard handed to it.
+
+### Randomized Guards
+
+Randomness does not restore exactness. **For an undecidable policy and a full generator, every randomized guard that terminates with probability one on each input has some possible prompt-output pair on which its error probability is at least $1/2$.** Model the guard as a computation that may toss a fair coin at each step.
+
+First consider the stronger termination assumption that every run finishes, whatever the coin tosses. For a fixed input, imagine the guard's possible computations as a tree, branching in two at each toss. There is no infinite branch because every run terminates. A finitely branching tree with no infinite branch is finite; this is [König's lemma (1927)](https://acta.bibl.u-szeged.hu/13338/1/math_003_121-130.pdf). We can therefore explore the whole tree and compute the exact rational probability $b(u,w)$ that the guard blocks.
+
+If its error probability were less than $1/2$ on every possible pair, then
+
+$$
+b(u,w)>\tfrac12\quad\text{for forbidden }w,
+\qquad
+b(u,w)<\tfrac12\quad\text{for permitted }w.
+$$
+
+Computing $b$ and blocking exactly when $b>1/2$ would produce a deterministic exact guard, which we have already ruled out. Exploring the tree might be extraordinarily expensive; decidability only asks whether the computation eventually finishes.
+
+The result also holds when termination has probability one, even if some sequences of coin tosses lead to an endless run. Suppose again that the error probability is less than $1/2$ on every possible pair. To decide a string $w$, use the prompt $\pi(w)$ found earlier. At stage $n$, simulate the guard for $n$ steps on each of the $2^n$ binary sequences of length $n$. Count the sequences on which it has already halted with each verdict, and divide each count by $2^n$. Each stage replaces the previous pair of fractions; the fractions increase toward the probabilities of the two verdicts.
+
+Stop as soon as either fraction exceeds $1/2$, and return that verdict. The correct verdict has probability greater than $1/2$, so its fraction eventually crosses the threshold. The wrong verdict's fraction never can. This procedure always finishes and decides $B$, contradicting undecidability. It also proves the result without any termination assumption if a failure to answer counts as an error: a probability greater than $1/2$ of answering correctly is all the argument needs.
+
+### Generating Only Safe Answers
+
+The alternative to filtering is to build a model that never produces a forbidden answer. The following result shows why, for some policies, that also requires giving up infinitely many permitted answers. The output set $S$ of any computable, terminating generator is recognizable: enumerate prompts and seeds, generate their outputs, and accept a string when it appears. If the generator emits only permitted strings, then $S\subseteq\overline B$.
+
+**If $\overline B$ is not recognizable, such a generator must omit infinitely many permitted strings.** Otherwise $\overline B$ would be the union of the recognizable set $S$ and a finite list of omitted strings, and would itself be recognizable. The assumption is that the permitted set is not recognizable, which is stronger than undecidability alone. Safe generators exist; under this assumption, every one of them omits infinitely many safe answers.
+
+### Truth as an Output Policy
+
+The arithmetic policy introduced above has a stronger obstruction than undecidability: neither the true sentences nor the false ones can be enumerated by a program. Let $\mathrm{Sent}$ be the decidable set of well-formed sentences of first-order arithmetic with addition and multiplication, and let $T$ contain those true in the natural numbers. The falsehood policy requires:
+
+$$
+B\cap\mathrm{Sent}=\mathrm{Sent}\setminus T.
+$$
+
+It can treat non-sentences however it likes. Among arithmetic sentences, it must forbid precisely the false ones.
+
+[Gödel's first incompleteness theorem](https://link.springer.com/article/10.1007/BF01700692), in its form for effectively listable axioms, implies that $T$ is not recognizable. If it were, its sentences would form an effectively listable set of axioms. The resulting theory would be sound, contain basic arithmetic, and settle every arithmetic sentence, contradicting incompleteness.
+
+The false sentences are not recognizable either. Negation is an effective operation, and a sentence is true exactly when its negation is false. An enumeration of all false sentences would therefore let us list the true ones: enumerate all sentences $\psi$ and, in interleaved searches, output each $\psi$ when $\neg\psi$ appears among the false sentences. If we could enumerate $B$, we could discard anything that fails the decidable grammar check for $\mathrm{Sent}$ and enumerate exactly the false sentences. Enumerating $\overline B$ and applying the same check would enumerate exactly the true ones. Both are impossible, so neither $B$ nor $\overline B$ is recognizable. In particular, $B$ is undecidable.
+
+For this obstruction, a generator need only be able to emit every arithmetic sentence. It need not emit every possible string. Restricting the mathematics can also change the answer: first-order arithmetic with addition alone, known as [Presburger arithmetic](https://www.tandfonline.com/doi/abs/10.1080/014453409108837187), is decidable.
+
+### Programs: Follow the Actions, Not Just the Return Value
+
+A program can do harm before returning a result, or without ever returning one. We therefore follow the sequence of actions it performs, using a trace model based on [Hamlen, Morrisett, and Schneider's *Computability Classes for Enforcement Mechanisms* (2006)](https://personal.utdallas.edu/~hamlen/Papers/cc4em.pdf). Programs are represented by finite strings, so a policy on program codes is a string policy of the kind already defined. Let $A$ be a finite alphabet of observable actions. An action could represent a device command or a symbol written to a file. For program $p$ on input $x$, write
+
+$$
+\operatorname{tr}_p(x)\in A^*\cup A^\omega
+$$
+
+for its *trace*: the finite or infinite sequence of actions it performs. Here $A^\omega$ means infinite sequences. The trace exists even when the program never halts; a program that runs forever without acting has the empty trace.
+
+A *behavioral policy* judges only those traces. If two programs produce exactly the same trace on every input, the policy gives them the same verdict. The policy does not distinguish different source texts or different amounts of silent computation producing the same actions. Call it nontrivial if it forbids at least one behavior and permits at least one.
+
+**Every nontrivial behavioral policy on unrestricted programs is undecidable.** This is [Rice's argument](https://www.ams.org/journals/tran/1953-074-02/S0002-9947-1953-0053041-6/S0002-9947-1953-0053041-6.pdf), expressed in terms of action traces. Let
+
+$$
+K=\{e:M_e(e)\text{ halts}\}
+$$
+
+be the halting set, undecidable by [Turing's theorem](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf). First suppose the policy permits the *silent behavior*, which performs no actions on any input. Choose a forbidden program $q$. From any $e$, effectively construct $f(e)$, a program that on input $x$ silently simulates $M_e(e)$ and, if that simulation halts, runs $q$ on $x$.
+
+If $e\in K$, the new program has exactly $q$'s behavior and is forbidden. If $e\notin K$, it remains silent and is permitted. Thus
+
+$$
+e\in K\quad\Longleftrightarrow\quad f(e)\in B.
+$$
+
+The notation $K\le_m B$ abbreviates this situation: a computable transformation converts each halting question into an equivalent membership question for $B$. It is called a *many-one reduction*. A decider for $B$ would decide $K$.
+
+If the policy instead forbids silent behavior, choose a permitted $q$ and use the same construction. Now $e\in K$ exactly when $f(e)\notin B$, so $K\le_m\overline B$. Either way a policy decider would solve the halting problem. This proof follows actions throughout execution, so it also covers programs that act and never return.
+
+For the concrete safety question, fix a nonempty set $H\subseteq A$ of forbidden actions and a particular input $x_0$. Define
+
+$$
+\mathrm{HARM}_H
+=\{p:\operatorname{tr}_p(x_0)\text{ contains an action in }H\}.
+$$
+
+This set is nontrivial and excludes silent behavior, so $K\le_m\mathrm{HARM}_H$. It is also recognizable: simulate $p$ on $x_0$ and accept if a forbidden action occurs. Its complement, the safe programs, is not recognizable. If both sets were recognizable, alternating their recognizers would decide them. The same conclusions hold when the question is whether a forbidden action occurs on *some* input. For the reduction, choose a program $q$ that performs a forbidden action on some input and use the same construction $f(e)$. For recognition, simulate all inputs in interleaved, progressively longer runs.
+
+These results concern unbounded future behavior. “Does this program perform a forbidden action within the next million steps on this input?” is decidable by simulation. That policy also depends on timing, which our trace-only definition deliberately leaves out.
+
+### The Recipient in the Third Case
+
+We now ask about the actions caused by a message that its recipient executes as a procedure. Represent a recipient by a function $\rho(w)$ giving the action trace that follows receipt of message $w$. We need not assume the recipient is a program. Its harmful-message policy is:
+
+$$
+B_H(\rho)=\{w:\rho(w)\text{ contains an action in }H\}.
+$$
+
+The assumption that does the work is *instructability*: there is a computable translation $\iota$ from programs to messages such that
+
+$$
+\rho(\iota(p))=\operatorname{tr}_p(\varepsilon)
+\quad\text{for every program }p,
+$$
+
+where $\varepsilon$ is the empty input. In words, we can mechanically turn any program into instructions that this recipient executes exactly, without a bound on time or memory.
+
+Use the previous construction with empty input. Then
+
+$$
+e\in K
+\quad\Longleftrightarrow\quad
+\iota(f(e))\in B_H(\rho).
+$$
+
+Consequently $B_H(\rho)$ is undecidable, and its complement is not recognizable. For the latter claim, a recognizer for harmless messages would, through this translation, recognize the nonhalting set $\overline K$, which is impossible. If the recipient is itself a program that emits the action trace for each message it receives, the harmful-message set is recognizable by simulating that program.
+
+### What a Running Monitor Can Enforce
+
+A monitor gets to intervene during execution. Let $\mathrm{Bad}\subseteq A^*$ be the forbidden finite action histories. Writing $sz$ means concatenation: history $s$ followed by the actions in $z$. Assume the empty history is permitted and that once a violation has occurred, appending actions cannot undo it:
+
+$$
+s\in\mathrm{Bad}\quad\Longrightarrow\quad sz\in\mathrm{Bad}
+\quad\text{for every finite continuation }z.
+$$
+
+After permitted history $s$, just before action $a$, the monitor computes $\mu(sa)$, where $sa$ means history $s$ followed by the proposed action $a$. The check always terminates. A verdict of $1$ stops the program before $a$ occurs; $0$ allows it. A monitor is **sound** if it stops every first violation, **permissive** if it never stops a permitted history, and **exact** if it satisfies both conditions.
+
+**An exact monitor exists if and only if $\mathrm{Bad}$ is decidable.** One direction is immediate: decide whether $sa$ is forbidden and stop if it is. For the other, define
+
+$$
+D_\mu=\{s:\mu(v)=0\text{ for every nonempty prefix }v\text{ of }s\}.
+$$
+
+A prefix is an initial segment of the history. There are finitely many prefixes of a finite string, so $D_\mu$ is decidable by making finitely many terminating checks. It contains exactly the histories the monitor would allow to be performed in full. A sound monitor stops at the shortest forbidden prefix, so no forbidden history belongs to $D_\mu$. A permissive monitor allows every prefix of a permitted history: a forbidden prefix would make the whole history forbidden. Thus every permitted history belongs to $D_\mu$. Together these give $D_\mu=\overline{\mathrm{Bad}}$, making $\mathrm{Bad}$ decidable. The earlier finite-correction argument also applies: when $\mathrm{Bad}$ is undecidable, every sound monitor prevents infinitely many permitted histories, and every permissive monitor allows infinitely many forbidden ones.
+
+This is the monitoring setting of [Schneider's *Enforceable Security Policies*](https://www.cs.cornell.edu/fbs/publications/EnfSecPols.pdf), with the computability condition on the monitor's test made explicit by [Hamlen, Morrisett, and Schneider](https://personal.utdallas.edu/~hamlen/Papers/cc4em.pdf).
+
+If a violation simply means performing an action from the specified set $H$, membership in $\mathrm{Bad}$ is easy to decide: check whether the finite history contains such an action. An exact monitor can stop each forbidden action. This requires complete observation and the ability to block before the action takes effect. It does not require predicting whether a program will eventually attempt it.
+
+Now take the characters of $\Sigma$ to be among the actions in $A$, and add a distinct action $\mathsf{send}\notin\Sigma$. Each $\mathsf{send}$ delivers the characters written since the previous $\mathsf{send}$, or since the start; other actions do not add characters. Delivery of the accumulated string $w$ violates the policy exactly when $w\in B$. The history $w\,\mathsf{send}$ writes the characters of $w$ and then delivers it. Write $\mathrm{Bad}_B$ for histories containing such a forbidden delivery. We have
+
+$$
+w\in B\quad\Longleftrightarrow\quad w\,\mathsf{send}\in\mathrm{Bad}_B.
+$$
+
+So $B\le_m\mathrm{Bad}_B$. If $B$ is undecidable, an exact delivery monitor is impossible too. Moving the check to the moment of delivery has not made its question decidable. If we instead control and can block the recipient's eventual forbidden action, the simpler action-monitoring result applies there.
+
+### Finite Domains, Average Error, and Actual Risk
+
+Bounding the length of outputs makes a lookup table possible. Constructing its correct entries is a separate problem. For a fixed output-length bound $n$, write $\Sigma^{\le n}$ for all strings of length at most $n$. The set
+
+$$
+B_n=B\cap\Sigma^{\le n}
+$$
+
+is finite and therefore decidable, even if $B$ is undecidable. Each fixed bound has a correct finite table. For an undecidable $B$, there is no general procedure that constructs those tables from the bound.
+
+There cannot be an algorithm that, given any $n$, produces a correct decider for $B_n$ when $B$ is undecidable. Otherwise, on input $w$, generate the decider for $n=|w|$ and run it. We would have decided $B$ on arbitrary strings.
+
+Limits on execution can also help. If, on the fixed input being checked, every program the generator can emit halts within a number of steps computable from its text, we can simulate it for that many steps and settle whether it performs a forbidden action. A formatting restriction that preserves unrestricted computational power provides no such escape.
+
+Finally, the infinite-error result gives **no positive lower bound on average classification error** under an arbitrary distribution $P$ of outputs. For every $\delta>0$, some finite set $U$ has
+
+$$
+P(U)>1-\delta.
+$$
+
+Consider the guard that permits exactly the permitted members of $U$ and blocks everything else. It is sound, and its errors occur only outside $U$, so
+
+$$
+\Pr_{w\sim P}[\text{wrong verdict}]<\delta.
+$$
+
+Again, this proves existence, not a general recipe for finding the correct labels. For an undecidable policy, no algorithm can label every supplied finite set correctly: supplying the singleton $U=\{w\}$ would let us decide whether any $w$ is forbidden. And a small average error under ordinary use need not describe an adversary who deliberately seeks different outputs.
+
+We can express an adversarial risk bound, but its quantities must come from additional assumptions or evidence. Suppose a use is adversarial with probability $\alpha$, an adversary obtains a forbidden output that passes with conditional probability $\sigma$, and each such success causes loss at least $\lambda$, with all losses nonnegative. Then
+
+$$
+\mathbb E[\text{loss per use}]\ge\alpha\sigma\lambda.
+$$
+
+Undecidability supplies none of those three numbers. A sound guard has $\sigma=0$; the price, for an undecidable policy over the unrestricted domain, is rejecting permitted outputs. The theorem does not force us to admit a dangerous output. It rules out obtaining soundness and full permissiveness together for such a policy.
+
+For any fixed $\alpha\sigma>0$, the lower bound $\alpha\sigma\lambda$ grows without limit as the consequence $\lambda$ grows. If a failure has infinite loss and positive probability, its expected loss is infinite. “Effectively infinite” is a judgment that a consequence is beyond what we are willing or able to accept; we should not turn that judgment into permission for an unexplained small failure probability. This argument also applies to accidental failures: any event with positive probability $\epsilon$ and loss at least $\lambda$ contributes at least $\epsilon\lambda$ to expected loss.
