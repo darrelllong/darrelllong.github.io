@@ -96,6 +96,17 @@ export default function BlogPost({ search }) {
             remarkPlugins={[remarkGfm, remarkMath]}
             rehypePlugins={[rehypeKatex]}
             components={{
+              // A table takes the width its content needs, out to the width
+              // of main, and scrolls beyond that; see .table-wide in blog.scss
+              table({ children, ...props }) {
+                return (
+                  <div className="table-wide">
+                    <div className="table-scroll">
+                      <table {...props}>{children}</table>
+                    </div>
+                  </div>
+                );
+              },
               a({ href, children, ...props }) {
                 if (href && href.startsWith("/")) {
                   return <Link to={href}>{children}</Link>;

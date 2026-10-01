@@ -132,12 +132,20 @@ main.blogpost {
   background: $layer;
   padding: 2px 4px;
 }
-.blog-content table {
-  display: block;
+.blog-content .table-wide {
+  // The text column is 820px wide. A table may be wider: it is centred, and
+  // may grow out to the edges of main, whose inline size is 100cqi because
+  // main is a container (index.scss). Beyond that it scrolls.
+  display: flex;
+  justify-content: center;
+  margin: 24px calc(50% - 50cqi);
+}
+.blog-content .table-scroll {
   max-width: 100%;
   overflow-x: auto;
+}
+.blog-content table {
   border-collapse: collapse;
-  margin: 24px 0;
   font-size: 14px;
 }
 .blog-content th,

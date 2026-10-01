@@ -25,6 +25,8 @@ body {
   margin: 62px 0 80px;
   min-width: 0;
   outline: none;
+  // so that a wide table in a post can measure main's width (blog.scss)
+  container-type: inline-size;
 }
 h1,
 h2,
