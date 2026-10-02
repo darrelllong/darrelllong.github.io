@@ -19,6 +19,10 @@ export function render(url, data) {
       },
     });
     const stream = renderToPipeableStream(<StaticApp url={url} />, {
+      // A boundary larger than this is written apart from its place, hidden,
+      // with its fallback in the page until a script moves it in; no page
+      // here is to be written that way, however long the post
+      progressiveChunkSize: Infinity,
       // Everything, including the lazily loaded post component, is ready
       onAllReady() {
         sink.on("finish", () => resolve(html));
