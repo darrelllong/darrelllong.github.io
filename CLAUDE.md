@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal academic website for Dr. Darrell D.E. Long (Distinguished Professor Emeritus, UC Santa Cruz). **Pure React SPA** served on GitHub Pages with `.nojekyll`.
+Personal academic website for Dr. Darrell D.E. Long (Distinguished Professor Emeritus, UC Santa Cruz). A React SPA served on GitHub Pages with `.nojekyll`; **every route is prerendered to HTML at build time** so that crawlers get the page's content, and the browser hydrates it.
 
 ## Prerequisites
 
@@ -43,6 +43,14 @@ git add -A && git commit -m "Deploy" && git push
 ```
 
 The build outputs to `src/dist/`, then gets copied to the repo root. Pushing to master deploys the site. The `.nojekyll` file tells GitHub Pages to skip Jekyll processing.
+
+### Prerendering
+
+`npm run build` runs `vite build`, then `vite build --ssr src/entry-server.jsx --outDir dist-ssr`, then `scripts/generate-routes.js`, which renders every route with `dist-ssr/entry-server.js` and writes its `index.html` with the content in `<div id="root">` and the data it was rendered from in `<script id="preloaded" type="application/json">`. `src/preloaded.js` gives that data to the components for their first render, so `main.jsx` can `hydrateRoot` the HTML. Each page carries only what it shows: a post page its post and the index of posts, a publication page the publication and its two neighbours, the lists their whole catalogue. The components then fetch the full data as before.
+
+Anything a component renders must give the same result on the server and in the browser's first render: no `window`, `document`, dates or random values outside effects, and state that starts from `getPreloaded*()` where the page carries data. Check a change by building, serving `dist` (`npm run preview`), and loading pages in a browser with the console open: React reports a hydration mismatch there.
+
+The sitemap's `lastmod` is the date of the last commit that touched what the page is made of (its post, `publications.json`, the component), not the day of the build.
 
 ## Architecture
 
@@ -83,7 +91,7 @@ Posts are fetched at runtime (not bundled). The manifest `posts/index.json` list
 To add a new blog post:
 1. Create a `.md` file in `posts/` with date-prefixed filename and frontmatter
 2. Add an entry to `posts/index.json` (slug, title, date, tags, excerpt)
-3. `git add && git commit && git push` — no build step needed
+3. `cd src && npm run deploy`, then commit and push: the build prerenders the post's page and adds it to the sitemap
 
 ### React Component Hierarchy
 

@@ -1,14 +1,16 @@
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../ContextProvider";
-import { getAllPosts } from "../utils/blogLoader";
+import { getAllPosts, getPreloadedPosts } from "../utils/blogLoader";
 import { formatPostDate } from "../utils/dateUtils";
 import Portrait from "./Portrait";
 import "../assets/css/home.scss";
 
 export default function Home() {
   const { publications } = useContext(Context);
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState(() =>
+    (getPreloadedPosts() || []).slice(0, 3),
+  );
   useEffect(() => {
     let active = true;
     getAllPosts()

@@ -12,20 +12,26 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 // Utilities
 import { formatPostDate } from "../utils/dateUtils";
-import { getAllPosts, getPostBySlug } from "../utils/blogLoader";
+import {
+  getAllPosts,
+  getPostBySlug,
+  getPreloadedPost,
+  getPreloadedPosts,
+} from "../utils/blogLoader";
 // Styles
 import "katex/dist/katex.min.css";
 import "../assets/css/blog.scss";
 
 export default function BlogPost({ search }) {
   const { slug } = useParams();
-  const [post, setPost] = React.useState(null);
-  const [posts, setPosts] = React.useState([]);
-  const [loading, setLoading] = React.useState(true);
+  // A prerendered page starts with its post (see preloaded.js)
+  const [post, setPost] = React.useState(() => getPreloadedPost(slug));
+  const [posts, setPosts] = React.useState(() => getPreloadedPosts() || []);
+  const [loading, setLoading] = React.useState(post === null);
 
   React.useEffect(() => {
     let active = true;
-    setLoading(true);
+    if (getPreloadedPost(slug) === null) setLoading(true);
     Promise.all([getPostBySlug(slug), getAllPosts()])
       .then(([p, all]) => {
         if (!active) return;

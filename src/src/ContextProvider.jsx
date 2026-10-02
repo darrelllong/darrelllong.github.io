@@ -2,6 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { sortByDateDesc } from "./utils/dateUtils";
+import { getPreloaded } from "./preloaded";
 
 export const Context = React.createContext();
 
@@ -22,9 +23,18 @@ export const ContextProvider = ({ children }) => {
     return path.replace(/\//g, "");
   };
 
-  const [publications, setPublications] = React.useState([]);
-  const [patents, setPatents] = React.useState([]);
-  const [loading, setLoading] = React.useState(true);
+  // A prerendered page starts with the records it shows (see preloaded.js),
+  // and is not loading; the fetch below then brings the rest.
+  const initial = getPreloaded();
+  const [publications, setPublications] = React.useState(() =>
+    sortByDateDesc(initial.publications || []),
+  );
+  const [patents, setPatents] = React.useState(() =>
+    sortByDateDesc(initial.patents || []),
+  );
+  const [loading, setLoading] = React.useState(
+    !(initial.publications || initial.patents),
+  );
   const [errors, setErrors] = React.useState({});
 
   React.useEffect(() => {

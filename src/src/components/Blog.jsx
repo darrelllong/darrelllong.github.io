@@ -7,16 +7,22 @@ import Pagination from "./Pagination";
 import SearchBar from "./SearchBar";
 // Utilities
 import { formatPostDate } from "../utils/dateUtils";
-import { getAllPosts, getAllTags } from "../utils/blogLoader";
+import {
+  getAllPosts,
+  getAllTags,
+  getPreloadedPosts,
+  tagsOf,
+} from "../utils/blogLoader";
 // Styles
 import "../assets/css/blog.scss";
 
 export default function Blog({ searchTerm, search }) {
   const [currentPage, setCurrentPage] = React.useState(0);
   const [activeTag, setActiveTag] = React.useState(null);
-  const [posts, setPosts] = React.useState([]);
-  const [tags, setTags] = React.useState([]);
-  const [loading, setLoading] = React.useState(true);
+  // A prerendered page starts with its posts (see preloaded.js)
+  const [posts, setPosts] = React.useState(() => getPreloadedPosts() || []);
+  const [tags, setTags] = React.useState(() => tagsOf(posts));
+  const [loading, setLoading] = React.useState(posts.length === 0);
   const postsPerPage = 6;
   const [error, setError] = React.useState("");
 

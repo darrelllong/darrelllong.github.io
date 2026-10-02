@@ -1,4 +1,31 @@
 import fm from "front-matter";
+import { getPreloaded } from "../preloaded";
+
+// The index of posts, and a post, rendered into the page at build time;
+// null when the page carries none. Synchronous, for a first render that
+// matches the prerendered HTML.
+export function getPreloadedPosts() {
+  const posts = getPreloaded().posts;
+  return posts ? [...posts].sort((a, b) => b.date.localeCompare(a.date)) : null;
+}
+
+export function getPreloadedPost(slug) {
+  const posts = getPreloadedPosts();
+  const body = getPreloaded().postBodies?.[slug];
+  if (!posts || body === undefined) return null;
+  const meta = posts.find((p) => p.slug === slug);
+  return meta ? { ...meta, body } : null;
+}
+
+export function tagsOf(posts) {
+  const tagSet = new Set();
+  for (const post of posts) {
+    for (const tag of post.tags || []) {
+      tagSet.add(tag);
+    }
+  }
+  return [...tagSet].sort();
+}
 
 let postsCache = null;
 let postsPromise = null;
@@ -43,14 +70,7 @@ export async function getPostBySlug(slug) {
 }
 
 export async function getAllTags() {
-  const posts = await loadPosts();
-  const tagSet = new Set();
-  for (const post of posts) {
-    for (const tag of post.tags || []) {
-      tagSet.add(tag);
-    }
-  }
-  return [...tagSet].sort();
+  return tagsOf(await loadPosts());
 }
 
 export async function getPostSlugs() {
