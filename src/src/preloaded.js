@@ -6,7 +6,8 @@
 // <script id="preloaded" type="application/json"> that the page carries.
 // It holds only what the page shows: a post page its post and the index of
 // posts, a publication page the publication and its neighbours, and so on.
-// The components fetch the full data afterwards, as they always have.
+// The components fetch the full data afterwards, as they always have, except
+// a catalogue the page carries whole, which `complete` names.
 let preloaded = null;
 
 export function setPreloaded(data) {

@@ -39,7 +39,9 @@ export const ContextProvider = ({ children }) => {
 
   React.useEffect(() => {
     // GitHub Pages caches JSON for ten minutes. Revalidate it so a newly
-    // deployed page does not display the previous catalog's content.
+    // deployed page does not display the previous catalog's content. A
+    // catalogue the page carries whole is not fetched again.
+    const complete = getPreloaded().complete || [];
     const fetchJson = (url) =>
       fetch(url, { cache: "no-cache" }).then((response) => {
         if (!response.ok) {
@@ -48,8 +50,11 @@ export const ContextProvider = ({ children }) => {
         return response.json();
       });
 
-    const pubPromise = fetchJson("/publications.json")
-      .then((data) => setPublications(sortByDateDesc(data)))
+    const pubPromise = (complete.includes("publications")
+      ? Promise.resolve()
+      : fetchJson("/publications.json")
+          .then((data) => setPublications(sortByDateDesc(data)))
+    )
       .catch(() =>
         setErrors((previous) => ({
           ...previous,
@@ -57,8 +62,11 @@ export const ContextProvider = ({ children }) => {
         })),
       );
 
-    const patPromise = fetchJson("/patents.json")
-      .then((data) => setPatents(sortByDateDesc(data)))
+    const patPromise = (complete.includes("patents")
+      ? Promise.resolve()
+      : fetchJson("/patents.json")
+          .then((data) => setPatents(sortByDateDesc(data)))
+    )
       .catch(() =>
         setErrors((previous) => ({
           ...previous,

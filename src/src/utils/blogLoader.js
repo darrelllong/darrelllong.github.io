@@ -32,6 +32,12 @@ let postsPromise = null;
 
 async function loadPosts() {
   if (postsCache) return postsCache;
+  // The index a prerendered page carries is the whole index
+  const preloaded = getPreloadedPosts();
+  if (preloaded) {
+    postsCache = preloaded;
+    return postsCache;
+  }
   if (postsPromise) return postsPromise;
 
   postsPromise = (async () => {

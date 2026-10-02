@@ -154,7 +154,7 @@ const staticRoutes = [
     title: "Publications",
     description:
       "Research publications by Dr. Darrell Long covering storage systems, distributed systems, and computer architecture.",
-    data: { publications },
+    data: { publications, complete: ["publications"] },
     lastmod: publicationsModified,
   },
   {
@@ -162,7 +162,7 @@ const staticRoutes = [
     title: "Patents",
     description:
       "U.S. Patents by Dr. Darrell Long and colleagues in storage, networking, and systems research.",
-    data: { patents },
+    data: { patents, complete: ["patents"] },
     lastmod: patentsModified,
   },
   {
