@@ -1,5 +1,17 @@
 [
   {
+    "slug": "2026-10-03-delta-compression",
+    "title": "Delta Compression",
+    "date": "2026-10-03",
+    "tags": [
+      "research",
+      "storage",
+      "compression",
+      "algorithms"
+    ],
+    "excerpt": "Encoding a file as its differences from an earlier version, in linear time, and rebuilding it in the space the old version occupies."
+  },
+  {
     "slug": "2026-09-29-no-perfect-guardrail",
     "title": "No Perfect Guardrail",
     "date": "2026-09-29",
