@@ -55,7 +55,7 @@ The [repository](https://github.com/darrelllong/Delta-Compression) has the three
 
 The following measurements are from an Apple M4 Pro. The repository includes results for other machines, along with the method and the raw output.
 
-The tarballs of Linux 5.1 and 5.1.1 are 871 MB each. The one-pass delta between them is 5.1 MB, 0.58% of the version, and the correcting delta is 6.9 MB, 0.80%. One-pass does better here because the changes are small and in order, and checkpointing passes over short matches. The whole command, including reading both files and checksumming them, takes between 1.4 and 2.0 seconds for one-pass in the five compiled languages, and between 7.1 and 12.4 seconds for correcting, most of which is the pass that indexes the reference.
+The tarballs of Linux 5.1 and 5.1.1 are 871 MB each. The one-pass delta between them is 5.1 MB, 0.58% of the version, and the correcting delta is 6.9 MB, 0.80%. One-pass does better here because the changes are small and in order, and checkpointing passes over short matches. The whole command, including reading both files and checksumming them, takes between 1.4 and 1.8 seconds for one-pass in the five compiled languages, and between 7.0 and 12.1 seconds for correcting, most of which is the pass that indexes the reference.
 
 Transposition reverses the comparison. Take a 16 MB file made of 32,000 blocks and rearrange those blocks to make the new version. With every block displaced, the one-pass delta is 99% of the size of the version: it has found almost nothing. Correcting produces the same delta as greedy: 2.5% of the size of the version, with a copy for each block and no adds. Correcting takes 0.15 seconds, compared with 2.6 seconds for greedy.
 
