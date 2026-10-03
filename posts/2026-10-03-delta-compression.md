@@ -39,7 +39,11 @@ The second is *checkpointing*. A fixed table cannot hold a seed for every offset
 
 A delta is applied by reading $R$ and writing $V$, and so the receiver must hold both at once. That is no burden to a backup server. It is a serious one for a telephone or an embedded controller whose storage holds one copy of its software and little more. Such devices, on slow links, are the ones that most need small updates.
 
-Dr. Burns and I addressed this in "[In-Place Reconstruction of Delta Compressed Files](/publications/9)" at PODC in 1998, and with Dr. Stockmeyer in "[In-Place Reconstruction of Version Differences](/publications/39)" in 2003. The idea is to rewrite a delta so that it can be applied in the very buffer that holds $R$, with no second copy.
+The idea came from a conversation with [Bob Rees](https://www.linkedin.com/in/bob-rees-62b48b24/), an IBM Distinguished Engineer, now emeritus. We were walking down the hall toward lunch at IBM, and I was telling him about the delta compression work. When he heard that reconstruction required scratch space, he said, "You can do better than that."
+
+On the drive home, I came up with cycle breaking based on topological sorting. I called Dr. Burns from my truck and told him to write it down. He was worried that I was talking on the phone while driving Highway 17 over the mountains. That is how our in-place work began. I have Bob to thank for telling me to do better.
+
+Dr. Burns and I described the work in "[In-Place Reconstruction of Delta Compressed Files](/publications/9)" at PODC in 1998, and with Dr. Stockmeyer in "[In-Place Reconstruction of Version Differences](/publications/39)" in 2003. The idea is to rewrite a delta so that it can be applied in the very buffer that holds $R$, with no second copy.
 
 The danger is that one command writes over bytes that another has yet to read. If copy $i$ reads a region that copy $j$ writes, then $i$ must be executed before $j$. Make each copy a vertex and draw an edge from $i$ to $j$ for each such conflict. If the resulting digraph is acyclic, a topological order of it is a safe order of execution; the adds read nothing from the buffer and go last. If it has a cycle, no order will do, and one copy on the cycle is replaced by an add that carries its bytes in the delta. The cycle is broken at the cost of some compression.
 
