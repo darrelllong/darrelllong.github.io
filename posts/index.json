@@ -174,8 +174,10 @@
     "title": "Dr. Jehan-François Pâris",
     "date": "2026-02-14",
     "tags": [
-      "biography"
+      "biography",
+      "research",
+      "colleagues"
     ],
-    "excerpt": "My doctoral advisor at UC San Diego and a longtime collaborator in replication, distributed systems, and storage reliability."
+    "excerpt": "My doctoral advisor at UC San Diego, the Gemini replicated file system, and a collaboration spanning nearly four decades and sixty-nine publications."
   }
 ]
