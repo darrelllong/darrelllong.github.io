@@ -30,6 +30,7 @@ const BibTeX = ({ bibTeX }) => {
     "@article",
     "@inproceedings",
     "@book",
+    "@manual",
     "@incollection",
     "@techreport",
     "@misc",

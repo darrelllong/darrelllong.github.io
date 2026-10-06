@@ -5902,5 +5902,27 @@
       "month": "jan",
       "pages": "1305--1311"
     }
+  },
+  {
+    "id": 258,
+    "title": "Solutions Manual for Theory of Finite Automata with an Introduction to Formal Languages",
+    "short_description": "A living companion to the 1989 textbook, with worked solutions covering finite automata, formal languages, grammars, pushdown automata, Turing machines, and decidability.",
+    "full_content": "This solutions manual accompanies Theory of Finite Automata with an Introduction to Formal Languages by John L. Carroll and Darrell D. E. Long. It collects worked solutions chapter by chapter and is maintained as a living edition alongside the restored LaTeX source of the book.",
+    "author": [
+      "John L. Carroll",
+      "Darrell D. E. Long"
+    ],
+    "date": "Oct 2026",
+    "url": "https://github.com/darrelllong/Automata-Theory/blob/master/Solutions/solutions.pdf",
+    "urlLabel": "Download current solutions manual",
+    "bibTeX": {
+      "@manual": "carroll-long-solutions26",
+      "author": "John L. Carroll and Darrell D. E. Long",
+      "title": "Solutions Manual for Theory of Finite Automata with an Introduction to Formal Languages",
+      "organization": "Independent publication",
+      "year": 2026,
+      "month": "oct",
+      "note": "Living edition"
+    }
   }
 ]

@@ -11,6 +11,8 @@ export const formatVenue = (bib = {}) => {
     return `${clean(bib.journal)}${volume}`;
   }
   if (bib.booktitle) return clean(bib.booktitle);
+  if (bib["@manual"])
+    return ["Manual", clean(bib.organization)].filter(Boolean).join(" · ");
   if (bib["@book"]) return ["Book", bib.publisher].filter(Boolean).join(" · ");
   return clean(bib.publisher || bib.institution);
 };
