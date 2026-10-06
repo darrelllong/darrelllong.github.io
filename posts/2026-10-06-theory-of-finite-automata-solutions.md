@@ -2,10 +2,10 @@
 title: "A Solutions Manual for Theory of Finite Automata"
 date: "2026-10-06"
 tags: ["automata-theory", "formal-languages", "education", "history"]
-excerpt: "The story of the automata theory book John Carroll and I began when I was an undergraduate, and the new living solutions manual that accompanies it."
+excerpt: "The story of the automata theory book I proposed to John Carroll as an undergraduate, the work he did to bring it to completion, and its new living solutions manual."
 ---
 
-Some projects belong to more than one period of a life. [*Theory of Finite Automata*](/publications/152/) began when I was an undergraduate at San Diego State University, working with Professor John L. Carroll. It followed me into graduate school and through my doctorate. Prentice-Hall published the book in 1989, just after I finished my Ph.D.
+Some projects belong to more than one period of a life. [*Theory of Finite Automata*](/publications/152/) began with an idea I took to Professor John L. Carroll when I was an undergraduate at San Diego State University. It followed me into graduate school and through my doctorate. Prentice-Hall published the book in 1989, just after I finished my Ph.D.
 
 ![John Carroll standing beside his Sun-3 workstation](/posts/images/john-carroll-sun-3.jpg)
 
@@ -15,11 +15,13 @@ The book now has a new companion: a [solutions manual](/publications/258/) that 
 
 ## Beginning the Book
 
-Writing a textbook as an undergraduate was not something I had expected to do. John gave me the opportunity to work seriously on a subject whose combination of machinery and abstraction had already captured me. Finite automata are simple enough to draw, simulate, and reason about directly, yet they lead almost immediately to deep questions: What can a machine recognize? When are two machines equivalent? How can a machine be minimized? What changes when memory is added? Where does decidability end?
+The book was my idea. As an undergraduate, I proposed to John that we write a textbook on automata theory. I am still surprised that he agreed. His willingness to take seriously such an ambitious proposal from an undergraduate made the book possible.
+
+The subject's combination of machinery and abstraction had already captured me. Finite automata are simple enough to draw, simulate, and reason about directly, yet they lead almost immediately to deep questions: What can a machine recognize? When are two machines equivalent? How can a machine be minimized? What changes when memory is added? Where does decidability end?
 
 Those questions gave the book its path. It begins with mathematical preliminaries and the definitions of finite automata, then moves through Nerode's theorem, minimization, nondeterminism, closure properties, regular expressions, transducers, grammars, pushdown automata, Turing machines, and decidability. The aim was not merely to catalogue models, but to show how definitions, constructions, and proofs fit together.
 
-The work took years. While the manuscript continued, I left San Diego State for doctoral study at UC San Diego. My dissertation research was in distributed systems, and I was also teaching at UCSD and San Diego State. The book therefore grew alongside a different research life. Its publication in 1989, immediately after the Ph.D., marked the end of one long apprenticeship and the beginning of another.
+The work took years. While the manuscript continued, I left San Diego State for doctoral study at UC San Diego. Circumstances required me to finish the Ph.D. in four years. My dissertation research in distributed systems, together with teaching at UCSD and San Diego State, consumed my time. John took on the hard work of bringing the manuscript to completion. Its publication in 1989, immediately after the Ph.D., marked the end of one long apprenticeship and the beginning of another.
 
 ## Returning to It
 
@@ -39,4 +41,4 @@ Calling it a living edition matters. The manual is generated from source in the 
 
 More than three decades separate the printed book from this manual. The subject connects those decades. Automata theory still offers one of the clearest introductions to the habits of theoretical computer science: define the machine precisely, prove what it can do, transform it without changing its language, and identify the boundary beyond which no algorithm can decide every case.
 
-For me, the manual also completes something personal. A project that began with John Carroll when I was an undergraduate, and reached print just after my doctorate, can now be read, built, corrected, and extended in public. That is a satisfying second life for a first book.
+For me, the manual also completes something personal. A project I proposed to John Carroll as an undergraduate, and that he did the hard work of carrying to publication while I completed my doctorate, can now be read, built, corrected, and extended in public. That is a satisfying second life for a first book.
