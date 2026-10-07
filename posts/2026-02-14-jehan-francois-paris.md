@@ -7,9 +7,9 @@ excerpt: "My doctoral advisor at UC San Diego, the Gemini replicated file system
 
 I came to UC San Diego after earning my undergraduate degree at San Diego State University. I was delighted when Professor Jehan-François Pâris invited me to become his Ph.D. student. He became my doctoral advisor, but that description is too narrow for a relationship that grew into nearly four decades of collaboration and friendship.
 
-![Jehan-François Pâris and Darrell Long in front of Notre-Dame de Paris](/posts/images/darrell-jehan-francois-paris-notre-dame.jpg)
+![Jehan-François Pâris](/posts/images/jehan-francois-paris-portrait.jpg)
 
-*Jehan-François Pâris and me in front of Notre-Dame de Paris.*
+*Jehan-François Pâris.*
 
 ## Becoming His Student
 
