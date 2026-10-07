@@ -48,7 +48,7 @@ I have since reached the end of the list, and the last two lines read differentl
 ![Synthetic portrait of Denver Don Long](/images/on-fathers-denver-don-long.jpg "Denver Don Long")
 ![Synthetic portrait of Darrell Long](/images/on-fathers-darrell-long.jpg "Darrell Long")
 
-*Four generations, from left to right: my great-grandfather, my grandfather, my father, and me. These are synthetic portraits made from family photographs.*
+*Four generations, from left to right: my great-grandfather, my grandfather, my father, and me.*
 
 My great-grandfather, James Edward Long, was a train robber with the James gang. He fled a Texas Ranger across the Red River and settled in Clayton, Oklahoma. His son by Arizona Sparks was my grandfather, Albert Roy Long. Albert served as a military policeman during World War II, then worked security for Convair for thirty years.
 
