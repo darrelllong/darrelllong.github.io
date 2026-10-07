@@ -179,6 +179,33 @@ main.blogpost {
   overflow-y: hidden;
   padding: 6px 0;
 }
+.blog-content .portrait-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(140px, 1fr));
+  gap: 12px;
+  overflow-x: auto;
+  margin: 28px 0 12px;
+  padding-bottom: 8px;
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center top;
+    margin: 0 0 10px;
+  }
+
+  figcaption {
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
 @media (max-width: 760px) {
   .blog-posts {
     grid-template-columns: 1fr;

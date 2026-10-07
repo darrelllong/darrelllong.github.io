@@ -102,6 +102,26 @@ export default function BlogPost({ search }) {
             remarkPlugins={[remarkGfm, remarkMath]}
             rehypePlugins={[rehypeKatex]}
             components={{
+              p({ node, children, ...props }) {
+                const content = node.children.filter(
+                  (child) => child.type !== "text" || child.value.trim(),
+                );
+                if (content.length > 1 && content.every(
+                  (child) => child.type === "element" && child.tagName === "img",
+                )) {
+                  return (
+                    <div className="portrait-gallery" role="group" aria-label="Family portraits, oldest generation first" tabIndex={0}>
+                      {content.map(({ properties }) => (
+                        <figure key={properties.src}>
+                          <img src={properties.src} alt={properties.alt} loading="lazy" />
+                          <figcaption>{properties.title || properties.alt}</figcaption>
+                        </figure>
+                      ))}
+                    </div>
+                  );
+                }
+                return <p {...props}>{children}</p>;
+              },
               // A table takes the width its content needs, out to the width
               // of main, and scrolls beyond that; see .table-wide in blog.scss
               table({ children, ...props }) {

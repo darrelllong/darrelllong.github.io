@@ -42,3 +42,14 @@ The curve has a shape that anyone who has taught will recognize. A little knowle
 When that copy reached me, my mother had recently kicked my father out, for sins real and sins imagined. I was at the age where the list says a father is hopelessly old-fashioned. He loved his children but had a hard time expressing it. I have his heartfelt letters to us, and they prove it.
 
 I have since reached the end of the list, and the last two lines read differently now.
+
+![Synthetic portrait of James Edward Long](/images/on-fathers-james-edward-long.jpg "James Edward Long")
+![Synthetic portrait of Albert Roy Long](/images/on-fathers-albert-roy-long.jpg "Albert Roy Long")
+![Synthetic portrait of Denver Don Long](/images/on-fathers-denver-don-long.jpg "Denver Don Long")
+![Synthetic portrait of Darrell Long](/images/on-fathers-darrell-long.jpg "Darrell Long")
+
+*Four generations, from left to right: my great-grandfather, my grandfather, my father, and me. These are synthetic portraits made from family photographs.*
+
+My great-grandfather, James Edward Long, was a train robber with the James gang. He fled a Texas Ranger across the Red River and settled in Clayton, Oklahoma. His son by Arizona Sparks was my grandfather, Albert Roy Long. Albert served as a military policeman during World War II, then worked security for Convair for thirty years.
+
+Albert's son, Denver Don Long, was my father. He was a mechanic and machinist who worked in the San Diego shipyards during the Vietnam War. I am Denver's son, and I became a professor of engineering at the University of California, Santa Cruz. Four generations took us from train robbery to a university classroom, with military police, aircraft security, and shipyards in between.
