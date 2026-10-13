@@ -157,6 +157,8 @@ Perhaps the storage medium needs improvement. [Earth’s mass and estimated comp
 
 Even if each card occupied just one [Planck length](https://physics.nist.gov/cuu/Constants/Table/allascii.txt), writing every possible ordering end to end would stretch $4.21\times10^{31}$ miles. That is about **7.17 quintillion light-years**.
 
+The observable universe is about [93 billion light-years across](https://www.esa.int/kids/en/learn/Our_Universe/Story_of_the_Universe/The_Universe). Our line would span that diameter **77 million times**.
+
 Fifty-two cards.
 
 No clever algorithm eliminates the need to produce $52!$ separate orderings when producing every ordering is the job. Faster hardware changes the rate. It does not repeal the output requirement.
