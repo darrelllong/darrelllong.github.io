@@ -5,7 +5,7 @@ tags: ["artificial-intelligence", "mathematics", "philosophy", "algorithms"]
 excerpt: "Faith, mathematical proof, and the engineering cost of algorithms that promise their advantages beyond the reach of any real computer."
 ---
 
-![Blaise Pascal looks skeptically at a computer server on an altar while Vernor Vinge looks on optimistically.](/images/pascal-vinge-church-of-ai.png)
+![Blaise Pascal looks skeptically at a computer server on an altar while Vernor Vinge looks on optimistically, with a stone statue of Sam Altman in the background.](/images/pascal-vinge-church-of-ai-v2.png)
 
 *Pascal and Vinge at the Church of AI.*
 
@@ -31,7 +31,7 @@ I have no objection to machine checking through rules we understand. [Lean](http
 
 But a checked Lean proof establishes a particular formal proposition from particular assumptions. Mathematicians must still examine whether those are the proposition and assumptions being claimed. [Lean’s own documentation](https://lean-lang.org/doc/reference/latest/ValidatingProofs/) explains the need to inspect the statement and its axiom dependencies. The presence of some Lean formalizations does not certify every manuscript in a repository.
 
-Who checks the checkers? That remains a proper question. We can examine the rules, inspect the implementation, and check the result independently. An enormous enumeration may leave me intellectually unsatisfied, but dissatisfaction is different from invalidity.
+To paraphrase Juvenal, who checks the checkers? That remains a proper question. We can examine the rules, inspect the implementation, and check the result independently. An enormous enumeration may leave me intellectually unsatisfied, but dissatisfaction is different from invalidity.
 
 My objection arises when examination is replaced by an instruction to believe. If no human can understand the argument, but we are told to accept it because the machine knows better, we are being asked for faith.
 
