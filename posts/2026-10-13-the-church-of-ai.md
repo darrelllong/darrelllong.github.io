@@ -5,9 +5,9 @@ tags: ["artificial-intelligence", "mathematics", "philosophy", "algorithms"]
 excerpt: "Faith, mathematical proof, and the engineering cost of algorithms that promise their advantages beyond the reach of any real computer."
 ---
 
-![Blaise Pascal scowling at a computer server on an altar in the Church of AI.](/images/pascal-church-of-ai.png)
+![Blaise Pascal looks skeptically at a computer server on an altar while Vernor Vinge looks on optimistically.](/images/pascal-vinge-church-of-ai.png)
 
-*Pascal at the Church of AI.*
+*Pascal and Vinge at the Church of AI.*
 
 Pierre de Fermat wrote that
 
