@@ -159,12 +159,6 @@ Engineers do not need infinity to encounter impossibility. Fifty-two will do.
 
 A friend put it nicely: “The real world is a messy place. Welcome to it, mathematicians.”
 
-Vernor Vinge was a dear friend of mine. We used to talk through his ideas for books on our way to Square Pan Pizza. He had been telling me about his ideas around the Singularity since at least 1980, assuring me that it might be just around the corner.
-
-My friends in holographic storage and controlled nuclear fusion have made similar assurances for the same forty years. The Singularity may come, or it may not, a possibility Vernor explored in [*A Deepness in the Sky*](https://us.macmillan.com/books/9781250905970/adeepnessinthesky/).
-
-And the real world includes the power supply.
-
 My piddling brain runs on less than 30 watts; the usual estimate for a [human brain’s power consumption](https://pmc.ncbi.nlm.nih.gov/articles/PMC6092772/) is around 20. My friend Richard Garwin’s probably ran at 100 watts. If you ever sat with him eating ice cream, you will understand.
 
 Allow him that generous 100 watts continuously from birth to [his doctorate at twenty-one](https://rlg.fas.org/). That comes to about eighteen megawatt-hours. The [International Energy Agency estimates](https://iea.blob.core.windows.net/assets/ed0483fd-aab4-4cf9-b25a-5aa362b56a2f/EnergyandAI.pdf) that training GPT-4 consumed 42.4 gigawatt-hours, more than two thousand times that budget.
@@ -176,3 +170,7 @@ And GPT-4 is not even close to Garwin.
 That is a facility-scale comparison. For Fable itself, I want the power consumption of the working system and the useful work delivered. Put a meter on it.
 
 Call me when you have a Garwin equivalent running on less than 1 kW.
+
+Vernor Vinge was a dear friend of mine. We used to talk through his ideas for books on our way to Square Pan Pizza. He had been telling me about his ideas around the Singularity since at least 1980, assuring me that it might be just around the corner.
+
+My friends in holographic storage and controlled nuclear fusion have made similar assurances for the same forty years. The Singularity may come, or it may not, a possibility Vernor explored in [*A Deepness in the Sky*](https://us.macmillan.com/books/9781250905970/adeepnessinthesky/).
