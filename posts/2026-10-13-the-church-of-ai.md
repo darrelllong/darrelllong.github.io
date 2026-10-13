@@ -165,6 +165,8 @@ Allow him that generous 100 watts continuously from birth to [his doctorate at t
 
 And GPT-4 is not even close to Garwin.
 
+Don’t get me started on how much data GPT-4 was trained on versus the number of books and papers Garwin read. There is a fundamental difference we do not understand and try to paper over with bytes.
+
 [Anthropic announced access to more than 300 megawatts of capacity](https://www.anthropic.com/news/higher-limits-spacex) at Elon Musk’s Colossus 1 data center. At a continuous draw of 300 megawatts, Colossus would consume Garwin’s entire twenty-one-year allowance in less than four minutes.
 
 That is a facility-scale comparison. For Fable itself, I want the power consumption of the working system and the useful work delivered. Put a meter on it.
