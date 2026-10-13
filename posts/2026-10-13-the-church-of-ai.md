@@ -23,7 +23,9 @@ More than three centuries later, [Andrew Wiles announced a proof](https://abelpr
 
 That is how mathematics works. One mathematician convinces the others by giving them an argument they can examine. They question the assumptions, follow the deductions, and look for mistakes. The argument has to withstand that examination.
 
-Now OpenAI has released a collection of mathematical manuscripts whose readability is itself a subject of dispute. [Tristan Humbert described the manuscript concerning a problem from his doctoral research](https://proofsandprompts.com/2026/10/08/100-reactions-to-100-solutions/comment-page-1/) as “mostly unreadable slop.” [OpenAI’s own repository](https://github.com/openai/math) acknowledges that the results are at different stages of verification, that not all have accompanying Lean formalizations, and that “Some of the unformalized results could have issues.”
+Now the frontier AI labs are publishing mathematical manuscripts and announcing proofs produced by their models. [Anthropic has released a Lean formalization of Fermat’s Last Theorem](https://www.anthropic.com/research/formalizing-fermats-last-theorem). [Google DeepMind has published proofs from AlphaProof Nexus](https://github.com/google-deepmind/alphaproof-nexus-results).
+
+OpenAI has released a collection of mathematical manuscripts whose readability is itself a subject of dispute. [Tristan Humbert described the manuscript concerning a problem from his doctoral research](https://proofsandprompts.com/2026/10/08/100-reactions-to-100-solutions/comment-page-1/) as “mostly unreadable slop.” [OpenAI’s own repository](https://github.com/openai/math) acknowledges that the results are at different stages of verification, that not all have accompanying Lean formalizations, and that “Some of the unformalized results could have issues.”
 
 An unreadable manuscript accompanied by an admission that it may contain holes does not become established mathematics because a machine produced it.
 
@@ -47,13 +49,13 @@ Certainly. That is theology, which is precisely what I said. I know [Isaiah](htt
 
 > For my thoughts are not your thoughts, neither are your ways my ways, saith the Lord.
 
-I do not pretend to know the mind of God. That does not entitle anyone to put OpenAI in His place.
+I do not pretend to know the mind of God. That does not entitle anyone to put an AI lab in His place.
 
 I once asked my friend Freeman Dyson, who had recently won the [Templeton Prize](https://www.templetonprize.org/laureate/freeman-j-dyson/), how he reconciled science and religion. In his typical way, he said they were two windows on a house looking out at the same world, and you get to look out one window at a time.
 
 [Pascal understood the distinction](https://www.gutenberg.org/files/18269/18269-h/18269-h.htm). His wager reasoned about the consequences of belief under uncertainty; it did not demonstrate God’s existence. Its force came from the asymmetry of the stakes: finite worldly costs against the possibility of infinite gain, finite worldly gains against the possibility of infinite loss. That reasoning anticipated decision theory. It did not turn faith into a theorem.
 
-If you accept OpenAI’s purported proofs without mathematicians examining them, simply because you believe OpenAI knows better, you are operating on faith. Calling the source a machine does not change what you are doing.
+If you accept an AI lab’s purported proofs without mathematicians examining them, simply because you believe the machine knows better, you are operating on faith. Calling the source a machine does not change what you are doing.
 
 If you work on faith, atheism is not for you. You just have a different God.
 
