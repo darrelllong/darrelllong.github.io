@@ -49,7 +49,7 @@ Certainly. That is theology, which is precisely what I said. I know [Isaiah](htt
 
 > For my thoughts are not your thoughts, neither are your ways my ways, saith the Lord.
 
-I do not pretend to know the mind of God. That does not entitle anyone to put an AI lab in His place.
+I do not pretend to know the mind of God. I find it curious to see people so eager to put AI in His place.
 
 I once asked my friend Freeman Dyson, who had recently won the [Templeton Prize](https://www.templetonprize.org/laureate/freeman-j-dyson/), how he reconciled science and religion. In his typical way, he said they were two windows on a house looking out at the same world, and you get to look out one window at a time.
 
