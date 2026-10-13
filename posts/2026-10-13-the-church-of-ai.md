@@ -169,6 +169,8 @@ My piddling brain runs on less than 30 watts; the usual estimate for a [human br
 
 Allow him that generous 100 watts continuously from birth to [his doctorate at twenty-one](https://rlg.fas.org/). That comes to about eighteen megawatt-hours. The [International Energy Agency estimates](https://iea.blob.core.windows.net/assets/ed0483fd-aab4-4cf9-b25a-5aa362b56a2f/EnergyandAI.pdf) that training GPT-4 consumed 42.4 gigawatt-hours, more than two thousand times that budget.
 
+And GPT-4 is not even close to Garwin.
+
 [Anthropic announced access to more than 300 megawatts of capacity](https://www.anthropic.com/news/higher-limits-spacex) at Elon Musk’s Colossus 1 data center. At a continuous draw of 300 megawatts, Colossus would consume Garwin’s entire twenty-one-year allowance in less than four minutes.
 
 That is a facility-scale comparison. For Fable itself, I want the power consumption of the working system and the useful work delivered. Put a meter on it.
