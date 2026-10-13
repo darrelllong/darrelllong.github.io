@@ -155,6 +155,8 @@ times its present age.
 
 Perhaps the storage medium needs improvement. [Earth’s mass and estimated composition](https://arxiv.org/html/2505.02641v1#S7) give roughly $1.4\times10^{50}$ atoms. Suppose we could store an *entire deck ordering on each atom*. We would still need approximately $6\times10^{17}$ Earths: **six hundred quadrillion Earths** to record all the shuffles.
 
+Even if each card occupied just one [Planck length](https://physics.nist.gov/cuu/Constants/Table/allascii.txt), writing every possible ordering end to end would stretch $4.21\times10^{31}$ miles. That is about **7.17 quintillion light-years**.
+
 Fifty-two cards.
 
 No clever algorithm eliminates the need to produce $52!$ separate orderings when producing every ordering is the job. Faster hardware changes the rate. It does not repeal the output requirement.
