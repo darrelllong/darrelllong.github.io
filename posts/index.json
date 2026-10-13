@@ -1,5 +1,17 @@
 [
   {
+    "slug": "2026-10-13-the-church-of-ai",
+    "title": "The Church of AI",
+    "date": "2026-10-13",
+    "tags": [
+      "artificial-intelligence",
+      "mathematics",
+      "philosophy",
+      "algorithms"
+    ],
+    "excerpt": "Faith, mathematical proof, and the engineering cost of algorithms that promise their advantages beyond the reach of any real computer."
+  },
+  {
     "slug": "2026-10-06-theory-of-finite-automata-solutions",
     "title": "A Solutions Manual for Theory of Finite Automata",
     "date": "2026-10-06",
