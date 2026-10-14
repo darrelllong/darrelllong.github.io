@@ -101,23 +101,7 @@ They do not give me a useful algorithm for the calculation I need to perform. I 
 
 Even within $P$, the region in which we can comfortably do useful work is narrow. Unless the input is small, cubic time already makes us uneasy. Exponential and factorial growth demand smaller inputs still. Calling an algorithm polynomial does not oblige a computer to finish it before the electricity bill arrives.
 
-I have spent weeks working on the general number field sieve. Its customary [heuristic running-time estimate](https://arxiv.org/abs/2007.02730) is
-
-$$
-\begin{aligned}
-L_N\!\left[\frac13,\left(\frac{64}{9}\right)^{1/3}\right]
-&=\exp\!\left(
-\left(\left(\frac{64}{9}\right)^{1/3}+o(1)\right)
-(\ln N)^{1/3}(\ln\ln N)^{2/3}
-\right).
-\end{aligned}
-$$
-
-Here $N$ is the integer being factored. It is not the number of bits in its representation. An integer with $b$ bits is on the scale of $2^b$. Keeping track of what the variable means is part of understanding what the computation costs.
-
-In an implementation, I have to care about memory, arithmetic, data movement, and elapsed time. Those costs do not disappear into the notation.
-
-Consider something much more familiar: a deck of cards.
+Consider a deck of cards.
 
 There are
 
