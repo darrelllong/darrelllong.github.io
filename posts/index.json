@@ -1,5 +1,17 @@
 [
   {
+    "slug": "2026-10-19-lessons-from-the-backblaze-data",
+    "title": "Lessons from the Backblaze Data",
+    "date": "2026-10-19",
+    "tags": [
+      "research",
+      "storage",
+      "reliability",
+      "statistics"
+    ],
+    "excerpt": "Thirteen years of daily records from half a million disk drives: what they say about failure, what they cannot say, and what a storage simulator should assume."
+  },
+  {
     "slug": "2026-10-13-the-church-of-ai",
     "title": "The Church of AI",
     "date": "2026-10-13",
