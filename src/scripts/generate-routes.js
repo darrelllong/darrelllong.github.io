@@ -359,6 +359,7 @@ for (const path of [
   "posts",
   "pdfs",
   "images",
+  "downloads",
   "favicon.ico",
   "404.html",
   "not-found.jpg",

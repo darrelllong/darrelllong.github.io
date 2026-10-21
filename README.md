@@ -48,4 +48,13 @@ git add -A && git commit -m "Deploy" && git push
 ## Blog posts
 
 Create `posts/YYYY-MM-DD-slug.md` with frontmatter, add an entry to `posts/index.json`,
-then commit and push — no build step needed for blog content.
+then run `npm run deploy` from `src/` before committing and pushing. This updates
+the rendered post, archive, home page, and sitemap along with the Markdown source.
+
+## Local draft preview
+
+Put drafts with the same frontmatter format in `drafts/YYYY-MM-DD-slug.md`.
+Run `npm run dev -- --host 127.0.0.1` from `src/`, then open
+`http://127.0.0.1:5173/blog/YYYY-MM-DD-slug/`. Refresh after editing the draft.
+The development server includes drafts in the local blog archive and serves their
+images and downloads. Drafts are not added to the published manifest or production build.

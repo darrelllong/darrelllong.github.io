@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1224pt" height="612pt" viewBox="0 0 1224 612" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-21T09:06:43.282096</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 612 
+L 1224 612 
+L 1224 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 98.902793 205.661269 
+C 92.303958 217.557857 87.693757 230.45341 85.254791 243.837162 
+C 82.815826 257.220913 82.580733 270.913793 84.558838 284.37338 
+C 86.536936 297.832964 90.701761 310.879207 96.888329 322.995302 
+C 103.074897 335.111396 111.200427 346.135235 120.943082 355.630184 
+C 130.685737 365.125132 141.915148 372.964127 154.186517 378.836678 
+C 166.457886 384.709228 179.607038 388.536744 193.113094 390.167628 
+C 206.61915 391.798504 220.301437 391.210937 233.617952 388.428165 
+C 246.934468 385.645401 259.707046 380.704693 271.429777 373.80173 
+C 283.152509 366.898767 293.668524 358.125928 302.561305 347.830696 
+C 311.454086 337.535464 318.604635 325.855569 323.7297 313.253704 
+C 328.854765 300.651838 331.885793 287.296574 332.702708 273.716957 
+C 333.519616 260.13734 332.111494 246.515058 328.534109 233.389674 
+C 324.956725 220.26429 319.257956 207.811448 311.663512 196.524384 
+C 304.069068 185.237324 294.680541 175.267033 283.869879 167.008522 
+C 273.059217 158.750012 260.971055 152.313752 248.084172 147.954665 
+C 235.19729 143.595578 221.684161 141.372 208.079995 141.372 
+L 208.08 266.22 
+z
+" style="fill: #087f8c; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 101.045988 201.949134 
+C 100.678199 202.56163 100.315678 203.177282 99.958455 203.796004 
+C 99.601232 204.414725 99.249337 205.036505 98.902793 205.661269 
+L 208.08 266.22 
+z
+" style="fill: #d5a04c; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 208.080001 141.372 
+C 186.529408 141.372 165.341531 146.95192 146.586365 157.566624 
+C 127.831199 168.181328 112.140083 183.473497 101.045988 201.949134 
+L 208.08 266.22 
+z
+" style="fill: #a5b8c6; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="text_1">
+    <text style="fill: #ffffff; font: 700 15px 'DejaVu Sans'" transform="translate(218.374826 337.267925)">152/183</text>
+    <text style="fill: #ffffff; font: 700 15px 'DejaVu Sans'" transform="translate(226.405686 354.064644)">83.1%</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #183748; font: 700 15px 'DejaVu Sans'" transform="translate(136.202816 185.90334)">30/183</text>
+    <text style="fill: #183748; font: 700 15px 'DejaVu Sans'" transform="translate(139.015316 202.700058)">16.4%</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 94.792747 283.396626 
+Q 97.310812 244.594722 99.828876 205.792817 
+" style="fill: none; stroke: #183748; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <g id="patch_6">
+     <path d="M 55.2924 301.979529 
+L 132.957556 301.979529 
+L 132.957556 285.393591 
+L 55.2924 285.393591 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="fill: #183748; font: 11px 'DejaVu Sans'; text-anchor: start" x="58.2624" y="296.721873" transform="rotate(-0 58.2624 296.721873)">1/183 (0.5%)</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #183748; font: 13px 'DejaVu Sans'" transform="translate(122.607031 69.045687)">All listed political research</text>
+    <text style="fill: #183748; font: 13px 'DejaVu Sans'" transform="translate(153.137734 83.602844)">Including emeriti</text>
+    <text style="fill: #183748; font: 13px 'DejaVu Sans'" transform="translate(181.975391 98.16)">n = 183</text>
+   </g>
+   <g id="legend_1">
+    <g id="patch_7">
+     <path d="M 101.391797 439.708359 
+L 122.391797 439.708359 
+L 122.391797 432.358359 
+L 101.391797 432.358359 
+z
+" style="fill: #087f8c; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_5">
+     <text style="fill: #183748; font: 10.5px 'DejaVu Sans'; text-anchor: start" x="130.791797" y="439.708359" transform="rotate(-0 130.791797 439.708359)">Left-sympathetic: 152/183 (83.1%)</text>
+    </g>
+    <g id="patch_8">
+     <path d="M 101.391797 458.270391 
+L 122.391797 458.270391 
+L 122.391797 450.920391 
+L 101.391797 450.920391 
+z
+" style="fill: #d5a04c; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_6">
+     <text style="fill: #183748; font: 10.5px 'DejaVu Sans'; text-anchor: start" x="130.791797" y="458.270391" transform="rotate(-0 130.791797 458.270391)">Right-sympathetic: 1/183 (0.5%)</text>
+    </g>
+    <g id="patch_9">
+     <path d="M 101.391797 476.832422 
+L 122.391797 476.832422 
+L 122.391797 469.482422 
+L 101.391797 469.482422 
+z
+" style="fill: #a5b8c6; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_7">
+     <text style="fill: #183748; font: 10.5px 'DejaVu Sans'; text-anchor: start" x="130.791797" y="476.832422" transform="rotate(-0 130.791797 476.832422)">Unresolved: 30/183 (16.4%)</text>
+    </g>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_10">
+    <path d="M 501.948854 202.906597 
+C 495.01611 214.68901 490.065452 227.530507 487.294862 240.917518 
+C 484.524272 254.304527 483.971189 268.056186 485.657742 281.622458 
+C 487.344296 295.188729 491.247686 308.386331 497.211805 320.687448 
+C 503.175923 332.988561 511.1202 344.226998 520.726884 353.953244 
+C 530.333567 363.679491 541.472868 371.762135 553.699279 377.877942 
+C 565.925691 383.993748 579.074006 388.06007 592.618379 389.914282 
+C 606.162753 391.768485 619.920201 391.38553 633.340452 388.78073 
+C 646.760705 386.175922 659.662452 381.384461 671.52971 374.59798 
+C 683.396971 367.811499 694.069384 359.121686 703.120126 348.876088 
+C 712.170868 338.630491 719.47766 326.967522 724.748236 314.353676 
+C 730.018812 301.739829 733.181987 288.345516 734.111239 274.706429 
+C 735.040492 261.067343 733.723276 247.367774 730.212262 234.155622 
+C 726.701248 220.94347 721.043892 208.39726 713.466437 197.018754 
+C 705.888982 185.640252 696.493779 175.583156 685.656663 167.249784 
+C 674.819546 158.916412 662.686906 152.419332 649.74397 148.018357 
+C 636.801033 143.617382 623.2227 141.372 609.551995 141.372 
+L 609.552 266.22 
+z
+" style="fill: #087f8c; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 609.552001 141.372 
+C 587.812693 141.372 566.445745 147.050074 547.574298 157.84202 
+C 528.702854 168.633966 512.973377 184.170068 501.948854 202.906597 
+L 609.552 266.22 
+z
+" style="fill: #a5b8c6; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_3"/>
+   <g id="matplotlib.axis_4"/>
+   <g id="text_8">
+    <text style="fill: #ffffff; font: 700 15px 'DejaVu Sans'" transform="translate(618.886389 337.825294)">106/127</text>
+    <text style="fill: #ffffff; font: 700 15px 'DejaVu Sans'" transform="translate(626.917248 354.622013)">83.5%</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #183748; font: 700 15px 'DejaVu Sans'" transform="translate(537.336004 186.096093)">21/127</text>
+    <text style="fill: #183748; font: 700 15px 'DejaVu Sans'" transform="translate(540.148504 202.892812)">16.5%</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #183748; font: 13px 'DejaVu Sans'" transform="translate(507.708172 69.045687)">Non-emeritus political research</text>
+    <text style="fill: #183748; font: 13px 'DejaVu Sans'" transform="translate(507.931609 83.602844)">Including unresolved directions</text>
+    <text style="fill: #183748; font: 13px 'DejaVu Sans'" transform="translate(583.447391 98.16)">n = 127</text>
+   </g>
+   <g id="legend_2">
+    <g id="patch_12">
+     <path d="M 502.863797 439.708359 
+L 523.863797 439.708359 
+L 523.863797 432.358359 
+L 502.863797 432.358359 
+z
+" style="fill: #087f8c; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_11">
+     <text style="fill: #183748; font: 10.5px 'DejaVu Sans'; text-anchor: start" x="532.263797" y="439.708359" transform="rotate(-0 532.263797 439.708359)">Left-sympathetic: 106/127 (83.5%)</text>
+    </g>
+    <g id="patch_13">
+     <path d="M 502.863797 458.270391 
+L 523.863797 458.270391 
+L 523.863797 450.920391 
+L 502.863797 450.920391 
+z
+" style="fill: #a5b8c6; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_12">
+     <text style="fill: #183748; font: 10.5px 'DejaVu Sans'; text-anchor: start" x="532.263797" y="458.270391" transform="rotate(-0 532.263797 458.270391)">Unresolved: 21/127 (16.5%)</text>
+    </g>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_14">
+    <path d="M 1135.872 266.22 
+C 1135.872 249.825111 1132.642564 233.589641 1126.368512 218.442739 
+C 1120.094459 203.295836 1110.897805 189.53207 1099.304867 177.939133 
+C 1087.71193 166.346195 1073.948164 157.149541 1058.801261 150.875488 
+C 1043.654359 144.601436 1027.418889 141.372 1011.024 141.372 
+C 994.629111 141.372 978.393641 144.601436 963.246739 150.875488 
+C 948.099836 157.149541 934.33607 166.346195 922.743133 177.939133 
+C 911.150195 189.53207 901.953541 203.295836 895.679488 218.442739 
+C 889.405436 233.589641 886.176 249.825111 886.176 266.22 
+C 886.176 282.614889 889.405436 298.850359 895.679488 313.997261 
+C 901.953541 329.144164 911.150195 342.90793 922.743133 354.500867 
+C 934.33607 366.093805 948.099836 375.290459 963.246739 381.564512 
+C 978.393641 387.838564 994.629111 391.068 1011.024 391.068 
+C 1027.418889 391.068 1043.654359 387.838564 1058.801261 381.564512 
+C 1073.948164 375.290459 1087.71193 366.093805 1099.304867 354.500867 
+C 1110.897805 342.90793 1120.094459 329.144164 1126.368512 313.997261 
+C 1132.642564 298.850359 1135.872 282.614889 1135.872 266.22 
+M 1011.024 266.22 
+z
+" style="fill: #087f8c; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_5"/>
+   <g id="matplotlib.axis_6"/>
+   <g id="text_13">
+    <text style="fill: #ffffff; font: 700 15px 'DejaVu Sans'" transform="translate(976.974 261.960703)">106/106</text>
+    <text style="fill: #ffffff; font: 700 15px 'DejaVu Sans'" transform="translate(979.7865 278.757422)">100.0%</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #183748; font: 13px 'DejaVu Sans'" transform="translate(903.120953 69.045687)">Non-emeritus: direction assigned</text>
+    <text style="fill: #183748; font: 13px 'DejaVu Sans'" transform="translate(909.2665 83.602844)">Excludes 21 unresolved entries</text>
+    <text style="fill: #183748; font: 13px 'DejaVu Sans'" transform="translate(984.919391 98.16)">n = 106</text>
+   </g>
+   <g id="legend_3">
+    <g id="patch_15">
+     <path d="M 900.995484 439.708359 
+L 921.995484 439.708359 
+L 921.995484 432.358359 
+L 900.995484 432.358359 
+z
+" style="fill: #087f8c; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_15">
+     <text style="fill: #183748; font: 10.5px 'DejaVu Sans'; text-anchor: start" x="930.395484" y="439.708359" transform="rotate(-0 930.395484 439.708359)">Left-sympathetic: 106/106 (100.0%)</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_16">
+   <text style="fill: #183748; font: 700 23px 'DejaVu Sans'; text-anchor: start" x="48.96" y="35.836406" transform="rotate(-0 48.96 35.836406)">UCSC Humanities: political research direction</text>
+  </g>
+  <g id="text_17">
+   <text style="fill: #53636d; font: 13px 'DejaVu Sans'; text-anchor: start" x="48.96" y="55.08" transform="rotate(-0 48.96 55.08)">The denominator changes across these views. Counts and percentages are shown on every slice.</text>
+  </g>
+  <g id="text_18">
+   <text style="fill: #53636d; font: 11px 'DejaVu Sans'; text-anchor: start" x="48.96" y="550.8" transform="rotate(-0 48.96 550.8)">The sole Right-sympathetic entry is John Ellis, emeritus. The 100% result is 106/106 assigned non-emeritus directions.</text>
+  </g>
+  <g id="text_19">
+   <text style="fill: #53636d; font: 10px 'DejaVu Sans'; text-anchor: start" x="48.96" y="578.34" transform="rotate(-0 48.96 578.34)">Source: accompanying workbook and cited publications • Updated 21 October 2026 • Counts are people, not publications</text>
+  </g>
+ </g>
+</svg>
