@@ -13,7 +13,7 @@ I spent thirty-five years at the University of California, Santa Cruz. It was al
 
 My concern is political monoculture. Scholars should be free to pursue Marxist, conservative, liberal, or other arguments and to challenge one another's conclusions. Political agreement should never be a requirement for hiring, promotion, or a voice in university affairs. The same objection would apply to a university dominated by the Right.
 
-I recount these exchanges from memory. At one committee meeting, Professor John Ellis's name came up as a candidate for service on another committee. Members objected strongly because of what they called “his reprehensible politics.” Ellis's [*Literature Lost*](https://yalebooks.yale.edu/book/9780300075793/literature-lost/) criticizes the ascendancy of race, gender, and class politics in literary scholarship.
+I remember sitting on a committee when Professor John Ellis's name came up as a candidate for service on another committee. Members objected strongly because of what they called “his reprehensible politics.” Ellis's [*Literature Lost*](https://yalebooks.yale.edu/book/9780300075793/literature-lost/) criticizes the ascendancy of race, gender, and class politics in literary scholarship.
 
 His colleagues wanted to exclude him from ordinary university service because they disliked his politics. I saw the same intolerance in hiring and teaching. It undermines the university's obligation to teach students to think independently.
 
