@@ -1,5 +1,5 @@
 ---
-title: "Politics in the UCSC Humanities"
+title: "Politicization of the UCSC Humanities"
 date: "2026-10-20"
 tags: ["universities", "humanities", "academic-freedom", "uc-santa-cruz"]
 excerpt: "After thirty-five years at UC Santa Cruz, I examined its humanities faculty's published research and recalled what happened to colleagues who challenged the prevailing politics."
@@ -17,7 +17,7 @@ I remember sitting on a committee when Professor John Ellis's name came up as a 
 
 His colleagues wanted to exclude him from ordinary university service because they disliked his politics. I saw the same intolerance in hiring and teaching. It undermines the university's obligation to teach students to think independently.
 
-I wanted to put some evidence alongside my recollections. The resulting [spreadsheet](/downloads/ucsc-humanities-research-reviewed.xlsx) examines research descriptions and publications from the Humanities Division and its department rosters. The original inventory contains 264 people. Excluding 76 non-Senate appointments leaves **188 Senate faculty: 115 non-emeritus faculty and 73 emeriti**. This main group includes teaching professors and those with the older title of lecturer with security of employment. The excluded group consists of 74 lecturers and two further entries listed under Lecturers and Postdocs. Readers can inspect every classification and source, or use the [CSV version](/downloads/ucsc-humanities-data.csv) to do the arithmetic independently.
+I examined the faculty's published research. The resulting [spreadsheet](/downloads/ucsc-humanities-research-reviewed.xlsx) documents research descriptions and publications for faculty listed on the Humanities Division and department rosters. The original inventory contains 264 people. Excluding 76 non-Senate appointments leaves **188 Senate faculty: 115 non-emeritus faculty and 73 emeriti**. This main group includes teaching professors and those with the older title of lecturer with security of employment. The excluded group consists of 74 lecturers and two further entries listed under Lecturers and Postdocs. Readers can inspect every classification and source, or use the [CSV version](/downloads/ucsc-humanities-data.csv) to do the arithmetic independently.
 
 Research information was found for **185 of those 188 people**; it was unavailable for three, or 1.6%. Of the 185 with research information, **145 (78.4%) had political research**, and 40 had no political research identified. The definition of political research encompasses government, power, law, war, social hierarchy, collective identity, and economic systems.
 
