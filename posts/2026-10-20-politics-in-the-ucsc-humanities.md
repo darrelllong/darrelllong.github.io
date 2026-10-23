@@ -78,7 +78,7 @@ Our Constitution is the [world's longest-surviving written charter of government
 
 Judging the founding by twenty-first-century standards obscures what the founders achieved in their own time. Teaching students that America is terrible and irredeemable is political instruction.
 
-A dean explicitly told me that I could not tell my first-generation students, children of immigrants, that in America, if they worked hard, they could achieve anything. Hard work had changed my own life. I was forbidden to speak about that opportunity in my teaching.
+A dean explicitly told me that I could not tell my first-generation students, children of immigrants, that in America, if they worked hard, they could achieve anything. [I did not grow up wealthy](/blog/2026-09-27-on-fathers/). Hard work and belief that I could achieve a better life allowed me to build one. I was forbidden to speak about that opportunity in my teaching.
 
 Critical Race and Ethnic Studies has acted as a political organization in its own name. AMCHA Initiative's [January 2024 report](https://amchainitiative.org/wp-content/uploads/2024/01/CRES-Report.pdf), especially pp. 5–9, documents these actions through departmental statements, announcements, and conference materials:
 
