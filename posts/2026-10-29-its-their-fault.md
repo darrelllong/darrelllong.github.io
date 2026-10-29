@@ -23,7 +23,7 @@ They were, and remain, my heroes. They taught me how to think.
 
 All three of them formed my views on individual rights and personal liberty. John and Sara had me reading Sowell and Friedman, and Vernor started me with his short story “The Ungoverned.”
 
-Sara taught me politics and philosophy, as well as algorithms. Her classic text, [*Computer Algorithms: Introduction to Design and Analysis*](https://library.kaist.ac.kr/search/detail/view.do?bibCtrlNo=5586), was published by Addison-Wesley in 1978.
+Sara taught me politics and philosophy, as well as algorithms. Her classic text, [*Computer Algorithms: Introduction to Design and Analysis*](https://edoras.sdsu.edu/~carroll/CS460Baase.pdf), was first published by Addison-Wesley in 1978.
 
 Vernor would run his latest ideas for the book he was working on past us, and make me question my political assumptions. His novels [*A Fire Upon the Deep*](https://us.macmillan.com/books/9781250237750/afireuponthedeep/), [*A Deepness in the Sky*](https://us.macmillan.com/books/9781250905970/adeepnessinthesky/), and [*Rainbows End*](https://us.macmillan.com/books/9781250841506/rainbowsend/) would all win Hugo Awards.
 
