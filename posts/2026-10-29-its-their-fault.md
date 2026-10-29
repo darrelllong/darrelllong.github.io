@@ -65,7 +65,7 @@ What did I need to do to be like them? Get a Ph.D. How did I do that? Go to grad
 
 The GRE was the next week.
 
-When I graduated, I received SDSU's first B.S. in computer science. The degree was not supposed to be available until the following year, but I had to be me.
+When I graduated, I received SDSU's first B.S. in computer science. The opportunity was there, and I had completed the required classes and then some, so I took it. I am sure some strings were pulled, since the degree was not supposed to be available until the following year.
 
 Dean Donald Short appointed me as a lecturer in mathematics straight out of the B.S., before I had even started graduate school. I guess I had him fooled too.
 
