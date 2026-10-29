@@ -9,6 +9,8 @@ In 1992, we started REINAS, the Real-Time Environmental Information Network and 
 
 [Dr. Patrick Mantey](https://mantey.soe.ucsc.edu/), our principal investigator, brought electrical engineering. [Dr. Alex Pang](https://campusdirectory.ucsc.edu/cd_detail?uid=pang) worked on visualization, [Dr. J. J. Garcia-Luna-Aceves](https://media.utoronto.ca/bluebook/jj-garcia-luna-aceves/) on networking, and [Dr. Glen Langdon](https://news.ucsc.edu/2014/03/langdon-obituary/) on data compression. Dr. Langdon was one of the inventors of [arithmetic coding](https://patents.google.com/patent/US4122440A/en). I worked on systems, networking, and databases. I was also the guy with the supposedly insane idea that the instruments should be on the network all the time.
 
+Our meteorology collaborators at the Naval Postgraduate School included [Dr. Carlyle H. Wash](https://nps.edu/web/meteorology/people) and [Dr. Wendell A. Nuss](https://nps.edu/faculty-profiles/-/cv/nuss).
+
 The grant was nearly \$5 million—[\$4,767,112 over 1992–1997](/cv.pdf), to be precise. At the time, it was by far the largest grant in what would become the School of Engineering.
 
 We wrote the proposal in 1991. I suggested that every sensor should be a TCP/IP node, continuously online. I was told that I was crazy: computers were too big. I said to trust me.
