@@ -47,6 +47,9 @@ git add -A && git commit -m "Deploy" && git push
 
 ## Blog posts
 
+Do not cite MacTutor (mathshistory.st-andrews.ac.uk) in blog posts. Prefer original
+papers, archival documents, and scholarly or institutional histories.
+
 Create `posts/YYYY-MM-DD-slug.md` with frontmatter, add an entry to `posts/index.json`,
 then run `npm run deploy` from `src/` before committing and pushing. This updates
 the rendered post, archive, home page, and sitemap along with the Markdown source.
