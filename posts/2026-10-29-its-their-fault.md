@@ -7,7 +7,7 @@ excerpt: "John Carroll, Sara Baase, and Vernor Vinge were, and remain, my heroes
 
 ![John Carroll, Christina, Sara Baase, Keith, and Vernor Vinge standing together outside](/posts/images/sdsu-mentors.jpg)
 
-*Left to right: John Carroll; his very young wife, Christina; Sara Baase (now Myers) and her husband, Keith; and Vernor Vinge.*
+*Left to right: John Carroll; his very young wife, Christina; Sara Baase (now Mayers) and her husband, Keith; and Vernor Vinge.*
 
 I came to San Diego State straight out of high school. I got in because of my SAT scores, not my grades, but that is another story. I was told recently that even if I had a 4.0, I would not get in today. So much for a Distinguished Professor of Engineering.
 
