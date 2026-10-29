@@ -55,6 +55,8 @@ Nor was REINAS the last episode. From 2000 through 2004, I chaired the [Engineer
 
 Someone replaced the sign on my lab with “Nuclear Weapons Laboratory.” That did not please our dean at the time, [Dr. Steve Kang](https://news.ucsc.edu/2022/07/kang-retirement/), another wonderful human being.
 
+Steve led the development of the [BELLMAC-32 microprocessor](https://nisl.soe.ucsc.edu/) at Bell Labs and is a leader in memristor research. He went on to serve as chancellor of UC Merced and president of KAIST. The Baskin School of Engineering would be a much different place if we still had a man like Steve Kang at the helm.
+
 Some of it was entertaining. Once, students staged a performance in the Engineering 2 courtyard. One student was dressed as a cruise missile, while the others lay down and pretended to die.
 
 When we found this poster on the door outside the lab, we brought it inside and put it on the wall.

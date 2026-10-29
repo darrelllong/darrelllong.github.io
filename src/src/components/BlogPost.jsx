@@ -134,7 +134,10 @@ export default function BlogPost({ search }) {
                 );
               },
               a({ href, children, ...props }) {
-                if (href && /^\/(downloads|images|pdfs)\//.test(href)) {
+                if (href && (
+                  /^\/(downloads|images|pdfs)\//.test(href) ||
+                  /^\/.*\.pdf(?:[?#]|$)/i.test(href)
+                )) {
                   return (
                     <a href={href} download={/^\/downloads\/.*\.(xlsx|csv)(?:[?#]|$)/i.test(href)} {...props}>
                       {children}
