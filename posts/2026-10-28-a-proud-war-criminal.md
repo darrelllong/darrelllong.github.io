@@ -11,7 +11,7 @@ In 1992, we started REINAS, the Real-Time Environmental Information Network and 
 
 Our meteorology collaborators at the Naval Postgraduate School included [Dr. Carlyle H. Wash](https://nps.edu/web/meteorology/people) and [Dr. Wendell A. Nuss](https://nps.edu/faculty-profiles/-/cv/nuss).
 
-The grant was nearly \$5 million—[\$4,767,112 over 1992–1997](/cv.pdf), to be precise. At the time, it was by far the largest grant in what would become the School of Engineering.
+The grant was nearly \$5 million—[\$4,767,112 over 1992–1997](/cv.pdf#page=6), to be precise. At the time, it was by far the largest grant in what would become the School of Engineering.
 
 We wrote the proposal in 1991. I suggested that every sensor should be a TCP/IP node, continuously online. I was told that I was crazy: computers were too big. I said to trust me.
 
