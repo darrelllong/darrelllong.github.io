@@ -73,7 +73,7 @@ When we found this poster on the door outside the lab, we brought it inside and 
 
 REINAS had finished by then. Once a war criminal, always a war criminal.
 
-My work with the Navy and the National Nuclear Security Administration (NNSA) laboratories did not please some of my colleagues. The laboratory collaboration also helped make Ceph possible. Support from Los Alamos, Lawrence Livermore, and Sandia, through the Department of Energy's Accelerated Strategic Computing Initiative, funded the storage research behind it.
+My work with the Navy and the National Nuclear Security Administration (NNSA) laboratories did not please some of my fellow faculty members, both within Engineering and in the humanities and social sciences—the more politically active side of campus. The laboratory collaboration also helped make Ceph possible. Support from Los Alamos, Lawrence Livermore, and Sandia, through the Department of Energy's Accelerated Strategic Computing Initiative, funded the storage research behind it.
 
 Ceph grew out of [Dr. Sage Weil](https://news.ucsc.edu/2018/01/year-of-alumni-weil-sage/)'s doctoral research in the Storage Systems Research Center, which [Dr. Ethan Miller](https://www.ethanmiller.org/) and I built together. The [file system](/publications/59/) was designed to distribute data across large numbers of storage devices, replicate it, and recover from failures as the system grew. Dr. Weil went on to lead its development into a production storage system. I have written more about that history in [*Ceph and the SSRC*](/blog/2026-09-20-ceph-and-the-ssrc/).
 
