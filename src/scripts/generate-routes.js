@@ -86,7 +86,7 @@ function injectMeta(html, { title, description, canonicalUrl }) {
     `  <meta name="twitter:image" content="${previewImageUrl}">`,
     `  <meta name="twitter:image:alt" content="${escapeAttr(portrait.alt)}">`,
   ].join("\n  ");
-  return html.replace("<title>Dr. Darrell Long</title>", injection);
+  return html.replace("<title>Dr. Darrell Long</title>", () => injection);
 }
 
 // The page's HTML, with the data it was rendered from in a script that the
@@ -98,7 +98,7 @@ async function pageHtml(meta, data) {
   const json = JSON.stringify(data).replace(/</g, "\\u003c");
   return injectMeta(baseHtml, meta).replace(
     '<div id="root"></div>',
-    `<div id="root">${body}</div>\n  <script id="preloaded" type="application/json">${json}</script>`,
+    () => `<div id="root">${body}</div>\n  <script id="preloaded" type="application/json">${json}</script>`,
   );
 }
 
