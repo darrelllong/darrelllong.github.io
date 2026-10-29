@@ -17,11 +17,11 @@ No account of Witold would be complete without Elisabeth, his beautiful and char
 
 ## From Warsaw to France
 
-Witold was born on June 11, 1946. He earned his Magister-Engineer degree in computer science from the Warsaw Polytechnic School in 1969. His thesis concerned structural numbers, an algebraic method for representing and analyzing graphs and electrical circuits. The prototype he built for that work was stored on IBM punched cards.
+Witold was born on June 11, 1946. He earned his Magister-Engineer degree in computer science from the Warsaw Polytechnic School in 1969. His thesis concerned structural numbers, an algebraic method for representing and analyzing graphs and electrical circuits, including their trees and cuts. He extended the method to generalized structural numbers applicable to hypergraphs. The prototype he built for that work was stored on IBM punched cards.
 
 Later that year, he came to France on a French government fellowship at the Institut de Recherche en Informatique et en Automatique, then known as IRIA and later renamed INRIA. He completed a doctorate in informatics at the Université Paul Sabatier in Toulouse in 1971.
 
-That doctoral work was far removed from the database research for which he later became known. He studied the digital processing of phonocardiograms, recordings of heart sounds used in diagnosing cardiac disorders. His system applied interactive vocoding, Fast Fourier Transform filtering, and what was then called pattern recognition to the diagnosis of aortic and subaortic stenosis. These techniques would now be described as signal processing and machine learning.
+That doctoral work was far removed from the database research for which he later became known. He studied the digital processing of phonocardiograms, recordings of heart sounds used in diagnosing cardiac disorders. His system applied interactive vocoding, Fast Fourier Transform filtering, and what was then called pattern recognition to the diagnosis of aortic and subaortic stenosis. The system sought to reduce the time physicians spent inspecting heart-sound recordings manually. These techniques would now be described as signal processing and machine learning.
 
 Witold worked as an engineer at the Compagnie d'Études et de Réalisations de Cybernétique Industrielle from 1972 to 1974 and then at the French Ministry of Employment. He returned to INRIA in 1977, first as a research engineer and eventually as Research Director. In 1979, he received the *Doctorat ès Sciences Mathématiques* from the Université Paris VI.
 
@@ -37,7 +37,7 @@ Witold presented “[Linear Hashing: A New Tool for File and Table Addressing](h
 
 The idea was not immediately obvious even to experts. Per-Åke Larson later recalled that Witold sent him an early version of the paper in 1979. Larson initially thought that splitting buckets in a fixed sequence, rather than splitting whichever bucket happened to overflow, must be a bad idea. The question inspired several years of his own research. His eventual conclusion was simple: “[I was wrong—it was a good idea](https://sigmodrecord.org/?download_id=6044&smd_process_download=1).”
 
-Linear hashing inspired numerous variations and became a standard topic in database and data-structure courses. Implementations and descendants appeared in database systems and storage software. It also provided the foundation for much of Witold’s later research.
+Linear hashing inspired numerous variations and became a standard topic in database and data-structure courses. It also provided the foundation for much of Witold’s later research.
 
 The influence of linear hashing can also be measured in software. The hashing package developed by Margo Seltzer at Berkeley selected Litwin’s algorithm, and Berkeley DB’s Hash access method explicitly implements extended linear hashing and cites his 1980 paper. Berkeley DB subsequently became one of the most widely deployed embedded database systems. [Its technical documentation](https://docs.oracle.com/database/bdb181/html/programmer_reference/hash_usenix.pdf) identifies Litwin’s work as the basis of the implementation.
 
@@ -75,10 +75,6 @@ Other work led to SD-SQL Server, a prototype distributed database system in whic
 
 The scale of Witold’s contribution is difficult to convey by listing his best-known projects. His work did not remain within one narrow research program, or even within databases.
 
-He began with structural numbers for graphs and electrical circuits. Structural numbers provide an algebra through which circuits, trees, cuts, and related graph properties can be manipulated. His work extended the method to generalized structural numbers applicable to hypergraphs and included an implementation at a time when programs were still kept on punched cards.
-
-His doctoral work then moved into medical computing. The phonocardiogram system combined interactive signal processing with automated classification. It sought to reduce work that otherwise required a physician to inspect heart-sound recordings manually for long periods. The combination of digital filtering, feature extraction, and classification anticipated a great deal of later biomedical signal analysis.
-
 In database transaction processing, Witold and his collaborators studied *value dates*. A value date specifies when a transaction should commit—not merely a deadline before which it ought to finish. The distinction was especially relevant to large distributed transactions whose components had to act independently but become effective at a predictable time.
 
 He worked on implicit joins, dynamic and inherited attributes, main-memory database systems, temporal databases, object-oriented query languages, heterogeneous database interoperability, and query processing across systems with incompatible schemas. Some of these subjects became established research areas. Others appeared in commercial systems under different names.
@@ -88,8 +84,6 @@ His work with Galois connections extended ideas from formal concept analysis to 
 Witold also ventured well beyond ordinary database questions. In work on “Computer Life,” he and his collaborators considered an Internet populated by computational beings with their own identities and activities. These beings might eventually become aware of their existence and perhaps infer the existence of their creators. The model was recursive: human beings might themselves exist within a computation created at some higher level.
 
 One paper on the subject became an invited USENIX presentation, and another was presented as a keynote at InfoJapan 1990. The other keynote speaker was Steve Jobs, who spoke about NeXT. This was how Witold met him.
-
-His later work ranged from scalable virtual data structures for massive cloud calculations to encrypted databases, key recovery, searchable encrypted storage, data deduplication, and new foundations for relational systems.
 
 These subjects differ greatly, but several questions recur. How can a system grow without disruptive reorganization? How can independently controlled systems cooperate without losing their autonomy? How can data remain available when components fail? How can a language express what its users mean with less procedural machinery? How can important work and information survive when the systems around them change?
 
@@ -121,7 +115,7 @@ These projects brought together interests that had run through Witold’s career
 
 Witold became Professor Emeritus in September 2014, but retirement did not end his research.
 
-His later work has included cloud database security, encrypted data, recoverable encryption keys, and scalable distributed virtual data structures. With Sushil Jajodia and Thomas Schwarz, he studied database systems that could operate on encrypted cloud data while limiting the exposure of plaintext.
+His later work has included cloud database security, recoverable encryption keys, searchable encrypted storage, data deduplication, and scalable distributed virtual data structures for massive cloud calculations. With Sushil Jajodia and Thomas Schwarz, he studied database systems that could operate on encrypted cloud data while limiting the exposure of plaintext.
 
 He also returned to an idea he had proposed in 1992: relations containing both stored and inherited attributes. In the traditional relational model, a base relation contains stored attributes, while a view derives its attributes from other relations. Witold argued that a single relation could usefully contain both.
 

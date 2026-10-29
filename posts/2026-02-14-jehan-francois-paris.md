@@ -39,9 +39,7 @@ His move to Houston did not end our work together. It only changed the distance 
 
 ## Replication and Availability
 
-Jehan-François's early research asked how replicated data could remain both available and consistent in the presence of failures. These goals conflict more often than an introductory description of replication suggests. Additional copies improve the chance that data will remain reachable, but every update must determine which copies may act and how stale copies will be repaired.
-
-His voting-with-witnesses scheme, proposed in 1986, let lightweight witness records participate in determining the latest version of an object without storing a complete replica. This reduced the storage cost of a quorum while preserving its ability to establish which data were current. Voting with bystanders developed the idea further.
+Jehan-François's voting-with-witnesses scheme, proposed in 1986, let lightweight witness records participate in determining the latest version of an object without storing a complete replica. This reduced the storage cost of a quorum while preserving its ability to establish which data were current. Voting with bystanders developed the idea further.
 
 Our work tested replication protocols under realistic assumptions rather than judging them only by their behavior in idealized cases. We studied optimistic dynamic voting, available-copy protocols, regeneration, volatile witnesses, media failures, and block-level consistency. “[The Performance of Available Copy Protocols for the Management of Replicated Data](/publications/179/)” used probabilistic models to compare the behavior of alternative strategies. The recurring question was practical: under actual patterns of failure and repair, which policy kept data available most often without sacrificing correctness?
 
@@ -69,7 +67,7 @@ Jehan-François has a gift for finding the essential structure of a problem. He 
 
 He is a Senior Member of both the IEEE and the ACM and supervised doctoral students at UC San Diego and Houston over more than three decades. Through Ferrari, his academic lineage leads back to [Luigi Dadda](/blog/2026-02-14-luigi-dadda/), [Ercole Bottani](/blog/2026-02-06-ercole-bottani/), and [Angelo Barbagelata](/blog/2026-02-14-angelo-barbagelata/).
 
-When Jehan-François invited a young graduate of San Diego State to become his doctoral student, neither of us could have known how long the resulting collaboration would last. It began with Gemini and the problem of keeping replicated files consistent. It continued through video delivery, caching, disk arrays, archival systems, and consensus protocols. More than the subjects or the publication count, I value the continuity: an advisor who became a colleague, and a colleague who became a lifelong friend.
+When Jehan-François invited a young graduate of San Diego State to become his doctoral student, neither of us could have known how long the resulting collaboration would last. More than the subjects or the publication count, I value the continuity: an advisor who became a colleague, and a colleague who became a lifelong friend.
 
 A Ph.D. is more like a medieval apprenticeship than most people realize. If you have a good dissertation advisor, he is a mentor and a friend, and the relationship becomes more like family. Jehan-François was that kind of advisor to me.
 

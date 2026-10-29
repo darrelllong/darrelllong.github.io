@@ -7,7 +7,7 @@ excerpt: "In 1992, we began connecting environmental sensors to the Internet wit
 
 In 1992, we started REINAS, the Real-Time Environmental Information Network and Analysis System, at UC Santa Cruz. The Office of Naval Research funded us to develop a system for monitoring weather and ocean conditions.
 
-[Dr. Patrick Mantey](https://mantey.soe.ucsc.edu/), our principal investigator, brought electrical engineering. [Dr. Alex Pang](https://campusdirectory.ucsc.edu/cd_detail?uid=pang) worked on visualization, [Dr. J. J. Garcia-Luna-Aceves](https://media.utoronto.ca/bluebook/jj-garcia-luna-aceves/) on networking, and [Dr. Glen Langdon](https://news.ucsc.edu/2014/03/langdon-obituary/) on data compression. Dr. Langdon was one of the inventors of [arithmetic coding](https://patents.google.com/patent/US4122440A/en). I worked on systems, networking, and databases. I was also the guy with the supposedly insane idea that the instruments should be on the network all the time.
+[Dr. Patrick Mantey](https://mantey.soe.ucsc.edu/), our principal investigator, brought electrical engineering. [Dr. Alex Pang](https://campusdirectory.ucsc.edu/cd_detail?uid=pang) worked on visualization, [Dr. J. J. Garcia-Luna-Aceves](https://media.utoronto.ca/bluebook/jj-garcia-luna-aceves/) on networking, and [Dr. Glen Langdon](https://news.ucsc.edu/2014/03/langdon-obituary/) on data compression. Dr. Langdon was one of the inventors of [arithmetic coding](https://patents.google.com/patent/US4122440A/en). I worked on systems, networking, and databases.
 
 Our meteorology collaborators at the Naval Postgraduate School included [Dr. Carlyle H. Wash](https://nps.edu/web/meteorology/people) and [Dr. Wendell A. Nuss](https://nps.edu/faculty-profiles/-/cv/nuss).
 
@@ -27,7 +27,7 @@ The link actually worked better in the rain. A hill between my house and campus 
 
 We had a meteorological station and video camera atop the Dream Inn. Surfers loved that very early live video. Yes, that was us too. Another installation operated for years at Long Marine Laboratory, at UC Santa Cruz's Coastal Campus.
 
-The written record makes clear how much we were putting together. Our [January 1993 concept statement](https://tr.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-CRL-93-05.pdf#page=25) specifies Internet access to data and sensor control through standard protocols, including TCP/IP. By [July 1993](https://tr.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-CRL-93-34.pdf#page=38), the report describes software reading meteorological instruments, sending their measurements over the Internet into a database, and letting users display either current conditions or historical observations. The [1995 CompCon paper](/publications/167/) describes instrument nodes built from PCs running BSD/386. Scientific instruments, online, using Internet protocols over wired and wireless networks.
+The written record makes clear how much we were putting together. Our [January 1993 concept statement](https://tr.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-CRL-93-05.pdf#page=25) specifies Internet access to data and sensor control through standard protocols, including TCP/IP. By [July 1993](https://tr.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-CRL-93-34.pdf#page=38), the report describes software reading meteorological instruments, sending their measurements over the Internet into a database, and letting users display either current conditions or historical observations. The [1995 CompCon paper](/publications/167/) describes instrument nodes built from PCs running BSD/386.
 
 Making that work meant dealing with unreliable radio links. Instruments kept local logs, and records remained there until the receiving system acknowledged them. Our [journal paper](/publications/175/) describes a UDP-based retransmission protocol tuned for the wireless links. TCP/IP was the protocol family; we chose the transport behavior to suit the job. The database had its own incoming logs, so collection could continue through database maintenance or a backlog. Scientists could also interact with an instrument while its data collection continued.
 
@@ -37,7 +37,7 @@ We also wanted the measurements to remain scientifically useful years later. The
 
 The [January 1997 status report](https://tr.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-CRL-97-02.pdf#page=16) even recalls the objection that putting a “whole 386” at each instrument site would be too expensive. By then, the system was collecting measurements from more than 70 instrument platforms, with more than 220 sensor streams at about 50 fixed and mobile sites. Later that year, [NSF support through NPACI](https://www1.ucsc.edu/news_events/press_releases/archive/96-97/03-97/033197-UCSC_is_member_of_n.html) would help extend the work.
 
-There is a strong argument that we helped invent the modern Internet-connected sensor network. Earlier sensor networks existed; our contribution was to make the instruments continuously accessible participants in an Internet-based system for measurement, control, data management, and visualization. That sounds ordinary now. In 1991, putting a computer at every instrument was the crazy part. I think we were a little too early to receive the credit we deserved.
+There is a strong argument that we helped invent the modern Internet-connected sensor network. Earlier sensor networks existed; ours made the instruments part of the Internet. That sounds ordinary now. I think we were a little too early to receive the credit we deserved.
 
 We did, however, receive attention from the campus Left. How dare we work for the United States Navy on weather?
 
@@ -69,7 +69,7 @@ When we found this poster on the door outside the lab, we brought it inside and 
 
 ![A hand-drawn protest poster headed “BRAINPOWER,” depicting Engineering 2 as a smoking factory and declaring that the struggle against the university begins with the struggle against Engineering 2.](/images/engineering-2-brainpower.jpg)
 
-*The “BRAINPOWER” poster, promoted from the door outside to our lab wall. [Full-resolution photograph](/images/engineering-2-brainpower.jpg).*
+*The “BRAINPOWER” poster. [Full-resolution photograph](/images/engineering-2-brainpower.jpg).*
 
 REINAS had finished by then. Once a war criminal, always a war criminal.
 

@@ -17,7 +17,7 @@ For some definitions of good and bad, a checker can do exactly that. For others,
 
 By *perfect*, I mean a filter that always finishes, blocks every forbidden output, and passes every permitted output across an unrestricted domain. Blocking everything is easy. The difficulty is deciding, correctly every time, what to let through.
 
-The distinction matters when an LLM is allowed to move money, execute commands, or operate machinery. If the downside of an action is effectively infinite, “the guardrail almost always works” cannot justify granting that authority. The dangerous action has to be prevented, even at the cost of refusing useful work. I do not see another honest option.
+The distinction matters when an LLM is allowed to move money, execute commands, or operate machinery.
 
 There are three cases: rules about an output's form, rules about what it does when executed, and rules about its effects on a person. The Mathematics, at the end, has the proofs, with the notation explained along the way.
 

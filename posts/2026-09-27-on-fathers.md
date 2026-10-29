@@ -37,7 +37,7 @@ The father in this list never changes. He knows the same things at the beginning
 
 *The child's estimate of what Dad knows, by the child's age. One point for each line of the list; where each point sits on the vertical scale is my reading of that line.*
 
-The curve has a shape that anyone who has taught will recognize. A little knowledge makes us confident judges of people who know more. It takes a great deal more knowledge to see what they were doing.
+The curve has a shape that anyone who has taught will recognize.
 
 When that copy reached me, my mother had recently kicked my father out, for sins real and sins imagined. I was at the age where the list says a father is hopelessly old-fashioned. He loved his children but had a hard time expressing it. I have his heartfelt letters to us, and they prove it.
 

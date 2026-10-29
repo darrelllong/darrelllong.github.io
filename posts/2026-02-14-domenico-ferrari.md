@@ -21,7 +21,7 @@ In 1989, Ferrari founded the Tenet Group at Berkeley and the International Compu
 
 The group's research addressed delay jitter, traffic specification, rate-controlled scheduling, and real-time transport. These ideas contributed to later work on Integrated Services and RSVP. Ferrari directed Tenet until his retirement in 1995.
 
-Ferrari's doctoral students went on to careers in university teaching and industrial research. Dr. Pâris was among them. His mentorship was one of the contributions recognized by the ACM SIGCOMM Award.
+Ferrari's doctoral students went on to careers in university teaching and industrial research. Dr. Pâris was among them.
 
 After retiring, Ferrari returned to Piacenza and founded the Center for Research on the Applications of Telematics to Organizations and Society at the Università Cattolica del Sacro Cuore. CRATOS applied networking research to telemedicine, government services, and the developing internet economy. In 2000, he was appointed *Professore Ordinario per Chiara Fama* in computer science and established a master's program in Management in the Network Economy.
 

@@ -15,7 +15,7 @@ My concern is political monoculture. Scholars should be free to pursue Marxist, 
 
 I remember sitting on a committee when Professor John Ellis's name came up as a candidate for service on another committee. Members objected strongly because of what they called “his reprehensible politics.” Ellis's [*Literature Lost*](https://yalebooks.yale.edu/book/9780300075793/literature-lost/) criticizes the ascendancy of race, gender, and class politics in literary scholarship.
 
-His colleagues wanted to exclude him from ordinary university service because they disliked his politics. I saw the same intolerance in hiring and teaching. It undermines the university's obligation to teach students to think independently.
+I saw the same intolerance in hiring and teaching. It undermines the university's obligation to teach students to think independently.
 
 I examined the faculty's published research. The [spreadsheet](/downloads/ucsc-humanities-research-reviewed.xlsx) documents research descriptions and publications for faculty listed on the Humanities Division and department rosters. The original inventory contains 264 people. Excluding 76 non-Senate appointments leaves **188 Senate faculty: 115 non-emeritus faculty and 73 emeriti**. This main group includes teaching professors and those with the older title of lecturer with security of employment. The excluded group consists of 74 lecturers and two further entries listed under Lecturers and Postdocs. Readers can inspect every classification and source, or use the [CSV version](/downloads/ucsc-humanities-data.csv) to do the arithmetic independently.
 
@@ -94,11 +94,11 @@ Faculty have the right to advocate these positions. Students and colleagues have
 
 Political research is clearly dominant at every rank. The rank comparison covers the 106 non-emeritus regular professors, excluding the nine teaching professors included in the larger group of 115. Political research was identified for 11 of 16 assistant professors (68.8%), 33 of 38 associates (86.8%), and 38 of 52 full professors (73.1%). Associates have the highest share in this inventory.
 
-On hiring committees where I served, political conformity took precedence over scholarly merit. DEI statements made political screening part of the application process. That screening helped sustain the political monoculture.
+On hiring committees where I served, political conformity took precedence over scholarly merit. That helped sustain the political monoculture.
 
 The Regents' rule is explicit. Former Standing Order 101.1(d), now [Bylaw 40.3(a)](https://regents.universityofcalifornia.edu/governance/bylaws/bl40.html#bl40.3), states: “No political test shall ever be considered in the appointment and promotion of any faculty member or employee.” The Regents' [comparison of the old and new provisions](https://regents.universityofcalifornia.edu/regmeet/july21/g7attach8.pdf#page=5), page 5, confirms that the wording carried over unchanged. I saw that prohibition ignored on hiring committees.
 
-I sat on hiring committees that hid the political test behind a DEI pledge of allegiance. I was explicitly told that Dr. Martin Luther King Jr.'s principle—that people should be judged by the content of their character—was unacceptable. That is right: even Dr. King was no longer acceptable.
+In evaluating DEI statements, I was explicitly told that Dr. Martin Luther King Jr.'s principle—that people should be judged by the content of their character—was unacceptable. That is right: even Dr. King was no longer acceptable.
 
 At a training session on DEI statements, I asked, “Suppose an elderly friend of mine with a Nobel Prize wanted to apply, but did not know how to write such a statement. Are you saying you would not even look at his CV?” I was told that they would not. A faculty member then yelled, “I would not even want to work with such a racist, and you are a racist for asking this question!”
 
@@ -110,7 +110,7 @@ In his 1950 pamphlet, [*The Fundamental Issue*](https://digicoll.lib.berkeley.ed
 
 In his [January 4, 1951 letter to J. Robert Oppenheimer](https://albert.ias.edu/bitstreams/02905463-285c-40b2-b541-dfba6edea17b/download), Kantorowicz explained that he was postponing formal acceptance of the Institute for Advanced Study appointment to remain in the lawsuit seeking reinstatement. He joined the Institute later that year. After the courts ordered reinstatement of the nonsigners, he submitted a formal resignation, recorded in the [Regents' minutes of December 19, 1952, page 526](https://digicoll.lib.berkeley.edu/record/61779/files/cubanc_15_1_00337912a.pdf).
 
-For years, the political screening I witnessed at UCSC amounted to a de facto loyalty oath: applicants were expected to affirm the prevailing politics to be considered for a job. While it stood, the mandatory DEI statement made that oath de jure, a formal university requirement enforced through a written evaluation rubric. In the searches FIRE documented, applicants could be rejected on that statement alone, before their scholarly qualifications were considered. The political allegiance demanded had changed since Kantorowicz's time. The objection to demanding it as a condition of employment still applies.
+The political screening I witnessed at UCSC amounted to a de facto loyalty oath. While it stood, the mandatory DEI statement made that oath de jure, a formal university requirement enforced through a written evaluation rubric. The political allegiance demanded had changed since Kantorowicz's time. The objection to demanding it as a condition of employment still applies.
 
 On March 19, 2025, the [Regents directed UC to eliminate required diversity statements for new hires](https://www.universityofcalifornia.edu/press-room/statement-uc-board-regents-chair-janet-reilly-use-diversity-statements-university-hiring). The political screening should never have been imposed.
 

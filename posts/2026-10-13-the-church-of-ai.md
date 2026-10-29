@@ -39,8 +39,6 @@ My objection arises when examination is replaced by an instruction to believe. I
 
 That is theology.
 
-Once you have proof of a proposition, you no longer need faith in it, nor can your acceptance of it still be an act of faith. The thing has been demonstrated. Faith and proof are incompatible as grounds for accepting the same proposition.
-
 You can have faith, or you can have proof, but you do not get both. Sorry.
 
 Someone will remind me that I am a Christian: surely I accept that God knows things I do not, and that His understanding exceeds mine.
@@ -54,8 +52,6 @@ I do not pretend to know the mind of God. I find it curious to see people so eag
 I once asked my friend Freeman Dyson, who had recently won the [Templeton Prize](https://www.templetonprize.org/laureate/freeman-j-dyson/), how he reconciled science and religion. In his typical way, he said they were two windows on a house looking out at the same world, and you get to look out one window at a time.
 
 [Pascal understood the distinction](https://www.gutenberg.org/files/18269/18269-h/18269-h.htm). His wager reasoned about the consequences of belief under uncertainty; it did not demonstrate God’s existence. Its force came from the asymmetry of the stakes: finite worldly costs against the possibility of infinite gain, finite worldly gains against the possibility of infinite loss. That reasoning anticipated decision theory. It did not turn faith into a theorem.
-
-If you accept an AI lab’s purported proofs without mathematicians examining them, simply because you believe the machine knows better, you are operating on faith. Calling the source a machine does not change what you are doing.
 
 If you work on faith, atheism is not for you. You just have a different God.
 

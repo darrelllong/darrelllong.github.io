@@ -21,4 +21,4 @@ Another part of Ceph’s history is Dr. Miller’s Ph.D. work at Berkeley on [RA
 
 Dr. Weil did brilliant work of his own in his dissertation, including scalable metadata management and the [CRUSH algorithm](https://ethanmiller.org/files/pubs/sc06.pdf). He then led the work of turning Ceph from a research file system into a storage system for production use. After his doctorate, he continued development with a team at DreamHost and cofounded Inktank to develop and support Ceph commercially. [Red Hat acquired Inktank in 2014](https://news.ucsc.edu/2018/01/year-of-alumni-weil-sage/).
 
-Ceph is now used in some of the world’s [largest research and cloud storage installations](https://ceph.io/en/discover/vision/). Dr. Weil followed his research with years of engineering and led the developers and company that supported Ceph’s adoption.
+Ceph is now used in some of the world’s [largest research and cloud storage installations](https://ceph.io/en/discover/vision/).

@@ -49,7 +49,7 @@ Shamir's polynomial construction is a useful starting point. The other construct
 
 **Herzberg, Jarecki, Krawczyk, Yung, *Proactive Secret Sharing*, 1995.** Periodic refresh adds zero-constant polynomials to the sharing polynomial, preserving the secret while changing the shares. The library [simulates this step in one process](https://github.com/darrelllong/secret-sharing/blob/04f056a67ba3568d3cc8b9c968b710cd7e2c95da/src/proactive.rs). A secure distributed deployment also needs authenticated private channels, verification of refresh contributions, erasure of obsolete shares and randomness, and the protocol's corruption bounds. The refresh function alone does not provide those properties.
 
-Having these constructions in one language, built on shared algebraic primitives, makes them easier to compare. Brickell is a one-row-per-player specialization of a monotone span program; Yamamoto's ramp construction includes Shamir and the unpadded Reed–Solomon case at its endpoints; Ito and Benaloh-Leichter express general access rules in different ways.
+Having these constructions in one language, built on shared algebraic primitives, makes them easier to compare.
 
 ## Implementation and Dependencies
 

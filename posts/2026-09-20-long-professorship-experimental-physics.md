@@ -27,6 +27,6 @@ In the [university's October 2025 announcement](https://news.ucsc.edu/2025/10/lo
 
 ## Elaine and I
 
-Elaine and I [met as children in El Cajon](https://physics.ucsc.edu/give/darrell-and-elaine-long/). I fell in love with her when I was nine, although I was too shy to tell her. We went on to lead separate lives, found each other again in 2014, and married in 2016. We endowed the professorship together.
+Elaine and I [met as children in El Cajon](https://physics.ucsc.edu/give/darrell-and-elaine-long/). I fell in love with her when I was nine, although I was too shy to tell her. We went on to lead separate lives, found each other again in 2014, and married in 2016.
 
 In 2022, Elaine and I established annual UCSC dissertation prizes in both experimental engineering and experimental physics. The [first engineering prize](https://engineering.ucsc.edu/news/alison-tang-wins-dissertation-prize/) went to Dr. Alison Tang for her dissertation on alternative RNA processing in cancers. The [physics prize](https://physics.ucsc.edu/give/student-awards-and-prizes/) recognizes the best doctoral dissertation in experimental physics; its 2022 recipient was Dr. Patrick LaBarre, whose dissertation concerned topology and the development of an apparatus for measuring non-local conductivity.

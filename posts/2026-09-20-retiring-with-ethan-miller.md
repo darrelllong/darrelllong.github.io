@@ -17,6 +17,6 @@ Dr. Miller has explained [his reasons for retiring](https://www.ethanmiller.org/
 
 COVID ruined collaborative laboratory research as I had known it. Being together in the laboratory had been central to how we worked. The pandemic disrupted the daily contact and the conversations through which students and faculty worked out problems together.
 
-The undergraduates seemed to have changed as well. These were among my reasons for retiring, though they were not the whole explanation.
+The undergraduates seemed to have changed as well. These were among my reasons for retiring.
 
 It was time.
