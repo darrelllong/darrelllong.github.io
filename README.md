@@ -52,6 +52,8 @@ papers, archival documents, and scholarly or institutional histories.
 
 Do not add hedges, defensive disclaimers, or unsolicited safety warnings unless
 the author explicitly asks for them. Preserve the author's direct, forceful voice.
+Preserve substantive judgments and distinctions that make the author's point,
+including criticism of the subjects; those are not defensive hedges.
 
 Create `posts/YYYY-MM-DD-slug.md` with frontmatter, add an entry to `posts/index.json`,
 then run `npm run deploy` from `src/` before committing and pushing. This updates
