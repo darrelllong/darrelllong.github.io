@@ -206,6 +206,17 @@ main.blogpost {
     line-height: 1.4;
   }
 }
+.blog-content .portrait-gallery.image-pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 540px;
+  margin-inline: auto;
+
+  img {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+  }
+}
 @media (max-width: 760px) {
   .blog-posts {
     grid-template-columns: 1fr;

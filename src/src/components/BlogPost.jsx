@@ -109,8 +109,14 @@ export default function BlogPost({ search }) {
                 if (content.length > 1 && content.every(
                   (child) => child.type === "element" && child.tagName === "img",
                 )) {
+                  const isPair = content.length === 2;
                   return (
-                    <div className="portrait-gallery" role="group" aria-label="Family portraits, oldest generation first" tabIndex={0}>
+                    <div
+                      className={`portrait-gallery${isPair ? " image-pair" : ""}`}
+                      role="group"
+                      aria-label={isPair ? "Image pair" : "Family portraits, oldest generation first"}
+                      tabIndex={0}
+                    >
                       {content.map(({ properties }) => (
                         <figure key={properties.src}>
                           <img src={properties.src} alt={properties.alt} loading="lazy" />
