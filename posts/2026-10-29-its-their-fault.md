@@ -35,7 +35,7 @@ John and I also brought in the department's first serious grant: a bunch of comp
 
 I had never been told I was good at anything, and now my heroes were telling me I was the best they had ever seen. I lunched with the faculty, had access to any laboratory I wanted, and even had a faculty parking permit for my motorcycle. I was brilliant, I knew it, and I took liberties. I became insufferable, but I was also terrified of letting them down. I had a perfect score in computer science to maintain and their expectations to live up to.
 
-I remember walking into the department chairman's office and declaring that I would not take any more boring lower-division classes. The chairman, Lee Van De Wetering, said, “Alright, smart-ass, from now on it is upper-division and graduate courses for you.”
+I remember walking into the department chairman's office and declaring that I would not take any more boring lower-division classes. The chairman, Lee Van de Wetering, said, “Alright, smart-ass, from now on it is upper-division and graduate courses for you.”
 
 He thought that would show me. It made me worse.
 
