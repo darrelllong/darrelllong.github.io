@@ -55,6 +55,11 @@ the author explicitly asks for them. Preserve the author's direct, forceful voic
 Preserve substantive judgments and distinctions that make the author's point,
 including criticism of the subjects; those are not defensive hedges.
 
+Do not use em dashes or decorative horizontal rules in authored blog prose.
+Use periods, commas, colons, or parentheses as appropriate. Preserve original
+punctuation in quotations and cited titles, en dashes in ranges and technical
+names, and the Markdown syntax required by frontmatter and tables.
+
 Create `posts/YYYY-MM-DD-slug.md` with frontmatter, add an entry to `posts/index.json`,
 then run `npm run deploy` from `src/` before committing and pushing. This updates
 the rendered post, archive, home page, and sitemap along with the Markdown source.

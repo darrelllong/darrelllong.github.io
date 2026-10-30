@@ -87,7 +87,7 @@ Dick Lipton and Ken Regan gave us the term [*galactic algorithms*](https://rjlip
 
 We have known for decades that the mathematical universe of computation contains beautiful things far removed from useful computation.
 
-[Borodin proved the existence of arbitrarily large gaps in computational complexity](https://www.cs.toronto.edu/~bor/Papers/complexity-gaps.pdf): ranges of asymptotic resource behavior that no computation occupies. Empty places. His point was the gap itself.
+[Borodin proved that arbitrarily large increases in a resource bound can leave the class of computable functions unchanged](https://www.cs.toronto.edu/~bor/Papers/complexity-gaps.pdf). Empty stretches with no gain in computational power. His point was the gap itself.
 
 [Blum proved that some computable functions admit an endless succession of asymptotically better algorithms](https://doi.org/10.1145/321386.321395). There need be no best algorithm. Each improvement, however, may move the promised advantage to larger inputs. The theorem imposes no fixed ceiling on time or memory. The engineer lives under both.
 
@@ -149,7 +149,7 @@ A friend put it nicely: “The real world is a messy place. Welcome to it, mathe
 
 My piddling brain runs on less than 30 watts; the usual estimate for a [human brain’s power consumption](https://pmc.ncbi.nlm.nih.gov/articles/PMC6092772/) is around 20. My friend Richard Garwin’s probably ran at 100 watts. If you ever sat with him eating ice cream, you will understand.
 
-Allow him that generous 100 watts continuously from birth to [his doctorate at twenty-one](https://rlg.fas.org/). That comes to about eighteen megawatt-hours. The [International Energy Agency estimates](https://iea.blob.core.windows.net/assets/ed0483fd-aab4-4cf9-b25a-5aa362b56a2f/EnergyandAI.pdf) that training GPT-4 consumed 42.4 gigawatt-hours, more than two thousand times that budget.
+Allow him that generous 100 watts continuously from birth to [his doctorate at twenty-one](https://rlg.fas.org/). That comes to about eighteen megawatt-hours. The [International Energy Agency estimates](https://iea.blob.core.windows.net/assets/ed0483fd-aab4-4cf9-b25a-5aa362b56a2f/EnergyandAI.pdf#page=41) that training GPT-4 consumed 42.4 gigawatt-hours, more than two thousand times that budget.
 
 And GPT-4 is not even close to Garwin.
 

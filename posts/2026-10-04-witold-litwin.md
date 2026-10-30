@@ -2,7 +2,7 @@
 title: "Dr. Witold Litwin"
 date: "2026-10-04"
 tags: ["biography", "research", "colleagues"]
-excerpt: "Witold Litwin’s pioneering work on linear hashing, multidatabase systems, scalable distributed data structures, and many other fields—and the friendship that grew from it."
+excerpt: "Witold Litwin’s pioneering work on linear hashing, multidatabase systems, scalable distributed data structures, and many other fields, along with the friendship that grew from it."
 ---
 
 I first encountered Dr. Witold Litwin in print. In 1985, when I was a graduate student taking a course from Professor Walter Burkhard, I read Witold’s 1980 paper, “[Linear Hashing: A New Tool for File and Table Addressing](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=6Rbf6EUAAAAJ&citation_for_view=6Rbf6EUAAAAJ:u-x6o8ySG0sC).” I did not know him personally then. I have now known him for almost thirty years, and he has become my friend and collaborator.
@@ -75,7 +75,7 @@ Other work led to SD-SQL Server, a prototype distributed database system in whic
 
 The scale of Witold’s contribution is difficult to convey by listing his best-known projects. His work did not remain within one narrow research program, or even within databases.
 
-In database transaction processing, Witold and his collaborators studied *value dates*. A value date specifies when a transaction should commit—not merely a deadline before which it ought to finish. The distinction was especially relevant to large distributed transactions whose components had to act independently but become effective at a predictable time.
+In database transaction processing, Witold and his collaborators studied *value dates*. A value date specifies when a transaction should commit. It is not merely a deadline before which it ought to finish. The distinction was especially relevant to large distributed transactions whose components had to act independently but become effective at a predictable time.
 
 He worked on implicit joins, dynamic and inherited attributes, main-memory database systems, temporal databases, object-oriented query languages, heterogeneous database interoperability, and query processing across systems with incompatible schemas. Some of these subjects became established research areas. Others appeared in commercial systems under different names.
 
@@ -119,7 +119,7 @@ His later work has included cloud database security, recoverable encryption keys
 
 He also returned to an idea he had proposed in 1992: relations containing both stored and inherited attributes. In the traditional relational model, a base relation contains stored attributes, while a view derives its attributes from other relations. Witold argued that a single relation could usefully contain both.
 
-He revived the idea in depth after retirement, developing it into stored and inherited relations and, more recently, SIR SQL. The objective is to reduce the amount of explicit navigation and calculation required in ordinary SQL queries. His [official Dauphine profile](https://dauphine.psl.eu/recherche/cvtheque/profil/litwin-witold) lists publications on SIR SQL from 2024 and 2025. In 2026, the year he turned eighty, his homepage continued to announce new work.
+He revived the idea in depth after retirement, developing it into stored and inherited relations and, more recently, SIR SQL. The objective is to reduce the amount of explicit navigation and calculation required in ordinary SQL queries. His [publication list](https://www.lamsade.dauphine.fr/~litwin/) includes papers on SIR SQL from 2024 and 2025. In 2026, the year he turned eighty, his homepage continued to announce new work.
 
 ## Remembering the Work
 

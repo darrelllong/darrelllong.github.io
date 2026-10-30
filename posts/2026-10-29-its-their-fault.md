@@ -47,13 +47,13 @@ The first time, I proved the boss wrong about the VAX. More memory was a better 
 
 Sara's fault for the heapsort. John's for teaching me queueing theory.
 
-Dr. Kurt Eisemann would see me walking down the hall, all hangdog, and ask what had happened.
+Dr. [Kurt Eisemann](https://www.sdjewishworld.com/2018/07/10/einstein-protege-kurt-eisemann-95/) would see me walking down the hall, all hangdog, and ask what had happened.
 
 “I got fired.”
 
 “What did you do?”
 
-I told him. Then, in his German accent: “You are not fired. Go back to work.”
+I told him, and showed him the equations. Then, in his German accent: “You are not fired. Go back to work.”
 
 When I was about to graduate, Bill Smith asked me what I planned to do. I had no idea.
 

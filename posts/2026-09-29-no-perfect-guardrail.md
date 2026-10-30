@@ -143,8 +143,6 @@ Putting a human in the loop only helps if that person has the information, time,
 
 Where losses are bounded and recoverable, a decision-maker may choose to accept a measured residual risk. Where the downside is effectively infinite, the system needs enforceable restrictions that prevent the catastrophic action, or it must not be given the power to take it. A person or organization that accepts imperfect guardrails must accept ultimate accountability, including the consequences and penalties when those guardrails fail.
 
----
-
 ## The Mathematics
 
 The proofs below state the assumptions behind each result and explain the notation used in the argument.
