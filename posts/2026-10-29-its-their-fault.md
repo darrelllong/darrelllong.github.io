@@ -41,9 +41,9 @@ He thought that would show me. It made me worse.
 
 I can't believe these three, and the rest of the mathematics department, put up with me.
 
-While I was at SDSU, I worked in the computer center, first as a tutor, then as a system administrator and systems programmer. I got fired twice for being too smart for my own good.
+While I was at SDSU, I worked 20 hours a week in the computer center, first as a tutor and later as a system administrator and systems programmer. By my senior year, I was working 40 hours a week there. I also worked weekends at my mother's motorcycle shop.
 
-The first time, I proved the boss wrong about the VAX. More memory was a better idea than a faster swapping disk, and it was cheaper. The second time, I replaced his code, an incredibly ugly $O(n^2)$ sort in Fortran, with heapsort.
+I got fired twice for being too smart for my own good. The first time, I proved the boss wrong about the VAX. More memory was a better idea than a faster swapping disk, and it was cheaper. The second time, I replaced his code, an incredibly ugly $O(n^2)$ sort in Fortran, with heapsort.
 
 Sara's fault for the heapsort. John's for teaching me queueing theory.
 
