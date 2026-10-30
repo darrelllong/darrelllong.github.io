@@ -33,7 +33,7 @@ John held me to mathematical rigor and, in a fit of insanity, agreed to write a 
 
 John and I also brought in the department's first serious grant: a bunch of computers from AT&T, 3B2s and a 3B15.
 
-Their tolerance of me was amazing. I went from being told I was stupid to being told that I was the best they had ever seen. I was terrified. I had a perfect score in computer science to maintain, and I had to live up to their expectations. I became insufferable.
+I had never been told I was good at anything, and now my heroes were telling me I was the best they had ever seen. I lunched with the faculty, had access to any laboratory I wanted, and even had a faculty parking permit for my motorcycle. I was brilliant, I knew it, and I took liberties. I became insufferable, but I was also terrified of letting them down. I had a perfect score in computer science to maintain and their expectations to live up to.
 
 I remember walking into the department chairman's office and declaring that I would not take any more boring lower-division classes. The chairman, Lee Van De Wetering, said, “Alright, smart-ass, from now on it is upper-division and graduate courses for you.”
 
