@@ -33,9 +33,9 @@ John held me to mathematical rigor and, in a fit of insanity, agreed to write a 
 
 John and I also brought in the department's first serious grant: a bunch of computers from AT&T, 3B2s and a 3B15.
 
-Their tolerance of me was amazing. Take a kid who has been told he is stupid and put him in a place where he is the best they have ever seen. I became insufferable.
+Their tolerance of me was amazing. I went from being told I was stupid to being told that I was the best they had ever seen. I was terrified. I had a perfect score in computer science to maintain, and I had to live up to their expectations. I became insufferable.
 
-I remember walking into the department chairman's office, putting my feet on his desk, and declaring that I would not take any more boring lower-division classes. The chairman, Lee Van De Wetering, said, “Alright, smart-ass, from now on it is upper-division and graduate courses for you.”
+I remember walking into the department chairman's office and declaring that I would not take any more boring lower-division classes. The chairman, Lee Van De Wetering, said, “Alright, smart-ass, from now on it is upper-division and graduate courses for you.”
 
 He thought that would show me. It made me worse.
 
