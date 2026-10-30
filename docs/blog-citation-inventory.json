@@ -1,0 +1,1811 @@
+{
+  "reviewed_on": "2026-10-29",
+  "scope": "Links in the 25 published posts, after the citation review. See blog-citation-review.md for method, corrections, bibliography checks, and access limits.",
+  "post_count": 25,
+  "link_occurrences": 360,
+  "distinct_urls": 317,
+  "external_urls": 264,
+  "local_urls": 53,
+  "citations": [
+    {
+      "post": "2026-10-29-its-their-fault",
+      "line": 26,
+      "url": "https://edoras.sdsu.edu/~carroll/CS460Baase.pdf"
+    },
+    {
+      "post": "2026-10-29-its-their-fault",
+      "line": 28,
+      "url": "https://us.macmillan.com/books/9781250237750/afireuponthedeep/"
+    },
+    {
+      "post": "2026-10-29-its-their-fault",
+      "line": 28,
+      "url": "https://us.macmillan.com/books/9781250905970/adeepnessinthesky/"
+    },
+    {
+      "post": "2026-10-29-its-their-fault",
+      "line": 28,
+      "url": "https://us.macmillan.com/books/9781250841506/rainbowsend/"
+    },
+    {
+      "post": "2026-10-29-its-their-fault",
+      "line": 30,
+      "url": "https://us.macmillan.com/books/9781250237750/afireuponthedeep/"
+    },
+    {
+      "post": "2026-10-29-its-their-fault",
+      "line": 30,
+      "url": "https://us.macmillan.com/books/9781429993364/thechildrenofthesky/"
+    },
+    {
+      "post": "2026-10-29-its-their-fault",
+      "line": 32,
+      "url": "/publications/152/"
+    },
+    {
+      "post": "2026-10-29-its-their-fault",
+      "line": 32,
+      "url": "/blog/2026-10-06-theory-of-finite-automata-solutions/"
+    },
+    {
+      "post": "2026-10-29-its-their-fault",
+      "line": 50,
+      "url": "https://www.sdjewishworld.com/2018/07/10/einstein-protege-kurt-eisemann-95/"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 14,
+      "url": "https://sacred-texts.com/book/the-prose-edda/gylfaginning"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 18,
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diogenes_Laertius/Lives_of_the_Eminent_Philosophers/8/Pythagoras%2A.html"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 20,
+      "url": "https://classics.mit.edu/Plutarch/marcellu.html"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 22,
+      "url": "https://www.attalus.org/pliny/ep6.html#16"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 24,
+      "url": "https://science.nasa.gov/solar-system/orbits-and-keplers-laws/"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 24,
+      "url": "https://projekter.au.dk/en/tycho-brahe/pressreleases/mercury-poisoning-ruled-out-as-cause-of-tycho-brahes-death/"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 24,
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0195920"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 26,
+      "url": "https://encspb.ru/object/2804014088?dv=1000000000&lc=en"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 26,
+      "url": "https://makingscience.royalsociety.org/items/l-and-p_2_586/paper-an-account-of-the-unhappy-death-of-george-william-richman-by-unknown-author"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 28,
+      "url": "https://www.encyclopedia.com/science/dictionaries-thesauruses-pictures-and-press-releases/lavoisier-antoine-laurent"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 28,
+      "url": "https://www.acs.org/education/whatischemistry/landmarks/lavoisier.html"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 30,
+      "url": "https://www.numdam.org/item/JMPA_1846_1_11__381_0.pdf#page=44"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 30,
+      "url": "https://www.numdam.org/article/ASENS_1896_3_13__197_0.pdf#page=57"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 32,
+      "url": "https://www.spri.cam.ac.uk/museum/resources/teacherpackscienceobjectsfromantarctica.pdf"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 32,
+      "url": "https://www.nhm.ac.uk/our-science/services/library/collections/antarctic.html"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 34,
+      "url": "https://www.bas.ac.uk/data/our-data/publication/embryology-of-the-emperor-penguin-aptenodytes-forsteri/"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 34,
+      "url": "https://www.nhm.ac.uk/our-science/services/collections/zoology/birds/eggs-nests.html"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 36,
+      "url": "https://frammuseum.no/en/polar-history/explorers/roald-amundsen-explorer/"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 38,
+      "url": "https://www.awi.de/en/about-us/organisation/alfred-wegener.html"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 40,
+      "url": "https://www.wired.com/2011/03/life-in-the-undark/"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 40,
+      "url": "https://www.nobelprize.org/prizes/themes/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 40,
+      "url": "https://www.nobelprize.org/womenwhochangedscience/stories/marie-curie."
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 42,
+      "url": "https://www.nps.gov/articles/000/manhattan-project-scientists-harry-daghlian.htm"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 44,
+      "url": "https://ahf.nuclearmuseum.org/ahf/history/atomic-accidents/"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 44,
+      "url": "https://www.aps.org/apsnews/2014/05/slotin"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 46,
+      "url": "https://www.usgs.gov/observatories/cascades-volcano-observatory/legacy-david-johnston"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 46,
+      "url": "https://pubs.usgs.gov/gip/70043848/lesson-5.pdf"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 48,
+      "url": "https://www.acs.org/pressroom/tiny-matters/making-labs-safer.html"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 50,
+      "url": "https://irp.fas.org/agency/dod/jason/"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 50,
+      "url": "https://www.nasa.gov/humans-in-space/legacy-lives-on-for-sally-ride-nasas-first-woman-in-space/"
+    },
+    {
+      "post": "2026-10-29-die-like-a-scientist",
+      "line": 59,
+      "url": "https://sacred-texts.com/book/the-poetic-edda/hovamol"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 10,
+      "url": "https://mantey.soe.ucsc.edu/"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 10,
+      "url": "https://campusdirectory.ucsc.edu/cd_detail?uid=pang"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 10,
+      "url": "https://media.utoronto.ca/bluebook/jj-garcia-luna-aceves/"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 10,
+      "url": "https://news.ucsc.edu/2014/03/langdon-obituary/"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 10,
+      "url": "https://patents.google.com/patent/US4122440A/en"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 12,
+      "url": "https://nps.edu/web/meteorology/people"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 12,
+      "url": "https://nps.edu/faculty-profiles/-/cv/nuss"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 14,
+      "url": "/cv.pdf#page=6"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 18,
+      "url": "/downloads/reinas-announcement-1992.pdf"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 22,
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/TN/nbstechnicalnote688.pdf#page=11"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 22,
+      "url": "https://researchprofiles.csumb.edu/en/persons/daniel-fernandez/"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 24,
+      "url": "https://www.cisco.com/c/en/us/support/docs/wireless-mobility/wireless-lan-wlan/27147-multipath.html"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 24,
+      "url": "https://www.antenna-theory.com/basics/polarization.php"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 30,
+      "url": "https://tr.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-CRL-93-05.pdf#page=25"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 30,
+      "url": "https://tr.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-CRL-93-34.pdf#page=38"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 30,
+      "url": "/publications/167/"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 32,
+      "url": "/publications/175/"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 36,
+      "url": "https://tr.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-CRL-94-43.pdf#page=55"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 38,
+      "url": "https://tr.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-CRL-97-02.pdf#page=16"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 38,
+      "url": "https://www1.ucsc.edu/news_events/press_releases/archive/96-97/03-97/033197-UCSC_is_member_of_n.html"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 48,
+      "url": "/images/war-criminal.png"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 52,
+      "url": "https://library.ucsc.edu/reg-hist/from-complex-organisms-to-a-complex-organization-an-oral-history-with-ucsc-chancellor-mrc"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 52,
+      "url": "https://cshe.berkeley.edu/node/145"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 54,
+      "url": "/downloads/militarization-of-americas-universities-2003.pdf"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 56,
+      "url": "/cv.pdf#page=36"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 56,
+      "url": "/cv.pdf#page=38"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 58,
+      "url": "https://news.ucsc.edu/2022/07/kang-retirement/"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 60,
+      "url": "https://ethw.org/First-Hand:The_AT%26T_BELLMAC-32_Microprocessor_Development"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 64,
+      "url": "https://nisl.soe.ucsc.edu/dr-kang/"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 64,
+      "url": "https://spectrum.ieee.org/bellmac-32-ieee-milestone"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 72,
+      "url": "/images/engineering-2-brainpower.jpg"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 78,
+      "url": "/cv.pdf#page=6"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 78,
+      "url": "/cv.pdf#page=6"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 80,
+      "url": "https://news.ucsc.edu/2018/01/year-of-alumni-weil-sage/"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 80,
+      "url": "https://www.ethanmiller.org/"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 80,
+      "url": "/publications/59/"
+    },
+    {
+      "post": "2026-10-28-a-proud-war-criminal",
+      "line": 80,
+      "url": "/blog/2026-09-20-ceph-and-the-ssrc/"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 14,
+      "url": "https://emeriti.ucsc.edu/Obituaries/HydeHal.pdf"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 14,
+      "url": "https://library.ucsc.edu/reg-hist/harold-hyde"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 16,
+      "url": "https://www.ucop.edu/acadinit/mastplan/MasterPlan1960.pdf"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 16,
+      "url": "https://news.ucsc.edu/2009/04/a-sustaining-vision/"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 16,
+      "url": "https://planningandsustainability.uci.edu/physical/pdf/campus-lrdp/chapter1.pdf"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 16,
+      "url": "https://today.ucsd.edu/story/uc-san-diego-turns-60"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 16,
+      "url": "https://revelle.ucsd.edu/about/history/charter%20class.html"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 16,
+      "url": "https://plandesignbuild.ucsd.edu/_files/plans/UniversityHouseLMP.pdf"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 20,
+      "url": "https://library.ucsc.edu/reg-hist/collegenineandten"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 22,
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/undergraduate-information/undergraduate-academic-program/college-requirements"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 22,
+      "url": "https://cowell.ucsc.edu/advising-academics/college-courses/"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 22,
+      "url": "https://stevenson.ucsc.edu/advising-academics/college-courses/"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 22,
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 22,
+      "url": "https://merrill.ucsc.edu/advising-academics/college-courses/"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 22,
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/prtr-porter-college"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 22,
+      "url": "https://kresge.ucsc.edu/kresge-curriculum/"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 22,
+      "url": "https://oakes.ucsc.edu/advising-academics/college-courses/"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 22,
+      "url": "https://rachelcarson.ucsc.edu/advising-academics/college-courses/"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 22,
+      "url": "https://collegenine.ucsc.edu/advising-academics/college-courses/"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 22,
+      "url": "https://johnrlewis.ucsc.edu/advising-academics/college-courses/"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 24,
+      "url": "https://majors.ucsd.edu/start/index.html"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 26,
+      "url": "https://news.ucsc.edu/2007/02/ucsc-ranked-first-in-nation-for-research-impact-in-physics/"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 28,
+      "url": "https://astronomy.ucsc.edu/about/"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 30,
+      "url": "https://nona.ucolick.org/intro/"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 30,
+      "url": "https://escholarship.org/content/qt4t8949gc/qt4t8949gc.pdf#page=59"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 30,
+      "url": "https://www.ucolick.org/home/about/governance/2009StrategicPlanningLickObserv.pdf"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 32,
+      "url": "https://escholarship.org/content/qt5rq98388/qt5rq98388_noSplash_5e34a7fb7c46d0a2b2cf7eccc31cc005.pdf#page=95"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 34,
+      "url": "https://keckobservatory.org/wp-content/uploads/2017/09/annual-report-2013.pdf"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 38,
+      "url": "https://opg.optica.org/abstract.cfm?uri=ADOP-1995-MC4"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 38,
+      "url": "https://news.ucsc.edu/2004/09/ucsc-astronomer-claire-max-receives-2004-e-o-lawrence-award-in-physics/"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 42,
+      "url": "https://www.eso.org/public/blog/how-lasers-are-shining-light-on-cosmos/"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 44,
+      "url": "https://opg.optica.org/josaa/abstract.cfm?uri=josaa-11-1-263"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 46,
+      "url": "https://articles.adsabs.harvard.edu/pdf/1985A%26A...152L..29F"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 46,
+      "url": "https://www.osti.gov/servlets/purl/15005080"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 48,
+      "url": "https://muller.lbl.gov/pages/MullerVita-03-05.htm"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 50,
+      "url": "https://news.ucsc.edu/2015/08/uco-director/"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 60,
+      "url": "https://senate.ucsc.edu/senate-division-manual/appendices/"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 60,
+      "url": "https://currents.ucsc.edu/99-00/02-21/grades.html"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 60,
+      "url": "https://currents.ucsc.edu/99-00/02-21/grades.html"
+    },
+    {
+      "post": "2026-10-25-uco-lick",
+      "line": 64,
+      "url": "https://senate.ucsc.edu/about/"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 16,
+      "url": "https://yalebooks.yale.edu/book/9780300075793/literature-lost/"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 20,
+      "url": "/downloads/ucsc-humanities-research-reviewed.xlsx"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 20,
+      "url": "/downloads/ucsc-humanities-data.csv"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 47,
+      "url": "/images/ucsc-research-three-stages-reviewed.png"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 71,
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/lower-division/his-10a"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 71,
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/lower-division/his-10b"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 71,
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/lower-division/hisc-1"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 71,
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/lower-division/hisc-80w"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 71,
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/lower-division/hisc-83"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 75,
+      "url": "https://pbswisconsin.org/watch/more-or-less-perfect-union-personal-exploration-judge-douglas-ginsburg/a-constitution-in-writing-wk8egm/"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 77,
+      "url": "https://www.senate.gov/about/origins-foundations/senate-and-constitution/constitution-day.htm"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 77,
+      "url": "https://www.archives.gov/founding-docs/declaration"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 81,
+      "url": "/blog/2026-09-27-on-fathers/"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 83,
+      "url": "https://amchainitiative.org/wp-content/uploads/2024/01/CRES-Report.pdf"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 85,
+      "url": "https://amchainitiative.org/wp-content/uploads/2023/12/CRES-Statement-of-Solidarity-with-the-Palestinian-People-on-Nakba-Day.pdf"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 86,
+      "url": "https://criticalzionismstudies.org/battlingihra2023/"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 86,
+      "url": "https://criticalzionismstudies.org/points-of-unity/"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 86,
+      "url": "https://manifold.umn.edu/read/ces0901-16/section/f3df687b-d2d6-4e20-a1b9-a9c585510c0b"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 87,
+      "url": "https://amchainitiative.org/wp-content/uploads/2023/12/CRES-News-Screenshot-Save-12.7.23.pdf#page=1"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 88,
+      "url": "https://amchainitiative.org/wp-content/uploads/2023/12/CRES-News-Screenshot-Save-12.7.23.pdf#page=1"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 88,
+      "url": "https://news.ucsc.edu/2023/11/community-responsiblities/"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 89,
+      "url": "https://amchainitiative.org/wp-content/uploads/2024/01/CRES-Report.pdf#page=8"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 91,
+      "url": "https://news.ucsc.edu/2023/11/academic-freedom-and-university-policy/"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 99,
+      "url": "https://regents.universityofcalifornia.edu/governance/bylaws/bl40.html#bl40.3"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 99,
+      "url": "https://regents.universityofcalifornia.edu/regmeet/july21/g7attach8.pdf#page=5"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 107,
+      "url": "https://www.fire.org/news/fire-calls-uc-santa-cruz-drop-diversity-statement-mandate-faculty-applicants"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 109,
+      "url": "https://digicoll.lib.berkeley.edu/record/62206/files/cubanc_15_1_00326626a.pdf#page=3"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 109,
+      "url": "https://www.ias.edu/ideas/2017/lerner-kantorowicz-life"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 111,
+      "url": "https://albert.ias.edu/bitstreams/02905463-285c-40b2-b541-dfba6edea17b/download#page=13"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 111,
+      "url": "https://digicoll.lib.berkeley.edu/record/61779/files/cubanc_15_1_00337912a.pdf"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 115,
+      "url": "https://www.universityofcalifornia.edu/press-room/statement-uc-board-regents-chair-janet-reilly-use-diversity-statements-university-hiring"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 121,
+      "url": "/downloads/ucsc-academic-senate-2019-02-20-call.pdf#page=22"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 123,
+      "url": "/downloads/ucsc-academic-senate-2019-02-20-call.pdf#page=24"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 125,
+      "url": "https://www.fire.org/about-us/about-us-faqs"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 125,
+      "url": "https://www.fire.org/news/drexel-publicly-promised-professor-freedom-expression-privately-pursues-investigation"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 125,
+      "url": "https://www.fire.org/research-learn/fires-news-coverage-and-resources-about-floridas-stop-woke-act"
+    },
+    {
+      "post": "2026-10-20-politics-in-the-ucsc-humanities",
+      "line": 127,
+      "url": "https://www.ethanmiller.org/blog/lack-of-freedom-of-speech-at-uc-santa-cruz/"
+    },
+    {
+      "post": "2026-10-19-lessons-from-the-backblaze-data",
+      "line": 136,
+      "url": "https://www.backblaze.com/cloud-storage/resources/hard-drive-test-data"
+    },
+    {
+      "post": "2026-10-19-lessons-from-the-backblaze-data",
+      "line": 137,
+      "url": "https://www.backblaze.com/blog/3tb-hard-drive-failure/"
+    },
+    {
+      "post": "2026-10-19-lessons-from-the-backblaze-data",
+      "line": 138,
+      "url": "https://www.backblaze.com/blog/what-smart-stats-indicate-hard-drive-failures/"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 22,
+      "url": "https://abelprize.no/sites/default/files/2021-04/bio_en_2016_A.%20Wiles.pdf"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 26,
+      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 26,
+      "url": "https://github.com/google-deepmind/alphaproof-nexus-results"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 28,
+      "url": "https://proofsandprompts.com/2026/10/08/100-reactions-to-100-solutions/comment-page-1/"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 28,
+      "url": "https://github.com/openai/math"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 32,
+      "url": "https://lean-lang.org/faq/"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 34,
+      "url": "https://lean-lang.org/doc/reference/latest/ValidatingProofs/"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 46,
+      "url": "https://www.biblegateway.com/passage/?search=Isaiah+55%3A8-9&version=KJV"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 52,
+      "url": "https://www.templetonprize.org/laureate/freeman-j-dyson/"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 54,
+      "url": "https://www.gutenberg.org/files/18269/18269-h/18269-h.htm"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 62,
+      "url": "https://github.com/openai/math/blob/main/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/introduction.tex"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 72,
+      "url": "https://www.argmin.net/p/faster-fourier-transforms"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 86,
+      "url": "https://rjlipton.com/2010/10/23/galactic-algorithms/"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 90,
+      "url": "https://www.cs.toronto.edu/~bor/Papers/complexity-gaps.pdf"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 92,
+      "url": "https://doi.org/10.1145/321386.321395"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 128,
+      "url": "https://science.nasa.gov/exoplanets/what-is-the-universe/"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 136,
+      "url": "https://arxiv.org/html/2505.02641v1#S7"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 138,
+      "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 140,
+      "url": "https://www.esa.int/kids/en/learn/Our_Universe/Story_of_the_Universe/The_Universe"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 150,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6092772/"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 152,
+      "url": "https://rlg.fas.org/"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 152,
+      "url": "https://iea.blob.core.windows.net/assets/ed0483fd-aab4-4cf9-b25a-5aa362b56a2f/EnergyandAI.pdf#page=41"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 158,
+      "url": "https://www.anthropic.com/news/higher-limits-spacex"
+    },
+    {
+      "post": "2026-10-13-the-church-of-ai",
+      "line": 166,
+      "url": "https://us.macmillan.com/books/9781250905970/adeepnessinthesky/"
+    },
+    {
+      "post": "2026-10-06-theory-of-finite-automata-solutions",
+      "line": 8,
+      "url": "/publications/152/"
+    },
+    {
+      "post": "2026-10-06-theory-of-finite-automata-solutions",
+      "line": 22,
+      "url": "https://github.com/darrelllong/Automata-Theory"
+    },
+    {
+      "post": "2026-10-06-theory-of-finite-automata-solutions",
+      "line": 28,
+      "url": "/publications/258/"
+    },
+    {
+      "post": "2026-10-04-witold-litwin",
+      "line": 8,
+      "url": "https://www.cs.cmu.edu/~christos/courses/826-resources/PAPERS%2BBOOK/linear-hashing.PDF"
+    },
+    {
+      "post": "2026-10-04-witold-litwin",
+      "line": 28,
+      "url": "https://www.lamsade.dauphine.fr/~litwin/Cv-2017.pdf"
+    },
+    {
+      "post": "2026-10-04-witold-litwin",
+      "line": 36,
+      "url": "https://www.cs.cmu.edu/~christos/courses/826-resources/PAPERS%2BBOOK/linear-hashing.PDF"
+    },
+    {
+      "post": "2026-10-04-witold-litwin",
+      "line": 38,
+      "url": "https://sigmodrecord.org/?download_id=6044&smd_process_download=1"
+    },
+    {
+      "post": "2026-10-04-witold-litwin",
+      "line": 42,
+      "url": "https://docs.oracle.com/database/bdb181/html/programmer_reference/hash_usenix.pdf"
+    },
+    {
+      "post": "2026-10-04-witold-litwin",
+      "line": 44,
+      "url": "https://staff.fnwi.uva.nl/a.d.pimentel/artemis/sac01.pdf"
+    },
+    {
+      "post": "2026-10-04-witold-litwin",
+      "line": 64,
+      "url": "https://www.lamsade.dauphine.fr/~litwin/tods.pdf"
+    },
+    {
+      "post": "2026-10-04-witold-litwin",
+      "line": 100,
+      "url": "https://www.lamsade.dauphine.fr/~litwin/"
+    },
+    {
+      "post": "2026-10-04-witold-litwin",
+      "line": 108,
+      "url": "/publications/38/"
+    },
+    {
+      "post": "2026-10-04-witold-litwin",
+      "line": 108,
+      "url": "/publications/98/"
+    },
+    {
+      "post": "2026-10-04-witold-litwin",
+      "line": 110,
+      "url": "/publications/107/"
+    },
+    {
+      "post": "2026-10-04-witold-litwin",
+      "line": 110,
+      "url": "/publications/189/"
+    },
+    {
+      "post": "2026-10-04-witold-litwin",
+      "line": 122,
+      "url": "https://www.lamsade.dauphine.fr/~litwin/"
+    },
+    {
+      "post": "2026-10-04-witold-litwin",
+      "line": 126,
+      "url": "https://www.lamsade.dauphine.fr/~litwin/My%20Virtual%20Computer%20History%20Museum.htm"
+    },
+    {
+      "post": "2026-10-03-delta-compression",
+      "line": 10,
+      "url": "https://github.com/darrelllong/Delta-Compression"
+    },
+    {
+      "post": "2026-10-03-delta-compression",
+      "line": 18,
+      "url": "/publications/210"
+    },
+    {
+      "post": "2026-10-03-delta-compression",
+      "line": 18,
+      "url": "/publications/213"
+    },
+    {
+      "post": "2026-10-03-delta-compression",
+      "line": 22,
+      "url": "/publications/26"
+    },
+    {
+      "post": "2026-10-03-delta-compression",
+      "line": 42,
+      "url": "https://www.linkedin.com/in/bob-rees-62b48b24/"
+    },
+    {
+      "post": "2026-10-03-delta-compression",
+      "line": 46,
+      "url": "/publications/9"
+    },
+    {
+      "post": "2026-10-03-delta-compression",
+      "line": 46,
+      "url": "/publications/39"
+    },
+    {
+      "post": "2026-10-03-delta-compression",
+      "line": 54,
+      "url": "https://github.com/darrelllong/Delta-Compression"
+    },
+    {
+      "post": "2026-10-03-delta-compression",
+      "line": 56,
+      "url": "https://github.com/darrelllong/Delta-Compression/blob/main/ANALYSIS.md"
+    },
+    {
+      "post": "2026-10-03-delta-compression",
+      "line": 66,
+      "url": "/blog/2026-03-06-performance-evaluation/"
+    },
+    {
+      "post": "2026-10-03-delta-compression",
+      "line": 70,
+      "url": "/publications/213"
+    },
+    {
+      "post": "2026-10-03-delta-compression",
+      "line": 71,
+      "url": "/publications/210"
+    },
+    {
+      "post": "2026-10-03-delta-compression",
+      "line": 72,
+      "url": "/publications/9"
+    },
+    {
+      "post": "2026-10-03-delta-compression",
+      "line": 73,
+      "url": "/publications/165"
+    },
+    {
+      "post": "2026-10-03-delta-compression",
+      "line": 74,
+      "url": "/publications/26"
+    },
+    {
+      "post": "2026-10-03-delta-compression",
+      "line": 75,
+      "url": "/publications/39"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 32,
+      "url": "https://www.sciencedirect.com/science/article/pii/S0019995859903626"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 41,
+      "url": "https://www.sciencedirect.com/science/article/pii/S001999586780007X"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 41,
+      "url": "https://dl.acm.org/doi/10.1145/362007.362035"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 41,
+      "url": "https://www.sciencedirect.com/science/article/pii/S0019995865904262"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 41,
+      "url": "https://www.sciencedirect.com/science/article/pii/S0019995864901202"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 47,
+      "url": "https://link.springer.com/article/10.1007/BF01700692"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 70,
+      "url": "https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 72,
+      "url": "https://www.ams.org/journals/tran/1953-074-02/S0002-9947-1953-0053041-6/S0002-9947-1953-0053041-6.pdf"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 78,
+      "url": "https://www.all.net/books/virus/part4.html"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 78,
+      "url": "https://proceedings.mlr.press/v235/glukhov24a.html"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 102,
+      "url": "https://www.cs.cornell.edu/fbs/publications/EnfSecPols.pdf"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 124,
+      "url": "https://arxiv.org/abs/2602.14740"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 126,
+      "url": "https://www.acq.osd.mil/ncbdp/nm/NMHB2020rev/docs/NMHB2020rev_Ch8.pdf"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 128,
+      "url": "https://www.sandia.gov/asc/advanced-simulation-and-computing/verification-validation/"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 245,
+      "url": "https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 255,
+      "url": "https://acta.bibl.u-szeged.hu/13338/1/math_003_121-130.pdf"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 287,
+      "url": "https://link.springer.com/article/10.1007/BF01700692"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 291,
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/014453409108837187"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 295,
+      "url": "https://personal.utdallas.edu/~hamlen/Papers/cc4em.pdf"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 305,
+      "url": "https://www.ams.org/journals/tran/1953-074-02/S0002-9947-1953-0053041-6/S0002-9947-1953-0053041-6.pdf"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 311,
+      "url": "https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 380,
+      "url": "https://www.cs.cornell.edu/fbs/publications/EnfSecPols.pdf"
+    },
+    {
+      "post": "2026-09-29-no-perfect-guardrail",
+      "line": 380,
+      "url": "https://personal.utdallas.edu/~hamlen/Papers/cc4em.pdf"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 22,
+      "url": "https://www.gutenberg.org/files/782/782-h/782-h.htm#page178"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 24,
+      "url": "https://en.wikipedia.org/wiki/Prester_John"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 24,
+      "url": "https://sourcebooks.web.fordham.edu/source/otto-prester.asp"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 28,
+      "url": "https://blackcentraleurope.com/sources/1000-1500/a-letter-from-prester-john-ca-1165-1170/"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 30,
+      "url": "https://www.gutenberg.org/files/782/782-h/782-h.htm#page178"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 32,
+      "url": "https://www.gutenberg.org/files/782/782-h/782-h.htm#page198"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 34,
+      "url": "https://www.independent.co.uk/arts-entertainment/books/reviews/baudolino-by-umberto-eco-trans-william-weaver-139665.html"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 36,
+      "url": "https://journals.sagepub.com/doi/10.1177/0096144220910139"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 38,
+      "url": "https://www.jstor.org/stable/j.ctv170x50r"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 40,
+      "url": "https://www.jstor.org/stable/jj.18163682"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 42,
+      "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Prester_John"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 44,
+      "url": "https://www.tourisme93.com/basilique/plan-tombeaux-basilique.html"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 44,
+      "url": "https://sourcebooks.web.fordham.edu/source/gregory-clovisconv.asp"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 44,
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Tours"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 46,
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Manzikert"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 46,
+      "url": "https://www.worldhistory.org/Second_Crusade/"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 48,
+      "url": "https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CP%5CE%5CPechenegs.htm"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 50,
+      "url": "https://en.wikipedia.org/wiki/Wendish_Crusade"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 52,
+      "url": "https://en.wikipedia.org/wiki/Manuel_I_Komnenos"
+    },
+    {
+      "post": "2026-09-27-why-pentexoire",
+      "line": 54,
+      "url": "https://en.wikiquote.org/wiki/Pulp_Fiction#Dialogue"
+    },
+    {
+      "post": "2026-09-20-ceph-and-the-ssrc",
+      "line": 8,
+      "url": "https://www.ssrc.us/proj/exscale.html"
+    },
+    {
+      "post": "2026-09-20-ceph-and-the-ssrc",
+      "line": 8,
+      "url": "/publications/59/"
+    },
+    {
+      "post": "2026-09-20-ceph-and-the-ssrc",
+      "line": 16,
+      "url": "/publications/227/"
+    },
+    {
+      "post": "2026-09-20-ceph-and-the-ssrc",
+      "line": 16,
+      "url": "https://www.usenix.org/publications/compsystems/1991/fall_cabrera.pdf"
+    },
+    {
+      "post": "2026-09-20-ceph-and-the-ssrc",
+      "line": 16,
+      "url": "https://www.usenix.org/legacy/events/fast02/wips/pease.pdf"
+    },
+    {
+      "post": "2026-09-20-ceph-and-the-ssrc",
+      "line": 18,
+      "url": "https://www2.eecs.berkeley.edu/Pubs/TechRpts/1995/5206.html"
+    },
+    {
+      "post": "2026-09-20-ceph-and-the-ssrc",
+      "line": 18,
+      "url": "https://www.ethanmiller.org/research/"
+    },
+    {
+      "post": "2026-09-20-ceph-and-the-ssrc",
+      "line": 22,
+      "url": "https://ethanmiller.org/files/pubs/sc06.pdf"
+    },
+    {
+      "post": "2026-09-20-ceph-and-the-ssrc",
+      "line": 22,
+      "url": "https://news.ucsc.edu/2018/01/year-of-alumni-weil-sage/"
+    },
+    {
+      "post": "2026-09-20-ceph-and-the-ssrc",
+      "line": 24,
+      "url": "https://ceph.io/en/discover/vision/"
+    },
+    {
+      "post": "2026-09-20-retiring-with-ethan-miller",
+      "line": 14,
+      "url": "https://www.crss.us/about.html"
+    },
+    {
+      "post": "2026-09-20-retiring-with-ethan-miller",
+      "line": 16,
+      "url": "https://www.ethanmiller.org/blog/im-retiring-from-ucsc/"
+    },
+    {
+      "post": "2026-09-20-long-professorship-experimental-physics",
+      "line": 22,
+      "url": "https://physics.ucsc.edu/give/faculty-chairs-and-professorships/"
+    },
+    {
+      "post": "2026-09-20-long-professorship-experimental-physics",
+      "line": 24,
+      "url": "https://www.psi.ch/en/pioneer"
+    },
+    {
+      "post": "2026-09-20-long-professorship-experimental-physics",
+      "line": 26,
+      "url": "https://news.ucsc.edu/2025/10/long-endowed-chair/"
+    },
+    {
+      "post": "2026-09-20-long-professorship-experimental-physics",
+      "line": 30,
+      "url": "https://physics.ucsc.edu/give/darrell-and-elaine-long/"
+    },
+    {
+      "post": "2026-09-20-long-professorship-experimental-physics",
+      "line": 32,
+      "url": "https://engineering.ucsc.edu/news/alison-tang-wins-dissertation-prize/"
+    },
+    {
+      "post": "2026-09-20-long-professorship-experimental-physics",
+      "line": 32,
+      "url": "https://physics.ucsc.edu/give/student-awards-and-prizes/"
+    },
+    {
+      "post": "2026-05-05-threshold-secret-sharing",
+      "line": 8,
+      "url": "https://github.com/darrelllong/secret-sharing"
+    },
+    {
+      "post": "2026-05-05-threshold-secret-sharing",
+      "line": 8,
+      "url": "https://github.com/darrelllong/cryptography"
+    },
+    {
+      "post": "2026-05-05-threshold-secret-sharing",
+      "line": 8,
+      "url": "/blog/2026-05-05-auditing-random-number-generators/"
+    },
+    {
+      "post": "2026-05-05-threshold-secret-sharing",
+      "line": 20,
+      "url": "https://github.com/darrelllong/secret-sharing/blob/04f056a67ba3568d3cc8b9c968b710cd7e2c95da/src/blakley.rs"
+    },
+    {
+      "post": "2026-05-05-threshold-secret-sharing",
+      "line": 46,
+      "url": "https://github.com/darrelllong/secret-sharing/blob/04f056a67ba3568d3cc8b9c968b710cd7e2c95da/src/vss.rs"
+    },
+    {
+      "post": "2026-05-05-threshold-secret-sharing",
+      "line": 48,
+      "url": "https://cgis.cs.umd.edu/~gasarch/TOPICS/secretsharing/feldmanVSS.pdf"
+    },
+    {
+      "post": "2026-05-05-threshold-secret-sharing",
+      "line": 50,
+      "url": "https://github.com/darrelllong/secret-sharing/blob/04f056a67ba3568d3cc8b9c968b710cd7e2c95da/src/proactive.rs"
+    },
+    {
+      "post": "2026-05-05-threshold-secret-sharing",
+      "line": 56,
+      "url": "https://github.com/darrelllong/secret-sharing/blob/04f056a67ba3568d3cc8b9c968b710cd7e2c95da/Cargo.toml"
+    },
+    {
+      "post": "2026-05-05-threshold-secret-sharing",
+      "line": 56,
+      "url": "https://github.com/darrelllong/rump"
+    },
+    {
+      "post": "2026-05-05-threshold-secret-sharing",
+      "line": 66,
+      "url": "https://github.com/darrelllong/secret-sharing/blob/04f056a67ba3568d3cc8b9c968b710cd7e2c95da/PERFORMANCE.md"
+    },
+    {
+      "post": "2026-05-05-threshold-secret-sharing",
+      "line": 76,
+      "url": "https://github.com/darrelllong/secret-sharing"
+    },
+    {
+      "post": "2026-05-05-threshold-secret-sharing",
+      "line": 78,
+      "url": "https://crates.io/crates/secret-sharing-rs"
+    },
+    {
+      "post": "2026-05-05-threshold-secret-sharing",
+      "line": 85,
+      "url": "https://docs.rs/secret-sharing-rs"
+    },
+    {
+      "post": "2026-05-05-auditing-random-number-generators",
+      "line": 8,
+      "url": "https://github.com/darrelllong/entropy"
+    },
+    {
+      "post": "2026-05-05-auditing-random-number-generators",
+      "line": 41,
+      "url": "https://github.com/darrelllong/entropy/blob/main/src/rng/sample.rs"
+    },
+    {
+      "post": "2026-05-05-auditing-random-number-generators",
+      "line": 53,
+      "url": "https://github.com/darrelllong/cryptography"
+    },
+    {
+      "post": "2026-05-05-auditing-random-number-generators",
+      "line": 80,
+      "url": "https://github.com/darrelllong/entropy/blob/9f72d34e0785af1ec2a8445cb9fb02643daf028a/BENCHMARKS.md"
+    },
+    {
+      "post": "2026-05-05-auditing-random-number-generators",
+      "line": 80,
+      "url": "/blog/2026-03-06-performance-evaluation/"
+    },
+    {
+      "post": "2026-05-05-auditing-random-number-generators",
+      "line": 88,
+      "url": "https://github.com/darrelllong/entropy/tree/9f72d34e0785af1ec2a8445cb9fb02643daf028a/src/rng"
+    },
+    {
+      "post": "2026-05-05-auditing-random-number-generators",
+      "line": 88,
+      "url": "https://github.com/darrelllong/entropy/blob/9f72d34e0785af1ec2a8445cb9fb02643daf028a/USAGE.md#generator-categories"
+    },
+    {
+      "post": "2026-05-05-auditing-random-number-generators",
+      "line": 90,
+      "url": "https://github.com/darrelllong/entropy/blob/main/TESTS.md"
+    },
+    {
+      "post": "2026-05-05-auditing-random-number-generators",
+      "line": 90,
+      "url": "https://github.com/darrelllong/entropy/blob/9f72d34e0785af1ec2a8445cb9fb02643daf028a/POWER.md"
+    },
+    {
+      "post": "2026-05-05-auditing-random-number-generators",
+      "line": 90,
+      "url": "https://github.com/darrelllong/entropy/blob/9f72d34e0785af1ec2a8445cb9fb02643daf028a/AUDIT.md"
+    },
+    {
+      "post": "2026-05-05-auditing-random-number-generators",
+      "line": 94,
+      "url": "https://github.com/darrelllong/entropy/tree/9f72d34e0785af1ec2a8445cb9fb02643daf028a"
+    },
+    {
+      "post": "2026-05-05-auditing-random-number-generators",
+      "line": 94,
+      "url": "https://crates.io/crates/rng-entropy/0.5.0"
+    },
+    {
+      "post": "2026-05-05-auditing-random-number-generators",
+      "line": 96,
+      "url": "https://github.com/darrelllong/entropy/blob/main/USAGE.md#random-values-in-applications"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 22,
+      "url": "/publications/127"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 22,
+      "url": "https://ssrc.us/media/pubs/1fc262bbb19b5ff0ec48ec4912d9f75c15917ce7.pdf"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 24,
+      "url": "https://github.com/darrelllong/pilot-bench"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 24,
+      "url": "https://github.com/ascar-io/pilot-bench"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 299,
+      "url": "https://github.com/darrelllong/cryptography"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 301,
+      "url": "https://github.com/darrelllong/Delta-Compression"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 301,
+      "url": "https://github.com/darrelllong/Delta-Compression/blob/main/src/rust/delta/src/bin/pilot_delta.rs"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 301,
+      "url": "https://github.com/darrelllong/Delta-Compression/blob/main/tests/bench_all.sh"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 301,
+      "url": "https://github.com/darrelllong/Delta-Compression/blob/main/bench/2026-10-03-sequoia/README.md"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 307,
+      "url": "https://github.com/darrelllong/rump"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 308,
+      "url": "https://github.com/darrelllong/entropy"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 309,
+      "url": "https://github.com/darrelllong/secret-sharing"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 310,
+      "url": "https://github.com/darrelllong/huffman"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 311,
+      "url": "https://github.com/darrelllong/Public-key-Cryptography-in-Python/blob/main/PERFORMANCE.md"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 311,
+      "url": "https://github.com/darrelllong/Public-key-Cryptography-in-Julia/blob/main/PERFORMANCE.md"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 312,
+      "url": "https://github.com/darrelllong/sorting"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 324,
+      "url": "https://github.com/darrelllong/sorting#where-the-code-is"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 350,
+      "url": "https://arxiv.org/abs/1411.7955"
+    },
+    {
+      "post": "2026-03-06-performance-evaluation",
+      "line": 351,
+      "url": "/publications/127"
+    },
+    {
+      "post": "2026-02-06-ercole-bottani",
+      "line": 11,
+      "url": "/blog/2026-02-14-luigi-dadda"
+    },
+    {
+      "post": "2026-02-06-ercole-bottani",
+      "line": 11,
+      "url": "/blog/2026-02-14-domenico-ferrari"
+    },
+    {
+      "post": "2026-02-06-ercole-bottani",
+      "line": 11,
+      "url": "/blog/2026-02-14-jehan-francois-paris"
+    },
+    {
+      "post": "2026-02-06-ercole-bottani",
+      "line": 13,
+      "url": "/blog/2026-02-14-angelo-barbagelata"
+    },
+    {
+      "post": "2026-02-06-ercole-bottani",
+      "line": 17,
+      "url": "https://www.historicalcollections.deib.polimi.it/en/protagonisti/bottani/"
+    },
+    {
+      "post": "2026-02-14-luigi-dadda",
+      "line": 10,
+      "url": "/blog/2026-02-14-domenico-ferrari"
+    },
+    {
+      "post": "2026-02-14-luigi-dadda",
+      "line": 10,
+      "url": "/blog/2026-02-14-jehan-francois-paris"
+    },
+    {
+      "post": "2026-02-14-luigi-dadda",
+      "line": 12,
+      "url": "/blog/2026-02-06-ercole-bottani"
+    },
+    {
+      "post": "2026-02-14-luigi-dadda",
+      "line": 16,
+      "url": "https://www.deib.polimi.it/eng/people/details/58996"
+    },
+    {
+      "post": "2026-02-14-luigi-dadda",
+      "line": 28,
+      "url": "https://web.archive.org/web/20240613213745/https://www.usi25.usi.ch/en/feeds/9505"
+    },
+    {
+      "post": "2026-02-14-luigi-dadda",
+      "line": 28,
+      "url": "https://www.inf.usi.ch/en/feeds/10627"
+    },
+    {
+      "post": "2026-02-14-luigi-dadda",
+      "line": 30,
+      "url": "https://www.quirinale.it/onorificenze/insigniti/35611"
+    },
+    {
+      "post": "2026-02-14-domenico-ferrari",
+      "line": 10,
+      "url": "/blog/2026-02-14-jehan-francois-paris"
+    },
+    {
+      "post": "2026-02-14-domenico-ferrari",
+      "line": 12,
+      "url": "/blog/2026-02-14-luigi-dadda"
+    },
+    {
+      "post": "2026-02-14-domenico-ferrari",
+      "line": 12,
+      "url": "/blog/2026-02-06-ercole-bottani"
+    },
+    {
+      "post": "2026-02-14-domenico-ferrari",
+      "line": 18,
+      "url": "https://www.oreilly.com/openbook/opensources/book/kirkmck.html"
+    },
+    {
+      "post": "2026-02-14-domenico-ferrari",
+      "line": 28,
+      "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/ferrari.html"
+    },
+    {
+      "post": "2026-02-14-domenico-ferrari",
+      "line": 28,
+      "url": "https://sigcomm.hosting2.acm.org/awards/sigcomm-awards"
+    },
+    {
+      "post": "2026-02-14-angelo-barbagelata",
+      "line": 10,
+      "url": "/blog/2026-02-06-ercole-bottani"
+    },
+    {
+      "post": "2026-02-14-angelo-barbagelata",
+      "line": 26,
+      "url": "/blog/2026-02-14-luigi-dadda"
+    },
+    {
+      "post": "2026-02-14-angelo-barbagelata",
+      "line": 26,
+      "url": "/blog/2026-02-14-domenico-ferrari"
+    },
+    {
+      "post": "2026-02-14-angelo-barbagelata",
+      "line": 26,
+      "url": "/blog/2026-02-14-jehan-francois-paris"
+    },
+    {
+      "post": "2026-02-14-angelo-barbagelata",
+      "line": 30,
+      "url": "https://www.adrianomorando.it/wp-content/uploads/Angelo-Barbagelata.pdf"
+    },
+    {
+      "post": "2026-02-14-angelo-barbagelata",
+      "line": 30,
+      "url": "https://www.treccani.it/enciclopedia/angelo-barbagelata_(Dizionario-Biografico)/"
+    },
+    {
+      "post": "2026-02-14-jehan-francois-paris",
+      "line": 22,
+      "url": "/publications/152/"
+    },
+    {
+      "post": "2026-02-14-jehan-francois-paris",
+      "line": 28,
+      "url": "/publications/236/"
+    },
+    {
+      "post": "2026-02-14-jehan-francois-paris",
+      "line": 28,
+      "url": "/publications/254/"
+    },
+    {
+      "post": "2026-02-14-jehan-francois-paris",
+      "line": 28,
+      "url": "/publications/232/"
+    },
+    {
+      "post": "2026-02-14-jehan-francois-paris",
+      "line": 32,
+      "url": "https://www2.cs.uh.edu/~paris/CV_short.pdf"
+    },
+    {
+      "post": "2026-02-14-jehan-francois-paris",
+      "line": 34,
+      "url": "/blog/2026-02-14-domenico-ferrari/"
+    },
+    {
+      "post": "2026-02-14-jehan-francois-paris",
+      "line": 44,
+      "url": "/publications/179/"
+    },
+    {
+      "post": "2026-02-14-jehan-francois-paris",
+      "line": 48,
+      "url": "/cv.pdf"
+    },
+    {
+      "post": "2026-02-14-jehan-francois-paris",
+      "line": 52,
+      "url": "/publications/153/"
+    },
+    {
+      "post": "2026-02-14-jehan-francois-paris",
+      "line": 52,
+      "url": "/publications/190/"
+    },
+    {
+      "post": "2026-02-14-jehan-francois-paris",
+      "line": 56,
+      "url": "/publications/128/"
+    },
+    {
+      "post": "2026-02-14-jehan-francois-paris",
+      "line": 56,
+      "url": "/publications/180/"
+    },
+    {
+      "post": "2026-02-14-jehan-francois-paris",
+      "line": 58,
+      "url": "/publications/181/"
+    },
+    {
+      "post": "2026-02-14-jehan-francois-paris",
+      "line": 68,
+      "url": "/blog/2026-02-14-luigi-dadda/"
+    },
+    {
+      "post": "2026-02-14-jehan-francois-paris",
+      "line": 68,
+      "url": "/blog/2026-02-06-ercole-bottani/"
+    },
+    {
+      "post": "2026-02-14-jehan-francois-paris",
+      "line": 68,
+      "url": "/blog/2026-02-14-angelo-barbagelata/"
+    }
+  ]
+}

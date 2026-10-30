@@ -53,7 +53,7 @@ Which copy to give up is the interesting question. Minimizing the bytes lost is 
 
 The [repository](https://github.com/darrelllong/Delta-Compression) has the three differencing algorithms and the in-place conversion in Python, Rust, C, C++, Java, and Go. The six implementations produce byte-identical deltas, so a file encoded by one can be decoded by any other. The tests check this compatibility. A delta carries CRC-64 checksums of the reference and the version, both verified when the delta is applied. The Rust implementation is also on crates.io as `delta-compression`.
 
-The following measurements are from an Apple M4 Pro. The repository includes results for other machines, along with the method and the raw output.
+The following measurements are from an Apple M4 Pro. The repository includes [results for other machines](https://github.com/darrelllong/Delta-Compression/blob/main/ANALYSIS.md), along with the method and the raw output.
 
 The tarballs of Linux 5.1 and 5.1.1 are 871 MB each. The one-pass delta between them is 5.1 MB, 0.58% of the version, and the correcting delta is 6.9 MB, 0.80%. One-pass does better here because the changes are small and in order, and checkpointing passes over short matches. The whole command, including reading both files and checksumming them, takes between 1.4 and 1.8 seconds for one-pass in the five compiled languages, and between 7.0 and 12.1 seconds for correcting, most of which is the pass that indexes the reference.
 

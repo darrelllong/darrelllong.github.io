@@ -25,7 +25,7 @@ Dadda became a full professor in 1960 and served as Rector of the Politecnico fr
 
 Beyond Italy, Dadda promoted the European Informatics Network, the COST 11 project to link computing centers across Europe. From 1980 to 1982, he chaired the Italian Prime Minister's Science and Technology Committee. He also served on a technical committee and advised the board of CSELT, the Italian telecommunications research center.
 
-He also helped establish the Università della Svizzera italiana in Lugano, where he [taught on the university's opening day in October 1996](https://www.usi25.usi.ch/en/feeds/9505). He founded its Advanced Learning and Research Institute, whose work focused on embedded systems. USI's [account of the IEEE Milestone for the Dadda multiplier](https://www.inf.usi.ch/en/feeds/10627) recalls both contributions.
+He also helped establish the Università della Svizzera italiana in Lugano, where he [taught on the university's opening day in October 1996](https://web.archive.org/web/20240613213745/https://www.usi25.usi.ch/en/feeds/9505). He founded its Advanced Learning and Research Institute, whose work focused on embedded systems. USI's [account of the IEEE Milestone for the Dadda multiplier](https://www.inf.usi.ch/en/feeds/10627) recalls both contributions.
 
 Dadda was an IEEE Fellow and later a Life Fellow for his contributions to computer arithmetic and digital signal processing. In 1976, he was named [Cavaliere di Gran Croce dell'Ordine al Merito della Repubblica Italiana](https://www.quirinale.it/onorificenze/insigniti/35611).
 

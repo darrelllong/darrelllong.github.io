@@ -75,7 +75,7 @@ The same argument applies when prose serves as a program. If a recipient interpr
 
 Writing the specification in English makes matters worse. English is semantically ambiguous: the same sentence can have different meanings, and different readers or models can interpret the same rule differently. The impossibility results already grant a precisely defined policy. An English specification adds uncertainty about what the filter is supposed to enforce in the first place.
 
-This limit on program analysis is familiar from computer security. Fred Cohen's 1987 paper, [*Computer Viruses: Theory and Experiments*](https://www.sciencedirect.com/science/article/pii/0167404887901222), showed that no algorithm can always decide whether an arbitrary program is a virus. [Glukhov and colleagues applied the same underlying limits to semantic censorship of LLM outputs](https://proceedings.mlr.press/v235/glukhov24a.html) (ICML 2024).
+This limit on program analysis is familiar from computer security. Fred Cohen's 1987 paper, [*Computer Viruses: Theory and Experiments*](https://www.all.net/books/virus/part4.html), showed that no algorithm can always decide whether an arbitrary program is a virus. [Glukhov and colleagues applied the same underlying limits to semantic censorship of LLM outputs](https://proceedings.mlr.press/v235/glukhov24a.html) (ICML 2024).
 
 Putting a second LLM in charge of judging the first does not establish safety. The judge can hallucinate too. Its approval is another fallible model output. Taking a vote among several models does not prove the verdict correct. These judges are also computations, subject to the same impossibility results. If another LLM checks the judges, its verdict needs checking too.
 

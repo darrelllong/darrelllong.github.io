@@ -5,7 +5,7 @@ tags: ["biography", "research", "colleagues"]
 excerpt: "Witold Litwin’s pioneering work on linear hashing, multidatabase systems, scalable distributed data structures, and many other fields, along with the friendship that grew from it."
 ---
 
-I first encountered Dr. Witold Litwin in print. In 1985, when I was a graduate student taking a course from Professor Walter Burkhard, I read Witold’s 1980 paper, “[Linear Hashing: A New Tool for File and Table Addressing](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=6Rbf6EUAAAAJ&citation_for_view=6Rbf6EUAAAAJ:u-x6o8ySG0sC).” I did not know him personally then. I have now known him for almost thirty years, and he has become my friend and collaborator.
+I first encountered Dr. Witold Litwin in print. In 1985, when I was a graduate student taking a course from Professor Walter Burkhard, I read Witold’s 1980 paper, “[Linear Hashing: A New Tool for File and Table Addressing](https://www.cs.cmu.edu/~christos/courses/826-resources/PAPERS%2BBOOK/linear-hashing.PDF).” I did not know him personally then. I have now known him for almost thirty years, and he has become my friend and collaborator.
 
 Linear hashing remains his most famous contribution, but describing Witold simply as its inventor would give a very incomplete account of his work. His research has ranged across graph theory, electrical circuits, medical signal processing, dynamic file structures, database languages, transaction processing, multidatabase systems, object-oriented databases, distributed storage, error-correcting codes, cloud security, deduplication, and the foundations of the relational model. He even worked on a model of artificial life for the future Internet.
 
@@ -33,7 +33,7 @@ Hash tables provide fast access to records by applying a function to a key to de
 
 Linear hashing removed that requirement. A file can expand gradually, splitting one bucket at a time rather than being reorganized all at once. The buckets are split in a predictable sequence, and the structure requires no separate directory recording which buckets have already been divided. It can also contract by reversing the process.
 
-Witold presented “[Linear Hashing: A New Tool for File and Table Addressing](https://www.sigmod.org/publications/dblp/db/conf/vldb/Litwin80.html)” at the Sixth International Conference on Very Large Data Bases in 1980. The paper described files that could grow or shrink without the deterioration in access time and storage utilization that afflicted earlier methods.
+Witold presented “[Linear Hashing: A New Tool for File and Table Addressing](https://www.cs.cmu.edu/~christos/courses/826-resources/PAPERS%2BBOOK/linear-hashing.PDF)” at the Sixth International Conference on Very Large Data Bases in 1980. The paper described files that could grow or shrink without the deterioration in access time and storage utilization that afflicted earlier methods.
 
 The idea was not immediately obvious even to experts. Per-Åke Larson later recalled that Witold sent him an early version of the paper in 1979. Larson initially thought that splitting buckets in a fixed sequence, rather than splitting whichever bucket happened to overflow, must be a bad idea. The question inspired several years of his own research. His eventual conclusion was simple: “[I was wrong—it was a good idea](https://sigmodrecord.org/?download_id=6044&smd_process_download=1).”
 
