@@ -13,7 +13,7 @@ The secrecy theorem does not require a bound on the observer's computation. An i
 
 ## The Schemes
 
-Shamir's polynomial construction is a useful starting point. The other constructions illustrate different choices about share size, access rules, error recovery, and secrecy. The repository's catalogue identifies the papers associated with each module.
+Shamir's polynomial construction is a useful starting point. The other constructions illustrate different choices about share size, access rules, error recovery, and secrecy. The repository's catalog identifies the papers associated with each module.
 
 **Shamir, *How to Share a Secret*, 1979.** The classical $(k, n)$ polynomial threshold scheme. Pick a random polynomial of degree at most $k - 1$ $q(x)$ with $q(0) = s$, hand share $i$ the value $q(i)$, recover via Lagrange interpolation. The crate also implements the Karnin-Greene-Hellman 1983 multi-secret extension: pack $\ell \le k$ secrets into the low coefficients and recover all of them in one round.
 

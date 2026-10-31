@@ -28,3 +28,37 @@ and date-range punctuation are structural, not prose flourishes.
 Validation: code blocks and link destinations compared against the previous
 revision; excerpt consistency, content validation, ESLint, and production
 build passed. All twelve rendered articles checked in the browser.
+
+## American English and possessives, October 31, 2026
+
+Scanned all 27 published Markdown posts for possessives ending in s and
+British spelling and usage, then reviewed the candidates in context.
+The possessives already consistently distinguished singular names (Davis's,
+Ellis's, Galois's) from plurals (bikers', customers', Regents'). No malformed
+"Davids's" was present. Added this convention and the American English
+preference to the README's blog style instructions.
+
+Made 14 American English edits across eight posts:
+
+| Post | Changes |
+| --- | --- |
+| Angelo Barbagelata | aged eighty-four → at age eighty-four |
+| On Time | backwards → backward |
+| Threshold Secret Sharing in Pure Rust | catalogue → catalog |
+| Dr. Witold Litwin | grey literature → gray literature |
+| Lessons from the Backblaze Data | afterwards → afterward; grey → gray |
+| Politicization of the UCSC Humanities | catalogue → catalog |
+| Die Like a Scientist | axe → ax (twice); sledge → sled; waistcoat → vest; aged → at age (twice) |
+| The Beast | spilt → spilled |
+
+These edits select a consistent American house style; several original forms
+are also accepted in American English. Preserved quotations, cited titles,
+proper names (including Holy Sepulchre, St. Petersburg Encyclopaedia, the
+French Centre d'Études et de Recherches en Informatique Appliquée, and the
+French degree Licence), code, mathematical notation, and link destinations.
+
+Validation: compared metadata, link destinations, code, quotations, and math
+against the prior revision across all 27 posts. Content checks and the
+production build passed; verified the changed wording in all eight rendered
+articles. The follow-up scan found none of the targeted variants remaining
+in the authored prose.

@@ -47,6 +47,16 @@ git add -A && git commit -m "Deploy" && git push
 
 ## Blog posts
 
+Use American English in authored prose: for example, color, gray, center,
+catalog, toward, afterward, spilled, and traveled. Preserve original wording
+and spelling in direct quotations, cited titles, proper names, and code.
+
+Form singular possessives with apostrophe-s, including names ending in s:
+David's, Davis's, Ellis's, and Galois's. For plurals ending in s, add only an
+apostrophe: bikers' clubhouse, students' work, and Regents' rule. Irregular
+plurals take apostrophe-s: children's and men's. Keep the original form in
+direct quotations and cited titles.
+
 Do not cite MacTutor (mathshistory.st-andrews.ac.uk) in blog posts. Prefer original
 papers, archival documents, and scholarly or institutional histories.
 

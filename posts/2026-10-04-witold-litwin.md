@@ -123,7 +123,7 @@ He revived the idea in depth after retirement, developing it into stored and inh
 
 ## Remembering the Work
 
-Witold has also created a [Virtual Computer History Museum](https://www.lamsade.dauphine.fr/~litwin/My%20Virtual%20Computer%20History%20Museum.htm). Its subject is the early history of distributed and multidatabase systems, particularly work done in Europe that survives only in reports, workshop proceedings, photographs, and other grey literature.
+Witold has also created a [Virtual Computer History Museum](https://www.lamsade.dauphine.fr/~litwin/My%20Virtual%20Computer%20History%20Museum.htm). Its subject is the early history of distributed and multidatabase systems, particularly work done in Europe that survives only in reports, workshop proceedings, photographs, and other gray literature.
 
 Search engines are poor custodians of history. Work that was never digitized, appeared in a language other than English, or remained in an institutional report can disappear from the record even when it influenced what followed. Witold’s museum preserves not only documents but the names of colleagues, students, engineers, and organizers whose work might otherwise be forgotten.
 
