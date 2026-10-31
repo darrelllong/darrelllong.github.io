@@ -49,7 +49,7 @@ From 1996 onward, my narrative evaluations gave Miss Spelvin the grade she had e
 
 Eventually, logic prevailed, though the changes took years. Optional letter grades came after our RJ&E ruling. By [fall 1997](https://news.ucsc.edu/?p=60337), students could request letter grades in almost every course, and new undergraduates could accumulate a GPA. In [February 2000, the Senate voted to make conventional grading the rule for students entering in fall 2001](https://currents.ucsc.edu/99-00/02-21/grades.html), with no more than a quarter of their UCSC coursework taken Pass/No Pass. Narratives remained compulsory alongside the grades.
 
-It took another decade to make the narratives optional. On [April 23, 2010, the Senate voted 45–5 to leave them to the instructor](https://news.ucsc.edu/2010/04/academic-senate-makes-narrative-evaluations-instructor-optional). Dan Wirls, then chairman of Politics, was one of the five opponents. He called the result “death by voluntarism.”
+It took another decade to make the narratives optional. On [April 23, 2010, the Senate voted 45–5 to leave them to the instructor](https://news.ucsc.edu/2010/04/academic-senate-makes-narrative-evaluations-instructor-optional). Dan Wirls, then chairman of Politics, was one of the five opponents. He called the result “death by voluntarism.” Academic freedom for thee and not for me, I suppose.
 
 UC Santa Cruz operates as a [Senate of the Whole](https://senate.ucsc.edu/about/). All ladder-rank faculty members are senators, entitled to participate directly. With roughly five hundred senators, those fifty votes represented about ten percent of the body. About ninety percent did not vote. To me, that turnout reflected what most of the campus had thought from the beginning: this was silly.
 
