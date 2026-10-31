@@ -41,7 +41,7 @@ We ruled that academic freedom allowed it. The [October 1996 interpretations rem
 
 All hell broke loose.
 
-The usual people on the Left who objected to everything did exactly that. There were protests and sit-ins. Opponents chained themselves to the doors of the room where the Academic Senate met to discuss grades. Members of RJ&E received threats of violence.
+The usual people on the Left who objected to everything did exactly that. The entire campus is on the Left, so I mean the people who would question even Angela Davis's revolutionary bona fides. There were protests and sit-ins. Opponents chained themselves to the doors of the room where the Academic Senate met to discuss grades. Members of RJ&E received threats of violence.
 
 It was glorious.
 
