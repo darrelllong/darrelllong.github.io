@@ -11,7 +11,7 @@ excerpt: "The Good Lord divided the light from the darkness. A startup proposes 
 
 The Good Lord was probably onto something.
 
-![Dracula crouches in the narrow shadow of his coffin above Los Angeles while orbiting mirrors turn midnight into glaring daylight.](/posts/images/let-there-be-night-dracula.png)
+![Dracula wears Ray-Bans and shelters under a black parasol above Los Angeles while orbiting mirrors turn midnight into glaring daylight.](/posts/images/let-there-be-night-dracula.png)
 
 *The Count would like a word with the investors.*
 
