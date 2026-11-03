@@ -99,13 +99,13 @@ Swift had begun at IBM and helped shape both Storage Tank and Ceph. It all came 
 
 6. Scott A. Brandt, Ethan L. Miller, Darrell D. E. Long, and Lan Xue. [“Efficient Metadata Management in Large Distributed Storage Systems.”](/publications/37/) *IEEE/NASA Goddard Conference on Mass Storage Systems and Technologies (MSST)*, 2003.
 
-7. Qin Xin, Ethan L. Miller, Thomas J. E. Schwarz, Darrell D. E. Long, Scott A. Brandt, and Witold Litwin. [“Reliability Mechanisms for Very Large Storage Systems.”](/publications/38/) *MSST*, 2003.
+7. Qin Xin, Ethan L. Miller, Thomas J. E. Schwarz, Darrell D. E. Long, Scott A. Brandt, and Witold Litwin. [“Reliability Mechanisms for Very Large Storage Systems.”](/publications/38/) *IEEE/NASA Goddard Conference on Mass Storage Systems and Technologies (MSST)*, 2003.
 
 8. R. J. Honicky and Ethan L. Miller. [“Replication Under Scalable Hashing: A Family of Algorithms for Scalable Decentralized Data Distribution.”](https://www.ssrc.us/pub/honicky-ipdps04.html) *International Parallel and Distributed Processing Symposium (IPDPS)*, 2004.
 
-9. Feng Wang, Scott A. Brandt, Ethan L. Miller, and Darrell D. E. Long. [“OBFS: A File System for Object-Based Storage Devices.”](/publications/45/) *MSST*, 2004.
+9. Feng Wang, Scott A. Brandt, Ethan L. Miller, and Darrell D. E. Long. [“OBFS: A File System for Object-Based Storage Devices.”](/publications/45/) *IEEE/NASA Goddard Conference on Mass Storage Systems and Technologies (MSST)*, 2004.
 
-10. Feng Wang, Qin Xin, Bo Hong, Scott A. Brandt, Ethan L. Miller, Darrell D. E. Long, and Tyce T. McLarty. [“File System Workload Analysis for Large Scale Scientific Computing Applications.”](/publications/44/) *MSST*, 2004.
+10. Feng Wang, Qin Xin, Bo Hong, Scott A. Brandt, Ethan L. Miller, Darrell D. E. Long, and Tyce T. McLarty. [“File System Workload Analysis for Large Scale Scientific Computing Applications.”](/publications/44/) *IEEE/NASA Goddard Conference on Mass Storage Systems and Technologies (MSST)*, 2004.
 
 11. Qin Xin, Ethan L. Miller, and Thomas J. E. Schwarz. [“Evaluation of Distributed Recovery in Large-Scale Storage Systems.”](https://www.ssrc.us/pub/xin-hpdc04.html) *International Symposium on High Performance Distributed Computing (HPDC)*, 2004.
 
