@@ -15,6 +15,11 @@ popularity and the dean's refusal, remain in the dedicated class post rather
 than the About teaching list. Do not add incidental affiliations or promotional
 commentary to the list.
 
+The owner subsequently requested a two-column table. List programming languages
+once, and keep distinct subjects in separate cells, including introductory and
+honors programming; C, C++, and Python; computer systems and systems programming;
+operating systems and advanced operating systems; and security and privacy.
+
 The subsequent check found that the correction had only reached the development
 preview. The generated root files were stale, and the public site still contained
 the original LANL teaching claim. After an About correction, regenerate the root

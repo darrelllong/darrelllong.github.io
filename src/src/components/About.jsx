@@ -108,24 +108,55 @@ export default function About() {
 
         <section aria-labelledby="mentoring-title">
           <h2 id="mentoring-title">Teaching and mentoring</h2>
-          <p>Teaching topics:</p>
-          <ul className="teaching-topics">
-            <li>Mathematics</li>
-            <li>Introductory and honors programming, including Python and C/C++</li>
-            <li>Data structures</li>
-            <li>Computer systems and C programming</li>
-            <li>Systems programming</li>
-            <li>Compiler design and construction</li>
-            <li>Comparative programming languages</li>
-            <li>Programming languages and environments</li>
-            <li>Operating systems and advanced operating systems</li>
-            <li>Information networks</li>
-            <li>Computer security, Internet security, and privacy</li>
-            <li>Cryptography</li>
-            <li>Storage systems</li>
-            <li>Computer systems seminars and advanced topics</li>
-            <li>Existential risks to civilization (&ldquo;Dangerous World&rdquo;)</li>
-          </ul>
+          <table className="teaching-topics">
+            <caption>Teaching topics</caption>
+            <tbody>
+              <tr>
+                <td>Mathematics</td>
+                <td>Data structures</td>
+              </tr>
+              <tr>
+                <td>Introductory programming</td>
+                <td>Honors programming</td>
+              </tr>
+              <tr>
+                <td>C programming</td>
+                <td>C++ programming</td>
+              </tr>
+              <tr>
+                <td>Python programming</td>
+                <td>Programming languages</td>
+              </tr>
+              <tr>
+                <td>Computer systems</td>
+                <td>Systems programming</td>
+              </tr>
+              <tr>
+                <td>Compiler design</td>
+                <td>Information networks</td>
+              </tr>
+              <tr>
+                <td>Operating systems</td>
+                <td>Advanced operating systems</td>
+              </tr>
+              <tr>
+                <td>Computer security</td>
+                <td>Internet security</td>
+              </tr>
+              <tr>
+                <td>Privacy</td>
+                <td>Cryptography</td>
+              </tr>
+              <tr>
+                <td>Storage systems</td>
+                <td>Advanced topics in computer systems</td>
+              </tr>
+              <tr>
+                <td>Computer systems seminars</td>
+                <td>Existential risks to civilization (&ldquo;Dangerous World&rdquo;)</td>
+              </tr>
+            </tbody>
+          </table>
           <p>
             He supervised undergraduate research and
             encouraged students to continue to graduate study. <a
