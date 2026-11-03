@@ -1,5 +1,28 @@
 # Biography audit and queue completion
 
+## November 3, 2026 editorial correction
+
+The owner objected to singling out the incidental LANL video attendance in
+the teaching biography. The source was one row on CV page 46, under Teaching
+2008–09, spring: CMPS 223, "Advanced Computer Security (LANL)," enrollment 2.
+The owner clarified that LANL participants watched his class by video; this
+was not a separate on-site teaching appointment. The sentence has been removed
+from About. Do not restore it as a representative teaching accomplishment.
+The owner's latest direction is to replace the teaching narrative with a plain
+list of topics. Preserve the breadth of his 37-year teaching record and the
+substantive mentoring details. Course anecdotes, including Dangerous World's
+popularity and the dean's refusal, remain in the dedicated class post rather
+than the About teaching list. Do not add incidental affiliations or promotional
+commentary to the list.
+
+The subsequent check found that the correction had only reached the development
+preview. The generated root files were stale, and the public site still contained
+the original LANL teaching claim. After an About correction, regenerate the root
+files with `npm run deploy`, review the generated page and bundle, and verify the
+public page after publication before claiming that a live-site error is fixed.
+
+## Earlier audit
+
 Date: September 21, 2026. Starting commit:
 `5ad843007a9f07b07f170daf5db99c876ef830b7`.
 

@@ -108,32 +108,24 @@ export default function About() {
 
         <section aria-labelledby="mentoring-title">
           <h2 id="mentoring-title">Teaching and mentoring</h2>
-          <p>
-            Dr. Long&rsquo;s teaching at Santa Cruz spanned the undergraduate
-            and graduate curriculum. In his first year, 1988–89, he taught
-            compiler design and advanced operating systems. His upper-division
-            courses included operating systems, compiler construction,
-            comparative programming languages, and systems programming. He
-            also taught introductory and honors programming, data structures,
-            computer systems and C programming, and courses on Internet
-            security and privacy.
-          </p>
-          <p>
-            At the graduate level, he taught advanced operating systems,
-            compiler design, programming languages and environments, storage
-            systems, advanced computer security, and cryptography. He led
-            computer systems seminars and advanced topics courses, and taught
-            advanced computer security at Los Alamos National Laboratory.
-            He received the Student Alumni Council Favorite Professor Award
-            in 1991 and an honorable mention for the 1994–95 Excellence in
-            Teaching Award.
-          </p>
-          <p>
-            His seminar &ldquo;Dangerous World&rdquo; examined real-world
-            existential risks to human civilization and was highly popular
-            with undergraduate and graduate students, although the dean
-            allowed him to offer it only once.
-          </p>
+          <p>Teaching topics:</p>
+          <ul className="teaching-topics">
+            <li>Mathematics</li>
+            <li>Introductory and honors programming, including Python and C/C++</li>
+            <li>Data structures</li>
+            <li>Computer systems and C programming</li>
+            <li>Systems programming</li>
+            <li>Compiler design and construction</li>
+            <li>Comparative programming languages</li>
+            <li>Programming languages and environments</li>
+            <li>Operating systems and advanced operating systems</li>
+            <li>Information networks</li>
+            <li>Computer security, Internet security, and privacy</li>
+            <li>Cryptography</li>
+            <li>Storage systems</li>
+            <li>Computer systems seminars and advanced topics</li>
+            <li>Existential risks to civilization (&ldquo;Dangerous World&rdquo;)</li>
+          </ul>
           <p>
             He supervised undergraduate research and
             encouraged students to continue to graduate study. <a
@@ -180,21 +172,23 @@ export default function About() {
             Experts Group.
           </p>
           <p>
-            He served on the University of California
+            His laboratory oversight work began while he was vice-chair of
+            the University of California Committee on Research Policy in
+            2001–2002. He served on the University of California
             President&rsquo;s Council on the National Laboratories and on
             science and technology, national security, and intelligence
             committees for Los Alamos and Lawrence Livermore. He also took
             part in advisory and review work at Sandia and Pacific Northwest
-            national laboratories. Through the Academic Council&rsquo;s <a
+            national laboratories. His later service included the Academic
+            Council&rsquo;s <a
             href="https://senate.universityofcalifornia.edu/_files/committees/acscoli/acscoli-annual-report-2022-23.pdf">
-            Special Committee on Laboratory Issues</a>, he also took part
-            in the university&rsquo;s oversight of the laboratories.
+            Special Committee on Laboratory Issues</a>.
           </p>
           <p>
-            Within the university, he served as vice-chair and then chair
-            of the University of California Committee on Research Policy,
-            and as associate dean of engineering and associate dean for
-            research and graduate studies at Santa Cruz. In 2025, he joined the
+            He chaired the University of California Committee on Research
+            Policy in 2002–2003 and served as associate dean of engineering
+            and associate dean for research and graduate studies at Santa Cruz.
+            In 2025, he joined the
             Board of Trustees of the Institute for Defense Analyses.
           </p>
         </section>
