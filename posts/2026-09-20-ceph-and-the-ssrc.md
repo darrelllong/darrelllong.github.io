@@ -11,7 +11,7 @@ Ethan and I helped design Ceph. His research on parallel I/O and decentralized d
 
 ## Swift
 
-Dr. Luis-Felipe Cabrera and I began Swift at IBM Almaden in 1989. Felipe worked at IBM; I was at UC Santa Cruz. Our first publications appeared in 1991: [“Exploiting Multiple I/O Streams to Provide High Data-Rates”](/publications/227/) at the Summer USENIX conference in June, and [“Swift: A Storage Architecture for Large Objects”](/publications/4/) at the Symposium on Mass Storage Systems in October. The full architecture appeared in [*Computing Systems*, volume 4, number 4](https://www.usenix.org/publications/compsystems/1991/fall_cabrera.pdf), also in 1991.
+Dr. Luis-Felipe Cabrera and I began Swift at IBM Almaden in 1989. Felipe worked at IBM; I was at UC Santa Cruz. Our first publications appeared in 1991: [“Exploiting Multiple I/O Streams to Provide High Data-Rates”](/publications/227/) at the Summer USENIX conference in June, and [“Swift: A Storage Architecture for Large Objects”](/publications/4/) at the Symposium on Mass Storage Systems in October. The full architecture appeared in [*Computing Systems*, volume 4, number 4](/publications/177/), also in 1991.
 
 The two biggest ideas were **using objects** and **separating data from metadata**. Swift’s storage agents held data and managed their local devices. A separate storage mediator managed directory information, access rights, and object locations. The client’s distribution agent obtained a transfer plan from the mediator, then moved data directly to or from the storage agents.
 
@@ -87,7 +87,7 @@ Swift had begun at IBM and helped shape both Storage Tank and Ceph. It all came 
 
 ## References
 
-1. Luis-Felipe Cabrera and Darrell D. E. Long. [“Swift: Using Distributed Disk Striping to Provide High I/O Data Rates.”](https://www.usenix.org/publications/compsystems/1991/fall_cabrera.pdf) *Computing Systems* 4(4), 1991.
+1. Luis-Felipe Cabrera and Darrell D. E. Long. [“Swift: Using Distributed Disk Striping to Provide High I/O Data Rates.”](/publications/177/) *Computing Systems* 4(4), 1991.
 
 2. Ethan L. Miller and Randy H. Katz. [“RAMA: A Filesystem for Massively Parallel Computers.”](https://ethanmiller.org/files/pubs/mss93.pdf) *Twelfth IEEE Symposium on Mass Storage Systems*, 1993.
 
