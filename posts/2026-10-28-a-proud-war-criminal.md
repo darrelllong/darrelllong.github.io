@@ -49,6 +49,10 @@ Protests ensued. Posters appeared. Booklets were published. The faculty were dec
 
 The poster called us an “Outlaw Gang” and described REINAS as “posing as a fancy weather forecasting system.” Apparently, the Navy's interest in the weather was evidence enough.
 
+![A man in a Los Alamos National Laboratory polo shirt holds the REINAS wanted poster and gives a thumbs-up.](/images/reinas-wanted-poster-thumbs-up.jpg)
+
+*A thumbs-up for the wanted poster, in a Los Alamos National Laboratory shirt. [Full-resolution photograph](/images/reinas-wanted-poster-thumbs-up.jpg).*
+
 Fortunately, we had a supportive chancellor in [Dr. M. R. C. Greenwood](https://library.ucsc.edu/reg-hist/from-complex-organisms-to-a-complex-organization-an-oral-history-with-ucsc-chancellor-mrc), who stood by us during the REINAS protests. She had followed the amazing [Dr. Karl Pister](https://cshe.berkeley.edu/node/145), who helped us secure the grant over MIT by meeting with the visiting team from ONR.
 
 The broader campaign against military-funded university research continued. I kept a copy of the 2003 booklet [*The Militarization of America's Universities*](/downloads/militarization-of-americas-universities-2003.pdf), published by the ¡Escrache! media collective. It gives a sense of the politics surrounding this work.
