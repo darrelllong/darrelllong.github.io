@@ -165,6 +165,9 @@ main.blogpost {
   height: auto;
   margin: 24px auto;
 }
+.blog-content img[src="/images/engineering-2-weapon-research.jpg"] {
+  width: 400px;
+}
 .blog-content p:has(> img:only-child) {
   margin-bottom: 8px;
 }
