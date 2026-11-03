@@ -30,3 +30,9 @@ instead of presenting it as a full-paper download.
 | `golding-nsd99.pdf` | `darrelllong/Publications`: `Chapters/NSD/1999/as-published/NSD-Golding-1999-as-published.pdf`, blob `bb020a80d4ebb6ad12cd98ad4b3ef74e1d8d3b59`. The 1999 book chapter, replacing a link to the earlier conference paper. |
 | `carter-cn99.pdf` | `darrelllong/Publications`: `Journals/CN/1999/as-published/CN-Carter-1999-as-published.pdf`, blob `3b0c72df576a6d6f1cffc5597ea461740ab81341`. Published journal article. |
 | `amer-icnc14.pdf` | `darrelllong/Publications`: `Conferences/ICNC/2014/p907-amer.pdf`, blob `89183d624cefa97c7c8e90fc6080ce003adfbc81`. Published conference paper. |
+
+## Historical research proposals
+
+| File | Source and version |
+| --- | --- |
+| `long-trilabs-asci-proposal-2001.pdf` | Author-provided `trilabs.pdf`: *Scalable File Systems for High Performance Computing*, dated June 1, 2001. Original ASCI proposal, linked from “Ceph and the SSRC”; copied without modification. |
