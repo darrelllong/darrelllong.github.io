@@ -5,7 +5,7 @@ tags: ["research", "storage", "colleagues"]
 excerpt: "The research behind Ceph: Swift, Storage Tank, RAMA, the ASCI proposal, and the work of Sage Weil and other SSRC students."
 ---
 
-Ceph came out of the [Storage Systems Research Center (SSRC)](https://www.ssrc.us/proj/exscale.html) at UC Santa Cruz, the laboratory that Dr. Ethan Miller and I built together. I coauthored the [2006 Ceph paper](/publications/59/) with Dr. Sage Weil, Dr. Scott Brandt, Dr. Ethan Miller, and Dr. Carlos Maltzahn.
+Ceph came out of the [Storage Systems Research Center (SSRC)](https://www.ssrc.us/proj/exscale.html) at UC Santa Cruz, the laboratory that [Dr. Ethan Miller](https://www.ethanmiller.org/) and I built together. I coauthored the [2006 OSDI paper on Ceph](https://www.usenix.org/legacy/event/osdi06/tech/full_papers/weil/weil.pdf) with Dr. Sage Weil, Dr. Scott Brandt, Dr. Ethan Miller, and Dr. Carlos Maltzahn.
 
 Ethan and I helped design Ceph. His research on parallel I/O and decentralized data placement included RAID-II and RAMA at Berkeley, RUSH with R. J. Honicky at the SSRC, and CRUSH with Sage, Scott, and Carlos. My work on Swift and IBM Storage Tank contributed the use of objects and separate metadata services.
 
@@ -19,7 +19,7 @@ Swift striped large objects across storage agents and transferred their pieces i
 
 Swift’s early funding came from Lawrence Livermore National Laboratory (LLNL) and the National Science Foundation (NSF). The [awards listed in my CV](/cv.pdf) were \$15,183 from LLNL for 1991–92 and \$68,955 from NSF for 1991–93. Bruce Montague, Felipe, and I later developed [Swift/RAID](/publications/176/), published in *Computing Systems* in 1994, adding distributed RAID fault tolerance.
 
-I carried Swift’s separation of data from metadata into **IBM Storage Tank** as one of its architects. I was a [visiting scientist at IBM Almaden from 1995 to 2011](/cv.pdf). Bob Rees, David Pease, Randal Burns, Wayne Hineman, and I put the Storage Tank architecture together on the second floor of the B wing at IBM Almaden.
+I carried Swift’s separation of data from metadata into **IBM Storage Tank** as one of its architects. I was a [visiting scientist at IBM Almaden from 1995 to 2011](/cv.pdf). Bob Rees, David Pease, [Randal Burns](https://www.cs.jhu.edu/faculty/randal-burns/), Wayne Hineman, and I put the Storage Tank architecture together on the second floor of the B wing at IBM Almaden.
 
 ![The IBM Storage Tank team posing with motorcycles outside a building.](/images/ibm-storage-tank-team.jpg)
 
@@ -111,8 +111,8 @@ Swift had begun at IBM and helped shape both Storage Tank and Ceph. It all came 
 
 12. Sage A. Weil, Kristal T. Pollack, Scott A. Brandt, and Ethan L. Miller. [“Dynamic Metadata Management for Petabyte-Scale File Systems.”](https://www.ssrc.us/pub/weil-sc04.html) *ACM/IEEE Conference on Supercomputing (SC)*, 2004.
 
-13. Sage A. Weil, Feng Wang, Qin Xin, Scott A. Brandt, Ethan L. Miller, Darrell D. E. Long, and Carlos Maltzahn. [“Ceph: A Scalable Object-Based Storage System.”](/publications/52/) *UCSC-SSRC-06-01*, March 2006.
+13. Sage A. Weil, Feng Wang, Qin Xin, Scott A. Brandt, Ethan L. Miller, Darrell D. E. Long, and Carlos Maltzahn. [“Ceph: A Scalable Object-Based Storage System.”](/publications/52/) Technical report *UCSC-SSRC-06-01*, March 2006.
 
 14. Sage A. Weil, Scott A. Brandt, Ethan L. Miller, and Carlos Maltzahn. [“CRUSH: Controlled, Scalable, Decentralized Placement of Replicated Data.”](https://www.ssrc.us/media/pubs/9c7bcd06ff4eeccef2cb4c7813fe33ba7d4805c7.pdf) *SC*, 2006.
 
-15. Sage A. Weil, Scott A. Brandt, Ethan L. Miller, Darrell D. E. Long, and Carlos Maltzahn. [“Ceph: A Scalable, High-Performance Distributed File System.”](/publications/59/) *Symposium on Operating Systems Design and Implementation (OSDI)*, November 2006.
+15. Sage A. Weil, Scott A. Brandt, Ethan L. Miller, Darrell D. E. Long, and Carlos Maltzahn. [“Ceph: A Scalable, High-Performance Distributed File System.”](https://www.usenix.org/legacy/event/osdi06/tech/full_papers/weil/weil.pdf) *Proceedings of the 7th USENIX Symposium on Operating Systems Design and Implementation* (**OSDI ’06**), pp. 307–320, November 2006.
