@@ -12,10 +12,11 @@ export default function About() {
           <p>
             Dr. Darrell Long is Distinguished Professor of Engineering, emeritus,
             at the University of California, Santa Cruz, and a Distinguished
-            Visiting Scholar at Santa Clara University. His research concerns
-            storage systems, reliability, and computer security. He has also
-            served as a scientific adviser to the U.S. government and the
-            national laboratories.
+            Visiting Scholar at Santa Clara University. His research spans
+            distributed and fault-tolerant computing, operating systems,
+            storage, networking, computer security, and performance evaluation.
+            He has also served as a scientific adviser to the U.S. government
+            and the national laboratories.
           </p>
           <a className="text-link" href="/cv.pdf">
             Curriculum vitae <span aria-hidden="true">↗</span>
@@ -52,11 +53,26 @@ export default function About() {
             research.
           </p>
           <p>
-            In 1991, his work with Dr. Luis-Felipe
+            His work on distributed computing has examined data replication,
+            consistency, and fault tolerance, alongside studies of Internet
+            host reliability and the modeling and simulation of computer
+            systems. In 1991, his work with Dr. Luis-Felipe
             Cabrera on <Link to="/publications/227/">Swift</Link> explored
             an architecture that separated metadata management from data
             transfers. His work has also addressed data deduplication,
-            archival storage, reliability, and secure file systems.
+            archival storage, caching and prefetching, and high-performance
+            scientific computing.
+          </p>
+          <p>
+            His networking and multimedia research included performance
+            guarantees for communication networks and <Link
+            to="/publications/211/">video-on-demand delivery</Link>. With
+            Dr. Patrick Mantey and colleagues, he developed <Link
+            to="/publications/175/">REINAS</Link>, a system for managing
+            real-time and historical environmental data. Work with Dr. David
+            Helmbold and others explored <Link to="/publications/214/">adaptive
+            disk power management</Link> for mobile computers, part of a
+            broader interest in energy-efficient computing.
           </p>
           <p>
             He directed the <a href="https://www.ssrc.us/about.html">Storage
@@ -76,14 +92,44 @@ export default function About() {
             Dr. Ethan Miller, to develop the center and directed it from 2019
             to 2023.
           </p>
+          <p>
+            His operating systems research includes <Link
+            to="/publications/148/">Twizzler</Link>, which reconsiders how
+            an operating system manages data in nonvolatile memory. His
+            security work encompasses encryption and access control,
+            deniable storage, digital forensics, provenance-based intrusion
+            detection, and <Link to="/publications/160/">anonymous
+            communication resistant to traffic analysis</Link>. He has also
+            applied machine learning to systems problems, including <Link
+            to="/publications/129/">automatic performance tuning</Link>,
+            workload prediction, and anomaly detection.
+          </p>
         </section>
 
         <section aria-labelledby="mentoring-title">
           <h2 id="mentoring-title">Teaching and mentoring</h2>
           <p>
-            At Santa Cruz, Dr. Long taught introductory programming and data
-            structures, as well as graduate courses in operating systems
-            and cryptography. He supervised undergraduate research and
+            Dr. Long&rsquo;s teaching at Santa Cruz spanned the undergraduate
+            and graduate curriculum. In his first year, 1988–89, he taught
+            compiler design and advanced operating systems. His upper-division
+            courses included operating systems, compiler construction,
+            comparative programming languages, and systems programming. He
+            also taught introductory and honors programming, data structures,
+            computer systems and C programming, and courses on Internet
+            security and privacy.
+          </p>
+          <p>
+            At the graduate level, he taught advanced operating systems,
+            compiler design, programming languages and environments, storage
+            systems, advanced computer security, and cryptography. He led
+            computer systems seminars and advanced topics courses, and taught
+            advanced computer security at Los Alamos National Laboratory.
+            He received the Student Alumni Council Favorite Professor Award
+            in 1991 and an honorable mention for the 1994–95 Excellence in
+            Teaching Award.
+          </p>
+          <p>
+            He supervised undergraduate research and
             encouraged students to continue to graduate study. <a
             href="https://news.ucsc.edu/2016/03/women-computer-science/">Dr. Alexandra
             Holloway and Dr. Aleatha Parker-Wood</a> were among his undergraduate
