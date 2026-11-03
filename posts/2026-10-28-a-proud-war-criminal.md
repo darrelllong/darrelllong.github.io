@@ -23,21 +23,21 @@ Dr. Mantey and I also had a wireless network connecting his house atop the ridge
 
 Radio waves can bend around the edge of a hill, a process called diffraction. That was the fringing I was dealing with. They can also reflect off terrain. These routes can deliver multiple copies of the same transmission to the receiver: [*multipath*](https://www.cisco.com/c/en/us/support/docs/wireless-mobility/wireless-lan-wlan/27147-multipath.html). The copies travel different distances and arrive with different phases. When a crest meets a trough, they partially cancel, making the signal harder to receive. The Yagi's directionality helped reject signals arriving from unwanted directions. Circular polarization helped reject some reflections because a reflection can [reverse the wave's polarization handedness](https://www.antenna-theory.com/basics/polarization.php).
 
-The link actually worked better in the rain. A hill between my house and campus created an unwanted second path, and wet weather suppressed it. Weakening that interfering copy reduced the cancellation at the receiver and improved reception. At 900 MHz, attenuation by falling rain itself is very small; the useful change was in the unwanted path associated with the hill.
+The link worked better in the rain. A hill between my house and campus created an unwanted second path, and wet weather suppressed it. Weakening that interfering copy reduced the cancellation at the receiver and improved reception. At 900 MHz, attenuation by falling rain itself is very small; the useful change was in the unwanted path associated with the hill.
 
 We had a meteorological station and video camera atop the Dream Inn. Surfers loved that very early live video. Yes, that was us too. Another installation operated for years at Long Marine Laboratory, at UC Santa Cruz's Coastal Campus.
 
-The written record makes clear how much we were putting together. Our [January 1993 concept statement](https://tr.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-CRL-93-05.pdf#page=25) specifies Internet access to data and sensor control through standard protocols, including TCP/IP. By [July 1993](https://tr.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-CRL-93-34.pdf#page=38), the report describes software reading meteorological instruments, sending their measurements over the Internet into a database, and letting users display either current conditions or historical observations. The [1995 CompCon paper](/publications/167/) describes instrument nodes built from PCs running BSD/386.
+Our [January 1993 concept statement](https://tr.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-CRL-93-05.pdf#page=25) specifies Internet access to data and sensor control through standard protocols, including TCP/IP. By [July 1993](https://tr.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-CRL-93-34.pdf#page=38), the report describes software reading meteorological instruments, sending their measurements over the Internet into a database, and letting users display either current conditions or historical observations. The [1995 CompCon paper](/publications/167/) describes instrument nodes built from PCs running BSD/386.
 
 Making that work meant dealing with unreliable radio links. Instruments kept local logs, and records remained there until the receiving system acknowledged them. Our [journal paper](/publications/175/) describes a UDP-based retransmission protocol tuned for the wireless links. TCP/IP was the protocol family; we chose the transport behavior to suit the job. The database had its own incoming logs, so collection could continue through database maintenance or a backlog. Scientists could also interact with an instrument while its data collection continued.
 
-We even used an SGI Challenge computer with a 64 MB solid-state disk to hold the log and keep up with the flow of data from the instruments. At the time, a 1 GB SCSI disk cost \$1,500.
+We used an SGI Challenge computer with a 64 MB solid-state disk to hold the log and keep up with the flow of data from the instruments. At the time, a 1 GB SCSI disk cost \$1,500.
 
 We also wanted the measurements to remain scientifically useful years later. The data model kept their context: which instrument produced them, how they were calibrated, and how they had been processed. Dr. Pang's visualization work grew to include scientists at different locations exploring the same three-dimensional data together, as well as ways to show uncertainty in the measurements. The [project reports](https://tr.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-CRL-94-43.pdf#page=55) connect these efforts: networked instruments, a scientific archive, and tools for understanding what was happening as the data arrived.
 
-The [January 1997 status report](https://tr.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-CRL-97-02.pdf#page=16) even recalls the objection that putting a “whole 386” at each instrument site would be too expensive. By then, the system was collecting measurements from more than 70 instrument platforms, with more than 220 sensor streams at about 50 fixed and mobile sites. Later that year, [NSF support through NPACI](https://www1.ucsc.edu/news_events/press_releases/archive/96-97/03-97/033197-UCSC_is_member_of_n.html) would help extend the work.
+The [January 1997 status report](https://tr.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-CRL-97-02.pdf#page=16) records the objection that putting a “whole 386” at each instrument site would be too expensive. By then, the system was collecting measurements from more than 70 instrument platforms, with more than 220 sensor streams at about 50 fixed and mobile sites. Later that year, [NSF support through NPACI](https://www1.ucsc.edu/news_events/press_releases/archive/96-97/03-97/033197-UCSC_is_member_of_n.html) would help extend the work.
 
-There is a strong argument that we helped invent the modern Internet-connected sensor network. Earlier sensor networks existed; ours made the instruments part of the Internet. That sounds ordinary now. I think we were a little too early to receive the credit we deserved.
+There is a strong argument that we helped invent the modern Internet-connected sensor network. Earlier sensor networks existed; ours made the instruments part of the Internet. I think we were a little too early to receive the credit we deserved.
 
 We did, however, receive attention from the campus Left. How dare we work for the United States Navy on weather?
 
@@ -47,7 +47,7 @@ Protests ensued. Posters appeared. Booklets were published. The faculty were dec
 
 *The REINAS wanted poster. [Full-resolution scan](/images/war-criminal.png).*
 
-The poster called us an “Outlaw Gang” and described REINAS as “posing as a fancy weather forecasting system.” Apparently, the Navy's interest in the weather was evidence enough.
+The poster called us an “Outlaw Gang” and described REINAS as “posing as a fancy weather forecasting system.”
 
 ![A man in a Los Alamos National Laboratory polo shirt holds the REINAS wanted poster and gives a thumbs-up.](/images/reinas-wanted-poster-thumbs-up.jpg)
 
@@ -57,7 +57,7 @@ The people who put up the poster did not get the reaction they had hoped for. Th
 
 Fortunately, we had a supportive chancellor in [Dr. M. R. C. Greenwood](https://library.ucsc.edu/reg-hist/from-complex-organisms-to-a-complex-organization-an-oral-history-with-ucsc-chancellor-mrc), who stood by us during the REINAS protests. She had followed the amazing [Dr. Karl Pister](https://cshe.berkeley.edu/node/145), who helped us secure the grant over MIT by meeting with the visiting team from ONR.
 
-The broader campaign against military-funded university research continued. I kept a copy of the 2003 booklet [*The Militarization of America's Universities*](/downloads/militarization-of-americas-universities-2003.pdf), published by the ¡Escrache! media collective. It gives a sense of the politics surrounding this work.
+The broader campaign against military-funded university research continued. I kept a copy of the 2003 booklet [*The Militarization of America's Universities*](/downloads/militarization-of-americas-universities-2003.pdf), published by the ¡Escrache! media collective.
 
 Nor was REINAS the last episode. From 2000 through 2004, I chaired the [Engineering II Building Committee](/cv.pdf#page=36), overseeing the design and construction of Engineering 2. I also served on the University of California's [National Security Panel, Science & Technology Panel, and President's Council](/cv.pdf#page=38), work connected with the national laboratories. That was enough for student groups to claim that the excavation for our new engineering building was really the construction of an underground nuclear weapons laboratory.
 
@@ -85,6 +85,6 @@ The laboratory collaboration also helped make Ceph possible. Our first laborator
 
 Ceph grew out of [Dr. Sage Weil](https://news.ucsc.edu/2018/01/year-of-alumni-weil-sage/)'s doctoral research in the Storage Systems Research Center, which [Dr. Ethan Miller](https://www.ethanmiller.org/) and I built together. The [file system](/publications/59/) was designed to distribute data across large numbers of storage devices, replicate it, and recover from failures as the system grew. Dr. Weil went on to lead its development into a production storage system. I have written more about that history in [*Ceph and the SSRC*](/blog/2026-09-20-ceph-and-the-ssrc/).
 
-Weather matters to a navy. So do ocean currents, wind, and the ability to understand what instruments are telling you. I was proud of the research, proud of my colleagues and students, and proud to do useful work for the United States Navy.
+I was proud of the research, proud of my colleagues and students, and proud to do useful work for the United States Navy.
 
 I still am.
