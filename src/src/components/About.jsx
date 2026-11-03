@@ -129,6 +129,12 @@ export default function About() {
             Teaching Award.
           </p>
           <p>
+            His seminar &ldquo;Dangerous World&rdquo; examined real-world
+            existential risks to human civilization and was highly popular
+            with undergraduate and graduate students, although the dean
+            allowed him to offer it only once.
+          </p>
+          <p>
             He supervised undergraduate research and
             encouraged students to continue to graduate study. <a
             href="https://news.ucsc.edu/2016/03/women-computer-science/">Dr. Alexandra
