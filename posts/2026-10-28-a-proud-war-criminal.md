@@ -51,9 +51,9 @@ The poster called us an “Outlaw Gang” and described REINAS as “posing as a
 
 ![A man in a Los Alamos National Laboratory polo shirt holds the REINAS wanted poster and gives a thumbs-up.](/images/reinas-wanted-poster-thumbs-up.jpg)
 
-*The people who put up the poster did not get the reaction they had hoped for. [Full-resolution photograph](/images/reinas-wanted-poster-thumbs-up.jpg).*
+*My reaction to the wanted poster. [Full-resolution photograph](/images/reinas-wanted-poster-thumbs-up.jpg).*
 
-People afflicted with an excess of self-righteousness think that other people are evil and should be ashamed of who they are. They expect those people to cave to their demands.
+The people who put up the poster did not get the reaction they had hoped for. People afflicted with an excess of self-righteousness think that other people are evil and should be ashamed of who they are. They expect those people to cave to their demands.
 
 Fortunately, we had a supportive chancellor in [Dr. M. R. C. Greenwood](https://library.ucsc.edu/reg-hist/from-complex-organisms-to-a-complex-organization-an-oral-history-with-ucsc-chancellor-mrc), who stood by us during the REINAS protests. She had followed the amazing [Dr. Karl Pister](https://cshe.berkeley.edu/node/145), who helped us secure the grant over MIT by meeting with the visiting team from ONR.
 
