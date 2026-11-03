@@ -5,9 +5,9 @@ tags: ["research", "storage", "colleagues"]
 excerpt: "The research behind Ceph: Swift, Storage Tank, RAMA, the ASCI proposal, and the work of Sage Weil and other SSRC students."
 ---
 
-Ceph came out of the [Storage Systems Research Center (SSRC)](https://www.ssrc.us/proj/exscale.html) at UC Santa Cruz, which Dr. Ethan Miller and I built together. I coauthored the [2006 Ceph paper](/publications/59/) with Dr. Sage Weil, Dr. Scott Brandt, Dr. Ethan Miller, and Dr. Carlos Maltzahn.
+Ceph came out of the [Storage Systems Research Center (SSRC)](https://www.ssrc.us/proj/exscale.html) at UC Santa Cruz, the laboratory that Dr. Ethan Miller and I built together. I coauthored the [2006 Ceph paper](/publications/59/) with Dr. Sage Weil, Dr. Scott Brandt, Dr. Ethan Miller, and Dr. Carlos Maltzahn.
 
-I helped design Swift, IBM Storage Tank, and Ceph. Ethan brought his Berkeley work on RAID-II and RAMA to the SSRC.
+Ethan and I helped design Ceph. His research on parallel I/O and decentralized data placement included RAID-II and RAMA at Berkeley, RUSH with R. J. Honicky at the SSRC, and CRUSH with Sage, Scott, and Carlos. My work on Swift and IBM Storage Tank contributed the use of objects and separate metadata services.
 
 ## Swift
 
