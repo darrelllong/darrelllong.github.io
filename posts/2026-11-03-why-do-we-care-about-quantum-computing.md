@@ -62,15 +62,15 @@ These attacks exploit periods and discrete logarithms in efficiently computable 
 
 [Peter Shor's result](https://arxiv.org/abs/quant-ph/9508027) makes factoring and discrete logarithms possible in polynomial time on a suitable quantum computer. Here, polynomial time means that the number of operations grows as a polynomial in the number of bits used to describe the problem. Increasing an RSA key's length makes the quantum attack more expensive, but it does not restore the mathematical obstacle that protects it against known classical attacks.
 
-To reduce factoring to period finding, choose an integer $a$ that is relatively prime to $N$. We can check that condition efficiently with Euclid's algorithm. Then consider
+Shor's factoring algorithm divides the work between quantum and classical processors. The quantum circuit produces a sample carrying information about a period. The classical processor recovers a candidate period, checks it, and calculates the factors. The quantum gates determine the probabilities of the possible samples; they do not test candidate factors.
+
+The connection between periods and factors is ordinary number theory. Choose $a$ relatively prime to $N$, and consider
 
 $$
 f(x)=a^x\bmod N.
 $$
 
-The values repeat. The smallest positive integer $r$ for which $a^r\equiv1\pmod N$ is the *order* of $a$ modulo $N$, and it is the period of $f$.
-
-Suppose we can find $r$. If it is even, let $z=a^{r/2}\bmod N$. Then
+The smallest positive $r$ for which $a^r\equiv1\pmod N$ is the *order* of $a$ modulo $N$, and it is the period of $f$. If $r$ is even, set $z=a^{r/2}\bmod N$. Then
 
 $$
 z^2\equiv1\pmod N,
@@ -78,78 +78,119 @@ z^2\equiv1\pmod N,
 (z-1)(z+1)\equiv0\pmod N.
 $$
 
-When $z$ is neither $1$ nor $-1$ modulo $N$, calculating $\gcd(z-1,N)$ and $\gcd(z+1,N)$ yields nontrivial factors. If the order is odd or the result is unhelpful, we try another choice of $a$. The greatest-common-divisor calculations are ordinary classical arithmetic. The difficult part is finding the period.
+If $z$ is neither $1$ nor $-1$ modulo $N$, the factors of an RSA modulus are split between $z-1$ and $z+1$. Euclid's algorithm finds them by calculating $\gcd(z-1,N)$ and $\gcd(z+1,N)$. Finding the period is the expensive step on a classical computer.
 
-For a small example, take $N=21$ and $a=2$. The successive powers, reduced modulo $21$, are
+Here is a complete successful run for $N=21$.
 
-$$
-1,\;2,\;4,\;8,\;16,\;11,\;1,\;2,\ldots
-$$
+**1. Set up the registers.** The classical processor chooses $a=2$ and checks $\gcd(2,21)=1$. A **register** is a group of qubits whose possible values we label with binary integers. We use nine logical qubits for the input register, representing values $0$ through $511$, and five for the result register, which must hold residues $0$ through $20$. The arithmetic also needs temporary qubits. We chose an input range of size $Q=512$ because $Q\geq N^2$ gives the later frequency measurement enough precision.
 
-The period is six. Thus $z=2^3=8$, and
+For a systems programmer, a useful mathematical model is a table indexed by the pair `(input, result)`, with a complex amplitude in each entry. This describes the joint state of the qubits; it is not a table stored in classical RAM. Measuring both registers returns one pair, with probability equal to the squared magnitude of its amplitude. We can calculate with the full table in a small simulation, but measurement does not let us read it out.
 
-$$
-\gcd(8-1,21)=7,
-\qquad
-\gcd(8+1,21)=3.
-$$
+Initially the input register holds $0$ and the result register holds $1$. The entry `(0, 1)` has amplitude one; every other entry has amplitude zero.
 
-We have factored $21$ by finding a period. The same reduction works for a large RSA modulus. Enumerating its powers until they repeat would take too long, so we need another way to discover the period.
+**2. Give every input the same amplitude.** Apply a Hadamard gate to each input qubit. A Hadamard acts on pairs of amplitudes whose register values differ only in that bit. If $u$ is the amplitude for bit zero and $v$ for bit one, it replaces them by $(u+v)/\sqrt2$ and $(u-v)/\sqrt2$, respectively. Starting with one nonzero entry, the first gate produces two equal nonzero amplitudes, the second produces four, and so on. After nine gates, all 512 entries `(x, 1)` have amplitude $1/\sqrt{512}$. Their squared magnitudes sum to one.
 
-A **register** is a collection of qubits treated as one system. An $m$-qubit register has $2^m$ computational-basis states, labeled by the possible bit strings or their integer values. Its state vector has one complex amplitude per basis state. This is a mathematical description of the state; measuring the register returns one bit string.
+**3. Compute the modular powers.** Write $x=\sum_{j=0}^{8}x_j2^j$, where $x_j$ are its binary digits. The classical processor precomputes $c_j=2^{2^j}\bmod21$ by repeated squaring. These nine constants are $2,4,16,4,16,4,16,4,16$.
 
-A quantum algorithm arranges interference among these amplitudes so that a useful measurement becomes likely.
+For each input bit $x_j$, a controlled multiplication circuit multiplies the result by $c_j$ modulo $21$ when that bit is one, and leaves it alone otherwise. For input $x=6=2+4$, the active multipliers are $4$ and $16$: the result changes from $1$ to $4$ to $64\bmod21=1$. Each multiplication block contains many reversible gates. The input qubits control those gates without being measured, and the arithmetic reverses its temporary calculations so its workspace retains no extra record of the input. [IBM's account of order finding](https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/phase-estimation-and-factoring/shor-algorithm) describes this construction.
 
-For period finding, prepare a **uniform superposition** of integers from $0$ through $Q-1$, where $Q$ is a power of two: each has the same amplitude, initially with the same phase. Reversible modular arithmetic then computes $a^x\bmod N$ into a second register:
+Modular multiplication is reversible here because each $c_j$ is relatively prime to $21$: it permutes the residues $0$ through $20$ without merging any two of them. Multiplication by $4$, for example, is undone by multiplication by $16$, since $4\cdot16\bmod21=1$. The unused result values $21$ through $31$ can be left unchanged.
 
-$$
-\frac{1}{\sqrt Q}
-\sum_{x=0}^{Q-1}|x\rangle|a^x\bmod N\rangle.
-$$
+The circuit moves the amplitude from each entry `(x, 1)` to `(x, 2^x mod 21)`. It applies this rule to the whole superposition by linearity. Here are the first few occupied entries afterward:
 
-Two kets written together specify the values in the two registers.
+| Input $x$ | Result $2^x\bmod21$ | Amplitude |
+| --- | --- | --- |
+| 0 | 1 | $1/\sqrt{512}$ |
+| 1 | 2 | $1/\sqrt{512}$ |
+| 2 | 4 | $1/\sqrt{512}$ |
+| 3 | 8 | $1/\sqrt{512}$ |
+| 4 | 16 | $1/\sqrt{512}$ |
+| 5 | 11 | $1/\sqrt{512}$ |
+| 6 | 1 | $1/\sqrt{512}$ |
+| 7 | 2 | $1/\sqrt{512}$ |
+| $\vdots$ | $\vdots$ | $\vdots$ |
 
-The two registers are **entangled**: their joint state cannot be written as an independent state for each register. The second register's value is linked to the first register's input. For the explanation, imagine measuring the second register and obtaining one particular function value. The first register is then a superposition of the inputs that produced that value:
+The registers are **entangled**: their joint state cannot be described as an independent state for each register. The result is tied to the input. The circuit was built from $N$, $a$, and the input bit positions; it was never given the period or the factors.
 
-$$
-|\psi\rangle=
-\frac{1}{\sqrt L}
-\sum_{j=0}^{L-1}|x_0+jr\rangle.
-$$
+**4. Select a regularly spaced set of inputs.** Measure the result register. Suppose it returns $1$. The entries consistent with that result have inputs $0,6,12,\ldots,510$. There are 86 of them, each with probability $1/512$, so this result occurs with probability $86/512$. Here we add probabilities: the input values still distinguish the entries. Their amplitudes have not interfered.
 
-Here $L$ counts the terms that fit inside the register, and $x_0$ is the smallest nonnegative input giving the measured function value. The terms are evenly spaced by the unknown period $r$. Measuring this register immediately would give us one of those inputs. Instead, we change from the basis labeled by input values to a basis that reveals frequencies.
+After observing that result, all other entries disappear from the conditional state. Each remaining amplitude becomes $1/\sqrt{86}$ so that the remaining probabilities sum to one. Another measured result would select a different starting point with the same spacing.
 
-The [quantum Fourier transform](https://quantum.cloud.ibm.com/learning/en/modules/computer-science/qft) acts on each basis state as follows:
+We can see the spacing in our mathematical description. Measuring the input register now would give us only one of those values. We need to change the amplitudes so that a measurement carries useful information about the spacing.
 
-$$
-F_Q|x\rangle=
-\frac{1}{\sqrt Q}
-\sum_{k=0}^{Q-1}e^{2\pi i xk/Q}|k\rangle.
-$$
-
-For our periodic state, the amplitude of a possible output $k$ contains the sum
+**5. Use interference to change the measurement probabilities.** Apply the [quantum Fourier transform](https://quantum.cloud.ibm.com/learning/en/modules/computer-science/qft) to the input register. Call a possible output value $k$; it is an ordinary nine-bit integer between $0$ and $511$. If $A_{\mathrm{in}}[x]$ is the amplitude of input $x$, the transform produces
 
 $$
-\sum_{j=0}^{L-1}e^{2\pi i jrk/Q}.
+A_{\mathrm{out}}[k]=\frac{1}{\sqrt{512}}\sum_{x=0}^{511}A_{\mathrm{in}}[x]e^{2\pi i xk/512}.
 $$
 
-When $rk/Q$ is an integer, the terms have the same phase and reinforce one another. At other values, the phases rotate around the circle and tend to cancel. The measurement probabilities concentrate near
+This is a discrete Fourier transform of the amplitudes. Each occupied input contributes to every possible output. The factor $e^{2\pi i xk/512}$ rotates that contribution in the complex plane. Contributions to the same output add before we square their magnitude to obtain its probability.
+
+Our nonzero inputs are $x=6j$, for $j=0,\ldots,85$, so the calculation becomes
 
 $$
-\frac{k}{Q}=\frac{s}{r}
+A_{\mathrm{out}}[k]=\frac{1}{\sqrt{86\cdot512}}\sum_{j=0}^{85}e^{2\pi i(6j)k/512},
+\qquad P(k)=|A_{\mathrm{out}}[k]|^2.
 $$
 
-for integer values of $s$. The unknown spacing in the input has become a pattern of likely frequencies in the output.
+At $k=128$, the terms alternate between $+1$ and $-1$. There are 43 of each, so they cancel exactly and $P(128)=0$. At $k=1$, the terms go almost once around the complex plane and nearly cancel, giving $P(1)\approx0.0000101$.
 
-If $r$ divides $Q$, the peaks are exact. Otherwise, they fall near the corresponding frequencies. Choosing $Q$ large enough, conventionally at least $N^2$ in this version of the algorithm, gives enough precision for **continued fractions**, a classical method for finding accurate rational approximations, to recover candidate periods.
+At $k=85$, the angle between successive terms is $2\pi\cdot510/512$, almost a full turn. Successive contributions therefore point in similar directions and reinforce. Their sum has magnitude about $70.9$, giving
+
+$$
+P(85)\approx\frac{70.9^2}{86\cdot512}\approx0.1142.
+$$
+
+Thus $85$ is about 11,000 times as likely as $1$. No gate has recognized a correct answer. Addition and cancellation of complex amplitudes have changed the odds.
+
+![Head-to-tail sums of the 86 complex contributions to two Fourier outputs. For k equals 1, the chain nearly closes and its net contribution is small. For k equals 85, the contributions reinforce and leave a large net contribution.](/images/quantum-interference.png)
+
+*Each blue arrow is one term in the sum. Red marks the net contribution from the start to the end, before normalization. Both panels use the same scale. Squaring the normalized length gives the measurement probability.*
+
+We can also build the transform from gates. The circuit below implements the same Fourier formula for three qubits, so $Q=8$. A controlled phase gate $P(\theta)$ multiplies an amplitude by $e^{i\theta}$ when both its control and target bits are one; it leaves the other amplitudes unchanged.
+
+![Three-qubit Fourier circuit. A Hadamard on the four's-place wire is followed by controlled phase gates of pi over two and pi over four. A Hadamard on the two's-place wire is followed by a controlled phase of pi over two. A Hadamard on the one's-place wire and a swap of the outer wires finish the circuit.](/images/quantum-fourier-circuit.png)
+
+*The wires correspond to binary place values 4, 2, and 1. Read from left to right. A filled dot is a control; the connected crosses exchange the two outer qubits.*
+
+Follow input $x=5$, whose bits are `101`. Each amplitude pair below lists the amplitude for zero first, then for one. The first Hadamard gives the top qubit amplitudes $(1,-1)/\sqrt2$. The middle control is zero, so the first phase gate does nothing. The bottom control is one, so the next gate multiplies the top qubit's amplitude for one by $e^{i\pi/4}$, producing $(1,e^{5\pi i/4})/\sqrt2$. On the middle wire, its Hadamard and controlled phase produce $(1,i)/\sqrt2$. The bottom Hadamard produces $(1,-1)/\sqrt2$.
+
+After exchanging the outer qubits, the three amplitude pairs, from top to bottom, are $(1,-1)/\sqrt2$, $(1,i)/\sqrt2$, and $(1,e^{5\pi i/4})/\sqrt2$. For an output with bits $k_2,k_1,k_0$, select the corresponding amplitude from each pair and multiply them. Writing $k=4k_2+2k_1+k_0$, the result is
+
+$$
+\frac{(-1)^{k_2}i^{k_1}e^{5\pi i k_0/4}}{\sqrt8}
+=\frac{e^{2\pi i\,5k/8}}{\sqrt8}.
+$$
+
+That is the Fourier amplitude for input $5$ and output $k$. Other inputs supply different signs and activate different phase gates. Linearity gives the transform of a superposition by adding those contributions. Extending this pattern to nine qubits uses nine Hadamards, 36 controlled phase gates, and four swaps. Its gate settings depend on the register size, not on the unknown period.
+
+For an input state with spacing $r$, reinforcement produces peaks near $k/Q=s/r$, where $s$ is an integer. Here they are near $k=0,85,171,256,341,427$. A measurement samples one value from this distribution.
 
 ![Two probability plots for factoring 21. Before the quantum Fourier transform, equally likely inputs are spaced six apart. After the transform, probability concentrates near six evenly spaced frequencies.](/images/quantum-period-finding.png)
 
-*A calculated example with $N=21$, $a=2$, and a nine-qubit input register, so $Q=512$. The upper plot shows the state conditional on measuring the function value $1$. The lower plot shows its Fourier measurement probabilities.*
+*For $N=21$, $a=2$, and $Q=512$, the upper plot shows the input state after measuring result $1$. The lower plot shows the probabilities after the Fourier transform.*
 
-In this example, one likely measurement is $k=85$. The fraction $85/512$ is close to $1/6$, and continued fractions recover the denominator six. We check it by calculating $2^6\bmod21$. Other measurements can give less information: $k=256$ produces $1/2$, whose denominator is only a divisor of the period, and $k=0$ is unhelpful. Repetition and classical verification are part of the algorithm.
+**6. Turn a sample into factors.** Suppose measurement of the input register gives $k=85$. The quantum part of this run is finished. The classical processor forms $85/512$ and uses **continued fractions** to find rational approximations with small denominators. The first division is $512=6\cdot85+2$, so
 
-For $Q=2^m$, the transform's standard circuit uses only $O(m^2)$ elementary gates. These operations mix amplitudes and make conditional phase shifts, changing a component's complex angle depending on another qubit's value. It transforms $2^m$ amplitudes without requiring $2^m$ separate gates. Implementing those operations accurately on error-corrected hardware adds work. We do not get to read out all those amplitudes. A measurement gives one $k$. The carefully prepared periodic state is what makes a few such measurements useful.
+$$
+\frac{85}{512}=\frac{1}{6+2/85}\approx\frac16.
+$$
+
+Continuing Euclid's divisions gives $85=42\cdot2+1$ and $2=2\cdot1$. The successive continued-fraction approximations are $0/1$, $1/6$, $42/253$, and $85/512$. The order is less than $21$, so only denominators $1$ and $6$ are candidates. One fails because $2^1\bmod21=2$; six passes because $2^6\bmod21=1$.
+
+Six is even, so calculate $z=2^{6/2}\bmod21=8$. Eight is neither $1$ nor $20$, the residue representing $-1$ modulo $21$. We can therefore calculate
+
+$$
+p=\gcd(8-1,21)=7,
+\qquad
+q=\gcd(8+1,21)=3.
+$$
+
+Finally, verify $pq=21$. The measured integer $85$ has led us to the factors $7$ and $3$ through ordinary classical arithmetic.
+
+A different sample may require another run. For example, $k=256$ gives $256/512=1/2$. Its denominator suggests $r=2$, but $2^2\bmod21=4$, so that candidate fails the check. The outcome $k=0$ supplies no period information. Both are prominent peaks in the graph: a large measurement probability does not guarantee enough information to factor $N$. We repeat the quantum sampling when necessary. If a recovered order is odd or gives $z=-1\pmod N$, we choose another base $a$.
+
+The speedup comes from obtaining period information without enumerating powers until they repeat. For $Q=2^m$, the Fourier circuit uses $O(m^2)$ gates, and the reversible modular arithmetic also has polynomial cost in the bit length of $N$. Implementing the phase gates accurately on error-corrected hardware adds work. At RSA sizes, the CRQC must carry out this computation with enough logical qubits and sufficiently reliable gates to preserve the interference throughout.
 
 The discrete-logarithm version uses related interference in two dimensions. Let $g$ generate a cyclic group of prime order $\ell$, so its powers run through all $\ell$ elements. Suppose $y=g^s$, and $s$ is secret. Take $u$ and $v$ modulo $\ell$ and consider
 
