@@ -171,6 +171,11 @@ main.blogpost {
 .blog-content img[src="/images/quantum-bloch-sphere.png"] {
   width: 480px;
 }
+.blog-content img[src="/images/classical-nand-universality.png"],
+.blog-content img[src="/images/quantum-gates.png"] {
+  width: 700px;
+  max-height: none;
+}
 .blog-content p:has(> img:only-child) {
   margin-bottom: 8px;
 }
