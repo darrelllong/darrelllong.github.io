@@ -39,9 +39,12 @@ export default function Blog({ searchTerm, search }) {
       });
   }, []);
 
-  React.useEffect(() => {
+  const selectTag = (tag) => {
+    setActiveTag(tag);
+    // A post's tag link arrives as a search. Replace it when choosing a topic.
+    search("");
     setCurrentPage(0);
-  }, [searchTerm]);
+  };
 
   const filteredPosts = posts.filter((post) => {
     const matchesTag = !activeTag || post.tags.includes(activeTag);
@@ -74,6 +77,7 @@ export default function Blog({ searchTerm, search }) {
         searchTerm={searchTerm}
         onchange={(value) => {
           search(value);
+          setActiveTag(null);
           setCurrentPage(0);
         }}
       />
@@ -83,10 +87,7 @@ export default function Blog({ searchTerm, search }) {
           <button
             aria-pressed={!activeTag}
             className={!activeTag ? "tag active" : "tag"}
-            onClick={() => {
-              setActiveTag(null);
-              setCurrentPage(0);
-            }}
+            onClick={() => selectTag(null)}
           >
             All
           </button>
@@ -95,10 +96,7 @@ export default function Blog({ searchTerm, search }) {
               key={tag}
               aria-pressed={activeTag === tag}
               className={activeTag === tag ? "tag active" : "tag"}
-              onClick={() => {
-                setActiveTag(activeTag === tag ? null : tag);
-                setCurrentPage(0);
-              }}
+              onClick={() => selectTag(activeTag === tag ? null : tag)}
             >
               {tag}
             </button>
@@ -123,10 +121,7 @@ export default function Blog({ searchTerm, search }) {
                     <button
                       key={tag}
                       className="tag"
-                      onClick={() => {
-                        setActiveTag(tag);
-                        setCurrentPage(0);
-                      }}
+                      onClick={() => selectTag(tag)}
                     >
                       {tag}
                     </button>
