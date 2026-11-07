@@ -1,5 +1,17 @@
 [
   {
+    "slug": "2026-11-07-glen-langdon-and-arithmetic-coding",
+    "title": "Glen Langdon and Arithmetic Coding",
+    "date": "2026-11-07",
+    "tags": [
+      "biography",
+      "colleagues",
+      "compression",
+      "algorithms"
+    ],
+    "excerpt": "Remembering Glen Langdon's kindness, his contributions to computer engineering and arithmetic coding, and a compression utility I put together in his honor."
+  },
+  {
     "slug": "2026-11-03-why-do-we-care-about-quantum-computing",
     "title": "Why do we care about Quantum Computing?",
     "date": "2026-11-03",

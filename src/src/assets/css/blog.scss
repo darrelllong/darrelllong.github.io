@@ -168,6 +168,9 @@ main.blogpost {
 .blog-content img[src="/images/engineering-2-weapon-research.jpg"] {
   width: 400px;
 }
+.blog-content img[src$="/glen-langdon.png"] {
+  width: 560px;
+}
 .blog-content img[src="/images/quantum-bloch-sphere.png"] {
   width: 480px;
 }
