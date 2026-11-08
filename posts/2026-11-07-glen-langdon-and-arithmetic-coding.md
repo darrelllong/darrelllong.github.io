@@ -29,6 +29,8 @@ Glen died on March 11, 2014, at the age of seventy-seven.
 
 At IBM, Glen and Jorma Rissanen were central figures in the development of practical arithmetic coding. Their 1979 paper, “[Arithmetic Coding](https://doi.org/10.1147/rd.232.0149),” describes a broad family of these codes. Glen's 1984 paper, “[An Introduction to Arithmetic Coding](https://www.cs.cmu.edu/~aarti/Class/10704/Intro_Arith_coding.pdf),” explains the ideas and the engineering problems behind them. It is the starting point for this project.
 
+Peter Elias, whom I never met, supplied a foundational idea behind arithmetic coding: computing a message's cumulative probability recursively from its symbol probabilities. Glen credits Elias's unpublished work in [the historical appendix to his paper](https://www.cs.cmu.edu/~aarti/Class/10704/Intro_Arith_coding.pdf#page=14), noting that Norman Abramson described it in his 1963 book *Information Theory and Coding*.
+
 An arithmetic coder represents a message by repeatedly narrowing an interval. Start with $[0,1)$. Divide it among the possible symbols in proportion to their probabilities, retain the part belonging to the next symbol, and repeat inside that smaller interval. A likely symbol retains a large fraction of the interval. An unlikely symbol retains a small one.
 
 For a simple example, suppose that $A$, $B$, and $C$ have fixed probabilities $1/2$, $1/4$, and $1/4$. To encode `ABC`:
