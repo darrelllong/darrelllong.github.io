@@ -137,7 +137,6 @@ const Patent = ({ patent, patents, search }) => {
     return (
       <>
         <PageMetadata
-          noIndex={!loading}
           title={`${loading ? "Loading" : "Patent not found"} | Dr. Darrell Long`}
         />
         <article>

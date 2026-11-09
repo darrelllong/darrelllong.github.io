@@ -5,7 +5,6 @@ import portrait from "../portrait.json";
 
 export default function PageMetadata({
   title,
-  noIndex = false,
   description = "Research, writing, and academic work by Dr. Darrell D. E. Long.",
 }) {
   const { pathname } = useLocation();
@@ -22,7 +21,7 @@ export default function PageMetadata({
     };
     const canonicalUrl = `https://darrelllong.github.io${pathname.replace(/\/$/, "")}/`;
     updateMeta("name", "description", description);
-    updateMeta("name", "robots", noIndex ? "noindex" : "index, follow");
+    updateMeta("name", "robots", "index, follow");
     updateMeta("property", "og:title", title);
     updateMeta("property", "og:description", description);
     updateMeta("property", "og:url", canonicalUrl);
@@ -43,11 +42,10 @@ export default function PageMetadata({
       document.head.append(canonical);
     }
     canonical.href = canonicalUrl;
-  }, [title, description, pathname, noIndex]);
+  }, [title, description, pathname]);
   return null;
 }
 PageMetadata.propTypes = {
   title: PropTypes.string.isRequired,
-  noIndex: PropTypes.bool,
   description: PropTypes.string,
 };

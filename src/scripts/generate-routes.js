@@ -213,7 +213,7 @@ for (const [index, pub] of publications.entries()) {
 }
 
 // Keep previously published numeric URLs working even if their catalog record
-// was removed. These shells show the app's not-found state and are not indexed.
+// was removed. These shells show the app's not-found state.
 const publicationIds = new Set(
   publications.map((publication) => String(publication.id)),
 );
@@ -239,7 +239,7 @@ for (const entry of readdirSync(join(repoRoot, "publications"), {
       description:
         "This publication is no longer in the catalog. Browse the publication archive for current records.",
       canonicalUrl: `${BASE_URL}/publications/${entry.name}/`,
-    }).replace("</head>", '<meta name="robots" content="noindex">\n</head>'),
+    }),
   );
 }
 

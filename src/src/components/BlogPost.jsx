@@ -35,13 +35,15 @@ export default function BlogPost({ search }) {
     Promise.all([getPostBySlug(slug), getAllPosts()])
       .then(([p, all]) => {
         if (!active) return;
-        setPost(p);
+        // A failed fetch of the markdown must not replace the post the page
+        // was prerendered with.
+        setPost(p || getPreloadedPost(slug));
         setPosts(all);
         setLoading(false);
       })
       .catch(() => {
         if (active) {
-          setPost(null);
+          setPost(getPreloadedPost(slug));
           setLoading(false);
         }
       });
@@ -55,7 +57,7 @@ export default function BlogPost({ search }) {
   if (!post) {
     return (
       <>
-        <PageMetadata title="Post not found | Dr. Darrell Long" noIndex />
+        <PageMetadata title="Post not found | Dr. Darrell Long" />
         <article className="blog-article">
           <header>
             <h1>Post not found</h1>

@@ -183,7 +183,6 @@ const Publication = ({ publication, publications, search }) => {
     return (
       <>
         <PageMetadata
-          noIndex={!loading}
           title={`${loading ? "Loading" : "Publication not found"} | Dr. Darrell Long`}
         />
         <article>
