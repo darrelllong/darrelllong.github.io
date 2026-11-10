@@ -95,9 +95,9 @@ BibTeX.propTypes = {
   bibTeX: PropTypes.object,
 };
 
-// A record's text is its paper's abstract. A paper published without one may
-// carry what stands in its place, named by content_heading in the catalog:
-// its position statement, or its publisher's description.
+// A record's text is its paper's abstract. A paper published without one
+// carries what stands in its place, named by content_heading in the catalog:
+// the opening of its introduction, its position statement, or a description.
 const Abstract = ({ heading = "Abstract", paragraphs }) => {
   if (!paragraphs?.length) {
     return null;
