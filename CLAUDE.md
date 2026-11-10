@@ -52,6 +52,15 @@ Anything a component renders must give the same result on the server and in the 
 
 The sitemap's `lastmod` is the date of the last commit that touched what the page is made of (its post, `publications.json`, the component), not the day of the build.
 
+### Crawlability
+
+Every page must be reachable through links in the HTML; do not count on Google reading the sitemap. Keep these:
+
+- A link to a page of the site ends in a slash (`/blog/slug/`): GitHub Pages answers the path without one with a redirect. `BlogPost.jsx` adds the slash to links written in a post's markdown.
+- A list shows six records and its page buttons are state, not addresses, so `CompleteIndex.jsx` puts a link to every record in the list's HTML, in a closed `<details>`.
+- No page sets `noindex`.
+- Font Awesome's stylesheet is bundled (`App.jsx`, `autoAddCss` off), so that a prerendered page's icons have their size before the script runs.
+
 ## Architecture
 
 ### React SPA (`src/` directory)

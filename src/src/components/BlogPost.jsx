@@ -22,6 +22,16 @@ import {
 import "katex/dist/katex.min.css";
 import "../assets/css/blog.scss";
 
+// A page of the site is served at its path with a trailing slash, and
+// GitHub Pages answers the path without one with a redirect: a second request
+// for a crawler, and a "Page with redirect" in Search Console. A post's link
+// to a page gets the slash however the markdown wrote it.
+function pageHref(href) {
+  const [, path, rest] = href.match(/^([^?#]*)(.*)$/);
+  if (path.endsWith("/") || /\.\w+$/.test(path)) return href;
+  return `${path}/${rest}`;
+}
+
 export default function BlogPost({ search }) {
   const { slug } = useParams();
   // A prerendered page starts with its post (see preloaded.js)
@@ -153,7 +163,7 @@ export default function BlogPost({ search }) {
                   );
                 }
                 if (href && href.startsWith("/")) {
-                  return <Link to={href}>{children}</Link>;
+                  return <Link to={pageHref(href)}>{children}</Link>;
                 }
                 return (
                   <a href={href} {...props}>

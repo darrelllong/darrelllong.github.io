@@ -3,6 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Context } from "../ContextProvider";
 // Components
+import CompleteIndex from "./CompleteIndex";
 import Pagination from "./Pagination";
 import PatentCard from "./PatentCard";
 import SearchBar from "./SearchBar";
@@ -79,6 +80,14 @@ export default function Patents({ searchTerm, search }) {
         totalPublications={filteredPatents.length}
         publicationsPerPage={patentsPerPage}
         changePage={setCurrentPage}
+      />
+      <CompleteIndex
+        label={`All ${patents.length} patents`}
+        items={patents.map((patent) => ({
+          to: `/patents/${patent.id}/`,
+          title: patent.title,
+          note: patent.bibTeX?.year,
+        }))}
       />
     </>
   );

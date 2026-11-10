@@ -3,6 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 // Components
+import CompleteIndex from "./CompleteIndex";
 import Pagination from "./Pagination";
 import SearchBar from "./SearchBar";
 // Utilities
@@ -111,7 +112,7 @@ export default function Blog({ searchTerm, search }) {
               <article key={post.slug}>
                 <header>
                   <h2>
-                    <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+                    <Link to={`/blog/${post.slug}/`}>{post.title}</Link>
                   </h2>
                   <time dateTime={post.date}>{formatPostDate(post.date)}</time>
                 </header>
@@ -138,6 +139,15 @@ export default function Blog({ searchTerm, search }) {
         totalPublications={filteredPosts.length}
         publicationsPerPage={postsPerPage}
         changePage={setCurrentPage}
+      />
+      <CompleteIndex
+        wide
+        label={`All ${posts.length} posts`}
+        items={posts.map((post) => ({
+          to: `/blog/${post.slug}/`,
+          title: post.title,
+          note: formatPostDate(post.date),
+        }))}
       />
     </>
   );

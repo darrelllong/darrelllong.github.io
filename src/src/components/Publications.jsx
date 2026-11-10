@@ -3,6 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Context } from "../ContextProvider";
 // Components
+import CompleteIndex from "./CompleteIndex";
 import Pagination from "./Pagination";
 import PublicationCard from "./PublicationCard";
 import SearchBar from "./SearchBar";
@@ -84,6 +85,14 @@ export default function Publications({ searchTerm, search }) {
         totalPublications={filteredPublications.length}
         publicationsPerPage={publicationsPerPage}
         changePage={setCurrentPage}
+      />
+      <CompleteIndex
+        label={`All ${publications.length} publications`}
+        items={publications.map((publication) => ({
+          to: `/publications/${publication.id}/`,
+          title: publication.title,
+          note: publication.bibTeX?.year,
+        }))}
       />
     </>
   );
