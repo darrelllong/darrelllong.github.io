@@ -8,6 +8,7 @@
     ],
     "patent_number": "5,889,993",
     "short_description": "A method for predictive event tracking that enables efficient anticipation and handling of system events.",
+    "full_content": "A method of tracking events and their sequences in a computer system and predicting the probability of future events using a data structure that represents the predictive nature of the system after an initial event correlating to an object in the system. The invention reduces memory requirements and computational complexity by partitioning a trie into subtries where each subtrie represents a set of sequences of events, statically limiting the size of the partitions by limiting the number of descendants below the node defining the partition, and refreshing parts of the set of children and releasing slots occupied by particular descendants when additional space is needed. In addition, each partition can be attached to the object which it represents and moved in and out of memory with that object. In this way, data structures which would otherwise grow as large as N^O and which have a computational complexity of predictions on the order of O×N, where N is the number of objects modeled and O is the model order, will be limited in size to N which, in turn, limits the computational complexity to order O.",
     "url": "https://patents.google.com/patent/US5889993",
     "bibTeX": {
       "@misc": "Long1999Predictive",
@@ -27,6 +28,7 @@
     ],
     "patent_number": "5,917,998",
     "short_description": "A method for managing membership sets in mirrored I/O operations without the overhead of logging.",
+    "full_content": "A method and apparatus that maintains in stable storage an identification of which copies in a mirrored disk system are currently up to date without requiring the use of a logging mechanism. The invention may include a plurality of mirrored disk drives and a processing unit for controlling the writing and reading of data units to and from mirrored disk drives, wherein the processing unit establishes and maintains cohort sets for each mirrored disk drive. The cohort set represents the status of copies of the data units stored on the mirrored disk drives and contains membership information for redundant copies of data units stored in the plurality of mirrored disk drives. The membership information comprises a data structure of 2n status bits for identifying which disks contain current copies of the data units, where n is the number of disks in the system, and wherein the first n bits are used to indicate an intention to update the membership information for the copies and the second n bits are used indicate a current state of the membership information. The data structure may further include log(n) additional bits for identifying each mirrored disk.",
     "url": "https://patents.google.com/patent/US5917998",
     "bibTeX": {
       "@misc": "Cabrera1999Membership",
@@ -48,6 +50,7 @@
     ],
     "patent_number": "5,931,947",
     "short_description": "A secure storage system using an array of remotely encrypted storage devices for data protection.",
+    "full_content": "A network storage device is disclosed for use in a secure array of such devices to support a distributed file system. Each device is an independent repository of remotely encrypted data objects to be accessed by authorized network clients. All encryption is done by the clients, rather than by the devices. In order for the system to revoke access to an object on the device, the object must be re-encrypted. Each storage device has a device owner for controlling access to the device's data. All data requests from the clients and responses to them are authenticated using keys derived from the owner key and hashed message authentication codes.",
     "url": "https://patents.google.com/patent/US5931947",
     "bibTeX": {
       "@misc": "Burns1999Secure",
@@ -67,6 +70,7 @@
     ],
     "patent_number": "6,018,747",
     "short_description": "An efficient method for generating and reconstructing delta files in-place, reducing storage and bandwidth requirements.",
+    "full_content": "The present invention discloses a method, apparatus, and article of manufacture for generating, transmitting, replicating, and rebuilding in-place reconstructible software updates to a file from a source computer to a target computer. The present invention stores the first version of the file and the updates to the first version of the file in the memory of the source computer. The first version is also stored in the memory of the target computer. The updates are then transmitted from the memory of the source computer to the memory of the target computer. The present invention uses these updates at the target computer to build the second version of the file in-place.",
     "url": "https://patents.google.com/patent/US6018747",
     "bibTeX": {
       "@misc": "Burns2000Delta",
@@ -88,6 +92,7 @@
     ],
     "patent_number": "6,405,315",
     "short_description": "A decentralized file system architecture that provides remote encryption capabilities for secure distributed storage.",
+    "full_content": "A decentralized file system based on a network of remotely encrypted storage devices is disclosed. The file system includes a network to which a network client, a secure remotely encrypted storage device, a key manager, and a lock manager are attached. The system organizes data as files and directories. Files or directories are composed of one or more streams, which logically partition the data associated with the files or directories. The device serves as a repository of the system's data. The key manager controls data access keys while the lock manager handles consistency of the files. A network user may have read or write access to a file. Access is controlled using keys and access lists maintained by the key manager.",
     "url": "https://patents.google.com/patent/US6405315",
     "bibTeX": {
       "@misc": "Chron2002Decentralized",
@@ -108,6 +113,7 @@
     ],
     "patent_number": "6,651,147",
     "short_description": "A method for optimizing data placement and allocation through virtual contiguity to improve storage system performance.",
+    "full_content": "A data storage system randomly determines a start offset at which to write objects to a storage medium. For updated blocks of the object, e.g., for blocks written during copy-on-write as part of a point-in-time snapshot, the updated block is written in the region of the original file or as close thereto as possible to achieve “virtual contiguity”. Subsequent reads of the object read entire region containing both the object and, potentially, “chaff” data other than the object. The “chaff” data is discarded by the I/O system or file system using, e.g., a bit mask, subsequent to the read.",
     "url": "https://patents.google.com/patent/US6651147",
     "bibTeX": {
       "@misc": "Burns2003Virtual",
@@ -129,6 +135,7 @@
     ],
     "patent_number": "6,775,703",
     "short_description": "A lease-based protocol ensuring safety and consistency in distributed systems operating across multiple networks.",
+    "full_content": "A system, method, and computer program product for a lease-based timeout scheme that addresses fencing's shortcomings. Unlike fencing, this scheme (or protocol) enables an isolated computer to realize it is disconnected from the distributed system and write its dirty data out to storage before its locks are stolen. In accordance with the invention, data consistency during a partition in a distributed system is ensured by establishing a lease based protocol between in the distributed system wherein a client can hold a lease with a server. The lease represents a contract between a client and a server in which the server promises to respect the client for a period of time. The server respects the contract even when it detects a partition between the client and itself.",
     "url": "https://patents.google.com/patent/US6775703",
     "bibTeX": {
       "@misc": "Burns2004Lease",
@@ -148,6 +155,7 @@
     ],
     "patent_number": "6,792,424",
     "short_description": "A system for managing authentication and maintaining data coherency in storage area networks.",
+    "full_content": "A data management system for storage area networks (SANs) includes an authentication and directory service that integrates the management of cache coherency and synchronization into an authentication mechanism, referred to herein as a ticket. The data in the system is notionally classified into colors. When a principal computer requests a read or a write access to data of a particular “color”, the service determines whether the principal is authorized for the requested access, and if so, the service issues a ticket to the principal that specifies a data color that the bearer of the ticket is authorized to access using the type of access mechanism specified on the ticket. A hidden “hue” can also be specified on the ticket. The service can variously inform principals to cancel tickets based on color or time of issue and can also variously inform storage devices not to honor tickets of a certain hue or time of issue as appropriate to thereby maintain cache coherency and data consistency.",
     "url": "https://patents.google.com/patent/US6792424",
     "bibTeX": {
       "@misc": "Burns2004Authentication",
@@ -168,6 +176,7 @@
     ],
     "patent_number": "6,938,056",
     "short_description": "A method for accurately restoring file systems from backups while properly handling file deletions.",
+    "full_content": "A system and associated method restore a file system from incremental backups in the presence of deletion, without restoring deleted files. This is accomplished by logging deletions in a deletion log. Using the deletion log, the system re-deletes the deleted files upon a restore operation to an incremental backup epoch. The system the logs deletions so that the files that were deleted and survived a backup epoch have their records logged. The activity log enables an incremental backup from a prior snapshot, and represents a point-in-time version of the file system. The system can either not restore the deleted files, or, alternatively, it can restore the deleted files and then re-deletes them.",
     "url": "https://patents.google.com/patent/US6938056",
     "bibTeX": {
       "@misc": "Burns2005Restoring",
@@ -193,6 +202,7 @@
     ],
     "patent_number": "7,085,909",
     "short_description": "An efficient implementation of copy-on-write semantics for file systems, optimizing storage utilization.",
+    "full_content": "Various copy-on-write implementations for a computing environment are presented. One copy-on-write implementation includes employing a read mapping table to perform a first virtual block to physical block mapping for use in reading a block of data of a file to be copy-on-written from physical storage for modification; and employing a different, write mapping table to perform a second virtual block to physical block mapping for use in writing a modified block of the file data to physical storage, wherein copy-on-write of the block of data is achieved using a single write operation. In another implementation, a distributed copy-on-write of a file for a client server environment is presented. This distributed copy-on-write includes performing, by a first client, copy-on-write of at least one block of data of the file to be copy-on-written, and performing, by a second client, copy-on-write of at least one other block of data of the file, wherein multiple clients perform the copy-on-write of the file.",
     "url": "https://patents.google.com/patent/US7085909",
     "bibTeX": {
       "@misc": "Ananthanarayanan2006CopyOnWrite",
@@ -218,6 +228,7 @@
     ],
     "patent_number": "7,139,781",
     "short_description": "A comprehensive system for managing multiple versions of files within a file system.",
+    "full_content": "A system and method for managing logical versions of a filesystem made through a near-instantaneous copy process is provided. Each logical version of the filesystem, including the primary version, is assigned a unique epoch number or other identifying value, and each filesystem object is assigned two epoch numbers that define the space of logical versions for which the object exists. A list of all valid epoch numbers are maintained in a version table. The near-instantaneous creation of a logical version of the filesystem requires inserting a unique epoch number entry in the version table (106) and the next epoch number to the new logical version. An original state of the system is preserved through the use of a copy-on-write procedure for filesystem objects that are reference by that logical filesystem version (120). Accordingly, filesystem versions are maintained and original states of previous states of the logical filesystem versions are preserved.",
     "url": "https://patents.google.com/patent/US7139781",
     "bibTeX": {
       "@misc": "Young2006Versions",

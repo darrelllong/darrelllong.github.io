@@ -112,20 +112,21 @@ Header.propTypes = {
   search: PropTypes.func,
 };
 
-const Description = ({ text }) => {
+const Description = ({ heading, text }) => {
   if (!text) {
     return null;
   }
 
   return (
     <section className="abstract">
-      <h3>Description</h3>
+      <h3>{heading}</h3>
       <p>{text}</p>
     </section>
   );
 };
 
 Description.propTypes = {
+  heading: PropTypes.string.isRequired,
   text: PropTypes.string,
 };
 
@@ -171,7 +172,12 @@ const Patent = ({ patent, patents, search }) => {
       />
       <article>
         <Header {...patent} search={search} />
-        <Description text={patent.short_description} />
+        {/* The abstract of the patent as granted (full_content, as in
+            publications.json); the one-line description where there is none */}
+        <Description
+          heading={patent.full_content ? "Abstract" : "Description"}
+          text={patent.full_content || patent.short_description}
+        />
         <footer>
           <BibTeX bibTeX={patent.bibTeX} />
           {patent.url && (

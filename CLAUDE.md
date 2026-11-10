@@ -76,6 +76,8 @@ Every page must be reachable through links in the HTML; do not count on Google r
 publications.json  →  React components fetch this at runtime
 ```
 
+A record's `full_content` is its abstract as published, shown on its page under "Abstract": the paper's own for a publication, the granted patent's for a patent (`patents.json`). Take it from the paper or the patent record, whole; do not paraphrase or shorten it. A paper published without an abstract may carry what stands in its place, with `content_heading` naming it on the page ("Position statement", "Publisher's description").
+
 **Python helper scripts** (edit `publications.json` directly):
 - `add_abstracts.py` - Add abstracts to publications
 - `fix_abstracts.py` - Fix abstract formatting

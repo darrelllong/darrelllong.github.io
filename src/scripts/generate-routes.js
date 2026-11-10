@@ -30,21 +30,32 @@ const portrait = JSON.parse(
 );
 const previewImageUrl = `${BASE_URL}${portrait.src}`;
 
-// The day of the last commit that touched any of the paths. A sitemap's
-// lastmod that is always the day of the deployment says nothing, and Google
-// ignores it.
+// Today's date here, as git dates a commit: the date in UTC is tomorrow's
+// from late afternoon in California, and a lastmod in the future is not
+// believed.
+const now = new Date();
+const today = [
+  now.getFullYear(),
+  String(now.getMonth() + 1).padStart(2, "0"),
+  String(now.getDate()).padStart(2, "0"),
+].join("-");
+
+// The day of the last commit that touched any of the paths, or today when one
+// of them has changes not yet committed: a deployment commits a change and
+// the pages built from it together, so the build comes before the commit
+// that would date them. A sitemap's lastmod that is always the day of the
+// deployment says nothing, and Google ignores it.
 function lastModified(...paths) {
+  const git = (...args) =>
+    execFileSync("git", args, { cwd: repoRoot, encoding: "utf-8" }).trim();
   try {
-    const out = execFileSync(
-      "git",
-      ["log", "-1", "--format=%cs", "--", ...paths],
-      { cwd: repoRoot, encoding: "utf-8" },
-    ).trim();
+    if (git("status", "--porcelain", "--", ...paths)) return today;
+    const out = git("log", "-1", "--format=%cs", "--", ...paths);
     if (out) return out;
   } catch {
     // not a repository, or git is not there
   }
-  return new Date().toISOString().split("T")[0];
+  return today;
 }
 const latest = (...dates) => dates.sort().at(-1);
 

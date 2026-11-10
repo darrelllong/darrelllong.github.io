@@ -95,14 +95,17 @@ BibTeX.propTypes = {
   bibTeX: PropTypes.object,
 };
 
-const Abstract = ({ paragraphs }) => {
+// A record's text is its paper's abstract. A paper published without one may
+// carry what stands in its place, named by content_heading in the catalog:
+// its position statement, or its publisher's description.
+const Abstract = ({ heading = "Abstract", paragraphs }) => {
   if (!paragraphs?.length) {
     return null;
   }
 
   return (
     <section className="abstract">
-      <h3>Abstract</h3>
+      <h3>{heading}</h3>
       {paragraphs.map((line, index) => (
         <p key={index}>{line}</p>
       ))}
@@ -111,6 +114,7 @@ const Abstract = ({ paragraphs }) => {
 };
 
 Abstract.propTypes = {
+  heading: PropTypes.string,
   paragraphs: PropTypes.array,
 };
 
@@ -231,7 +235,7 @@ const Publication = ({ publication, publications, search }) => {
       />
       <article>
         <Header {...publication} search={search} />
-        <Abstract paragraphs={lines} />
+        <Abstract heading={publication.content_heading} paragraphs={lines} />
         <footer>
           <BibTeX bibTeX={publication.bibTeX} />
           {publication.url && (
