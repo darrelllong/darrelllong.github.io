@@ -146,7 +146,7 @@ Enabling `--dedup` with context mixing changes the total to 42,462,366 bytes, sl
 
 ## The Code and the Fellowship
 
-The source is available at [github.com/darrelllong/acz](https://github.com/darrelllong/acz). The workspace builds the `acz`, `unacz`, and `aczcat` commands:
+The source is available at [github.com/darrelllong/acz](https://github.com/darrelllong/acz). With [Homebrew](https://brew.sh), `brew install darrelllong/tap/acz` builds and installs it. From the source, the workspace builds the `acz`, `unacz`, and `aczcat` commands:
 
 ```sh
 cargo build --release
