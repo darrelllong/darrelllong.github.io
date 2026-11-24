@@ -19,7 +19,7 @@ By *perfect*, I mean a filter that always finishes, blocks every forbidden outpu
 
 The distinction matters when an LLM is allowed to move money, execute commands, or operate machinery.
 
-There are three cases: rules about an output's form, rules about what it does when executed, and rules about its effects on a person. The Mathematics, at the end, has the proofs, with the notation explained along the way.
+There are three cases: rules about an output's form, rules about what it does when executed, and rules about its effects on a person. The Mathematics, at the end, has the proofs, with the notation explained along the way. Ahmed Amer, Loren Kinczel, and I give the full argument in [*No Perfect Guardrail & No Perfect Guard*](https://arxiv.org/abs/2611.27260).
 
 ## Three Cases
 

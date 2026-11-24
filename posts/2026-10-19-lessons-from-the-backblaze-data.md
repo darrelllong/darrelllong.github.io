@@ -7,7 +7,7 @@ excerpt: "Thirteen years of daily records from half a million disk drives: what 
 
 Since 2013 Backblaze has published a daily record of every drive in its data centers: the serial number, the drive model, the SMART attributes (the counters a drive keeps about its own health: reallocated sectors, hours powered on, temperature and so on), and a flag on the day the drive was recorded as failed. Through June 2026 it covers 504,624 data drives (the drives of 1.4 TB and more that hold customers' data, as opposed to boot drives) of 99 models with a usable power-on age, two million drive-years of observation (one drive-year is one drive observed for one year), and 31,881 recorded failures. I know of nothing else of this size and detail that is public.
 
-Dr. Ahmed Amer and I have spent the past months fitting lifetime distributions to these data, evaluating their predictions on subsequent years excluded from training, and implementing random lifetime generators for storage simulators. The report is still under review. This post reflects its November 1, 2026 revision, including the revised drive-model estimates and annual count comparisons. The calendar-time, per-drive forecasting and RAID comparisons still use earlier fits, identified below.
+Dr. Ahmed Amer and I have spent the past months fitting lifetime distributions to these data, evaluating their predictions on subsequent years excluded from training, and implementing random lifetime generators for storage simulators. The report is still under review; a preprint is on [arXiv](https://arxiv.org/abs/2611.27122). This post reflects its November 1, 2026 revision, including the revised drive-model estimates and annual count comparisons. The calendar-time, per-drive forecasting and RAID comparisons still use earlier fits, identified below.
 
 The count of 99 drive models follows standardization of whitespace and the merging of three pairs of names for the same part. We also classify the WUH Ultrastar drives with the HGST product line, although they are sold under Western Digital's name. These corrections matter when a drive-model name or manufacturer determines which parameters a program uses.
 
@@ -149,10 +149,11 @@ Our comparisons sum log probabilities over nine held-out years. We estimate the 
 
 Numerical error is a separate issue. Agreement between repeated score estimates does not establish accuracy when the runs use the same integration approximation or fail to explore the same part of a posterior distribution. The recent checks of the per-model wear-out variants show why both sources of error need to be examined before interpreting a small score difference.
 
-The report, with the data tables, the fitted models and the sampler library, will appear when the review is finished.
+The final report, with the data tables, the fitted models and the sampler library, will appear when the review is finished.
 
 ## References
 
+- Ahmed Amer and Darrell D. E. Long. "[Drive Failure and Lifetime Simulation in the Backblaze Drive Statistics Corpus, 2013–2026](https://arxiv.org/abs/2611.27122)." Technical Report SSL-TR-2026-001, Sustainable Systems Laboratory, Santa Clara University, November 2026. arXiv:2611.27122.
 - Backblaze. *Hard Drive Data and Stats.* [backblaze.com/cloud-storage/resources/hard-drive-test-data](https://www.backblaze.com/cloud-storage/resources/hard-drive-test-data).
 - Backblaze. "[CSI: Backblaze — Dissecting 3TB Drive Failure](https://www.backblaze.com/blog/3tb-hard-drive-failure/)." Backblaze blog, 15 April 2015.
 - Backblaze. "[What SMART Stats Tell Us About Hard Drives](https://www.backblaze.com/blog/what-smart-stats-indicate-hard-drive-failures/)." Backblaze blog, 6 October 2016.
