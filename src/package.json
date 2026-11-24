@@ -19,7 +19,7 @@
     "@fortawesome/free-solid-svg-icons": "^7.2.0",
     "@fortawesome/react-fontawesome": "^3.3.1",
     "front-matter": "^4.0.2",
-    "katex": "^0.17.0",
+    "katex": "^0.19.1",
     "prop-types": "^15.8.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
@@ -41,6 +41,9 @@
     "globals": "^17.6.0",
     "sass": "^1.77.2",
     "vite": "^7.3.5"
+  },
+  "overrides": {
+    "katex": "$katex"
   },
   "homepage": "https://darrelllong.github.io/"
 }
