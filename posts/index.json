@@ -1,5 +1,17 @@
 [
   {
+    "slug": "2026-11-26-slug-factory",
+    "title": "Slug Factory: Integer Factoring in Rust",
+    "date": "2026-11-26",
+    "tags": [
+      "mathematics",
+      "algorithms",
+      "rust",
+      "number-theory"
+    ],
+    "excerpt": "A factoring program in Rust, and the mathematics behind Pollard rho, the quadratic sieve, and the general number field sieve."
+  },
+  {
     "slug": "2026-11-07-glen-langdon-and-arithmetic-coding",
     "title": "Glen Langdon and Arithmetic Coding",
     "date": "2026-11-07",
